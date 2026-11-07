@@ -39,6 +39,17 @@ async def main(url: str) -> int:
         print("fetch:", doc["title"], "| url:", doc["url"])
         assert "2.50" in doc["text"] and doc["metadata"]["manual"] == "SEW-2013-A"
 
+        manuals = {m["id"] for m in payload(await client.call_tool("list_manuals", {}))["manuals"]}
+        print("manuals:", sorted(manuals))
+        assert {"SEW-2013-A", "WS-2024-A", "WS-2024-B", "WS-2024-C"} <= manuals, manuals
+
+        water = payload(await client.call_tool("search", {"query": "economical size of pumping main", "limit": 3}))
+        print("water search top:", water["results"][0]["id"])
+        assert water["results"][0]["id"] == "WS-2024-A:AN6.1"
+        t22 = payload(await client.call_tool("get_clause", {"id": "WS-2024-A:T2.2"}))
+        print("text table:", t22["citation"], "| source:", t22.get("source"))
+        assert t22.get("source") == "table text in the manual PDF" and "Service reservoirs" in t22["table_markdown"]
+
         bad = await client.call_tool("get_clause", {"id": "SEW-2013-A:99.9"})
         print("unknown id is_error:", bad.is_error)
         assert bad.is_error

@@ -12,10 +12,14 @@ from pathlib import Path
 
 import pymupdf
 
-# Running header and footer bands on an A4 page (points). Body text sits between them.
-HEADER_MAX_Y = 62.0
-FOOTER_MIN_Y = 770.0
+from .corpus import INDESIGN, Layout
+
 PAGE_LABEL = re.compile(r"^\s*([A-Z]?\d*\s*-\s*\d+)\s*$")
+PAGE_NUMBER = re.compile(r"^\s*(\d{1,4})\s*$")
+# On Word pages the body can start inside the usual header band (landscape pages);
+# running headers never look like these.
+HIGH_HEADING = re.compile(r"^(?:Annexure|Table|Figure)\s+\d|^\d{1,2}(?:\.\d{1,2})+\s+[A-Z]")
+PRIVATE_GLYPH = re.compile("[\uf000-\uf0ff]")
 MIN_IMAGE_W, MIN_IMAGE_H = 150.0, 40.0
 
 
@@ -30,7 +34,8 @@ class Line:
 @dataclass
 class Page:
     number: int  # 1-based physical page
-    label: str | None  # printed page label such as "3 - 105"
+    label: str | None  # printed page label such as "3 - 105" or "36"
+    height: float = 842.0
     lines: list[Line] = field(default_factory=list)
     images: list[tuple[float, float, float, float]] = field(default_factory=list)
 
@@ -50,11 +55,12 @@ def open_clean(path: Path) -> pymupdf.Document:
 
 def _line_text(spans: list[dict]) -> str:
     text = "".join(s["text"] for s in spans).replace("\t", " ")
+    text = PRIVATE_GLYPH.sub("•", text)  # Wingdings/Symbol bullets in Word PDFs
     return re.sub(r"\s+", " ", text).strip()
 
 
-def read_page(page: pymupdf.Page) -> Page:
-    out = Page(number=page.number + 1, label=None)
+def read_page(page: pymupdf.Page, layout: Layout = INDESIGN) -> Page:
+    out = Page(number=page.number + 1, label=None, height=page.rect.height)
     footer: list[str] = []
     rows: list[Line] = []
     for block in page.get_text("dict", sort=True)["blocks"]:
@@ -64,16 +70,24 @@ def read_page(page: pymupdf.Page) -> Page:
                 continue
             text = _line_text(spans)
             y0 = line["bbox"][1]
-            if y0 > FOOTER_MIN_Y:
+            if layout.footer_min_y is not None and y0 > layout.footer_min_y:
                 footer.append(text)
                 continue
-            if y0 < HEADER_MAX_Y:
+            if y0 < layout.header_max_y and not (layout.footer_min_y is None and HIGH_HEADING.match(text)):
                 continue
             rows.append(Line(text, tuple(line["bbox"]), spans[0]["size"], bool(spans[0]["flags"] & 16)))
     out.lines = _merge_same_row(rows)
+    if layout.footer_min_y is None and out.lines:
+        # The page number is the lowest line, in the bottom part of the page.
+        last = max(out.lines, key=lambda l: l.bbox[1])
+        if PAGE_NUMBER.match(last.text) and last.bbox[1] > out.height * 0.85:
+            out.lines.remove(last)
+            footer.append(last.text)
     for t in footer:
-        m = PAGE_LABEL.match(t)
-        if m:
+        if layout.label == "number":
+            if m := PAGE_NUMBER.match(t):
+                out.label = m.group(1)
+        elif m := PAGE_LABEL.match(t):
             out.label = re.sub(r"\s*-\s*", " - ", m.group(1).strip())
     for info in page.get_image_info():
         x0, y0, x1, y1 = info["bbox"]

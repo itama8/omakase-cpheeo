@@ -8,6 +8,7 @@ from __future__ import annotations
 
 import json
 import os
+import re
 import sqlite3
 from functools import cached_property
 from pathlib import Path
@@ -37,7 +38,15 @@ SYNONYMS: dict[str, tuple[str, ...]] = {
     "population projection": ("population forecast",),
     "population forecasting": ("population forecast",),
 }
-KIND_LABEL = {"section": "Section", "table": "Table", "figure": "Figure", "chapter": "Chapter", "appendix": "Appendix"}
+# Words that tie a query to one domain. When only one domain is hinted, its results rank
+# higher; nothing is filtered out. A query hinting both domains gets no boost.
+DOMAIN_HINTS: dict[str, tuple[str, ...]] = {
+    "sewerage": ("sewage", "sewer", "sewerage", "manhole", "stp", "sps", "wastewater", "septic", "sludge"),
+    "water": ("water supply", "drinking water", "wtp", "water treatment", "distribution system", "service reservoir",
+              "transmission main", "tube well", "nrw", "water meter", "chlorination"),
+}
+DOMAIN_BOOST = 1.3  # bm25 scores are negative; multiplying makes a match rank higher
+KIND_LABEL = {"section": "Section", "table": "Table", "figure": "Figure", "chapter": "Chapter", "appendix": "Appendix", "annexure": "Annexure"}
 
 
 def public_url() -> str | None:
@@ -103,7 +112,10 @@ class Library:
         if url := clause_url(row["id"]):
             out["url"] = url
         if row["kind"] == "table":
-            out["source"] = "OCR of a table image in the manual"
+            if row["table_source"] == "ocr":
+                out["source"] = "OCR of a table image in the manual"
+            elif row["table_source"] == "text":
+                out["source"] = "table text in the manual PDF"
             out["needs_review"] = bool(row["needs_review"])
             if row["needs_review"]:
                 out["review_notes"] = json.loads(row["review_notes"])
@@ -134,7 +146,7 @@ class Library:
             raise KeyError(f"unknown manual {manual_id!r}; call list_manuals")
         rows = self.con.execute(
             "SELECT id, kind, number, title, label_start FROM units WHERE manual_id = ? "
-            "AND kind IN ('chapter','section','table','appendix') AND (? IS NULL OR chapter = ?) ORDER BY ord",
+            "AND kind IN ('chapter','section','table','appendix','annexure') AND (? IS NULL OR chapter = ?) ORDER BY ord",
             (manual_id, chapter, chapter),
         )
         entries = []
@@ -148,7 +160,7 @@ class Library:
     def get_clause(self, unit_id: str, include_children: bool = False) -> dict:
         row = self.con.execute("SELECT * FROM units WHERE id = ?", (unit_id,)).fetchone()
         if row is None:
-            raise KeyError(f"no unit {unit_id!r}; ids look like SEW-2013-A:3.5 or SEW-2013-A:T3.2")
+            raise KeyError(f"no unit {unit_id!r}; ids look like SEW-2013-A:3.5, SEW-2013-A:T3.2 or WS-2024-A:AN6.1")
         out = self._unit_dict(row, full=True)
         if include_children and row["kind"] in ("section", "chapter"):
             prefix = row["number"] + "."
@@ -159,12 +171,19 @@ class Library:
             out["children"] = [self._unit_dict(k, full=True) for k in kids[:60]]
         tables = self.con.execute(
             "SELECT * FROM units WHERE manual_id = ? AND kind = 'table' AND parent = ? ORDER BY ord",
-            (row["manual_id"], row["number"]),
+            (row["manual_id"], row["id"].split(":", 1)[1]),
         ).fetchall()
-        if tables and row["kind"] == "section":
+        if tables and row["kind"] in ("section", "annexure", "appendix"):
             out["tables"] = [self._unit_dict(t, full=True) for t in tables]
         out["attribution"] = attribution()
         return out
+
+    @staticmethod
+    def hinted_domain(query: str) -> str | None:
+        words = set(re.findall(r"[a-z0-9]+", query.lower()))
+        lowered = query.lower()
+        hit = [d for d, hints in DOMAIN_HINTS.items() if any((h in lowered) if " " in h else (h in words) for h in hints)]
+        return hit[0] if len(hit) == 1 else None
 
     def search(self, query: str, domain: str | None = None, manual_id: str | None = None, kind: str | None = None, limit: int = 8) -> dict:
         limit = max(1, min(limit, 25))
@@ -188,8 +207,11 @@ class Library:
         # 2. Ranked full-text search; title and handle matches weigh more than body text.
         lowered = query.lower()
         extra = [alt for phrase, alts in SYNONYMS.items() if phrase in lowered for alt in alts]
-        words = " ".join(w for w in query.split() + extra if w.lower().strip("?,.") not in STOPWORDS) or query
-        q = fts_query(words)
+        kept = [w for w in query.split() if w.lower().strip("?,.") not in STOPWORDS]
+        words = " ".join(kept + extra) or query
+        # Adjacent content words ("water supply", "sewage generation") and synonym phrases.
+        pairs = [f"{a} {b}" for a, b in zip(kept, kept[1:])]
+        q = fts_query(words, extra)
         if q:
             rows = self.con.execute(
                 "SELECT p.unit_id, bm25(passages, 0, 0, 4.0, 6.0, 1.0) AS score, "
@@ -199,6 +221,8 @@ class Library:
                 "AND (? IS NULL OR u.kind = ?) ORDER BY score LIMIT 200",
                 (q, domain, domain, manual_id, manual_id, kind, kind),
             ).fetchall()
+            if domain is None and manual_id is None and (hint := self.hinted_domain(query)):
+                rows = sorted(rows, key=lambda r: r["score"] * (DOMAIN_BOOST if r["domain"] == hint else 1.0))
             for row in rows:
                 if row["unit_id"] in seen or (not row["text"] and not row["table_markdown"]):
                     continue
@@ -217,8 +241,11 @@ class Library:
         parts = [c["citation"], ""]
         if c.get("table_markdown"):
             parts.append(c["table_markdown"])
-            if c.get("needs_review"):
+            if c.get("needs_review") and c.get("source", "").startswith("OCR"):
                 parts.append("\nNote: this table was read by OCR from an image in the manual. "
+                             "Confirm values against the printed page before use.")
+            elif c.get("needs_review"):
+                parts.append("\nNote: this table's layout could not be read with confidence. "
                              "Confirm values against the printed page before use.")
         if c.get("text"):
             parts.append(c["text"])

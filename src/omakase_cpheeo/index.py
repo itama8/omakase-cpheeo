@@ -22,7 +22,7 @@ CREATE TABLE manuals (
 CREATE TABLE units (
   id TEXT PRIMARY KEY, manual_id TEXT, kind TEXT, number TEXT, title TEXT, chapter TEXT, parent TEXT,
   page_start INTEGER, page_end INTEGER, label_start TEXT, label_end TEXT,
-  text TEXT, table_markdown TEXT, table_cells TEXT, needs_review INTEGER, review_notes TEXT, refs TEXT,
+  text TEXT, table_markdown TEXT, table_cells TEXT, table_source TEXT, needs_review INTEGER, review_notes TEXT, refs TEXT,
   ord INTEGER
 );
 CREATE INDEX units_manual_number ON units(manual_id, number);
@@ -37,7 +37,7 @@ CREATE VIRTUAL TABLE passages USING fts5(
 def handle_tokens(unit: Unit) -> str:
     """Searchable handle for a unit's number: table 3.2 -> "t3x2 table"."""
     n = unit.number.replace(".", "x")
-    prefix = {"table": "t", "figure": "f", "chapter": "ch", "appendix": "a"}.get(unit.kind, "s")
+    prefix = {"table": "t", "figure": "f", "chapter": "ch", "appendix": "a", "annexure": "an"}.get(unit.kind, "s")
     return f"{prefix}{n} {unit.kind}"
 
 
@@ -89,11 +89,11 @@ def build(units: list[Unit], manuals: tuple[Manual, ...] = MANUALS, db_path: Pat
     for i, u in enumerate(units):
         d = asdict(u)
         con.execute(
-            "INSERT INTO units VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)",
+            "INSERT INTO units VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)",
             (
                 u.id, u.manual_id, u.kind, u.number, u.title, u.chapter, u.parent,
                 u.page_start, u.page_end, u.label_start, u.label_end,
-                u.text, u.table_markdown, json.dumps(d["table_cells"]), int(u.needs_review),
+                u.text, u.table_markdown, json.dumps(d["table_cells"]), u.table_source, int(u.needs_review),
                 json.dumps(u.review_notes), json.dumps(u.references), i,
             ),
         )
@@ -112,13 +112,22 @@ def build(units: list[Unit], manuals: tuple[Manual, ...] = MANUALS, db_path: Pat
 
 
 _WORD = re.compile(r"[A-Za-z0-9]+")
-_NUMBERED_REF = re.compile(r"\b(table|tab|fig|figure|section|sec|clause|para|paragraph|chapter|ch)\.?\s*(\d+(?:\.\d+)*[A-Za-z]?)", re.I)
+_NUMBERED_REF = re.compile(r"\b(table|tab|fig|figure|section|sec|clause|para|paragraph|chapter|ch|annexure|annex)\.?\s*(\d+(?:\.\d+)*[A-Za-z]?)", re.I)
 
 
-def fts_query(text: str) -> str:
-    """Turn free text into an FTS5 OR-query of quoted terms (no operator injection)."""
+def fts_query(text: str, phrases: list[str] = ()) -> str:
+    """Turn free text into an FTS5 OR-query of quoted terms (no operator injection).
+
+    Each phrase (e.g. a synonym such as "sewage flow") is added as an exact-phrase term,
+    so units that use the whole phrase outrank units that only share common words.
+    """
     terms = [t for t in _WORD.findall(text.lower()) if len(t) > 1 or t.isdigit()]
-    return " OR ".join(f'"{t}"' for t in dict.fromkeys(terms))
+    quoted = [f'"{t}"' for t in dict.fromkeys(terms)]
+    for ph in dict.fromkeys(phrases):
+        words = _WORD.findall(ph.lower())
+        if len(words) > 1:
+            quoted.append('"' + " ".join(words) + '"')
+    return " OR ".join(quoted)
 
 
 def explicit_refs(text: str) -> list[tuple[str, str]]:
@@ -126,5 +135,6 @@ def explicit_refs(text: str) -> list[tuple[str, str]]:
     out = []
     for kind, number in _NUMBERED_REF.findall(text):
         k = kind.lower()
-        out.append(("table" if k.startswith("tab") else "figure" if k.startswith("fig") else "chapter" if k.startswith("ch") else "section", number))
+        kind = "table" if k.startswith("tab") else "figure" if k.startswith("fig") else "chapter" if k.startswith("ch") else "annexure" if k.startswith("annex") else "section"
+        out.append((kind, number))
     return out

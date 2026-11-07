@@ -2,7 +2,7 @@
 
 Search and cite the CPHEEO manuals (Government of India) over MCP and REST. Every result carries the manual, edition, part, clause or table, and printed page, with Omakase attribution.
 
-Indexed now: Manual on Sewerage and Sewage Treatment Systems, Part A: Engineering (2013). Water supply (2024), storm water (2019) and solid waste (2016) are next. See `docs/plan.md`.
+Indexed now: Manual on Sewerage and Sewage Treatment Systems, Part A: Engineering (2013), and Manual on Water Supply and Treatment Systems, Parts A, B and C (2024). Storm water (2019) and solid waste (2016) are next. See `docs/plan.md`.
 
 ## Requirements
 
@@ -13,7 +13,7 @@ Indexed now: Manual on Sewerage and Sewage Treatment Systems, Part A: Engineerin
 ## Use
 
 ```sh
-uv run omakase-cpheeo ingest                 # parse the manuals, build data/build/cpheeo.sqlite (~90 s per manual)
+uv run omakase-cpheeo ingest                 # parse the manuals, build data/build/cpheeo.sqlite (~5 min for all four)
 uv run omakase-cpheeo search minimum slope for 200 mm sewer
 uv run omakase-cpheeo clause SEW-2013-A:T3.2
 uv run omakase-cpheeo eval -v                # score retrieval against eval/questions.yaml
@@ -36,9 +36,9 @@ REST:
 | `GET /c/{id}` | Readable clause page with Omakase attribution (what result `url`s point to) |
 | `GET /health` | Liveness and loaded manuals |
 
-Unit ids are citation handles: `SEW-2013-A:3.6` (section), `SEW-2013-A:T3.2` (table), `SEW-2013-A:F3.4` (figure).
+Unit ids are citation handles: `SEW-2013-A:3.6` (section), `SEW-2013-A:T3.2` (table), `SEW-2013-A:F3.4` (figure), `WS-2024-A:AN6.1` (annexure), `WS-2024-A:AN6.3-T4` (Table 4 inside Annexure 6.3; annexures number their tables from 1).
 
-Tables marked `needs_review` were read by OCR from an image; `data/build/review.json` lists them with the reason.
+Sewerage tables are images and are read by OCR (`source`: OCR). Water manual tables are text in the PDF and are read from the ruled grid (`source`: table text). Tables marked `needs_review` were OCR'd with doubts, or had no readable table under the caption; `data/build/review.json` lists them with the reason.
 
 ## Settings
 

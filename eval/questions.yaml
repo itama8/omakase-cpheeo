@@ -4,7 +4,7 @@
 # expect: unit ids that answer the question; a hit in the top k passes.
 # answer: the value an engineer expects, for the later answer-quality eval. "TODO" means
 #         the value still needs confirming by Ajinkya or Supreet.
-# Ids were checked against the 2013 Part A text on 2026-11-08.
+# Ids were checked against the 2013 Part A text and the 2024 water manual on 2026-11-08.
 
 questions:
   # ---- Sewer network design (Chapter 3)
@@ -85,7 +85,7 @@ questions:
   - id: P19
     question: How do I work out the economical size of a pumping main?
     expect: [WS-2024-A:AN6.1]
-    answer: "Water manual 2024 Part A, Annexure 6.1, p. 1021"
+    answer: "Water manual 2024 Part A, Annexure 6.1 (stepwise present-worth comparison of pipe sizes), p. 1021"
 
   # ---- Planning
   - id: L20
@@ -94,12 +94,31 @@ questions:
     answer: TODO
   - id: L21
     question: Which population forecasting methods does the manual recommend?
-    expect: [SEW-2013-A:2.6.1, SEW-2013-A:2.6]
+    # The question names no manual, so the water manual's forecast methods also answer it.
+    expect: [SEW-2013-A:2.6.1, SEW-2013-A:2.6, WS-2024-A:AN2.8, WS-2024-A:2.8.2.2]
     answer: "Arithmetic, incremental, geometric increase, graphical methods and others"
   - id: L22
     question: What per capita water supply should be assumed for towns with sewerage?
-    expect: [WS-2024-A:T1.3]
-    answer: "135 lpcd"
+    expect: [WS-2024-A:T2.4, WS-2024-A:2.8.2.5]
+    answer: "Table 2.4: 135 LPCD for towns under 10 lakh, 150 LPCD for metro and mega cities, at the consumer end (add 15% losses). 100 LPCD only for towns not planning sewerage within 5 years (2.8.2.5)."
+
+  # ---- Water supply (2024 manual). Written with the manual open, like the rest.
+  - id: W24
+    question: What design period should be used for water treatment plants and service reservoirs?
+    expect: [WS-2024-A:T2.2]
+    answer: "WTP 15 years (land for 30); service reservoirs 30 years (Table 2.2)"
+  - id: W25
+    question: What rate of water supply should be allowed for a floating population?
+    expect: [WS-2024-A:T2.5]
+    answer: TODO
+  - id: W26
+    question: What Hazen-Williams C value should be used for a ductile iron transmission main?
+    expect: [WS-2024-A:T6.2, WS-2024-A:6.5.1.2]
+    answer: TODO
+  - id: W27
+    question: How is the capacity of a service reservoir worked out?
+    expect: [WS-2024-A:12.4.2, WS-2024-A:AN12.1]
+    answer: TODO
 
   # ---- Citation checks
   - id: C23

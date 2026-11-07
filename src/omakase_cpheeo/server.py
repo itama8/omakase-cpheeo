@@ -15,7 +15,7 @@ from .service import Library, attribution, public_url
 
 INSTRUCTIONS = """\
 Omakase CPHEEO search: the Government of India CPHEEO manuals, searchable with exact citations.
-Corpus: Manual on Sewerage and Sewage Treatment Systems, Part A: Engineering (2013). More manuals are being added; call list_manuals for the current set.
+Corpus: Manual on Sewerage and Sewage Treatment Systems, Part A: Engineering (2013); Manual on Water Supply and Treatment Systems, Parts A, B and C (2024). More manuals are being added; call list_manuals for the current set.
 
 How to use:
 - Call `search` with the engineer's question in plain words. Results are ranked units (sections, tables, figures) with a ready `citation` string.
@@ -45,7 +45,7 @@ def build_server(db: str | None = None) -> MCPServer:
 
         query: the question or terms, e.g. "minimum slope for 200 mm sewer" or "Table 3.13".
         domain: optional filter: sewerage, water, stormwater, solid-waste.
-        manual: optional manual id from list_manuals, e.g. SEW-2013-A.
+        manual: optional manual id from list_manuals, e.g. SEW-2013-A or WS-2024-A.
         kind: optional unit kind: section, table, figure, appendix.
         limit: number of results, 1-25.
         """
@@ -53,7 +53,7 @@ def build_server(db: str | None = None) -> MCPServer:
 
     @mcp.tool(title="Read a clause or table")
     def get_clause(id: str, include_children: bool = False) -> dict:
-        """Return the full text of a section, or the rows of a table, by id (e.g. SEW-2013-A:3.6 or SEW-2013-A:T3.2).
+        """Return the full text of a section, or the rows of a table, by id (e.g. SEW-2013-A:3.6, SEW-2013-A:T3.2 or WS-2024-A:AN6.1).
 
         include_children: also return the numbered subsections of a section.
         """

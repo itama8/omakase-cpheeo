@@ -11,8 +11,8 @@ Latest parseable edition per domain. Source PDFs stay outside the repo (`OMAKASE
 | Id | Manual | Status |
 |---|---|---|
 | `SEW-2013-A` | Sewerage and Sewage Treatment Systems, Part A: Engineering, 2013 (third edition) | Indexed |
-| `WS-2024-A/B/C` | Water Supply and Treatment Systems, Parts A, B, C, March 2024 (fourth edition) | Next |
-| `SWD-2019-A`, `SWD-2019-BC` | Storm Water Drainage, Vol I Part A and Vol II Parts B/C, August 2019 | Planned |
+| `WS-2024-A/B/C` | Water Supply and Treatment Systems, Parts A, B, C, March 2024 (fourth edition) | Indexed |
+| `SWD-2019-A`, `SWD-2019-BC` | Storm Water Drainage, Vol I Part A and Vol II Parts B/C, August 2019 | Next |
 | `MSW-2016` | Municipal Solid Waste Management, Parts 1-3, 2016 | Planned |
 
 Excluded: superseded editions (1999 water supply, the May 2012 sewerage draft), commercial textbooks in the source folder (Metcalf & Eddy, the calculation manual), advisories and SOPs (phase 2).
@@ -23,11 +23,12 @@ The manuals are Government of India copyright: "No portion, part or whole, of th
 
 ## Pipeline
 
-1. `extract.py`: open the PDF with reader annotations removed; read body lines with font and position; drop running headers and footers; read the printed page label ("3 - 105").
+1. `extract.py`: open the PDF with reader annotations removed; read body lines with font and position; drop running headers and footers; read the printed page label ("3 - 105", or a plain "36"). Each manual has a `Layout` in `corpus.py`: the InDesign sewerage manual has fixed header/footer bands; the Word-generated water manual has a page number as its lowest line and mixed page sizes.
 2. `structure.py`: split into units (chapter, numbered section, table, figure caption, appendix) with stable ids such as `SEW-2013-A:3.6` and `SEW-2013-A:T3.2`. Captions accept "Table 3.7" and "Table 3-7".
-3. `tables.py`: 142 of 149 sewerage tables are images. Gridlines are detected and erased, the image is OCR'd once with Tesseract, and words are assigned to grid cells. Cells that break their column's number format (a lost decimal point) are flagged, never rewritten.
+3. `texttables.py` (Word manuals): PyMuPDF finds the ruled grid under a caption and each cell is read by clipping the page; tables that run to the page bottom continue into an uncaptioned table at the top of the next page. Annexure tables ("Table 4") get ids like `WS-2024-A:AN6.3-T4`.
+   `tables.py` (sewerage): 142 of 149 sewerage tables are images. Gridlines are detected and erased, the image is OCR'd once with Tesseract, and words are assigned to grid cells. Cells that break their column's number format (a lost decimal point) are flagged, never rewritten.
 4. `index.py`: SQLite with an FTS5 passage table (porter stemming; title and handle weighted above body). Long sections are split into overlapping passages; `get_clause` still returns the whole unit.
-5. `service.py`: `search`, `get_clause`, `get_toc`, `list_manuals`. Exact references in a query ("Table 3.13", "para 3.25") resolve first. Every result carries a citation string and the Omakase attribution; OCR'd tables carry `needs_review` and notes.
+5. `service.py`: `search`, `get_clause`, `get_toc`, `list_manuals`. Exact references in a query ("Table 3.13", "para 3.25", "Annexure 6.1") resolve first. Synonym expansions are matched as phrases, and when a query names only one domain's terms (sewer, manhole / WTP, service reservoir) that domain's results rank higher; nothing is filtered. Every result carries a citation string and the Omakase attribution; OCR'd tables carry `needs_review` and notes.
 6. `server.py`: one process, MCP over streamable HTTP at `/mcp`, REST at `/v1/search`, `/v1/clause/{id}`, `/v1/manuals`, `/v1/toc/{manual}`, `/health`.
 
 ## Quality
