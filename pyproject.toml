@@ -1,0 +1,19 @@
+[project]
+name = "omakase-cpheeo"
+version = "0.1.0"
+description = "Search and cite CPHEEO manuals over MCP and REST"
+readme = "README.md"
+authors = [
+    { name = "Ajinkya Puranik", email = "a2ajinkya@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "mcp[cli]>=2.3.0",
+    "opencv-python-headless>=5.0.0.93",
+    "pymupdf>=2.1",
+    "pyyaml>=6.0.3",
+]
+
+[build-system]
+requires = ["uv_build>=0.13.4,<0.14.0"]
+build-backend = "uv_build"

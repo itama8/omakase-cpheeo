@@ -1,0 +1,7 @@
+.venv/
+__pycache__/
+*.pyc
+# Built index and extracted manual content: derived from copyrighted manuals, rebuilt by `ingest`.
+data/build/
+# Source PDFs are never committed; point OMAKASE_CPHEEO_SOURCES at the local folder.
+*.pdf
