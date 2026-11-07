@@ -1,0 +1,108 @@
+# Retrieval test set. Questions come from design decisions in real APD sewerage projects
+# (Chunar, Silchar, HSR Layout, Dibrugarh) and reviewer comments on them.
+#
+# expect: unit ids that answer the question; a hit in the top k passes.
+# answer: the value an engineer expects, for the later answer-quality eval. "TODO" means
+#         the value still needs confirming by Ajinkya or Supreet.
+# Ids were checked against the 2013 Part A text on 2026-11-08.
+
+questions:
+  # ---- Sewer network design (Chapter 3)
+  - id: S01
+    question: What peak factor should I use for a contributory population of 50,000?
+    expect: [SEW-2013-A:T3.2]
+    answer: "2.50 (20,001 to 50,000)"
+  - id: S02
+    question: What groundwater infiltration allowance should be added to sewage flow?
+    expect: [SEW-2013-A:3.6, SEW-2013-A:T3.3]
+    answer: "Per Table 3.3, limited to a maximum of 10% of design flow"
+  - id: S03
+    question: What percentage of water supply should be taken as sewage generation?
+    expect: [SEW-2013-A:3.5]
+    answer: "Not 80%: Section 3.5 gives 40% (arid) to 90% (developed) and a design minimum of 100 lpcd. The 80% rule in project reports is not in the 2013 sewerage manual."
+  - id: S04
+    question: What are the minimum and maximum design velocities in gravity sewers?
+    expect: [SEW-2013-A:T3.9, SEW-2013-A:3.15.1, SEW-2013-A:3.15]
+    answer: "0.6 m/s present peak, 0.8 m/s ultimate peak, 3.0 m/s maximum"
+  - id: S05
+    question: What is the minimum slope for a 200 mm sewer?
+    expect: [SEW-2013-A:T3.13]
+    answer: "0.40% (1 in 250)"
+  - id: S06
+    question: What Manning's n should be used for RCC spun pipes?
+    expect: [SEW-2013-A:T3.11]
+    answer: "0.011"
+  - id: S07
+    question: What is the minimum diameter of a sewer, and when is 150 mm allowed?
+    expect: [SEW-2013-A:3.14]
+    answer: "200 mm; 150 mm for towns under 1 lakh population and hilly areas"
+  - id: S08
+    question: At what depth of flow should sewers be designed to run at ultimate peak flow (d/D)?
+    expect: [SEW-2013-A:3.15.6, SEW-2013-A:3.15.5, SEW-2013-A:T3.12]
+    answer: TODO
+  - id: S09
+    question: What is the minimum earth cover over a sewer?
+    expect: [SEW-2013-A:3.70, SEW-2013-A:3.20.3]
+    answer: "90 cm above the crown (3.70); 1 m at the starting point (3.20.3)"
+  - id: S10
+    question: What manhole diameter is needed for a sewer 4 m deep?
+    expect: [SEW-2013-A:T3.15]
+    answer: TODO
+  - id: S11
+    question: What is the maximum spacing between manholes on a 300 mm sewer?
+    expect: [SEW-2013-A:T3.31, SEW-2013-A:3.71, SEW-2013-A:T3.30]
+    answer: "30 m where house sewers connect; Table 3.31 otherwise"
+  - id: S12
+    question: Above what invert difference is a drop manhole required?
+    expect: [SEW-2013-A:3.25, SEW-2013-A:3.17.1]
+    answer: "600 mm"
+  - id: S13
+    question: What is the minimum clear opening of a manhole cover?
+    expect: [SEW-2013-A:3.34]
+    answer: TODO
+  - id: S14
+    question: Which type of bedding should be used for sewer pipes at a given depth and diameter?
+    expect: [SEW-2013-A:T3.23, SEW-2013-A:T3.22]
+    answer: TODO
+  - id: S15
+    question: Which trenchless technology suits a given pipe size and soil?
+    expect: [SEW-2013-A:T3.29]
+    answer: TODO
+
+  # ---- Pumping stations and rising mains
+  - id: P16
+    question: What detention time should be used for the wet well of a sewage pumping station?
+    expect: [SEW-2013-A:4.6.6, SEW-2013-A:T4.1]
+    answer: TODO
+  - id: P17
+    question: What surface overflow rate and detention time apply to a grit chamber?
+    expect: [SEW-2013-A:5.6.2.7.1.2, SEW-2013-A:5.6.2.7.1, SEW-2013-A:4.2.4, SEW-2013-A:A5.7]
+    answer: TODO
+  - id: P18
+    question: How many working and standby pumps should a sewage pumping station have?
+    expect: [SEW-2013-A:4.5.4]
+    answer: TODO
+  - id: P19
+    question: How do I work out the economical size of a pumping main?
+    expect: [WS-2024-A:AN6.1]
+    answer: "Water manual 2024 Part A, Annexure 6.1, p. 1021"
+
+  # ---- Planning
+  - id: L20
+    question: What design periods apply to sewers, pumping machinery and treatment plants?
+    expect: [SEW-2013-A:T2.1, SEW-2013-A:2.5]
+    answer: TODO
+  - id: L21
+    question: Which population forecasting methods does the manual recommend?
+    expect: [SEW-2013-A:2.6.1, SEW-2013-A:2.6]
+    answer: "Arithmetic, incremental, geometric increase, graphical methods and others"
+  - id: L22
+    question: What per capita water supply should be assumed for towns with sewerage?
+    expect: [WS-2024-A:T1.3]
+    answer: "135 lpcd"
+
+  # ---- Citation checks
+  - id: C23
+    question: Is Table 3.7 of the CPHEEO 2013 manual the table of minimum sewer slopes?
+    expect: [SEW-2013-A:T3.7, SEW-2013-A:T3.13]
+    answer: "No: Table 3.7 is duration vs intensity of storms; minimum slopes are Table 3.13"

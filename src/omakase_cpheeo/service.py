@@ -1,0 +1,199 @@
+"""Query operations shared by the MCP tools and the REST API.
+
+Every result carries a ready-to-paste citation and the Omakase attribution. Results
+from OCR'd tables say so, and say when a cell should be checked against the page.
+"""
+
+from __future__ import annotations
+
+import json
+import os
+import sqlite3
+from functools import cached_property
+from pathlib import Path
+
+from .index import DEFAULT_DB, explicit_refs, fts_query
+
+BRAND = "Omakase"
+STOPWORDS = frozenset(
+    "a an and are as at be by can do does for from how i in is it me of on or per should "
+    "that the this to use used using value values what when where which with".split()
+)
+# Engineers' wording mapped to the manuals' wording. Each phrase found in a query adds
+# the alternatives as extra search terms; nothing is removed from the query.
+SYNONYMS: dict[str, tuple[str, ...]] = {
+    "sewage generation": ("sewage flow",),
+    "wastewater generation": ("sewage flow",),
+    "water supply": ("water consumption",),
+    "lpcd": ("litres per capita per day",),
+    "litres per capita per day": ("lpcd",),
+    "d/d": ("depth of flow",),
+    "self cleaning": ("self cleansing",),
+    "rising main": ("pumping main", "force main"),
+    "pumping main": ("rising main",),
+    "stp": ("sewage treatment plant",),
+    "ips": ("intermediate pumping station", "pumping station"),
+    "sps": ("sewage pumping station",),
+    "population projection": ("population forecast",),
+    "population forecasting": ("population forecast",),
+}
+KIND_LABEL = {"section": "Section", "table": "Table", "figure": "Figure", "chapter": "Chapter", "appendix": "Appendix"}
+
+
+def attribution() -> dict:
+    out = {"cited_by": BRAND, "note": "Free CPHEEO search by Omakase. Verify against the official manual before use in design."}
+    if url := os.environ.get("OMAKASE_CPHEEO_BRAND_URL"):
+        out["url"] = url
+    return out
+
+
+class Library:
+    def __init__(self, db_path: Path | str | None = None):
+        self.db_path = Path(db_path or os.environ.get("OMAKASE_CPHEEO_DB", DEFAULT_DB))
+        if not self.db_path.exists():
+            raise FileNotFoundError(f"index not found at {self.db_path}; run `omakase-cpheeo ingest` first")
+
+    @cached_property
+    def con(self) -> sqlite3.Connection:
+        con = sqlite3.connect(f"file:{self.db_path}?mode=ro", uri=True, check_same_thread=False)
+        con.row_factory = sqlite3.Row
+        return con
+
+    @cached_property
+    def manuals(self) -> dict[str, dict]:
+        return {r["id"]: dict(r) for r in self.con.execute("SELECT * FROM manuals")}
+
+    # ---- formatting -------------------------------------------------------------
+
+    def citation(self, row: sqlite3.Row) -> str:
+        m = self.manuals[row["manual_id"]]
+        what = f"{KIND_LABEL[row['kind']]} {row['number']}"
+        if row["title"]:
+            what += f" ({row['title']})" if row["kind"] in ("table", "figure") else f" {row['title'].title() if row['title'].isupper() else row['title']}"
+        pages = row["label_start"] or f"PDF p. {row['page_start']}"
+        if row["label_end"] and row["label_end"] != row["label_start"]:
+            pages = f"{pages} to {row['label_end']}"
+        return f"{m['citation_title']}, {what}, p. {pages}"
+
+    def _unit_dict(self, row: sqlite3.Row, *, full: bool) -> dict:
+        m = self.manuals[row["manual_id"]]
+        out = {
+            "id": row["id"],
+            "kind": row["kind"],
+            "number": row["number"],
+            "title": row["title"],
+            "manual": {k: m[k] for k in ("id", "domain", "title", "part", "edition", "year")},
+            "page_label": row["label_start"],
+            "page_label_end": row["label_end"],
+            "pdf_page": row["page_start"],
+            "citation": self.citation(row),
+            "parent": f"{row['manual_id']}:{row['parent']}" if row["parent"] else None,
+        }
+        if row["kind"] == "table":
+            out["source"] = "OCR of a table image in the manual"
+            out["needs_review"] = bool(row["needs_review"])
+            if row["needs_review"]:
+                out["review_notes"] = json.loads(row["review_notes"])
+        if full:
+            out["text"] = row["text"]
+            if row["table_markdown"]:
+                out["table_markdown"] = row["table_markdown"]
+                out["table_cells"] = json.loads(row["table_cells"])
+            refs = json.loads(row["refs"])
+            if refs:
+                out["referenced_tables"] = [f"{row['manual_id']}:{r}" for r in refs]
+        return out
+
+    # ---- operations ---------------------------------------------------------------
+
+    def list_manuals(self) -> dict:
+        counts = {
+            (r["manual_id"], r["kind"]): r["n"]
+            for r in self.con.execute("SELECT manual_id, kind, count(*) n FROM units GROUP BY 1, 2")
+        }
+        manuals = []
+        for mid, m in self.manuals.items():
+            manuals.append({**m, "units": {k: n for (i, k), n in counts.items() if i == mid}})
+        return {"manuals": manuals, "attribution": attribution()}
+
+    def get_toc(self, manual_id: str, chapter: str | None = None, max_depth: int = 2) -> dict:
+        if manual_id not in self.manuals:
+            raise KeyError(f"unknown manual {manual_id!r}; call list_manuals")
+        rows = self.con.execute(
+            "SELECT id, kind, number, title, label_start FROM units WHERE manual_id = ? "
+            "AND kind IN ('chapter','section','table','appendix') AND (? IS NULL OR chapter = ?) ORDER BY ord",
+            (manual_id, chapter, chapter),
+        )
+        entries = []
+        for r in rows:
+            depth = r["number"].count(".") if r["kind"] == "section" else 0  # "3.5" is depth 1
+            if r["kind"] == "section" and depth > max_depth:
+                continue
+            entries.append({"id": r["id"], "kind": r["kind"], "number": r["number"], "title": r["title"], "page_label": r["label_start"]})
+        return {"manual": manual_id, "entries": entries, "attribution": attribution()}
+
+    def get_clause(self, unit_id: str, include_children: bool = False) -> dict:
+        row = self.con.execute("SELECT * FROM units WHERE id = ?", (unit_id,)).fetchone()
+        if row is None:
+            raise KeyError(f"no unit {unit_id!r}; ids look like SEW-2013-A:3.5 or SEW-2013-A:T3.2")
+        out = self._unit_dict(row, full=True)
+        if include_children and row["kind"] in ("section", "chapter"):
+            prefix = row["number"] + "."
+            kids = self.con.execute(
+                "SELECT * FROM units WHERE manual_id = ? AND kind = 'section' AND number LIKE ? ORDER BY ord",
+                (row["manual_id"], prefix + "%"),
+            ).fetchall()
+            out["children"] = [self._unit_dict(k, full=True) for k in kids[:60]]
+        tables = self.con.execute(
+            "SELECT * FROM units WHERE manual_id = ? AND kind = 'table' AND parent = ? ORDER BY ord",
+            (row["manual_id"], row["number"]),
+        ).fetchall()
+        if tables and row["kind"] == "section":
+            out["tables"] = [self._unit_dict(t, full=True) for t in tables]
+        out["attribution"] = attribution()
+        return out
+
+    def search(self, query: str, domain: str | None = None, manual_id: str | None = None, kind: str | None = None, limit: int = 8) -> dict:
+        limit = max(1, min(limit, 25))
+        results: list[dict] = []
+        seen: set[str] = set()
+
+        # 1. Exact references such as "Table 3.13" or "clause 3.6" resolve directly.
+        for ref_kind, number in explicit_refs(query):
+            for row in self.con.execute(
+                "SELECT u.* FROM units u JOIN manuals m ON m.id = u.manual_id WHERE u.kind = ? AND u.number = ? "
+                "AND (? IS NULL OR m.domain = ?) AND (? IS NULL OR u.manual_id = ?) ORDER BY u.ord",
+                (ref_kind, number, domain, domain, manual_id, manual_id),
+            ):
+                if row["id"] not in seen:
+                    seen.add(row["id"])
+                    hit = self._unit_dict(row, full=False)
+                    hit["match"] = "exact reference"
+                    hit["snippet"] = (row["table_markdown"] or row["text"])[:600]
+                    results.append(hit)
+
+        # 2. Ranked full-text search; title and handle matches weigh more than body text.
+        lowered = query.lower()
+        extra = [alt for phrase, alts in SYNONYMS.items() if phrase in lowered for alt in alts]
+        words = " ".join(w for w in query.split() + extra if w.lower().strip("?,.") not in STOPWORDS) or query
+        q = fts_query(words)
+        if q:
+            rows = self.con.execute(
+                "SELECT p.unit_id, bm25(passages, 0, 0, 4.0, 6.0, 1.0) AS score, "
+                "snippet(passages, 4, '«', '»', ' … ', 40) AS snip, u.*, m.domain "
+                "FROM passages p JOIN units u ON u.id = p.unit_id JOIN manuals m ON m.id = u.manual_id "
+                "WHERE passages MATCH ? AND (? IS NULL OR m.domain = ?) AND (? IS NULL OR u.manual_id = ?) "
+                "AND (? IS NULL OR u.kind = ?) ORDER BY score LIMIT 200",
+                (q, domain, domain, manual_id, manual_id, kind, kind),
+            ).fetchall()
+            for row in rows:
+                if row["unit_id"] in seen or (not row["text"] and not row["table_markdown"]):
+                    continue
+                seen.add(row["unit_id"])
+                hit = self._unit_dict(row, full=False)
+                hit["match"] = "text"
+                hit["snippet"] = row["snip"]
+                results.append(hit)
+                if len(results) >= limit:
+                    break
+        return {"query": query, "results": results[:limit], "attribution": attribution()}
