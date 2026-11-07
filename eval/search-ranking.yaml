@@ -1,0 +1,41 @@
+# Regression queries prompted by ChatGPT feedback, 2026-11-08.
+# These are paraphrases of the reported problem; the exact tool query was not supplied.
+# Run with -k 1: a direct criterion must precede nearby slope/velocity results.
+# Keep the original APD question set unchanged as the broader regression check.
+questions:
+  - id: D01
+    question: minimum sewer diameter
+    expect: [SEW-2013-A:3.14]
+  - id: D02
+    question: minimum diameter for sanitary sewers
+    expect: [SEW-2013-A:3.14]
+  - id: D03
+    question: minimum sanitary sewer diameter
+    expect: [SEW-2013-A:3.14]
+  - id: D04
+    question: minimum gravity sewer diameter
+    expect: [SEW-2013-A:3.14]
+  - id: D05
+    question: minimum pipe diameter for gravity sewer
+    expect: [SEW-2013-A:3.14]
+  - id: D06
+    question: minimum diameter sewer design criteria
+    expect: [SEW-2013-A:3.14]
+  - id: D07
+    question: minimum size of sanitary sewer
+    expect: [SEW-2013-A:3.14]
+  - id: D08
+    question: minimum sewer size
+    expect: [SEW-2013-A:3.14]
+  - id: R09
+    question: minimum slopes of sanitary sewers
+    expect: [SEW-2013-A:T3.13]
+  - id: R10
+    question: design velocities in gravity sewers
+    expect: [SEW-2013-A:T3.9]
+  - id: R11
+    question: What design period should be used for water treatment plants and service reservoirs?
+    expect: [WS-2024-A:T2.2]
+  - id: R12
+    question: Table 3.13 minimum sanitary sewer diameter
+    expect: [SEW-2013-A:T3.13]

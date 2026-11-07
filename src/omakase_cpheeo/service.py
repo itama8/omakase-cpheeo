@@ -10,6 +10,7 @@ import json
 import os
 import re
 import sqlite3
+from collections import Counter
 from functools import cached_property
 from pathlib import Path
 
@@ -36,6 +37,8 @@ SYNONYMS: dict[str, tuple[str, ...]] = {
     "litres per capita per day": ("lpcd",),
     "d/d": ("depth of flow",),
     "manning": ("coefficient of roughness",),
+    "minimum diameter": ("minimum size",),
+    "minimum size": ("minimum diameter",),
     "self cleaning": ("self cleansing",),
     "rising main": ("pumping main", "force main"),
     "pumping main": ("rising main",),
@@ -288,8 +291,11 @@ class Library:
                     results.append(hit)
 
         # 2. Ranked full-text search; title and handle matches weigh more than body text.
-        lowered = query.lower()
-        extra = [alt for phrase, alts in SYNONYMS.items() if phrase in lowered for alt in alts]
+        # Match the words of a concept even with qualifiers between them, e.g.
+        # "minimum sanitary sewer diameter" -> "minimum size" in the manual heading.
+        query_words = Counter(re.findall(r"[a-z0-9]+", query.lower()))
+        extra = [alt for phrase, alts in SYNONYMS.items()
+                 if Counter(re.findall(r"[a-z0-9]+", phrase)) <= query_words for alt in alts]
         kept = [w for w in query.split() if w.lower().strip("?,.") not in STOPWORDS]
         words = " ".join(kept + extra) or query
         q = fts_query(words, extra)

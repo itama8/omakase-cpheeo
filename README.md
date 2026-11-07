@@ -16,6 +16,7 @@ uv run omakase-cpheeo ingest                 # parse the manuals, build data/bui
 uv run omakase-cpheeo search minimum slope for 200 mm sewer
 uv run omakase-cpheeo clause SEW-2013-A:T3.2
 uv run omakase-cpheeo eval -v                # score retrieval against eval/questions.yaml
+uv run omakase-cpheeo eval --questions eval/search-ranking.yaml -k 1 -v  # diameter ranking regressions
 uv run omakase-cpheeo serve --port 8765      # MCP at /mcp, REST at /v1/*
 uv run python scripts/mcp_smoke.py           # exercise every MCP tool against a running server
 ```

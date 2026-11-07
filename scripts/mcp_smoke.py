@@ -46,6 +46,11 @@ async def main(url: str) -> int:
         assert top["citation"].endswith(BRAND_SUFFIX) and top["citation_plain"] + BRAND_SUFFIX == top["citation"]
         assert top["source_name"] == "Omakase CPHEEO"
 
+        for query in ("minimum sanitary sewer diameter", "minimum pipe diameter for gravity sewer"):
+            diameter = payload(await client.call_tool("search", {"query": query, "limit": 3}))
+            assert diameter["results"][0]["id"] == "SEW-2013-A:3.14", diameter["results"]
+        print("diameter ranking: direct criterion first for sanitary and gravity sewer queries")
+
         clause = payload(await client.call_tool("get_clause", {"id": "SEW-2013-A:3.6"}))
         print("clause:", clause["citation"], "| tables:", [t["id"] for t in clause.get("tables", [])])
         assert clause["text"].startswith("Estimate of flow")
