@@ -2,7 +2,7 @@
 
 Search and cite the CPHEEO manuals (Government of India) over MCP and REST. Every result carries the manual, edition, part, clause or table, and printed page, with Omakase attribution.
 
-Indexed now: Manual on Sewerage and Sewage Treatment Systems, Part A: Engineering (2013), and Manual on Water Supply and Treatment Systems, Parts A, B and C (2024). Storm water (2019) and solid waste (2016) are next. See `docs/plan.md`.
+Indexed now: Manual on Sewerage and Sewage Treatment Systems, Part A: Engineering (2013), including all 51 source-listed appendices/sheets, and Manual on Water Supply and Treatment Systems, Parts A, B and C (2024). Storm water (2019) and solid waste (2016) are next. See `docs/plan.md`.
 
 ## Requirements
 
@@ -12,12 +12,14 @@ Indexed now: Manual on Sewerage and Sewage Treatment Systems, Part A: Engineerin
 ## Use
 
 ```sh
-uv run omakase-cpheeo ingest                 # parse the manuals, build data/build/cpheeo.sqlite (~5 min for all four)
+uv run omakase-cpheeo ingest                 # parse the manuals, build data/build/cpheeo.sqlite (all four source manuals)
 uv run omakase-cpheeo search minimum slope for 200 mm sewer
 uv run omakase-cpheeo clause SEW-2013-A:T3.2
 uv run omakase-cpheeo eval -v                # score retrieval against eval/questions.yaml
 uv run omakase-cpheeo eval --questions eval/search-ranking.yaml -k 1 -v  # diameter ranking regressions
 uv run omakase-cpheeo serve --port 8765      # MCP at /mcp, REST at /v1/*
+uv run omakase-cpheeo eval --questions eval/sewage-appendices.yaml -v  # appendix retrieval
+uv run python scripts/check_appendix_coverage.py  # compare all appendix pages with source contents
 uv run python scripts/mcp_smoke.py           # exercise every MCP tool against a running server
 ```
 
@@ -38,6 +40,10 @@ REST:
 | `GET /health` | Liveness and loaded manuals |
 
 Unit ids are citation handles: `SEW-2013-A:3.6` (section), `SEW-2013-A:T3.2` (table), `SEW-2013-A:F3.4` (figure), `WS-2024-A:AN6.1` (annexure), `WS-2024-A:AN6.3-T4` (Table 4 inside Annexure 6.3; annexures number their tables from 1).
+
+Sewage Parts B (Operation and Maintenance) and C (Management) are deferred until their published source PDFs are available locally.
+
+The sewage appendices have separate handles such as `SEW-2013-A:A3.2B` (lettered sheet), `SEW-2013-A:TA7.3-1` (appendix table) and `SEW-2013-A:FA3.2A-1` (appendix figure). The old grouped handles (`A3.2`, `A3.4`, `A3.5`) still return both sheets. Appendix titles and page boundaries come from the manual's native-text contents, and all 185 appendix pages are available as full-page images. Lookup accepts printed references such as "Appendix A 3.2 B" or "Table A 7.3- 1".
 
 Scanned tables are returned as source images, with no OCR transcription. Figures retain the full printed page so legends and vector drawings stay visible. Other embedded pictures are available on their containing clause. `get_clause` and `fetch` attach images as MCP image blocks; REST returns image references and the clause pages display them. Each image records its physical PDF page and printed label when available. Assistants should read the image, cite the returned reference, and say when a value is unclear; image delivery cannot guarantee a model reads every value correctly.
 

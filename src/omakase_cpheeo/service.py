@@ -70,6 +70,11 @@ def clause_url(unit_id: str) -> str | None:
     return f"{base}/c/{unit_id}" if base else None
 
 
+def canonical_unit_id(unit_id: str) -> str:
+    """Keep the previously published A.1.1 handle working after appendix normalization."""
+    return re.sub(r"(:[A-Z])\.(?=\d)", r"\1", unit_id)
+
+
 IMAGE_NOTE = ("This {kind} includes source images from the printed manual. Read values directly from the images "
               "and cite the returned reference. No OCR transcription is supplied. If a value is unclear, say so.")
 
@@ -187,6 +192,7 @@ class Library:
     # ---- images -------------------------------------------------------------------
 
     def image_refs(self, unit_id: str) -> list[dict]:
+        unit_id = canonical_unit_id(unit_id)
         rows = self.con.execute(
             "SELECT seq, pdf_page, page_label, bbox, width, height, mime FROM images WHERE unit_id = ? ORDER BY seq", (unit_id,)
         ).fetchall()
@@ -200,6 +206,7 @@ class Library:
         return out
 
     def image(self, unit_id: str, seq: int) -> tuple[str, bytes]:
+        unit_id = canonical_unit_id(unit_id)
         r = self.con.execute("SELECT mime, data FROM images WHERE unit_id = ? AND seq = ?", (unit_id, seq)).fetchone()
         if r is None:
             raise KeyError(f"no image {seq} for {unit_id!r}")
@@ -244,6 +251,7 @@ class Library:
         return {"manual": manual_id, "entries": entries, "attribution": attribution()}
 
     def get_clause(self, unit_id: str, include_children: bool = False) -> dict:
+        unit_id = canonical_unit_id(unit_id)
         row = self.con.execute("SELECT * FROM units WHERE id = ?", (unit_id,)).fetchone()
         if row is None:
             raise KeyError(f"no unit {unit_id!r}; ids look like SEW-2013-A:3.5, SEW-2013-A:T3.2 or WS-2024-A:AN6.1")
@@ -279,9 +287,9 @@ class Library:
         # 1. Exact references such as "Table 3.13" or "clause 3.6" resolve directly.
         for ref_kind, number in explicit_refs(query):
             for row in self.con.execute(
-                "SELECT u.* FROM units u JOIN manuals m ON m.id = u.manual_id WHERE u.kind = ? AND u.number = ? "
+                "SELECT u.* FROM units u JOIN manuals m ON m.id = u.manual_id WHERE u.kind = ? AND (u.number = ? OR (? = 'appendix' AND replace(u.number, '-', '.') = replace(?, '-', '.'))) "
                 "AND (? IS NULL OR m.domain = ?) AND (? IS NULL OR u.manual_id = ?) ORDER BY u.ord",
-                (ref_kind, number, domain, domain, manual_id, manual_id),
+                (ref_kind, number, ref_kind, number, domain, domain, manual_id, manual_id),
             ):
                 if row["id"] not in seen:
                     seen.add(row["id"])

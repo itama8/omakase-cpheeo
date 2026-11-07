@@ -54,7 +54,7 @@ class ImageDelivery(unittest.TestCase):
             pix.clear_with(150)
             for top in (120, 480):
                 pg.insert_image((72, top, 272, top + 100), pixmap=pix)
-            manual = replace(MANUALS[0], skip_pages=(), layout=Layout(header_max_y=0, footer_min_y=None))
+            manual = replace(MANUALS[0], skip_pages=(), appendix_toc_pages=(), layout=Layout(header_max_y=0, footer_min_y=None))
             units = {u.id: u for u in build_units(manual, doc)}
             self.assertLess(units['SEW-2013-A:1.1'].images[0]['bbox'][1], 400)
             self.assertGreater(units['SEW-2013-A:1.2'].images[0]['bbox'][1], 400)

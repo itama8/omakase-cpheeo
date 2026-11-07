@@ -42,6 +42,9 @@ class Manual:
     # Physical PDF pages to skip (1-based, inclusive), e.g. image-only front matter.
     skip_pages: tuple[tuple[int, int], ...] = ()
     layout: Layout = INDESIGN
+    # Native-text appendix contents pages (physical PDF pages, not printed labels).
+    appendix_toc_pages: tuple[int, ...] = ()
+    appendix_page_images: bool = False
 
     @property
     def citation_title(self) -> str:
@@ -63,7 +66,9 @@ MANUALS: tuple[Manual, ...] = (
         edition="Third edition",
         year=2013,
         file="Seweage CPHEEO.pdf",
-        skip_pages=((1, 86),),
+        skip_pages=((1, 86), (766, 771)),
+        appendix_page_images=True,
+        appendix_toc_pages=(770, 771),
     ),
     Manual(
         id="WS-2024-A",

@@ -97,6 +97,20 @@ async def main(url: str) -> int:
         print("text table:", t22["citation"], "| source:", t22.get("source"))
         assert t22.get("source") == "table text in the manual PDF" and "Service reservoirs" in t22["table_markdown"]
 
+        appendix_search = payload(await client.call_tool("search", {"query": "Appendix A 3.2 B", "limit": 3}))
+        assert appendix_search["results"][0]["id"] == "SEW-2013-A:A3.2B"
+        appendix_result = await client.call_tool("get_clause", {"id": "SEW-2013-A:A7.1"})
+        appendix = payload(appendix_result)
+        assert appendix["images"][0]["page_label"] == "A - 144"
+        assert appendix["images"][0]["pdf_page"] == 915
+        assert any(c.type == "image" for c in appendix_result.content)
+        appendix_table = payload(await client.call_tool("search", {"query": "Table A 7.3- 1", "limit": 3}))
+        assert appendix_table["results"][0]["id"] == "SEW-2013-A:TA7.3-1"
+        with await asyncio.to_thread(urllib.request.urlopen, base + "/v1/clause/SEW-2013-A:A.1.1") as legacy:
+            old_clause = json.load(legacy)
+            assert old_clause["id"] == "SEW-2013-A:A1.1" and len(old_clause["images"]) == 15
+        print("appendices: lettered sheet lookup, scanned source image, table reference and legacy link verified")
+
         bad = await client.call_tool("get_clause", {"id": "SEW-2013-A:99.9"})
         print("unknown id is_error:", bad.is_error)
         assert bad.is_error

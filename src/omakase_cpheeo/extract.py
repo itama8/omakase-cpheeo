@@ -18,7 +18,7 @@ PAGE_LABEL = re.compile(r"^\s*([A-Z]?\d*\s*-\s*\d+)\s*$")
 PAGE_NUMBER = re.compile(r"^\s*(\d{1,4})\s*$")
 # On Word pages the body can start inside the usual header band (landscape pages);
 # running headers never look like these.
-HIGH_HEADING = re.compile(r"^(?:Annexure|Table|Figure)\s+\d|^\d{1,2}(?:\.\d{1,2})+\s+[A-Z]")
+HIGH_HEADING = re.compile(r"^(?:Annexure|Appendix|APPENDIX|Table|Figure)\s+[A-Z]?\s*\d|^\d{1,2}(?:\.\d{1,2})+\s+[A-Z]")
 PRIVATE_GLYPH = re.compile("[\uf000-\uf0ff]")
 MIN_IMAGE_W, MIN_IMAGE_H = 150.0, 40.0
 
@@ -73,7 +73,7 @@ def read_page(page: pymupdf.Page, layout: Layout = INDESIGN) -> Page:
             if layout.footer_min_y is not None and y0 > layout.footer_min_y:
                 footer.append(text)
                 continue
-            if y0 < layout.header_max_y and not (layout.footer_min_y is None and HIGH_HEADING.match(text)):
+            if y0 < layout.header_max_y and not HIGH_HEADING.match(text):
                 continue
             rows.append(Line(text, tuple(line["bbox"]), spans[0]["size"], bool(spans[0]["flags"] & 16)))
     out.lines = _merge_same_row(rows)
@@ -89,6 +89,13 @@ def read_page(page: pymupdf.Page, layout: Layout = INDESIGN) -> Page:
                 out.label = m.group(1)
         elif m := PAGE_LABEL.match(t):
             out.label = re.sub(r"\s*-\s*", " - ", m.group(1).strip())
+    if out.label is None and layout.label == "chapter-page":
+        # Some appendix sheets are printed sideways: their footer is on the right edge.
+        for block in page.get_text("dict")["blocks"]:
+            for line in block.get("lines", []):
+                text = _line_text(line["spans"])
+                if (line["bbox"][0] > page.rect.width * 0.85 or line["bbox"][1] > out.height * 0.85) and (m := PAGE_LABEL.match(text)):
+                    out.label = re.sub(r"\s*-\s*", " - ", m.group(1).strip())
     for info in page.get_image_info():
         x0, y0, x1, y1 = info["bbox"]
         if x1 - x0 >= MIN_IMAGE_W and y1 - y0 >= MIN_IMAGE_H:

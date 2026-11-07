@@ -79,6 +79,7 @@ def build(units: list[Unit], manuals: tuple[Manual, ...] = MANUALS, db_path: Pat
             (m.id, m.domain, m.title, m.part, m.edition, m.year, m.citation_title),
         )
     by_id = {u.id: u for u in units}
+    appendix_groups = {f"{u.manual_id}:{u.parent}" for u in units if u.kind == "appendix" and u.parent}
 
     def breadcrumb(u: Unit) -> str:
         """Parent headings, so "2.6.1 General Considerations" is found as population forecast."""
@@ -107,6 +108,10 @@ def build(units: list[Unit], manuals: tuple[Manual, ...] = MANUALS, db_path: Pat
                 "INSERT INTO images VALUES (?,?,?,?,?,?,?,?,?)",
                 (u.id, seq, im["pdf_page"], im["page_label"], json.dumps(im["bbox"]), im["width"], im["height"], im["mime"], im["data"]),
             )
+        # Legacy group handles remain fetchable, but keyword search should not return
+        # the same worked example twice as both a group and its actual A/B sheet.
+        if u.id in appendix_groups:
+            continue
         context = breadcrumb(u)
         for seq, text in enumerate(passages_of(u)):
             con.execute(
@@ -122,7 +127,10 @@ def build(units: list[Unit], manuals: tuple[Manual, ...] = MANUALS, db_path: Pat
 
 
 _WORD = re.compile(r"[A-Za-z0-9]+")
-_NUMBERED_REF = re.compile(r"\b(table|tab|fig|figure|section|sec|clause|para|paragraph|chapter|ch|annexure|annex)\.?\s*(\d+(?:\.\d+)*[A-Za-z]?)", re.I)
+_NUMBERED_REF = re.compile(
+    r"\b(table|tab|fig|figure|section|sec|clause|para|paragraph|chapter|ch|appendix|app|annexure|annex)\.?\s*"
+    r"([A-Z]\s*[.-]?\s*\d+(?:[.-]\s*\d+)*(?:\s*[A-Z]\b)?(?:[.-]\s*\d+)*|AA\b|A\b|\d+(?:[.-]\d+)*[A-Za-z]?)", re.I,
+)
 
 
 def fts_query(text: str, phrases: list[str] = ()) -> str:
@@ -145,6 +153,10 @@ def explicit_refs(text: str) -> list[tuple[str, str]]:
     out = []
     for kind, number in _NUMBERED_REF.findall(text):
         k = kind.lower()
-        kind = "table" if k.startswith("tab") else "figure" if k.startswith("fig") else "chapter" if k.startswith("ch") else "annexure" if k.startswith("annex") else "section"
+        kind = "table" if k.startswith("tab") else "figure" if k.startswith("fig") else "chapter" if k.startswith("ch") else "annexure" if k.startswith("annex") else "appendix" if k.startswith("app") else "section"
+        number = re.sub(r"\s+", "", number).upper()
+        number = re.sub(r"^([A-Z])\.(?=\d)", r"\1", number)
+        if number[0].isdigit():
+            number = number.replace("-", ".")
         out.append((kind, number))
     return out

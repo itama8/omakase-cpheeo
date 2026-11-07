@@ -19,7 +19,7 @@ from .texttables import TextTable, find_text_tables, rows_markdown
 
 SECTION = re.compile(r"^(\d{1,2}(?:\.\d{1,2}){1,6})\.?(?:\s+(.*))?$")
 CHAPTER = re.compile(r"^CHAPTER\s+(\d+)\s*[:.-]?\s*(.*)$", re.I)
-APPENDIX = re.compile(r"^APPENDIX\s+(A\s*[\d.]+[-\d.]*)\s*(.*)$", re.I)
+APPENDIX = re.compile(r"^APPENDIX[\s.:-]+([A-Z]{1,2}(?:\s*\.?\s*\d+(?:[.-]\d+)*(?:\s*[A-Z](?=\s*$))?)?)(?=\s|[:.-]|$)\s*[:.-]?\s*(.*)$", re.I)
 ANNEXURE = re.compile(r"^Annexure\s+(\d+\.\d+)\s*[:.-]\s*(\S.*)$", re.I)
 LEADER_DOTS = re.compile(r"\.{5,}|…{2,}")  # table-of-contents leader dots
 # Captions start with a capitalised title; "Table 3.7 gives the analysis..." is prose.
@@ -30,6 +30,17 @@ COLON_CAPTION = re.compile(r"^(?:Table|Fig(?:ure|\.))\s*\d+(?:[.-]\d+)?[A-Za-z]?
 # Inside an annexure, tables and figures are numbered from 1 again: "Table 4: Node Data".
 ANNEX_TABLE_CAPTION = re.compile(r"^Table\s+(\d+)\s*[:.-]\s+([A-Z(\d].*)$")
 ANNEX_FIGURE_CAPTION = re.compile(r"^Fig(?:ure|\.)\s*(\d+)\s*[:.-]\s+([A-Z(\d].*)$")
+# Appendix captions include lettered handles, spaces and bare numbers with no title.
+_APPENDIX_REF = r"[A-Z]\s*[.-]?\s*\d+(?:\s*[.-]\s*\d+)*(?:\s*[A-Z])?(?:\s*[.-]\s*\d+)*"
+APPENDIX_TABLE_CAPTION = re.compile(r"^Table\s+(" + _APPENDIX_REF + r")(?:\s*:\s*|\s+|$)(.*)$")
+APPENDIX_FIGURE_CAPTION = re.compile(r"^Fig(?:ure|\.)\s*(" + _APPENDIX_REF + r")(?:\s*:\s*|\s+|$)(.*)$")
+
+
+def _appendix_number(number: str) -> str:
+    compact = re.sub(r"\s+", "", number).upper()
+    return re.sub(r"^([A-Z])\.(?=\d)", r"\1", compact)
+
+
 TABLE_REF = re.compile(r"\bTables?\s+(\d+[.-]\d+[A-Za-z]?)")
 MAX_HEADING_X = 110.0
 TABLE_IMAGE_DPI = int(os.environ.get("OMAKASE_CPHEEO_TABLE_IMAGE_DPI", "200"))
@@ -67,7 +78,7 @@ def _heading(line: Line) -> tuple[str, str, str] | None:
     if m := CHAPTER.match(line.text):
         return ("chapter", m.group(1), m.group(2).strip())
     if m := APPENDIX.match(line.text):
-        return ("appendix", re.sub(r"\s+", "", m.group(1)), m.group(2).strip())
+        return ("appendix", _appendix_number(m.group(1)), m.group(2).strip())
     if m := ANNEXURE.match(line.text):
         return ("annexure", m.group(1), m.group(2).strip())
     if line.bbox[0] > MAX_HEADING_X:
@@ -92,6 +103,31 @@ def _parent(number: str) -> str | None:
     return ".".join(parts[:-1]) if len(parts) > 2 else parts[0] if len(parts) == 2 else None
 
 
+def appendix_catalogue(manual: Manual, doc: pymupdf.Document) -> dict[str, tuple[str, str]]:
+    """Printed label -> number/title from native-text contents, without reading scanned values."""
+    catalogue: dict[str, tuple[str, str]] = {}
+    number, title = None, []
+    entry = re.compile(r"^([A-Z]\s*\d+(?:\.\d+)*(?:\s*[A-Z])?|AA|A)(?:\s+(.*))?$")
+    end = re.compile(r"\.{2,}\s*A\s*-\s*(\d+)\s*$")
+    for n in manual.appendix_toc_pages:
+        for raw in doc[n - 1].get_text().splitlines():
+            line = raw.strip()
+            if m := entry.match(line):
+                number, title = _appendix_number(m.group(1)), []
+                line = m.group(2) or ""
+                if not line:
+                    continue
+            if number is None:
+                continue
+            if m := end.search(line):
+                title.append(line[:m.start()])
+                catalogue[f"A - {m.group(1)}"] = (number, " ".join(" ".join(title).split()))
+                number, title = None, []
+            elif line:
+                title.append(line)
+    return catalogue
+
+
 def build_units(manual: Manual, doc: pymupdf.Document, progress=None) -> list[Unit]:
     skip = {p for a, b in manual.skip_pages for p in range(a, b + 1)}
     units: dict[str, Unit] = {}
@@ -102,6 +138,7 @@ def build_units(manual: Manual, doc: pymupdf.Document, progress=None) -> list[Un
     layout = manual.layout
     pages = [read_page(doc[i], layout) for i in range(len(doc)) if i + 1 not in skip]
     text_tables = _TextTables(doc, pages) if layout.tables == "text" else None
+    appendix_headings = appendix_catalogue(manual, doc)
 
     def add(unit: Unit) -> Unit:
         if unit.id in units:  # a continued table or a repeated caption
@@ -116,7 +153,21 @@ def build_units(manual: Manual, doc: pymupdf.Document, progress=None) -> list[Un
     for idx, page in enumerate(pages):
         if progress:
             progress(page.number, len(doc))
-        if is_image_only(page) and not page.images:
+        if page.label in appendix_headings:
+            number, title = appendix_headings[page.label]
+            # The printed contents use dots where a few body headings use hyphens.
+            # Retain those existing body handles while taking their full title from the contents.
+            for line in page.lines:
+                head = _heading(line)
+                if head and head[0] == "appendix" and head[1].replace("-", ".") == number:
+                    number = head[1]
+                    break
+            current = add(_new_unit(manual, "appendix", number, number, title, "A", current, page))
+            chapter, pending_title = "A", None
+        if chapter == "A" and any(l.text == "REFERENCES" for l in page.lines):
+            current = None
+            continue
+        if is_image_only(page) and not page.images and not (current and current.kind == "appendix"):
             continue
         if _is_list_page(page):  # a list of annexures or chapters, not the headings themselves
             continue
@@ -126,7 +177,8 @@ def build_units(manual: Manual, doc: pymupdf.Document, progress=None) -> list[Un
             if text_tables and text_tables.claims(idx, line):
                 continue  # the line is a cell of a table already read
             if pending_title is not None:
-                if line.bold and not _heading(line) and not TABLE_CAPTION.match(line.text):
+                if line.bold and not _heading(line) and not any(p.match(line.text) for p in
+                        (TABLE_CAPTION, FIGURE_CAPTION, APPENDIX_TABLE_CAPTION, APPENDIX_FIGURE_CAPTION)):
                     pending_title.title = line.text
                     pending_title = None
                     continue
@@ -134,18 +186,24 @@ def build_units(manual: Manual, doc: pymupdf.Document, progress=None) -> list[Un
 
             caption_ok = (line.bold or not layout.bold_captions or bool(COLON_CAPTION.match(line.text))) and not LEADER_DOTS.search(line.text)
             in_annex = chapter == "AN" and current is not None
-            if caption_ok and (m := TABLE_CAPTION.match(line.text) or (in_annex and ANNEX_TABLE_CAPTION.match(line.text))):
-                number, uid = _dotted(m.group(1)), f"T{_dotted(m.group(1))}"
+            appendix_table = APPENDIX_TABLE_CAPTION.match(line.text) if chapter == "A" else None
+            if caption_ok and (m := TABLE_CAPTION.match(line.text) or appendix_table or (in_annex and ANNEX_TABLE_CAPTION.match(line.text))):
+                number = _appendix_number(m.group(1)) if appendix_table else _dotted(m.group(1))
+                uid = f"T{number}"
                 if in_annex:  # "Table 4" of Annexure 6.3
                     number, uid = f"{number}, Annexure {current.number}", f"{current.id.split(':', 1)[1]}-T{number}"
                 table = add(_new_unit(manual, "table", uid, number, m.group(2), chapter, current, page))
+                if not table.title:
+                    pending_title = table
                 if text_tables:
                     text_tables.attach(table, idx, line, claimed_images)
                 else:
                     _attach_table(table, doc, page, pages[idx + 1] if idx + 1 < len(pages) else None, line, claimed_images)
                 continue
-            if caption_ok and (m := FIGURE_CAPTION.match(line.text) or (in_annex and ANNEX_FIGURE_CAPTION.match(line.text))):
-                number, uid = _dotted(m.group(1)), f"F{_dotted(m.group(1))}"
+            appendix_figure = APPENDIX_FIGURE_CAPTION.match(line.text) if chapter == "A" else None
+            if caption_ok and (m := FIGURE_CAPTION.match(line.text) or appendix_figure or (in_annex and ANNEX_FIGURE_CAPTION.match(line.text))):
+                number = _appendix_number(m.group(1)) if appendix_figure else _dotted(m.group(1))
+                uid = f"F{number}"
                 if in_annex:
                     number, uid = f"{number}, Annexure {current.number}", f"{current.id.split(':', 1)[1]}-F{number}"
                 fig = add(_new_unit(manual, "figure", uid, number, m.group(2), chapter, current, page))
@@ -171,7 +229,7 @@ def build_units(manual: Manual, doc: pymupdf.Document, progress=None) -> list[Un
                     owners.append((line.bbox[1], current))
                     if kind == "section":
                         current.parent = _parent(number)
-                    if not title:
+                    if not current.title:
                         pending_title = current
                     continue
             if current is None:
@@ -184,8 +242,15 @@ def build_units(manual: Manual, doc: pymupdf.Document, progress=None) -> list[Un
             if i in claimed_images:
                 continue
             owner = next((u for y, u in reversed(owners) if y <= bbox[1]), None)
-            if owner is not None:
+            if owner is not None and not (manual.appendix_page_images and owner.kind == "appendix"):
                 owner.images.append(render_crop(doc, page, bbox, kind="table"))
+                owner.page_end = max(owner.page_end, page.number)
+                owner.label_end = page.label or owner.label_end
+
+        if manual.appendix_page_images:
+            # Full pages retain scanned/rotated formula sheets and their printed headings.
+            for owner in [current] if current and current.kind == "appendix" else []:
+                owner.images.append(render_crop(doc, page, None, kind="table"))
                 owner.page_end = max(owner.page_end, page.number)
                 owner.label_end = page.label or owner.label_end
 
@@ -193,6 +258,23 @@ def build_units(manual: Manual, doc: pymupdf.Document, progress=None) -> list[Un
     for u in result:
         u.text = _reflow(u.text)
         u.references = sorted({f"T{_dotted(r)}" for r in TABLE_REF.findall(u.text)} - {f"T{u.number}"})
+    groups: dict[str, Unit] = {}
+    for u in result:
+        if u.kind != "appendix" or not (m := re.fullmatch(r"([A-Z]\d+(?:[.-]\d+)+)[A-Z]", u.number)):
+            continue
+        base = m.group(1)
+        u.parent = base
+        if base not in groups:
+            groups[base] = Unit(f"{manual.id}:{base}", manual.id, "appendix", base, "", "A", None,
+                                u.page_start, u.page_end, u.label_start, u.label_end)
+        group = groups[base]
+        group.page_end, group.label_end = u.page_end, u.label_end
+        group.text += f"{u.number} {u.title}\n{u.text}\n"
+        group.images.extend(u.images)
+        group.references = sorted(set(group.references + u.references))
+    for base, group in groups.items():
+        if group.id not in units:
+            result.insert(next(i for i, u in enumerate(result) if u.parent == base), group)
     return result
 
 

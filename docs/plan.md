@@ -10,7 +10,8 @@ Latest parseable edition per domain. Source PDFs stay outside the repo (`OMAKASE
 
 | Id | Manual | Status |
 |---|---|---|
-| `SEW-2013-A` | Sewerage and Sewage Treatment Systems, Part A: Engineering, 2013 (third edition) | Indexed |
+| `SEW-2013-A` | Sewerage and Sewage Treatment Systems, Part A: Engineering, 2013 (third edition), including all 51 listed appendices/sheets | Indexed |
+| `SEW-2013-B/C` | Sewerage and Sewage Treatment Systems, Operation & Maintenance / Management, 2013 | Deferred; source PDFs unavailable locally |
 | `WS-2024-A/B/C` | Water Supply and Treatment Systems, Parts A, B, C, March 2024 (fourth edition) | Indexed |
 | `SWD-2019-A`, `SWD-2019-BC` | Storm Water Drainage, Vol I Part A and Vol II Parts B/C, August 2019 | Next |
 | `MSW-2016` | Municipal Solid Waste Management, Parts 1-3, 2016 | Planned |
@@ -24,7 +25,7 @@ The manuals are Government of India copyright: "No portion, part or whole, of th
 ## Pipeline
 
 1. `extract.py`: open the PDF with reader annotations removed; read body lines with font and position; drop running headers and footers; read the printed page label ("3 - 105", or a plain "36"). Each manual has a `Layout` in `corpus.py`: the InDesign sewerage manual has fixed header/footer bands; the Word-generated water manual has a page number as its lowest line and mixed page sizes.
-2. `structure.py`: split into units (chapter, numbered section, table, figure caption, appendix) with stable ids such as `SEW-2013-A:3.6` and `SEW-2013-A:T3.2`. Captions accept "Table 3.7" and "Table 3-7".
+2. `structure.py`: split into units (chapter, numbered section, table, figure caption, appendix) with stable ids such as `SEW-2013-A:3.6` and `SEW-2013-A:T3.2`. Captions accept "Table 3.7" and "Table 3-7", plus lettered appendix references ("Table A7.3-1"). Native appendix contents supply the complete titles and start pages, including scanned headings and separately numbered A/B sheets. Legacy grouped handles remain available. Full-page appendix images retain formula sheets and rotated tables; printed labels are also read from sideways footers.
 3. `texttables.py` (Word manuals): PyMuPDF finds the ruled grid under a caption and each cell is read by clipping the page; tables that run to the page bottom continue into an uncaptioned table at the top of the next page. Annexure tables ("Table 4") get ids like `WS-2024-A:AN6.3-T4`.
    Scanned tables use source-page crops; when a reliable crop cannot be found, the printed page is returned. Figures use full-page pictures to retain legends, vector drawings and multipart layouts. Other embedded images attach to their containing clause. No OCR is run or exposed; native PDF table text remains available.
 4. `index.py`: SQLite with an FTS5 passage table (porter stemming; title and handle weighted above body). Long sections are split into overlapping passages; `get_clause` still returns the whole unit.
@@ -35,6 +36,7 @@ The manuals are Government of India copyright: "No portion, part or whole, of th
 
 - `eval/questions.yaml`: questions from real APD project decisions, with expected unit ids. `omakase-cpheeo eval` scores top-k retrieval. With OCR removed, the unchanged set scores 26/27 in the top five (MRR 0.76), compared with 27/27 (0.85) previously. L20 (design periods of sewerage components) misses the top five because component names were only searchable in the scanned table; exact Table 2.1 lookup still works. This measures retrieval, not image-reading accuracy.
 - `eval/search-ranking.yaml`: ChatGPT-feedback paraphrases plus slope, velocity, water and explicit-reference controls. Run `omakase-cpheeo eval --questions eval/search-ranking.yaml -k 1 -v`. The direct diameter clause now ranks first in all eight diameter/size variants; the 12-query set improves from 6/12 to 12/12 first results. The exact ChatGPT tool query was not supplied, so these are targeted regression checks rather than an independent accuracy estimate.
+- `eval/sewage-appendices.yaml`: 13/13 appendix queries in the top five, MRR 0.92. `scripts/check_appendix_coverage.py` verifies all 51 source-listed appendix/sheet titles, their page boundaries, and full-page images covering all 185 printed appendix pages. This does not verify a model's interpretation of the numerical images.
 - `scripts/test_image_delivery.py` checks source-image storage, page references, complete multipage delivery and picture ownership. `scripts/mcp_smoke.py` checks direct diameter criteria rank first and other expected search results are within the requested three results, native table text, MCP image blocks, HTTP image bytes and citation pages.
 - `data/build/review.json`: every unit that needs a human or second-pass check, units with extraction concerns.
 

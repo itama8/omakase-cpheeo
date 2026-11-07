@@ -1,0 +1,42 @@
+# Targeted coverage questions from the 2013 Part A appendix contents and source pages.
+# These check retrieval and citation handles, not a model's reading of numerical images.
+questions:
+  - id: A01
+    question: What symbols are used in the engineering manual?
+    expect: [SEW-2013-A:A]
+  - id: A02
+    question: Where is the list of Indian Standards relating to sewerage and sewage treatment?
+    expect: [SEW-2013-A:AA]
+  - id: A03
+    question: Where is the mass diagram for raw sewage flow at Koyambedu STP in Chennai?
+    expect: [SEW-2013-A:A5.2]
+  - id: A04
+    question: Where is the list of tests recommended for sewage treatment plant units?
+    expect: [SEW-2013-A:A5.5]
+  - id: A05
+    question: How can I size clarifiers in activated sludge treatment?
+    expect: [SEW-2013-A:A5-11]
+  - id: A06
+    question: What micro nutrients are needed for continuous flow biological reactors?
+    expect: [SEW-2013-A:A7.1]
+  - id: A07
+    question: What micro nutrients are needed for batch flow biological reactors?
+    expect: [SEW-2013-A:A7.2]
+  - id: A08
+    question: Where is the example design of sludge digesters?
+    expect: [SEW-2013-A:A6.4]
+  - id: A09
+    question: Appendix A 3.2 B
+    expect: [SEW-2013-A:A3.2B]
+  - id: A10
+    question: Appendix A 5.11
+    expect: [SEW-2013-A:A5-11]
+  - id: A11
+    question: Table A 7.3- 1
+    expect: [SEW-2013-A:TA7.3-1]
+  - id: A12
+    question: Figure A3.2A-1
+    expect: [SEW-2013-A:FA3.2A-1]
+  - id: A13
+    question: How is the approach channel for a Parshall flume sized?
+    expect: [SEW-2013-A:A5-9]
