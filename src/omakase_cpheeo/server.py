@@ -2,13 +2,16 @@
 
 from __future__ import annotations
 
+import html
 import os
+from urllib.parse import urlparse
 
 from mcp.server.mcpserver import MCPServer
+from mcp.server.transport_security import TransportSecuritySettings
 from starlette.requests import Request
-from starlette.responses import JSONResponse
+from starlette.responses import HTMLResponse, JSONResponse
 
-from .service import Library
+from .service import Library, attribution, public_url
 
 INSTRUCTIONS = """\
 Omakase CPHEEO search: the Government of India CPHEEO manuals, searchable with exact citations.
@@ -16,7 +19,8 @@ Corpus: Manual on Sewerage and Sewage Treatment Systems, Part A: Engineering (20
 
 How to use:
 - Call `search` with the engineer's question in plain words. Results are ranked units (sections, tables, figures) with a ready `citation` string.
-- Call `get_clause` with a result `id` to read the full clause or table before quoting a value.
+- Call `fetch` (or `get_clause` for structured fields) with a result `id` to read the full clause or table before quoting a value.
+- Link each citation to the result's `url`, which opens the clause on an Omakase page.
 - When you state a value from the manual, quote it and give the `citation` exactly as returned. Do not cite a clause you did not retrieve.
 - Tables marked `needs_review` were read by OCR from an image. Say so when quoting them, and point the user to the printed page to confirm the number.
 - If the manuals do not cover the question, say so instead of answering from memory.
@@ -55,6 +59,14 @@ def build_server(db: str | None = None) -> MCPServer:
         """
         return lib.get_clause(id, include_children=include_children)
 
+    @mcp.tool(title="Fetch a clause as a document")
+    def fetch(id: str) -> dict:
+        """Return one section or table as a document with id, title, text, url and metadata.
+
+        id: a result id from search, e.g. SEW-2013-A:T3.13.
+        """
+        return lib.fetch(id)
+
     @mcp.tool(title="List manuals")
     def list_manuals() -> dict:
         """List the manuals in the corpus with edition, part and how many sections and tables each has."""
@@ -92,6 +104,14 @@ def build_server(db: str | None = None) -> MCPServer:
         except KeyError as e:
             return _error(e, 404)
 
+    @mcp.custom_route("/c/{id:path}", methods=["GET"])
+    async def clause_page(request: Request) -> HTMLResponse:
+        try:
+            c = lib.get_clause(request.path_params["id"])
+        except KeyError as e:
+            return HTMLResponse(_page("Not found", f"<p>{html.escape(str(e))}</p>"), status_code=404)
+        return HTMLResponse(_page(c["citation"], _clause_html(c)))
+
     @mcp.custom_route("/v1/manuals", methods=["GET"])
     async def rest_manuals(_: Request) -> JSONResponse:
         return JSONResponse(lib.list_manuals())
@@ -106,5 +126,63 @@ def build_server(db: str | None = None) -> MCPServer:
     return mcp
 
 
+def _table_html(markdown: str) -> str:
+    rows = [r for r in markdown.splitlines() if r.startswith("|") and not set(r) <= set("|-")]
+    out = []
+    for i, r in enumerate(rows):
+        tag = "th" if i == 0 else "td"
+        cells = "".join(f"<{tag}>{html.escape(c.strip())}</{tag}>" for c in r.strip("|").split("|"))
+        out.append(f"<tr>{cells}</tr>")
+    return f"<table>{''.join(out)}</table>"
+
+
+def _clause_html(c: dict) -> str:
+    parts = [f"<p class=cite>{html.escape(c['citation'])}</p>"]
+    if c.get("table_markdown"):
+        parts.append(_table_html(c["table_markdown"]))
+        if c.get("needs_review"):
+            parts.append("<p class=warn>Read by OCR from an image in the manual. Confirm values against the printed page.</p>")
+    for para in (c.get("text") or "").splitlines():
+        parts.append(f"<p>{html.escape(para)}</p>")
+    for t in c.get("tables", []):
+        parts.append(f"<h2>{html.escape(t['citation'])}</h2>")
+        parts.append(_table_html(t.get("table_markdown", "")))
+    return "\n".join(parts)
+
+
+def _page(title: str, body: str) -> str:
+    a = attribution()
+    brand = f"<a href='{html.escape(a['url'])}'>Omakase</a>" if a.get("url") else "Omakase"
+    return f"""<!doctype html><html lang=en><meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1"><title>{html.escape(title)}</title>
+<style>body{{font:16px/1.55 system-ui,sans-serif;max-width:46rem;margin:2rem auto;padding:0 1rem;color:#222}}
+.cite{{font-weight:600}}.warn{{background:#fff4d6;padding:.5rem .75rem;border-radius:4px}}
+table{{border-collapse:collapse;margin:1rem 0}}td,th{{border:1px solid #bbb;padding:.3rem .6rem;text-align:left}}
+footer{{margin-top:3rem;color:#666;font-size:.9rem}}</style>
+<body>{body}<footer>CPHEEO search by {brand}. {html.escape(a['note'])}</footer></body></html>"""
+
+
+def _transport_security() -> TransportSecuritySettings:
+    """Accept localhost plus the public host (tunnel or deployment) named in OMAKASE_CPHEEO_PUBLIC_URL."""
+    hosts = ["127.0.0.1:*", "localhost:*", "[::1]:*"]
+    origins = ["http://127.0.0.1:*", "http://localhost:*", "http://[::1]:*"]
+    # Hosted assistants that connect to remote MCP servers.
+    origins += ["https://chatgpt.com", "https://chat.openai.com", "https://claude.ai"]
+    if base := public_url():
+        u = urlparse(base)
+        hosts += [u.netloc, f"{u.hostname}:*"]
+        origins.append(f"{u.scheme}://{u.netloc}")
+    for extra in filter(None, os.environ.get("OMAKASE_CPHEEO_ALLOWED_ORIGINS", "").split(",")):
+        origins.append(extra.strip())
+    return TransportSecuritySettings(enable_dns_rebinding_protection=True, allowed_hosts=hosts, allowed_origins=origins)
+
+
 def serve(host: str = "127.0.0.1", port: int = 8765, db: str | None = None) -> None:
-    build_server(db).run("streamable-http", host=host, port=port, stateless_http=True, json_response=True)
+    build_server(db).run(
+        "streamable-http",
+        host=host,
+        port=port,
+        stateless_http=True,
+        json_response=True,
+        transport_security=_transport_security(),
+    )

@@ -15,7 +15,7 @@ async def main(url: str) -> int:
         tools = await client.list_tools()
         names = sorted(t.name for t in tools.tools)
         print("tools:", names)
-        assert names == ["get_clause", "get_toc", "list_manuals", "search"], names
+        assert names == ["fetch", "get_clause", "get_toc", "list_manuals", "search"], names
 
         def payload(result):
             if result.structured_content:
@@ -34,6 +34,10 @@ async def main(url: str) -> int:
 
         toc = payload(await client.call_tool("get_toc", {"manual": "SEW-2013-A", "chapter": "3", "max_depth": 1}))
         print("toc entries:", len(toc["entries"]), toc["entries"][:2])
+
+        doc = payload(await client.call_tool("fetch", {"id": "SEW-2013-A:T3.2"}))
+        print("fetch:", doc["title"], "| url:", doc["url"])
+        assert "2.50" in doc["text"] and doc["metadata"]["manual"] == "SEW-2013-A"
 
         bad = await client.call_tool("get_clause", {"id": "SEW-2013-A:99.9"})
         print("unknown id is_error:", bad.is_error)

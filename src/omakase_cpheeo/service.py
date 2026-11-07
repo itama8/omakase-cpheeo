@@ -40,6 +40,17 @@ SYNONYMS: dict[str, tuple[str, ...]] = {
 KIND_LABEL = {"section": "Section", "table": "Table", "figure": "Figure", "chapter": "Chapter", "appendix": "Appendix"}
 
 
+def public_url() -> str | None:
+    """Base URL the server is reachable at from outside, e.g. a tunnel or deployment."""
+    url = os.environ.get("OMAKASE_CPHEEO_PUBLIC_URL", "").rstrip("/")
+    return url or None
+
+
+def clause_url(unit_id: str) -> str | None:
+    base = public_url()
+    return f"{base}/c/{unit_id}" if base else None
+
+
 def attribution() -> dict:
     out = {"cited_by": BRAND, "note": "Free CPHEEO search by Omakase. Verify against the official manual before use in design."}
     if url := os.environ.get("OMAKASE_CPHEEO_BRAND_URL"):
@@ -89,6 +100,8 @@ class Library:
             "citation": self.citation(row),
             "parent": f"{row['manual_id']}:{row['parent']}" if row["parent"] else None,
         }
+        if url := clause_url(row["id"]):
+            out["url"] = url
         if row["kind"] == "table":
             out["source"] = "OCR of a table image in the manual"
             out["needs_review"] = bool(row["needs_review"])
@@ -197,3 +210,23 @@ class Library:
                 if len(results) >= limit:
                     break
         return {"query": query, "results": results[:limit], "attribution": attribution()}
+
+    def fetch(self, unit_id: str) -> dict:
+        """One unit as a document: id, title, text, url, metadata (the shape ChatGPT expects)."""
+        c = self.get_clause(unit_id)
+        parts = [c["citation"], ""]
+        if c.get("table_markdown"):
+            parts.append(c["table_markdown"])
+            if c.get("needs_review"):
+                parts.append("\nNote: this table was read by OCR from an image in the manual. "
+                             "Confirm values against the printed page before use.")
+        if c.get("text"):
+            parts.append(c["text"])
+        for t in c.get("tables", []):
+            parts += ["", f"{t['citation']}", t.get("table_markdown", "")]
+        parts += ["", "Sources via Omakase CPHEEO search."]
+        meta = {k: c[k] for k in ("kind", "number", "page_label", "pdf_page", "citation") if c.get(k) is not None}
+        meta["manual"] = c["manual"]["id"]
+        if c.get("needs_review"):
+            meta["needs_review"] = True
+        return {"id": c["id"], "title": c["citation"], "text": "\n".join(parts).strip(), "url": c.get("url"), "metadata": meta}
