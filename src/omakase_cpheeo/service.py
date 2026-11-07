@@ -16,6 +16,12 @@ from pathlib import Path
 from .index import DEFAULT_DB, explicit_refs, fts_query
 
 BRAND = "Omakase"
+# Branding lives in the data an assistant copies, not only in server instructions.
+# `citation` = the plain CPHEEO reference + BRAND_SUFFIX; `citation_plain` is the bare
+# reference for pasting into reports.
+SOURCE_NAME = "Omakase CPHEEO"
+BRAND_SUFFIX = " · via Omakase CPHEEO"
+SOURCE_LINE = "Source: Omakase CPHEEO search (free CPHEEO lookup by Omakase)"
 STOPWORDS = frozenset(
     "a an and are as at be by can do does for from how i in is it me of on or per should "
     "that the this to use used using value values what when where which with".split()
@@ -58,6 +64,25 @@ def public_url() -> str | None:
 def clause_url(unit_id: str) -> str | None:
     base = public_url()
     return f"{base}/c/{unit_id}" if base else None
+
+
+def icon_url() -> str | None:
+    base = public_url()
+    return f"{base}/icon.png" if base else None
+
+
+def source_line(unit_id: str | None = None) -> str:
+    """One line naming the source, with the clause page when the server has a public URL."""
+    url = clause_url(unit_id) if unit_id else None
+    return f"{SOURCE_LINE}: {url}" if url else SOURCE_LINE
+
+
+def branding() -> dict:
+    """Fields every result carries so the source shows as Omakase CPHEEO."""
+    out = {"source_name": SOURCE_NAME}
+    if icon := icon_url():
+        out["source_icon"] = icon
+    return out
 
 
 def attribution() -> dict:
@@ -106,7 +131,9 @@ class Library:
             "page_label": row["label_start"],
             "page_label_end": row["label_end"],
             "pdf_page": row["page_start"],
-            "citation": self.citation(row),
+            "citation": self.citation(row) + BRAND_SUFFIX,
+            "citation_plain": self.citation(row),
+            **branding(),
             "parent": f"{row['manual_id']}:{row['parent']}" if row["parent"] else None,
         }
         if url := clause_url(row["id"]):
@@ -161,7 +188,7 @@ class Library:
         row = self.con.execute("SELECT * FROM units WHERE id = ?", (unit_id,)).fetchone()
         if row is None:
             raise KeyError(f"no unit {unit_id!r}; ids look like SEW-2013-A:3.5, SEW-2013-A:T3.2 or WS-2024-A:AN6.1")
-        out = self._unit_dict(row, full=True)
+        out = {"source_note": source_line(row["id"]), **self._unit_dict(row, full=True)}
         if include_children and row["kind"] in ("section", "chapter"):
             prefix = row["number"] + "."
             kids = self.con.execute(
@@ -238,7 +265,7 @@ class Library:
     def fetch(self, unit_id: str) -> dict:
         """One unit as a document: id, title, text, url, metadata (the shape ChatGPT expects)."""
         c = self.get_clause(unit_id)
-        parts = [c["citation"], ""]
+        parts = [c["citation"], source_line(c["id"]), ""]
         if c.get("table_markdown"):
             parts.append(c["table_markdown"])
             if c.get("needs_review") and c.get("source", "").startswith("OCR"):
@@ -251,9 +278,8 @@ class Library:
             parts.append(c["text"])
         for t in c.get("tables", []):
             parts += ["", f"{t['citation']}", t.get("table_markdown", "")]
-        parts += ["", "Sources via Omakase CPHEEO search."]
-        meta = {k: c[k] for k in ("kind", "number", "page_label", "pdf_page", "citation") if c.get(k) is not None}
+        meta = {k: c[k] for k in ("kind", "number", "page_label", "pdf_page", "citation", "citation_plain", "source_name", "source_icon") if c.get(k) is not None}
         meta["manual"] = c["manual"]["id"]
         if c.get("needs_review"):
             meta["needs_review"] = True
-        return {"id": c["id"], "title": c["citation"], "text": "\n".join(parts).strip(), "url": c.get("url"), "metadata": meta}
+        return {"id": c["id"], "title": f"{SOURCE_NAME} · {c['citation_plain']}", "text": "\n".join(parts).strip(), "url": c.get("url"), "metadata": meta}

@@ -7,11 +7,25 @@ import asyncio
 import json
 import sys
 
+import urllib.request
+
 from mcp import Client
+
+BRAND_SUFFIX = " · via Omakase CPHEEO"
 
 
 async def main(url: str) -> int:
+    base = url.rsplit("/mcp", 1)[0]
+    req = urllib.request.Request(f"{base}/icon.png", headers={"User-Agent": "omakase-cpheeo-smoke"})
+    with await asyncio.to_thread(urllib.request.urlopen, req) as icon:
+        body, ctype = icon.read(), icon.headers.get("content-type")
+        print("icon:", icon.status, ctype, len(body), "bytes")
+        assert icon.status == 200 and ctype == "image/png"
+
     async with Client(url) as client:
+        info = client.server_info
+        print("server:", info.name, "|", info.title, "| icons:", [i.src[:60] for i in info.icons or []])
+        assert info.name == "Omakase CPHEEO" and info.title.startswith("Omakase CPHEEO") and info.icons
         tools = await client.list_tools()
         names = sorted(t.name for t in tools.tools)
         print("tools:", names)
@@ -27,6 +41,8 @@ async def main(url: str) -> int:
         print("search top:", top["id"], "|", top["citation"])
         assert top["id"] == "SEW-2013-A:T3.13"
         assert found["attribution"]["cited_by"] == "Omakase"
+        assert top["citation"].endswith(BRAND_SUFFIX) and top["citation_plain"] + BRAND_SUFFIX == top["citation"]
+        assert top["source_name"] == "Omakase CPHEEO"
 
         clause = payload(await client.call_tool("get_clause", {"id": "SEW-2013-A:3.6"}))
         print("clause:", clause["citation"], "| tables:", [t["id"] for t in clause.get("tables", [])])
@@ -38,6 +54,8 @@ async def main(url: str) -> int:
         doc = payload(await client.call_tool("fetch", {"id": "SEW-2013-A:T3.2"}))
         print("fetch:", doc["title"], "| url:", doc["url"])
         assert "2.50" in doc["text"] and doc["metadata"]["manual"] == "SEW-2013-A"
+        assert doc["title"].startswith("Omakase CPHEEO · ") and "Source: Omakase CPHEEO search" in doc["text"]
+        assert doc["metadata"]["citation"].endswith(BRAND_SUFFIX) and doc["metadata"]["source_name"] == "Omakase CPHEEO"
 
         manuals = {m["id"] for m in payload(await client.call_tool("list_manuals", {}))["manuals"]}
         print("manuals:", sorted(manuals))
