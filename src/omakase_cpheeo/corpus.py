@@ -22,7 +22,7 @@ class Layout:
     # read from the lowest line on the page (Word manuals, where its height varies).
     footer_min_y: float | None = 770.0
     label: str = "chapter-page"  # "3 - 105" | "number" (a plain running page number)
-    tables: str = "image"  # image: OCR the picture under a caption | text: ruled text tables
+    tables: str = "image"  # image: return the picture under a caption | text: ruled text tables
     bold_captions: bool = False  # only bold "Table 2.2: ..." lines are captions
 
 

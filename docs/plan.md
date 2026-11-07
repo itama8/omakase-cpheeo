@@ -26,19 +26,20 @@ The manuals are Government of India copyright: "No portion, part or whole, of th
 1. `extract.py`: open the PDF with reader annotations removed; read body lines with font and position; drop running headers and footers; read the printed page label ("3 - 105", or a plain "36"). Each manual has a `Layout` in `corpus.py`: the InDesign sewerage manual has fixed header/footer bands; the Word-generated water manual has a page number as its lowest line and mixed page sizes.
 2. `structure.py`: split into units (chapter, numbered section, table, figure caption, appendix) with stable ids such as `SEW-2013-A:3.6` and `SEW-2013-A:T3.2`. Captions accept "Table 3.7" and "Table 3-7".
 3. `texttables.py` (Word manuals): PyMuPDF finds the ruled grid under a caption and each cell is read by clipping the page; tables that run to the page bottom continue into an uncaptioned table at the top of the next page. Annexure tables ("Table 4") get ids like `WS-2024-A:AN6.3-T4`.
-   `tables.py` (sewerage): 142 of 149 sewerage tables are images. Gridlines are detected and erased, the image is OCR'd once with Tesseract, and words are assigned to grid cells. Cells that break their column's number format (a lost decimal point) are flagged, never rewritten.
+   Scanned tables use source-page crops; when a reliable crop cannot be found, the printed page is returned. Figures use full-page pictures to retain legends, vector drawings and multipart layouts. Other embedded images attach to their containing clause. No OCR is run or exposed; native PDF table text remains available.
 4. `index.py`: SQLite with an FTS5 passage table (porter stemming; title and handle weighted above body). Long sections are split into overlapping passages; `get_clause` still returns the whole unit.
-5. `service.py`: `search`, `get_clause`, `get_toc`, `list_manuals`. Exact references in a query ("Table 3.13", "para 3.25", "Annexure 6.1") resolve first. Synonym expansions are matched as phrases, and when a query names only one domain's terms (sewer, manhole / WTP, service reservoir) that domain's results rank higher; nothing is filtered. Every result carries a citation string and the Omakase attribution; OCR'd tables carry `needs_review` and notes.
+5. `service.py`: `search`, `get_clause`, `get_toc`, `list_manuals`. Exact references in a query ("Table 3.13", "para 3.25", "Annexure 6.1") resolve first. Synonym expansions are matched as phrases, and when a query names only one domain's terms (sewer, manhole / WTP, service reservoir) that domain's results rank higher; nothing is filtered. Every result carries a citation string and the Omakase attribution; image references carry printed and physical page numbers.
 6. `server.py`: one process, MCP over streamable HTTP at `/mcp`, REST at `/v1/search`, `/v1/clause/{id}`, `/v1/manuals`, `/v1/toc/{manual}`, `/health`.
 
 ## Quality
 
-- `eval/questions.yaml`: questions from real APD project decisions, with expected unit ids. `omakase-cpheeo eval` scores top-k retrieval.
-- `data/build/review.json`: every unit that needs a human or second-pass check, mostly OCR'd tables.
+- `eval/questions.yaml`: questions from real APD project decisions, with expected unit ids. `omakase-cpheeo eval` scores top-k retrieval. With OCR removed, the unchanged set scores 26/27 in the top five (MRR 0.76), compared with 27/27 (0.85) previously. L20 (design periods of sewerage components) misses the top five because component names were only searchable in the scanned table; exact Table 2.1 lookup still works. This measures retrieval, not image-reading accuracy.
+- `scripts/test_image_delivery.py` checks source-image storage, page references, complete multipage delivery and picture ownership. `scripts/mcp_smoke.py` checks expected search results within the requested three results, native table text, MCP image blocks, HTTP image bytes and citation pages.
+- `data/build/review.json`: every unit that needs a human or second-pass check, units with extraction concerns.
 
 ## Open items
 
-- Table verification pass: a vision model or a person checks flagged tables against the page image; corrections are stored as overrides that survive re-ingestion.
+- Visual coverage checks for source images and native table layouts; assistants must disclose unclear values rather than guess.
 - Official source links per manual (cpheeo.gov.in / mohua.gov.in URLs) to verify and add.
 - Brand URL for attribution (`OMAKASE_CPHEEO_BRAND_URL`).
 - Semantic search, if keyword retrieval misses questions phrased far from the manual's wording.

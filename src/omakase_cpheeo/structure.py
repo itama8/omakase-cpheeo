@@ -7,6 +7,7 @@ they stay stable across re-ingestion.
 
 from __future__ import annotations
 
+import os
 import re
 from dataclasses import dataclass, field
 
@@ -14,7 +15,6 @@ import pymupdf
 
 from .corpus import Manual
 from .extract import Line, Page, is_image_only, read_page
-from .tables import ocr_table, render_region
 from .texttables import TextTable, find_text_tables, rows_markdown
 
 SECTION = re.compile(r"^(\d{1,2}(?:\.\d{1,2}){1,6})\.?(?:\s+(.*))?$")
@@ -32,6 +32,8 @@ ANNEX_TABLE_CAPTION = re.compile(r"^Table\s+(\d+)\s*[:.-]\s+([A-Z(\d].*)$")
 ANNEX_FIGURE_CAPTION = re.compile(r"^Fig(?:ure|\.)\s*(\d+)\s*[:.-]\s+([A-Z(\d].*)$")
 TABLE_REF = re.compile(r"\bTables?\s+(\d+[.-]\d+[A-Za-z]?)")
 MAX_HEADING_X = 110.0
+TABLE_IMAGE_DPI = int(os.environ.get("OMAKASE_CPHEEO_TABLE_IMAGE_DPI", "200"))
+FIGURE_IMAGE_DPI = int(os.environ.get("OMAKASE_CPHEEO_FIGURE_IMAGE_DPI", "130"))
 
 
 @dataclass
@@ -50,7 +52,8 @@ class Unit:
     text: str = ""
     table_markdown: str = ""
     table_cells: list[dict] = field(default_factory=list)
-    table_source: str = ""  # "ocr" (read from an image) | "text" (text in the PDF)
+    table_source: str = ""  # "image" (a picture in the PDF) | "text" (text in the PDF)
+    images: list[dict] = field(default_factory=list)  # crops of the printed page, see render_crop
     needs_review: bool = False
     review_notes: list[str] = field(default_factory=list)
     references: list[str] = field(default_factory=list)
@@ -118,6 +121,7 @@ def build_units(manual: Manual, doc: pymupdf.Document, progress=None) -> list[Un
         if _is_list_page(page):  # a list of annexures or chapters, not the headings themselves
             continue
         claimed_images: set[int] = set()
+        owners = [(0.0, current)]
         for li, line in enumerate(page.lines):
             if text_tables and text_tables.claims(idx, line):
                 continue  # the line is a cell of a table already read
@@ -136,7 +140,7 @@ def build_units(manual: Manual, doc: pymupdf.Document, progress=None) -> list[Un
                     number, uid = f"{number}, Annexure {current.number}", f"{current.id.split(':', 1)[1]}-T{number}"
                 table = add(_new_unit(manual, "table", uid, number, m.group(2), chapter, current, page))
                 if text_tables:
-                    text_tables.attach(table, idx, line)
+                    text_tables.attach(table, idx, line, claimed_images)
                 else:
                     _attach_table(table, doc, page, pages[idx + 1] if idx + 1 < len(pages) else None, line, claimed_images)
                 continue
@@ -144,7 +148,8 @@ def build_units(manual: Manual, doc: pymupdf.Document, progress=None) -> list[Un
                 number, uid = _dotted(m.group(1)), f"F{_dotted(m.group(1))}"
                 if in_annex:
                     number, uid = f"{number}, Annexure {current.number}", f"{current.id.split(':', 1)[1]}-F{number}"
-                add(_new_unit(manual, "figure", uid, number, m.group(2), chapter, current, page))
+                fig = add(_new_unit(manual, "figure", uid, number, m.group(2), chapter, current, page))
+                _attach_figure(fig, doc, page, line, claimed_images)
                 continue
 
             head = _heading(line)
@@ -163,6 +168,7 @@ def build_units(manual: Manual, doc: pymupdf.Document, progress=None) -> list[Un
                     head = None
                 else:
                     current = add(_new_unit(manual, kind, uid, number, title, chapter or number.split(".")[0], current, page))
+                    owners.append((line.bbox[1], current))
                     if kind == "section":
                         current.parent = _parent(number)
                     if not title:
@@ -173,6 +179,15 @@ def build_units(manual: Manual, doc: pymupdf.Document, progress=None) -> list[Un
             current.text += line.text + "\n"
             current.page_end = max(current.page_end, page.number)
             current.label_end = page.label or current.label_end
+
+        for i, bbox in enumerate(page.images):
+            if i in claimed_images:
+                continue
+            owner = next((u for y, u in reversed(owners) if y <= bbox[1]), None)
+            if owner is not None:
+                owner.images.append(render_crop(doc, page, bbox, kind="table"))
+                owner.page_end = max(owner.page_end, page.number)
+                owner.label_end = page.label or owner.label_end
 
     result = [units[i] for i in order]
     for u in result:
@@ -198,35 +213,64 @@ def _new_unit(manual: Manual, kind: str, uid: str, number: str, title: str, chap
     )
 
 
-def _attach_table(table: Unit, doc: pymupdf.Document, page: Page, next_page: Page | None, caption: Line, claimed: set[int]) -> None:
-    """Find the table body below its caption: an image on this page, or at the top of the next."""
+def render_crop(doc: pymupdf.Document, page: Page, bbox, *, kind: str) -> dict:
+    """A picture of part of a printed page, for an assistant to read directly.
+
+    Tables: grayscale PNG at TABLE_IMAGE_DPI, so small digits stay sharp. Figures and
+    whole pages: JPEG at FIGURE_IMAGE_DPI.
+    """
+    pg = doc[page.number - 1]
+    rect = pymupdf.Rect(bbox) & pg.rect if bbox else pg.rect
+    pad = 4
+    rect = pymupdf.Rect(rect.x0 - pad, rect.y0 - pad, rect.x1 + pad, rect.y1 + pad) & pg.rect
+    if kind == "table":
+        pix = pg.get_pixmap(dpi=TABLE_IMAGE_DPI, clip=rect, colorspace=pymupdf.csGRAY)
+        data, mime = pix.tobytes("png"), "image/png"
+    else:
+        pix = pg.get_pixmap(dpi=FIGURE_IMAGE_DPI, clip=rect)
+        data, mime = pix.tobytes("jpeg", jpg_quality=80), "image/jpeg"
+    return {"pdf_page": page.number, "page_label": page.label, "bbox": [round(v, 1) for v in rect],
+            "width": pix.width, "height": pix.height, "mime": mime, "data": data}
+
+
+def _image_below(page: Page, next_page: Page | None, caption: Line, claimed: set[int]):
+    """The picture under a table caption: on this page, or at the top of the next."""
     candidates = [(page, i, bb) for i, bb in enumerate(page.images) if bb[1] >= caption.bbox[1] - 5 and i not in claimed]
     if not candidates and next_page is not None:
         candidates = [(next_page, i, bb) for i, bb in enumerate(next_page.images) if bb[1] < 250]
     if not candidates:
-        table.review_notes.append("no table image found below the caption; body may be text")
-        table.needs_review = True
-        return
+        return None
     host, i, bb = min(candidates, key=lambda c: (c[0].number, c[2][1]))
     if host is page:
         claimed.add(i)
-    ocr = ocr_table(render_region(doc[host.number - 1], bb))
+    return host, bb
+
+
+def _attach_table(table: Unit, doc: pymupdf.Document, page: Page, next_page: Page | None, caption: Line, claimed: set[int]) -> None:
+    """Attach the table picture under its caption.
+
+    The picture is what assistants read; no OCR is run or stored.
+    """
+    found = _image_below(page, next_page, caption, claimed)
+    if found is None:
+        # Preserve the printed layout when no reliable crop can be identified.
+        table.images.append(render_crop(doc, page, None, kind="table"))
+        table.table_source = "image"
+        if next_page is not None and caption.bbox[1] > page.height - 160:
+            table.images.append(render_crop(doc, next_page, None, kind="table"))
+            table.page_end = next_page.number
+            table.label_end = next_page.label
+        return
+    host, bb = found
+    table.images.append(render_crop(doc, host, bb, kind="table"))
+    table.table_source = "image"
     table.page_end = max(table.page_end, host.number)
     table.label_end = host.label or table.label_end
-    table.table_markdown = ocr.as_markdown()
-    table.table_source = "ocr"
-    table.table_cells = [
-        {"row": c.row, "col": c.col, "rowspan": c.rowspan, "colspan": c.colspan, "text": c.text, "confidence": round(c.confidence), "suspect": c.suspect}
-        for r in ocr.rows
-        for c in r
-    ]
-    table.needs_review = ocr.needs_review
-    if ocr.mode != "grid":
-        table.review_notes.append("no ruled grid detected; cells are approximate")
-    if ocr.min_confidence < 70:
-        table.review_notes.append(f"lowest OCR word confidence {ocr.min_confidence:.0f}")
-    if ocr.suspect_cells:
-        table.review_notes.append("cells that may have lost a decimal point: " + ", ".join(c.text for c in ocr.suspect_cells))
+
+
+def _attach_figure(fig: Unit, doc: pymupdf.Document, page: Page, caption: Line, claimed: set[int]) -> None:
+    """Use the printed page so vector drawings, legends and multipart figures stay intact."""
+    fig.images.append(render_crop(doc, page, None, kind="figure"))
 
 
 def _is_list_page(page: Page) -> bool:
@@ -266,7 +310,7 @@ class _TextTables:
     def _free(self, idx: int) -> list[TextTable]:
         return [t for t in self.tables(idx) if t.bbox not in self._claimed.get(idx, ())]
 
-    def attach(self, table: Unit, idx: int, caption: Line) -> None:
+    def attach(self, table: Unit, idx: int, caption: Line, claimed_images: set[int]) -> None:
         page = self.pages[idx]
         below = [t for t in self._free(idx) if t.bbox[1] >= caption.bbox[1] - 5]
         # Stop at the next caption: a table below it belongs to that caption.
@@ -277,8 +321,9 @@ class _TextTables:
         if not below and caption.bbox[1] > page.height - self.BOTTOM_GAP and idx + 1 < len(self.pages):
             host, below = idx + 1, [t for t in self._free(idx + 1) if self._at_top(idx + 1, t)]
         if not below:
-            table.review_notes.append("no ruled table found below the caption; the table may be an image or plain text")
-            table.needs_review = True
+            # No ruled text table: the table may be a picture, like the sewerage manual's.
+            nxt_page = self.pages[idx + 1] if idx + 1 < len(self.pages) else None
+            _attach_table(table, self.doc, page, nxt_page, caption, claimed_images)
             return
         first = below[0]
         self._claim(host, first)

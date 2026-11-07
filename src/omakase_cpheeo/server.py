@@ -11,7 +11,7 @@ from urllib.parse import urlparse
 
 from mcp.server.mcpserver import MCPServer
 from mcp.server.transport_security import TransportSecuritySettings
-from mcp.types import Icon
+from mcp.types import CallToolResult, Icon, ImageContent, TextContent
 from starlette.requests import Request
 from starlette.responses import HTMLResponse, JSONResponse, Response
 
@@ -31,7 +31,7 @@ How to use:
 - Call `fetch` (or `get_clause` for structured fields) with a result `id` to read the full clause or table before quoting a value.
 - Link each citation to the result's `url`, which opens the clause on an Omakase page.
 - When you state a value from the manual, quote it and give the `citation` exactly as returned. Do not cite a clause you did not retrieve.
-- Tables marked `needs_review` were read by OCR from an image. Say so when quoting them, and point the user to the printed page to confirm the number.
+- Many tables and all figures are pictures of the printed page. `get_clause` and `fetch` attach those pictures as images (and give an image `url`). Read values from the image and cite the `citation`; there is no OCR transcription. If a value is unclear, say so and ask the user to check the printed page.
 - If the manuals do not cover the question, say so instead of answering from memory.
 - Name the source as "Omakase CPHEEO": each `citation` already ends with "· via Omakase CPHEEO"; keep that suffix when you copy it.
 - End answers that rely on these results with: "Sources via Omakase CPHEEO search."
@@ -49,6 +49,17 @@ def server_icons() -> list[Icon]:
         return [Icon(src=url, mime_type="image/png", sizes=["256x256"])]
     data = base64.b64encode(_asset(ICON_SMALL)).decode()
     return [Icon(src=f"data:image/png;base64,{data}", mime_type="image/png", sizes=["256x256"])]
+
+
+def _with_images(lib: Library, payload: dict, clause: dict) -> CallToolResult:
+    """The JSON payload plus the clause's page pictures as image content blocks."""
+    import json
+
+    content: list = [TextContent(type="text", text=json.dumps(payload, ensure_ascii=False, indent=1))]
+    for unit_id, ref, mime, data in lib.images_for(clause):
+        content.append(TextContent(type="text", text=f"{unit_id}, image {ref['seq']}: printed page {ref['page_label'] or 'unknown'}, PDF page {ref['pdf_page']}:"))
+        content.append(ImageContent(type="image", data=base64.b64encode(data).decode(), mime_type=mime))
+    return CallToolResult(content=content, structured_content=payload)
 
 
 def build_server(db: str | None = None) -> MCPServer:
@@ -76,20 +87,21 @@ def build_server(db: str | None = None) -> MCPServer:
         return lib.search(query, domain=domain, manual_id=manual, kind=kind, limit=limit)
 
     @mcp.tool(title="Omakase CPHEEO: read a clause or table")
-    def get_clause(id: str, include_children: bool = False) -> dict:
-        """Return the full text of a section, or the rows of a table, by id (e.g. SEW-2013-A:3.6, SEW-2013-A:T3.2 or WS-2024-A:AN6.1).
+    def get_clause(id: str, include_children: bool = False) -> CallToolResult:
+        """Return section text, native PDF table rows, or source images for scanned tables and figures, by id (e.g. SEW-2013-A:3.6, SEW-2013-A:T3.2 or WS-2024-A:AN6.1).
 
         include_children: also return the numbered subsections of a section.
         """
-        return lib.get_clause(id, include_children=include_children)
+        clause = lib.get_clause(id, include_children=include_children)
+        return _with_images(lib, clause, clause)
 
     @mcp.tool(title="Omakase CPHEEO: fetch a clause")
-    def fetch(id: str) -> dict:
+    def fetch(id: str) -> CallToolResult:
         """Return one section or table as a document with id, title, text, url and metadata.
 
         id: a result id from search, e.g. SEW-2013-A:T3.13.
         """
-        return lib.fetch(id)
+        return _with_images(lib, lib.fetch(id), lib.get_clause(id))
 
     @mcp.tool(title="Omakase CPHEEO: list manuals")
     def list_manuals() -> dict:
@@ -117,6 +129,16 @@ def build_server(db: str | None = None) -> MCPServer:
     @mcp.custom_route("/favicon.ico", methods=["GET"])
     async def favicon(_: Request) -> Response:
         return Response(_asset(FAVICON), media_type="image/x-icon", headers={"Cache-Control": "public, max-age=86400"})
+
+    @mcp.custom_route("/img/{id:path}", methods=["GET"])
+    async def unit_image(request: Request) -> Response:
+        """/img/SEW-2013-A:T3.2/0.png: picture of the printed page for a unit."""
+        unit_id, _, name = request.path_params["id"].rpartition("/")
+        try:
+            mime, data = lib.image(unit_id, int(name.split(".")[0]))
+        except (KeyError, ValueError) as e:
+            return _error(e, 404)
+        return Response(data, media_type=mime, headers={"Cache-Control": "public, max-age=86400"})
 
     @mcp.custom_route("/health", methods=["GET"])
     async def health(_: Request) -> JSONResponse:
@@ -176,14 +198,23 @@ def _clause_html(c: dict) -> str:
     parts = [f"<p class=cite>{html.escape(c['citation_plain'])}</p>"]
     if c.get("table_markdown"):
         parts.append(_table_html(c["table_markdown"]))
-        if c.get("needs_review"):
-            parts.append("<p class=warn>Read by OCR from an image in the manual. Confirm values against the printed page.</p>")
+    parts += _images_html(c)
     for para in (c.get("text") or "").splitlines():
         parts.append(f"<p>{html.escape(para)}</p>")
     for t in c.get("tables", []):
         parts.append(f"<h2>{html.escape(t['citation'])}</h2>")
-        parts.append(_table_html(t.get("table_markdown", "")))
+        parts.append(_table_html(t["table_markdown"]) if t.get("table_markdown") else "".join(_images_html(t)))
     return "\n".join(parts)
+
+
+def _images_html(u: dict) -> list[str]:
+    out = []
+    for r in u.get("images", []):
+        src = f"/img/{u['id']}/{r['seq']}.{'png' if r['mime'] == 'image/png' else 'jpg'}"
+        page = f"Printed page {r['page_label']} (PDF page {r['pdf_page']})" if r['page_label'] else f"PDF page {r['pdf_page']}"
+        alt = html.escape(f"{u['citation_plain']} ({page})")
+        out.append(f"<figure><img src='{html.escape(src)}' alt='{alt}' width='{r['width']}' height='{r['height']}'><figcaption>{html.escape(page)}</figcaption></figure>")
+    return out
 
 
 def _page(title: str, body: str) -> str:
@@ -196,6 +227,7 @@ def _page(title: str, body: str) -> str:
 .cite{{font-weight:600}}.warn{{background:#fff4d6;padding:.5rem .75rem;border-radius:4px}}
 table{{border-collapse:collapse;margin:1rem 0}}td,th{{border:1px solid #bbb;padding:.3rem .6rem;text-align:left}}
 footer{{margin-top:3rem;color:#666;font-size:.9rem}}
+figure{{margin:1rem 0}}figure img{{max-width:100%;height:auto;border:1px solid #ddd}}figcaption{{color:#666;font-size:.85rem}}
 header{{display:flex;align-items:center;gap:.6rem;margin-bottom:1.5rem;font-weight:700;font-size:1.15rem}}
 header img{{width:36px;height:36px;border-radius:8px}}</style>
 <body><header><img src="/icon.png" alt="" width=36 height=36><span>Omakase CPHEEO</span></header>{body}<footer>CPHEEO search by {brand}. {html.escape(a['note'])}</footer></body></html>"""

@@ -1,7 +1,7 @@
 """Query operations shared by the MCP tools and the REST API.
 
-Every result carries a ready-to-paste citation and the Omakase attribution. Results
-from OCR'd tables say so, and say when a cell should be checked against the page.
+Every result carries a ready-to-paste citation and the Omakase attribution.
+Scanned content is supplied as source images, never an OCR transcription.
 """
 
 from __future__ import annotations
@@ -35,6 +35,7 @@ SYNONYMS: dict[str, tuple[str, ...]] = {
     "lpcd": ("litres per capita per day",),
     "litres per capita per day": ("lpcd",),
     "d/d": ("depth of flow",),
+    "manning": ("coefficient of roughness",),
     "self cleaning": ("self cleansing",),
     "rising main": ("pumping main", "force main"),
     "pumping main": ("rising main",),
@@ -64,6 +65,16 @@ def public_url() -> str | None:
 def clause_url(unit_id: str) -> str | None:
     base = public_url()
     return f"{base}/c/{unit_id}" if base else None
+
+
+IMAGE_NOTE = ("This {kind} includes source images from the printed manual. Read values directly from the images "
+              "and cite the returned reference. No OCR transcription is supplied. If a value is unclear, say so.")
+
+
+def image_url(unit_id: str, seq: int, mime: str) -> str | None:
+    base = public_url()
+    ext = "png" if mime == "image/png" else "jpg"
+    return f"{base}/img/{unit_id}/{seq}.{ext}" if base else None
 
 
 def icon_url() -> str | None:
@@ -97,6 +108,9 @@ class Library:
         self.db_path = Path(db_path or os.environ.get("OMAKASE_CPHEEO_DB", DEFAULT_DB))
         if not self.db_path.exists():
             raise FileNotFoundError(f"index not found at {self.db_path}; run `omakase-cpheeo ingest` first")
+        if "image_count" not in {r["name"] for r in self.con.execute("PRAGMA table_info(units)")}:
+            self.con.close()
+            raise RuntimeError("index uses the old OCR schema; run `omakase-cpheeo ingest` before starting this version")
 
     @cached_property
     def con(self) -> sqlite3.Connection:
@@ -139,13 +153,16 @@ class Library:
         if url := clause_url(row["id"]):
             out["url"] = url
         if row["kind"] == "table":
-            if row["table_source"] == "ocr":
-                out["source"] = "OCR of a table image in the manual"
+            if row["table_source"] == "image":
+                out["source"] = "picture of the printed table (read it from the image)"
             elif row["table_source"] == "text":
                 out["source"] = "table text in the manual PDF"
             out["needs_review"] = bool(row["needs_review"])
             if row["needs_review"]:
                 out["review_notes"] = json.loads(row["review_notes"])
+        if row["image_count"]:
+            out["images"] = self.image_refs(row["id"])
+            out["image_note"] = IMAGE_NOTE.format(kind=row["kind"] if row["kind"] in ("table", "figure") else "unit")
         if full:
             out["text"] = row["text"]
             if row["table_markdown"]:
@@ -154,6 +171,45 @@ class Library:
             refs = json.loads(row["refs"])
             if refs:
                 out["referenced_tables"] = [f"{row['manual_id']}:{r}" for r in refs]
+        return out
+
+    @staticmethod
+    def _snippet(row: sqlite3.Row, text: str) -> str:
+        """Picture-only units show their caption."""
+        if row["table_source"] == "image" or (row["kind"] == "figure" and not row["text"]):
+            what = "table" if row["kind"] == "table" else "figure"
+            return f"{row['title']} (a picture of the printed {what}; call fetch or get_clause with this id to see it)"
+        return text
+
+    # ---- images -------------------------------------------------------------------
+
+    def image_refs(self, unit_id: str) -> list[dict]:
+        rows = self.con.execute(
+            "SELECT seq, pdf_page, page_label, bbox, width, height, mime FROM images WHERE unit_id = ? ORDER BY seq", (unit_id,)
+        ).fetchall()
+        out = []
+        for r in rows:
+            ref = {"seq": r["seq"], "page_label": r["page_label"], "pdf_page": r["pdf_page"],
+                   "width": r["width"], "height": r["height"], "mime": r["mime"], "bbox": json.loads(r["bbox"])}
+            if url := image_url(unit_id, r["seq"], r["mime"]):
+                ref["url"] = url
+            out.append(ref)
+        return out
+
+    def image(self, unit_id: str, seq: int) -> tuple[str, bytes]:
+        r = self.con.execute("SELECT mime, data FROM images WHERE unit_id = ? AND seq = ?", (unit_id, seq)).fetchone()
+        if r is None:
+            raise KeyError(f"no image {seq} for {unit_id!r}")
+        return r["mime"], bytes(r["data"])
+
+    def images_for(self, clause: dict) -> list[tuple[str, dict, str, bytes]]:
+        """All images with their page references, clause images first."""
+        units = [clause] + clause.get("tables", []) + clause.get("children", [])
+        out = []
+        for u in units:
+            for ref in u.get("images", []):
+                mime, data = self.image(u["id"], ref["seq"])
+                out.append((u["id"], ref, mime, data))
         return out
 
     # ---- operations ---------------------------------------------------------------
@@ -228,7 +284,7 @@ class Library:
                     seen.add(row["id"])
                     hit = self._unit_dict(row, full=False)
                     hit["match"] = "exact reference"
-                    hit["snippet"] = (row["table_markdown"] or row["text"])[:600]
+                    hit["snippet"] = self._snippet(row, (row["table_markdown"] or row["text"])[:600])
                     results.append(hit)
 
         # 2. Ranked full-text search; title and handle matches weigh more than body text.
@@ -236,8 +292,6 @@ class Library:
         extra = [alt for phrase, alts in SYNONYMS.items() if phrase in lowered for alt in alts]
         kept = [w for w in query.split() if w.lower().strip("?,.") not in STOPWORDS]
         words = " ".join(kept + extra) or query
-        # Adjacent content words ("water supply", "sewage generation") and synonym phrases.
-        pairs = [f"{a} {b}" for a, b in zip(kept, kept[1:])]
         q = fts_query(words, extra)
         if q:
             rows = self.con.execute(
@@ -251,12 +305,12 @@ class Library:
             if domain is None and manual_id is None and (hint := self.hinted_domain(query)):
                 rows = sorted(rows, key=lambda r: r["score"] * (DOMAIN_BOOST if r["domain"] == hint else 1.0))
             for row in rows:
-                if row["unit_id"] in seen or (not row["text"] and not row["table_markdown"]):
+                if row["unit_id"] in seen or (not row["text"] and not row["table_markdown"] and not row["image_count"]):
                     continue
                 seen.add(row["unit_id"])
                 hit = self._unit_dict(row, full=False)
                 hit["match"] = "text"
-                hit["snippet"] = row["snip"]
+                hit["snippet"] = self._snippet(row, row["snip"])
                 results.append(hit)
                 if len(results) >= limit:
                     break
@@ -266,20 +320,29 @@ class Library:
         """One unit as a document: id, title, text, url, metadata (the shape ChatGPT expects)."""
         c = self.get_clause(unit_id)
         parts = [c["citation"], source_line(c["id"]), ""]
+
+        def picture_lines(u: dict) -> list[str]:
+            if not u.get("images"):
+                return []
+            lines = [u["image_note"]]
+            lines += [f"Image of p. {r['page_label'] or r['pdf_page']}: {r['url']}" for r in u["images"] if r.get("url")]
+            return lines
+
         if c.get("table_markdown"):
             parts.append(c["table_markdown"])
-            if c.get("needs_review") and c.get("source", "").startswith("OCR"):
-                parts.append("\nNote: this table was read by OCR from an image in the manual. "
-                             "Confirm values against the printed page before use.")
-            elif c.get("needs_review"):
+            if c.get("needs_review"):
                 parts.append("\nNote: this table's layout could not be read with confidence. "
                              "Confirm values against the printed page before use.")
+        parts += picture_lines(c)
         if c.get("text"):
             parts.append(c["text"])
         for t in c.get("tables", []):
-            parts += ["", f"{t['citation']}", t.get("table_markdown", "")]
+            parts += ["", f"{t['citation']}"]
+            parts += [t["table_markdown"]] if t.get("table_markdown") else picture_lines(t)
         meta = {k: c[k] for k in ("kind", "number", "page_label", "pdf_page", "citation", "citation_plain", "source_name", "source_icon") if c.get(k) is not None}
         meta["manual"] = c["manual"]["id"]
         if c.get("needs_review"):
             meta["needs_review"] = True
+        if c.get("images"):
+            meta["images"] = c["images"]
         return {"id": c["id"], "title": f"{SOURCE_NAME} · {c['citation_plain']}", "text": "\n".join(parts).strip(), "url": c.get("url"), "metadata": meta}

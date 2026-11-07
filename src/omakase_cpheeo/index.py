@@ -5,7 +5,6 @@ from __future__ import annotations
 import json
 import re
 import sqlite3
-from dataclasses import asdict
 from pathlib import Path
 
 from .corpus import MANUALS, Manual
@@ -22,8 +21,13 @@ CREATE TABLE manuals (
 CREATE TABLE units (
   id TEXT PRIMARY KEY, manual_id TEXT, kind TEXT, number TEXT, title TEXT, chapter TEXT, parent TEXT,
   page_start INTEGER, page_end INTEGER, label_start TEXT, label_end TEXT,
-  text TEXT, table_markdown TEXT, table_cells TEXT, table_source TEXT, needs_review INTEGER, review_notes TEXT, refs TEXT,
+  text TEXT, table_markdown TEXT, table_cells TEXT, table_source TEXT, image_count INTEGER, needs_review INTEGER, review_notes TEXT, refs TEXT,
   ord INTEGER
+);
+-- Crops of the printed page (table and figure pictures) that assistants read directly.
+CREATE TABLE images (
+  unit_id TEXT, seq INTEGER, pdf_page INTEGER, page_label TEXT, bbox TEXT,
+  width INTEGER, height INTEGER, mime TEXT, data BLOB, PRIMARY KEY (unit_id, seq)
 );
 CREATE INDEX units_manual_number ON units(manual_id, number);
 CREATE INDEX units_parent ON units(manual_id, parent);
@@ -45,6 +49,8 @@ def passages_of(unit: Unit) -> list[str]:
     body = unit.table_markdown or unit.text
     if unit.kind == "table" and unit.text:
         body = f"{body}\n{unit.text}"
+    if not body and unit.images:  # a figure: its caption is the searchable part
+        body = unit.title
     if len(body) <= PASSAGE_CHARS:
         return [body]
     out, start = [], 0
@@ -87,16 +93,20 @@ def build(units: list[Unit], manuals: tuple[Manual, ...] = MANUALS, db_path: Pat
             parent = p.parent
         return " ".join(names)
     for i, u in enumerate(units):
-        d = asdict(u)
         con.execute(
-            "INSERT INTO units VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)",
+            "INSERT INTO units VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)",
             (
                 u.id, u.manual_id, u.kind, u.number, u.title, u.chapter, u.parent,
                 u.page_start, u.page_end, u.label_start, u.label_end,
-                u.text, u.table_markdown, json.dumps(d["table_cells"]), u.table_source, int(u.needs_review),
+                u.text, u.table_markdown, json.dumps(u.table_cells), u.table_source, len(u.images), int(u.needs_review),
                 json.dumps(u.review_notes), json.dumps(u.references), i,
             ),
         )
+        for seq, im in enumerate(u.images):
+            con.execute(
+                "INSERT INTO images VALUES (?,?,?,?,?,?,?,?,?)",
+                (u.id, seq, im["pdf_page"], im["page_label"], json.dumps(im["bbox"]), im["width"], im["height"], im["mime"], im["data"]),
+            )
         context = breadcrumb(u)
         for seq, text in enumerate(passages_of(u)):
             con.execute(

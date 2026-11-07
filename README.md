@@ -7,7 +7,6 @@ Indexed now: Manual on Sewerage and Sewage Treatment Systems, Part A: Engineerin
 ## Requirements
 
 - Python 3.13 and [uv](https://docs.astral.sh/uv/)
-- Tesseract with English data (`tesseract --list-langs` shows `eng`), for tables that are images in the PDFs
 - The source PDFs in a local folder (not in this repo). Default `~/Downloads/CPHEEO`; override with `OMAKASE_CPHEEO_SOURCES`.
 
 ## Use
@@ -30,15 +29,18 @@ REST:
 | Endpoint | Returns |
 |---|---|
 | `GET /v1/search?q=...&domain=&manual=&kind=&limit=` | Ranked units with citation and snippet |
-| `GET /v1/clause/{id}?children=1` | Full section text or table rows, with tables under that section |
+| `GET /v1/clause/{id}?children=1` | Section text, native table rows and source-image references |
 | `GET /v1/manuals` | Manuals and unit counts |
 | `GET /v1/toc/{manual}?chapter=3` | Chapters, sections and tables |
 | `GET /c/{id}` | Readable clause page with Omakase attribution (what result `url`s point to) |
+| `GET /img/{id}/{seq}.png` (or `.jpg`) | Source-page image for a table, figure or scanned content |
 | `GET /health` | Liveness and loaded manuals |
 
 Unit ids are citation handles: `SEW-2013-A:3.6` (section), `SEW-2013-A:T3.2` (table), `SEW-2013-A:F3.4` (figure), `WS-2024-A:AN6.1` (annexure), `WS-2024-A:AN6.3-T4` (Table 4 inside Annexure 6.3; annexures number their tables from 1).
 
-Sewerage tables are images and are read by OCR (`source`: OCR). Water manual tables are text in the PDF and are read from the ruled grid (`source`: table text). Tables marked `needs_review` were OCR'd with doubts, or had no readable table under the caption; `data/build/review.json` lists them with the reason.
+Scanned tables are returned as source images, with no OCR transcription. Figures retain the full printed page so legends and vector drawings stay visible. Other embedded pictures are available on their containing clause. `get_clause` and `fetch` attach images as MCP image blocks; REST returns image references and the clause pages display them. Each image records its physical PDF page and printed label when available. Assistants should read the image, cite the returned reference, and say when a value is unclear; image delivery cannot guarantee a model reads every value correctly.
+
+Water manual tables with native text are still read directly from the ruled grid. Search uses captions, clause text and heading context, so words found only inside scanned pictures are not searchable. No OCR is run during ingestion. Re-ingest after upgrading to this image schema before starting the server.
 
 ## Settings
 
@@ -49,7 +51,8 @@ Sewerage tables are images and are read by OCR (`source`: OCR). Water manual tab
 | `OMAKASE_CPHEEO_BRAND_URL` | unset | Link included in every result's attribution |
 | `OMAKASE_CPHEEO_PUBLIC_URL` | unset | Public base URL (tunnel or deployment); adds result links and allows that Host |
 | `OMAKASE_CPHEEO_ALLOWED_ORIGINS` | unset | Extra comma-separated browser origins to accept |
-| `OMAKASE_CPHEEO_TABLE_DPI` | `300` | Render resolution for table OCR |
+| `OMAKASE_CPHEEO_TABLE_IMAGE_DPI` | `200` | PNG resolution for scanned tables and other embedded pictures |
+| `OMAKASE_CPHEEO_FIGURE_IMAGE_DPI` | `130` | JPEG resolution for full figure pages |
 
 ## Branding
 

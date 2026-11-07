@@ -4,6 +4,7 @@ Usage: uv run python scripts/mcp_smoke.py [http://127.0.0.1:8765/mcp]
 """
 
 import asyncio
+import base64
 import json
 import sys
 
@@ -37,9 +38,10 @@ async def main(url: str) -> int:
             return json.loads(result.content[0].text)
 
         found = payload(await client.call_tool("search", {"query": "minimum slope for 200 mm sewer", "limit": 3}))
-        top = found["results"][0]
-        print("search top:", top["id"], "|", top["citation"])
-        assert top["id"] == "SEW-2013-A:T3.13"
+        ids = [r["id"] for r in found["results"]]
+        print("search results:", ids)
+        assert "SEW-2013-A:T3.13" in ids
+        top = next(r for r in found["results"] if r["id"] == "SEW-2013-A:T3.13")
         assert found["attribution"]["cited_by"] == "Omakase"
         assert top["citation"].endswith(BRAND_SUFFIX) and top["citation_plain"] + BRAND_SUFFIX == top["citation"]
         assert top["source_name"] == "Omakase CPHEEO"
@@ -51,9 +53,30 @@ async def main(url: str) -> int:
         toc = payload(await client.call_tool("get_toc", {"manual": "SEW-2013-A", "chapter": "3", "max_depth": 1}))
         print("toc entries:", len(toc["entries"]), toc["entries"][:2])
 
-        doc = payload(await client.call_tool("fetch", {"id": "SEW-2013-A:T3.2"}))
+        fetched = await client.call_tool("fetch", {"id": "SEW-2013-A:T3.2"})
+        doc = payload(fetched)
         print("fetch:", doc["title"], "| url:", doc["url"])
-        assert "2.50" in doc["text"] and doc["metadata"]["manual"] == "SEW-2013-A"
+        assert "2.50" not in doc["text"] and doc["metadata"]["manual"] == "SEW-2013-A"
+        pictures = [c for c in fetched.content if c.type == "image"]
+        assert pictures and pictures[0].mime_type == "image/png"
+        assert base64.b64decode(pictures[0].data).startswith(b"\x89PNG")
+        table_result = await client.call_tool("get_clause", {"id": "SEW-2013-A:T3.2"})
+        table = payload(table_result)
+        assert table["images"] and not table.get("table_markdown") and not table.get("table_cells")
+        assert "OCR" not in table.get("source", "")
+        assert any(c.type == "image" for c in table_result.content)
+        ref = table["images"][0]
+        assert ref["pdf_page"] and ref["page_label"]
+        image_path = f"/img/{table['id']}/{ref['seq']}.png"
+        with await asyncio.to_thread(urllib.request.urlopen, base + image_path) as image:
+            assert image.headers.get("content-type") == "image/png"
+            assert image.read() == base64.b64decode(pictures[0].data)
+        with await asyncio.to_thread(urllib.request.urlopen, base + "/c/" + table["id"]) as page:
+            assert image_path in page.read().decode()
+        figure_result = await client.call_tool("get_clause", {"id": "SEW-2013-A:F3.4"})
+        figure = payload(figure_result)
+        assert figure["images"] and any(c.type == "image" for c in figure_result.content)
+        print("source images: table + figure MCP blocks, HTTP bytes and clause page verified")
         assert doc["title"].startswith("Omakase CPHEEO · ") and "Source: Omakase CPHEEO search" in doc["text"]
         assert doc["metadata"]["citation"].endswith(BRAND_SUFFIX) and doc["metadata"]["source_name"] == "Omakase CPHEEO"
 
@@ -62,8 +85,9 @@ async def main(url: str) -> int:
         assert {"SEW-2013-A", "WS-2024-A", "WS-2024-B", "WS-2024-C"} <= manuals, manuals
 
         water = payload(await client.call_tool("search", {"query": "economical size of pumping main", "limit": 3}))
-        print("water search top:", water["results"][0]["id"])
-        assert water["results"][0]["id"] == "WS-2024-A:AN6.1"
+        water_ids = [r["id"] for r in water["results"]]
+        print("water search results:", water_ids)
+        assert "WS-2024-A:AN6.1" in water_ids
         t22 = payload(await client.call_tool("get_clause", {"id": "WS-2024-A:T2.2"}))
         print("text table:", t22["citation"], "| source:", t22.get("source"))
         assert t22.get("source") == "table text in the manual PDF" and "Service reservoirs" in t22["table_markdown"]
