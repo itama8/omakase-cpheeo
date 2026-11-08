@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:E5.14",
+  "unit_id": "SEW-2013-A:E5.14",
+  "manual_id": "SEW-2013-A",
+  "kind": "equation",
+  "number": "5.14",
+  "title": "Equation of the curve forming the outer edge of a proportional flow weir",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "state": "pending",
+  "regions": [
+    {
+      "pdf_page": 348,
+      "page_label": "5 - 44",
+      "bbox": [
+        57,
+        279,
+        518,
+        315
+      ],
+      "render_sha256": "5d0bb720d5ab1766e4fe6ac92abe9ae91f6cc98a1f6f912b9b8a9798fae39a92"
+    }
+  ],
+  "parent_id": "SEW-2013-A:5.6.2.7.3",
+  "latex": "x=\\frac{b}{2}\\left(1-\\frac{2}{\\pi}\\tan^{-1}\\sqrt{\\frac{Y}{a}-1}\\right)",
+  "readable": "x = (b / 2) (1 - (2 / pi) tan^-1 SQRT(Y / a - 1))",
+  "symbols": [
+    {
+      "symbol": "x",
+      "definition": "Weir width at liquid surface"
+    },
+    {
+      "symbol": "Y",
+      "definition": "Liquid depth"
+    }
+  ],
+  "applicability": "Shape of the curve forming the outer edges of the cut portion of the proportional flow weir.",
+  "notes": [
+    "Printed as inverse tangent tan^-1; retained.",
+    "The symbol a is not redefined on this page; it is the weir dimension from equation (5.13).",
+    "Equation (5.14) carries no printed equation number adjacent to the formula except the (5.14) label at the right margin."
+  ],
+  "verification": {
+    "transcription": {
+      "pass_id": "sew-t03-first-reading-2026-11-08",
+      "method": "Direct visual reading of full annotation-cleaned 144 dpi page PNGs, plus enlarged crops at 288-720 dpi and a contact sheet of every hashed source region; no OCR, no paid service, no delegation",
+      "observations": "First visual transcription only. Every printed glyph, power, subscript, inequality, unit, hyphen spacing, footnote and printed error was read from the rendered source and retained or flagged; no value inferred."
+    }
+  },
+  "source_image_refs": [
+    {
+      "path": "tmp/pdfs/sew-t03/SEW-2013-A--E5.14.png",
+      "role": "first-reading source crop"
+    }
+  ]
+}

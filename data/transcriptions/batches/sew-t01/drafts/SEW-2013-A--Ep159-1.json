@@ -34,13 +34,14 @@
    "definition": "water depth"
   }
  ],
- "applicability": "Annotations printed inside Figure 3.5 (Palmer-Bowlus flume installation in circular sewer) express the flume width W and the small invert dimension t as fractions of the pipe diameter D. The same figure prints D=Conduit diameter and marks D/2 as the preferred head measuring point.",
+ "applicability": "Annotations printed inside Figure 3.5 (Palmer-Bowlus flume installation in circular sewer) express W and t as fractions of the pipe diameter D. In the drawing W is dimensioned across the hatched flume bottom and t as a small height at the flume invert. The same figure prints D=Conduit diameter and marks D/2 as the preferred head measuring point; that geometric description is the transcriber's description of the drawing, not a printed definition.",
  "notes": [
   "Unnumbered figure expressions; p159-1 is a service locator, not a printed equation number.",
   "Printed as W= 5D/12 and t= D/6 without units; no unit or decimal value has been added.",
   "W and t are printed as the left-hand sides but are not defined anywhere in the annotation block; only D (PIPE DIAMETER) and H (WATER DEPTH) are defined. No definition has been supplied for W or t.",
   "The flume section in the same figure marks 2:1 side slopes and dimension H as the water depth; these are geometry labels, not additional equations.",
-  "Source: CPHEEO, 1993 is not printed on this figure; it carries no source line."
+  "Source: CPHEEO, 1993 is not printed on this figure; it carries no source line.",
+  "The geometric description of where W and t are dimensioned comes from the drawing itself; neither letter is given a printed definition."
  ],
  "verification": {
   "transcription": {

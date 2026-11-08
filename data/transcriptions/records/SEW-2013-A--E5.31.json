@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:E5.31",
+  "unit_id": "SEW-2013-A:E5.31",
+  "manual_id": "SEW-2013-A",
+  "kind": "equation",
+  "number": "5.31",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "state": "verified",
+  "regions": [
+    {
+      "pdf_page": 376,
+      "page_label": "5 - 72",
+      "bbox": [
+        52.0,
+        658.0,
+        525.0,
+        756.0
+      ],
+      "render_sha256": "ae6b6ded2b6f7b39ca42405c2579171afbf7c446a80ec10b6c6994c41dca760e"
+    }
+  ],
+  "title": "Sludge recirculation ratio from MLSS and sludge concentration",
+  "latex": "\\frac{Q_R}{Q} = \\frac{X}{X_s - X}",
+  "readable": "QR/Q = X/(Xs − X)",
+  "symbols": [
+    {
+      "symbol": "QR",
+      "definition": "Sludge recirculation rate, m³/d."
+    }
+  ],
+  "applicability": "Controls the MLSS concentration in the aeration tank, which is set by the sludge recirculation rate and by the sludge settleability and thickening in the secondary sedimentation tank.",
+  "notes": [
+    "The printed \"where,\" list stops after the QR definition, so Q, X and Xs carry no printed definitions on this page.",
+    "Equation (5.30) is not printed on this page; numbering jumps from 5.29 to 5.31.",
+    "The equation and its number were examined at 288 dpi; the fraction bars and subscripts QR, Xs are unambiguous."
+  ],
+  "verification": {
+    "transcription": {
+      "pass_id": "sew-t04-first-reading-20261109",
+      "method": "direct visual reading of 144 dpi annotation-cleaned full-page renders plus 288-900 dpi crops of the source regions; no OCR",
+      "observations": "First reading only. Every value, exponent, subscript, printed spelling and printed error was read from the rendered page image. No distinct second inspection performed; record is a draft pending review."
+    },
+    "visual_recheck": {
+      "pass_id": "parent-recheck-sew-t04",
+      "method": "distinct second visual inspection of exact source-region renders (incl. rotated/zoomed crops) by parent assistant; not independent human review",
+      "observations": "Parent compared every cell/term against 144-dpi region renders; confirmed values, powers, subscripts and printed anomalies.",
+      "content_sha256": "43f60a2e0dc3cc28567c5a87d6e15426ce838baa4de3bcbc6dd1e51f3d1139b6"
+    }
+  },
+  "parent_id": "SEW-2013-A:5.8.1.7.5.9"
+}

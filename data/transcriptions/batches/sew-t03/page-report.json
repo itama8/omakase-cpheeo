@@ -1,0 +1,382 @@
+[
+  {
+    "pdf_page": 323,
+    "page_label": "5 - 19",
+    "targets": [],
+    "no_targets_reason": "Text only. Section 5.3.7 Control of Hydrogen Sulphide Odour prose, Figure 5.16 photographic pair and its two-line caption. No table, no equation, no dimensioned data.",
+    "observations": null,
+    "continuations": [],
+    "unclear": [],
+    "image_viewed": "/home/a2ajinkya/.t3/worktrees/omakase-cpheeo/feat-verified-visual-transcriptions/tmp/pdfs/sew-t03/page-323.png"
+  },
+  {
+    "pdf_page": 324,
+    "page_label": "5 - 20",
+    "targets": [],
+    "no_targets_reason": "Figure 5.17 layout drawing with numbered unit labels 1-24 and two printed road widths (10 m wide Road, 7.5 m wide Road). A plan drawing with callout numbers is not a table; no equation printed.",
+    "observations": null,
+    "continuations": [
+      "The numbered layout labels are explained in the prose below the figure on the same page."
+    ],
+    "unclear": [
+      "The circled numbers in Figure 5.17 are a drawing key, not a data table; they were read but not transcribed as a table."
+    ],
+    "image_viewed": "/home/a2ajinkya/.t3/worktrees/omakase-cpheeo/feat-verified-visual-transcriptions/tmp/pdfs/sew-t03/page-324.png"
+  },
+  {
+    "pdf_page": 325,
+    "page_label": "5 - 21",
+    "targets": [],
+    "no_targets_reason": "Prose only. Sections 5.3.7.1 buffer zone, 5.3.8 required engineering data (a-g list), 5.3.9 design period, 5.3.10 sewers and conduits. The a) to g) list is prose bullets, not a table; no equation printed.",
+    "observations": null,
+    "continuations": [],
+    "unclear": [],
+    "image_viewed": "/home/a2ajinkya/.t3/worktrees/omakase-cpheeo/feat-verified-visual-transcriptions/tmp/pdfs/sew-t03/page-325.png"
+  },
+  {
+    "pdf_page": 329,
+    "page_label": "5 - 25",
+    "targets": [],
+    "no_targets_reason": "Prose plus one photograph (Figure 5.18) with Source: BWSSB and caption. Grading and landscaping dimensions are stated in prose, not tabulated; no equation printed.",
+    "observations": null,
+    "continuations": [],
+    "unclear": [],
+    "image_viewed": "/home/a2ajinkya/.t3/worktrees/omakase-cpheeo/feat-verified-visual-transcriptions/tmp/pdfs/sew-t03/page-329.png"
+  },
+  {
+    "pdf_page": 330,
+    "page_label": "5 - 26",
+    "targets": [],
+    "no_targets_reason": "Two photographs (Figures 5.19 and 5.20) with captions and Source lines, then the Section 5.4 PLANT OUTFALLS heading and one prose paragraph. No table or equation printed.",
+    "observations": null,
+    "continuations": [],
+    "unclear": [],
+    "image_viewed": "/home/a2ajinkya/.t3/worktrees/omakase-cpheeo/feat-verified-visual-transcriptions/tmp/pdfs/sew-t03/page-330.png"
+  },
+  {
+    "pdf_page": 334,
+    "page_label": "5 - 30",
+    "targets": [],
+    "no_targets_reason": "Photograph (Figure 5.21) with a three-line caption, then sections 5.6.1.6 Housing of Screens, 5.6.1.7 Hydraulics and 5.6.1.8 Velocity in prose. Velocities are stated inline; no table or equation printed.",
+    "observations": null,
+    "continuations": [],
+    "unclear": [],
+    "image_viewed": "/home/a2ajinkya/.t3/worktrees/omakase-cpheeo/feat-verified-visual-transcriptions/tmp/pdfs/sew-t03/page-334.png"
+  },
+  {
+    "pdf_page": 335,
+    "page_label": "5 - 31",
+    "targets": [
+      "SEW-2013-A:E5.1",
+      "SEW-2013-A:E5.2"
+    ],
+    "no_targets_reason": null,
+    "observations": "Two numbered display equations with printed symbol lists: (5.1) screen head loss and (5.2) Kirschmer bar-rack head loss, plus their symbol lists and the stated practice values 0.15 m and 0.3 m.",
+    "continuations": [],
+    "unclear": [],
+    "image_viewed": "/home/a2ajinkya/.t3/worktrees/omakase-cpheeo/feat-verified-visual-transcriptions/tmp/pdfs/sew-t03/page-335.png"
+  },
+  {
+    "pdf_page": 336,
+    "page_label": "5 - 32",
+    "targets": [
+      "SEW-2013-A:E5.3"
+    ],
+    "no_targets_reason": null,
+    "observations": "One numbered display equation (5.3) fine-screen head loss with its symbol list, plus Figure 5.22 rotary drum screen drawing with a six-item part key (1 Inlet to 6 Drive motor).",
+    "continuations": [],
+    "unclear": [
+      "The six-item part key in Figure 5.22 is a drawing key inside the figure, not a table; read but not transcribed as a table."
+    ],
+    "image_viewed": "/home/a2ajinkya/.t3/worktrees/omakase-cpheeo/feat-verified-visual-transcriptions/tmp/pdfs/sew-t03/page-336.png"
+  },
+  {
+    "pdf_page": 337,
+    "page_label": "5 - 33",
+    "targets": [],
+    "no_targets_reason": "Figure 5.23 elevation and section drawing with embedded dimensions (500, 400, 300, 750, 1 RPM approx., 0.75 KW) and material callouts, then prose sections 5.6.1.11.2 and 5.6.1.12. Dimensions are drawing annotations, not a table; no equation printed.",
+    "observations": null,
+    "continuations": [],
+    "unclear": [],
+    "image_viewed": "/home/a2ajinkya/.t3/worktrees/omakase-cpheeo/feat-verified-visual-transcriptions/tmp/pdfs/sew-t03/page-337.png"
+  },
+  {
+    "pdf_page": 338,
+    "page_label": "5 - 34",
+    "targets": [],
+    "no_targets_reason": "Photographs Figure 5.24 with Source line and caption, and drawing Figure 5.25 screenings compactor, plus one prose paragraph. No table or equation printed.",
+    "observations": null,
+    "continuations": [],
+    "unclear": [],
+    "image_viewed": "/home/a2ajinkya/.t3/worktrees/omakase-cpheeo/feat-verified-visual-transcriptions/tmp/pdfs/sew-t03/page-338.png"
+  },
+  {
+    "pdf_page": 339,
+    "page_label": "5 - 35",
+    "targets": [],
+    "no_targets_reason": "Figure 5.26 screw press cross-section drawing with callouts, then prose sections 5.6.1.14 Disposal of Screenings and 5.6.2 Grit Removal. No table or equation printed.",
+    "observations": null,
+    "continuations": [],
+    "unclear": [],
+    "image_viewed": "/home/a2ajinkya/.t3/worktrees/omakase-cpheeo/feat-verified-visual-transcriptions/tmp/pdfs/sew-t03/page-339.png"
+  },
+  {
+    "pdf_page": 341,
+    "page_label": "5 - 37",
+    "targets": [],
+    "no_targets_reason": "Two schematic drawings, Figure 5.27 vortex grit separator and Figure 5.28 vortex and scum grit separator, with flow callouts only. No dimensions, table or equation printed.",
+    "observations": null,
+    "continuations": [],
+    "unclear": [],
+    "image_viewed": "/home/a2ajinkya/.t3/worktrees/omakase-cpheeo/feat-verified-visual-transcriptions/tmp/pdfs/sew-t03/page-341.png"
+  },
+  {
+    "pdf_page": 342,
+    "page_label": "5 - 38",
+    "targets": [
+      "SEW-2013-A:Tp342-1"
+    ],
+    "no_targets_reason": null,
+    "observations": "Uncaptioned, unnumbered two-column design-criteria list for aerated grit chambers (transcribed as Tp342-1), Figure 5.29 aerated grit chamber drawing, and one prose section.",
+    "continuations": [],
+    "unclear": [
+      "The criteria list is printed without rules, caption or column headings; it was transcribed as an unnumbered table Tp342-1 with editorial headers."
+    ],
+    "image_viewed": "/home/a2ajinkya/.t3/worktrees/omakase-cpheeo/feat-verified-visual-transcriptions/tmp/pdfs/sew-t03/page-342.png"
+  },
+  {
+    "pdf_page": 343,
+    "page_label": "5 - 39",
+    "targets": [
+      "SEW-2013-A:E5.4",
+      "SEW-2013-A:Ep343-1"
+    ],
+    "no_targets_reason": null,
+    "observations": "Numbered equation (5.4) Stoke's Law with its unnumbered alternative form after the word or (Ep343-1), preceded by prose sections 5.6.2.6, 5.6.2.7 and 5.6.2.7.1.1.",
+    "continuations": [
+      "The symbol list for (5.4) is printed at the top of physical page 344."
+    ],
+    "unclear": [],
+    "image_viewed": "/home/a2ajinkya/.t3/worktrees/omakase-cpheeo/feat-verified-visual-transcriptions/tmp/pdfs/sew-t03/page-343.png"
+  },
+  {
+    "pdf_page": 344,
+    "page_label": "5 - 40",
+    "targets": [
+      "SEW-2013-A:Ep344-1",
+      "SEW-2013-A:Ep344-2",
+      "SEW-2013-A:E5.5",
+      "SEW-2013-A:E5.6",
+      "SEW-2013-A:E5.7",
+      "SEW-2013-A:E5.8"
+    ],
+    "no_targets_reason": null,
+    "observations": "Symbol list for (5.4), then two unnumbered display expressions (R = Vs d/nu and nu = 1.01 x 10^-6 m2/s), then numbered equations (5.5), (5.6), (5.7) and (5.8) with the transition-law prose.",
+    "continuations": [
+      "The single symbol list at the top of the page serves equations (5.4) to (5.8)."
+    ],
+    "unclear": [],
+    "image_viewed": "/home/a2ajinkya/.t3/worktrees/omakase-cpheeo/feat-verified-visual-transcriptions/tmp/pdfs/sew-t03/page-344.png"
+  },
+  {
+    "pdf_page": 345,
+    "page_label": "5 - 41",
+    "targets": [
+      "SEW-2013-A:E5.9",
+      "SEW-2013-A:E5.10",
+      "SEW-2013-A:T5.6"
+    ],
+    "no_targets_reason": null,
+    "observations": "Numbered equations (5.9) Newton's Law and (5.10) basin efficiency, then Table 5.6 settling velocities and surface overflow rates with its caption and Source: CPHEEO, 1993.",
+    "continuations": [
+      "Table 5.6 is stated to be based on Equation (5.8)."
+    ],
+    "unclear": [],
+    "image_viewed": "/home/a2ajinkya/.t3/worktrees/omakase-cpheeo/feat-verified-visual-transcriptions/tmp/pdfs/sew-t03/page-345.png"
+  },
+  {
+    "pdf_page": 346,
+    "page_label": "5 - 42",
+    "targets": [
+      "SEW-2013-A:E5.11",
+      "SEW-2013-A:E5.12"
+    ],
+    "no_targets_reason": null,
+    "observations": "Numbered equations (5.11) surface overflow rate for a real basin and (5.12) modified Shields critical velocity, with the printed symbol list for (5.11) and the n-value discussion.",
+    "continuations": [],
+    "unclear": [],
+    "image_viewed": "/home/a2ajinkya/.t3/worktrees/omakase-cpheeo/feat-verified-visual-transcriptions/tmp/pdfs/sew-t03/page-346.png"
+  },
+  {
+    "pdf_page": 347,
+    "page_label": "5 - 43",
+    "targets": [],
+    "no_targets_reason": "Prose sections 5.6.2.7.2 and 5.6.2.7.3 with Figure 5.30 proportional flow weir drawing. The worked example of 5 cum/s and 3 cum/s is stated as running prose, not as a display equation; no table printed.",
+    "observations": null,
+    "continuations": [
+      "The proportional flow weir equations (5.13) and (5.14) are printed on the following page, 348."
+    ],
+    "unclear": [
+      "The 5 cum/s / 5 m2 and 3 cum/s / 3 m2 illustration is printed inline in prose and was not authored as a separate equation target."
+    ],
+    "image_viewed": "/home/a2ajinkya/.t3/worktrees/omakase-cpheeo/feat-verified-visual-transcriptions/tmp/pdfs/sew-t03/page-347.png"
+  },
+  {
+    "pdf_page": 348,
+    "page_label": "5 - 44",
+    "targets": [
+      "SEW-2013-A:E5.13",
+      "SEW-2013-A:E5.14"
+    ],
+    "no_targets_reason": null,
+    "observations": "Numbered equations (5.13) general flow through weir and (5.14) curve of the weir edge, each with its printed symbol list, plus Figure 5.31 installation photographs.",
+    "continuations": [],
+    "unclear": [],
+    "image_viewed": "/home/a2ajinkya/.t3/worktrees/omakase-cpheeo/feat-verified-visual-transcriptions/tmp/pdfs/sew-t03/page-348.png"
+  },
+  {
+    "pdf_page": 349,
+    "page_label": "5 - 45",
+    "targets": [],
+    "no_targets_reason": "Figure 5.32 Sutro weir drawing with Source: CPHEEO, 1993, then prose sections 5.6.2.8 Flow Measurement and 5.6.2.8.1 Parshall Flume. No table or equation printed on this page.",
+    "observations": null,
+    "continuations": [
+      "Table 5.7 and Figure 5.33 are announced here and printed on physical page 350."
+    ],
+    "unclear": [],
+    "image_viewed": "/home/a2ajinkya/.t3/worktrees/omakase-cpheeo/feat-verified-visual-transcriptions/tmp/pdfs/sew-t03/page-349.png"
+  },
+  {
+    "pdf_page": 350,
+    "page_label": "5 - 46",
+    "targets": [
+      "SEW-2013-A:T5.7"
+    ],
+    "no_targets_reason": null,
+    "observations": "Table 5.7 Dimensions of Parshall flume (mm) with its caption, ten data rows and the +, ++, +++ footnotes and Source: CPHEEO, 1993, plus Figure 5.33 flume dimension drawing.",
+    "continuations": [
+      "Table 5.7 is referred to again on physical page 352, which adds no table content."
+    ],
+    "unclear": [],
+    "image_viewed": "/home/a2ajinkya/.t3/worktrees/omakase-cpheeo/feat-verified-visual-transcriptions/tmp/pdfs/sew-t03/page-350.png"
+  },
+  {
+    "pdf_page": 351,
+    "page_label": "5 - 47",
+    "targets": [
+      "SEW-2013-A:E5.15",
+      "SEW-2013-A:E5.16",
+      "SEW-2013-A:E5.17",
+      "SEW-2013-A:E5.18",
+      "SEW-2013-A:E5.19",
+      "SEW-2013-A:E5.20",
+      "SEW-2013-A:E5.21"
+    ],
+    "no_targets_reason": null,
+    "observations": "Seven numbered equations (5.15) to (5.21) for the Parshall flume and the grit chamber above it, followed by the printed where-list of nine symbols.",
+    "continuations": [
+      "The single symbol list at the bottom of the page serves equations (5.15) to (5.21)."
+    ],
+    "unclear": [],
+    "image_viewed": "/home/a2ajinkya/.t3/worktrees/omakase-cpheeo/feat-verified-visual-transcriptions/tmp/pdfs/sew-t03/page-351.png"
+  },
+  {
+    "pdf_page": 352,
+    "page_label": "5 - 48",
+    "targets": [],
+    "no_targets_reason": "Figure 5.34 Parshall flume installation photograph with a boxed Source credit, then prose sections 5.6.2.8.2 to 5.6.2.9. No table or equation printed on this page.",
+    "observations": null,
+    "continuations": [],
+    "unclear": [],
+    "image_viewed": "/home/a2ajinkya/.t3/worktrees/omakase-cpheeo/feat-verified-visual-transcriptions/tmp/pdfs/sew-t03/page-352.png"
+  },
+  {
+    "pdf_page": 356,
+    "page_label": "5 - 52",
+    "targets": [
+      "SEW-2013-A:Ep356-1",
+      "SEW-2013-A:Ep356-2"
+    ],
+    "no_targets_reason": null,
+    "observations": "Prose section 5.7.4.2.3 Weir Loading with two inline computations (weir length fraction and the two weir loading rates, authored as Ep356-1 and Ep356-2), Figure 5.35 weir photographs, then section 5.7.4.2.4.",
+    "continuations": [],
+    "unclear": [
+      "Both computations are printed inline in running prose, not as displayed equations; they are recorded as Ep356-1 and Ep356-2 service locators."
+    ],
+    "image_viewed": "/home/a2ajinkya/.t3/worktrees/omakase-cpheeo/feat-verified-visual-transcriptions/tmp/pdfs/sew-t03/page-356.png"
+  },
+  {
+    "pdf_page": 357,
+    "page_label": "5 - 53",
+    "targets": [
+      "SEW-2013-A:T5.8"
+    ],
+    "no_targets_reason": null,
+    "observations": "Table 5.8 Design Parameters for Clarifiers with a two-tier header, two full-width group rows, five data rows, the printed Note and the Source line.",
+    "continuations": [],
+    "unclear": [],
+    "image_viewed": "/home/a2ajinkya/.t3/worktrees/omakase-cpheeo/feat-verified-visual-transcriptions/tmp/pdfs/sew-t03/page-357.png"
+  },
+  {
+    "pdf_page": 358,
+    "page_label": "5 - 54",
+    "targets": [],
+    "no_targets_reason": "Prose only: sizing procedure for primary and secondary clarifiers as numbered steps 1-7 and 1-9, plus section 5.7.4.2.6 heading. The numbered steps are prose procedures, not a table; no equation printed.",
+    "observations": null,
+    "continuations": [],
+    "unclear": [],
+    "image_viewed": "/home/a2ajinkya/.t3/worktrees/omakase-cpheeo/feat-verified-visual-transcriptions/tmp/pdfs/sew-t03/page-358.png"
+  },
+  {
+    "pdf_page": 359,
+    "page_label": "5 - 55",
+    "targets": [
+      "SEW-2013-A:Ep359-1",
+      "SEW-2013-A:Ep359-2"
+    ],
+    "no_targets_reason": null,
+    "observations": "Two worked calculation blocks in prose, 5.7.4.2.6.1 primary clarifier and 5.7.4.2.6.2 secondary clarifier (authored as Ep359-1 and Ep359-2), then 5.7.4.2.6.3 Choice of Sludge Withdrawal.",
+    "continuations": [],
+    "unclear": [
+      "Both worked examples are printed inline in running prose with prose sentences interleaved; they are recorded as Ep359-1 and Ep359-2 service locators."
+    ],
+    "image_viewed": "/home/a2ajinkya/.t3/worktrees/omakase-cpheeo/feat-verified-visual-transcriptions/tmp/pdfs/sew-t03/page-359.png"
+  },
+  {
+    "pdf_page": 361,
+    "page_label": "5 - 57",
+    "targets": [],
+    "no_targets_reason": "Figure 5.36 square shaped clarifier sludge scraper floor plan with patent source, then prose on peripheral speed, hopper storage and sludge withdrawal. No table or equation printed.",
+    "observations": null,
+    "continuations": [],
+    "unclear": [],
+    "image_viewed": "/home/a2ajinkya/.t3/worktrees/omakase-cpheeo/feat-verified-visual-transcriptions/tmp/pdfs/sew-t03/page-361.png"
+  },
+  {
+    "pdf_page": 363,
+    "page_label": "5 - 59",
+    "targets": [],
+    "no_targets_reason": "Prose sections 5.7.4.2.8 Scum Removal, 5.7.4.2.9 Types and Shapes and 5.7.5 Performance. All values are stated inline in prose; no table or equation printed.",
+    "observations": null,
+    "continuations": [],
+    "unclear": [],
+    "image_viewed": "/home/a2ajinkya/.t3/worktrees/omakase-cpheeo/feat-verified-visual-transcriptions/tmp/pdfs/sew-t03/page-363.png"
+  },
+  {
+    "pdf_page": 366,
+    "page_label": "5 - 62",
+    "targets": [
+      "SEW-2013-A:E5.22",
+      "SEW-2013-A:E5.23",
+      "SEW-2013-A:E5.24",
+      "SEW-2013-A:E5.25"
+    ],
+    "no_targets_reason": null,
+    "observations": "Four numbered equations: (5.22) HRT, (5.23) specific substrate utilization rate, (5.24) SRT and (5.25) steady-state waste sludge mass, with the printed where-list for Y and kd.",
+    "continuations": [
+      "Equation (5.25) closes the page; the ASP loading-rate discussion continues beyond the assigned range (physical page 367 is not in this batch)."
+    ],
+    "unclear": [],
+    "image_viewed": "/home/a2ajinkya/.t3/worktrees/omakase-cpheeo/feat-verified-visual-transcriptions/tmp/pdfs/sew-t03/page-366.png"
+  }
+]

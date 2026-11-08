@@ -1,0 +1,113 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:T5.12",
+  "unit_id": "SEW-2013-A:T5.12",
+  "manual_id": "SEW-2013-A",
+  "kind": "table",
+  "number": "5.12",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "state": "pending",
+  "regions": [
+    {
+      "pdf_page": 380,
+      "page_label": "5 - 76",
+      "bbox": [
+        70.0,
+        503.0,
+        515.0,
+        774.0
+      ],
+      "render_sha256": "8b4f82035cb85307556ab7900d713277906721e158ac55f509c3cd2988aba4ba"
+    }
+  ],
+  "title": "Some Characteristics of Aerated Lagoons",
+  "headers": [
+    "No.",
+    "Characteristics",
+    "Facultative Aerated Lagoons",
+    "Fully Aerobic",
+    "Extended Aeration System (for comparison)"
+  ],
+  "rows": [
+    [
+      "1.",
+      "Detention time, days",
+      "3 - 5",
+      "2 - 3",
+      "0.5 - 1.0"
+    ],
+    [
+      "2.",
+      "Depth, m",
+      "2.5 – 5.0",
+      "2.5 – 4.0",
+      "2.5 - 4.0"
+    ],
+    [
+      "3.",
+      "Land required, m²/person",
+      "0.15 - 0.30",
+      "0.10 - 0.20",
+      ""
+    ],
+    [
+      "4.",
+      "BOO removal efficiency %",
+      "80 - 90",
+      "50 - 60",
+      "95 - 98"
+    ],
+    [
+      "5.",
+      "Overall BOD removal rate, K (A)",
+      "0.6 – 0.8",
+      "1-1.5",
+      "20 - 30"
+    ],
+    [
+      "6.",
+      "Suspended solids in lagoon, mg/l",
+      "40 - 150",
+      "150 - 350",
+      "3,000 - 5,000"
+    ],
+    [
+      "7.",
+      "VSS/SS",
+      "0.6",
+      "0.8",
+      "0. 6"
+    ],
+    [
+      "8.",
+      "Desirable power level (B)",
+      "0.75",
+      "2.75 - 6.0",
+      "15 - 18"
+    ],
+    [
+      "9",
+      "Power requirement, kWh/person/year",
+      "12 - 15",
+      "12 - 14",
+      "16 - 20"
+    ]
+  ],
+  "cell_spans": [],
+  "markdown": "| No. | Characteristics | Facultative Aerated Lagoons | Fully Aerobic | Extended Aeration System (for comparison) |\n| --- | --- | --- | --- | --- |\n| 1. | Detention time, days | 3 - 5 | 2 - 3 | 0.5 - 1.0 |\n| 2. | Depth, m | 2.5 – 5.0 | 2.5 – 4.0 | 2.5 - 4.0 |\n| 3. | Land required, m²/person | 0.15 - 0.30 | 0.10 - 0.20 |  |\n| 4. | BOO removal efficiency % | 80 - 90 | 50 - 60 | 95 - 98 |\n| 5. | Overall BOD removal rate, K (A) | 0.6 – 0.8 | 1-1.5 | 20 - 30 |\n| 6. | Suspended solids in lagoon, mg/l | 40 - 150 | 150 - 350 | 3,000 - 5,000 |\n| 7. | VSS/SS | 0.6 | 0.8 | 0. 6 |\n| 8. | Desirable power level (B) | 0.75 | 2.75 - 6.0 | 15 - 18 |\n| 9 | Power requirement, kWh/person/year | 12 - 15 | 12 - 14 | 16 - 20 |",
+  "notes": [
+    "Source: CPHEEO,1993",
+    "(A) Per day at 20 degree C for soluble BOD only; (B)-in watts per cum of lagoon volume",
+    "Printed as \"BOO removal efficiency %\" in row 4 (letter O for D); flagged, not corrected.",
+    "Row 7 (VSS/SS) prints the Extended Aeration value as \"0. 6\" with a space between the point and the 6; the other two cells print \"0.6\" and \"0.8\". Preserved verbatim.",
+    "Row 3 has no printed value in the Extended Aeration column; the empty cell is preserved as an empty string.",
+    "Row 9 prints \"9\" without a full stop while rows 1 to 8 print \"1.\" to \"8.\"."
+  ],
+  "verification": {
+    "transcription": {
+      "pass_id": "sew-t04-first-reading-20261109",
+      "method": "direct visual reading of 144 dpi annotation-cleaned full-page renders plus 288-900 dpi crops of the source regions; no OCR",
+      "observations": "First reading only. Every value, exponent, subscript, printed spelling and printed error was read from the rendered page image. No distinct second inspection performed; record is a draft pending review."
+    }
+  }
+}

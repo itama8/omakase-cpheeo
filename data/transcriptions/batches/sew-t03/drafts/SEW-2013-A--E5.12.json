@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:E5.12",
+  "unit_id": "SEW-2013-A:E5.12",
+  "manual_id": "SEW-2013-A",
+  "kind": "equation",
+  "number": "5.12",
+  "title": "Modified Shields' formula for critical velocity of scour",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "state": "pending",
+  "regions": [
+    {
+      "pdf_page": 346,
+      "page_label": "5 - 42",
+      "bbox": [
+        76,
+        606,
+        513,
+        626
+      ],
+      "render_sha256": "794f768b29c5d38f489aeadbb703b63d4df392ecc63d9ab61902ebca007a0eaa"
+    }
+  ],
+  "parent_id": "SEW-2013-A:5.6.2.7.1.4",
+  "latex": "V_c=K_c\\sqrt{g\\left(S_s-1\\right)d}",
+  "readable": "Vc = Kc SQRT(g (Ss - 1) d)",
+  "symbols": [
+    {
+      "symbol": "Vc",
+      "definition": "critical velocity of flow beyond which particles of a certain size and density once settled may be again placed in motion"
+    },
+    {
+      "symbol": "Kc",
+      "definition": "3 to 4.5; a value of 4.0 is usually adopted for grit particles"
+    },
+    {
+      "symbol": "Ss",
+      "definition": "Specific gravity of grit particle, dimensionless"
+    },
+    {
+      "symbol": "d",
+      "definition": "Size of the particle"
+    }
+  ],
+  "applicability": "The critical velocity for scour of settled grit particles in a grit chamber, calculated from the modified Shields formula.",
+  "notes": [
+    "where Kc = 3 to 4.5. A value of 4.0 is usually adopted for grit particles.",
+    "For a grit particle size of 0.2 mm, the formula gives critical velocity values of 17.1 to 25.6 cm/sec.",
+    "No symbol list is printed under equation (5.12); g and d are not redefined on this page."
+  ],
+  "verification": {
+    "transcription": {
+      "pass_id": "sew-t03-first-reading-2026-11-08",
+      "method": "Direct visual reading of full annotation-cleaned 144 dpi page PNGs, plus enlarged crops at 288-720 dpi and a contact sheet of every hashed source region; no OCR, no paid service, no delegation",
+      "observations": "First visual transcription only. Every printed glyph, power, subscript, inequality, unit, hyphen spacing, footnote and printed error was read from the rendered source and retained or flagged; no value inferred."
+    }
+  },
+  "source_image_refs": [
+    {
+      "path": "tmp/pdfs/sew-t03/SEW-2013-A--E5.12.png",
+      "role": "first-reading source crop"
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:T5.6",
+  "unit_id": "SEW-2013-A:T5.6",
+  "manual_id": "SEW-2013-A",
+  "kind": "table",
+  "number": "5.6",
+  "title": "Settling velocities and surface overflow rates for ideal grit chamber at 10ºC",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "state": "pending",
+  "regions": [
+    {
+      "pdf_page": 345,
+      "page_label": "5 - 41",
+      "bbox": [
+        85.0,
+        622.0,
+        540.0,
+        765.0
+      ],
+      "render_sha256": "2c5a74da98a6b483a77817908823e2b4227c7004e2ef4175c6fb353d1182e4dc"
+    }
+  ],
+  "headers": [
+    "Diameter of Particles, mm",
+    "Settling velocity m/s, / Ss = 2.65",
+    "Surface Overflow rate m³ / d /m² / Ss = 2.65"
+  ],
+  "rows": [
+    [
+      "0.20",
+      "0.025",
+      "2160"
+    ],
+    [
+      "0.15",
+      "0.018",
+      "1555"
+    ]
+  ],
+  "cell_spans": [],
+  "markdown": "| Diameter of Particles, mm | Settling velocity m/s, / Ss = 2.65 | Surface Overflow rate m³ / d /m² / Ss = 2.65 |\n| --- | --- | --- |\n| 0.20 | 0.025 | 2160 |\n| 0.15 | 0.018 | 1555 |",
+  "notes": [
+    "Two-tier printed header flattened with / : \"Settling velocity m/s,\" and \"Surface Overflow rate m³ / d /m²\" each carry the printed second-level heading \"Ss = 2.65\", and \"Diameter of Particles, mm\" spans both header tiers.",
+    "Source: CPHEEO, 1993",
+    "Retained as printed: the trailing comma in \"Settling velocity m/s,\" and the unit spacing \"m³ / d /m²\".",
+    "The prose on this page states that Table 5.6 gives settling velocity of different size particles of specific gravity 2.65 and the corresponding surface overflow rates for 100% removal based on Equation (5.8)."
+  ],
+  "verification": {
+    "transcription": {
+      "pass_id": "sew-t03-first-reading-2026-11-08",
+      "method": "Direct visual reading of full annotation-cleaned 144 dpi page PNGs, plus enlarged crops at 288-720 dpi and a contact sheet of every hashed source region; no OCR, no paid service, no delegation",
+      "observations": "First visual transcription only. Every printed glyph, power, subscript, inequality, unit, hyphen spacing, footnote and printed error was read from the rendered source and retained or flagged; no value inferred."
+    }
+  },
+  "source_image_refs": [
+    {
+      "path": "tmp/pdfs/sew-t03/SEW-2013-A--T5.6.png",
+      "role": "first-reading source crop"
+    }
+  ],
+  "parent_id": "SEW-2013-A:5.6.2.7.1.2"
+}

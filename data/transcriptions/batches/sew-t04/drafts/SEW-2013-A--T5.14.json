@@ -1,0 +1,76 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:T5.14",
+  "unit_id": "SEW-2013-A:T5.14",
+  "manual_id": "SEW-2013-A",
+  "kind": "table",
+  "number": "5.14",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "state": "pending",
+  "regions": [
+    {
+      "pdf_page": 397,
+      "page_label": "5 - 93",
+      "bbox": [
+        124.0,
+        70.0,
+        474.0,
+        327.0
+      ],
+      "render_sha256": "d73ef5c13be71600a1c0c88b6b5d5d28393820c4c49eaf2f487cec2a58be20f8"
+    }
+  ],
+  "title": "Permissible Organic Loadings at Different Latitudes",
+  "headers": [
+    "Latitude (N) degree",
+    "Organic loading Kg BOD/ha.d"
+  ],
+  "rows": [
+    [
+      "36",
+      "150"
+    ],
+    [
+      "32",
+      "175"
+    ],
+    [
+      "28",
+      "200"
+    ],
+    [
+      "24",
+      "225"
+    ],
+    [
+      "20",
+      "250"
+    ],
+    [
+      "16",
+      "275"
+    ],
+    [
+      "12",
+      "300"
+    ],
+    [
+      "8",
+      "325"
+    ]
+  ],
+  "cell_spans": [],
+  "markdown": "| Latitude (N) degree | Organic loading Kg BOD/ha.d |\n| --- | --- |\n| 36 | 150 |\n| 32 | 175 |\n| 28 | 200 |\n| 24 | 225 |\n| 20 | 250 |\n| 16 | 275 |\n| 12 | 300 |\n| 8 | 325 |",
+  "notes": [
+    "Source: CPHEEO, 1993",
+    "Header prints \"Kg BOD/ha.d\" with a capital K; preserved.",
+    "The table is also referred to in the prose as Table 5.14 (values applicable to towns at sea level and locales where the sky is clear for nearly 75% of the days in a year)."
+  ],
+  "verification": {
+    "transcription": {
+      "pass_id": "sew-t04-first-reading-20261109",
+      "method": "direct visual reading of 144 dpi annotation-cleaned full-page renders plus 288-900 dpi crops of the source regions; no OCR",
+      "observations": "First reading only. Every value, exponent, subscript, printed spelling and printed error was read from the rendered page image. No distinct second inspection performed; record is a draft pending review."
+    }
+  }
+}

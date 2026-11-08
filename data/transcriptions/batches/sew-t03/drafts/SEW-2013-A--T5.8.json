@@ -1,0 +1,158 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:T5.8",
+  "unit_id": "SEW-2013-A:T5.8",
+  "manual_id": "SEW-2013-A",
+  "kind": "table",
+  "number": "5.8",
+  "title": "Design Parameters for Clarifiers",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "state": "pending",
+  "regions": [
+    {
+      "pdf_page": 357,
+      "page_label": "5 - 53",
+      "bbox": [
+        80,
+        461,
+        530,
+        778
+      ],
+      "render_sha256": "456dbe41f0580110182f25e0795862dbb5f0091c489dce46650786a227e0b631"
+    }
+  ],
+  "headers": [
+    "Type of Settling",
+    "Overflow rate, cum/sqm/day / Average",
+    "Overflow rate, cum/sqm/day / Peak",
+    "Solid loading, kg/day/sqm / Average",
+    "Solid loading, kg/day/sqm / Peak",
+    "Side Water Depth, m / Average",
+    "Weir loading, cum/m/day / Average"
+  ],
+  "rows": [
+    [
+      "Primary Clarifiers",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    [
+      "Primary Settling only",
+      "25 - 30",
+      "50 - 60",
+      "Not applicable",
+      "Not applicable",
+      "≥ 2.5 - 3.5",
+      "125"
+    ],
+    [
+      "Followed by secondary treatment",
+      "35 - 50",
+      "80 - 120",
+      "Not applicable",
+      "Not applicable",
+      "≥ 2.5 - 3.5",
+      "125"
+    ],
+    [
+      "With excess sludge return",
+      "25 - 35",
+      "50 - 60",
+      "Not applicable",
+      "Not applicable",
+      "≥ 3.5 - 4.5",
+      "125"
+    ],
+    [
+      "Secondary Clarifiers",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    [
+      "Secondary settling for activated sludge",
+      "15 - 35",
+      "40 - 50",
+      "70 - 140",
+      "210",
+      "≥ 3.0 - 3.5",
+      "185"
+    ],
+    [
+      "Secondary settling for extended aeration",
+      "8 - 15",
+      "25 - 35",
+      "25 - 120",
+      "170",
+      "≥ 3.0 - 4.0",
+      "185"
+    ]
+  ],
+  "cell_spans": [
+    {
+      "row": 0,
+      "column": 0,
+      "row_span": 1,
+      "column_span": 7,
+      "representation": "printed full-width group heading"
+    },
+    {
+      "row": 4,
+      "column": 0,
+      "row_span": 1,
+      "column_span": 7,
+      "representation": "printed full-width group heading"
+    },
+    {
+      "row": 1,
+      "column": 3,
+      "row_span": 1,
+      "column_span": 2,
+      "representation": "text repeated in both merged cells"
+    },
+    {
+      "row": 2,
+      "column": 3,
+      "row_span": 1,
+      "column_span": 2,
+      "representation": "text repeated in both merged cells"
+    },
+    {
+      "row": 3,
+      "column": 3,
+      "row_span": 1,
+      "column_span": 2,
+      "representation": "text repeated in both merged cells"
+    }
+  ],
+  "markdown": "| Type of Settling | Overflow rate, cum/sqm/day / Average | Overflow rate, cum/sqm/day / Peak | Solid loading, kg/day/sqm / Average | Solid loading, kg/day/sqm / Peak | Side Water Depth, m / Average | Weir loading, cum/m/day / Average |\n| --- | --- | --- | --- | --- | --- | --- |\n| Primary Clarifiers |  |  |  |  |  |  |\n| Primary Settling only | 25 - 30 | 50 - 60 | Not applicable | Not applicable | ≥ 2.5 - 3.5 | 125 |\n| Followed by secondary treatment | 35 - 50 | 80 - 120 | Not applicable | Not applicable | ≥ 2.5 - 3.5 | 125 |\n| With excess sludge return | 25 - 35 | 50 - 60 | Not applicable | Not applicable | ≥ 3.5 - 4.5 | 125 |\n| Secondary Clarifiers |  |  |  |  |  |  |\n| Secondary settling for activated sludge | 15 - 35 | 40 - 50 | 70 - 140 | 210 | ≥ 3.0 - 3.5 | 185 |\n| Secondary settling for extended aeration | 8 - 15 | 25 - 35 | 25 - 120 | 170 | ≥ 3.0 - 4.0 | 185 |",
+  "notes": [
+    "Two-tier printed header flattened with / : \"Type of Settling\" spans both header tiers, \"Overflow rate, cum/sqm/day\" and \"Solid loading, kg/day/sqm\" each have printed Average and Peak sub-columns, and \"Side Water Depth, m\" and \"Weir loading, cum/m/day\" each carry a printed second-level Average.",
+    "Primary Clarifiers and Secondary Clarifiers are printed as full-width group headings; retained as rows with empty value cells and recorded in cell_spans.",
+    "The printed Not applicable cell for the three primary-clarifier rows is a single cell spanning the Solid loading Average and Peak columns; its text is repeated in both cells and the merge is recorded in cell_spans.",
+    "Note: Where the mechanized aerobic treatment is used after UASB reactor, the settling tank design shall be based on conventional activated sludge process as above.",
+    "Source: CPHEEO, 1993 and as recommended in the present manual",
+    "Printed ≥ symbols and hyphen spacing (for example 25 - 30 and ≥ 3.5 - 4.5) are retained as printed."
+  ],
+  "verification": {
+    "transcription": {
+      "pass_id": "sew-t03-first-reading-2026-11-08",
+      "method": "Direct visual reading of full annotation-cleaned 144 dpi page PNGs, plus enlarged crops at 288-720 dpi and a contact sheet of every hashed source region; no OCR, no paid service, no delegation",
+      "observations": "First visual transcription only. Every printed glyph, power, subscript, inequality, unit, hyphen spacing, footnote and printed error was read from the rendered source and retained or flagged; no value inferred."
+    }
+  },
+  "source_image_refs": [
+    {
+      "path": "tmp/pdfs/sew-t03/SEW-2013-A--T5.8.png",
+      "role": "first-reading source crop"
+    }
+  ],
+  "parent_id": "SEW-2013-A:5.7.4.2.5"
+}

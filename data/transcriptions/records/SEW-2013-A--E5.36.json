@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:E5.36",
+  "unit_id": "SEW-2013-A:E5.36",
+  "manual_id": "SEW-2013-A",
+  "kind": "equation",
+  "number": "5.36",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "state": "verified",
+  "regions": [
+    {
+      "pdf_page": 397,
+      "page_label": "5 - 93",
+      "bbox": [
+        75.0,
+        502.0,
+        526.0,
+        528.0
+      ],
+      "render_sha256": "ee73da1731d2b5b6dc9e3b6514926eeb04806aa218d336801ebd8a743364e39d"
+    }
+  ],
+  "title": "Permissible areal organic loading as a function of ambient temperature",
+  "latex": "L_0 = 20T - 120",
+  "readable": "L0 = 20T − 120",
+  "symbols": [
+    {
+      "symbol": "Lo",
+      "definition": "design organic load in kg BOD₅/ha/d and"
+    },
+    {
+      "symbol": "T",
+      "definition": "average temperature during coldest month of the year in degree Celsius."
+    }
+  ],
+  "applicability": "Second design approach for permissible areal organic loading of facultative ponds, based on field experience in warm climates, relating the loading to ambient temperature on the assumption that temperature depends on solar radiation.",
+  "notes": [
+    "The printed definition of Lo ends with a stray \"and\"; preserved.",
+    "The subscript of Lo is printed as a lower-case o (Lo) while the same symbol appears as L0 elsewhere in the chapter."
+  ],
+  "verification": {
+    "transcription": {
+      "pass_id": "sew-t04-first-reading-20261109",
+      "method": "direct visual reading of 144 dpi annotation-cleaned full-page renders plus 288-900 dpi crops of the source regions; no OCR",
+      "observations": "First reading only. Every value, exponent, subscript, printed spelling and printed error was read from the rendered page image. No distinct second inspection performed; record is a draft pending review."
+    },
+    "visual_recheck": {
+      "pass_id": "parent-recheck-sew-t04",
+      "method": "distinct second visual inspection of exact source-region renders (incl. rotated/zoomed crops) by parent assistant; not independent human review",
+      "observations": "Parent compared every cell/term against 144-dpi region renders; confirmed values, powers, subscripts and printed anomalies.",
+      "content_sha256": "51c74b1722e28c33ec96ff12507f455bd24153ab96b014bacf3a9144ef1eb0a2"
+    }
+  },
+  "parent_id": "SEW-2013-A:5.8.4.4.1"
+}

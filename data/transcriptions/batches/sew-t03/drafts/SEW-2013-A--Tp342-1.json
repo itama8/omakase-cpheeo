@@ -1,0 +1,89 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:Tp342-1",
+  "unit_id": "SEW-2013-A:Tp342-1",
+  "manual_id": "SEW-2013-A",
+  "kind": "table",
+  "number": "p342-1",
+  "title": "Aerated grit chamber design criteria (WEF MOP 11)",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "state": "pending",
+  "regions": [
+    {
+      "pdf_page": 342,
+      "page_label": "5 - 38",
+      "bbox": [
+        50.0,
+        300.0,
+        470.0,
+        436.0
+      ],
+      "render_sha256": "c2154b6bc5d31f92486f57507f99e5e93dc4e508ee54aaf9c918fd66d2189a56"
+    }
+  ],
+  "headers": [
+    "Parameter (editorial; no printed header)",
+    "Value (editorial; no printed header)"
+  ],
+  "rows": [
+    [
+      "Transverse velocity at surface",
+      "0.6-0.8 m/s"
+    ],
+    [
+      "Depth-to-width ratio",
+      "1.5:1 to 2:1"
+    ],
+    [
+      "Air supply",
+      "4.6-7.7 l/m/s of length"
+    ],
+    [
+      "Air supply",
+      "0.3-0.4 m3 /m3"
+    ],
+    [
+      "Detention time",
+      "3-5 min (peak)"
+    ],
+    [
+      "Quantity of grit",
+      "7.5-75 ml/m3"
+    ],
+    [
+      "Quantity of scum (skimmings)",
+      "7.5-45 ml/m3"
+    ]
+  ],
+  "cell_spans": [
+    {
+      "row": 2,
+      "column": 0,
+      "row_span": 2,
+      "column_span": 1,
+      "representation": "text repeated in expanded rows"
+    }
+  ],
+  "markdown": "| Parameter (editorial; no printed header) | Value (editorial; no printed header) |\n| --- | --- |\n| Transverse velocity at surface | 0.6-0.8 m/s |\n| Depth-to-width ratio | 1.5:1 to 2:1 |\n| Air supply | 4.6-7.7 l/m/s of length |\n| Air supply | 0.3-0.4 m3 /m3 |\n| Detention time | 3-5 min (peak) |\n| Quantity of grit | 7.5-75 ml/m3 |\n| Quantity of scum (skimmings) | 7.5-45 ml/m3 |",
+  "notes": [
+    "The source prints these criteria as an unruled two-column list with no caption, no table number and no column headings; both headers above are editorial column descriptors. Tp342-1 is a service locator, not a printed table number.",
+    "The air supply parameter has two printed values on consecutive lines with the label printed once; the label is repeated here for the two logical rows and the merge is recorded in cell_spans.",
+    "Introduced by the printed sentence: The aerated de gritting removals are reproduced from WEF MOP 11 hereunder.",
+    "Superscripts in the printed units are serialized as m3 and ml/m3: 0.3-0.4 m3 /m3, 7.5-75 ml/m3 and 7.5-45 ml/m3."
+  ],
+  "verification": {
+    "transcription": {
+      "pass_id": "sew-t03-first-reading-2026-11-08",
+      "method": "Direct visual reading of full annotation-cleaned 144 dpi page PNGs, plus enlarged crops at 288-720 dpi and a contact sheet of every hashed source region; no OCR, no paid service, no delegation",
+      "observations": "First visual transcription only. Every printed glyph, power, subscript, inequality, unit, hyphen spacing, footnote and printed error was read from the rendered source and retained or flagged; no value inferred."
+    }
+  },
+  "source_image_refs": [
+    {
+      "path": "tmp/pdfs/sew-t03/SEW-2013-A--Tp342-1.png",
+      "role": "first-reading source crop"
+    }
+  ],
+  "create_unit": true,
+  "parent_id": "SEW-2013-A:5.6.2.5"
+}

@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:E5.35",
+  "unit_id": "SEW-2013-A:E5.35",
+  "manual_id": "SEW-2013-A",
+  "kind": "equation",
+  "number": "5.35",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "state": "pending",
+  "regions": [
+    {
+      "pdf_page": 385,
+      "page_label": "5 - 81",
+      "bbox": [
+        80.0,
+        278.0,
+        520.0,
+        297.0
+      ],
+      "render_sha256": "990e242dcc7079b4f587a8ee3009dbcd045044862b4cf16ec219d7e8ad3e0bfa"
+    }
+  ],
+  "title": "Final effluent BOD of an aerated lagoon",
+  "latex": "\\mathrm{Final\\ BOD,\\ mg/l} = \\mathrm{Soluble\\ BOD,\\ mg/l} + (0.77)(\\mathrm{VSS\\ in\\ effluent}),\\ \\mathrm{mg/l}",
+  "readable": "Final BOD, mg/l = Soluble BOD, mg/l + (0.77) (VSS in effluent), mg/l",
+  "symbols": [
+    {
+      "symbol": "0.77",
+      "definition": "mg per mg VSS in effluent (assumed BOD of the volatile fraction of effluent solids)"
+    },
+    {
+      "symbol": "Soluble BOD",
+      "definition": "obtained by use of Equation (5.32) or Figure 5-41"
+    }
+  ],
+  "applicability": "Final effluent BOD of aerated lagoons: the BOD of the volatile fraction of effluent solids is added to the soluble BOD.",
+  "notes": [
+    "Printed as a single line of prose with units inside the formula rather than as typeset math; preserved verbatim.",
+    "There is a wide printed gap between the formula and its number (5.35)."
+  ],
+  "verification": {
+    "transcription": {
+      "pass_id": "sew-t04-first-reading-20261109",
+      "method": "direct visual reading of 144 dpi annotation-cleaned full-page renders plus 288-900 dpi crops of the source regions; no OCR",
+      "observations": "First reading only. Every value, exponent, subscript, printed spelling and printed error was read from the rendered page image. No distinct second inspection performed; record is a draft pending review."
+    }
+  }
+}

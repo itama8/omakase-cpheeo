@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:E5.28",
+  "unit_id": "SEW-2013-A:E5.28",
+  "manual_id": "SEW-2013-A",
+  "kind": "equation",
+  "number": "5.28",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "state": "pending",
+  "regions": [
+    {
+      "pdf_page": 370,
+      "page_label": "5 - 66",
+      "bbox": [
+        59.0,
+        699.0,
+        524.0,
+        725.0
+      ],
+      "render_sha256": "710b9a72c6a597e9609a94bcf45163842f9164e3a623f90a1860a6cddbec5d17"
+    }
+  ],
+  "title": "Aeration tank volume from sludge age and MLSS",
+  "latex": "VX = YQ\\theta_c(S_0 - S)/(1 + K_d\\theta_c)",
+  "readable": "VX = YQ θc (S0 − S) / (1 + Kd θc)",
+  "symbols": [],
+  "applicability": "Obtained by combining Equations (5.24) to (5.26); the aeration tank volume is calculated for the selected value of θc by assuming a suitable MLSS concentration X.",
+  "notes": [
+    "The following printed sentence writes θc without a subscript; preserved in the readable form.",
+    "No symbol definitions are printed on this page."
+  ],
+  "verification": {
+    "transcription": {
+      "pass_id": "sew-t04-first-reading-20261109",
+      "method": "direct visual reading of 144 dpi annotation-cleaned full-page renders plus 288-900 dpi crops of the source regions; no OCR",
+      "observations": "First reading only. Every value, exponent, subscript, printed spelling and printed error was read from the rendered page image. No distinct second inspection performed; record is a draft pending review."
+    }
+  }
+}

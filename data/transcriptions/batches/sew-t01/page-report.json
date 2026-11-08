@@ -1,0 +1,443 @@
+[
+ {
+  "pdf_page": 89,
+  "page_label": "1 - 3",
+  "targets": [],
+  "no_targets_reason": "No table or equation on this page. Figure 1.1 is a box-and-arrow chart of the 2011 census toilet split; its percentage boxes are a hierarchy, not a printed grid table, and every value is repeated in the body text. No draft created.",
+  "continuations": [
+   "The figure's percentages are restated in the body text of the same page; the 1.1.x section continues on physical page 90."
+  ],
+  "unclear": [],
+  "image_viewed": "tmp/pdfs/sew-t01/page-89.png",
+  "image_sha256": "6ccc4be0153fa77f6a30394b230d4af53d678b40f92ec7bc378e73e614b8e735",
+  "figures_on_page": [
+   "Figure 1.1 Status of Toilets in Urban Households in India"
+  ],
+  "observations": [
+   "Figure 1.1 box labels read: Household Toilet 81.4 %; No Household Toilet 18.6 %; Septic Tanks 38.2 %; Pit Latrine 8.8 %; Insanitary (Dry & Bahao) Latrines 1.7 %; Sewerage Connection 32.7 %; Community Toilets 6 %; Open Defecation 12.6 %. Retained for the parent in case an unnumbered table record is wanted."
+  ]
+ },
+ {
+  "pdf_page": 91,
+  "page_label": "1 - 5",
+  "targets": [],
+  "no_targets_reason": "Text page only; the native and visual reading show no table or equation. It cites Table 1.1 'overleaf', which sits on physical page 92 outside this batch.",
+  "continuations": [],
+  "unclear": [],
+  "image_viewed": "tmp/pdfs/sew-t01/page-91.png",
+  "image_sha256": "92ad7900e0470aa0a86f469677fbd083e963e9de621468ebc42502b09eab5907",
+  "figures_on_page": [],
+  "observations": []
+ },
+ {
+  "pdf_page": 98,
+  "page_label": "1 - 12",
+  "targets": [],
+  "no_targets_reason": "Text plus one embedded image: Figure 1.2 Suggested Real Time Total Sanitation Model, a pure flowchart with no numbers and no formulas. No table or equation.",
+  "continuations": [],
+  "unclear": [],
+  "image_viewed": "tmp/pdfs/sew-t01/page-98.png",
+  "image_sha256": "387e2e8aea1d3786c0b560238b19fa40df4a0696a90a51d8ca3f47b5e1f6deb5",
+  "figures_on_page": [
+   "Figure 1.2 Suggested Real Time Total Sanitation Model"
+  ],
+  "observations": []
+ },
+ {
+  "pdf_page": 111,
+  "page_label": "2 - 8",
+  "targets": [],
+  "no_targets_reason": "Text page only; no table or equation. It cites Table 2-1 'overleaf', which sits on physical page 112 (already recorded as SEW-2013-A:T2.1).",
+  "continuations": [],
+  "unclear": [],
+  "image_viewed": "tmp/pdfs/sew-t01/page-111.png",
+  "image_sha256": "4e509eee1588f6b4b665376c12703d1c5eb48abde636b12613e115992f267d2b",
+  "figures_on_page": [],
+  "observations": []
+ },
+ {
+  "pdf_page": 146,
+  "page_label": "3 - 1",
+  "targets": [],
+  "no_targets_reason": "Chapter 3 opening page, text only; no table or equation. It points to Table 2-1 on physical page 112.",
+  "continuations": [],
+  "unclear": [],
+  "image_viewed": "tmp/pdfs/sew-t01/page-146.png",
+  "image_sha256": "11c005d0f43b5f11c603d58704d424f397ff82e673d62fb53452accdeab8f847",
+  "figures_on_page": [],
+  "observations": []
+ },
+ {
+  "pdf_page": 158,
+  "page_label": "3 - 13",
+  "targets": [],
+  "no_targets_reason": "Two engineering installation drawings (Figures 3.3 and 3.4) with geometry dimension callouts only: 2Hmax minimum, L Crest Length, Hmax, 8R, 3R, R, 2R, 0.867R, 1.2R, 0.333R, 0.5R, 0.234R. No stated relation and no symbol defined in print, so no equation draft; treated as figure annotations under the same rule used for Figure 4.17 in the earlier 304-313 batch.",
+  "continuations": [
+   "Palmer-Bowlus flume discussion continues on physical page 159 with Figure 3.5 and its printed expressions (drafted as Ep159-1)."
+  ],
+  "unclear": [],
+  "image_viewed": "tmp/pdfs/sew-t01/page-158.png",
+  "image_sha256": "5645af1ee3735ec854539e5f8b4b04205f00fc6c8a130e3ab3e807765e006fa3",
+  "figures_on_page": [
+   "Figure 3.3 Typical mounting of a rectangular weir with end constrictions in a drain",
+   "Figure 3.4 Palmer-Bowlus flume installation in drains"
+  ],
+  "observations": []
+ },
+ {
+  "pdf_page": 159,
+  "page_label": "3 - 14",
+  "targets": [
+   "draft:SEW-2013-A:Ep159-1"
+  ],
+  "no_targets_reason": null,
+  "continuations": [],
+  "unclear": [],
+  "image_viewed": "tmp/pdfs/sew-t01/page-159.png",
+  "image_sha256": "1f2b587b544b2585d413e39eba8aa17314aa1736b7d99c19989c051515efe847",
+  "figures_on_page": [
+   "Figure 3.5 Palmer-Bowlus flume installation in circular sewer"
+  ],
+  "observations": []
+ },
+ {
+  "pdf_page": 160,
+  "page_label": "3 - 15",
+  "targets": [],
+  "no_targets_reason": "Photograph collage plus Figures 3.6 and 3.7. Figure 3.7 labels flows as (Q+g) C2, Q C1, TRACER FEED q, Co and a WATER LEVEL GAUGE; these are diagram flow labels, not equations, and no relation between them is printed.",
+  "continuations": [],
+  "unclear": [],
+  "image_viewed": "tmp/pdfs/sew-t01/page-160.png",
+  "image_sha256": "cd1d57941c7d4b854da460ced0f5b8cb8e0063fe7a4ef1f05bedae249703cb4a",
+  "figures_on_page": [
+   "Figure 3.6 Configurations and use of Palmer-Bowlus flume",
+   "Figure 3.7 Instrumentation for flow measurement and sampling in urban large conduits"
+  ],
+  "observations": []
+ },
+ {
+  "pdf_page": 163,
+  "page_label": "3 - 18",
+  "targets": [],
+  "no_targets_reason": "Two profile drawings, Figures 3.8 and 3.9, with labels only. No table, no equation.",
+  "continuations": [],
+  "unclear": [],
+  "image_viewed": "tmp/pdfs/sew-t01/page-163.png",
+  "image_sha256": "f1a144a07632a5b88b89bd2b4a90e34b574d49810ae3b65e39b4be8e96e8955e",
+  "figures_on_page": [
+   "Figure 3.8 Profile of Pressurized Sewer system",
+   "Figure 3.9 Profile of Vacuum sewer system"
+  ],
+  "observations": []
+ },
+ {
+  "pdf_page": 167,
+  "page_label": "3 - 22",
+  "targets": [],
+  "no_targets_reason": "Text plus Figure 3.10, two photographs with one caption line. No table, no equation.",
+  "continuations": [],
+  "unclear": [],
+  "image_viewed": "tmp/pdfs/sew-t01/page-167.png",
+  "image_sha256": "2af79bb34019f18cb855f79fce1a7ce8205cbb5c263accc3a57af48fe8a9775c",
+  "figures_on_page": [
+   "Figure 3.10 Jet rodding cum vacuum, suction sewer cleaning machine"
+  ],
+  "observations": []
+ },
+ {
+  "pdf_page": 170,
+  "page_label": "3 - 25",
+  "targets": [],
+  "no_targets_reason": "Photograph figure 3.11 with descriptive panel plus sections 3.14 and 3.15 text; no table or equation.",
+  "continuations": [],
+  "unclear": [],
+  "image_viewed": "tmp/pdfs/sew-t01/page-170.png",
+  "image_sha256": "94d99f6515810f4d6e8082b05e165080ff7871fe7f03a2b5f4eb99710ba5b60f",
+  "figures_on_page": [
+   "Figure 3.11 Twin drain system"
+  ],
+  "observations": []
+ },
+ {
+  "pdf_page": 184,
+  "page_label": "3 - 39",
+  "targets": [],
+  "no_targets_reason": "Photograph figure 3.17 with descriptive panel plus section 3.19 text; no table or equation.",
+  "continuations": [],
+  "unclear": [],
+  "image_viewed": "tmp/pdfs/sew-t01/page-184.png",
+  "image_sha256": "ee57036961d861476d9996bcc74ae1f69679fc0ce20e034a7681ce63e889eff0",
+  "figures_on_page": [
+   "Figure 3.17 Typical floor level leaping weir"
+  ],
+  "observations": []
+ },
+ {
+  "pdf_page": 187,
+  "page_label": "3 - 42",
+  "targets": [],
+  "no_targets_reason": "Two photographs, Figure 3.18, with a two-line caption; no table or equation.",
+  "continuations": [],
+  "unclear": [],
+  "image_viewed": "tmp/pdfs/sew-t01/page-187.png",
+  "image_sha256": "2f501e71fa85198fdbc587b0fee81ab1fbc8ddcb585a6d1c55a51a5131f9ba1a",
+  "figures_on_page": [
+   "Figure 3.18 House sewer connections"
+  ],
+  "observations": []
+ },
+ {
+  "pdf_page": 189,
+  "page_label": "3 - 44",
+  "targets": [],
+  "no_targets_reason": "Figures 3.19 and 3.20. Figure 3.20 is a longitudinal sewer section whose callouts are data labels (1050mm CONC. SEWER, 900mm CONC. SEWER, 750mm CONC. SEWER, 2.8 IN 1000, 2.7 IN 1000, 1.8 IN 1000, TH 150/M150, manhole invert levels); no equation or grid table is printed.",
+  "continuations": [
+   "Figure 3.20 shows the section drawing referred to by the preceding text on this page."
+  ],
+  "unclear": [],
+  "image_viewed": "tmp/pdfs/sew-t01/page-189.png",
+  "image_sha256": "872cd550b92af90f8c361584f5ddb22c61590055ff4a32c8d873a15c9b6312f4",
+  "figures_on_page": [
+   "Figure 3.19 Nomenclature of sewers",
+   "Figure 3.20 Typical sewer section"
+  ],
+  "observations": []
+ },
+ {
+  "pdf_page": 190,
+  "page_label": "3 - 45",
+  "targets": [],
+  "no_targets_reason": "Text plus Figure 3.21, a node/link network diagram using circled node numbers and boxed link numbers. No table, no equation.",
+  "continuations": [],
+  "unclear": [],
+  "image_viewed": "tmp/pdfs/sew-t01/page-190.png",
+  "image_sha256": "a563cd8ecd8186d720b7b47a1f99e3b0fe7d327f80be3bc830cadf64bb3727c8",
+  "figures_on_page": [
+   "Figure 3.21 Example sewer network"
+  ],
+  "observations": []
+ },
+ {
+  "pdf_page": 192,
+  "page_label": "3 - 47",
+  "targets": [],
+  "no_targets_reason": "Figure 3.22 rectangular manhole drawing (section A A, section B B, plan) with material callouts CC 1:2:4, C C 1:4:6, M.S. FOOT REST, C.I. COVER. No table, no equation.",
+  "continuations": [],
+  "unclear": [],
+  "image_viewed": "tmp/pdfs/sew-t01/page-192.png",
+  "image_sha256": "55de0581c13ab55c4bfe8470e6803c6deddadf7ffe792cc8f87544a40f785b1f",
+  "figures_on_page": [
+   "Figure 3.22 Rectangular manhole for 0.9 m x 0.8 m clear in plan and depth less than 0.9 m"
+  ],
+  "observations": []
+ },
+ {
+  "pdf_page": 193,
+  "page_label": "3 - 48",
+  "targets": [],
+  "no_targets_reason": "Figures 3.23 and 3.24, two manhole drawings with material callouts (R.C.C. 1:2:4, ONE BRICK THICK, C C 1:4:8, M.S. FOOT REST, CEMENT POINTING, CEMENT PLASTER, HEIGHT OF SPRINGING, CHANNEL AND BENCHING CC 1:2:4). No table, no equation.",
+  "continuations": [],
+  "unclear": [],
+  "image_viewed": "tmp/pdfs/sew-t01/page-193.png",
+  "image_sha256": "c7c409f7914d53319f294c2b7efdbd2cf5e1be20063b02a05e5c5f53e0f56b6d",
+  "figures_on_page": [
+   "Figure 3.23 Rectangular manhole for 1.2 m x 0.9 m clear in plan and depth 0.9 m to 2.5 m",
+   "Figure 3.24 Arch type manhole for 1.4 m x 0.9 m clear in plan and deeper than 2.5 m"
+  ],
+  "observations": []
+ },
+ {
+  "pdf_page": 194,
+  "page_label": "3 - 49",
+  "targets": [],
+  "no_targets_reason": "Figure 3.25 circular manhole drawing with dimension callouts (400mm C/C, 150, 300, 1800, 2600, 2/3 DIA 75mm, 1:12, PIPE DIA, B: THICKNESS OF WALL) and plan diameters (phi900/1200/1500/1800). The caption points to Table 3-15, which is printed on physical page 191 and is already recorded as SEW-2013-A:T3.15; no table is printed on this page.",
+  "continuations": [],
+  "unclear": [],
+  "image_viewed": "tmp/pdfs/sew-t01/page-194.png",
+  "image_sha256": "829d61fdc2a3dc98be95e31f9d4f53987379be761cc9aeb285e07bb3ffacd2a9",
+  "figures_on_page": [
+   "Figure 3.25 Typical circular manhole of diameters and depths as in Table 3-15"
+  ],
+  "observations": []
+ },
+ {
+  "pdf_page": 195,
+  "page_label": "3 - 50",
+  "targets": [],
+  "no_targets_reason": "Bulleted text plus Figure 3.26 RCC and brickwork combination manhole drawing with dimension callouts (1800 phi, 2600, 300, 150, 130, 1:12, 2/3 DIA 75mm, B: THICKNESS OF WALL, ALL DIMENSION IN MILLIMETRES). No table, no equation.",
+  "continuations": [],
+  "unclear": [],
+  "image_viewed": "tmp/pdfs/sew-t01/page-195.png",
+  "image_sha256": "368e15b253b74c6536e26f222ae19afa860df826c174f1defd866da2c68cf9f1",
+  "figures_on_page": [
+   "Figure 3.26 RCC and Brickwork Combination Manhole"
+  ],
+  "observations": []
+ },
+ {
+  "pdf_page": 196,
+  "page_label": "3 - 51",
+  "targets": [],
+  "no_targets_reason": "Full-page rotated drawing, Figure 3.27 RCC Manhole for a depth between 0.6 m to 2.3 m, with dimension and detail callouts only. No table, no equation.",
+  "continuations": [],
+  "unclear": [],
+  "image_viewed": "tmp/pdfs/sew-t01/page-196.png",
+  "image_sha256": "2839e5003f5abce578bd1003b6924c7a4ae6240751e68bdc5d098015eee13111",
+  "figures_on_page": [
+   "Figure 3.27 RCC Manhole for a depth between 0.6 m to 2.3 m"
+  ],
+  "observations": []
+ },
+ {
+  "pdf_page": 197,
+  "page_label": "3 - 52",
+  "targets": [],
+  "no_targets_reason": "Full-page rotated drawing, Figure 3.28 RCC Manhole for a depth between 2.3 m to 5 m, with dimension and detail callouts only. No table, no equation.",
+  "continuations": [],
+  "unclear": [],
+  "image_viewed": "tmp/pdfs/sew-t01/page-197.png",
+  "image_sha256": "4cb0fca5a06a564133b2498183622ec7db8793d6eb3684e8322dc7afe06a95f5",
+  "figures_on_page": [
+   "Figure 3.28 RCC Manhole for a depth between 2.3 m to 5 m"
+  ],
+  "observations": []
+ },
+ {
+  "pdf_page": 200,
+  "page_label": "3 - 55",
+  "targets": [],
+  "no_targets_reason": "Figure 3.29 drop manhole drawing with sectional plan, section X X and section Y Y; dimension callouts only. No table, no equation.",
+  "continuations": [],
+  "unclear": [],
+  "image_viewed": "tmp/pdfs/sew-t01/page-200.png",
+  "image_sha256": "f18d0e763c257b5821904cbb8ed5b1132d4a85e11071c299cf6f707bb222d700",
+  "figures_on_page": [
+   "Figure 3.29 Illustrative arrangement of drop manhole"
+  ],
+  "observations": []
+ },
+ {
+  "pdf_page": 205,
+  "page_label": "3 - 60",
+  "targets": [],
+  "no_targets_reason": "Full-page rotated drawing, Figure 3.30 manhole arrangement in loose/slushy/quick-sand soil; material and dimension callouts only, plus notes on RCC casing and sulphate resistant cement. No table, no equation.",
+  "continuations": [],
+  "unclear": [],
+  "image_viewed": "tmp/pdfs/sew-t01/page-205.png",
+  "image_sha256": "4fa3975655d0c4fa036b55b6c795e68fdddb1bfd031794d409646e454eefdc09",
+  "figures_on_page": [
+   "Figure 3.30 Illustrative arrangement of manholes in loose soils or slushy soils or quick sand"
+  ],
+  "observations": []
+ },
+ {
+  "pdf_page": 206,
+  "page_label": "3 - 61",
+  "targets": [],
+  "no_targets_reason": "Text plus Figure 3.31 in-situ spray lining drawing with label callouts only. No table, no equation.",
+  "continuations": [],
+  "unclear": [],
+  "image_viewed": "tmp/pdfs/sew-t01/page-206.png",
+  "image_sha256": "4c7fbe32843b7adaa959f7074567deb1f8fb617d4312e46f85a6b42ffa5e987f",
+  "figures_on_page": [
+   "Figure 3.31 Depiction on in-situ sewer manhole lining (Spray equipment not shown)"
+  ],
+  "observations": []
+ },
+ {
+  "pdf_page": 227,
+  "page_label": "3 - 82",
+  "targets": [],
+  "no_targets_reason": "Text plus Figure 3.44 Venteak supported sewer pipe drawing (elevation and plan) with dimension callouts 500, 600, 300 phi PIPE, VERTICAL POST 100 x 100, HORIZONTAL MEMBER 50 x 100, GI BOLT. No table, no equation.",
+  "continuations": [],
+  "unclear": [],
+  "image_viewed": "tmp/pdfs/sew-t01/page-227.png",
+  "image_sha256": "a8f3b483fdf80444b649afddc6820dec29082c525ad135bde01457e0e0f64d09",
+  "figures_on_page": [
+   "Figure 3.44 Example of Venteak supported sewer pipe"
+  ],
+  "observations": []
+ },
+ {
+  "pdf_page": 230,
+  "page_label": "3 - 85",
+  "targets": [
+   "draft:SEW-2013-A:Ep230-1"
+  ],
+  "no_targets_reason": null,
+  "continuations": [
+   "The figure is a single page-sized image; the whole figure plus source line and caption is one region."
+  ],
+  "unclear": [
+   "The callout '0.125 Bc 10 cm MIN UNDER BARREL' shows no plus sign between Bc and 10 at native raster resolution (about 150 dpi). Printed as shown; no plus supplied."
+  ],
+  "image_viewed": "tmp/pdfs/sew-t01/page-230.png",
+  "image_sha256": "7bd1ceea9500dc3d576966ffbb1ad21d2c9afd435879910b10bd5a1d8ed426c6",
+  "figures_on_page": [
+   "Figure 3.46 Classes of bedding for conduit in trench"
+  ],
+  "observations": [
+   "Class D has no dimension callout. Figure note: IN ROCK, TRENCH IS EXCAVATED AT LEAST 15cm BELOW THE BELL OF THE PIPE EXCEPT WHERE CONCRETE CRADLE IS USED."
+  ]
+ },
+ {
+  "pdf_page": 236,
+  "page_label": "3 - 91",
+  "targets": [
+   "draft:SEW-2013-A:E3.46"
+  ],
+  "no_targets_reason": null,
+  "continuations": [],
+  "unclear": [],
+  "image_viewed": "tmp/pdfs/sew-t01/page-236.png",
+  "image_sha256": "5614fa5e9417e0895819f9dc31d929376f5640284efd83a01b00f467367e0cdd",
+  "figures_on_page": [],
+  "observations": [
+   "The printed number (3.46) is not returned by native text extraction and was read from the 288 dpi region render. The body text also cites Equation (3.23) for Marston's Formula."
+  ]
+ },
+ {
+  "pdf_page": 239,
+  "page_label": "3 - 94",
+  "targets": [],
+  "no_targets_reason": "Text plus Figure 3.49 photograph with a boxed descriptive panel. No table, no equation.",
+  "continuations": [
+   "Section 3.54.5.3 Shoring text continues on physical page 240."
+  ],
+  "unclear": [],
+  "image_viewed": "tmp/pdfs/sew-t01/page-239.png",
+  "image_sha256": "6f5f8c363c8413f85a14c24354b66757befaeffd300fa03274faf3912139a56c",
+  "figures_on_page": [
+   "Figure 3.49 Work in execution by latest technology for sewer laying in India (Mumbai)"
+  ],
+  "observations": []
+ },
+ {
+  "pdf_page": 245,
+  "page_label": "3 - 100",
+  "targets": [],
+  "no_targets_reason": "Figure 3.50 mechanism-of-load-resistance drawing with labels Tension, Compression, Minor axis of reinforcement, RIGID PIPE STRESS ZONES; no table, no equation. Section 3.58 jointing text follows.",
+  "continuations": [],
+  "unclear": [],
+  "image_viewed": "tmp/pdfs/sew-t01/page-245.png",
+  "image_sha256": "589c433a4cc6e290c14b3591f94987b6edf8c8ff644a651fe9c157f80b188dad",
+  "figures_on_page": [
+   "Figure 3.50 Mechanism of resisting superimposed loads by rigid and non-rigid piping"
+  ],
+  "observations": []
+ },
+ {
+  "pdf_page": 246,
+  "page_label": "3 - 101",
+  "targets": [],
+  "no_targets_reason": "Three photographs, Figure 3.51, with caption and source line; jointing text follows. No table, no equation.",
+  "continuations": [],
+  "unclear": [],
+  "image_viewed": "tmp/pdfs/sew-t01/page-246.png",
+  "image_sha256": "37751c0aaf6cd637c85d63e1513fee3e3aeaef0fda57dc696aa7d8cd922ef625",
+  "figures_on_page": [
+   "Figure 3.51 A simpler approach to initial laying and aligning the SW sewers by the two tight twines one on crown and one on mid diameter are used"
+  ],
+  "observations": []
+ }
+]

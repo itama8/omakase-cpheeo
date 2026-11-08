@@ -1,0 +1,67 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:E5.39",
+  "unit_id": "SEW-2013-A:E5.39",
+  "manual_id": "SEW-2013-A",
+  "kind": "equation",
+  "number": "5.39",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "state": "verified",
+  "regions": [
+    {
+      "pdf_page": 399,
+      "page_label": "5 - 95",
+      "bbox": [
+        66.0,
+        133.0,
+        528.0,
+        176.0
+      ],
+      "render_sha256": "3ce347070da1fe4218188fb0795ddc52dd463306004b594e449b211603ee7b77"
+    }
+  ],
+  "title": "Overall bacterial reduction in ponds in series",
+  "latex": "\\frac{N_e}{N_i} = \\frac{1}{(1 + K_b t)^n}",
+  "readable": "Ne/Ni = 1/(1 + Kb t)^n",
+  "symbols": [
+    {
+      "symbol": "Ne",
+      "definition": "effluent bacterial concentration"
+    },
+    {
+      "symbol": "Ni",
+      "definition": "influent bacterial concentration"
+    },
+    {
+      "symbol": "Kb",
+      "definition": "bacterial die off constant"
+    },
+    {
+      "symbol": "t",
+      "definition": "detention time"
+    },
+    {
+      "symbol": "n",
+      "definition": "number of ponds of equal detention time in series (from the printed sentence, not the printed symbol list)"
+    }
+  ],
+  "applicability": "Overall bacterial reduction in 'n' ponds of equal detention time 't' in series, computed with completely mixed conditions, which gives a conservative design; a commonly used value of Kb for faecal bacteria at 20°C is 2.0 per day.",
+  "notes": [
+    "The printed symbol list is not repeated for this equation; the definitions above are taken from the surrounding printed sentences.",
+    "The exponent n is printed outside the closing parenthesis of the denominator."
+  ],
+  "verification": {
+    "transcription": {
+      "pass_id": "sew-t04-first-reading-20261109",
+      "method": "direct visual reading of 144 dpi annotation-cleaned full-page renders plus 288-900 dpi crops of the source regions; no OCR",
+      "observations": "First reading only. Every value, exponent, subscript, printed spelling and printed error was read from the rendered page image. No distinct second inspection performed; record is a draft pending review."
+    },
+    "visual_recheck": {
+      "pass_id": "parent-recheck-sew-t04",
+      "method": "distinct second visual inspection of exact source-region renders (incl. rotated/zoomed crops) by parent assistant; not independent human review",
+      "observations": "Parent compared every cell/term against 144-dpi region renders; confirmed values, powers, subscripts and printed anomalies.",
+      "content_sha256": "a081d1689dc436ed9cacfd56f082d602a38b22d4aceb24711f7f8ea24bf4d102"
+    }
+  },
+  "parent_id": "SEW-2013-A:5.8.4.4.5"
+}

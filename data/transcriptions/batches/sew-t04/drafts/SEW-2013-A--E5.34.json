@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:E5.34",
+  "unit_id": "SEW-2013-A:E5.34",
+  "manual_id": "SEW-2013-A",
+  "kind": "equation",
+  "number": "5.34",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "state": "pending",
+  "regions": [
+    {
+      "pdf_page": 384,
+      "page_label": "5 - 80",
+      "bbox": [
+        68.0,
+        304.0,
+        533.0,
+        347.0
+      ],
+      "render_sha256": "e87aa39ce4419e311d385f91248224d94384f908bebb7336d1e9044e0a358308"
+    }
+  ],
+  "title": "Lagoon temperature from influent and ambient air temperatures",
+  "latex": "\\frac{\\theta}{h} = \\frac{T_i - T_L}{f(T_L - T_a)}",
+  "readable": "θ/h = (Ti − TL) / (f(TL − Ta))",
+  "symbols": [
+    {
+      "symbol": "Θ",
+      "definition": "detention time in days,"
+    },
+    {
+      "symbol": "h",
+      "definition": "depth of lagoon in meters,"
+    },
+    {
+      "symbol": "Ti and Ta",
+      "definition": "temperatures (°C) of influent sewage and ambient air respectively and"
+    },
+    {
+      "symbol": "f",
+      "definition": "the heat transfer coefficient for aerated lagoons which is 0.49 m/day."
+    }
+  ],
+  "applicability": "Estimates the temperature TL in a lagoon, used to compute the detention time required for the critical average winter month temperature.",
+  "notes": [
+    "The equation prints a lower-case theta while the printed definition list prints a capital Θ; preserved as printed.",
+    "TL, the subject of the equation, has no definition in the printed list.",
+    "The printed list item ends with a stray \"and\" after \"ambient air respectively\"; preserved."
+  ],
+  "verification": {
+    "transcription": {
+      "pass_id": "sew-t04-first-reading-20261109",
+      "method": "direct visual reading of 144 dpi annotation-cleaned full-page renders plus 288-900 dpi crops of the source regions; no OCR",
+      "observations": "First reading only. Every value, exponent, subscript, printed spelling and printed error was read from the rendered page image. No distinct second inspection performed; record is a draft pending review."
+    }
+  }
+}

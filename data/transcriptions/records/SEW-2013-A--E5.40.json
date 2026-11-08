@@ -1,0 +1,50 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:E5.40",
+  "unit_id": "SEW-2013-A:E5.40",
+  "manual_id": "SEW-2013-A",
+  "kind": "equation",
+  "number": "5.40",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "state": "verified",
+  "regions": [
+    {
+      "pdf_page": 399,
+      "page_label": "5 - 95",
+      "bbox": [
+        72.0,
+        227.0,
+        531.0,
+        260.0
+      ],
+      "render_sha256": "eca2138f8b32aa42ce5b0498d361cdb8670e46cb7b3e764235d7f3bbed662e6d"
+    }
+  ],
+  "title": "Temperature correction of the bacterial die off constant",
+  "latex": "K_{b(T)} = K_{b(20)}(1.19)^{(T-20)}",
+  "readable": "Kb(T) = Kb(20) (1.19)^(T−20)",
+  "symbols": [
+    {
+      "symbol": "K b(T) and K b(20)",
+      "definition": "are values of the constant at T and at 20°C respectively."
+    }
+  ],
+  "applicability": "Gives the value of Kb at temperatures other than 20°C, following the statement that a commonly used value of Kb for faecal bacteria at 20°C is 2.0 per day.",
+  "notes": [
+    "The printed definition line writes the subscripts with a space: \"K b(T) and K b(20)\"."
+  ],
+  "verification": {
+    "transcription": {
+      "pass_id": "sew-t04-first-reading-20261109",
+      "method": "direct visual reading of 144 dpi annotation-cleaned full-page renders plus 288-900 dpi crops of the source regions; no OCR",
+      "observations": "First reading only. Every value, exponent, subscript, printed spelling and printed error was read from the rendered page image. No distinct second inspection performed; record is a draft pending review."
+    },
+    "visual_recheck": {
+      "pass_id": "parent-recheck-sew-t04",
+      "method": "distinct second visual inspection of exact source-region renders (incl. rotated/zoomed crops) by parent assistant; not independent human review",
+      "observations": "Parent compared every cell/term against 144-dpi region renders; confirmed values, powers, subscripts and printed anomalies.",
+      "content_sha256": "a952fb7aac7861494cadd22941a8f8ee3bae8b763ffd3289dc04866e5b991b42"
+    }
+  },
+  "parent_id": "SEW-2013-A:5.8.4.4.5"
+}

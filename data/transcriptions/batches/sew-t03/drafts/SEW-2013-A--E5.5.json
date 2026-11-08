@@ -1,0 +1,71 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:E5.5",
+  "unit_id": "SEW-2013-A:E5.5",
+  "manual_id": "SEW-2013-A",
+  "kind": "equation",
+  "number": "5.5",
+  "title": "General equation for settling velocity of a discrete particle in the transition zone",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "state": "pending",
+  "regions": [
+    {
+      "pdf_page": 344,
+      "page_label": "5 - 40",
+      "bbox": [
+        70,
+        465,
+        508,
+        498
+      ],
+      "render_sha256": "94505a40735eab756a9908ace815a735cdd62a6449a47c24c78edb94b8238c6d"
+    }
+  ],
+  "parent_id": "SEW-2013-A:5.6.2.7.1.1",
+  "latex": "V_s=\\sqrt{\\frac{4}{3}\\frac{g}{C_D}\\frac{\\left(\\rho_s-\\rho\\right)}{\\rho}}\\,d",
+  "readable": "Vs = SQRT[(4/3)(g / CD)((rho_s - rho) / rho)] d",
+  "symbols": [
+    {
+      "symbol": "Vs",
+      "definition": "Settling velocity, m/s"
+    },
+    {
+      "symbol": "g",
+      "definition": "Acceleration due to gravity, m/s2"
+    },
+    {
+      "symbol": "rho",
+      "definition": "Mass density of grit particle, kg/m3"
+    },
+    {
+      "symbol": "rho",
+      "definition": "Mass density of liquid, kg/m3"
+    },
+    {
+      "symbol": "d",
+      "definition": "Size of the particle, m"
+    },
+    {
+      "symbol": "CD",
+      "definition": "Newton coefficient of Drag which is a function of Reynolds number"
+    }
+  ],
+  "applicability": "Settling velocity of a discrete particle where transition flow conditions hold, that is Reynolds number between 1 and 1,000.",
+  "notes": [
+    "The printed radical encloses 4/3, g/CD and (rho_s - rho)/rho; the factor d is printed outside the radical and is kept outside.",
+    "CD is defined in the surrounding prose, not in the printed symbol list."
+  ],
+  "verification": {
+    "transcription": {
+      "pass_id": "sew-t03-first-reading-2026-11-08",
+      "method": "Direct visual reading of full annotation-cleaned 144 dpi page PNGs, plus enlarged crops at 288-720 dpi and a contact sheet of every hashed source region; no OCR, no paid service, no delegation",
+      "observations": "First visual transcription only. Every printed glyph, power, subscript, inequality, unit, hyphen spacing, footnote and printed error was read from the rendered source and retained or flagged; no value inferred."
+    }
+  },
+  "source_image_refs": [
+    {
+      "path": "tmp/pdfs/sew-t03/SEW-2013-A--E5.5.png",
+      "role": "first-reading source crop"
+    }
+  ]
+}

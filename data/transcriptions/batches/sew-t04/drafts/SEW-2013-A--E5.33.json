@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:E5.33",
+  "unit_id": "SEW-2013-A:E5.33",
+  "manual_id": "SEW-2013-A",
+  "kind": "equation",
+  "number": "5.33",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "state": "pending",
+  "regions": [
+    {
+      "pdf_page": 384,
+      "page_label": "5 - 80",
+      "bbox": [
+        64.0,
+        238.0,
+        536.0,
+        265.0
+      ],
+      "render_sha256": "0a53d808aae3628ae6a42ea3f7d230f53047fc6dace8058b9ca31fe94020e041"
+    }
+  ],
+  "title": "Temperature correction of the substrate removal rate in aerated lagoons",
+  "latex": "(K)_{T^\\circ C} = (K)_{20^\\circ C}\\times 1.035^{(T-20)}",
+  "readable": "(K)T°C = (K)20°C × 1.035^(T−20)",
+  "symbols": [
+    {
+      "symbol": "K",
+      "definition": "overall substrate removal rate (from Table 5-12, 0.6-0.8 per day on a soluble BOD basis at 20ºC)"
+    },
+    {
+      "symbol": "T",
+      "definition": "temperature of the lagoon (printed only as the exponent and the subscript)"
+    }
+  ],
+  "applicability": "Gives lagoon substrate removal rate values at temperatures other than 20ºC for facultative aerated lagoons.",
+  "notes": [
+    "Both factors are printed with K in parentheses on each side, e.g. (K)T°C.",
+    "The 1.035 factor is printed with a superscript (T-20)."
+  ],
+  "verification": {
+    "transcription": {
+      "pass_id": "sew-t04-first-reading-20261109",
+      "method": "direct visual reading of 144 dpi annotation-cleaned full-page renders plus 288-900 dpi crops of the source regions; no OCR",
+      "observations": "First reading only. Every value, exponent, subscript, printed spelling and printed error was read from the rendered page image. No distinct second inspection performed; record is a draft pending review."
+    }
+  }
+}

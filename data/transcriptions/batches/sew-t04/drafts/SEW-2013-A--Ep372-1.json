@@ -1,0 +1,65 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:Ep372-1",
+  "unit_id": "SEW-2013-A:Ep372-1",
+  "manual_id": "SEW-2013-A",
+  "kind": "equation",
+  "number": "p372-1",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "state": "pending",
+  "regions": [
+    {
+      "pdf_page": 372,
+      "page_label": "5 - 68",
+      "bbox": [
+        85.0,
+        410.0,
+        540.0,
+        546.0
+      ],
+      "render_sha256": "f7cf30f506e9e838431c924dd853bccf406843c3486f71a90e1fc28bc9ccd8f6"
+    }
+  ],
+  "title": "Definitions of biological sludge produced and observed yield in the oxygen requirement list",
+  "latex": "\\Delta_X = Q \\times Y_{obs} \\times (S_0-S);\\quad Y_{obs} = Y/(1+K_d\\times\\theta_c);\\quad Y = 0.5,\\ K_d = 0.06",
+  "readable": "ΔX = Q × Yobs × (S0 − S);  Yobs = Y/(1 + Kd × θc);  where Y is 0.5 and Kd is 0.06",
+  "symbols": [
+    {
+      "symbol": "ΔX",
+      "definition": "Biological sludge produced per day."
+    },
+    {
+      "symbol": "Q",
+      "definition": "no printed definition"
+    },
+    {
+      "symbol": "Yobs",
+      "definition": "no printed definition"
+    },
+    {
+      "symbol": "Y",
+      "definition": "is 0.5 (printed)"
+    },
+    {
+      "symbol": "Kd",
+      "definition": "is 0.06 (printed)"
+    },
+    {
+      "symbol": "θc",
+      "definition": "no printed definition"
+    }
+  ],
+  "applicability": "Supplies the ΔX term of Equation (5.29) in the printed symbol list, which also states the numerical values Y = 0.5 and Kd = 0.06.",
+  "notes": [
+    "Unnumbered; Ep372-1 is a service locator, not a printed equation number.",
+    "The printed definition rows are inside the \"where,\" list of Equation (5.29) and are interleaved with the prose definition of ΔX; only the formula rows are transcribed into the LaTeX.",
+    "Printed \"Yobs\" without a subscript on the Yobs row, while the ΔX row prints Yobs with a subscript. Preserved as printed."
+  ],
+  "verification": {
+    "transcription": {
+      "pass_id": "sew-t04-first-reading-20261109",
+      "method": "direct visual reading of 144 dpi annotation-cleaned full-page renders plus 288-900 dpi crops of the source regions; no OCR",
+      "observations": "First reading only. Every value, exponent, subscript, printed spelling and printed error was read from the rendered page image. No distinct second inspection performed; record is a draft pending review."
+    }
+  }
+}

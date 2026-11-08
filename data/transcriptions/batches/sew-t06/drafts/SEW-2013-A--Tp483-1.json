@@ -13,12 +13,12 @@
       "pdf_page": 483,
       "page_label": "5 - 179",
       "bbox": [
-        126.0,
-        448.0,
-        464.0,
-        548.0
+        113.0,
+        474.0,
+        491.0,
+        545.0
       ],
-      "render_sha256": "c9c9d825dc14fd8ac49753f8d66b8059665ec164a600a4137c7eb0577bc1a791"
+      "render_sha256": "14172f2127c455f31b8aee37c5bfd38ac8ddf62cce829bb555bf16ef48a31111"
     }
   ],
   "headers": [
@@ -60,7 +60,8 @@
     "Printed caption below the figure: 'Figure 5.74  Membrane characteristics'.",
     "Ranges run high-to-low as printed (1,000-400 psi and 68.9-27.6 bar, then 600-100, 200-70, 125-15 psi and 41.4-6.9, 13.8-4.8, 8.6-1 bar). Order retained; no re-sorting.",
     "Pressure is preset twice in different units ([psi] and [bar]) for the same column; both rows are retained.",
-    "The classes named in the diagram above the grid (Reverse Osmosis, Nanofiltration, Ultrafiltration, Microfiltration, Particle Filtration) are diagram labels, not table cells, and are not part of this table."
+    "The classes named in the diagram above the grid (Reverse Osmosis, Nanofiltration, Ultrafiltration, Microfiltration, Particle Filtration) are diagram labels, not table cells, and are not part of this table.",
+    "Transcriber note: the figure's vertical column separators run upward past the grid, so they cross the top edge of this region; the grid's own top rule is the first horizontal line inside it. Nothing from the ellipse diagram above is included as a value."
   ],
   "verification": {
     "transcription": {

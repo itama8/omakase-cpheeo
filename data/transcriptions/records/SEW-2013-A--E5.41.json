@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:E5.41",
+  "unit_id": "SEW-2013-A:E5.41",
+  "manual_id": "SEW-2013-A",
+  "kind": "equation",
+  "number": "5.41",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "state": "verified",
+  "regions": [
+    {
+      "pdf_page": 412,
+      "page_label": "5 - 108",
+      "bbox": [
+        85.0,
+        295.0,
+        520.0,
+        316.0
+      ],
+      "render_sha256": "8318b2381910548a2b0f0d8cd79fcd5241ea601d1833365a302bd4baad6578ae"
+    }
+  ],
+  "title": "Alum precipitation of phosphorus",
+  "latex": "\\mathrm{Al}_2(\\mathrm{SO}_4)_3\\cdot 18\\mathrm{H}_2\\mathrm{O}+ {}_2\\mathrm{H}_3\\mathrm{PO}_4 = 2\\mathrm{AlPO}_4 + 3\\mathrm{H}_2\\mathrm{SO}_4 + 18\\mathrm{H}_2\\mathrm{O}",
+  "readable": "Al2(SO4)3·18H2O+ 2H3PO4 = 2AlPO4 + 3H2SO4 + 18H2O",
+  "symbols": [],
+  "applicability": "Chemical precipitation of phosphorous by Ferric or Aluminium salts: for each kg of phosphorous 0.9 kg of Aluminium or 1.8 kg of Iron is needed, so sludge production is less by half with Aluminium.",
+  "notes": [
+    "Printed with the coefficient 2 of H₃PO₄ set as a subscript (\"+ ₂H₃PO₄\") and with no space before the plus sign; preserved as printed, not corrected.",
+    "All species are printed with closed-up subscripts (Al2(SO4)3, 18H2O, 2AlPO4, 3H2SO4); the readable form uses the same digits without subscript markup.",
+    "The middle dot is printed as a raised dot between the hydrate and the formula."
+  ],
+  "verification": {
+    "transcription": {
+      "pass_id": "sew-t04-first-reading-20261109",
+      "method": "direct visual reading of 144 dpi annotation-cleaned full-page renders plus 288-900 dpi crops of the source regions; no OCR",
+      "observations": "First reading only. Every value, exponent, subscript, printed spelling and printed error was read from the rendered page image. No distinct second inspection performed; record is a draft pending review."
+    },
+    "visual_recheck": {
+      "pass_id": "parent-recheck-sew-t04",
+      "method": "distinct second visual inspection of exact source-region renders (incl. rotated/zoomed crops) by parent assistant; not independent human review",
+      "observations": "Parent compared every cell/term against 144-dpi region renders; confirmed values, powers, subscripts and printed anomalies.",
+      "content_sha256": "7692f7d1d34230c64eff2ee883cc1a57a56902932170261cc0a66233ffaaf44e"
+    }
+  },
+  "parent_id": "SEW-2013-A:5.8.6.2.1"
+}

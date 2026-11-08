@@ -1,0 +1,60 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:E5.29",
+  "unit_id": "SEW-2013-A:E5.29",
+  "manual_id": "SEW-2013-A",
+  "kind": "equation",
+  "number": "5.29",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "state": "verified",
+  "regions": [
+    {
+      "pdf_page": 372,
+      "page_label": "5 - 68",
+      "bbox": [
+        76.0,
+        378.0,
+        540.0,
+        402.0
+      ],
+      "render_sha256": "5829da3eb2890ae39c14f068bb83abb09f14acc8079389c67c9aad2527e58bfd"
+    }
+  ],
+  "title": "Total oxygen requirement of the activated sludge process",
+  "latex": "O_2\\ \\mathrm{required}\\ (g/d) = (Q(S_0-S)/f) - 1.42\\,\\Delta_X",
+  "readable": "O2 required (g/d) = (Q (S0-S)/f) − 1.42 ΔX",
+  "symbols": [
+    {
+      "symbol": "f",
+      "definition": "Ratio of BOD to ultimate BOD"
+    },
+    {
+      "symbol": "1.42",
+      "definition": "Oxygen demand of biomass, g/g"
+    },
+    {
+      "symbol": "ΔX",
+      "definition": "Biological sludge produced per day."
+    }
+  ],
+  "applicability": "Total oxygen requirement of the process; the printed text states that the formula does not allow for nitrification but allows only for carbonaceous BOD removal.",
+  "notes": [
+    "Printed units are inside the equation as \"(g/d)\", and the gas is printed as O₂.",
+    "The two definitional formulas printed in the same \"where,\" list (ΔX and Yobs) are recorded separately as Ep372-1.",
+    "The 1.42 coefficient is printed with a longer dash-like minus before it: \"– 1.42 Δ X\". Preserved as printed."
+  ],
+  "verification": {
+    "transcription": {
+      "pass_id": "sew-t04-first-reading-20261109",
+      "method": "direct visual reading of 144 dpi annotation-cleaned full-page renders plus 288-900 dpi crops of the source regions; no OCR",
+      "observations": "First reading only. Every value, exponent, subscript, printed spelling and printed error was read from the rendered page image. No distinct second inspection performed; record is a draft pending review."
+    },
+    "visual_recheck": {
+      "pass_id": "parent-recheck-sew-t04",
+      "method": "distinct second visual inspection of exact source-region renders (incl. rotated/zoomed crops) by parent assistant; not independent human review",
+      "observations": "Parent compared every cell/term against 144-dpi region renders; confirmed values, powers, subscripts and printed anomalies.",
+      "content_sha256": "ab22901d53b06fc8f48095b6d4415441cc7351101c4b1a2f142e0c3fd098a965"
+    }
+  },
+  "parent_id": "SEW-2013-A:5.8.1.7.5.2"
+}

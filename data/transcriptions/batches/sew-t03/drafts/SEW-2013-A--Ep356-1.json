@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:Ep356-1",
+  "unit_id": "SEW-2013-A:Ep356-1",
+  "manual_id": "SEW-2013-A",
+  "kind": "equation",
+  "number": "p356-1",
+  "title": "Effective weir length as a fraction of the peripheral length",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "state": "pending",
+  "regions": [
+    {
+      "pdf_page": 356,
+      "page_label": "5 - 52",
+      "bbox": [
+        52,
+        499,
+        539,
+        516
+      ],
+      "render_sha256": "fd5fc72e925b1eb53d5eb5e94149d19871ac31b2ef9fae4a9f3ddf0c6e58501d"
+    }
+  ],
+  "parent_id": "SEW-2013-A:5.7.4.2.3",
+  "latex": "\\text{weir length}=70/93=75\\%\\ \\text{of the peripheral length}",
+  "readable": "weir length = 70/93 = 75% of the peripheral length",
+  "symbols": [
+    {
+      "symbol": "70",
+      "definition": "length of masonry bevelled weirs, cm"
+    },
+    {
+      "symbol": "93",
+      "definition": "pitch of the brick pillars, cm"
+    }
+  ],
+  "applicability": "Effective weir length of the masonry bevelled weirs between brick pillars on the RCC sidewall of the clarifiers at the 23 MLD CMWSSB STP.",
+  "notes": [
+    "Printed inline in running prose, not as a displayed or numbered equation; p356-1 is a service locator.",
+    "The printed 75% is a rounded value: 70/93 = 75.27%. No correction made.",
+    "The pillar pitch is printed as 14 cm thick brick pillars of 23 cm length interspaced with masonry bevelled weirs of 70 cm length."
+  ],
+  "verification": {
+    "transcription": {
+      "pass_id": "sew-t03-first-reading-2026-11-08",
+      "method": "Direct visual reading of full annotation-cleaned 144 dpi page PNGs, plus enlarged crops at 288-720 dpi and a contact sheet of every hashed source region; no OCR, no paid service, no delegation",
+      "observations": "First visual transcription only. Every printed glyph, power, subscript, inequality, unit, hyphen spacing, footnote and printed error was read from the rendered source and retained or flagged; no value inferred."
+    }
+  },
+  "source_image_refs": [
+    {
+      "path": "tmp/pdfs/sew-t03/SEW-2013-A--Ep356-1.png",
+      "role": "first-reading source crop"
+    }
+  ]
+}

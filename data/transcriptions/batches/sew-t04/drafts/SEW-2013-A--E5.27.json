@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:E5.27",
+  "unit_id": "SEW-2013-A:E5.27",
+  "manual_id": "SEW-2013-A",
+  "kind": "equation",
+  "number": "5.27",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "state": "pending",
+  "regions": [
+    {
+      "pdf_page": 367,
+      "page_label": "5 - 63",
+      "bbox": [
+        70.0,
+        551.0,
+        519.0,
+        579.0
+      ],
+      "render_sha256": "f68cfc408aaa26d1083fc4a20eb0c76c3511bd72f173119fb958754a696caf81"
+    }
+  ],
+  "title": "Food to microorganism ratio as specific substrate utilization rate",
+  "latex": "F/M = QS_0/XV",
+  "readable": "F/M = QS0 / XV",
+  "symbols": [],
+  "applicability": "Used when the value of S is small compared to S0, as is often the case for activated sludge systems treating municipal sewage; U may then also be expressed as the food applied to microorganism ratio.",
+  "notes": [
+    "No symbol definitions are printed on this page, and no multiplication signs are printed between Q, S0, X and V."
+  ],
+  "verification": {
+    "transcription": {
+      "pass_id": "sew-t04-first-reading-20261109",
+      "method": "direct visual reading of 144 dpi annotation-cleaned full-page renders plus 288-900 dpi crops of the source regions; no OCR",
+      "observations": "First reading only. Every value, exponent, subscript, printed spelling and printed error was read from the rendered page image. No distinct second inspection performed; record is a draft pending review."
+    }
+  }
+}

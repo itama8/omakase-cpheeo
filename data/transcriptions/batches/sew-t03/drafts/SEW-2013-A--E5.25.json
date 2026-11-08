@@ -1,0 +1,63 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:E5.25",
+  "unit_id": "SEW-2013-A:E5.25",
+  "manual_id": "SEW-2013-A",
+  "kind": "equation",
+  "number": "5.25",
+  "title": "Mass of waste activated sludge under steady state operation",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "state": "pending",
+  "regions": [
+    {
+      "pdf_page": 366,
+      "page_label": "5 - 62",
+      "bbox": [
+        52,
+        668,
+        531,
+        700
+      ],
+      "render_sha256": "b0d5fea7e727a10d41a93fd941335431af79cdda57cd36ce2e42cbf522a28d06"
+    }
+  ],
+  "parent_id": "SEW-2013-A:5.8.1.3",
+  "latex": "Q_wX_s=YQ\\left(S_0-S\\right)-k_d\\,XV",
+  "readable": "Qw Xs = Y Q (S0 - S) - kd XV",
+  "symbols": [
+    {
+      "symbol": "Y",
+      "definition": "Maximum yield coefficient (microbial mass synthesized/mass of substrate utilized)"
+    },
+    {
+      "symbol": "kd",
+      "definition": "Endogenous respiration rate constant, (d-1)."
+    },
+    {
+      "symbol": "Qw",
+      "definition": "waste activated sludge rate, (m3/d)"
+    },
+    {
+      "symbol": "Xs",
+      "definition": "MLSS concentration in waste activated sludge from secondary settling tank under flow, (g/m3)"
+    }
+  ],
+  "applicability": "Under steady state operation the mass of waste activated sludge is given by this expression.",
+  "notes": [
+    "Printed without multiplication signs as YQ(S0 - S) - kd.XV; retained.",
+    "The kd exponent is printed as (d-1) in the symbol list."
+  ],
+  "verification": {
+    "transcription": {
+      "pass_id": "sew-t03-first-reading-2026-11-08",
+      "method": "Direct visual reading of full annotation-cleaned 144 dpi page PNGs, plus enlarged crops at 288-720 dpi and a contact sheet of every hashed source region; no OCR, no paid service, no delegation",
+      "observations": "First visual transcription only. Every printed glyph, power, subscript, inequality, unit, hyphen spacing, footnote and printed error was read from the rendered source and retained or flagged; no value inferred."
+    }
+  },
+  "source_image_refs": [
+    {
+      "path": "tmp/pdfs/sew-t03/SEW-2013-A--E5.25.png",
+      "role": "first-reading source crop"
+    }
+  ]
+}

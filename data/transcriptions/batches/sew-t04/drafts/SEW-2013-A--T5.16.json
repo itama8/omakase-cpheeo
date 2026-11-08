@@ -1,0 +1,506 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:T5.16",
+  "unit_id": "SEW-2013-A:T5.16",
+  "manual_id": "SEW-2013-A",
+  "kind": "table",
+  "number": "5.16",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "state": "pending",
+  "regions": [
+    {
+      "pdf_page": 410,
+      "page_label": "5 - 106",
+      "bbox": [
+        64.0,
+        70.0,
+        528.0,
+        737.0
+      ],
+      "render_sha256": "71bf91342900f1730f2b47b73033c796741d3f3c410978cbafbe2be8ee0d8151"
+    }
+  ],
+  "title": "Illustrative Chemical Water Hardness Precipitation Reactions and Chemical Needs",
+  "headers": [
+    "Chemical",
+    "+",
+    "Chemical",
+    "=",
+    "Chemical",
+    "+",
+    "Chemical"
+  ],
+  "rows": [
+    [
+      "Precipitation Reactions of MgSO₄ – CaSO₄",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    [
+      "MgSO₄",
+      "+",
+      "Ca(OH)₂",
+      "=",
+      "Mg(OH) ₂",
+      "+",
+      "CaSO₄"
+    ],
+    [
+      "120",
+      "",
+      "74",
+      "=",
+      "58",
+      "+",
+      "136"
+    ],
+    [
+      "194",
+      "",
+      "",
+      "=",
+      "194",
+      "",
+      ""
+    ],
+    [
+      "2066",
+      "+",
+      "1274",
+      "=",
+      "999",
+      "+",
+      "2341"
+    ],
+    [
+      "3340",
+      "",
+      "",
+      "=",
+      "3340",
+      "",
+      ""
+    ],
+    [
+      "Precipitation Reactions of MgCl₂ – CaCl₂",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    [
+      "MgCl₂",
+      "+",
+      "Ca(OH)₂",
+      "=",
+      "Mg(OH)₂",
+      "+",
+      "CaCl₂"
+    ],
+    [
+      "95",
+      "",
+      "74",
+      "=",
+      "58",
+      "+",
+      "111"
+    ],
+    [
+      "169",
+      "",
+      "",
+      "=",
+      "169",
+      "",
+      ""
+    ],
+    [
+      "4253",
+      "+",
+      "3313",
+      "=",
+      "2597",
+      "+",
+      "4969"
+    ],
+    [
+      "6410",
+      "",
+      "",
+      "=",
+      "6410",
+      "",
+      ""
+    ],
+    [
+      "Precipitation Reactions of CaCl₂",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    [
+      "CaCl₂",
+      "+",
+      "Na₂CO₃",
+      "=",
+      "CaCO₃",
+      "+",
+      "2NaCl"
+    ],
+    [
+      "111",
+      "+",
+      "106",
+      "=",
+      "100",
+      "+",
+      "117"
+    ],
+    [
+      "217",
+      "",
+      "",
+      "=",
+      "217",
+      "",
+      ""
+    ],
+    [
+      "4969",
+      "+",
+      "4745",
+      "=",
+      "4477",
+      "+",
+      "5237"
+    ],
+    [
+      "9714",
+      "",
+      "",
+      "=",
+      "9714",
+      "",
+      ""
+    ],
+    [
+      "Precipitation Reactions of CaSO₄ – Na₂SO₄",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    [
+      "CaSO₄",
+      "+",
+      "Na₂CO₃",
+      "=",
+      "CaCO₃",
+      "+",
+      "Na₂SO₄"
+    ],
+    [
+      "136",
+      "",
+      "106",
+      "=",
+      "100",
+      "+",
+      "142"
+    ],
+    [
+      "242",
+      "",
+      "",
+      "=",
+      "242",
+      "",
+      ""
+    ],
+    [
+      "2341+4313=6654",
+      "+",
+      "5186",
+      "=",
+      "4893",
+      "+",
+      "6947"
+    ],
+    [
+      "11840",
+      "",
+      "",
+      "=",
+      "11840",
+      "",
+      ""
+    ],
+    [
+      "Precipitation Reactions of Na₂SO₄ – No further precipitations needed",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    [
+      "Na₂SO₄",
+      "+",
+      "BaCl₂",
+      "=",
+      "BaSO₄",
+      "+",
+      "2NaCl"
+    ],
+    [
+      "142",
+      "",
+      "208",
+      "=",
+      "233",
+      "+",
+      "117"
+    ],
+    [
+      "350",
+      "",
+      "",
+      "=",
+      "350",
+      "",
+      ""
+    ],
+    [
+      "6947",
+      "+",
+      "10176",
+      "=",
+      "11399",
+      "+",
+      "5724"
+    ],
+    [
+      "17123",
+      "",
+      "",
+      "=",
+      "17123",
+      "",
+      ""
+    ],
+    [
+      "Chemicals added",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    [
+      "Ca(OH)₂ = 1274 + 3313 = 4587 (+) Na₂CO₃ = 4745 + 5186 = 9931 (+) BaCl₂ = 10176 = 24694 mg/l",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    [
+      "Precipitates",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    [
+      "CaCO₃ = 4477 + 4893 = 9370 (+) Mg(OH) ₂ = 999 + 2597= 3596 (+) BaSO₄ = 11399 (+) 92 SiO₂ = 24457 mg/l",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ]
+  ],
+  "cell_spans": [
+    {
+      "row": 0,
+      "column": 0,
+      "colspan": 7
+    },
+    {
+      "row": 3,
+      "column": 0,
+      "colspan": 3
+    },
+    {
+      "row": 3,
+      "column": 4,
+      "colspan": 3
+    },
+    {
+      "row": 5,
+      "column": 0,
+      "colspan": 3
+    },
+    {
+      "row": 5,
+      "column": 4,
+      "colspan": 3
+    },
+    {
+      "row": 6,
+      "column": 0,
+      "colspan": 7
+    },
+    {
+      "row": 9,
+      "column": 0,
+      "colspan": 3
+    },
+    {
+      "row": 9,
+      "column": 4,
+      "colspan": 3
+    },
+    {
+      "row": 11,
+      "column": 0,
+      "colspan": 3
+    },
+    {
+      "row": 11,
+      "column": 4,
+      "colspan": 3
+    },
+    {
+      "row": 12,
+      "column": 0,
+      "colspan": 7
+    },
+    {
+      "row": 15,
+      "column": 0,
+      "colspan": 3
+    },
+    {
+      "row": 15,
+      "column": 4,
+      "colspan": 3
+    },
+    {
+      "row": 17,
+      "column": 0,
+      "colspan": 3
+    },
+    {
+      "row": 17,
+      "column": 4,
+      "colspan": 3
+    },
+    {
+      "row": 18,
+      "column": 0,
+      "colspan": 7
+    },
+    {
+      "row": 21,
+      "column": 0,
+      "colspan": 3
+    },
+    {
+      "row": 21,
+      "column": 4,
+      "colspan": 3
+    },
+    {
+      "row": 23,
+      "column": 0,
+      "colspan": 3
+    },
+    {
+      "row": 23,
+      "column": 4,
+      "colspan": 3
+    },
+    {
+      "row": 24,
+      "column": 0,
+      "colspan": 7
+    },
+    {
+      "row": 27,
+      "column": 0,
+      "colspan": 3
+    },
+    {
+      "row": 27,
+      "column": 4,
+      "colspan": 3
+    },
+    {
+      "row": 29,
+      "column": 0,
+      "colspan": 3
+    },
+    {
+      "row": 29,
+      "column": 4,
+      "colspan": 3
+    },
+    {
+      "row": 30,
+      "column": 0,
+      "colspan": 7
+    },
+    {
+      "row": 31,
+      "column": 0,
+      "colspan": 7
+    },
+    {
+      "row": 32,
+      "column": 0,
+      "colspan": 7
+    },
+    {
+      "row": 33,
+      "column": 0,
+      "colspan": 7
+    }
+  ],
+  "markdown": "| Chemical | + | Chemical | = | Chemical | + | Chemical |\n| --- | --- | --- | --- | --- | --- | --- |\n| Precipitation Reactions of MgSO₄ – CaSO₄ |  |  |  |  |  |  |\n| MgSO₄ | + | Ca(OH)₂ | = | Mg(OH) ₂ | + | CaSO₄ |\n| 120 |  | 74 | = | 58 | + | 136 |\n| 194 |  |  | = | 194 |  |  |\n| 2066 | + | 1274 | = | 999 | + | 2341 |\n| 3340 |  |  | = | 3340 |  |  |\n| Precipitation Reactions of MgCl₂ – CaCl₂ |  |  |  |  |  |  |\n| MgCl₂ | + | Ca(OH)₂ | = | Mg(OH)₂ | + | CaCl₂ |\n| 95 |  | 74 | = | 58 | + | 111 |\n| 169 |  |  | = | 169 |  |  |\n| 4253 | + | 3313 | = | 2597 | + | 4969 |\n| 6410 |  |  | = | 6410 |  |  |\n| Precipitation Reactions of CaCl₂ |  |  |  |  |  |  |\n| CaCl₂ | + | Na₂CO₃ | = | CaCO₃ | + | 2NaCl |\n| 111 | + | 106 | = | 100 | + | 117 |\n| 217 |  |  | = | 217 |  |  |\n| 4969 | + | 4745 | = | 4477 | + | 5237 |\n| 9714 |  |  | = | 9714 |  |  |\n| Precipitation Reactions of CaSO₄ – Na₂SO₄ |  |  |  |  |  |  |\n| CaSO₄ | + | Na₂CO₃ | = | CaCO₃ | + | Na₂SO₄ |\n| 136 |  | 106 | = | 100 | + | 142 |\n| 242 |  |  | = | 242 |  |  |\n| 2341+4313=6654 | + | 5186 | = | 4893 | + | 6947 |\n| 11840 |  |  | = | 11840 |  |  |\n| Precipitation Reactions of Na₂SO₄ – No further precipitations needed |  |  |  |  |  |  |\n| Na₂SO₄ | + | BaCl₂ | = | BaSO₄ | + | 2NaCl |\n| 142 |  | 208 | = | 233 | + | 117 |\n| 350 |  |  | = | 350 |  |  |\n| 6947 | + | 10176 | = | 11399 | + | 5724 |\n| 17123 |  |  | = | 17123 |  |  |\n| Chemicals added |  |  |  |  |  |  |\n| Ca(OH)₂ = 1274 + 3313 = 4587 (+) Na₂CO₃ = 4745 + 5186 = 9931 (+) BaCl₂ = 10176 = 24694 mg/l |  |  |  |  |  |  |\n| Precipitates |  |  |  |  |  |  |\n| CaCO₃ = 4477 + 4893 = 9370 (+) Mg(OH) ₂ = 999 + 2597= 3596 (+) BaSO₄ = 11399 (+) 92 SiO₂ = 24457 mg/l |  |  |  |  |  |  |",
+  "notes": [
+    "The printed table has no column-header row. The header cells Chemical / + / Chemical / = / Chemical / + / Chemical are transcriber-supplied structural labels for the seven printed columns.",
+    "Each of the five precipitation blocks starts with a full-width heading row that spans all seven columns; cell_spans records these merges.",
+    "Each block prints a molecular-weight row, a summed-weight row (merged across the three left and the three right columns), an actual-quantity row and a summed-row; the printed placement is preserved.",
+    "Printed as \"Mg(OH) 2\" with a space before the subscript 2 in the MgSO₄ – CaSO₄ block and in the Precipitates row, but as \"Mg(OH)₂\" in the MgCl₂ – CaCl₂ block; preserved as printed.",
+    "The CaSO₄ – Na₂SO₄ block prints the first cell as \"2341+4313=6654\" with no spaces; preserved.",
+    "The Precipitates row prints \"2597=\" without a space and breaks the line after the bare number 92, with \"SiO₂ = 24457 mg/l\" on the next printed line; both are preserved verbatim and the arithmetic 9370 + 3596 + 11399 + 92 = 24457 is not corrected.",
+    "The block heading \"Precipitation Reactions of Na₂SO₄ – No further precipitations needed\" is printed as such.",
+    "No source line is printed with this table on the page."
+  ],
+  "verification": {
+    "transcription": {
+      "pass_id": "sew-t04-first-reading-20261109",
+      "method": "direct visual reading of 144 dpi annotation-cleaned full-page renders plus 288-900 dpi crops of the source regions; no OCR",
+      "observations": "First reading only. Every value, exponent, subscript, printed spelling and printed error was read from the rendered page image. No distinct second inspection performed; record is a draft pending review."
+    }
+  }
+}

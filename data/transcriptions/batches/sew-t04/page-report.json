@@ -1,0 +1,352 @@
+[
+  {
+    "pdf_page": 367,
+    "page_label": "5 - 63",
+    "targets": [
+      "SEW-2013-A:E5.26",
+      "SEW-2013-A:E5.27"
+    ],
+    "no_targets_reason": null,
+    "continuations": [],
+    "unclear": [
+      "Equation 5.26 is printed as kd = 0.06/d in the prose but as k = 0.06d-1 in the Figure 5.37 caption; preserved as printed."
+    ],
+    "image_viewed": "tmp/pdfs/sew-t04/page-367.png"
+  },
+  {
+    "pdf_page": 368,
+    "page_label": "5 - 64",
+    "targets": [
+      "SEW-2013-A:T5.9"
+    ],
+    "no_targets_reason": null,
+    "continuations": [],
+    "unclear": [
+      "The printed group heading \"Flow Regime\" has no cell of its own in the record; it is recorded as a note on T5.9."
+    ],
+    "image_viewed": "tmp/pdfs/sew-t04/page-368.png"
+  },
+  {
+    "pdf_page": 370,
+    "page_label": "5 - 66",
+    "targets": [
+      "SEW-2013-A:E5.28"
+    ],
+    "no_targets_reason": null,
+    "continuations": [],
+    "unclear": [],
+    "image_viewed": "tmp/pdfs/sew-t04/page-370.png"
+  },
+  {
+    "pdf_page": 371,
+    "page_label": "5 - 67",
+    "targets": [],
+    "no_targets_reason": "Full page carries prose only (sections 5.8.1.7.3 Plug Flow, 5.8.1.7.4 Extended Aeration and 5.8.1.7.5 Design Consideration). No table, equation or numbered formula is printed.",
+    "continuations": [],
+    "unclear": [],
+    "image_viewed": "tmp/pdfs/sew-t04/page-371.png"
+  },
+  {
+    "pdf_page": 372,
+    "page_label": "5 - 68",
+    "targets": [
+      "SEW-2013-A:E5.29",
+      "SEW-2013-A:Ep372-1"
+    ],
+    "no_targets_reason": null,
+    "continuations": [],
+    "unclear": [
+      "The Equation (5.29) line is typeset in a sans-serif text face, not as math; the Delta X subscript and the 1.42 coefficient were read at 288 dpi."
+    ],
+    "image_viewed": "tmp/pdfs/sew-t04/page-372.png"
+  },
+  {
+    "pdf_page": 376,
+    "page_label": "5 - 72",
+    "targets": [
+      "SEW-2013-A:E5.31"
+    ],
+    "no_targets_reason": null,
+    "continuations": [],
+    "unclear": [
+      "Numbering jumps from (5.29) on page 372 to (5.31) here; Equation (5.30) is not printed on any assigned page.",
+      "The printed \"where,\" list for (5.31) stops after the QR definition; Q, X and Xs have no printed definitions on this page."
+    ],
+    "image_viewed": "tmp/pdfs/sew-t04/page-376.png"
+  },
+  {
+    "pdf_page": 377,
+    "page_label": "5 - 73",
+    "targets": [
+      "SEW-2013-A:Ep377-1"
+    ],
+    "no_targets_reason": null,
+    "continuations": [],
+    "unclear": [
+      "The inline Xs = 10^6/SVI relation sits inside a running prose line; its 900 dpi crop is the evidence region."
+    ],
+    "image_viewed": "tmp/pdfs/sew-t04/page-377.png"
+  },
+  {
+    "pdf_page": 378,
+    "page_label": "5 - 74",
+    "targets": [
+      "SEW-2013-A:Ep378-1"
+    ],
+    "no_targets_reason": null,
+    "continuations": [],
+    "unclear": [
+      "The unnumbered excess-sludge design block is printed as formulas interleaved with prose lines; the record keeps all formula rows and lists the interleaved prose in its notes."
+    ],
+    "image_viewed": "tmp/pdfs/sew-t04/page-378.png"
+  },
+  {
+    "pdf_page": 379,
+    "page_label": "5 - 75",
+    "targets": [],
+    "no_targets_reason": "Page carries Figure 5.39 and Figure 5.40 only. Both are boxed process diagrams; no table or equation is printed. The labelled boxes inside Figure 5.39 are diagram labels, not a table.",
+    "continuations": [],
+    "unclear": [],
+    "image_viewed": "tmp/pdfs/sew-t04/page-379.png"
+  },
+  {
+    "pdf_page": 380,
+    "page_label": "5 - 76",
+    "targets": [
+      "SEW-2013-A:T5.12"
+    ],
+    "no_targets_reason": null,
+    "continuations": [],
+    "unclear": [
+      "Row 4 of Table 5.12 is printed as \"BOO removal efficiency %\"; flagged, not corrected."
+    ],
+    "image_viewed": "tmp/pdfs/sew-t04/page-380.png"
+  },
+  {
+    "pdf_page": 381,
+    "page_label": "5 - 77",
+    "targets": [
+      "SEW-2013-A:E5.32"
+    ],
+    "no_targets_reason": null,
+    "continuations": [],
+    "unclear": [
+      "The exponents of Equation (5.32) are printed as 1/2d, a/2d and −a/2d, which were read at 432 dpi."
+    ],
+    "image_viewed": "tmp/pdfs/sew-t04/page-381.png"
+  },
+  {
+    "pdf_page": 382,
+    "page_label": "5 - 78",
+    "targets": [],
+    "no_targets_reason": "Page carries Figure 5.41 only (dispersed-flow substrate removal chart with its axis scales). No table or equation is printed.",
+    "continuations": [],
+    "unclear": [],
+    "image_viewed": "tmp/pdfs/sew-t04/page-382.png"
+  },
+  {
+    "pdf_page": 383,
+    "page_label": "5 - 79",
+    "targets": [
+      "SEW-2013-A:T5.13"
+    ],
+    "no_targets_reason": null,
+    "continuations": [],
+    "unclear": [
+      "Table 5.13 is printed above Figure 5.42 on the same page; only the table is a target."
+    ],
+    "image_viewed": "tmp/pdfs/sew-t04/page-383.png"
+  },
+  {
+    "pdf_page": 384,
+    "page_label": "5 - 80",
+    "targets": [
+      "SEW-2013-A:E5.33",
+      "SEW-2013-A:E5.34"
+    ],
+    "no_targets_reason": null,
+    "continuations": [],
+    "unclear": [
+      "Equation (5.34) prints a lower-case theta while its printed definition list prints a capital Theta; preserved as printed."
+    ],
+    "image_viewed": "tmp/pdfs/sew-t04/page-384.png"
+  },
+  {
+    "pdf_page": 385,
+    "page_label": "5 - 81",
+    "targets": [
+      "SEW-2013-A:E5.35"
+    ],
+    "no_targets_reason": null,
+    "continuations": [],
+    "unclear": [
+      "Equation (5.35) is printed as a line of prose with units inside it rather than as typeset math."
+    ],
+    "image_viewed": "tmp/pdfs/sew-t04/page-385.png"
+  },
+  {
+    "pdf_page": 388,
+    "page_label": "5 - 84",
+    "targets": [],
+    "no_targets_reason": "Full page carries prose only (under drains, main collecting channel, ventilation, reactor media, synthetic media). No table, equation or numbered formula is printed.",
+    "continuations": [],
+    "unclear": [],
+    "image_viewed": "tmp/pdfs/sew-t04/page-388.png"
+  },
+  {
+    "pdf_page": 396,
+    "page_label": "5 - 92",
+    "targets": [],
+    "no_targets_reason": "Full page carries prose only (pond odour control, algae, areal organic loading). No table, equation or numbered formula is printed.",
+    "continuations": [],
+    "unclear": [],
+    "image_viewed": "tmp/pdfs/sew-t04/page-396.png"
+  },
+  {
+    "pdf_page": 397,
+    "page_label": "5 - 93",
+    "targets": [
+      "SEW-2013-A:T5.14",
+      "SEW-2013-A:E5.36"
+    ],
+    "no_targets_reason": null,
+    "continuations": [],
+    "unclear": [
+      "E5.36 is the \"another design approach\" relation printed below Table 5.14; its Lo symbol is printed with a lower-case o."
+    ],
+    "image_viewed": "tmp/pdfs/sew-t04/page-397.png"
+  },
+  {
+    "pdf_page": 398,
+    "page_label": "5 - 94",
+    "targets": [
+      "SEW-2013-A:E5.37",
+      "SEW-2013-A:E5.38"
+    ],
+    "no_targets_reason": null,
+    "continuations": [],
+    "unclear": [
+      "Both equation subscripts are printed as an italic lower-case l (Kl), not the digit 1."
+    ],
+    "image_viewed": "tmp/pdfs/sew-t04/page-398.png"
+  },
+  {
+    "pdf_page": 399,
+    "page_label": "5 - 95",
+    "targets": [
+      "SEW-2013-A:E5.39",
+      "SEW-2013-A:E5.40"
+    ],
+    "no_targets_reason": null,
+    "continuations": [],
+    "unclear": [
+      "Figure 5.43 on this page contains a small labelled grid (Anopheles / Aedes / Culex with air-tube notes) drawn inside the figure image; it is part of the figure, not a printed table, so no table record was created."
+    ],
+    "image_viewed": "tmp/pdfs/sew-t04/page-399.png"
+  },
+  {
+    "pdf_page": 403,
+    "page_label": "5 - 99",
+    "targets": [],
+    "no_targets_reason": "Page carries a photograph (Figure 5.44, rock filter at Veneta, Oregon) and prose only. No table or equation is printed.",
+    "continuations": [],
+    "unclear": [],
+    "image_viewed": "tmp/pdfs/sew-t04/page-403.png"
+  },
+  {
+    "pdf_page": 404,
+    "page_label": "5 - 100",
+    "targets": [],
+    "no_targets_reason": "Full page carries prose only (facultative pond applications, anaerobic treatment introduction, high rate anaerobic systems). No table, equation or numbered formula is printed.",
+    "continuations": [],
+    "unclear": [],
+    "image_viewed": "tmp/pdfs/sew-t04/page-404.png"
+  },
+  {
+    "pdf_page": 405,
+    "page_label": "5 - 101",
+    "targets": [],
+    "no_targets_reason": "Page carries Figure 5.45 only (five labelled configurations of high rate anaerobic systems). No table or equation is printed.",
+    "continuations": [],
+    "unclear": [],
+    "image_viewed": "tmp/pdfs/sew-t04/page-405.png"
+  },
+  {
+    "pdf_page": 407,
+    "page_label": "5 - 103",
+    "targets": [
+      "SEW-2013-A:T5.15"
+    ],
+    "no_targets_reason": null,
+    "continuations": [],
+    "unclear": [],
+    "image_viewed": "tmp/pdfs/sew-t04/page-407.png"
+  },
+  {
+    "pdf_page": 409,
+    "page_label": "5 - 105",
+    "targets": [],
+    "no_targets_reason": "Full page carries prose only (choice of process, supplemental treatment processes, chemical precipitation introduction). No table, equation or numbered formula is printed; the prose points to Table 5.16 overleaf.",
+    "continuations": [],
+    "unclear": [],
+    "image_viewed": "tmp/pdfs/sew-t04/page-409.png"
+  },
+  {
+    "pdf_page": 410,
+    "page_label": "5 - 106",
+    "targets": [
+      "SEW-2013-A:T5.16"
+    ],
+    "no_targets_reason": null,
+    "continuations": [],
+    "unclear": [
+      "The Precipitates row is printed as \"... BaSO4 = 11399 (+) 92\" and breaks the line after the bare 92, with \"SiO2 = 24457 mg/l\" on the next printed line; the placement of the 92 is ambiguous as printed and was not interpreted.",
+      "The printed table has no column-header row; the seven columns carry the transcriber-supplied structural labels Chemical / + / Chemical / = / Chemical / + / Chemical.",
+      "Mg(OH)2 is printed with a space before the subscript 2 in the first block and in the Precipitates row only.",
+      "The mass-balance sentence below the table (24694 Vs 24457 ...) is page prose, not part of the table, and is not in the region."
+    ],
+    "image_viewed": "tmp/pdfs/sew-t04/page-410.png"
+  },
+  {
+    "pdf_page": 411,
+    "page_label": "5 - 107",
+    "targets": [],
+    "no_targets_reason": "Page carries Figure 5.46 and Figure 5.47 only (calcium/magnesium solubility charts and a carbonate equilibrium diagram). No table or equation is printed.",
+    "continuations": [],
+    "unclear": [],
+    "image_viewed": "tmp/pdfs/sew-t04/page-411.png"
+  },
+  {
+    "pdf_page": 412,
+    "page_label": "5 - 108",
+    "targets": [
+      "SEW-2013-A:E5.41",
+      "SEW-2013-A:E5.42"
+    ],
+    "no_targets_reason": null,
+    "continuations": [],
+    "unclear": [
+      "Equation (5.41) prints the H3PO4 coefficient 2 as a subscript immediately after the plus sign (\"+ 2H3PO4\" set as + ₂H₃PO₄); preserved as printed.",
+      "The product formula was checked at 700 dpi and reads AlPO4 (the second glyph is a lower-case l, identical to the l in the prose word Aluminium), not AIPO4."
+    ],
+    "image_viewed": "tmp/pdfs/sew-t04/page-412.png"
+  },
+  {
+    "pdf_page": 413,
+    "page_label": "5 - 109",
+    "targets": [],
+    "no_targets_reason": "Page carries Figure 5.49 only (three process-flow diagrams showing optional coagulant addition points). No table or equation is printed.",
+    "continuations": [],
+    "unclear": [],
+    "image_viewed": "tmp/pdfs/sew-t04/page-413.png"
+  },
+  {
+    "pdf_page": 414,
+    "page_label": "5 - 110",
+    "targets": [],
+    "no_targets_reason": "Full page carries prose only (high lime and carbonation technology, membrane technologies, disinfection facilities introduction). No table, equation or numbered formula is printed.",
+    "continuations": [],
+    "unclear": [],
+    "image_viewed": "tmp/pdfs/sew-t04/page-414.png"
+  }
+]

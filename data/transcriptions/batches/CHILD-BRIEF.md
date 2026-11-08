@@ -23,3 +23,4 @@ Rules
 - Native PDF text may help locate, but every value must be confirmed against the image.
 - create_unit/parent_id: if the table id already exists in data/build/cpheeo.sqlite `units` (baseline indexed table), DO NOT set create_unit or parent_id. Only new/unindexed tables get "create_unit": true plus parent_id = enclosing section unit id.
 - Never silently fix spelling: e.g. a printed "CAPICITY" stays "CAPICITY" with a note.
+- Equations always need parent_id = the enclosing section unit id (e.g. SEW-2013-A:5.8.1.7.5.2) from `units`.

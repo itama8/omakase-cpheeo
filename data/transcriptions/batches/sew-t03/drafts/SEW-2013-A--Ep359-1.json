@@ -1,0 +1,76 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:Ep359-1",
+  "unit_id": "SEW-2013-A:Ep359-1",
+  "manual_id": "SEW-2013-A",
+  "kind": "equation",
+  "number": "p359-1",
+  "title": "Primary clarifier sludge withdrawal worked calculation (10 MLD, 400 mg/l SS, 60 % removal)",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "state": "pending",
+  "regions": [
+    {
+      "pdf_page": 359,
+      "page_label": "5 - 55",
+      "bbox": [
+        57,
+        135,
+        476,
+        348
+      ],
+      "render_sha256": "6b8a354dc161c12f508bbc34dd044ac4fad2820c6c74fb17834cf74c1676ce22"
+    }
+  ],
+  "parent_id": "SEW-2013-A:5.7.4.2.6.1",
+  "latex": "10\\times400\\times0.6=2400\\ \\text{kg/day};\\quad 2400\\times\\left(100/2\\right)/1000=120\\ \\text{m}^3\\text{/day};\\quad 120/24=5\\ \\text{m}^3\\text{/hr};\\quad \\left(0.2\\right)\\times\\left(0.2\\right)\\times0.785=0.03\\ \\text{m}^2;\\quad 5/3600/0.03=0.04\\ \\text{m/s};\\quad 120/\\left(24\\times5/60\\right)=60\\ \\text{m}^3\\text{/hr};\\quad 60/3600/0.03=0.55\\ \\text{m/s}",
+  "readable": "SS removed per day = 10×400×0.6 = 2400 kg/day; solids concentration 2 %; volume to be drawn = 2400×(100/2)/1000 = 120 m3/day; continuous withdrawal = 120/24 = 5 m3/hr; pipe area for 200 mm dia = (0.2)×(0.2)×0.785 = 0.03 m2; velocity = 5 / 3600 / 0.03 = 0.04 m/s; withdrawal for 5 minutes every hour = 120 / (24×5/60) = 60 m3/hr; velocity = 60 / 3600 / 0.03 = 0.55 m/s",
+  "symbols": [
+    {
+      "symbol": "10",
+      "definition": "STP capacity, MLD"
+    },
+    {
+      "symbol": "400",
+      "definition": "influent suspended solids, mg/l"
+    },
+    {
+      "symbol": "0.6",
+      "definition": "fractional removal, for the printed 60 %"
+    },
+    {
+      "symbol": "100/2",
+      "definition": "inverse of the printed 2 % solids concentration"
+    },
+    {
+      "symbol": "0.2",
+      "definition": "pipe diameter, m, for the printed 200 mm dia"
+    },
+    {
+      "symbol": "0.785",
+      "definition": "pi/4 printed as 0.785"
+    },
+    {
+      "symbol": "3600",
+      "definition": "seconds per hour"
+    }
+  ],
+  "applicability": "Worked example of sludge withdrawal from a primary clarifier for a 10 MLD plant with 400 mg/l of SS and 60 % removal.",
+  "notes": [
+    "Printed inline as a sequence of prose calculations, not as displayed or numbered equations; p359-1 is a service locator.",
+    "Two printed prose sentences interrupt the calculation: Clearly this cannot be permitted. and Obviously this is much better than withdrawal through a sludge sump.",
+    "The pipe area is printed as (0.2)×(0.2)×0.785 = 0.03 m2 twice, once for each withdrawal case."
+  ],
+  "verification": {
+    "transcription": {
+      "pass_id": "sew-t03-first-reading-2026-11-08",
+      "method": "Direct visual reading of full annotation-cleaned 144 dpi page PNGs, plus enlarged crops at 288-720 dpi and a contact sheet of every hashed source region; no OCR, no paid service, no delegation",
+      "observations": "First visual transcription only. Every printed glyph, power, subscript, inequality, unit, hyphen spacing, footnote and printed error was read from the rendered source and retained or flagged; no value inferred."
+    }
+  },
+  "source_image_refs": [
+    {
+      "path": "tmp/pdfs/sew-t03/SEW-2013-A--Ep359-1.png",
+      "role": "first-reading source crop"
+    }
+  ]
+}

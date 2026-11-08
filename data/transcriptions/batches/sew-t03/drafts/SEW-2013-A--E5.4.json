@@ -1,0 +1,76 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:E5.4",
+  "unit_id": "SEW-2013-A:E5.4",
+  "manual_id": "SEW-2013-A",
+  "kind": "equation",
+  "number": "5.4",
+  "title": "Stoke's Law settling velocity of a discrete grit particle",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "state": "pending",
+  "regions": [
+    {
+      "pdf_page": 343,
+      "page_label": "5 - 39",
+      "bbox": [
+        88,
+        660,
+        515,
+        705
+      ],
+      "render_sha256": "fa76020075f99ab0706821094e6aee614172d2c62d760629f2d4b84672f9a380"
+    }
+  ],
+  "parent_id": "SEW-2013-A:5.6.2.7.1.1",
+  "latex": "V_s=\\frac{g}{18}\\frac{\\left(\\rho_s-\\rho\\right)}{\\rho}\\frac{d^{2}}{\\nu}",
+  "readable": "Vs = (g / 18) ((rho_s - rho) / rho) (d^2 / nu)",
+  "symbols": [
+    {
+      "symbol": "Vs",
+      "definition": "Settling velocity, m/s"
+    },
+    {
+      "symbol": "g",
+      "definition": "Acceleration due to gravity, m/s2"
+    },
+    {
+      "symbol": "rho",
+      "definition": "Mass density of grit particle, kg/m3"
+    },
+    {
+      "symbol": "rho",
+      "definition": "Mass density of liquid, kg/m3"
+    },
+    {
+      "symbol": "d",
+      "definition": "Size of the particle, m"
+    },
+    {
+      "symbol": "nu",
+      "definition": "Kinematic viscosity of sewage, m2/s"
+    },
+    {
+      "symbol": "Ss",
+      "definition": "Specific gravity of grit particle, dimensionless"
+    }
+  ],
+  "applicability": "Stoke's Law settling velocity of discrete grit particles; holds good for Reynolds number R below 1.0.",
+  "notes": [
+    "Printed as \"rho : Mass density of grit particle\" and \"rho : Mass density of liquid\" with the same glyph twice, while the formula prints the grit density with subscript s. Printed as shown; not corrected.",
+    "An unnumbered alternative form of the same expression follows the word \"or\" below equation (5.4); transcribed separately as Ep343-1.",
+    "Specific gravity 2.65 and liquid temperature 10 degree are stated on the following page for this equation."
+  ],
+  "verification": {
+    "transcription": {
+      "pass_id": "sew-t03-first-reading-2026-11-08",
+      "method": "Direct visual reading of full annotation-cleaned 144 dpi page PNGs, plus enlarged crops at 288-720 dpi and a contact sheet of every hashed source region; no OCR, no paid service, no delegation",
+      "observations": "First visual transcription only. Every printed glyph, power, subscript, inequality, unit, hyphen spacing, footnote and printed error was read from the rendered source and retained or flagged; no value inferred."
+    }
+  },
+  "source_image_refs": [
+    {
+      "path": "tmp/pdfs/sew-t03/SEW-2013-A--E5.4.png",
+      "role": "first-reading source crop"
+    }
+  ]
+}

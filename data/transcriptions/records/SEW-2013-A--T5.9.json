@@ -1,0 +1,109 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:T5.9",
+  "unit_id": "SEW-2013-A:T5.9",
+  "manual_id": "SEW-2013-A",
+  "kind": "table",
+  "number": "5.9",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "state": "verified",
+  "regions": [
+    {
+      "pdf_page": 368,
+      "page_label": "5 - 64",
+      "bbox": [
+        70.0,
+        393.0,
+        521.0,
+        644.0
+      ],
+      "render_sha256": "d8fac79cbbc8ef71bf164d2d693376d8e3397ba694b145b823fd7169408cd092"
+    }
+  ],
+  "title": "Characteristics and Design Parameters of Activated Sludge Systems for Sewage",
+  "headers": [
+    "Process Type",
+    "unit",
+    "Conventional",
+    "Complete mix",
+    "Extended aeration"
+  ],
+  "rows": [
+    [
+      "MLSS",
+      "mg/L",
+      "1500 to 3000",
+      "3000 to 4000",
+      "3000 to 5000"
+    ],
+    [
+      "MLSS/MLVSS",
+      "ratio",
+      "0.8",
+      "0.8",
+      "0.6"
+    ],
+    [
+      "F/M",
+      "day⁻¹",
+      "0.3 to 0.4",
+      "0.3 to 0.6",
+      "0.1 to 0.18"
+    ],
+    [
+      "HRT",
+      "Hours",
+      "4 to 6",
+      "4 to 6",
+      "12 to 24"
+    ],
+    [
+      "θc",
+      "days",
+      "5 to 8",
+      "5 to 8",
+      "10 to 26"
+    ],
+    [
+      "Q_R/Q",
+      "ratio",
+      "0.25 to 0.5",
+      "0.25 to 0.8",
+      "0.25 to 1.0"
+    ],
+    [
+      "BOD removal",
+      "%",
+      "85 to 92",
+      "85 to 92",
+      "95 to 98"
+    ],
+    [
+      "kg O₂/kg BOD removed",
+      "ratio",
+      "0.8 to 1.0",
+      "0.8 to 1.0",
+      "1.0 to 1.2"
+    ]
+  ],
+  "cell_spans": [],
+  "markdown": "| Process Type | unit | Conventional | Complete mix | Extended aeration |\n| --- | --- | --- | --- | --- |\n| MLSS | mg/L | 1500 to 3000 | 3000 to 4000 | 3000 to 5000 |\n| MLSS/MLVSS | ratio | 0.8 | 0.8 | 0.6 |\n| F/M | day⁻¹ | 0.3 to 0.4 | 0.3 to 0.6 | 0.1 to 0.18 |\n| HRT | Hours | 4 to 6 | 4 to 6 | 12 to 24 |\n| θc | days | 5 to 8 | 5 to 8 | 10 to 26 |\n| Q_R/Q | ratio | 0.25 to 0.5 | 0.25 to 0.8 | 0.25 to 1.0 |\n| BOD removal | % | 85 to 92 | 85 to 92 | 95 to 98 |\n| kg O₂/kg BOD removed | ratio | 0.8 to 1.0 | 0.8 to 1.0 | 1.0 to 1.2 |",
+  "notes": [
+    "Source: CPHEEO, 1993",
+    "Printed group heading \"Flow Regime\" spans the Conventional, Complete mix and Extended aeration columns above them; it is recorded here as a note because the header grid keeps the three flow regimes as columns.",
+    "Printed θc without a subscript and QR/Q with a subscript R; reproduced as printed."
+  ],
+  "verification": {
+    "transcription": {
+      "pass_id": "sew-t04-first-reading-20261109",
+      "method": "direct visual reading of 144 dpi annotation-cleaned full-page renders plus 288-900 dpi crops of the source regions; no OCR",
+      "observations": "First reading only. Every value, exponent, subscript, printed spelling and printed error was read from the rendered page image. No distinct second inspection performed; record is a draft pending review."
+    },
+    "visual_recheck": {
+      "pass_id": "parent-recheck-sew-t04",
+      "method": "distinct second visual inspection of exact source-region renders (incl. rotated/zoomed crops) by parent assistant; not independent human review",
+      "observations": "Parent compared every cell/term against 144-dpi region renders; confirmed values, powers, subscripts and printed anomalies.",
+      "content_sha256": "a8865edc99d8da5867307115deecd604a122c03765f20af134bdefc00422c48c"
+    }
+  }
+}

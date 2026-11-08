@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:Ep343-1",
+  "unit_id": "SEW-2013-A:Ep343-1",
+  "manual_id": "SEW-2013-A",
+  "kind": "equation",
+  "number": "p343-1",
+  "title": "Alternative form of Stoke's Law settling velocity in terms of specific gravity",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "state": "pending",
+  "regions": [
+    {
+      "pdf_page": 343,
+      "page_label": "5 - 39",
+      "bbox": [
+        107,
+        722,
+        312,
+        772
+      ],
+      "render_sha256": "c7fc89993eb339ce415fc67b64529dae1bcda47e222aa4d3d94beac5b3440a02"
+    }
+  ],
+  "parent_id": "SEW-2013-A:5.6.2.7.1.1",
+  "latex": "=\\frac{g}{18}\\left(S_s-1\\right)\\frac{d^{2}}{\\nu}",
+  "readable": "= (g / 18) (Ss - 1) (d^2 / nu)",
+  "symbols": [],
+  "applicability": "Stoke's Law settling velocity written with the specific gravity of the grit particle, printed as the unnumbered alternative after 'or'.",
+  "notes": [
+    "Unnumbered: p343-1 is a service locator, not a printed equation number.",
+    "Printed with no left-hand side, following the word \"or\" beneath equation (5.4).",
+    "Definitions of g, Ss, d and nu are printed in the symbol list on physical page 344."
+  ],
+  "verification": {
+    "transcription": {
+      "pass_id": "sew-t03-first-reading-2026-11-08",
+      "method": "Direct visual reading of full annotation-cleaned 144 dpi page PNGs, plus enlarged crops at 288-720 dpi and a contact sheet of every hashed source region; no OCR, no paid service, no delegation",
+      "observations": "First visual transcription only. Every printed glyph, power, subscript, inequality, unit, hyphen spacing, footnote and printed error was read from the rendered source and retained or flagged; no value inferred."
+    }
+  },
+  "source_image_refs": [
+    {
+      "path": "tmp/pdfs/sew-t03/SEW-2013-A--Ep343-1.png",
+      "role": "first-reading source crop"
+    }
+  ]
+}

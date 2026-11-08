@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:E5.37",
+  "unit_id": "SEW-2013-A:E5.37",
+  "manual_id": "SEW-2013-A",
+  "kind": "equation",
+  "number": "5.37",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "state": "pending",
+  "regions": [
+    {
+      "pdf_page": 398,
+      "page_label": "5 - 94",
+      "bbox": [
+        64.0,
+        94.0,
+        521.0,
+        135.0
+      ],
+      "render_sha256": "a5582ec0d5176e14b7f5fcdc2d7c5d457609fdb52b4469fbdbd6d8da2357389a"
+    }
+  ],
+  "title": "Pond BOD removal for plug flow",
+  "latex": "\\frac{L_e}{L_i} = e^{-K_l t}",
+  "readable": "Le/Li = e^(−Kl t)",
+  "symbols": [
+    {
+      "symbol": "Li and Le",
+      "definition": "influent and effluent BOD respectively,"
+    },
+    {
+      "symbol": "t",
+      "definition": "detention time,"
+    },
+    {
+      "symbol": "Kl",
+      "definition": "BOD reaction rate constant."
+    }
+  ],
+  "applicability": "Pond efficiency for plug flow when BOD exertion is described by a first order reaction; the value of Kl varies between 0.05 and 0.2 per day and is independent of temperatures above 15ºC.",
+  "notes": [
+    "The subscript of K is printed as an italic lower-case l (Kl), not the digit 1."
+  ],
+  "verification": {
+    "transcription": {
+      "pass_id": "sew-t04-first-reading-20261109",
+      "method": "direct visual reading of 144 dpi annotation-cleaned full-page renders plus 288-900 dpi crops of the source regions; no OCR",
+      "observations": "First reading only. Every value, exponent, subscript, printed spelling and printed error was read from the rendered page image. No distinct second inspection performed; record is a draft pending review."
+    }
+  }
+}

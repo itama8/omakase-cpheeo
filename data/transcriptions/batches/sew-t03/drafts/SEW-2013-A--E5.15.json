@@ -1,0 +1,83 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:E5.15",
+  "unit_id": "SEW-2013-A:E5.15",
+  "manual_id": "SEW-2013-A",
+  "kind": "equation",
+  "number": "5.15",
+  "title": "Flow through a Parshall flume",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "state": "pending",
+  "regions": [
+    {
+      "pdf_page": 351,
+      "page_label": "5 - 47",
+      "bbox": [
+        84,
+        159,
+        530,
+        188
+      ],
+      "render_sha256": "0e1a1ad8d5b2b98fb43fb747060f8739e6026830a2a6ffaa3ee34fc36d9a2026"
+    }
+  ],
+  "parent_id": "SEW-2013-A:5.6.2.8.1",
+  "latex": "Q=2264W\\left(H_A\\right)^{\\frac{3}{2}}",
+  "readable": "Q = 2264 W (HA)^(3/2)",
+  "symbols": [
+    {
+      "symbol": "Q",
+      "definition": "Rate of flow in lps"
+    },
+    {
+      "symbol": "Qmin",
+      "definition": "Minimum rate of flow in lps"
+    },
+    {
+      "symbol": "Qmax",
+      "definition": "Maximum rate of flow in lps"
+    },
+    {
+      "symbol": "W",
+      "definition": "Throat width in m"
+    },
+    {
+      "symbol": "HA",
+      "definition": "Depth of flow in upstream leg of the flume at one third point in m"
+    },
+    {
+      "symbol": "Z",
+      "definition": "Constant in m"
+    },
+    {
+      "symbol": "D",
+      "definition": "Depth of flow in grit chamber in m"
+    },
+    {
+      "symbol": "b",
+      "definition": "Width of grit chamber in m"
+    },
+    {
+      "symbol": "V",
+      "definition": "Velocity of flow in m/s at particular depth of flow"
+    }
+  ],
+  "applicability": "Parshall flume used as a control section with a rectangular section having a trapezoidal bottom; the variations in velocity at maximum and minimum flow conditions from the designed velocity of flow should be within permissible limits.",
+  "notes": [
+    "Printed coefficient 2264 and exponent 3/2 retained.",
+    "The printed symbol list gives HA with a capital A while the formula prints H with subscript A."
+  ],
+  "verification": {
+    "transcription": {
+      "pass_id": "sew-t03-first-reading-2026-11-08",
+      "method": "Direct visual reading of full annotation-cleaned 144 dpi page PNGs, plus enlarged crops at 288-720 dpi and a contact sheet of every hashed source region; no OCR, no paid service, no delegation",
+      "observations": "First visual transcription only. Every printed glyph, power, subscript, inequality, unit, hyphen spacing, footnote and printed error was read from the rendered source and retained or flagged; no value inferred."
+    }
+  },
+  "source_image_refs": [
+    {
+      "path": "tmp/pdfs/sew-t03/SEW-2013-A--E5.15.png",
+      "role": "first-reading source crop"
+    }
+  ]
+}

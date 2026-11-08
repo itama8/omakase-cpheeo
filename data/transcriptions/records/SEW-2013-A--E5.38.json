@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:E5.38",
+  "unit_id": "SEW-2013-A:E5.38",
+  "manual_id": "SEW-2013-A",
+  "kind": "equation",
+  "number": "5.38",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "state": "verified",
+  "regions": [
+    {
+      "pdf_page": 398,
+      "page_label": "5 - 94",
+      "bbox": [
+        64.0,
+        160.0,
+        521.0,
+        206.0
+      ],
+      "render_sha256": "74ab815bc93da6d3b8a2242c47d8ed65020b6239fc6ac331bac2faa9e78110c3"
+    }
+  ],
+  "title": "Pond BOD removal for complete mixing",
+  "latex": "\\frac{L_e}{L_i} = \\frac{1}{1 + K_l t}",
+  "readable": "Le/Li = 1/(1 + Kl t)",
+  "symbols": [
+    {
+      "symbol": "Li and Le",
+      "definition": "influent and effluent BOD respectively,"
+    },
+    {
+      "symbol": "t",
+      "definition": "detention time,"
+    },
+    {
+      "symbol": "Kl",
+      "definition": "BOD reaction rate constant."
+    }
+  ],
+  "applicability": "Pond efficiency for complete mixing when BOD exertion is described by a first order reaction; in practice the hydraulics lies between the plug flow and complete mixing regimes and is described as dispersed flow.",
+  "notes": [
+    "The subscript of K is printed as an italic lower-case l (Kl), not the digit 1."
+  ],
+  "verification": {
+    "transcription": {
+      "pass_id": "sew-t04-first-reading-20261109",
+      "method": "direct visual reading of 144 dpi annotation-cleaned full-page renders plus 288-900 dpi crops of the source regions; no OCR",
+      "observations": "First reading only. Every value, exponent, subscript, printed spelling and printed error was read from the rendered page image. No distinct second inspection performed; record is a draft pending review."
+    },
+    "visual_recheck": {
+      "pass_id": "parent-recheck-sew-t04",
+      "method": "distinct second visual inspection of exact source-region renders (incl. rotated/zoomed crops) by parent assistant; not independent human review",
+      "observations": "Parent compared every cell/term against 144-dpi region renders; confirmed values, powers, subscripts and printed anomalies.",
+      "content_sha256": "4fc2938e868909309c3d968192e4de1f8889a0b49192f941a20977a655b7dfa1"
+    }
+  },
+  "parent_id": "SEW-2013-A:5.8.4.4.2"
+}

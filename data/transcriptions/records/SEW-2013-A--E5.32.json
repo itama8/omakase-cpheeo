@@ -1,0 +1,81 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:E5.32",
+  "unit_id": "SEW-2013-A:E5.32",
+  "manual_id": "SEW-2013-A",
+  "kind": "equation",
+  "number": "5.32",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "state": "verified",
+  "regions": [
+    {
+      "pdf_page": 381,
+      "page_label": "5 - 77",
+      "bbox": [
+        56.0,
+        425.0,
+        515.0,
+        693.0
+      ],
+      "render_sha256": "29a155e7866a3220033932e09948844363106c5b8e157b7911b9d6c968e3648c"
+    }
+  ],
+  "title": "Substrate removal efficiency of a facultative aerated lagoon by the dispersed flow model",
+  "latex": "\\frac{S}{S_0} = \\frac{4a\\,e^{1/2d}}{(1+a)^2e^{a/2d} - (1-a)^2e^{-a/2d}};\\quad a=\\sqrt{1+4K\\theta d};\\quad d = D/UL = D\\theta/L^2",
+  "readable": "S/S0 = 4a·e^(1/2d) / ((1+a)² e^(a/2d) − (1−a)² e^(−a/2d));  a = SQRT(1 + 4Kθd);  d: dispersion number (dimensionless) = D/UL = Dθ/L²",
+  "symbols": [
+    {
+      "symbol": "D",
+      "definition": "Axial dispersion coefficient (length²/time)"
+    },
+    {
+      "symbol": "L",
+      "definition": "Length of axial travel path"
+    },
+    {
+      "symbol": "θ",
+      "definition": "Theoretical detention time. (Volume/Flow rate)"
+    },
+    {
+      "symbol": "U",
+      "definition": "Velocity of flow through lagoon (length/time)"
+    },
+    {
+      "symbol": "K",
+      "definition": "Substrate removal rate in lagoon (time⁻¹)"
+    },
+    {
+      "symbol": "S0 & S",
+      "definition": "Initial and final substrate concentrations (mass/volume)"
+    },
+    {
+      "symbol": "d",
+      "definition": "dispersion number (dimensionless), printed as = D/UL = Dθ/L²"
+    },
+    {
+      "symbol": "a",
+      "definition": "printed inline as a = √(1+4Kθd)"
+    }
+  ],
+  "applicability": "Relation between influent and effluent substrate concentrations S0 and S for facultative aerated lagoons, in which treatability of the waste, temperature and mixing conditions are taken into account; solved graphically in Figure 5.41.",
+  "notes": [
+    "Exponents are printed as 1/2d, a/2d and −a/2d (not 1/(2d)); preserved as printed.",
+    "The printed inline term line reads \"in which the term  a = √1 + 4Kθd\"; the radical bar was checked at 8x zoom and covers the whole 1 + 4Kθd.",
+    "The d line is printed on two lines: \"d: dispersion number (dimensionless)\" and \"= D/UL = Dθ/ L²\".",
+    "Symbol θ is printed as a lower-case theta in the equation and in the symbol list; the printed list shows Dθ/L² with a capital theta glyph."
+  ],
+  "verification": {
+    "transcription": {
+      "pass_id": "sew-t04-first-reading-20261109",
+      "method": "direct visual reading of 144 dpi annotation-cleaned full-page renders plus 288-900 dpi crops of the source regions; no OCR",
+      "observations": "First reading only. Every value, exponent, subscript, printed spelling and printed error was read from the rendered page image. No distinct second inspection performed; record is a draft pending review."
+    },
+    "visual_recheck": {
+      "pass_id": "parent-recheck-sew-t04",
+      "method": "distinct second visual inspection of exact source-region renders (incl. rotated/zoomed crops) by parent assistant; not independent human review",
+      "observations": "Parent compared every cell/term against 144-dpi region renders; confirmed values, powers, subscripts and printed anomalies.",
+      "content_sha256": "677eccfecf8302b19106953be0258ac47c7528e39df7901aa383c835625b5c0e"
+    }
+  },
+  "parent_id": "SEW-2013-A:5.8.1.7.10"
+}

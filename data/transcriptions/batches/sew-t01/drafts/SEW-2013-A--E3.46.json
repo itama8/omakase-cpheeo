@@ -27,7 +27,7 @@
  "symbols": [],
  "applicability": "Section 3.51 introduces a safety factor (SF) alongside load factor for rigid pipe design: the printed equation defines safety factor as the ratio of field supporting strength to safe supporting strength. The following text states that a safety factor of 1.5 is normally adopted for clay or unreinforced concrete sewers, and that the safe supporting strength must equal or exceed the total expected load over the pipe.",
  "notes": [
-  "Printed exactly as shown: Field Supporting Strength divided by Safe Supporting Strength. This arrangement is the inverse of Equation 3.39 on page 226 (field supporting strength divided by factor of safety). Printed as shown; not corrected.",
+  "Printed exactly as shown: Field Supporting Strength divided by Safe Supporting Strength. This agrees with Equation 3.39 on page 226, where safe supporting strength W is field supporting strength divided by the factor of safety. Nothing has been rearranged.",
   "Transcriber note: the printed equation number (3.46) is set in the right margin and was read from the rendered image; it is not returned by native text extraction on this page.",
   "The body text on this page also cites Equation (3.23) for Marston's Formula. That citation is a cross-reference, not the number of this displayed equation.",
   "No symbol list is printed with this equation; Safety Factor is printed in words and SF appears only in the surrounding prose."

@@ -1,0 +1,184 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:T5.7",
+  "unit_id": "SEW-2013-A:T5.7",
+  "manual_id": "SEW-2013-A",
+  "kind": "table",
+  "number": "5.7",
+  "title": "Dimensions of Parshall flume (mm)",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "state": "pending",
+  "regions": [
+    {
+      "pdf_page": 350,
+      "page_label": "5 - 46",
+      "bbox": [
+        50.0,
+        368.0,
+        532.0,
+        772.0
+      ],
+      "render_sha256": "9be10e0aae07f943578ab20ca2c8e5e19d8f100c34eb785413170129c869c03f"
+    }
+  ],
+  "headers": [
+    "Flow range Q max (mld)⁺",
+    "W",
+    "A",
+    "B⁺⁺",
+    "C",
+    "D⁺⁺⁺",
+    "F",
+    "G",
+    "K",
+    "Z"
+  ],
+  "rows": [
+    [
+      "Up to 5",
+      "75",
+      "460",
+      "450",
+      "175",
+      "255",
+      "150",
+      "300",
+      "25",
+      "56"
+    ],
+    [
+      "5-30",
+      "150",
+      "610",
+      "600",
+      "315",
+      "391",
+      "300",
+      "600",
+      "75",
+      "113"
+    ],
+    [
+      "30 - 45",
+      "225",
+      "865",
+      "850",
+      "375",
+      "566",
+      "300",
+      "750",
+      "75",
+      "113"
+    ],
+    [
+      "45-170",
+      "300",
+      "1350",
+      "1322",
+      "600",
+      "831",
+      "600",
+      "900",
+      "75",
+      "225"
+    ],
+    [
+      "170-250",
+      "450",
+      "1425",
+      "1397",
+      "750",
+      "1010",
+      "600",
+      "900",
+      "75",
+      "225"
+    ],
+    [
+      "250 -350",
+      "600",
+      "1500",
+      "1472",
+      "900",
+      "1188",
+      "600",
+      "900",
+      "75",
+      "225"
+    ],
+    [
+      "350- 500",
+      "900",
+      "1650",
+      "1619",
+      "1200",
+      "1547",
+      "600",
+      "900",
+      "75",
+      "225"
+    ],
+    [
+      "500- 700",
+      "1200",
+      "1800",
+      "1766",
+      "1500",
+      "1906",
+      "600",
+      "900",
+      "75",
+      "225"
+    ],
+    [
+      "700-850",
+      "1500",
+      "2100",
+      "2060",
+      "2100",
+      "2625",
+      "600",
+      "900",
+      "75",
+      "225"
+    ],
+    [
+      "850-1400",
+      "2400",
+      "2400",
+      "2353",
+      "2700",
+      "3344",
+      "600",
+      "900",
+      "75",
+      "225"
+    ]
+  ],
+  "cell_spans": [],
+  "markdown": "| Flow range Q max (mld)⁺ | W | A | B⁺⁺ | C | D⁺⁺⁺ | F | G | K | Z |\n| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |\n| Up to 5 | 75 | 460 | 450 | 175 | 255 | 150 | 300 | 25 | 56 |\n| 5-30 | 150 | 610 | 600 | 315 | 391 | 300 | 600 | 75 | 113 |\n| 30 - 45 | 225 | 865 | 850 | 375 | 566 | 300 | 750 | 75 | 113 |\n| 45-170 | 300 | 1350 | 1322 | 600 | 831 | 600 | 900 | 75 | 225 |\n| 170-250 | 450 | 1425 | 1397 | 750 | 1010 | 600 | 900 | 75 | 225 |\n| 250 -350 | 600 | 1500 | 1472 | 900 | 1188 | 600 | 900 | 75 | 225 |\n| 350- 500 | 900 | 1650 | 1619 | 1200 | 1547 | 600 | 900 | 75 | 225 |\n| 500- 700 | 1200 | 1800 | 1766 | 1500 | 1906 | 600 | 900 | 75 | 225 |\n| 700-850 | 1500 | 2100 | 2060 | 2100 | 2625 | 600 | 900 | 75 | 225 |\n| 850-1400 | 2400 | 2400 | 2353 | 2700 | 3344 | 600 | 900 | 75 | 225 |",
+  "notes": [
+    "+ For average flow and peak factors, see earlier sections",
+    "++ Value should be equal to 1.5 × (Qmax) 1/3 but not less than those shown in the Table",
+    "+++ For higher values of B (than shown in the table), the values of D also to be increased to keep D/B ratio same as in table",
+    "Source: CPHEEO, 1993",
+    "The header superscripts +, ++ and +++ are the printed footnote markers and are kept in the header cells.",
+    "First-column flow ranges print with inconsistent hyphen spacing (30 - 45, 250 -350, 350- 500, 500- 700); retained verbatim.",
+    "This table is a scanned image in the source PDF; every cell was read from the rendered page image, not from native text.",
+    "A typical flume installation and the flume dimensions drawing (Figure 5.33) are on the same page and are not part of this record."
+  ],
+  "verification": {
+    "transcription": {
+      "pass_id": "sew-t03-first-reading-2026-11-08",
+      "method": "Direct visual reading of full annotation-cleaned 144 dpi page PNGs, plus enlarged crops at 288-720 dpi and a contact sheet of every hashed source region; no OCR, no paid service, no delegation",
+      "observations": "First visual transcription only. Every printed glyph, power, subscript, inequality, unit, hyphen spacing, footnote and printed error was read from the rendered source and retained or flagged; no value inferred."
+    }
+  },
+  "source_image_refs": [
+    {
+      "path": "tmp/pdfs/sew-t03/SEW-2013-A--T5.7.png",
+      "role": "first-reading source crop"
+    }
+  ],
+  "parent_id": "SEW-2013-A:5.6.2.8.1"
+}

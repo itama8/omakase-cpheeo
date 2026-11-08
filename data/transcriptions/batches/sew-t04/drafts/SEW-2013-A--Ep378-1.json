@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:Ep378-1",
+  "unit_id": "SEW-2013-A:Ep378-1",
+  "manual_id": "SEW-2013-A",
+  "kind": "equation",
+  "number": "p378-1",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "state": "pending",
+  "regions": [
+    {
+      "pdf_page": 378,
+      "page_label": "5 - 74",
+      "bbox": [
+        45.0,
+        71.0,
+        545.0,
+        462.0
+      ],
+      "render_sha256": "8bdeadc6902665de678439bd74a18ef4f26d78737c8d7f86a8a23647848389e8"
+    }
+  ],
+  "title": "Thumb-rule block for excess sludge production and volume",
+  "latex": "\\begin{aligned}\\mathrm{Excess\\ sludge} &= (A/(0.6\\ \\mathrm{to}\\ 0.8)) + B\\\\ A &= Q\\times Y_{obs}(S_0-S)\\\\ Y_{obs} &= Y/(1+K_d\\times\\theta_c)\\\\ B &= Q\\times \\mathrm{inert\\ TSS\\ removal}\\\\ \\mathrm{Inert\\ TSS} &= \\mathrm{Influent\\ TSS} - \\mathrm{Influent\\ VSS}\\\\ \\mathrm{Excess\\ sludge\\ in\\ kg/day} &= Y_{obs}\\times \\mathrm{BOD\\ inlet}\\times \\mathrm{Flow\\ MLD}\\\\ \\mathrm{Excess\\ sludge\\ volume\\ m^3/day} &= (\\mathrm{Excess\\ wasted\\ kg/day})\\times 1000/\\mathrm{MLSS\\ in\\ clarifier\\ underflow}\\end{aligned}",
+  "readable": "Excess sludge = (A/(0.6 to 0.8)) + B;  A = Q × Yobs (S0-S);  Yobs = Y/(1+Kd × θc);  where Y is 0.5;  Kd is 0.06;  B = Q × inert TSS removal;  Inert TSS = Influent TSS − Influent VSS;  Excess sludge in kg/day = Yobs × BOD inlet × Flow MLD;  Excess sludge volume m3/day = (Excess wasted kg/day) × 1000/MLSS in clarifier underflow",
+  "symbols": [
+    {
+      "symbol": "A",
+      "definition": "calculated by the equation A = Q×Yobs (S0-S)"
+    },
+    {
+      "symbol": "B",
+      "definition": "Q×inert TSS removal"
+    },
+    {
+      "symbol": "Yobs",
+      "definition": "Y/(1+Kd×θc)"
+    },
+    {
+      "symbol": "Y",
+      "definition": "is 0.5 (printed)"
+    },
+    {
+      "symbol": "Kd",
+      "definition": "is 0.06 (printed)"
+    },
+    {
+      "symbol": "θc",
+      "definition": "is from Figure 5-38 for the lowest operating temperature"
+    },
+    {
+      "symbol": "0.6 to 0.8",
+      "definition": "0.6 to be used for extended aeration and 0.8 is used for conventional activated sludge"
+    }
+  ],
+  "applicability": "Design thumb rules for excess sludge wasting: the printed text selects the higher of the two computed excess sludge values, then converts to volume using the MLSS in the clarifier underflow, usually 3 times the MLSS.",
+  "notes": [
+    "Unnumbered block; Ep378-1 is a service locator, not a printed equation number.",
+    "The formulas are interleaved with printed prose lines that are not formulas: \"A is calculated by the following equation and 0.6 to be used for extended aeration and 0.8 is used for conventional activated sludge.\", \"Where Y is 0.5\", \"Kd is 0.06\", \"TSS removal in primary settling tank is 60%.\", \"Inert SS removal in primary settling tank is 60%.\", \"VSS removal in primary settling tank is 60%.\", \"θc is from Figure 5-38 for the lowest operating temperature.\", \"Calculate excess sludge kg/day from the thumb rule in Section 5.8.1.7.5.10\", \"Adopt the higher value\", \"MLSS in clarifier underflow is to be assumed based on the SWD and is usually 3 times the MLSS.\"",
+    "The printed page repeats the expression \"Excess sludge\" for two different quantities (kg/day and m³/day) and prints \"inert/Inert\" and \"Influent\" with inconsistent capitalisation; preserved as printed."
+  ],
+  "verification": {
+    "transcription": {
+      "pass_id": "sew-t04-first-reading-20261109",
+      "method": "direct visual reading of 144 dpi annotation-cleaned full-page renders plus 288-900 dpi crops of the source regions; no OCR",
+      "observations": "First reading only. Every value, exponent, subscript, printed spelling and printed error was read from the rendered page image. No distinct second inspection performed; record is a draft pending review."
+    }
+  }
+}

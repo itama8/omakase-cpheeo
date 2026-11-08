@@ -1,0 +1,479 @@
+[
+  {
+    "pdf_page": 460,
+    "page_label": "5 - 156",
+    "targets": [
+      "SEW-2013-A:T5.28"
+    ],
+    "no_targets_reason": null,
+    "continuations": [],
+    "unclear": [],
+    "image_viewed": "/home/a2ajinkya/.t3/worktrees/omakase-cpheeo/feat-verified-visual-transcriptions/tmp/pdfs/sew-t06/page-460.png",
+    "additional_images": [
+      "/home/a2ajinkya/.t3/worktrees/omakase-cpheeo/feat-verified-visual-transcriptions/tmp/pdfs/sew-t06/detail-460-table.png",
+      "/home/a2ajinkya/.t3/worktrees/omakase-cpheeo/feat-verified-visual-transcriptions/tmp/pdfs/sew-t06/detail-460-below.png"
+    ]
+  },
+  {
+    "pdf_page": 461,
+    "page_label": "5 - 157",
+    "targets": [],
+    "no_targets_reason": "Running text only: section 5.18 with objectives, discharge standards and the definition of emerging technologies. The page announces Table 5.29 overleaf but prints no table, equation or figure data on itself.",
+    "continuations": [],
+    "unclear": [],
+    "image_viewed": "/home/a2ajinkya/.t3/worktrees/omakase-cpheeo/feat-verified-visual-transcriptions/tmp/pdfs/sew-t06/page-461.png"
+  },
+  {
+    "pdf_page": 462,
+    "page_label": "5 - 158",
+    "targets": [
+      "SEW-2013-A:T5.29"
+    ],
+    "no_targets_reason": null,
+    "continuations": [
+      "Table 5.29 starts here with the printed caption and its first three process rows; it continues on physical pages 463, 464, 465 and 466."
+    ],
+    "unclear": [
+      "The Type and Objective columns carry 'Tertiary' and 'Nitrogen (N) removal' only in this first segment; the same columns are printed empty on the following segments, so the grouping of rows on pages 463-466 is not printed."
+    ],
+    "image_viewed": "/home/a2ajinkya/.t3/worktrees/omakase-cpheeo/feat-verified-visual-transcriptions/tmp/pdfs/sew-t06/page-462.png",
+    "additional_images": [
+      "/home/a2ajinkya/.t3/worktrees/omakase-cpheeo/feat-verified-visual-transcriptions/tmp/pdfs/sew-t06/rot-462-r.png",
+      "/home/a2ajinkya/.t3/worktrees/omakase-cpheeo/feat-verified-visual-transcriptions/tmp/pdfs/sew-t06/L-462.png",
+      "/home/a2ajinkya/.t3/worktrees/omakase-cpheeo/feat-verified-visual-transcriptions/tmp/pdfs/sew-t06/L-462-top.png",
+      "/home/a2ajinkya/.t3/worktrees/omakase-cpheeo/feat-verified-visual-transcriptions/tmp/pdfs/sew-t06/L-462-bot.png"
+    ]
+  },
+  {
+    "pdf_page": 463,
+    "page_label": "5 - 159",
+    "targets": [
+      "SEW-2013-A:T5.29"
+    ],
+    "no_targets_reason": null,
+    "continuations": [
+      "Table 5.29 continuation of the same record; the header row Type / Objective / Process / Description is reprinted at the top."
+    ],
+    "unclear": [
+      "Type and Objective cells are printed empty on this page, so the page's three process rows (Ammonia oxidation, Ammonia Stripping, Ion Exchange) are not explicitly assigned to a Type or Objective in print."
+    ],
+    "image_viewed": "/home/a2ajinkya/.t3/worktrees/omakase-cpheeo/feat-verified-visual-transcriptions/tmp/pdfs/sew-t06/page-463.png",
+    "additional_images": [
+      "/home/a2ajinkya/.t3/worktrees/omakase-cpheeo/feat-verified-visual-transcriptions/tmp/pdfs/sew-t06/rot-463-r.png",
+      "/home/a2ajinkya/.t3/worktrees/omakase-cpheeo/feat-verified-visual-transcriptions/tmp/pdfs/sew-t06/L-463.png",
+      "/home/a2ajinkya/.t3/worktrees/omakase-cpheeo/feat-verified-visual-transcriptions/tmp/pdfs/sew-t06/L-463-top.png",
+      "/home/a2ajinkya/.t3/worktrees/omakase-cpheeo/feat-verified-visual-transcriptions/tmp/pdfs/sew-t06/L-463-bot.png"
+    ]
+  },
+  {
+    "pdf_page": 464,
+    "page_label": "5 - 160",
+    "targets": [
+      "SEW-2013-A:T5.29"
+    ],
+    "no_targets_reason": null,
+    "continuations": [
+      "Table 5.29 continuation of the same record; header row reprinted."
+    ],
+    "unclear": [
+      "The printed Objective cell carries '(N) & (P) Simultaneous removal' while the Type column is empty on every row of this page; the Phosphorus (P) removal Type cell from page 463 appears to run on with no dividing rule, so which rows belong to which Type is not printed."
+    ],
+    "image_viewed": "/home/a2ajinkya/.t3/worktrees/omakase-cpheeo/feat-verified-visual-transcriptions/tmp/pdfs/sew-t06/page-464.png",
+    "additional_images": [
+      "/home/a2ajinkya/.t3/worktrees/omakase-cpheeo/feat-verified-visual-transcriptions/tmp/pdfs/sew-t06/rot-464-r.png",
+      "/home/a2ajinkya/.t3/worktrees/omakase-cpheeo/feat-verified-visual-transcriptions/tmp/pdfs/sew-t06/L-464.png",
+      "/home/a2ajinkya/.t3/worktrees/omakase-cpheeo/feat-verified-visual-transcriptions/tmp/pdfs/sew-t06/L-464-top.png",
+      "/home/a2ajinkya/.t3/worktrees/omakase-cpheeo/feat-verified-visual-transcriptions/tmp/pdfs/sew-t06/L-464-bot.png"
+    ]
+  },
+  {
+    "pdf_page": 465,
+    "page_label": "5 - 161",
+    "targets": [
+      "SEW-2013-A:T5.29"
+    ],
+    "no_targets_reason": null,
+    "continuations": [
+      "Table 5.29 continuation of the same record; header row reprinted."
+    ],
+    "unclear": [
+      "Type and Objective cells printed empty for the three process rows on this page."
+    ],
+    "image_viewed": "/home/a2ajinkya/.t3/worktrees/omakase-cpheeo/feat-verified-visual-transcriptions/tmp/pdfs/sew-t06/page-465.png",
+    "additional_images": [
+      "/home/a2ajinkya/.t3/worktrees/omakase-cpheeo/feat-verified-visual-transcriptions/tmp/pdfs/sew-t06/rot-465-r.png",
+      "/home/a2ajinkya/.t3/worktrees/omakase-cpheeo/feat-verified-visual-transcriptions/tmp/pdfs/sew-t06/L-465.png",
+      "/home/a2ajinkya/.t3/worktrees/omakase-cpheeo/feat-verified-visual-transcriptions/tmp/pdfs/sew-t06/L-465-top.png",
+      "/home/a2ajinkya/.t3/worktrees/omakase-cpheeo/feat-verified-visual-transcriptions/tmp/pdfs/sew-t06/L-465-bot.png"
+    ]
+  },
+  {
+    "pdf_page": 466,
+    "page_label": "5 - 162",
+    "targets": [
+      "SEW-2013-A:T5.29"
+    ],
+    "no_targets_reason": null,
+    "continuations": [
+      "Table 5.29 final segment: the Immobilized Biofilm Process, Advanced processes (Membrane filtration, Membrane Bioreactor) rows and the printed note below the table."
+    ],
+    "unclear": [
+      "Type cell prints 'Advanced processes' over the last two rows; no Type is printed for the Immobilized Biofilm Process row."
+    ],
+    "image_viewed": "/home/a2ajinkya/.t3/worktrees/omakase-cpheeo/feat-verified-visual-transcriptions/tmp/pdfs/sew-t06/page-466.png",
+    "additional_images": [
+      "/home/a2ajinkya/.t3/worktrees/omakase-cpheeo/feat-verified-visual-transcriptions/tmp/pdfs/sew-t06/rot-466-r.png",
+      "/home/a2ajinkya/.t3/worktrees/omakase-cpheeo/feat-verified-visual-transcriptions/tmp/pdfs/sew-t06/L-466.png",
+      "/home/a2ajinkya/.t3/worktrees/omakase-cpheeo/feat-verified-visual-transcriptions/tmp/pdfs/sew-t06/L-466-top.png",
+      "/home/a2ajinkya/.t3/worktrees/omakase-cpheeo/feat-verified-visual-transcriptions/tmp/pdfs/sew-t06/L-466-bot.png"
+    ]
+  },
+  {
+    "pdf_page": 467,
+    "page_label": "5 - 163",
+    "targets": [
+      "SEW-2013-A:T5.30"
+    ],
+    "no_targets_reason": null,
+    "continuations": [],
+    "unclear": [
+      "Printed Range cells are incomplete as typeset: MLSS reads ',810-2,370' with the leading digit missing, and the Average Influent Flow (50) does not agree with the printed Range (8,287-11,265). Both readings are clear; the intended values are not."
+    ],
+    "image_viewed": "/home/a2ajinkya/.t3/worktrees/omakase-cpheeo/feat-verified-visual-transcriptions/tmp/pdfs/sew-t06/page-467.png",
+    "additional_images": [
+      "/home/a2ajinkya/.t3/worktrees/omakase-cpheeo/feat-verified-visual-transcriptions/tmp/pdfs/sew-t06/d-467-t530.png"
+    ]
+  },
+  {
+    "pdf_page": 468,
+    "page_label": "5 - 164",
+    "targets": [
+      "SEW-2013-A:T5.31",
+      "SEW-2013-A:T5.32"
+    ],
+    "no_targets_reason": null,
+    "continuations": [],
+    "unclear": [
+      "Table 5.31 caption is printed without a closing parenthesis. Table 5.32 gives the K&C Valley flow as 31 MLD while the running text on the same page says 30 MLD."
+    ],
+    "image_viewed": "/home/a2ajinkya/.t3/worktrees/omakase-cpheeo/feat-verified-visual-transcriptions/tmp/pdfs/sew-t06/page-468.png",
+    "additional_images": [
+      "/home/a2ajinkya/.t3/worktrees/omakase-cpheeo/feat-verified-visual-transcriptions/tmp/pdfs/sew-t06/d-468-t531.png",
+      "/home/a2ajinkya/.t3/worktrees/omakase-cpheeo/feat-verified-visual-transcriptions/tmp/pdfs/sew-t06/d-468-t532-top.png",
+      "/home/a2ajinkya/.t3/worktrees/omakase-cpheeo/feat-verified-visual-transcriptions/tmp/pdfs/sew-t06/d-468-t532-mid.png",
+      "/home/a2ajinkya/.t3/worktrees/omakase-cpheeo/feat-verified-visual-transcriptions/tmp/pdfs/sew-t06/d-468-t532-bot.png",
+      "/home/a2ajinkya/.t3/worktrees/omakase-cpheeo/feat-verified-visual-transcriptions/tmp/pdfs/sew-t06/d-468-t532-bot2.png"
+    ]
+  },
+  {
+    "pdf_page": 469,
+    "page_label": "5 - 165",
+    "targets": [],
+    "no_targets_reason": "Running text only: advantages and disadvantages, typical design parameters and applicability of the recycled nitrification/denitrification process, then section 5.18.3 Wuhrmann process description. No table, equation or figure data on this page (Table 5.32 is on physical page 468 and the Wuhrmann figure is on 470).",
+    "continuations": [],
+    "unclear": [],
+    "image_viewed": "/home/a2ajinkya/.t3/worktrees/omakase-cpheeo/feat-verified-visual-transcriptions/tmp/pdfs/sew-t06/page-469.png"
+  },
+  {
+    "pdf_page": 470,
+    "page_label": "5 - 166",
+    "targets": [],
+    "no_targets_reason": "Figures only: Figure 5.65 Wuhrmann process, Figure 5.66 Ludzack & Ettinger process and Figure 5.67 Hamamatsu City process diagram, all schematics with tank labels and no numeric table or equation text.",
+    "continuations": [],
+    "unclear": [],
+    "image_viewed": "/home/a2ajinkya/.t3/worktrees/omakase-cpheeo/feat-verified-visual-transcriptions/tmp/pdfs/sew-t06/page-470.png"
+  },
+  {
+    "pdf_page": 471,
+    "page_label": "5 - 167",
+    "targets": [
+      "SEW-2013-A:T5.33"
+    ],
+    "no_targets_reason": null,
+    "continuations": [],
+    "unclear": [
+      "The right-hand half of Table 5.33 is a nested block whose own section rows ('Influent', 'Effluent') carry no value; five rows leave the second Values cell empty. Rows are transcribed as printed."
+    ],
+    "image_viewed": "/home/a2ajinkya/.t3/worktrees/omakase-cpheeo/feat-verified-visual-transcriptions/tmp/pdfs/sew-t06/page-471.png",
+    "additional_images": [
+      "/home/a2ajinkya/.t3/worktrees/omakase-cpheeo/feat-verified-visual-transcriptions/tmp/pdfs/sew-t06/d-471-t533-top.png",
+      "/home/a2ajinkya/.t3/worktrees/omakase-cpheeo/feat-verified-visual-transcriptions/tmp/pdfs/sew-t06/d-471-t533-bot.png"
+    ]
+  },
+  {
+    "pdf_page": 472,
+    "page_label": "5 - 168",
+    "targets": [
+      "SEW-2013-A:T5.34"
+    ],
+    "no_targets_reason": null,
+    "continuations": [],
+    "unclear": [
+      "The asterisk footnote marked from '2-4 Q*' discusses mixer energy input rather than nitrate recycle; the printed link between mark and note is unclear. The prose item a below the table (4.57 mg O2/mgN nitrification, 2.86 mg O2/mgN released) is a written criterion, not a displayed equation."
+    ],
+    "image_viewed": "/home/a2ajinkya/.t3/worktrees/omakase-cpheeo/feat-verified-visual-transcriptions/tmp/pdfs/sew-t06/page-472.png",
+    "additional_images": [
+      "/home/a2ajinkya/.t3/worktrees/omakase-cpheeo/feat-verified-visual-transcriptions/tmp/pdfs/sew-t06/d-472-t534-a.png",
+      "/home/a2ajinkya/.t3/worktrees/omakase-cpheeo/feat-verified-visual-transcriptions/tmp/pdfs/sew-t06/d-472-t534-b.png",
+      "/home/a2ajinkya/.t3/worktrees/omakase-cpheeo/feat-verified-visual-transcriptions/tmp/pdfs/sew-t06/d-472-t534-c.png"
+    ]
+  },
+  {
+    "pdf_page": 474,
+    "page_label": "5 - 170",
+    "targets": [],
+    "no_targets_reason": "Figure 5.68 step feed schematic (Stamford) plus running text on advantages, disadvantages and typical design parameters of the step-feed process. No table or equation on this page; Table 5.35 is overleaf.",
+    "continuations": [],
+    "unclear": [],
+    "image_viewed": "/home/a2ajinkya/.t3/worktrees/omakase-cpheeo/feat-verified-visual-transcriptions/tmp/pdfs/sew-t06/page-474.png"
+  },
+  {
+    "pdf_page": 475,
+    "page_label": "5 - 171",
+    "targets": [
+      "SEW-2013-A:T5.35"
+    ],
+    "no_targets_reason": null,
+    "continuations": [],
+    "unclear": [
+      "None. Single printed data row; all six values legible."
+    ],
+    "image_viewed": "/home/a2ajinkya/.t3/worktrees/omakase-cpheeo/feat-verified-visual-transcriptions/tmp/pdfs/sew-t06/page-475.png",
+    "additional_images": [
+      "/home/a2ajinkya/.t3/worktrees/omakase-cpheeo/feat-verified-visual-transcriptions/tmp/pdfs/sew-t06/d-475-t535.png"
+    ]
+  },
+  {
+    "pdf_page": 476,
+    "page_label": "5 - 172",
+    "targets": [
+      "SEW-2013-A:T5.36"
+    ],
+    "no_targets_reason": null,
+    "continuations": [],
+    "unclear": [
+      "The two reference lines 'Ref 1' and 'Ref 2' both print 'USEPA, 1987'; the readings are clear but the two entries cannot be told apart from the table alone."
+    ],
+    "image_viewed": "/home/a2ajinkya/.t3/worktrees/omakase-cpheeo/feat-verified-visual-transcriptions/tmp/pdfs/sew-t06/page-476.png",
+    "additional_images": [
+      "/home/a2ajinkya/.t3/worktrees/omakase-cpheeo/feat-verified-visual-transcriptions/tmp/pdfs/sew-t06/d-476-t536.png"
+    ]
+  },
+  {
+    "pdf_page": 477,
+    "page_label": "5 - 173",
+    "targets": [
+      "SEW-2013-A:T5.37"
+    ],
+    "no_targets_reason": null,
+    "continuations": [],
+    "unclear": [
+      "None. Single printed data row."
+    ],
+    "image_viewed": "/home/a2ajinkya/.t3/worktrees/omakase-cpheeo/feat-verified-visual-transcriptions/tmp/pdfs/sew-t06/page-477.png",
+    "additional_images": [
+      "/home/a2ajinkya/.t3/worktrees/omakase-cpheeo/feat-verified-visual-transcriptions/tmp/pdfs/sew-t06/d-477-t537.png"
+    ]
+  },
+  {
+    "pdf_page": 478,
+    "page_label": "5 - 174",
+    "targets": [],
+    "no_targets_reason": "Running text on A/O applicability and the four-stage and five-stage Bardenpho description, with Figure 5.70 and Figure 5.71 schematics. No table or equation on this page.",
+    "continuations": [],
+    "unclear": [],
+    "image_viewed": "/home/a2ajinkya/.t3/worktrees/omakase-cpheeo/feat-verified-visual-transcriptions/tmp/pdfs/sew-t06/page-478.png"
+  },
+  {
+    "pdf_page": 479,
+    "page_label": "5 - 175",
+    "targets": [
+      "SEW-2013-A:T5.38"
+    ],
+    "no_targets_reason": null,
+    "continuations": [],
+    "unclear": [
+      "The printed caption is the only identification of the plant; the table itself carries no plant name."
+    ],
+    "image_viewed": "/home/a2ajinkya/.t3/worktrees/omakase-cpheeo/feat-verified-visual-transcriptions/tmp/pdfs/sew-t06/page-479.png",
+    "additional_images": [
+      "/home/a2ajinkya/.t3/worktrees/omakase-cpheeo/feat-verified-visual-transcriptions/tmp/pdfs/sew-t06/d-479-t538.png"
+    ]
+  },
+  {
+    "pdf_page": 480,
+    "page_label": "5 - 176",
+    "targets": [
+      "SEW-2013-A:T5.39"
+    ],
+    "no_targets_reason": null,
+    "continuations": [],
+    "unclear": [
+      "The printed stage annotations ('1st stage', '3rd stage' and so on) differ between the 4-stage and 5-stage rows; both are legible and both are retained."
+    ],
+    "image_viewed": "/home/a2ajinkya/.t3/worktrees/omakase-cpheeo/feat-verified-visual-transcriptions/tmp/pdfs/sew-t06/page-480.png",
+    "additional_images": [
+      "/home/a2ajinkya/.t3/worktrees/omakase-cpheeo/feat-verified-visual-transcriptions/tmp/pdfs/sew-t06/d-480-t539.png"
+    ]
+  },
+  {
+    "pdf_page": 481,
+    "page_label": "5 - 177",
+    "targets": [
+      "SEW-2013-A:T5.40",
+      "SEW-2013-A:T5.41"
+    ],
+    "no_targets_reason": null,
+    "continuations": [],
+    "unclear": [
+      "Table 5.40 prints the anaerobic heading as 'Anaer obic' (word broken) and every run as a TN line plus a TP line, so the printed row structure had to be expanded into two rows per run; the expansion is stated in the record."
+    ],
+    "image_viewed": "/home/a2ajinkya/.t3/worktrees/omakase-cpheeo/feat-verified-visual-transcriptions/tmp/pdfs/sew-t06/page-481.png",
+    "additional_images": [
+      "/home/a2ajinkya/.t3/worktrees/omakase-cpheeo/feat-verified-visual-transcriptions/tmp/pdfs/sew-t06/d-481-t540-a.png",
+      "/home/a2ajinkya/.t3/worktrees/omakase-cpheeo/feat-verified-visual-transcriptions/tmp/pdfs/sew-t06/d-481-t540-b.png",
+      "/home/a2ajinkya/.t3/worktrees/omakase-cpheeo/feat-verified-visual-transcriptions/tmp/pdfs/sew-t06/d-481-t541.png"
+    ]
+  },
+  {
+    "pdf_page": 482,
+    "page_label": "5 - 178",
+    "targets": [],
+    "no_targets_reason": "Running text on A2O applicability, Sharon-Anammox and the guiding principles, with Figure 5.73 (Sharon-Anammox nitrogen transformations) as a schematic carrying stream labels such as NH4+ (100) and NH4+/NO2- (50/50) but no table or equation.",
+    "continuations": [],
+    "unclear": [],
+    "image_viewed": "/home/a2ajinkya/.t3/worktrees/omakase-cpheeo/feat-verified-visual-transcriptions/tmp/pdfs/sew-t06/page-482.png"
+  },
+  {
+    "pdf_page": 483,
+    "page_label": "5 - 179",
+    "targets": [
+      "SEW-2013-A:Tp483-1"
+    ],
+    "no_targets_reason": null,
+    "continuations": [],
+    "unclear": [
+      "Table 5.29 (physical page 466) and the running text here print different membrane pore-size classes for the same MF/UF/NF/RO names; both are legible, and neither is reconciled. The grid transcribed as Tp483-1 is unnumbered: it is the data band of Figure 5.74 and carries no caption or number of its own."
+    ],
+    "image_viewed": "/home/a2ajinkya/.t3/worktrees/omakase-cpheeo/feat-verified-visual-transcriptions/tmp/pdfs/sew-t06/page-483.png",
+    "additional_images": [
+      "/home/a2ajinkya/.t3/worktrees/omakase-cpheeo/feat-verified-visual-transcriptions/tmp/pdfs/sew-t06/d-483-tab.png",
+      "/home/a2ajinkya/.t3/worktrees/omakase-cpheeo/feat-verified-visual-transcriptions/tmp/pdfs/sew-t06/d-483-tab2.png"
+    ]
+  },
+  {
+    "pdf_page": 485,
+    "page_label": "5 - 181",
+    "targets": [],
+    "no_targets_reason": "Running text only: membrane guiding principles and the membrane bioreactor description, with the plant data bullet list (average 4.54 MLD, peak 11.35 MLD, lean 2.0 MLD). That list is a three-item bullet block, not a table, so no draft is raised for it here.",
+    "continuations": [],
+    "unclear": [],
+    "image_viewed": "/home/a2ajinkya/.t3/worktrees/omakase-cpheeo/feat-verified-visual-transcriptions/tmp/pdfs/sew-t06/page-485.png"
+  },
+  {
+    "pdf_page": 486,
+    "page_label": "5 - 182",
+    "targets": [],
+    "no_targets_reason": "Figure page: Figure 5.75 configuration of membrane bioreactor system with parts (a) immersed membrane system and (b) external membrane system, plus the source line. No table or equation.",
+    "continuations": [],
+    "unclear": [],
+    "image_viewed": "/home/a2ajinkya/.t3/worktrees/omakase-cpheeo/feat-verified-visual-transcriptions/tmp/pdfs/sew-t06/page-486.png"
+  },
+  {
+    "pdf_page": 487,
+    "page_label": "5 - 183",
+    "targets": [
+      "SEW-2013-A:T5.42"
+    ],
+    "no_targets_reason": null,
+    "continuations": [],
+    "unclear": [
+      "The Ultra Fine Screen cell prints 'Opening 1 mm,' with a trailing comma and no further text; the reading is clear and nothing is supplied for the missing text."
+    ],
+    "image_viewed": "/home/a2ajinkya/.t3/worktrees/omakase-cpheeo/feat-verified-visual-transcriptions/tmp/pdfs/sew-t06/page-487.png",
+    "additional_images": [
+      "/home/a2ajinkya/.t3/worktrees/omakase-cpheeo/feat-verified-visual-transcriptions/tmp/pdfs/sew-t06/d-487-t542.png"
+    ]
+  },
+  {
+    "pdf_page": 488,
+    "page_label": "5 - 184",
+    "targets": [
+      "SEW-2013-A:T5.43",
+      "SEW-2013-A:T5.44",
+      "SEW-2013-A:T5.45"
+    ],
+    "no_targets_reason": null,
+    "continuations": [],
+    "unclear": [
+      "Table 5.46 is announced for the next page and is not on this page. In Table 5.45 the meaning of the '(A)' marker is given only by the 'Ferric chloride addition' line below the table."
+    ],
+    "image_viewed": "/home/a2ajinkya/.t3/worktrees/omakase-cpheeo/feat-verified-visual-transcriptions/tmp/pdfs/sew-t06/page-488.png",
+    "additional_images": [
+      "/home/a2ajinkya/.t3/worktrees/omakase-cpheeo/feat-verified-visual-transcriptions/tmp/pdfs/sew-t06/d-488-t543-a.png",
+      "/home/a2ajinkya/.t3/worktrees/omakase-cpheeo/feat-verified-visual-transcriptions/tmp/pdfs/sew-t06/d-488-t543-b.png",
+      "/home/a2ajinkya/.t3/worktrees/omakase-cpheeo/feat-verified-visual-transcriptions/tmp/pdfs/sew-t06/d-488-t544c.png",
+      "/home/a2ajinkya/.t3/worktrees/omakase-cpheeo/feat-verified-visual-transcriptions/tmp/pdfs/sew-t06/d-488-t544d.png",
+      "/home/a2ajinkya/.t3/worktrees/omakase-cpheeo/feat-verified-visual-transcriptions/tmp/pdfs/sew-t06/d-488-t545c.png"
+    ]
+  },
+  {
+    "pdf_page": 489,
+    "page_label": "5 - 185",
+    "targets": [
+      "SEW-2013-A:T5.46",
+      "SEW-2013-A:T5.47"
+    ],
+    "no_targets_reason": null,
+    "continuations": [],
+    "unclear": [
+      "In Table 5-47 the meaning of the '(A)' and '(R)' row labels is not printed anywhere in the table or legend; single values and ranges are clear but the labels are unexpanded. The legend prints 's-BOD' while the column header prints 'S-BOD'."
+    ],
+    "image_viewed": "/home/a2ajinkya/.t3/worktrees/omakase-cpheeo/feat-verified-visual-transcriptions/tmp/pdfs/sew-t06/page-489.png",
+    "additional_images": [
+      "/home/a2ajinkya/.t3/worktrees/omakase-cpheeo/feat-verified-visual-transcriptions/tmp/pdfs/sew-t06/d-489-t546.png",
+      "/home/a2ajinkya/.t3/worktrees/omakase-cpheeo/feat-verified-visual-transcriptions/tmp/pdfs/sew-t06/d-489-t547a.png",
+      "/home/a2ajinkya/.t3/worktrees/omakase-cpheeo/feat-verified-visual-transcriptions/tmp/pdfs/sew-t06/d-489-t547b.png",
+      "/home/a2ajinkya/.t3/worktrees/omakase-cpheeo/feat-verified-visual-transcriptions/tmp/pdfs/sew-t06/d-489-t547c.png"
+    ]
+  },
+  {
+    "pdf_page": 490,
+    "page_label": "5 - 186",
+    "targets": [
+      "SEW-2013-A:T5.48",
+      "SEW-2013-A:T5.49",
+      "SEW-2013-A:T5.50"
+    ],
+    "no_targets_reason": null,
+    "continuations": [],
+    "unclear": [
+      "The header 'Ratio of b) / (a)' is printed with a closing parenthesis that has no opening partner; read as printed. Tables 5-48 and 5.50 name no plant in their captions."
+    ],
+    "image_viewed": "/home/a2ajinkya/.t3/worktrees/omakase-cpheeo/feat-verified-visual-transcriptions/tmp/pdfs/sew-t06/page-490.png",
+    "additional_images": [
+      "/home/a2ajinkya/.t3/worktrees/omakase-cpheeo/feat-verified-visual-transcriptions/tmp/pdfs/sew-t06/d-490-t548.png",
+      "/home/a2ajinkya/.t3/worktrees/omakase-cpheeo/feat-verified-visual-transcriptions/tmp/pdfs/sew-t06/d-490-t549a.png",
+      "/home/a2ajinkya/.t3/worktrees/omakase-cpheeo/feat-verified-visual-transcriptions/tmp/pdfs/sew-t06/d-490-t549b.png",
+      "/home/a2ajinkya/.t3/worktrees/omakase-cpheeo/feat-verified-visual-transcriptions/tmp/pdfs/sew-t06/d-490-t549c.png",
+      "/home/a2ajinkya/.t3/worktrees/omakase-cpheeo/feat-verified-visual-transcriptions/tmp/pdfs/sew-t06/d-490-t550v.png"
+    ]
+  },
+  {
+    "pdf_page": 491,
+    "page_label": "5 - 187",
+    "targets": [
+      "SEW-2013-A:T5.51"
+    ],
+    "no_targets_reason": null,
+    "continuations": [],
+    "unclear": [
+      "Only T-N carries a removal ratio column; no removal values are printed for BOD, COD or T-P. The table names no plant in its caption."
+    ],
+    "image_viewed": "/home/a2ajinkya/.t3/worktrees/omakase-cpheeo/feat-verified-visual-transcriptions/tmp/pdfs/sew-t06/page-491.png",
+    "additional_images": [
+      "/home/a2ajinkya/.t3/worktrees/omakase-cpheeo/feat-verified-visual-transcriptions/tmp/pdfs/sew-t06/d-491-t551a.png",
+      "/home/a2ajinkya/.t3/worktrees/omakase-cpheeo/feat-verified-visual-transcriptions/tmp/pdfs/sew-t06/d-491-t551b.png"
+    ]
+  }
+]

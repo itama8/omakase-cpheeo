@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:E5.10",
+  "unit_id": "SEW-2013-A:E5.10",
+  "manual_id": "SEW-2013-A",
+  "kind": "equation",
+  "number": "5.10",
+  "title": "Efficiency of an ideal settling basin",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "state": "pending",
+  "regions": [
+    {
+      "pdf_page": 345,
+      "page_label": "5 - 41",
+      "bbox": [
+        108,
+        354,
+        515,
+        390
+      ],
+      "render_sha256": "dca1b2d7f2f93c734c0055fbba7c06831e982527e51e8f7a8a70fd6ed90428a9"
+    }
+  ],
+  "parent_id": "SEW-2013-A:5.6.2.7.1.2",
+  "latex": "\\eta=\\frac{V_s}{V_o}",
+  "readable": "eta = Vs / Vo",
+  "symbols": [
+    {
+      "symbol": "Vs",
+      "definition": "settling velocity of the particles to be removed"
+    },
+    {
+      "symbol": "Vo",
+      "definition": "surface overflow rate, defined as the ratio of flow of sewage to be treated in an ideal settling tank to the plan area of the tank, i.e., Q/A"
+    }
+  ],
+  "applicability": "Efficiency of an ideal settling basin is expressed as the ratio of the settling velocity of the particles to be removed (Vs) to the surface overflow rate (Vo).",
+  "notes": [
+    "Vo is printed with the letter o as subscript, not a zero; retained.",
+    "No separate symbol list is printed under equation (5.10); the definitions above are the printed prose definitions."
+  ],
+  "verification": {
+    "transcription": {
+      "pass_id": "sew-t03-first-reading-2026-11-08",
+      "method": "Direct visual reading of full annotation-cleaned 144 dpi page PNGs, plus enlarged crops at 288-720 dpi and a contact sheet of every hashed source region; no OCR, no paid service, no delegation",
+      "observations": "First visual transcription only. Every printed glyph, power, subscript, inequality, unit, hyphen spacing, footnote and printed error was read from the rendered source and retained or flagged; no value inferred."
+    }
+  },
+  "source_image_refs": [
+    {
+      "path": "tmp/pdfs/sew-t03/SEW-2013-A--E5.10.png",
+      "role": "first-reading source crop"
+    }
+  ]
+}

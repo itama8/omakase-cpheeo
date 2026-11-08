@@ -1,0 +1,63 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:E5.7",
+  "unit_id": "SEW-2013-A:E5.7",
+  "manual_id": "SEW-2013-A",
+  "kind": "equation",
+  "number": "5.7",
+  "title": "Settling velocity of grit particles in the transition zone after substituting CD",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "state": "pending",
+  "regions": [
+    {
+      "pdf_page": 344,
+      "page_label": "5 - 40",
+      "bbox": [
+        74,
+        665,
+        513,
+        689
+      ],
+      "render_sha256": "0ccae946efea3bdd284a2a37e721e21240de38e30ec586f9623b00a71405524b"
+    }
+  ],
+  "parent_id": "SEW-2013-A:5.6.2.7.1.1",
+  "latex": "V_s=\\left[0.707\\left(S_s-1\\right)d^{1.5}\\nu^{-0.6}\\right]^{0.714}",
+  "readable": "Vs = [0.707 (Ss - 1) d^1.5 nu^-0.6]^0.714",
+  "symbols": [
+    {
+      "symbol": "Vs",
+      "definition": "Settling velocity, m/s"
+    },
+    {
+      "symbol": "Ss",
+      "definition": "Specific gravity of grit particle, dimensionless"
+    },
+    {
+      "symbol": "d",
+      "definition": "Size of the particle, m"
+    },
+    {
+      "symbol": "nu",
+      "definition": "Kinematic viscosity of sewage, m2/s"
+    }
+  ],
+  "applicability": "Settling velocity of grit particles in the transition zone, obtained by substituting the value of CD from equation (5.6) and simplifying.",
+  "notes": [
+    "Printed coefficients and powers 0.707, 1.5, -0.6 and 0.714 retained.",
+    "The printed bracket closes after nu^-0.6; the whole bracket is raised to 0.714."
+  ],
+  "verification": {
+    "transcription": {
+      "pass_id": "sew-t03-first-reading-2026-11-08",
+      "method": "Direct visual reading of full annotation-cleaned 144 dpi page PNGs, plus enlarged crops at 288-720 dpi and a contact sheet of every hashed source region; no OCR, no paid service, no delegation",
+      "observations": "First visual transcription only. Every printed glyph, power, subscript, inequality, unit, hyphen spacing, footnote and printed error was read from the rendered source and retained or flagged; no value inferred."
+    }
+  },
+  "source_image_refs": [
+    {
+      "path": "tmp/pdfs/sew-t03/SEW-2013-A--E5.7.png",
+      "role": "first-reading source crop"
+    }
+  ]
+}

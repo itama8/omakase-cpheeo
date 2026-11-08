@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:Ep356-2",
+  "unit_id": "SEW-2013-A:Ep356-2",
+  "manual_id": "SEW-2013-A",
+  "kind": "equation",
+  "number": "p356-2",
+  "title": "Weir loading rate at average flow for the primary and secondary clarifiers",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "state": "pending",
+  "regions": [
+    {
+      "pdf_page": 356,
+      "page_label": "5 - 52",
+      "bbox": [
+        52,
+        519,
+        539,
+        548
+      ],
+      "render_sha256": "8e69526e143bb85b37516bb7da7ccff980ff98b1da22f97458d7871720158e61"
+    }
+  ],
+  "parent_id": "SEW-2013-A:5.7.4.2.3",
+  "latex": "23{,}000/\\left(2\\times3.14\\times21.2\\times0.75\\right)=230\\ \\text{cum/m/day};\\ 23{,}000/\\left(2\\times3.14\\times24.4\\times0.75\\right)=200\\ \\text{cum/m/day}",
+  "readable": "primary clarifier: 23,000/(2×3.14×21.2×0.75) = 230 cum/m/day; secondary clarifier: 23,000/(2×3.14×24.4×0.75) = 200 cum/m/day",
+  "symbols": [
+    {
+      "symbol": "23,000",
+      "definition": "STP capacity, m3/day (the printed 23 MLD STP)"
+    },
+    {
+      "symbol": "2×3.14×21.2",
+      "definition": "periphery of a 21.2 m diameter primary clarifier, with 3.14 printed for pi"
+    },
+    {
+      "symbol": "2×3.14×24.4",
+      "definition": "periphery of a 24.4 m diameter secondary clarifier, with 3.14 printed for pi"
+    },
+    {
+      "symbol": "0.75",
+      "definition": "effective weir length fraction from Ep356-1"
+    }
+  ],
+  "applicability": "Weir loading rate at average flow worked out for the 23 MLD STP with 2 primary clarifiers of 21.2 m diameter and 2 secondary clarifiers of 24.4 m diameter.",
+  "notes": [
+    "Printed inline in running prose, not as a displayed or numbered equation; p356-2 is a service locator.",
+    "pi is printed as 3.14 and the divisor 2 accounts for the two clarifiers of each type; both retained as printed.",
+    "The printed sentence continues: though the manual guidelines are limited to 125 and 185 respectively."
+  ],
+  "verification": {
+    "transcription": {
+      "pass_id": "sew-t03-first-reading-2026-11-08",
+      "method": "Direct visual reading of full annotation-cleaned 144 dpi page PNGs, plus enlarged crops at 288-720 dpi and a contact sheet of every hashed source region; no OCR, no paid service, no delegation",
+      "observations": "First visual transcription only. Every printed glyph, power, subscript, inequality, unit, hyphen spacing, footnote and printed error was read from the rendered source and retained or flagged; no value inferred."
+    }
+  },
+  "source_image_refs": [
+    {
+      "path": "tmp/pdfs/sew-t03/SEW-2013-A--Ep356-2.png",
+      "role": "first-reading source crop"
+    }
+  ]
+}

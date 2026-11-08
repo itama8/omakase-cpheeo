@@ -13,56 +13,56 @@
       "pdf_page": 462,
       "page_label": "5 - 158",
       "bbox": [
-        64.0,
-        55.0,
-        492.0,
-        762.0
+        71.0,
+        79.0,
+        487.0,
+        747.0
       ],
-      "render_sha256": "08b63f75fc6dfcbf161c1ad1eb73c858d1202dca3f4004242a029dbadbf2e9d5"
+      "render_sha256": "80dcb0c6bb0481441ee5d782f442bfcfff8b3bb6e1849b2d74cdcf40ab25527e"
     },
     {
       "pdf_page": 463,
       "page_label": "5 - 159",
       "bbox": [
-        100.0,
-        80.0,
-        527.0,
-        756.0
+        104.0,
+        85.0,
+        523.0,
+        750.0
       ],
-      "render_sha256": "729cd00ec368043eb19410d67a54647623cc033167643829dfc5efb70fd0dbf4"
+      "render_sha256": "e866a62219dc325409066f3b98565a7a143c7affbd123e6bcf657081a16a8314"
     },
     {
       "pdf_page": 464,
       "page_label": "5 - 160",
       "bbox": [
-        94.0,
-        70.0,
-        520.0,
-        770.0
+        98.0,
+        75.0,
+        516.0,
+        765.0
       ],
-      "render_sha256": "60a98849b1b0abff1d806e72df64788f929558bd94313e877bfd99bea86667fa"
+      "render_sha256": "c981578e1b6a793c10bf7abc3a4ef2bb6432188f9e15634cb2767d043049b6bf"
     },
     {
       "pdf_page": 465,
       "page_label": "5 - 161",
       "bbox": [
-        89.0,
-        78.0,
-        515.0,
-        755.0
+        92.0,
+        82.0,
+        511.0,
+        750.0
       ],
-      "render_sha256": "5a90f43850cb0ddf1b4ffeaec99149e84c0f26fce5b8bbc9c99868b3927af3c9"
+      "render_sha256": "ac2c4501a2a9bdfadb8cc982d874c1eefd1163c00f0fd6008e98048e6f48da63"
     },
     {
       "pdf_page": 466,
       "page_label": "5 - 162",
       "bbox": [
-        80.0,
-        55.0,
-        503.0,
-        770.0
+        83.0,
+        76.0,
+        497.0,
+        753.0
       ],
-      "render_sha256": "b45134dc567b796187a16d3a0e40465ce23d0d06c11acddce435f6acd3e2d164"
+      "render_sha256": "74aa164d6c7092709b865b707b7cf3e23a7d8e0986c84f80641b8d4703b435e8"
     }
   ],
   "headers": [
