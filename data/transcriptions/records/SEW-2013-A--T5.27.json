@@ -1,0 +1,138 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:T5.27",
+  "unit_id": "SEW-2013-A:T5.27",
+  "manual_id": "SEW-2013-A",
+  "kind": "table",
+  "number": "5.27",
+  "title": "Piping Materials in Sewerage and Sewage Treatment",
+  "state": "verified",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "regions": [
+    {
+      "pdf_page": 455,
+      "page_label": "5 - 151",
+      "bbox": [
+        67.9,
+        73.5,
+        531.1,
+        755.6
+      ],
+      "render_sha256": "636699629cb334ca74e3f4185e0436ccbed76ad79985893599716942eba8b6e5"
+    }
+  ],
+  "headers": [
+    "Typical Application",
+    "Concentration in %",
+    "Materials"
+  ],
+  "rows": [
+    [
+      "Influent",
+      "0.5 to 2",
+      "C, CL, RCP, RC, VC"
+    ],
+    [
+      "Secondary Solids",
+      "0.5 to 2",
+      "C, HP, PE, CI"
+    ],
+    [
+      "Primary solids",
+      "0.2 to1",
+      "C, G, T, HP, PE, D, CI"
+    ],
+    [
+      "Thickened Sludge",
+      "4 to 10",
+      "C, HP, PE, T, CI, D"
+    ],
+    [
+      "Digested Sludge",
+      "3 to 10",
+      "C, HP, PE, T, CI"
+    ],
+    [
+      "Chemically treated sludge",
+      "8 to 26",
+      "C, HP, PE, H, CI"
+    ],
+    [
+      "Dewatered sludge",
+      "8 to 25",
+      "C, CI"
+    ],
+    [
+      "Heat Exchanger",
+      "< 0.1",
+      "S"
+    ],
+    [
+      "Spray irrigation",
+      "< 0.1",
+      "C, CI, T, A, HP, PE"
+    ],
+    [
+      "Chemical Process Piping",
+      "",
+      "C, CI, S, G, T, HP, PE, H, D"
+    ],
+    [
+      "Aluminium Sulphate",
+      "15 to 22",
+      "C, D, H, HP, PE, T, S"
+    ],
+    [
+      "Calcium Hydroxide",
+      "63 to 73",
+      "C, CI, D, G, H, HP, PE, S, T"
+    ],
+    [
+      "Calcium Hydroxide",
+      "85 to 99",
+      "C, CI, D, G, H, HP, PE, S, T"
+    ],
+    [
+      "Sulphuric Acid",
+      "93",
+      "S, G"
+    ],
+    [
+      "Ferric Chloride",
+      "59 to 98",
+      "C, H"
+    ],
+    [
+      "Sodium Hydroxide",
+      "73",
+      "C, S, H"
+    ],
+    [
+      "Carbon Slurry",
+      "20 to 30",
+      "G"
+    ]
+  ],
+  "cell_spans": [],
+  "markdown": "| Typical Application | Concentration in % | Materials |\n| --- | --- | --- |\n| Influent | 0.5 to 2 | C, CL, RCP, RC, VC |\n| Secondary Solids | 0.5 to 2 | C, HP, PE, CI |\n| Primary solids | 0.2 to1 | C, G, T, HP, PE, D, CI |\n| Thickened Sludge | 4 to 10 | C, HP, PE, T, CI, D |\n| Digested Sludge | 3 to 10 | C, HP, PE, T, CI |\n| Chemically treated sludge | 8 to 26 | C, HP, PE, H, CI |\n| Dewatered sludge | 8 to 25 | C, CI |\n| Heat Exchanger | < 0.1 | S |\n| Spray irrigation | < 0.1 | C, CI, T, A, HP, PE |\n| Chemical Process Piping |  | C, CI, S, G, T, HP, PE, H, D |\n| Aluminium Sulphate | 15 to 22 | C, D, H, HP, PE, T, S |\n| Calcium Hydroxide | 63 to 73 | C, CI, D, G, H, HP, PE, S, T |\n| Calcium Hydroxide | 85 to 99 | C, CI, D, G, H, HP, PE, S, T |\n| Sulphuric Acid | 93 | S, G |\n| Ferric Chloride | 59 to 98 | C, H |\n| Sodium Hydroxide | 73 | C, S, H |\n| Carbon Slurry | 20 to 30 | G |",
+  "notes": [
+    "Source: CPHEEO, 1993",
+    "Legend printed below the table: C - Carbon Steel; S - Stainless Steel; G - Glass Lined; A - Aluminium; T - Teflon lined; P - High Density Polyethylene; PE – Polyethylene; CI - Cast Iron; D - Ductile iron; H - Plastic or rubber hose; RCP- Reinforced Plastic mortar; RC - Reinforced concrete; VC - Vitrified clay.",
+    "Printed as 'CL' in the Influent row and printed as 'HP' in many material lists, while the legend defines 'CI' (Cast Iron) and 'P' (High Density Polyethylene). Both are retained verbatim; not corrected.",
+    "Printed as '0.2 to1' in the Primary solids row (no space before 1); retained verbatim.",
+    "Chemical Process Piping prints no concentration value; the cell is retained as empty."
+  ],
+  "verification": {
+    "transcription": {
+      "pass_id": "sew-t05-first-reading",
+      "method": "Direct visual reading of the annotation-cleaned 144 dpi full-page PNGs and 288-300 dpi region crops, with sideways pages rotated upright before reading; no OCR, no native-text values, no paid service",
+      "observations": "First reading only. Every cell, power, dash, blank and footnote was read from the image and retained as printed; printed anomalies are listed in notes and were not corrected."
+    },
+    "visual_recheck": {
+      "pass_id": "parent-codex-sew-t05-2026-11-08",
+      "method": "Distinct parent visual comparison against source-region PNGs and rotated or zoomed crops; not independent human review",
+      "observations": "Compared every table cell and formula term; checked footnotes, blank cells, numerical outliers and skipped row numbering. ",
+      "content_sha256": "3041b37ce9f84837b1c9c2e83ebbccfdc3122a84523c606c923130382f4964ba"
+    }
+  }
+}

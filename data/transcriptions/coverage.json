@@ -5,17 +5,17 @@
     "SEW-2013-A": {
       "physical_pages": 963,
       "review_scope_pages": 871,
-      "pages_reviewed": 86,
+      "pages_reviewed": 266,
       "pages_partially_reviewed": 1,
-      "pages_remaining_including_partial": 785,
+      "pages_remaining_including_partial": 605,
       "indexed_tables": 192,
       "baseline_image_table_units": 192,
-      "discovered_table_units_verified": 3,
-      "baseline_image_table_units_verified": 48,
-      "baseline_image_table_units_pending": 144,
+      "discovered_table_units_verified": 12,
+      "baseline_image_table_units_verified": 93,
+      "baseline_image_table_units_pending": 99,
       "native_table_units_without_visual_transcription": 0,
-      "verified_tables": 51,
-      "verified_equations": 89
+      "verified_tables": 105,
+      "verified_equations": 149
     },
     "WS-2024-A": {
       "physical_pages": 1283,

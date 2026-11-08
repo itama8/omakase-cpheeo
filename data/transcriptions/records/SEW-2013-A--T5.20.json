@@ -1,0 +1,75 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:T5.20",
+  "unit_id": "SEW-2013-A:T5.20",
+  "manual_id": "SEW-2013-A",
+  "kind": "table",
+  "number": "5.20",
+  "title": "Recommended Guidelines for Treated Sewage if Discharged into Surface Water to be used as source of Drinking Water",
+  "state": "verified",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "regions": [
+    {
+      "pdf_page": 424,
+      "page_label": "5 - 120",
+      "bbox": [
+        85.2,
+        255.9,
+        508.8,
+        435.3
+      ],
+      "render_sha256": "55a1a9f06cb78638078ab406a371ceacc332dd546b3de9e7c164adb9283f0187"
+    }
+  ],
+  "headers": [
+    "Parameter",
+    "MOEF Standards (A)",
+    "Recommended Values"
+  ],
+  "rows": [
+    [
+      "BOD, mg/L",
+      "30",
+      "Less than 10"
+    ],
+    [
+      "SS, mg/L",
+      "100",
+      "Less than 10"
+    ],
+    [
+      "TN, mg/L",
+      "100",
+      "Less than 10"
+    ],
+    [
+      "Dissolved P, mg/L",
+      "5",
+      "Less than 2"
+    ],
+    [
+      "Faecal Coliforms, MPN/100 mL",
+      "Not specified",
+      "Less than 230"
+    ]
+  ],
+  "cell_spans": [],
+  "markdown": "| Parameter | MOEF Standards (A) | Recommended Values |\n| --- | --- | --- |\n| BOD, mg/L | 30 | Less than 10 |\n| SS, mg/L | 100 | Less than 10 |\n| TN, mg/L | 100 | Less than 10 |\n| Dissolved P, mg/L | 5 | Less than 2 |\n| Faecal Coliforms, MPN/100 mL | Not specified | Less than 230 |",
+  "notes": [
+    "Footnote printed below the table: (A) General Standards, Environmental Protection Rule, 1986 & as authorised by PCB",
+    "The two printed caption lines are joined in the title as a single string."
+  ],
+  "verification": {
+    "transcription": {
+      "pass_id": "sew-t05-first-reading",
+      "method": "Direct visual reading of the annotation-cleaned 144 dpi full-page PNGs and 288-300 dpi region crops, with sideways pages rotated upright before reading; no OCR, no native-text values, no paid service",
+      "observations": "First reading only. Every cell, power, dash, blank and footnote was read from the image and retained as printed; printed anomalies are listed in notes and were not corrected."
+    },
+    "visual_recheck": {
+      "pass_id": "parent-codex-sew-t05-2026-11-08",
+      "method": "Distinct parent visual comparison against source-region PNGs and rotated or zoomed crops; not independent human review",
+      "observations": "Compared every table cell and formula term; checked footnotes, blank cells, numerical outliers and skipped row numbering. ",
+      "content_sha256": "029b5a97e5cb9fd013426d12af579c5ed324ec47021db6f0ff3b50444f97bf8f"
+    }
+  }
+}

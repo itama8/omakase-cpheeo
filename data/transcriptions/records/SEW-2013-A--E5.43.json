@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:E5.43",
+  "unit_id": "SEW-2013-A:E5.43",
+  "manual_id": "SEW-2013-A",
+  "kind": "equation",
+  "number": "5.43",
+  "title": "Nominal speed of an electric motor",
+  "state": "verified",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "regions": [
+    {
+      "pdf_page": 436,
+      "page_label": "5 - 132",
+      "bbox": [
+        53.0,
+        141.9,
+        513.2,
+        219.6
+      ],
+      "render_sha256": "8ef80d87b931e16adf4e0f44a305c229f501e73e0f9461cd3142b65c4a9cfce4"
+    }
+  ],
+  "latex": "N = \\frac{120 \\times f}{P}",
+  "readable": "N = 120 × f / P",
+  "symbols": [
+    {
+      "symbol": "f",
+      "definition": "Supply frequency in cycles/second and"
+    },
+    {
+      "symbol": "P",
+      "definition": "Number of magnetic poles created in the stator winding."
+    }
+  ],
+  "applicability": "The printed lead-in states that the speed of an electric motor is dependent on the supply frequency and the number of magnetic poles created in the stator winding, and that the formula gives it.",
+  "notes": [
+    "Equation number (5.43) is printed at the right margin of the formula line.",
+    "N is not defined in the printed symbol list; only f and P are defined. No definition has been inferred. The following printed sentence gives the worked context 'A normal 4-pole motor runs at a nominal speed of 1500 rpm'.",
+    "The printed definition of f ends with the conjunction 'and', which is retained verbatim.",
+    "Multiplication is printed with the multiplication sign ×, and the division is printed inline as a slash."
+  ],
+  "verification": {
+    "transcription": {
+      "pass_id": "sew-t05-first-reading",
+      "method": "Direct visual reading of the annotation-cleaned 144 dpi full-page PNGs and 288-300 dpi region crops, with sideways pages rotated upright before reading; no OCR, no native-text values, no paid service",
+      "observations": "First reading only. Every cell, power, dash, blank and footnote was read from the image and retained as printed; printed anomalies are listed in notes and were not corrected."
+    },
+    "visual_recheck": {
+      "pass_id": "parent-codex-sew-t05-2026-11-08",
+      "method": "Distinct parent visual comparison against source-region PNGs and rotated or zoomed crops; not independent human review",
+      "observations": "Compared every table cell and formula term; checked footnotes, blank cells, numerical outliers and skipped row numbering. ",
+      "content_sha256": "2d537ba43997d314867071e94877f14bcc8452db0a2c335607ca584f3d46217b"
+    }
+  },
+  "parent_id": "SEW-2013-A:5.12.3.15"
+}

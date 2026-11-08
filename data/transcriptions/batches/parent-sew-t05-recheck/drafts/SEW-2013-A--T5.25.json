@@ -1,0 +1,99 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:T5.25",
+  "unit_id": "SEW-2013-A:T5.25",
+  "manual_id": "SEW-2013-A",
+  "kind": "table",
+  "number": "5.25",
+  "title": "Guidelines for starters for squirrel-cage motors",
+  "state": "pending",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "regions": [
+    {
+      "pdf_page": 435,
+      "page_label": "5 - 131",
+      "bbox": [
+        58.3,
+        73.9,
+        516.0,
+        440.6
+      ],
+      "render_sha256": "ad63d3387f26b6e48745230e81834f19d09855241418757e170ce97d224a372b"
+    }
+  ],
+  "headers": [
+    "Type of Starter",
+    "Percentage of Voltage Reduction",
+    "Maximum Starting Current",
+    "Ratio of starting torque to locked rotor torques %"
+  ],
+  "rows": [
+    [
+      "DOL",
+      "Nil",
+      "6 × FLC",
+      "100"
+    ],
+    [
+      "Star-delta",
+      "58%",
+      "2 × FLC",
+      "33"
+    ],
+    [
+      "Auto-Transformer",
+      "tap 50%",
+      "1.68 × FLC",
+      "25"
+    ],
+    [
+      "",
+      "tap 65%",
+      "2.7 × FLC",
+      "42"
+    ],
+    [
+      "",
+      "tap 80%",
+      "4 × FLC",
+      "64"
+    ],
+    [
+      "Soft Start",
+      "40% to 65%",
+      "3 × FLC",
+      ""
+    ],
+    [
+      "Variable Frequency Drive",
+      "40% to 90%",
+      "2.5 × FLC to 5 × FLC",
+      "20 to 80"
+    ]
+  ],
+  "cell_spans": [
+    {
+      "row": 2,
+      "column": 0,
+      "rowspan": 3
+    }
+  ],
+  "markdown": "| Type of Starter | Percentage of Voltage Reduction | Maximum Starting Current | Ratio of starting torque to locked rotor torques % |\n| --- | --- | --- | --- |\n| DOL | Nil | 6 × FLC | 100 |\n| Star-delta | 58% | 2 × FLC | 33 |\n| Auto-Transformer | tap 50% | 1.68 × FLC | 25 |\n|  | tap 65% | 2.7 × FLC | 42 |\n|  | tap 80% | 4 × FLC | 64 |\n| Soft Start | 40% to 65% | 3 × FLC |  |\n| Variable Frequency Drive | 40% to 90% | 2.5 × FLC to 5 × FLC | 20 to 80 |",
+  "notes": [
+    "FLC= Full Load Current.",
+    "Note: As per torque speed characteristics of the motor, the torque of the motor at the chosen percentage of reduced voltage shall be adequate to accelerate the pump to the full speed. The starting torque of a pump is usually low at about 20% to 25% of the full load torque. Therefore, even a voltage reduction of 60% to 65% during starting can accelerate the pump.",
+    "Source: CPHEEO, 1993",
+    "The Auto-Transformer Type cell is printed once for the three tap rows; rows 4 and 5 leave the Type cell empty and cell_spans records the vertical merge.",
+    "Soft Start prints no torque ratio; the cell is retained as empty rather than filled from a neighbouring row.",
+    "Draft only: unit existence in the built index was not checked, because data/build is out of scope for this batch."
+  ],
+  "verification": {
+    "transcription": {
+      "pass_id": "sew-t05-first-reading",
+      "method": "Direct visual reading of the annotation-cleaned 144 dpi full-page PNGs and 288-300 dpi region crops, with sideways pages rotated upright before reading; no OCR, no native-text values, no paid service",
+      "observations": "First reading only. Every cell, power, dash, blank and footnote was read from the image and retained as printed; printed anomalies are listed in notes and were not corrected."
+    }
+  },
+  "create_unit": true,
+  "parent_id": "SEW-2013-A:5.12.3.13"
+}

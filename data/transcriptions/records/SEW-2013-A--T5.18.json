@@ -1,0 +1,239 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:T5.18",
+  "unit_id": "SEW-2013-A:T5.18",
+  "manual_id": "SEW-2013-A",
+  "kind": "table",
+  "number": "5.18",
+  "title": "Classification of Ganga water at various locations according to designated best use",
+  "state": "verified",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "regions": [
+    {
+      "pdf_page": 417,
+      "page_label": "5 - 113",
+      "bbox": [
+        61.7,
+        73.9,
+        538.8,
+        764.6
+      ],
+      "render_sha256": "d64dac77af09ec1cf1f99c7c5911233a58fccc868dd197d176c096f80de989b8"
+    }
+  ],
+  "headers": [
+    "Locations",
+    "Desired Class",
+    "Observed Class: 1997",
+    "Observed Class: 1998",
+    "Observed Class: 1999",
+    "Observed Class: 2000",
+    "Observed Class: 2001",
+    "Observed Class: 2008*"
+  ],
+  "rows": [
+    [
+      "Rishikesh",
+      "A",
+      "D",
+      "B",
+      "C",
+      "NA",
+      "C",
+      "B"
+    ],
+    [
+      "Haridwar",
+      "B",
+      "C",
+      "C",
+      "C",
+      "NA",
+      "C",
+      "B"
+    ],
+    [
+      "Garhmukteshwar",
+      "B",
+      "B",
+      "B",
+      "D",
+      "NA",
+      "D",
+      "NA"
+    ],
+    [
+      "Kannauj U/S",
+      "B",
+      "D",
+      "D",
+      "D",
+      "D",
+      "D",
+      "D"
+    ],
+    [
+      "Kannauj D/S",
+      "B",
+      "D",
+      "D",
+      "D",
+      "D",
+      "D",
+      "D"
+    ],
+    [
+      "Kanpur D/S",
+      "B",
+      "D",
+      "NA",
+      "D",
+      "D",
+      "D",
+      "D"
+    ],
+    [
+      "Raibarreilly",
+      "B",
+      "D",
+      "D",
+      "D",
+      "NA",
+      "NA",
+      "NA"
+    ],
+    [
+      "Allahabad U/S",
+      "B",
+      "D",
+      "E",
+      "D",
+      "NA",
+      "NA",
+      "C"
+    ],
+    [
+      "Allahabad D/S",
+      "B",
+      "D",
+      "E",
+      "D",
+      "NA",
+      "NA",
+      "D"
+    ],
+    [
+      "Varanasi U/S",
+      "B",
+      "D",
+      "D",
+      "D",
+      "",
+      "D",
+      "D"
+    ],
+    [
+      "Varanasi D/S",
+      "E",
+      "E",
+      "E",
+      "E",
+      "NA",
+      "NA",
+      "D"
+    ],
+    [
+      "Gazipur",
+      "B",
+      "D",
+      "D",
+      "D",
+      "D",
+      "NA",
+      "NA"
+    ],
+    [
+      "Buxar",
+      "B",
+      "D",
+      "D",
+      "D",
+      "D",
+      "D",
+      "C"
+    ],
+    [
+      "Patna U/S",
+      "B",
+      "D",
+      "D",
+      "D",
+      "D",
+      "D",
+      "NA"
+    ],
+    [
+      "Patna D/S",
+      "B",
+      "D",
+      "D",
+      "D",
+      "D",
+      "D",
+      "NA"
+    ],
+    [
+      "Rajmahal",
+      "B",
+      "D",
+      "D",
+      "D",
+      "D",
+      "D",
+      "D"
+    ],
+    [
+      "Palta",
+      "B",
+      "D",
+      "B",
+      "NA",
+      "D",
+      "D",
+      "D"
+    ],
+    [
+      "Uluberia",
+      "B",
+      "D",
+      "B",
+      "NA",
+      "D",
+      "D",
+      "D"
+    ]
+  ],
+  "cell_spans": [],
+  "markdown": "| Locations | Desired Class | Observed Class: 1997 | Observed Class: 1998 | Observed Class: 1999 | Observed Class: 2000 | Observed Class: 2001 | Observed Class: 2008* |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| Rishikesh | A | D | B | C | NA | C | B |\n| Haridwar | B | C | C | C | NA | C | B |\n| Garhmukteshwar | B | B | B | D | NA | D | NA |\n| Kannauj U/S | B | D | D | D | D | D | D |\n| Kannauj D/S | B | D | D | D | D | D | D |\n| Kanpur D/S | B | D | NA | D | D | D | D |\n| Raibarreilly | B | D | D | D | NA | NA | NA |\n| Allahabad U/S | B | D | E | D | NA | NA | C |\n| Allahabad D/S | B | D | E | D | NA | NA | D |\n| Varanasi U/S | B | D | D | D |  | D | D |\n| Varanasi D/S | E | E | E | E | NA | NA | D |\n| Gazipur | B | D | D | D | D | NA | NA |\n| Buxar | B | D | D | D | D | D | C |\n| Patna U/S | B | D | D | D | D | D | NA |\n| Patna D/S | B | D | D | D | D | D | NA |\n| Rajmahal | B | D | D | D | D | D | D |\n| Palta | B | D | B | NA | D | D | D |\n| Uluberia | B | D | B | NA | D | D | D |",
+  "notes": [
+    "Source: MOEF, 2009",
+    "This record transcribes the upper 'Observed Class' panel of Table 5.18. The lower 'Critical Parameter' panel of the same printed table has seven columns of its own and is authored separately as SEW-2013-A:Tp417-1, because one record must hold a rectangular grid.",
+    "2008* is printed with an asterisk; no asterisk footnote is printed in the table or in the A-E / CF legend block.",
+    "Varanasi U/S prints an empty 2000 cell. The blank is retained; it is not read as NA.",
+    "Class letters D and E are retained exactly; the page's legend defines A- to E- designations and CF- Coliform Indicator Organisms and is reproduced in notes of SEW-2013-A:Tp417-1.",
+    "Locations printed as Raibarreilly and Gazipur are retained as printed."
+  ],
+  "verification": {
+    "transcription": {
+      "pass_id": "sew-t05-first-reading",
+      "method": "Direct visual reading of the annotation-cleaned 144 dpi full-page PNGs and 288-300 dpi region crops, with sideways pages rotated upright before reading; no OCR, no native-text values, no paid service",
+      "observations": "First reading only. Every cell, power, dash, blank and footnote was read from the image and retained as printed; printed anomalies are listed in notes and were not corrected."
+    },
+    "visual_recheck": {
+      "pass_id": "parent-codex-sew-t05-2026-11-08",
+      "method": "Distinct parent visual comparison against source-region PNGs and rotated or zoomed crops; not independent human review",
+      "observations": "Compared every table cell and formula term; checked footnotes, blank cells, numerical outliers and skipped row numbering. Corrected location spelling to printed Raibarreilly after zoomed comparison.",
+      "content_sha256": "60d2f45095ea05e7b5a09ae1e0136775ef7b97e6dac487fe05485cffc2b166ae"
+    }
+  }
+}

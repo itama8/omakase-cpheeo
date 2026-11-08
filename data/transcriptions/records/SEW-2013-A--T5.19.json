@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:T5.19",
+  "unit_id": "SEW-2013-A:T5.19",
+  "manual_id": "SEW-2013-A",
+  "kind": "table",
+  "number": "5.19",
+  "title": "Technical factors and feasibility considerations in disinfectant choice",
+  "state": "verified",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "regions": [
+    {
+      "pdf_page": 422,
+      "page_label": "5 - 118",
+      "bbox": [
+        72.2,
+        451.2,
+        517.0,
+        674.5
+      ],
+      "render_sha256": "ab2997f297d3b1f08e6cdcfe7195677e289f536edd8ffc898adb8df8a5179503"
+    }
+  ],
+  "headers": [
+    "No.",
+    "Considerations",
+    "Chlorine",
+    "Chlorine Dioxide",
+    "Ozone",
+    "UV"
+  ],
+  "rows": [
+    [
+      "1",
+      "Flexibility",
+      "2",
+      "2",
+      "2",
+      "2"
+    ],
+    [
+      "2",
+      "Reliability",
+      "1",
+      "2",
+      "3",
+      "2"
+    ],
+    [
+      "3",
+      "Complexity",
+      "2",
+      "3",
+      "3",
+      "2"
+    ],
+    [
+      "4",
+      "Effectiveness",
+      "2",
+      "1",
+      "1",
+      "2"
+    ],
+    [
+      "5",
+      "Need for Piloting",
+      "1",
+      "4",
+      "3",
+      "3"
+    ],
+    [
+      "Rating based on scale of 1 to 5 with 1 indicating best degree of confidence",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ]
+  ],
+  "cell_spans": [
+    {
+      "row": 5,
+      "column": 0,
+      "colspan": 6
+    }
+  ],
+  "markdown": "| No. | Considerations | Chlorine | Chlorine Dioxide | Ozone | UV |\n| --- | --- | --- | --- | --- | --- |\n| 1 | Flexibility | 2 | 2 | 2 | 2 |\n| 2 | Reliability | 1 | 2 | 3 | 2 |\n| 3 | Complexity | 2 | 3 | 3 | 2 |\n| 4 | Effectiveness | 2 | 1 | 1 | 2 |\n| 5 | Need for Piloting | 1 | 4 | 3 | 3 |\n| Rating based on scale of 1 to 5 with 1 indicating best degree of confidence |  |  |  |  |  |",
+  "notes": [
+    "Source: USEPA-EPA/625/1-86/021",
+    "The bottom line is printed inside the table border and spans all six columns; it is kept as a table row with a full-width cell rather than dropped into notes.",
+    "Row ratings are printed integers only. No scale direction was inferred beyond the printed footnote text."
+  ],
+  "verification": {
+    "transcription": {
+      "pass_id": "sew-t05-first-reading",
+      "method": "Direct visual reading of the annotation-cleaned 144 dpi full-page PNGs and 288-300 dpi region crops, with sideways pages rotated upright before reading; no OCR, no native-text values, no paid service",
+      "observations": "First reading only. Every cell, power, dash, blank and footnote was read from the image and retained as printed; printed anomalies are listed in notes and were not corrected."
+    },
+    "visual_recheck": {
+      "pass_id": "parent-codex-sew-t05-2026-11-08",
+      "method": "Distinct parent visual comparison against source-region PNGs and rotated or zoomed crops; not independent human review",
+      "observations": "Compared every table cell and formula term; checked footnotes, blank cells, numerical outliers and skipped row numbering. ",
+      "content_sha256": "4af85af421226b5c0e237733aa92c6d39498efc7071cd0f45830a9c4c72e5e22"
+    }
+  }
+}

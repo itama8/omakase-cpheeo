@@ -1,0 +1,101 @@
+{
+  "batch": "sew-t05",
+  "verified_records": [
+    {
+      "id": "SEW-2013-A:E5.43",
+      "draft_sha256": "4d0d85ee3c3e15db6d3ef6a04e904059b8089178297f7e255517896485decdac",
+      "content_sha256": "2d537ba43997d314867071e94877f14bcc8452db0a2c335607ca584f3d46217b",
+      "corrections": []
+    },
+    {
+      "id": "SEW-2013-A:T5.17",
+      "draft_sha256": "c8e84614f017bc11a67fe9460c0dc27aea6679f6fdc67a05f6b230b1f7d69548",
+      "content_sha256": "3ce409a6ea9c03d885a9cff19aa7691d7d811c1dab71a0a81f2ba97224c44d80",
+      "corrections": []
+    },
+    {
+      "id": "SEW-2013-A:T5.18",
+      "draft_sha256": "64195205f5e4d499765e76df844187e707d99cf6c7f8ce1ee0a02753c3a91e43",
+      "content_sha256": "60d2f45095ea05e7b5a09ae1e0136775ef7b97e6dac487fe05485cffc2b166ae",
+      "corrections": [
+        "Corrected location spelling to printed Raibarreilly after zoomed comparison."
+      ]
+    },
+    {
+      "id": "SEW-2013-A:T5.19",
+      "draft_sha256": "0abcb89db5aa8176321182a439af8422778070b6482cdba44ef5394cd56a1660",
+      "content_sha256": "4af85af421226b5c0e237733aa92c6d39498efc7071cd0f45830a9c4c72e5e22",
+      "corrections": []
+    },
+    {
+      "id": "SEW-2013-A:T5.20",
+      "draft_sha256": "db511a54b0a79c5af52af1c7cc040ab0a89748008bab25b792f4f5bd45492a87",
+      "content_sha256": "029b5a97e5cb9fd013426d12af579c5ed324ec47021db6f0ff3b50444f97bf8f",
+      "corrections": []
+    },
+    {
+      "id": "SEW-2013-A:T5.21",
+      "draft_sha256": "66eaa9445735bc400092b41eab64ba21de074992bbac9ef8e24898ee840d2529",
+      "content_sha256": "02c4ed1559603c07171f57d770fe2f79ef3972929058a63fd0c7f202ad1c2560",
+      "corrections": []
+    },
+    {
+      "id": "SEW-2013-A:T5.22",
+      "draft_sha256": "01ba73a3606d3ad9832617960cfb1f2669fda7b003b6356d6cf01add9302db0f",
+      "content_sha256": "cf781a5d6323888394f77d7ac3e7c1faa2f3bb632f5a16109900cbd6f0805c78",
+      "corrections": []
+    },
+    {
+      "id": "SEW-2013-A:T5.23",
+      "draft_sha256": "f530f128702d9b0ffeacdb0d4e47f3c809e9013069b3fde433c1d0a3478500a1",
+      "content_sha256": "81be586e04a04dbfe02345ea1e9d0ba0017500ab19e1f438e363e0a60dec0eb0",
+      "corrections": []
+    },
+    {
+      "id": "SEW-2013-A:T5.24",
+      "draft_sha256": "d1ee86335c268a23d3a80944392160aeb974a1bd5503ba7aee18335c6701e9b8",
+      "content_sha256": "162c51d98c0fdae0d4be2cc6c323b62554d65ee1b37d4fb22d19d19a6d100f3b",
+      "corrections": []
+    },
+    {
+      "id": "SEW-2013-A:T5.25",
+      "draft_sha256": "f512cac149d4b05e600b4c091107f95592a737da69d5edd986028541a27a0425",
+      "content_sha256": "6980cd3ad62b520d5532d8cfa78cffe17ed9aee063dd48808fc66d11979ea6e3",
+      "corrections": [
+        "Removed inferred rowspan across separately bordered Type cells."
+      ]
+    },
+    {
+      "id": "SEW-2013-A:T5.26",
+      "draft_sha256": "4573e5fadd6c7126e56fd9b080d57123e8ed856b01dc914ece05f20fa60a66c0",
+      "content_sha256": "ccaa83f71e36731260027a16a561b859acbb78992d04994fb68e3e1048f08608",
+      "corrections": [
+        "Added No cell rowspan for the two expanded voltage lines of printed row 1."
+      ]
+    },
+    {
+      "id": "SEW-2013-A:T5.27",
+      "draft_sha256": "9480dbe815af2cf18dba5d314b36c1f805caf5cbaaced3591a14b1ff1fae59a3",
+      "content_sha256": "3041b37ce9f84837b1c9c2e83ebbccfdc3122a84523c606c923130382f4964ba",
+      "corrections": []
+    },
+    {
+      "id": "SEW-2013-A:Tp417-1",
+      "draft_sha256": "664e350a9207fa3d7564b2df1cf47910800746cc17043d0fe3a1721da18d194d",
+      "content_sha256": "005305bf6dedfb92a23aa858bbb5d2fcc87180d29a26325dfba0d5a41ab91e28",
+      "corrections": [
+        "Corrected location spelling to printed Raibarreilly after zoomed comparison."
+      ]
+    },
+    {
+      "id": "SEW-2013-A:Tp418-1",
+      "draft_sha256": "e937e4db7a222aadbba29a903af17ce609a7badeccba1c4d9ea4e43b4fb3f15b",
+      "content_sha256": "3ab421dc59a76dba83fb55bb11300fe659f23503190df97d06c8d2bf14db0e0f",
+      "corrections": [
+        "Corrected entry 69 to printed Dakshineswar (Middle)."
+      ]
+    }
+  ],
+  "page_discovery_recheck": "Compared all 30 full-page contact-sheet images with child report; all target regions separately checked at readable scale.",
+  "limitations": "Assistant visual transcription and second comparison, not independent human verification or a claim of perfect accuracy."
+}

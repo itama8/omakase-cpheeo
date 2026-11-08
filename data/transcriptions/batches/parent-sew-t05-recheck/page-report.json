@@ -1,0 +1,353 @@
+[
+  {
+    "pdf_page": 415,
+    "page_label": "5 - 111",
+    "targets": [],
+    "no_targets_reason": "Figure 5.50 only: a schematic traverse diagram of the Ganga with place names and dam/barrage symbols. No tabular grid and no equation printed; the diagram was not converted into invented relations.",
+    "continuations": [
+      "Section 5.9.1 river-quality discussion continues on 416."
+    ],
+    "unclear": [],
+    "image_viewed": "tmp/pdfs/sew-t05/page-415.png"
+  },
+  {
+    "pdf_page": 416,
+    "page_label": "5 - 112",
+    "targets": [
+      "SEW-2013-A:T5.17"
+    ],
+    "no_targets_reason": null,
+    "continuations": [
+      "Table 5.17 is a self-contained numbered table followed by its (a)/(b) key and an MOEF source line."
+    ],
+    "unclear": [
+      "No unreadable glyph. Two cells are printed outliers (1993 (a) = 5.2 and 1993 (b) = 24.5 on row 7 Kanpur D/S); both were re-read at 288 dpi and are transcribed as printed."
+    ],
+    "image_viewed": "tmp/pdfs/sew-t05/page-416.png"
+  },
+  {
+    "pdf_page": 417,
+    "page_label": "5 - 113",
+    "targets": [
+      "SEW-2013-A:T5.18",
+      "SEW-2013-A:Tp417-1"
+    ],
+    "no_targets_reason": null,
+    "continuations": [
+      "Table 5.18 is one printed grid with two panels: the upper Observed Class panel is SEW-2013-A:T5.18 and the lower Critical Parameter panel is SEW-2013-A:Tp417-1, split so each record holds a rectangular grid.",
+      "The A-E / CF legend printed under the table is reproduced in the notes of SEW-2013-A:Tp417-1."
+    ],
+    "unclear": [
+      "The 2008* column carries an asterisk with no printed asterisk footnote anywhere on the page. Left as printed."
+    ],
+    "image_viewed": "tmp/pdfs/sew-t05/page-417.png"
+  },
+  {
+    "pdf_page": 418,
+    "page_label": "5 - 114",
+    "targets": [
+      "SEW-2013-A:Tp418-1"
+    ],
+    "no_targets_reason": null,
+    "continuations": [
+      "Figure 5.51 chart is not a transcription target; its boxed 70-entry location key is transcribed as the unnumbered table SEW-2013-A:Tp418-1."
+    ],
+    "unclear": [
+      "The same key is printed again on 419; also noted there."
+    ],
+    "image_viewed": "tmp/pdfs/sew-t05/page-418.png"
+  },
+  {
+    "pdf_page": 419,
+    "page_label": "5 - 115",
+    "targets": [
+      "SEW-2013-A:Tp418-1"
+    ],
+    "no_targets_reason": null,
+    "continuations": [
+      "Figure 5.52 reproduces the identical boxed location key; the second page region is attached to SEW-2013-A:Tp418-1 instead of a duplicate record.",
+      "Horizontal Class A / B / C reference lines on the chart are not tables or equations."
+    ],
+    "unclear": [],
+    "image_viewed": "tmp/pdfs/sew-t05/page-419.png"
+  },
+  {
+    "pdf_page": 420,
+    "page_label": "5 - 116",
+    "targets": [],
+    "no_targets_reason": "Prose only. Inline chemical formulae for the de-chlorination chemicals (SO2, Na2S2O3, Na2SO3, NaHSO3, Na2S2O5, CaS2O3) are running text with subscripts, not numbered or displayed equations.",
+    "continuations": [
+      "Section 5.9.2 chlorination discussion continues from 419."
+    ],
+    "unclear": [],
+    "image_viewed": "tmp/pdfs/sew-t05/page-420.png"
+  },
+  {
+    "pdf_page": 422,
+    "page_label": "5 - 118",
+    "targets": [
+      "SEW-2013-A:T5.19"
+    ],
+    "no_targets_reason": null,
+    "continuations": [
+      "The bottom line 'Rating based on scale of 1 to 5 with 1 indicating best degree of confidence' is printed inside the table border and is captured as a full-width final row."
+    ],
+    "unclear": [],
+    "image_viewed": "tmp/pdfs/sew-t05/page-422.png"
+  },
+  {
+    "pdf_page": 424,
+    "page_label": "5 - 120",
+    "targets": [
+      "SEW-2013-A:T5.20"
+    ],
+    "no_targets_reason": null,
+    "continuations": [
+      "Footnote (A) General Standards, Environmental Protection Rule, 1986 & as authorised by PCB is printed under the table and is recorded in notes.",
+      "The figure 5 mg/l chlorine statement in the following prose is not an equation."
+    ],
+    "unclear": [],
+    "image_viewed": "tmp/pdfs/sew-t05/page-424.png"
+  },
+  {
+    "pdf_page": 425,
+    "page_label": "5 - 121",
+    "targets": [],
+    "no_targets_reason": "Figure 5.53 only: three nutrient-removal flow diagrams. The NO3-N -> N2 and NH4-N -> NO3-N labels inside Case 1 are process-pathway labels with arrows, not equations; no equality or formula is printed and no table is printed.",
+    "continuations": [
+      "Page 424 prose refers forward to this figure."
+    ],
+    "unclear": [
+      "Printed duplication: Case 2 and Case 3 are both captioned 'Bardenpho process with Chlorination', although Case 3 shows Anaerobic/Anoxic/Oxic tanks. Retained as printed, not corrected."
+    ],
+    "image_viewed": "tmp/pdfs/sew-t05/page-425.png"
+  },
+  {
+    "pdf_page": 428,
+    "page_label": "5 - 124",
+    "targets": [],
+    "no_targets_reason": "Prose only (sections 5.12.2.5 to 5.12.2.8). No table or equation on the page; the last paragraph refers forward to Table 5.21.",
+    "continuations": [],
+    "unclear": [],
+    "image_viewed": "tmp/pdfs/sew-t05/page-428.png"
+  },
+  {
+    "pdf_page": 429,
+    "page_label": "5 - 125",
+    "targets": [
+      "SEW-2013-A:T5.21"
+    ],
+    "no_targets_reason": null,
+    "continuations": [
+      "The printed Note a)/b) under the table is recorded in notes. The transformer specification list below the table is prose, not a table."
+    ],
+    "unclear": [],
+    "image_viewed": "tmp/pdfs/sew-t05/page-429.png"
+  },
+  {
+    "pdf_page": 431,
+    "page_label": "5 - 127",
+    "targets": [],
+    "no_targets_reason": "Prose only (sections 5.12.3.1 to 5.12.3.5). The closing paragraph refers forward to Table 5.22; no table or equation is printed here.",
+    "continuations": [],
+    "unclear": [],
+    "image_viewed": "tmp/pdfs/sew-t05/page-431.png"
+  },
+  {
+    "pdf_page": 432,
+    "page_label": "5 - 128",
+    "targets": [
+      "SEW-2013-A:T5.22",
+      "SEW-2013-A:T5.23"
+    ],
+    "no_targets_reason": null,
+    "continuations": [
+      "Two numbered tables share the page: Table 5.22 at the top with its source and N.B. lines, Table 5.23 below with section 5.12.3.6."
+    ],
+    "unclear": [
+      "No unreadable glyph. The IP-rating prose after Table 5.23 is text, not an equation."
+    ],
+    "image_viewed": "tmp/pdfs/sew-t05/page-432.png"
+  },
+  {
+    "pdf_page": 433,
+    "page_label": "5 - 129",
+    "targets": [
+      "SEW-2013-A:T5.24"
+    ],
+    "no_targets_reason": null,
+    "continuations": [
+      "Only Table 5.24 is printed here; the surrounding 5.12.3.7 to 5.12.3.10 text contains no equation."
+    ],
+    "unclear": [],
+    "image_viewed": "tmp/pdfs/sew-t05/page-433.png"
+  },
+  {
+    "pdf_page": 434,
+    "page_label": "5 - 130",
+    "targets": [],
+    "no_targets_reason": "Prose only (sections 5.12.3.11 to 5.12.3.13). Refers forward to Table 5.25; no table or equation on the page.",
+    "continuations": [],
+    "unclear": [],
+    "image_viewed": "tmp/pdfs/sew-t05/page-434.png"
+  },
+  {
+    "pdf_page": 435,
+    "page_label": "5 - 131",
+    "targets": [
+      "SEW-2013-A:T5.25"
+    ],
+    "no_targets_reason": null,
+    "continuations": [
+      "Table 5.25 with FLC key, Note and source is captured; the capacitor prose below it carries no equation."
+    ],
+    "unclear": [],
+    "image_viewed": "tmp/pdfs/sew-t05/page-435.png"
+  },
+  {
+    "pdf_page": 436,
+    "page_label": "5 - 132",
+    "targets": [
+      "SEW-2013-A:E5.43"
+    ],
+    "no_targets_reason": null,
+    "continuations": [
+      "Equation (5.43) is the only numbered item; its 'Where f / P' symbol list is included in the same region. The cable-size voltage-drop rule in the later prose is a verbal 3% limit, not a displayed equation."
+    ],
+    "unclear": [
+      "N is not defined in the printed symbol list; recorded in notes rather than inferred."
+    ],
+    "image_viewed": "tmp/pdfs/sew-t05/page-436.png"
+  },
+  {
+    "pdf_page": 437,
+    "page_label": "5 - 133",
+    "targets": [
+      "SEW-2013-A:T5.26"
+    ],
+    "no_targets_reason": null,
+    "continuations": [
+      "Table 5.26 with source is captured; items a) to d) under it are prose conditions, not a table."
+    ],
+    "unclear": [
+      "Row numbering prints 1., 2., 4, 5 with no row 3; re-read at 288 dpi and retained."
+    ],
+    "image_viewed": "tmp/pdfs/sew-t05/page-437.png"
+  },
+  {
+    "pdf_page": 440,
+    "page_label": "5 - 136",
+    "targets": [],
+    "no_targets_reason": "Figure 5.54 only: a typical single-line diagram with a symbol legend and five printed notes about incoming breakers and bus couplers. The legend is a symbol key, not a data table, and no equation is printed.",
+    "continuations": [],
+    "unclear": [],
+    "image_viewed": "tmp/pdfs/sew-t05/page-440.png"
+  },
+  {
+    "pdf_page": 444,
+    "page_label": "5 - 140",
+    "targets": [],
+    "no_targets_reason": "Page carries Figure 5.55 (DO probe principle diagram with part labels) and Figure 5.56 (photographs). No table and no equation printed.",
+    "continuations": [],
+    "unclear": [],
+    "image_viewed": "tmp/pdfs/sew-t05/page-444.png"
+  },
+  {
+    "pdf_page": 445,
+    "page_label": "5 - 141",
+    "targets": [],
+    "no_targets_reason": "Figure 5.57 photograph with source line; surrounding prose on probe practice. No table or equation printed.",
+    "continuations": [],
+    "unclear": [],
+    "image_viewed": "tmp/pdfs/sew-t05/page-445.png"
+  },
+  {
+    "pdf_page": 446,
+    "page_label": "5 - 142",
+    "targets": [],
+    "no_targets_reason": "Figure 5.58 photograph with source line; prose on slime build-up, instrumentation and BOD analysers. No table or equation printed.",
+    "continuations": [],
+    "unclear": [],
+    "image_viewed": "tmp/pdfs/sew-t05/page-446.png"
+  },
+  {
+    "pdf_page": 447,
+    "page_label": "5 - 143",
+    "targets": [],
+    "no_targets_reason": "Figure 5.59 photograph with source line; prose on quick BOD and flow meters. The 4 to 20 mA signal range is inline text, not a displayed equation.",
+    "continuations": [],
+    "unclear": [],
+    "image_viewed": "tmp/pdfs/sew-t05/page-447.png"
+  },
+  {
+    "pdf_page": 448,
+    "page_label": "5 - 144",
+    "targets": [],
+    "no_targets_reason": "Figure 5.60 SCADA communication overview (screenshot-style diagram). No table and no equation printed.",
+    "continuations": [],
+    "unclear": [],
+    "image_viewed": "tmp/pdfs/sew-t05/page-448.png"
+  },
+  {
+    "pdf_page": 450,
+    "page_label": "5 - 146",
+    "targets": [],
+    "no_targets_reason": "Prose only (sections 5.12.12.4 to 5.12.12.5.1). No table or equation printed.",
+    "continuations": [],
+    "unclear": [],
+    "image_viewed": "tmp/pdfs/sew-t05/page-450.png"
+  },
+  {
+    "pdf_page": 454,
+    "page_label": "5 - 150",
+    "targets": [],
+    "no_targets_reason": "Prose plus a bulleted pipe colour-code list. The list is a bullet list, not a ruled table, and no equation is printed.",
+    "continuations": [
+      "Section 5.15.5 refers forward to Table 5.27."
+    ],
+    "unclear": [],
+    "image_viewed": "tmp/pdfs/sew-t05/page-454.png"
+  },
+  {
+    "pdf_page": 455,
+    "page_label": "5 - 151",
+    "targets": [
+      "SEW-2013-A:T5.27"
+    ],
+    "no_targets_reason": null,
+    "continuations": [
+      "Table 5.27 with its 13-entry material abbreviation legend and source is captured."
+    ],
+    "unclear": [
+      "Printed as CL (Influent row) and HP (many rows) while the legend defines CI and P. Re-read at 288 dpi; retained verbatim, not corrected."
+    ],
+    "image_viewed": "tmp/pdfs/sew-t05/page-455.png"
+  },
+  {
+    "pdf_page": 457,
+    "page_label": "5 - 153",
+    "targets": [],
+    "no_targets_reason": "Figure 5.61 only: a boxed algorithm flowchart for STP rehabilitation. Boxes hold sentences, not tabular data, and no equation is printed.",
+    "continuations": [],
+    "unclear": [],
+    "image_viewed": "tmp/pdfs/sew-t05/page-457.png"
+  },
+  {
+    "pdf_page": 458,
+    "page_label": "5 - 154",
+    "targets": [],
+    "no_targets_reason": "Prose only (numbered notes 8-10, section 5.16.1.2 and 5.17). No table or equation printed; the NPV discussion is verbal.",
+    "continuations": [],
+    "unclear": [],
+    "image_viewed": "tmp/pdfs/sew-t05/page-458.png"
+  },
+  {
+    "pdf_page": 459,
+    "page_label": "5 - 155",
+    "targets": [],
+    "no_targets_reason": "Two pie charts (Figure 5.62, Figure 5.63) with percentage slice labels and rounding notes. Slice labels are chart annotations, not a table, and no equation is printed.",
+    "continuations": [],
+    "unclear": [],
+    "image_viewed": "tmp/pdfs/sew-t05/page-459.png"
+  }
+]

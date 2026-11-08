@@ -1,0 +1,73 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:T5.24",
+  "unit_id": "SEW-2013-A:T5.24",
+  "manual_id": "SEW-2013-A",
+  "kind": "table",
+  "number": "5.24",
+  "title": "Margins for motor-ratings",
+  "state": "verified",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "regions": [
+    {
+      "pdf_page": 433,
+      "page_label": "5 - 129",
+      "bbox": [
+        97.7,
+        359.9,
+        517.7,
+        587.5
+      ],
+      "render_sha256": "97b1ca95c266ef6387bb6797ab642b2e90e2f09924300a7eec3aece97e240079"
+    }
+  ],
+  "headers": [
+    "Required BkW of Pump",
+    "Multiplying factor to decide motor-rating"
+  ],
+  "rows": [
+    [
+      "Up to 1.5",
+      "1.5"
+    ],
+    [
+      "1.5 to 3.7",
+      "1.4"
+    ],
+    [
+      "3.7 to 7.5",
+      "1.3"
+    ],
+    [
+      "7.5 to 15",
+      "1.2"
+    ],
+    [
+      "15 to 75",
+      "1.15"
+    ],
+    [
+      "Above 75",
+      "1.1"
+    ]
+  ],
+  "cell_spans": [],
+  "markdown": "| Required BkW of Pump | Multiplying factor to decide motor-rating |\n| --- | --- |\n| Up to 1.5 | 1.5 |\n| 1.5 to 3.7 | 1.4 |\n| 3.7 to 7.5 | 1.3 |\n| 7.5 to 15 | 1.2 |\n| 15 to 75 | 1.15 |\n| Above 75 | 1.1 |",
+  "notes": [
+    "Source: CPHEEO, 1993",
+    "Bands as printed overlap at their stated end points (1.5, 3.7, 7.5, 15, 75); no exclusivity was inferred."
+  ],
+  "verification": {
+    "transcription": {
+      "pass_id": "sew-t05-first-reading",
+      "method": "Direct visual reading of the annotation-cleaned 144 dpi full-page PNGs and 288-300 dpi region crops, with sideways pages rotated upright before reading; no OCR, no native-text values, no paid service",
+      "observations": "First reading only. Every cell, power, dash, blank and footnote was read from the image and retained as printed; printed anomalies are listed in notes and were not corrected."
+    },
+    "visual_recheck": {
+      "pass_id": "parent-codex-sew-t05-2026-11-08",
+      "method": "Distinct parent visual comparison against source-region PNGs and rotated or zoomed crops; not independent human review",
+      "observations": "Compared every table cell and formula term; checked footnotes, blank cells, numerical outliers and skipped row numbering. ",
+      "content_sha256": "162c51d98c0fdae0d4be2cc6c323b62554d65ee1b37d4fb22d19d19a6d100f3b"
+    }
+  }
+}

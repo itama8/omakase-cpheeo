@@ -1,0 +1,73 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:T5.23",
+  "unit_id": "SEW-2013-A:T5.23",
+  "manual_id": "SEW-2013-A",
+  "kind": "table",
+  "number": "5.23",
+  "title": "Protective enclosures and types of environment",
+  "state": "pending",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "regions": [
+    {
+      "pdf_page": 432,
+      "page_label": "5 - 128",
+      "bbox": [
+        76.3,
+        370.9,
+        506.6,
+        686.6
+      ],
+      "render_sha256": "06607a92ffa3aa9aa5cee78ff1ac1bf8a545d08588c450efd6f956efd3239036"
+    }
+  ],
+  "headers": [
+    "Type",
+    "Enclo-sure type",
+    "Description of environment"
+  ],
+  "rows": [
+    [
+      "Screen-protected drip proof",
+      "IP.11",
+      "Indoor, clean(dust free) environment"
+    ],
+    [
+      "Totally enclosed, air cooled",
+      "IP.44",
+      "Protected against solid objects over 1 mm (tools, wires, and small wires), Protection against water sprayed from all directions - limited ingress permitted. Indoor, dust-prone areas"
+    ],
+    [
+      "Totally Enclosed, Fan cooled,",
+      "IP.54",
+      "Protected against dust limited ingress (no harmful deposit), Protection against water sprayed from all directions - limited ingress permitted."
+    ],
+    [
+      "Outdoor application",
+      "IP.55",
+      "Protected against dust limited ingress (no harmful deposit), Protected against low pressure jets of water from all directions - limited ingress."
+    ],
+    [
+      "Submersible application",
+      "IP 68",
+      "Protected against ingress of any dust while exposed and sewage or sludge while submerged"
+    ]
+  ],
+  "cell_spans": [],
+  "markdown": "| Type | Enclo-sure type | Description of environment |\n| --- | --- | --- |\n| Screen-protected drip proof | IP.11 | Indoor, clean(dust free) environment |\n| Totally enclosed, air cooled | IP.44 | Protected against solid objects over 1 mm (tools, wires, and small wires), Protection against water sprayed from all directions - limited ingress permitted. Indoor, dust-prone areas |\n| Totally Enclosed, Fan cooled, | IP.54 | Protected against dust limited ingress (no harmful deposit), Protection against water sprayed from all directions - limited ingress permitted. |\n| Outdoor application | IP.55 | Protected against dust limited ingress (no harmful deposit), Protected against low pressure jets of water from all directions - limited ingress. |\n| Submersible application | IP 68 | Protected against ingress of any dust while exposed and sewage or sludge while submerged |",
+  "notes": [
+    "Source:CPHEEO, 1993 (printed without a space after the colon)",
+    "The second header is printed on three lines as 'Enclo-', '-sure', 'type'; it is transcribed as 'Enclo-sure type' to avoid an embedded line break.",
+    "Printed capitalisation and punctuation are retained: 'Totally enclosed, air cooled' versus 'Totally Enclosed, Fan cooled,' (trailing comma), 'IP.11' to 'IP.55' with a point but 'IP 68' without, and the fourth row ending '- limited ingress.' without 'permitted'.",
+    "Draft only: unit existence in the built index was not checked, because data/build is out of scope for this batch."
+  ],
+  "verification": {
+    "transcription": {
+      "pass_id": "sew-t05-first-reading",
+      "method": "Direct visual reading of the annotation-cleaned 144 dpi full-page PNGs and 288-300 dpi region crops, with sideways pages rotated upright before reading; no OCR, no native-text values, no paid service",
+      "observations": "First reading only. Every cell, power, dash, blank and footnote was read from the image and retained as printed; printed anomalies are listed in notes and were not corrected."
+    }
+  },
+  "create_unit": true,
+  "parent_id": "SEW-2013-A:5.12.3.6"
+}

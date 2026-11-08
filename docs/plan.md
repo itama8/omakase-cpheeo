@@ -44,7 +44,7 @@ The manuals are Government of India copyright: "No portion, part or whole, of th
 
 ## Open items
 
-- Complete the ongoing all-page visual inventory and transcription: see `data/transcriptions/coverage.json` and `docs/visual-transcriptions.md`. The current 102 verified records do not fulfill the full scope; assistants must disclose unclear values rather than guess.
+- Complete the ongoing all-page visual inventory and transcription: see `data/transcriptions/coverage.json` and `docs/visual-transcriptions.md`. The current 274 verified records do not fulfill the full scope; assistants must disclose unclear values rather than guess.
 - Official source links per manual (cpheeo.gov.in / mohua.gov.in URLs) to verify and add.
 - Brand URL for attribution (`OMAKASE_CPHEEO_BRAND_URL`).
 - Semantic search, if keyword retrieval misses questions phrased far from the manual's wording.

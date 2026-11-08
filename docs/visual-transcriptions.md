@@ -4,15 +4,17 @@ The full request is **not complete**. `data/transcriptions/coverage.json` is the
 
 ## Current checkpoint
 
-All four PDF hashes and all 3,213 physical pages are inventoried. There are 2,917 review-scope pages after excluding the parser's front-matter ranges. Of these, 81 pages have been visually reviewed and four have partial reviews; 2,836 pages remain, including partial pages. The exact total of equations and visually unreadable/native-extraction failures remains unknown until page review finishes.
+All four PDF hashes and all 3,213 physical pages are inventoried. There are 2,917 review-scope pages after excluding the parser's front-matter ranges. Of these, 301 pages have completed visual review and three have partial reviews; 2,616 pages remain, including partial pages. The exact total of equations and visually unreadable/native-extraction failures remains unknown until page review finishes.
 
-There are 102 verified records and one unclear record:
+There are 274 verified records (118 tables, 156 equations) and one unclear record:
 
-- Sewage Part A: 38 tables and 55 equations. Includes all 31 **indexed** Chapter 3 tables, numbered Equations 3.1–3.45, four unnumbered expressions, Equation 5.30, Tables 5.10/5.11 and both Chapter 2 tables. Also includes all three indexed Chapter 4 tables, Equations 4.1–4.3 and two unnumbered pumping expressions. This does not establish that every unnumbered equation or uncaptioned table in Chapter 3 has been discovered.
-- Water Part A/B/C: all nine tables marked image-only in the baseline index, including continuation pages outside their former unit bounds. The other 334 water tables retain native PDF text; they have not all received a cell-by-cell visual verification. Water formulas and additional visual tables outside these nine baseline units remain in the all-page review queue.
-- Of 201 baseline image-only tables, 47 have verified transcriptions and 154 remain. These are baseline unit counts, not a claim that visual discovery is finished.
-- `SEW-2013-A:Ep180-1` is unclear: the printed water-cushion expression is `h1/2 d1/3` on the baseline, without clear power notation even in a 288-dpi close-up. It returns a source-region image and an explicit ambiguity note, without asserted LaTeX or verified math.
+- Sewage Part A: 105 tables and 149 equations. Completed batches include the previously documented Chapter 1-4 work and selected Chapter 5 treatment, disinfection, electrical and piping material, Chapter 6 and appendix pages. Batch page reports enumerate the reviewed pages; gaps between them remain pending.
+- Water Part A/B/C: 13 tables and seven equations, including all nine tables marked image-only in the baseline index and selected headloss mathematics. The other native tables and water formulas remain in the all-page review queue unless explicitly covered by a record.
+- Of 201 baseline image-only tables, 102 have verified transcriptions and 99 remain. These are baseline unit counts, not a claim that visual discovery is finished.
+- The latest parent recheck added 14 records from `sew-t05`: Tables 5.17-5.27, Equation 5.43, the critical-parameter panel of Table 5.18 and a repeated chart location key. The second comparison corrected Raibarreilly and Dakshineswar spellings and removed an inferred vertical cell merge. Printed numerical outliers, missing row 3 in Table 5.26 and undefined N in Equation 5.43 remain documented as printed.
+- `SEW-2013-A:Ep180-1` remains unclear: the printed water-cushion expression is `h1/2 d1/3` on the baseline, without clear power notation even in a 288-dpi close-up. It returns a source-region image and an explicit ambiguity note, without asserted LaTeX or verified math.
 
+The committed coverage JSON was stale after earlier batches because `visual_coverage.py` prints its result; it has now been refreshed from the records and review ledger. Regenerate the saved file explicitly when recording the next checkpoint.
 `page-reviews.json` records completed/partial pages and remaining concerns. The source-pinned `*-pages.json` ledgers include every physical page, embedded-image/vector signals, existing table handles and original source-image references. `table-inventory.json` inventories all 535 baseline table units. None of these automated signals is counted as visual verification.
 
 ## How records work

@@ -1,0 +1,144 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:T5.21",
+  "unit_id": "SEW-2013-A:T5.21",
+  "manual_id": "SEW-2013-A",
+  "kind": "table",
+  "number": "5.21",
+  "title": "Requirement of power for different capacities of STP (Activated sludge process)",
+  "state": "pending",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "regions": [
+    {
+      "pdf_page": 429,
+      "page_label": "5 - 125",
+      "bbox": [
+        58.0,
+        77.9,
+        524.6,
+        464.0
+      ],
+      "render_sha256": "ce39b8b4b69efb5d02e0438d2a856834ffbead76cc78660b2e655790f2b28d99"
+    }
+  ],
+  "headers": [
+    "STP capacity MLD",
+    "Power in kVA: Lower value",
+    "Power in kVA: Upper value",
+    "Recommended Back-up supply (Essential loads, max 8 hours), kVA",
+    "Modular units: Number of Modules",
+    "Modular units: MLD of each",
+    "Approx. Daily Energy consumed kWh"
+  ],
+  "rows": [
+    [
+      "2.5",
+      "250",
+      "",
+      "250",
+      "1",
+      "2.5",
+      "1,200"
+    ],
+    [
+      "5",
+      "315",
+      "",
+      "250",
+      "2",
+      "2.5",
+      "2,500"
+    ],
+    [
+      "10",
+      "400",
+      "500",
+      "300",
+      "2",
+      "5",
+      "4,800"
+    ],
+    [
+      "20",
+      "750",
+      "900",
+      "500",
+      "2",
+      "10",
+      "9,000"
+    ],
+    [
+      "30",
+      "1250",
+      "1500",
+      "750",
+      "3",
+      "10",
+      "12,500"
+    ],
+    [
+      "40",
+      "1500",
+      "1750",
+      "1000",
+      "2",
+      "20",
+      "16,000"
+    ],
+    [
+      "50",
+      "2000",
+      "2500",
+      "1500",
+      "2",
+      "25",
+      "20,000"
+    ],
+    [
+      "60",
+      "2250",
+      "2750",
+      "1800",
+      "3",
+      "20",
+      "24,500"
+    ],
+    [
+      "75",
+      "3000",
+      "3500",
+      "2250",
+      "3",
+      "25",
+      "28,000"
+    ]
+  ],
+  "cell_spans": [
+    {
+      "row": 0,
+      "column": 1,
+      "colspan": 2
+    },
+    {
+      "row": 1,
+      "column": 1,
+      "colspan": 2
+    }
+  ],
+  "markdown": "| STP capacity MLD | Power in kVA: Lower value | Power in kVA: Upper value | Recommended Back-up supply (Essential loads, max 8 hours), kVA | Modular units: Number of Modules | Modular units: MLD of each | Approx. Daily Energy consumed kWh |\n| --- | --- | --- | --- | --- | --- | --- |\n| 2.5 | 250 |  | 250 | 1 | 2.5 | 1,200 |\n| 5 | 315 |  | 250 | 2 | 2.5 | 2,500 |\n| 10 | 400 | 500 | 300 | 2 | 5 | 4,800 |\n| 20 | 750 | 900 | 500 | 2 | 10 | 9,000 |\n| 30 | 1250 | 1500 | 750 | 3 | 10 | 12,500 |\n| 40 | 1500 | 1750 | 1000 | 2 | 20 | 16,000 |\n| 50 | 2000 | 2500 | 1500 | 2 | 25 | 20,000 |\n| 60 | 2250 | 2750 | 1800 | 3 | 20 | 24,500 |\n| 75 | 3000 | 3500 | 2250 | 3 | 25 | 28,000 |",
+  "notes": [
+    "Notes printed under the table: 'Note : The above power considers:' a) A peak load of 200% for 4 hours and 150% for 6 hours b) A nominal lifting of 6 m at the beginning of process. If additional lifting is required suitable revision will be required.",
+    "The 2.5 and 5 MLD rows print one Power value spanning the Lower value and Upper value columns; the second cell is left empty and cell_spans records the merge.",
+    "Transcriber layout note: the two printed header levels are flattened into the header strings above.",
+    "Draft only: unit existence in the built index was not checked, because data/build is out of scope for this batch."
+  ],
+  "verification": {
+    "transcription": {
+      "pass_id": "sew-t05-first-reading",
+      "method": "Direct visual reading of the annotation-cleaned 144 dpi full-page PNGs and 288-300 dpi region crops, with sideways pages rotated upright before reading; no OCR, no native-text values, no paid service",
+      "observations": "First reading only. Every cell, power, dash, blank and footnote was read from the image and retained as printed; printed anomalies are listed in notes and were not corrected."
+    }
+  },
+  "create_unit": true,
+  "parent_id": "SEW-2013-A:5.12.2.8"
+}

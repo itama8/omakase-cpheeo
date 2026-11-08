@@ -153,3 +153,24 @@ questions:
     expect: [WS-2024-A:T6.2]
     row: ['Asbestos Cement pressure pipes', '150', '140']
     contains: ['authentic field data', '90 to 125', 'physical page 372']
+  - id: V39
+    question: Table 5.20 treated sewage drinking water surface discharge
+    expect: [SEW-2013-A:T5.20]
+    row: ['Faecal Coliforms, MPN/100 mL', 'Not specified', 'Less than 230']
+  - id: V40
+    question: Table 5.21 power STP activated sludge
+    expect: [SEW-2013-A:T5.21]
+    row: ['75', '3000', '3500', '2250', '3', '25', '28,000']
+  - id: V41
+    question: Equation 5.43 electric motor speed
+    expect: [SEW-2013-A:E5.43]
+    contains: ['N = 120 × f / P', 'N is not defined']
+  - id: V42
+    question: Table 5.18 Ganga observed class
+    expect: [SEW-2013-A:T5.18]
+    row: ['Raibarreilly', 'B', 'D', 'D', 'D', 'NA', 'NA', 'NA']
+  - id: V43
+    question: Table 5.26 cables different voltages
+    expect: [SEW-2013-A:T5.26]
+    row: ['4', '11 KV 3 phase', 'XLPE- Cross Linked, Polyethylene insulated, PVC sheathed Cable', 'IS: 7098']
+    contains: ['there is no row 3']

@@ -1,0 +1,235 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:Tp418-1",
+  "unit_id": "SEW-2013-A:Tp418-1",
+  "manual_id": "SEW-2013-A",
+  "kind": "table",
+  "number": "p418-1",
+  "title": "Location key printed with Figure 5.51 and Figure 5.52",
+  "state": "pending",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "regions": [
+    {
+      "pdf_page": 418,
+      "page_label": "5 - 114",
+      "bbox": [
+        347.0,
+        77.89,
+        509.0,
+        739.9
+      ],
+      "render_sha256": "ce3e5a37034317a26140fda0f1af757926e84082a1a51c848912e4eda10ec5ec"
+    },
+    {
+      "pdf_page": 419,
+      "page_label": "5 - 115",
+      "bbox": [
+        350.8,
+        67.1,
+        509.2,
+        752.5
+      ],
+      "render_sha256": "79ba4127b8357017c0f53d35cf26c9f22949ff3daf425d72d2d787116be52777"
+    }
+  ],
+  "headers": [
+    "No",
+    "Location",
+    "No",
+    "Location",
+    "No",
+    "Location",
+    "No",
+    "Location",
+    "No",
+    "Location"
+  ],
+  "rows": [
+    [
+      "1",
+      "Uttarkashi u/s (Bhagirathi)",
+      "15",
+      "Bijnore u/s (Ganga)",
+      "29",
+      "D/s Deehaghat",
+      "43",
+      "Hajipur u/s (River Gandak)",
+      "57",
+      "Sultanganj d/s"
+    ],
+    [
+      "2",
+      "Uttarkashi d/s (Bhagirathi)",
+      "16",
+      "Bijnore d/s (Ganga)",
+      "30",
+      "Vindhyachal, Pakka Ghat",
+      "44",
+      "Hajipur d/s (River Gandak)",
+      "58",
+      "Bhagalpur u/s"
+    ],
+    [
+      "3",
+      "Devprayag u/s (Bhagirathi)",
+      "17",
+      "Garhmukteshwar u/s",
+      "31",
+      "Varanasi u/s",
+      "45",
+      "Patna u/s",
+      "59",
+      "Bhagalpur d/s"
+    ],
+    [
+      "4",
+      "Devprayag u/s (Alaknanda)",
+      "18",
+      "Garhmukteshwar d/s",
+      "32",
+      "Dashashawmedh Ghat",
+      "46",
+      "Patna d/s",
+      "60",
+      "D/s Champanala"
+    ],
+    [
+      "5",
+      "Devprayag d/s (Ganga)",
+      "19",
+      "Anoopshahr u/s (Ganga)",
+      "33",
+      "D/s at Kaithy",
+      "47",
+      "Fatuha u/s",
+      "61",
+      "Kahalgaon u/s"
+    ],
+    [
+      "6",
+      "Ranipur u/s (Ganga)",
+      "20",
+      "Anoopshahr d/s (Ganga)",
+      "34",
+      "Near Malviya Bridge",
+      "48",
+      "Fatuha d/s",
+      "62",
+      "Kahalgaon d/s"
+    ],
+    [
+      "7",
+      "Ranipur d/s (Ganga)",
+      "21",
+      "Fatehgarh u/s",
+      "35",
+      "Tarighat",
+      "49",
+      "Barh u/s",
+      "63",
+      "D/s NTPC Drain"
+    ],
+    [
+      "8",
+      "Rishikesh u/s",
+      "22",
+      "Kannauj u/s (a/c with Ramganga & b/c with Kali)",
+      "36",
+      "Buxar u/s",
+      "50",
+      "Barh d/s",
+      "64",
+      "Sahebganj u/s"
+    ],
+    [
+      "9",
+      "Rishikesh d/s",
+      "23",
+      "Kannauj d/s (a/c with Kali)",
+      "37",
+      "Buxar d/s",
+      "51",
+      "Mokama u/s",
+      "65",
+      "Sahebganj d/s"
+    ],
+    [
+      "10",
+      "Haridwar u/s",
+      "24",
+      "Kanpur u/s (Bithoor)",
+      "38",
+      "Chapra u/s (Ghaghra)",
+      "52",
+      "Mokama d/s",
+      "66",
+      "Rajmahal d/s"
+    ],
+    [
+      "11",
+      "Har-ki-Paudi",
+      "25",
+      "Kanpur d/s (Shuklaganj)",
+      "39",
+      "Chapra d/s (Chapra)",
+      "53",
+      "D/s Bata - McDowell",
+      "67",
+      "Berhampore (Middle)"
+    ],
+    [
+      "12",
+      "Lalta Rao",
+      "26",
+      "Kanpur d/s (Jane Village)",
+      "40",
+      "Arrah u/s (River Gangi)",
+      "54",
+      "Munger u/s",
+      "68",
+      "Palta (Middle)"
+    ],
+    [
+      "13",
+      "Dam Kothi",
+      "27",
+      "Allahbad u/s (Ujahni, Fatehpur)",
+      "41",
+      "Arrah d/s (River Gangi)",
+      "55",
+      "Munger d/s",
+      "69",
+      "Dakhsineswar (Middle)"
+    ],
+    [
+      "14",
+      "Mishrpur",
+      "28",
+      "Bathing Ghats at Sangam",
+      "42",
+      "Koliwar (River Sone)",
+      "56",
+      "Sultanganj u/s",
+      "70",
+      "Uluberia (Middle)"
+    ]
+  ],
+  "cell_spans": [],
+  "markdown": "| No | Location | No | Location | No | Location | No | Location | No | Location |\n| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |\n| 1 | Uttarkashi u/s (Bhagirathi) | 15 | Bijnore u/s (Ganga) | 29 | D/s Deehaghat | 43 | Hajipur u/s (River Gandak) | 57 | Sultanganj d/s |\n| 2 | Uttarkashi d/s (Bhagirathi) | 16 | Bijnore d/s (Ganga) | 30 | Vindhyachal, Pakka Ghat | 44 | Hajipur d/s (River Gandak) | 58 | Bhagalpur u/s |\n| 3 | Devprayag u/s (Bhagirathi) | 17 | Garhmukteshwar u/s | 31 | Varanasi u/s | 45 | Patna u/s | 59 | Bhagalpur d/s |\n| 4 | Devprayag u/s (Alaknanda) | 18 | Garhmukteshwar d/s | 32 | Dashashawmedh Ghat | 46 | Patna d/s | 60 | D/s Champanala |\n| 5 | Devprayag d/s (Ganga) | 19 | Anoopshahr u/s (Ganga) | 33 | D/s at Kaithy | 47 | Fatuha u/s | 61 | Kahalgaon u/s |\n| 6 | Ranipur u/s (Ganga) | 20 | Anoopshahr d/s (Ganga) | 34 | Near Malviya Bridge | 48 | Fatuha d/s | 62 | Kahalgaon d/s |\n| 7 | Ranipur d/s (Ganga) | 21 | Fatehgarh u/s | 35 | Tarighat | 49 | Barh u/s | 63 | D/s NTPC Drain |\n| 8 | Rishikesh u/s | 22 | Kannauj u/s (a/c with Ramganga & b/c with Kali) | 36 | Buxar u/s | 50 | Barh d/s | 64 | Sahebganj u/s |\n| 9 | Rishikesh d/s | 23 | Kannauj d/s (a/c with Kali) | 37 | Buxar d/s | 51 | Mokama u/s | 65 | Sahebganj d/s |\n| 10 | Haridwar u/s | 24 | Kanpur u/s (Bithoor) | 38 | Chapra u/s (Ghaghra) | 52 | Mokama d/s | 66 | Rajmahal d/s |\n| 11 | Har-ki-Paudi | 25 | Kanpur d/s (Shuklaganj) | 39 | Chapra d/s (Chapra) | 53 | D/s Bata - McDowell | 67 | Berhampore (Middle) |\n| 12 | Lalta Rao | 26 | Kanpur d/s (Jane Village) | 40 | Arrah u/s (River Gangi) | 54 | Munger u/s | 68 | Palta (Middle) |\n| 13 | Dam Kothi | 27 | Allahbad u/s (Ujahni, Fatehpur) | 41 | Arrah d/s (River Gangi) | 55 | Munger d/s | 69 | Dakhsineswar (Middle) |\n| 14 | Mishrpur | 28 | Bathing Ghats at Sangam | 42 | Koliwar (River Sone) | 56 | Sultanganj u/s | 70 | Uluberia (Middle) |",
+  "notes": [
+    "Unnumbered table: a boxed location key printed under the charts of Figure 5.51 (page 418) and Figure 5.52 (page 419). It is not a numbered manual table.",
+    "Both pages print the same key with identical wording and numbering; the two page regions are recorded together here rather than as duplicate records.",
+    "The key is printed as five side-by-side blocks of 14 numbered entries. Columns are kept in that printed order, so row 1 holds entries 1, 15, 29, 43 and 57.",
+    "Names are transcribed as printed, including 'Bijnore', 'Raibarrelly'-style spellings here printed as 'Allahbad u/s (Ujahni, Fatehpur)', 'D/s at Kaithy', 'Dashashawmedh Ghat', 'Dakhsineswar (Middle)' and 'Kannauj u/s (a/c with Ramganga & b/c with Kali)'. No spellings were normalised.",
+    "Draft only: parent section was not identified from the assigned pages, so parent_id is null. Unit existence in the built index was not checked, because data/build is out of scope for this batch."
+  ],
+  "verification": {
+    "transcription": {
+      "pass_id": "sew-t05-first-reading",
+      "method": "Direct visual reading of the annotation-cleaned 144 dpi full-page PNGs and 288-300 dpi region crops, with sideways pages rotated upright before reading; no OCR, no native-text values, no paid service",
+      "observations": "First reading only. Every cell, power, dash, blank and footnote was read from the image and retained as printed; printed anomalies are listed in notes and were not corrected."
+    }
+  },
+  "create_unit": true,
+  "parent_id": null
+}

@@ -1,0 +1,90 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:T5.22",
+  "unit_id": "SEW-2013-A:T5.22",
+  "manual_id": "SEW-2013-A",
+  "kind": "table",
+  "number": "5.22",
+  "title": "General motor ratings for various voltage ranges",
+  "state": "verified",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "regions": [
+    {
+      "pdf_page": 432,
+      "page_label": "5 - 128",
+      "bbox": [
+        52.9,
+        73.9,
+        504.8,
+        316.1
+      ],
+      "render_sha256": "d441a35f2547ecd6d01d9e39f87753f62d25da630ce5f3c69357d73458f252f3"
+    }
+  ],
+  "headers": [
+    "Supply",
+    "Voltage",
+    "Range of Motor rating in kW: Minimum",
+    "Range of Motor rating in kW: Maximum"
+  ],
+  "rows": [
+    [
+      "1 φ AC",
+      "230 V",
+      "0.3",
+      "2.5"
+    ],
+    [
+      "3 φ AC",
+      "415 V",
+      "-",
+      "250"
+    ],
+    [
+      "",
+      "3.3 KV",
+      "225",
+      "750"
+    ],
+    [
+      "",
+      "6.6 KV",
+      "400",
+      "-"
+    ],
+    [
+      "",
+      "11 KV",
+      "600",
+      "-"
+    ],
+    [
+      "DC",
+      "230 V",
+      "-",
+      "150"
+    ]
+  ],
+  "cell_spans": [],
+  "markdown": "| Supply | Voltage | Range of Motor rating in kW: Minimum | Range of Motor rating in kW: Maximum |\n| --- | --- | --- | --- |\n| 1 φ AC | 230 V | 0.3 | 2.5 |\n| 3 φ AC | 415 V | - | 250 |\n|  | 3.3 KV | 225 | 750 |\n|  | 6.6 KV | 400 | - |\n|  | 11 KV | 600 | - |\n| DC | 230 V | - | 150 |",
+  "notes": [
+    "Source: CPHEEO, 1993",
+    "N.B. printed beside the source: When no minimum is given, very small motors are feasible. When no maximum is given very large motors are feasible.",
+    "The printed supply symbols are the Greek phi glyph (1 φ AC, 3 φ AC), transcribed as U+03C6; they are not the digit 0 or the letter O.",
+    "The Supply cell is empty for the 3.3 KV, 6.6 KV and 11 KV rows; the printed cell borders are present, so the blanks are kept rather than merged into 3 φ AC.",
+    "Printed dashes in the Minimum/Maximum cells are retained; they are not read as zero."
+  ],
+  "verification": {
+    "transcription": {
+      "pass_id": "sew-t05-first-reading",
+      "method": "Direct visual reading of the annotation-cleaned 144 dpi full-page PNGs and 288-300 dpi region crops, with sideways pages rotated upright before reading; no OCR, no native-text values, no paid service",
+      "observations": "First reading only. Every cell, power, dash, blank and footnote was read from the image and retained as printed; printed anomalies are listed in notes and were not corrected."
+    },
+    "visual_recheck": {
+      "pass_id": "parent-codex-sew-t05-2026-11-08",
+      "method": "Distinct parent visual comparison against source-region PNGs and rotated or zoomed crops; not independent human review",
+      "observations": "Compared every table cell and formula term; checked footnotes, blank cells, numerical outliers and skipped row numbering. ",
+      "content_sha256": "cf781a5d6323888394f77d7ac3e7c1faa2f3bb632f5a16109900cbd6f0805c78"
+    }
+  }
+}
