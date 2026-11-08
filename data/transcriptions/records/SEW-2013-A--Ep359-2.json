@@ -1,0 +1,75 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:Ep359-2",
+  "unit_id": "SEW-2013-A:Ep359-2",
+  "manual_id": "SEW-2013-A",
+  "kind": "equation",
+  "number": "p359-2",
+  "title": "Secondary clarifier sludge withdrawal worked calculation (10 MLD, 0.6 RAS)",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "state": "verified",
+  "regions": [
+    {
+      "pdf_page": 359,
+      "page_label": "5 - 55",
+      "bbox": [
+        57,
+        411,
+        471,
+        629
+      ],
+      "render_sha256": "4a57b6fae417ee6e853cd512e9cd3a390a87280cb3120006c54e50cb61df9a74"
+    }
+  ],
+  "parent_id": "SEW-2013-A:5.7.4.2.6.2",
+  "latex": "10000\\times0.6=6000\\ \\text{m}^3\\text{/day};\\quad 6000/24=250\\ \\text{m}^3\\text{/hr};\\quad 250/3600/1.5=0.046\\ \\text{m}^2;\\quad 4.5\\times3.14=14.13\\ \\text{m}^3;\\quad 14.13/250=0.056\\ \\text{hrs};\\quad 250\\times10/60=42\\ \\text{m}^3",
+  "readable": "volume to be drawn = 10000×0.6 = 6000 m3/day; continuous withdrawal = 6000/24 = 250 m3/hr; area for 1.5 m/s = 250/3600/1.5 = 0.046 m2 giving a dia of 0.25 m; sump area for 2 m dia = 3.14 m2; resulting volume = 4.5×3.14 = 14.13 m3; HRT = 14.13/250 = 0.056 hrs or 3.4 minutes; volume for 10 minutes HRT = 250×10/60 = 42 m3; required diameter 3.5 m",
+  "symbols": [
+    {
+      "symbol": "10000",
+      "definition": "STP capacity, m3/day, for the printed 10 MLD"
+    },
+    {
+      "symbol": "0.6",
+      "definition": "RAS ratio as printed in the heading (0.6 RAS)"
+    },
+    {
+      "symbol": "1.5",
+      "definition": "assumed velocity, m/s"
+    },
+    {
+      "symbol": "4.5",
+      "definition": "height from invert of pipe to top of the clarifier, m"
+    },
+    {
+      "symbol": "3.14",
+      "definition": "area, m2, of a 2 m minimum diameter sump, printed as 3.14"
+    }
+  ],
+  "applicability": "Worked example of sludge withdrawal from a secondary clarifier for a 10 MLD plant with 0.6 RAS, comparing direct pumping with a sludge sump.",
+  "notes": [
+    "Printed inline as a sequence of prose calculations, not as displayed or numbered equations; p359-2 is a service locator.",
+    "The heading is printed as \"Secondary Clarifier for 10 MLD of Sewage with 0.6 RAS\".",
+    "The sump area is printed as 3.14 m2 for a minimum diameter of 2 m for man entry when needed.",
+    "HRT in the sump is printed as 0.056 hrs or 3.4 minutes; any sump has to be minimum 10 minutes of HRT."
+  ],
+  "verification": {
+    "transcription": {
+      "pass_id": "sew-t03-first-reading-2026-11-08",
+      "method": "Direct visual reading of full annotation-cleaned 144 dpi page PNGs, plus enlarged crops at 288-720 dpi and a contact sheet of every hashed source region; no OCR, no paid service, no delegation",
+      "observations": "First visual transcription only. Every printed glyph, power, subscript, inequality, unit, hyphen spacing, footnote and printed error was read from the rendered source and retained or flagged; no value inferred."
+    },
+    "visual_recheck": {
+      "pass_id": "parent-recheck-sew-t03",
+      "method": "distinct second visual inspection of exact source-region renders (incl. rotated/zoomed crops) by parent assistant; not independent human review",
+      "observations": "Parent compared every coefficient, power, subscript and cell against 144-dpi region renders, with 400-dpi zoom where needed.",
+      "content_sha256": "636dc9bdb5f055c759dac6b7b036b783fa1df8636162a57eac7884d4d92e3b46"
+    }
+  },
+  "source_image_refs": [
+    {
+      "path": "tmp/pdfs/sew-t03/SEW-2013-A--Ep359-2.png",
+      "role": "first-reading source crop"
+    }
+  ]
+}

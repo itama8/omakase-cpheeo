@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:E5.8",
+  "unit_id": "SEW-2013-A:E5.8",
+  "manual_id": "SEW-2013-A",
+  "kind": "equation",
+  "number": "5.8",
+  "title": "Hazen's modified formula for settling velocity in the transition zone",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "state": "verified",
+  "regions": [
+    {
+      "pdf_page": 344,
+      "page_label": "5 - 40",
+      "bbox": [
+        71,
+        735,
+        517,
+        767
+      ],
+      "render_sha256": "91ca86db1e7128b0aaaf138c61563cec89fef5027d6d695efb2f3476e668ee13"
+    }
+  ],
+  "parent_id": "SEW-2013-A:5.6.2.7.1.1",
+  "latex": "V_s=60.6\\left(S_s-1\\right)d\\frac{3T+70}{100}",
+  "readable": "Vs = 60.6 (Ss - 1) d (3T + 70) / 100",
+  "symbols": [
+    {
+      "symbol": "Vs",
+      "definition": "Settling velocity, cm/s (unit given in the prose on physical page 345)"
+    },
+    {
+      "symbol": "Ss",
+      "definition": "Specific gravity of grit particle, dimensionless"
+    },
+    {
+      "symbol": "d",
+      "definition": "Size of the particle, cm (unit given in the prose on physical page 345)"
+    },
+    {
+      "symbol": "T",
+      "definition": "Temperature in degree Centigrade (defined in the prose on physical page 345)"
+    }
+  ],
+  "applicability": "Settling velocity of grit particles in the transition zone, also calculated by the Hazen's modified formula.",
+  "notes": [
+    "The units for d, T and Vs are printed in the prose at the top of physical page 345: \"Where d in equation (5.8) is in cm and T is the temperature in degree Centigrade and Vs in cm/s.\"",
+    "Equation (5.8) is also the basis stated for Table 5.6."
+  ],
+  "verification": {
+    "transcription": {
+      "pass_id": "sew-t03-first-reading-2026-11-08",
+      "method": "Direct visual reading of full annotation-cleaned 144 dpi page PNGs, plus enlarged crops at 288-720 dpi and a contact sheet of every hashed source region; no OCR, no paid service, no delegation",
+      "observations": "First visual transcription only. Every printed glyph, power, subscript, inequality, unit, hyphen spacing, footnote and printed error was read from the rendered source and retained or flagged; no value inferred."
+    },
+    "visual_recheck": {
+      "pass_id": "parent-recheck-sew-t03",
+      "method": "distinct second visual inspection of exact source-region renders (incl. rotated/zoomed crops) by parent assistant; not independent human review",
+      "observations": "Parent compared every coefficient, power, subscript and cell against 144-dpi region renders, with 400-dpi zoom where needed.",
+      "content_sha256": "ecdaa63d4ea8beee7bd42c452767f70cf32b42a19b61fedbb9297b685ffc06d2"
+    }
+  },
+  "source_image_refs": [
+    {
+      "path": "tmp/pdfs/sew-t03/SEW-2013-A--E5.8.png",
+      "role": "first-reading source crop"
+    }
+  ]
+}

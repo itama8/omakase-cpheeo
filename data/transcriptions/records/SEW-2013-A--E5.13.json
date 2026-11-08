@@ -1,0 +1,73 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:E5.13",
+  "unit_id": "SEW-2013-A:E5.13",
+  "manual_id": "SEW-2013-A",
+  "kind": "equation",
+  "number": "5.13",
+  "title": "General equation for flow through a proportional flow weir",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "state": "verified",
+  "regions": [
+    {
+      "pdf_page": 348,
+      "page_label": "5 - 44",
+      "bbox": [
+        72,
+        100,
+        513,
+        127
+      ],
+      "render_sha256": "2dbd28ec494a3d5f96fbfd854d5d67ba0b858b5911ba75afbf922c7f52393eb6"
+    }
+  ],
+  "parent_id": "SEW-2013-A:5.6.2.7.3",
+  "latex": "Q=cb\\sqrt{2ag}\\left(H-\\frac{a}{3}\\right)",
+  "readable": "Q = c b SQRT(2ag) (H - a/3)",
+  "symbols": [
+    {
+      "symbol": "Q",
+      "definition": "flow through weir"
+    },
+    {
+      "symbol": "c",
+      "definition": "Coefficient which is assumed 0.61 for symmetrical sharp-edge weirs."
+    },
+    {
+      "symbol": "a",
+      "definition": "Dimension of weir usually assumed between 25 mm and 50 mm"
+    },
+    {
+      "symbol": "b",
+      "definition": "Base width of the weir"
+    },
+    {
+      "symbol": "H",
+      "definition": "Depth of flow"
+    }
+  ],
+  "applicability": "The general equation for determining the flow through weir, Q, for a proportional flow weir.",
+  "notes": [
+    "The radicand is printed as 2ag rather than 2g; retained as printed and not corrected.",
+    "No units are printed for b and H in the symbol list."
+  ],
+  "verification": {
+    "transcription": {
+      "pass_id": "sew-t03-first-reading-2026-11-08",
+      "method": "Direct visual reading of full annotation-cleaned 144 dpi page PNGs, plus enlarged crops at 288-720 dpi and a contact sheet of every hashed source region; no OCR, no paid service, no delegation",
+      "observations": "First visual transcription only. Every printed glyph, power, subscript, inequality, unit, hyphen spacing, footnote and printed error was read from the rendered source and retained or flagged; no value inferred."
+    },
+    "visual_recheck": {
+      "pass_id": "parent-recheck-sew-t03",
+      "method": "distinct second visual inspection of exact source-region renders (incl. rotated/zoomed crops) by parent assistant; not independent human review",
+      "observations": "Parent compared every coefficient, power, subscript and cell against 144-dpi region renders, with 400-dpi zoom where needed.",
+      "content_sha256": "4aed48849dd275f6e5a57012576231643fe312733bfa014324fd3ee0a410bf0f"
+    }
+  },
+  "source_image_refs": [
+    {
+      "path": "tmp/pdfs/sew-t03/SEW-2013-A--E5.13.png",
+      "role": "first-reading source crop"
+    }
+  ]
+}

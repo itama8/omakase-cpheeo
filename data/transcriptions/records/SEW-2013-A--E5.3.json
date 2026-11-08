@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:E5.3",
+  "unit_id": "SEW-2013-A:E5.3",
+  "manual_id": "SEW-2013-A",
+  "kind": "equation",
+  "number": "5.3",
+  "title": "Head loss through fine screens",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "state": "verified",
+  "regions": [
+    {
+      "pdf_page": 336,
+      "page_label": "5 - 32",
+      "bbox": [
+        65,
+        100,
+        518,
+        123
+      ],
+      "render_sha256": "4cf1b1ccb5de40b0e16f5e49087ed7c38c8aa67e912fd87fa9b46d42b41c9241"
+    }
+  ],
+  "parent_id": "SEW-2013-A:5.6.1.9",
+  "latex": "h=\\left(1/2g\\right)\\left(Q/CA\\right)^{2}",
+  "readable": "h = (1 / 2g) (Q / CA)^2",
+  "symbols": [
+    {
+      "symbol": "h",
+      "definition": "Head loss, m"
+    },
+    {
+      "symbol": "Q",
+      "definition": "Discharge, m3/s"
+    },
+    {
+      "symbol": "C",
+      "definition": "Coefficient of discharge (typical value 0.6)"
+    },
+    {
+      "symbol": "A",
+      "definition": "Effective submerged open area, m2"
+    }
+  ],
+  "applicability": "Head loss through fine screens.",
+  "notes": [
+    "The printed formula gives no definition of g in its symbol list; no value or unit for g has been inferred.",
+    "Exponent 2 and the (1/2g) grouping are printed as shown."
+  ],
+  "verification": {
+    "transcription": {
+      "pass_id": "sew-t03-first-reading-2026-11-08",
+      "method": "Direct visual reading of full annotation-cleaned 144 dpi page PNGs, plus enlarged crops at 288-720 dpi and a contact sheet of every hashed source region; no OCR, no paid service, no delegation",
+      "observations": "First visual transcription only. Every printed glyph, power, subscript, inequality, unit, hyphen spacing, footnote and printed error was read from the rendered source and retained or flagged; no value inferred."
+    },
+    "visual_recheck": {
+      "pass_id": "parent-recheck-sew-t03",
+      "method": "distinct second visual inspection of exact source-region renders (incl. rotated/zoomed crops) by parent assistant; not independent human review",
+      "observations": "Parent compared every coefficient, power, subscript and cell against 144-dpi region renders, with 400-dpi zoom where needed.",
+      "content_sha256": "1606b36379ada323242a41e1fbb256f00e77f34e6cc874f0b7c22fe72d856114"
+    }
+  },
+  "source_image_refs": [
+    {
+      "path": "tmp/pdfs/sew-t03/SEW-2013-A--E5.3.png",
+      "role": "first-reading source crop"
+    }
+  ]
+}

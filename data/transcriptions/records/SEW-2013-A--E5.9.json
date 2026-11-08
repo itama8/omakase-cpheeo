@@ -1,0 +1,68 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:E5.9",
+  "unit_id": "SEW-2013-A:E5.9",
+  "manual_id": "SEW-2013-A",
+  "kind": "equation",
+  "number": "5.9",
+  "title": "Newton's Law settling velocity of grit particles",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "state": "verified",
+  "regions": [
+    {
+      "pdf_page": 345,
+      "page_label": "5 - 41",
+      "bbox": [
+        81,
+        242,
+        521,
+        263
+      ],
+      "render_sha256": "bdec89d7ee143d6ce81a1bc2e37402f93486bccd072e47d2a0fc0f905bda06f0"
+    }
+  ],
+  "parent_id": "SEW-2013-A:5.6.2.7.1.1",
+  "latex": "V_s=\\left[3.3g\\left(S_s-1\\right)d\\right]^{0.5}",
+  "readable": "Vs = [3.3 g (Ss - 1) d]^0.5",
+  "symbols": [
+    {
+      "symbol": "Vs",
+      "definition": "Settling velocity, m/s"
+    },
+    {
+      "symbol": "g",
+      "definition": "Acceleration due to gravity, m/s2"
+    },
+    {
+      "symbol": "Ss",
+      "definition": "Specific gravity of grit particle, dimensionless"
+    },
+    {
+      "symbol": "d",
+      "definition": "Size of the particle, m"
+    }
+  ],
+  "applicability": "Used when the particle size increases beyond 1 mm and Reynolds number beyond 1,000, with the Newton coefficient drag CD assuming a constant value of 0.4.",
+  "notes": [
+    "Printed coefficient 3.3 and outer exponent 0.5 retained."
+  ],
+  "verification": {
+    "transcription": {
+      "pass_id": "sew-t03-first-reading-2026-11-08",
+      "method": "Direct visual reading of full annotation-cleaned 144 dpi page PNGs, plus enlarged crops at 288-720 dpi and a contact sheet of every hashed source region; no OCR, no paid service, no delegation",
+      "observations": "First visual transcription only. Every printed glyph, power, subscript, inequality, unit, hyphen spacing, footnote and printed error was read from the rendered source and retained or flagged; no value inferred."
+    },
+    "visual_recheck": {
+      "pass_id": "parent-recheck-sew-t03",
+      "method": "distinct second visual inspection of exact source-region renders (incl. rotated/zoomed crops) by parent assistant; not independent human review",
+      "observations": "Parent compared every coefficient, power, subscript and cell against 144-dpi region renders, with 400-dpi zoom where needed.",
+      "content_sha256": "6c2701207e052db93a7af68d5dd79059f4c6449bf88812419f6c52d3b4a6e4fc"
+    }
+  },
+  "source_image_refs": [
+    {
+      "path": "tmp/pdfs/sew-t03/SEW-2013-A--E5.9.png",
+      "role": "first-reading source crop"
+    }
+  ]
+}

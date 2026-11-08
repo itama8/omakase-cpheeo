@@ -1,0 +1,89 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:E5.21",
+  "unit_id": "SEW-2013-A:E5.21",
+  "manual_id": "SEW-2013-A",
+  "kind": "equation",
+  "number": "5.21",
+  "title": "Velocity of flow at a particular depth in the grit chamber",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "state": "verified",
+  "regions": [
+    {
+      "pdf_page": 351,
+      "page_label": "5 - 47",
+      "bbox": [
+        111,
+        503,
+        529,
+        559
+      ],
+      "render_sha256": "cbfae6e8e0322b0dd82aa0ede1b04406a5f0c3a858f3b65b0f0b6d751b6fbd6d"
+    }
+  ],
+  "parent_id": "SEW-2013-A:5.6.2.8.1",
+  "latex": "V=\\frac{Q}{1000bD}",
+  "readable": "V = Q / (1000 b D)",
+  "symbols": [
+    {
+      "symbol": "Q",
+      "definition": "Rate of flow in lps"
+    },
+    {
+      "symbol": "Qmin",
+      "definition": "Minimum rate of flow in lps"
+    },
+    {
+      "symbol": "Qmax",
+      "definition": "Maximum rate of flow in lps"
+    },
+    {
+      "symbol": "W",
+      "definition": "Throat width in m"
+    },
+    {
+      "symbol": "HA",
+      "definition": "Depth of flow in upstream leg of the flume at one third point in m"
+    },
+    {
+      "symbol": "Z",
+      "definition": "Constant in m"
+    },
+    {
+      "symbol": "D",
+      "definition": "Depth of flow in grit chamber in m"
+    },
+    {
+      "symbol": "b",
+      "definition": "Width of grit chamber in m"
+    },
+    {
+      "symbol": "V",
+      "definition": "Velocity of flow in m/s at particular depth of flow"
+    }
+  ],
+  "applicability": "Parshall flume used as a control section with a rectangular section having a trapezoidal bottom; the variations in velocity at maximum and minimum flow conditions from the designed velocity of flow should be within permissible limits.",
+  "notes": [
+    "Printed denominator is 1000bD with no multiplication signs; retained.",
+    "The partially visible '(5.20)' at the top right of the source crop is the number of the preceding Equation 5.20, printed below that equation; Equation 5.21's own number is printed below this formula."
+  ],
+  "verification": {
+    "transcription": {
+      "pass_id": "sew-t03-first-reading-2026-11-08",
+      "method": "Direct visual reading of full annotation-cleaned 144 dpi page PNGs, plus enlarged crops at 288-720 dpi and a contact sheet of every hashed source region; no OCR, no paid service, no delegation",
+      "observations": "First visual transcription only. Every printed glyph, power, subscript, inequality, unit, hyphen spacing, footnote and printed error was read from the rendered source and retained or flagged; no value inferred."
+    },
+    "visual_recheck": {
+      "pass_id": "parent-recheck-sew-t03",
+      "method": "distinct second visual inspection of exact source-region renders (incl. rotated/zoomed crops) by parent assistant; not independent human review",
+      "observations": "Parent compared every coefficient, power, subscript and cell against 144-dpi region renders, with 400-dpi zoom where needed. Corrections: region top extended so the numerator Q is not clipped",
+      "content_sha256": "28de07ffaaa8bddcc042189afd9c2d480ae6f2db77152a0ffa5a538654bb4689"
+    }
+  },
+  "source_image_refs": [
+    {
+      "path": "tmp/pdfs/sew-t03/SEW-2013-A--E5.21.png",
+      "role": "first-reading source crop"
+    }
+  ]
+}

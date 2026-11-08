@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:E5.22",
+  "unit_id": "SEW-2013-A:E5.22",
+  "manual_id": "SEW-2013-A",
+  "kind": "equation",
+  "number": "5.22",
+  "title": "Hydraulic retention time (HRT)",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "state": "verified",
+  "regions": [
+    {
+      "pdf_page": 366,
+      "page_label": "5 - 62",
+      "bbox": [
+        86,
+        295,
+        505,
+        331
+      ],
+      "render_sha256": "ca8bef01d3b0e4102df4f73ffba578378d32c7f332df5f1517d052687e5e5cab"
+    }
+  ],
+  "parent_id": "SEW-2013-A:5.8.1.3",
+  "latex": "\\theta=\\frac{V}{Q}",
+  "readable": "theta = V / Q",
+  "symbols": [
+    {
+      "symbol": "theta",
+      "definition": "hydraulic retention time (HRT), d"
+    },
+    {
+      "symbol": "V",
+      "definition": "Volume of aeration tank, m3, and"
+    },
+    {
+      "symbol": "Q",
+      "definition": "Sewage inflow, m3/day"
+    }
+  ],
+  "applicability": "A loading parameter developed empirically over the years for the activated sludge process: the hydraulic retention time (HRT), theta, d.",
+  "notes": [
+    "The symbol is printed as theta with the unit given in the heading as \"theta, d\" (days)."
+  ],
+  "verification": {
+    "transcription": {
+      "pass_id": "sew-t03-first-reading-2026-11-08",
+      "method": "Direct visual reading of full annotation-cleaned 144 dpi page PNGs, plus enlarged crops at 288-720 dpi and a contact sheet of every hashed source region; no OCR, no paid service, no delegation",
+      "observations": "First visual transcription only. Every printed glyph, power, subscript, inequality, unit, hyphen spacing, footnote and printed error was read from the rendered source and retained or flagged; no value inferred."
+    },
+    "visual_recheck": {
+      "pass_id": "parent-recheck-sew-t03",
+      "method": "distinct second visual inspection of exact source-region renders (incl. rotated/zoomed crops) by parent assistant; not independent human review",
+      "observations": "Parent compared every coefficient, power, subscript and cell against 144-dpi region renders, with 400-dpi zoom where needed.",
+      "content_sha256": "e79ecf0e46f115a20ef1dc7d151554beeedd115e82c1079128c4745a59b0ad3a"
+    }
+  },
+  "source_image_refs": [
+    {
+      "path": "tmp/pdfs/sew-t03/SEW-2013-A--E5.22.png",
+      "role": "first-reading source crop"
+    }
+  ]
+}

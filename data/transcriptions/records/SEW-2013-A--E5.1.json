@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:E5.1",
+  "unit_id": "SEW-2013-A:E5.1",
+  "manual_id": "SEW-2013-A",
+  "kind": "equation",
+  "number": "5.1",
+  "title": "Head loss through clean flat bar screens",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "state": "verified",
+  "regions": [
+    {
+      "pdf_page": 335,
+      "page_label": "5 - 31",
+      "bbox": [
+        73,
+        287,
+        528,
+        313
+      ],
+      "render_sha256": "ed3e403cd127860b541b3f88a3e0574ddef8c6be096886e81b051ead97186e6c"
+    }
+  ],
+  "parent_id": "SEW-2013-A:5.6.1.9",
+  "latex": "h=0.0729(V^{2}-v^{2})",
+  "readable": "h = 0.0729 (V^2 - v^2)",
+  "symbols": [
+    {
+      "symbol": "h",
+      "definition": "Head loss in m"
+    },
+    {
+      "symbol": "V",
+      "definition": "Velocity through the screen in m/s"
+    },
+    {
+      "symbol": "v",
+      "definition": "Velocity before the screen in m/s"
+    }
+  ],
+  "applicability": "Head loss created by a clean flat bar screen, calculated from the flow and the effective areas of the screen openings, the latter being the sum of the vertical projections of the openings.",
+  "notes": [
+    "Printed coefficient 0.0729 retained; no correction made.",
+    "Uppercase V (velocity through the screen) and lowercase v (velocity before the screen) are distinct in the source and kept distinct.",
+    "Usually accepted practice is to provide loss of head of 0.15 m but the maximum loss with clogged hand cleaned screen should not exceed 0.3 m."
+  ],
+  "verification": {
+    "transcription": {
+      "pass_id": "sew-t03-first-reading-2026-11-08",
+      "method": "Direct visual reading of full annotation-cleaned 144 dpi page PNGs, plus enlarged crops at 288-720 dpi and a contact sheet of every hashed source region; no OCR, no paid service, no delegation",
+      "observations": "First visual transcription only. Every printed glyph, power, subscript, inequality, unit, hyphen spacing, footnote and printed error was read from the rendered source and retained or flagged; no value inferred."
+    },
+    "visual_recheck": {
+      "pass_id": "parent-recheck-sew-t03",
+      "method": "distinct second visual inspection of exact source-region renders (incl. rotated/zoomed crops) by parent assistant; not independent human review",
+      "observations": "Parent compared every coefficient, power, subscript and cell against 144-dpi region renders, with 400-dpi zoom where needed.",
+      "content_sha256": "7c76af941012a7858363b2e110e8883d69a84aa0431e2e2d63e1046f4128c2cf"
+    }
+  },
+  "source_image_refs": [
+    {
+      "path": "tmp/pdfs/sew-t03/SEW-2013-A--E5.1.png",
+      "role": "first-reading source crop"
+    }
+  ]
+}

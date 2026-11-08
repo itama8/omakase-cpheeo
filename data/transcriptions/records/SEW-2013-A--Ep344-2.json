@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:Ep344-2",
+  "unit_id": "SEW-2013-A:Ep344-2",
+  "manual_id": "SEW-2013-A",
+  "kind": "equation",
+  "number": "p344-2",
+  "title": "Kinematic viscosity value stated for 10 degree",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "state": "verified",
+  "regions": [
+    {
+      "pdf_page": 344,
+      "page_label": "5 - 40",
+      "bbox": [
+        135,
+        291,
+        242,
+        306
+      ],
+      "render_sha256": "71c99d30892f36970de854af3fda35fb742ce3677bb857ce00be15f5f7a9a382"
+    }
+  ],
+  "parent_id": "SEW-2013-A:5.6.2.7.1.1",
+  "latex": "\\nu=1.01\\times10^{-6}\\,m^{2}/s",
+  "readable": "nu = 1.01 x 10^-6 m^2 / s",
+  "symbols": [],
+  "applicability": "Value stated for grit particles of specific gravity 2.65 and liquid temperature at 10 degree.",
+  "notes": [
+    "Unnumbered display expression: p344-2 is a service locator, not a printed equation number.",
+    "Printed as \"liquid temperature at 10 degree\" without a unit symbol for the temperature.",
+    "The printed exponent is -6."
+  ],
+  "verification": {
+    "transcription": {
+      "pass_id": "sew-t03-first-reading-2026-11-08",
+      "method": "Direct visual reading of full annotation-cleaned 144 dpi page PNGs, plus enlarged crops at 288-720 dpi and a contact sheet of every hashed source region; no OCR, no paid service, no delegation",
+      "observations": "First visual transcription only. Every printed glyph, power, subscript, inequality, unit, hyphen spacing, footnote and printed error was read from the rendered source and retained or flagged; no value inferred."
+    },
+    "visual_recheck": {
+      "pass_id": "parent-recheck-sew-t03",
+      "method": "distinct second visual inspection of exact source-region renders (incl. rotated/zoomed crops) by parent assistant; not independent human review",
+      "observations": "Parent compared every coefficient, power, subscript and cell against 144-dpi region renders, with 400-dpi zoom where needed.",
+      "content_sha256": "efd9cc967ce58b923d21df83d627cf2af34ba1b0067e9a67c4c8bd8bd29c233d"
+    }
+  },
+  "source_image_refs": [
+    {
+      "path": "tmp/pdfs/sew-t03/SEW-2013-A--Ep344-2.png",
+      "role": "first-reading source crop"
+    }
+  ]
+}

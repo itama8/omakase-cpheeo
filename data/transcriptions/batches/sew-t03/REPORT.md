@@ -21,9 +21,9 @@ Details per page, including observations, continuations and unclear items, are i
 
 ## Draft inventory
 
-Equations, numbered (26): E5.1, E5.2 (p335); E5.3 (p336); E5.4 (p343); E5.5, E5.6, E5.7, E5.8 (p344); E5.9, E5.10 (p345); E5.11, E5.12 (p346); E5.13, E5.14 (p348); E5.15-E5.21 (p351); E5.22-E5.25 (p366).
+Equations, numbered (25): E5.1, E5.2 (p335); E5.3 (p336); E5.4 (p343); E5.5, E5.6, E5.7, E5.8 (p344); E5.9, E5.10 (p345); E5.11, E5.12 (p346); E5.13, E5.14 (p348); E5.15-E5.21 (p351); E5.22-E5.25 (p366).
 
-Equations, unnumbered or prose-inline, service locators (6): Ep343-1 (alt form after "or"), Ep344-1 (R = Vs d/nu), Ep344-2 (nu = 1.01 x 10^-6 m2/s), Ep356-1, Ep356-2 (weir length and weir loading computations), Ep359-1, Ep359-2 (worked sludge-withdrawal calculations).
+Equations, unnumbered or prose-inline, service locators (7): Ep343-1 (alt form after "or"), Ep344-1 (R = Vs d/nu), Ep344-2 (nu = 1.01 x 10^-6 m2/s), Ep356-1, Ep356-2 (weir length and weir loading computations), Ep359-1, Ep359-2 (worked sludge-withdrawal calculations).
 
 Tables (4): T5.6 (p345), T5.7 (p350), T5.8 (p357), and Tp342-1 (p342), an uncaptioned, unruled two-column design-criteria list with no printed number. Tp342-1 carries `create_unit: true` with parent `SEW-2013-A:5.6.2.5`; T5.6, T5.7 and T5.8 already exist as units, so no unit creation is requested for them.
 

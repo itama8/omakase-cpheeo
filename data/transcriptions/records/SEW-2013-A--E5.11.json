@@ -1,0 +1,70 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:E5.11",
+  "unit_id": "SEW-2013-A:E5.11",
+  "manual_id": "SEW-2013-A",
+  "kind": "equation",
+  "number": "5.11",
+  "title": "Surface overflow rate for a real grit chamber basin",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "state": "verified",
+  "regions": [
+    {
+      "pdf_page": 346,
+      "page_label": "5 - 42",
+      "bbox": [
+        71,
+        161,
+        515,
+        186
+      ],
+      "render_sha256": "7ec8b93305782e79beb03832773f0049a6753a92cb877dd06b50b3494a463fc0"
+    }
+  ],
+  "parent_id": "SEW-2013-A:5.6.2.7.1.2",
+  "latex": "\\eta=1-\\left[1+nV_s/\\left(Q/A\\right)\\right]^{\\frac{1}{n}}",
+  "readable": "eta = 1 - [1 + n Vs / (Q / A)]^(1/n)",
+  "symbols": [
+    {
+      "symbol": "eta",
+      "definition": "Desired efficiency of removal of grit particle"
+    },
+    {
+      "symbol": "Vs",
+      "definition": "Settling velocity of minimum size of grit particle to be removed"
+    },
+    {
+      "symbol": "Q/A",
+      "definition": "Design surface over flow rate applicable for grit chamber to be designed"
+    },
+    {
+      "symbol": "n",
+      "definition": "An index which is a measure of the basin performance."
+    }
+  ],
+  "applicability": "Equation used to determine the surface overflow rate (SOR) for a real basin for a given efficiency of grit removal and basin performance.",
+  "notes": [
+    "The printed exponent is 1/n with no minus sign; printed as shown and not corrected.",
+    "The values of n are 1/8, 1/4, 1/2 and 1 for very good, good, poor and very poor performance.",
+    "As printed, the equation yields design surface overflow rates of 66.67%, 58.8%, 50% and 33.3% of the settling velocity for 75% removal efficiency."
+  ],
+  "verification": {
+    "transcription": {
+      "pass_id": "sew-t03-first-reading-2026-11-08",
+      "method": "Direct visual reading of full annotation-cleaned 144 dpi page PNGs, plus enlarged crops at 288-720 dpi and a contact sheet of every hashed source region; no OCR, no paid service, no delegation",
+      "observations": "First visual transcription only. Every printed glyph, power, subscript, inequality, unit, hyphen spacing, footnote and printed error was read from the rendered source and retained or flagged; no value inferred."
+    },
+    "visual_recheck": {
+      "pass_id": "parent-recheck-sew-t03",
+      "method": "distinct second visual inspection of exact source-region renders (incl. rotated/zoomed crops) by parent assistant; not independent human review",
+      "observations": "Parent compared every coefficient, power, subscript and cell against 144-dpi region renders, with 400-dpi zoom where needed.",
+      "content_sha256": "fc7b045caa2fbefc0aa2e1042570b05ddd3e016b4a5b1ce51a4174cf899e45c6"
+    }
+  },
+  "source_image_refs": [
+    {
+      "path": "tmp/pdfs/sew-t03/SEW-2013-A--E5.11.png",
+      "role": "first-reading source crop"
+    }
+  ]
+}

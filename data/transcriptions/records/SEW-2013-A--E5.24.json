@@ -1,0 +1,73 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:E5.24",
+  "unit_id": "SEW-2013-A:E5.24",
+  "manual_id": "SEW-2013-A",
+  "kind": "equation",
+  "number": "5.24",
+  "title": "Mean cell residence time or sludge retention time (SRT)",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "state": "verified",
+  "regions": [
+    {
+      "pdf_page": 366,
+      "page_label": "5 - 62",
+      "bbox": [
+        52,
+        545,
+        538,
+        592
+      ],
+      "render_sha256": "9a8607403f9aa5fc2567eaa8d3b311420ea7ce2fddade80f2b59dc7892db3dc5"
+    }
+  ],
+  "parent_id": "SEW-2013-A:5.8.1.3",
+  "latex": "\\theta_c=\\frac{VX}{Q_wX_s}",
+  "readable": "theta_c = V X / (Qw Xs)",
+  "symbols": [
+    {
+      "symbol": "theta_c",
+      "definition": "mean cell residence time or sludge retention time (SRT), day"
+    },
+    {
+      "symbol": "V",
+      "definition": "Volume of aeration tank, m3, and"
+    },
+    {
+      "symbol": "X",
+      "definition": "MLSS concentration in aeration tank, (g/m3)"
+    },
+    {
+      "symbol": "Qw",
+      "definition": "waste activated sludge rate, (m3/d)"
+    },
+    {
+      "symbol": "Xs",
+      "definition": "MLSS concentration in waste activated sludge from secondary settling tank under flow, (g/m3)"
+    }
+  ],
+  "applicability": "A similar loading parameter to U: the mean cell residence time or sludge retention time (SRT), theta_c, day.",
+  "notes": [
+    "The printed denominator shows a small separator between Qw and Xs; transcribed as multiplication.",
+    "Printed as VX in the numerator with no multiplication sign; retained."
+  ],
+  "verification": {
+    "transcription": {
+      "pass_id": "sew-t03-first-reading-2026-11-08",
+      "method": "Direct visual reading of full annotation-cleaned 144 dpi page PNGs, plus enlarged crops at 288-720 dpi and a contact sheet of every hashed source region; no OCR, no paid service, no delegation",
+      "observations": "First visual transcription only. Every printed glyph, power, subscript, inequality, unit, hyphen spacing, footnote and printed error was read from the rendered source and retained or flagged; no value inferred."
+    },
+    "visual_recheck": {
+      "pass_id": "parent-recheck-sew-t03",
+      "method": "distinct second visual inspection of exact source-region renders (incl. rotated/zoomed crops) by parent assistant; not independent human review",
+      "observations": "Parent compared every coefficient, power, subscript and cell against 144-dpi region renders, with 400-dpi zoom where needed.",
+      "content_sha256": "aec3ac1d06da44b5c790f987a106938c78a59ff94a6796658856f51210b10587"
+    }
+  },
+  "source_image_refs": [
+    {
+      "path": "tmp/pdfs/sew-t03/SEW-2013-A--E5.24.png",
+      "role": "first-reading source crop"
+    }
+  ]
+}
