@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:Ep527-1",
+  "unit_id": "SEW-2013-A:Ep527-1",
+  "manual_id": "SEW-2013-A",
+  "kind": "equation",
+  "number": "p527-1",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "state": "pending",
+  "regions": [
+    {
+      "pdf_page": 527,
+      "page_label": "6 - 4",
+      "bbox": [
+        50.0,
+        618.0,
+        380.0,
+        638.0
+      ],
+      "render_sha256": "3267bf551235fff7bda7a9b4ac766d6424114abf76f9cf44ff1b7dfdc29e4e69"
+    }
+  ],
+  "title": "Friction compounding factor F for undigested sludge",
+  "parent_id": "SEW-2013-A:6.2",
+  "latex": "F = 2.88 + (0.176 \\times P \\times P) - (0.866 \\times P)",
+  "readable": "F for undigested sludge is = 2.88 + (0.176×P×P) – (0.866×P)",
+  "symbols": [
+    {
+      "symbol": "F",
+      "definition": "friction compounding factor"
+    },
+    {
+      "symbol": "P",
+      "definition": "solids content in the sludge"
+    }
+  ],
+  "applicability": "Step 4 of the six-step printed procedure for friction losses in gravity sludge pipelines: the friction loss calculated with Manning's formula as though the sludge were water is multiplied by F.",
+  "notes": [
+    "Ep527-1 is a service locator, not a printed equation number.",
+    "Printed with the printed step number as '4.  F for undigested sludge is = 2.88 + (0.176×P×P) – (0.866×P)'. The word 'is' precedes the '=' sign and the square term is printed as 'P×P', not P²; both forms are retained and neither is corrected.",
+    "Printed subtraction uses an en dash between the two bracketed groups; written as a minus in latex and as an en dash in readable.",
+    "The printed procedure defines P only as 'the solids content in the sludge (P)' and gives it no unit; no unit is added here.",
+    "Step 4 of this list carries no glyphs in the PDF text layer (the layer holds only a stray newline at that position); the line was read from the page image.",
+    "The printed heading for the list is '6.2.1.1 Friction losses in Gravity Sludge Pipelines'."
+  ],
+  "verification": {
+    "transcription": {
+      "pass_id": "sew-t07-first-reading-2026-11-08",
+      "method": "Direct viewing of the annotation-cleaned 144 dpi page renders and 260-800 dpi crops of the same pages; no OCR, no paid service",
+      "observations": "Line read from a 500 dpi crop of the procedure list after the missing text-layer glyphs were noted; every coefficient (2.88, 0.176, 0.866) and both multiplication signs checked at 800 dpi."
+    }
+  }
+}

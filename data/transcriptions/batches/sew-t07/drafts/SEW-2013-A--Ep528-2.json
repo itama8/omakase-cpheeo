@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:Ep528-2",
+  "unit_id": "SEW-2013-A:Ep528-2",
+  "manual_id": "SEW-2013-A",
+  "kind": "equation",
+  "number": "p528-2",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "state": "pending",
+  "regions": [
+    {
+      "pdf_page": 528,
+      "page_label": "6 - 5",
+      "bbox": [
+        55.0,
+        573.5,
+        318.0,
+        594.5
+      ],
+      "render_sha256": "05f796f6a9e4b4edc10eecd712b282f555c2fde0119d41a8780663f8d73e0bb5"
+    }
+  ],
+  "title": "Multiplication factor k for digested sludge (Figure 6.2 lower curve)",
+  "parent_id": "SEW-2013-A:6.2.1.2",
+  "latex": "k = 0.0354P^{2} - 0.0699P + 1.0858",
+  "readable": "k for digested sludge = 0.0354P² - 0.0699P + 1.0858",
+  "symbols": [
+    {
+      "symbol": "k",
+      "definition": "multiplication factor (head loss multiplication factor)"
+    },
+    {
+      "symbol": "P",
+      "definition": "% of sludge solids"
+    }
+  ],
+  "applicability": "Simplified equation of the lower curve of Figure 6.2, labelled 'Digested sludge' in the figure and printed directly below the undigested-sludge line.",
+  "notes": [
+    "Ep528-2 is a service locator, not a printed equation number.",
+    "The superscript 2 is printed and visible in the page image, but the PDF text layer at that position holds only a newline character, so the native text reads '0.0354P - 0.0699P + 1.0858'. The image form with the exponent is transcribed; the text-layer form is not.",
+    "The curve this equation belongs to is labelled 'Digested sludge' in Figure 6.2; the equation line itself reads 'k for digested sludge'; retained.",
+    "No reordering or simplification of the printed polynomial is applied."
+  ],
+  "verification": {
+    "transcription": {
+      "pass_id": "sew-t07-first-reading-2026-11-08",
+      "method": "Direct viewing of the annotation-cleaned 144 dpi page renders and 260-800 dpi crops of the same pages; no OCR, no paid service",
+      "observations": "Line read from a 450 dpi crop and the disputed superscript verified on a 1200 dpi crop of that single glyph before the value was recorded."
+    }
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:T5.65",
+  "unit_id": "SEW-2013-A:T5.65",
+  "manual_id": "SEW-2013-A",
+  "kind": "table",
+  "number": "5.65",
+  "title": "Performance of the Lillehammer Kaldnes process",
+  "state": "pending",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "regions": [
+    {
+      "pdf_page": 511,
+      "page_label": "5 - 207",
+      "bbox": [
+        110.2,
+        154.9,
+        510.0,
+        273.0
+      ],
+      "render_sha256": "6b892ccf0459dacaf98787b6a56cf5fd49eb9822685e251ec971120697a0618d"
+    }
+  ],
+  "headers": [
+    "",
+    "Influent (mg/l)",
+    "Effluent (mg/l)",
+    "Removal (%)"
+  ],
+  "rows": [
+    [
+      "BOD₇",
+      "81.67",
+      "3.33",
+      "96"
+    ],
+    [
+      "T-N",
+      "25.46",
+      "5.17",
+      "80"
+    ],
+    [
+      "T-P",
+      "3.67",
+      "0.08",
+      "98"
+    ]
+  ],
+  "cell_spans": [],
+  "markdown": "|  | Influent (mg/l) | Effluent (mg/l) | Removal (%) |\n| --- | --- | --- | --- |\n| BOD₇ | 81.67 | 3.33 | 96 |\n| T-N | 25.46 | 5.17 | 80 |\n| T-P | 3.67 | 0.08 | 98 |",
+  "notes": [
+    "The printed stub heading is empty; kept as an empty header cell.",
+    "Printed as 'BOD7' with the 7 as a subscript; written BOD₇.",
+    "No Source line is printed inside this table block. The four lines printed below it start at the left margin of the following figure block (x about 58 pt) instead of the table's left edge (x about 113 pt) and are therefore recorded here rather than as table rows: 'STP for Nitrogen and Phosphorus removal Lillehammer, Norway.', 'Dimensioning flow: 1,200 m3/hr, Maximum flow: 1,900 m3/hr', 'Design Temperature: 10ºC' and 'Source:  Kaldnes Web page'.",
+    "A Source line with the same text ('Source:  Kaldnes Web page') is printed again below Figure 5.90 on the same page; both printings exist in the source.",
+    "Printed as '10ºC' with a masculine ordinal indicator; retained.",
+    "Printed title reads 'Lillehammer'; retained."
+  ],
+  "verification": {
+    "transcription": {
+      "pass_id": "sew-t07-first-reading-2026-11-08",
+      "method": "Direct viewing of the annotation-cleaned 144 dpi page renders and 260-800 dpi crops of the same pages; no OCR, no paid service",
+      "observations": "Caption, header row and three data rows read from a 144 dpi page view and a 300 dpi crop; the subscript 7 and the two-decimal values checked at 450 dpi. The four printed lines below the table were read from the page render."
+    }
+  }
+}

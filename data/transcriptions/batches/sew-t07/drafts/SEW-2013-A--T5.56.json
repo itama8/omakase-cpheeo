@@ -1,0 +1,70 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:T5.56",
+  "unit_id": "SEW-2013-A:T5.56",
+  "manual_id": "SEW-2013-A",
+  "kind": "table",
+  "number": "5.56",
+  "title": "Performance of the Culver SBR process",
+  "state": "pending",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "regions": [
+    {
+      "pdf_page": 500,
+      "page_label": "5 - 196",
+      "bbox": [
+        103.3,
+        287.9,
+        454.7,
+        462.5
+      ],
+      "render_sha256": "58c7398140c70f1c957711863abefb66577e106849f5e984831277df3711269f"
+    }
+  ],
+  "headers": [
+    "",
+    "BOD",
+    "TSS",
+    "NH₄⁺-N + NO₃⁻-N",
+    "T - P"
+  ],
+  "rows": [
+    [
+      "Influent (mg/L)",
+      "170",
+      "150",
+      "22.0",
+      "6.5"
+    ],
+    [
+      "Effluent (mg/L)",
+      "10.5",
+      "5.5",
+      "2.4",
+      "0.75"
+    ],
+    [
+      "% Removal",
+      "94",
+      "96",
+      "89",
+      "88"
+    ]
+  ],
+  "cell_spans": [],
+  "markdown": "|  | BOD | TSS | NH₄⁺-N + NO₃⁻-N | T - P |\n| --- | --- | --- | --- | --- |\n| Influent (mg/L) | 170 | 150 | 22.0 | 6.5 |\n| Effluent (mg/L) | 10.5 | 5.5 | 2.4 | 0.75 |\n| % Removal | 94 | 96 | 89 | 88 |",
+  "notes": [
+    "Printed below the table: 'Source: USEPA, 1986, USEPA, 1983'.",
+    "The printed top-left header cell is empty; kept as an empty header cell.",
+    "The fourth header is printed on two lines as 'NH4+-N +' and 'NO3--N': subscript 4 with a superscript plus, a plus sign, then subscript 3 with a superscript minus. Written here as NH₄⁺-N + NO₃⁻-N.",
+    "Printed 'T - P' with spaces around the hyphen; retained (other tables on these pages print 'T-P').",
+    "Units differ inside one table ('mg/L' in the stub, none in the headers); retained."
+  ],
+  "verification": {
+    "transcription": {
+      "pass_id": "sew-t07-first-reading-2026-11-08",
+      "method": "Direct viewing of the annotation-cleaned 144 dpi page renders and 260-800 dpi crops of the same pages; no OCR, no paid service",
+      "observations": "All header lines and the three data rows read from a 350 dpi crop; the two-line combined nitrogen header and the decimal places (22.0, 10.5, 0.75) checked individually."
+    }
+  }
+}

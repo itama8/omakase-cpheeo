@@ -1,0 +1,106 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:T5.62",
+  "unit_id": "SEW-2013-A:T5.62",
+  "manual_id": "SEW-2013-A",
+  "kind": "table",
+  "number": "5.62",
+  "title": "Performance of the biological nitrification-denitrification Linpor process (Freising, Germany)",
+  "state": "pending",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "regions": [
+    {
+      "pdf_page": 509,
+      "page_label": "5 - 205",
+      "bbox": [
+        87.8,
+        548.0,
+        505.7,
+        763.1
+      ],
+      "render_sha256": "6d5227b02890e258ab60e821e28c8ee803db3fc0de5ed6ca054942edc4a03e38"
+    }
+  ],
+  "headers": [
+    "",
+    "Design Influent",
+    "Design Effluent",
+    "Operation Influent",
+    "Operation Effluent"
+  ],
+  "rows": [
+    [
+      "BOD (mg/l)",
+      "222",
+      "-",
+      "106",
+      "3"
+    ],
+    [
+      "COD (mg/l)",
+      "397",
+      "-",
+      "208",
+      "-"
+    ],
+    [
+      "TKN (mg/l)",
+      "46.6",
+      "-",
+      "29",
+      "<0.6"
+    ],
+    [
+      "NH₄⁻-N (mg/l)",
+      "35.9",
+      "<5",
+      "16",
+      "<0.1"
+    ],
+    [
+      "NOₓ⁻-N (mg/l)",
+      "2.6",
+      "-",
+      "-",
+      "9.9"
+    ],
+    [
+      "Total-N (mg/l)",
+      "49.2",
+      "<18",
+      "29",
+      "9.9"
+    ]
+  ],
+  "cell_spans": [
+    {
+      "column": 1,
+      "header": true,
+      "colspan": 2,
+      "description": "Printed 'Design' spans the Influent and Effluent columns"
+    },
+    {
+      "column": 3,
+      "header": true,
+      "colspan": 2,
+      "description": "Printed 'Operation' spans the Influent and Effluent columns"
+    }
+  ],
+  "markdown": "|  | Design Influent | Design Effluent | Operation Influent | Operation Effluent |\n| --- | --- | --- | --- | --- |\n| BOD (mg/l) | 222 | - | 106 | 3 |\n| COD (mg/l) | 397 | - | 208 | - |\n| TKN (mg/l) | 46.6 | - | 29 | <0.6 |\n| NH₄⁻-N (mg/l) | 35.9 | <5 | 16 | <0.1 |\n| NOₓ⁻-N (mg/l) | 2.6 | - | - | 9.9 |\n| Total-N (mg/l) | 49.2 | <18 | 29 | 9.9 |",
+  "notes": [
+    "Printed below the table: 'Source:  Gilligan and Morper, 1999' (two spaces after the colon).",
+    "Printed as 'NH4--N' in this table: subscript 4 followed by a superscript minus. Table 5.53 on page 492 prints the same species as 'NH4+-N' with a plus. The printed minus is retained and not corrected.",
+    "Printed as 'NOx--N' with a subscript x and a superscript minus; written NOₓ⁻-N. Not corrected.",
+    "The printed top-left header cell is empty and the stub column carries no heading; kept as an empty header cell.",
+    "Printed 'Total-N' with a hyphen while neighbouring tables print 'T-N'; retained.",
+    "The caption title is printed on two centred lines and joined here with a space, as for Table 5.61.",
+    "Printed values are kept as printed without recomputation: the Design Influent total-N prints 49.2 while the Operation Influent total-N prints 29, and the three Effluent columns mix '-' and '<' values."
+  ],
+  "verification": {
+    "transcription": {
+      "pass_id": "sew-t07-first-reading-2026-11-08",
+      "method": "Direct viewing of the annotation-cleaned 144 dpi page renders and 260-800 dpi crops of the same pages; no OCR, no paid service",
+      "observations": "All six rows and four value columns read from a 420 dpi crop; the NH4 and NOx charge signs confirmed at 800 dpi against the plus sign in Table 5.53."
+    }
+  }
+}

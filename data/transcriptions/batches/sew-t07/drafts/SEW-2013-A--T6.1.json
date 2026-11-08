@@ -1,0 +1,75 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:T6.1",
+  "unit_id": "SEW-2013-A:T6.1",
+  "manual_id": "SEW-2013-A",
+  "kind": "table",
+  "number": "6.1",
+  "title": "Typical sludge generation values",
+  "state": "pending",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "regions": [
+    {
+      "pdf_page": 525,
+      "page_label": "6 - 2",
+      "bbox": [
+        105.5,
+        70.5,
+        486.5,
+        211.0
+      ],
+      "render_sha256": "5ea08f9553faff78b60dbc5347b7bc20295abae42261a6f1cd1930cba287b8db"
+    }
+  ],
+  "headers": [
+    "Process",
+    "as VSS",
+    "as TSS"
+  ],
+  "rows": [
+    [
+      "Primary alone",
+      "1.92",
+      "3.20"
+    ],
+    [
+      "Primary and secondary as conventional ASP",
+      "0.86",
+      "1.31"
+    ],
+    [
+      "Extended aeration ASP",
+      "0.26",
+      "0.93"
+    ]
+  ],
+  "cell_spans": [
+    {
+      "column": 1,
+      "header": true,
+      "colspan": 2,
+      "description": "Printed 'kg Sludge/kg BOD removed' spans the as VSS and as TSS columns"
+    },
+    {
+      "column": 0,
+      "header": true,
+      "rowspan": 2,
+      "description": "Printed 'Process' spans both header rows"
+    }
+  ],
+  "markdown": "| Process | as VSS | as TSS |\n| --- | --- | --- |\n| Primary alone | 1.92 | 3.20 |\n| Primary and secondary as conventional ASP | 0.86 | 1.31 |\n| Extended aeration ASP | 0.26 | 0.93 |",
+  "notes": [
+    "The caption prints 'Table 6.1' with a full stop, while the running text on page 524 refers to 'Table 6-1 overleaf' with a hyphen. Both forms are printed; the caption form is used as the number.",
+    "No Source line is printed for this table.",
+    "Transcriber layout note: two printed header rows. Row 1 reads 'Process' and 'kg Sludge/kg BOD removed' (spanning two columns); row 2 reads 'as VSS' and 'as TSS'.",
+    "Printed capitalisation 'kg Sludge/kg BOD removed' is retained.",
+    "Printed as 'ASP' without expansion in the table; the surrounding text uses ASP for activated sludge process."
+  ],
+  "verification": {
+    "transcription": {
+      "pass_id": "sew-t07-first-reading-2026-11-08",
+      "method": "Direct viewing of the annotation-cleaned 144 dpi page renders and 260-800 dpi crops of the same pages; no OCR, no paid service",
+      "observations": "Caption, both header levels and the three data rows read from a 300 dpi crop; the five decimals checked individually."
+    }
+  }
+}

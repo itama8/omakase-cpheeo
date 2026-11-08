@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:T5.52",
+  "unit_id": "SEW-2013-A:T5.52",
+  "manual_id": "SEW-2013-A",
+  "kind": "table",
+  "number": "5.52",
+  "title": "Typical design parameters of MBR process",
+  "state": "pending",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "regions": [
+    {
+      "pdf_page": 492,
+      "page_label": "5 - 188",
+      "bbox": [
+        85.7,
+        361.7,
+        514.4,
+        481.2
+      ],
+      "render_sha256": "112130c13ab4f702c5b92749dc61fd30e48831529a3c487bdab1c001fe93aef1"
+    }
+  ],
+  "headers": [
+    "COD Loading (kg/m³/day)",
+    "F/M as MLVSS",
+    "SRT (days)",
+    "MLSS (mg/l)",
+    "Flux (l/m²/day)",
+    "Applied Vacuum (kPa)",
+    "DO (mg/l)"
+  ],
+  "rows": [
+    [
+      "1.2-3.2",
+      "0.1-0.4",
+      "5-20",
+      "5,000-20,000",
+      "600-1,100",
+      "4-35",
+      "0.5-1.0"
+    ]
+  ],
+  "cell_spans": [],
+  "markdown": "| COD Loading (kg/m³/day) | F/M as MLVSS | SRT (days) | MLSS (mg/l) | Flux (l/m²/day) | Applied Vacuum (kPa) | DO (mg/l) |\n| --- | --- | --- | --- | --- | --- | --- |\n| 1.2-3.2 | 0.1-0.4 | 5-20 | 5,000-20,000 | 600-1,100 | 4-35 | 0.5-1.0 |",
+  "notes": [
+    "Printed below the table: 'Source: Metcalf & Eddy, 2003'.",
+    "Transcriber layout note: every header cell is printed on two or three lines inside one ruled header row ('COD' / 'Loading' / '(kg/m3/day)'). The printed lines are joined with single spaces and the printed exponents are written as superscripts.",
+    "Only one data row is printed and there is no stub column; the seven cells are the whole table.",
+    "Printed 'F/M as MLVSS' carries no unit; no unit is added.",
+    "Printed 'Flux (l/m2/day)' uses a lower-case letter l; retained.",
+    "Unit case varies inside the same table ('mg/l' beside 'kPa'); retained as printed.",
+    "Printed ranges use a short hyphen throughout ('1.2-3.2', '5,000-20,000'); retained."
+  ],
+  "verification": {
+    "transcription": {
+      "pass_id": "sew-t07-first-reading-2026-11-08",
+      "method": "Direct viewing of the annotation-cleaned 144 dpi page renders and 260-800 dpi crops of the same pages; no OCR, no paid service",
+      "observations": "All seven headers and seven values read from a 300 dpi crop; the thousands separators in '5,000-20,000' and '600-1,100' checked digit by digit."
+    }
+  }
+}

@@ -1,0 +1,207 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:T5.54",
+  "unit_id": "SEW-2013-A:T5.54",
+  "manual_id": "SEW-2013-A",
+  "kind": "table",
+  "number": "5.54",
+  "title": "Design criteria stated as used in the 45 MLD Cyclic Activated Sludge process based SBR at Mundhwa STP in Pune",
+  "state": "pending",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "regions": [
+    {
+      "pdf_page": 499,
+      "page_label": "5 - 195",
+      "bbox": [
+        64.0,
+        71.4,
+        538.3,
+        745.6
+      ],
+      "render_sha256": "b2c513f5c2d6014dc71d98e1e2af3b29449f8c00be4f737a1044feefd4d12a85"
+    }
+  ],
+  "headers": [
+    "",
+    ""
+  ],
+  "rows": [
+    [
+      "Design Flow",
+      ""
+    ],
+    [
+      "• Average flow",
+      "45 MLD"
+    ],
+    [
+      "• Peak factor",
+      "2.25 times average flow"
+    ],
+    [
+      "• Peak flow",
+      "95 MLD"
+    ],
+    [
+      "Influent Quality to SBR Basin",
+      ""
+    ],
+    [
+      "• BOD",
+      "250 mg/l"
+    ],
+    [
+      "• SS",
+      "350 mg/l"
+    ],
+    [
+      "• TKN",
+      "45 mg/l"
+    ],
+    [
+      "• TP",
+      "5 mg/l"
+    ],
+    [
+      "• Faecal coliform",
+      "10⁶ MPN/100 ml"
+    ],
+    [
+      "Effluent Quality of SBR Basin",
+      ""
+    ],
+    [
+      "• BOD",
+      "< 10 mg/l"
+    ],
+    [
+      "• SS",
+      "< 10 mg/l"
+    ],
+    [
+      "• TKN",
+      "< 10 mg/l"
+    ],
+    [
+      "• TP",
+      "< 2 mg/l"
+    ],
+    [
+      "• Faecal coliform",
+      "< 100 MPN/100 ml"
+    ],
+    [
+      "No. of basins",
+      "4"
+    ],
+    [
+      "Each basin area",
+      "1431 m²"
+    ],
+    [
+      "Basin foot print",
+      "127.5 m²/1000 m³/d"
+    ],
+    [
+      "Decant volume",
+      "3377 m³"
+    ],
+    [
+      "Decanter loading",
+      "300 m³/1000 m³/d"
+    ],
+    [
+      "Hourly flow rate",
+      "1875 m³/h"
+    ],
+    [
+      "Hourly flow rate to each basin",
+      "937 m³/h"
+    ],
+    [
+      "No. of cycles per day/basin",
+      "8"
+    ],
+    [
+      "• Filling and aeration",
+      "90 min."
+    ],
+    [
+      "• Settling phase",
+      "45 min."
+    ],
+    [
+      "• Decanting phase",
+      "45 min."
+    ],
+    [
+      "Total cycle time",
+      "3 h"
+    ],
+    [
+      "Hours of aeration time/day/basin",
+      "12 h"
+    ],
+    [
+      "MLSS",
+      "4300 mg/l"
+    ],
+    [
+      "MLVSS",
+      "3440 mg/l"
+    ],
+    [
+      "F/M",
+      "0.08"
+    ],
+    [
+      "HRT",
+      "16.30 h"
+    ],
+    [
+      "SRT",
+      "14.86 days"
+    ],
+    [
+      "Selector (Anoxic) Zone",
+      "1"
+    ],
+    [
+      "• Number of selector compartments/basin",
+      "50 min."
+    ],
+    [
+      "• Retention time in selector zone",
+      ""
+    ],
+    [
+      "Disinfection",
+      ""
+    ],
+    [
+      "• Chlorine dose after SBR Basin",
+      "2.5 mg/l"
+    ]
+  ],
+  "cell_spans": [],
+  "markdown": "|  |  |\n| --- | --- |\n| Design Flow |  |\n| • Average flow | 45 MLD |\n| • Peak factor | 2.25 times average flow |\n| • Peak flow | 95 MLD |\n| Influent Quality to SBR Basin |  |\n| • BOD | 250 mg/l |\n| • SS | 350 mg/l |\n| • TKN | 45 mg/l |\n| • TP | 5 mg/l |\n| • Faecal coliform | 10⁶ MPN/100 ml |\n| Effluent Quality of SBR Basin |  |\n| • BOD | < 10 mg/l |\n| • SS | < 10 mg/l |\n| • TKN | < 10 mg/l |\n| • TP | < 2 mg/l |\n| • Faecal coliform | < 100 MPN/100 ml |\n| No. of basins | 4 |\n| Each basin area | 1431 m² |\n| Basin foot print | 127.5 m²/1000 m³/d |\n| Decant volume | 3377 m³ |\n| Decanter loading | 300 m³/1000 m³/d |\n| Hourly flow rate | 1875 m³/h |\n| Hourly flow rate to each basin | 937 m³/h |\n| No. of cycles per day/basin | 8 |\n| • Filling and aeration | 90 min. |\n| • Settling phase | 45 min. |\n| • Decanting phase | 45 min. |\n| Total cycle time | 3 h |\n| Hours of aeration time/day/basin | 12 h |\n| MLSS | 4300 mg/l |\n| MLVSS | 3440 mg/l |\n| F/M | 0.08 |\n| HRT | 16.30 h |\n| SRT | 14.86 days |\n| Selector (Anoxic) Zone | 1 |\n| • Number of selector compartments/basin | 50 min. |\n| • Retention time in selector zone |  |\n| Disinfection |  |\n| • Chlorine dose after SBR Basin | 2.5 mg/l |",
+  "notes": [
+    "Printed below the table: 'Source: IIT Roorkee, August 2010'.",
+    "The table prints no header row: it is a two-column list of parameter groups and values, so both header cells are empty strings.",
+    "Transcriber layout note: a group heading and its bulleted items share one ruled cell. Each heading and each bulleted item is transcribed as its own row so that the printed value stays with its line; the printed bullet glyph is kept at the start of the item rows.",
+    "Printed exponents are superscripted ('m2', 'm3'); written here as m² and m³. Digits are otherwise unchanged, including '1431 m2', '3377 m3' and '10⁶ MPN/100 ml' (no thousands separators).",
+    "Printed group headings read 'Influent Quality to SBR Basin' and 'Effluent Quality of SBR Basin'; the different prepositions are retained.",
+    "Selector (Anoxic) Zone: the printed values sit one line above the item they describe. '1' is printed on the heading line and '50 min.' on the 'Number of selector compartments/basin' line, which itself prints over two lines; the 'Retention time in selector zone' line prints no value. Transcribed on the printed line alignment and not reinterpreted.",
+    "'MLSS', 'MLVSS' and 'F/M' with their three values are printed inside one ruled cell with no internal rules; they are transcribed as three rows so each label stays with its value.",
+    "'Total cycle time' is printed without a bullet in the same ruled cell as the 'No. of cycles per day/basin' group; kept as its own row with its printed value '3 h'.",
+    "The 'Design Flow', 'Effluent Quality of SBR Basin' and 'Disinfection' heading lines print no value; their value cells are empty strings, not omitted rows.",
+    "The printed cycle detail sums to the printed total: 90 + 45 + 45 = 180 min against a printed total cycle time of 3 h with 8 cycles per day."
+  ],
+  "verification": {
+    "transcription": {
+      "pass_id": "sew-t07-first-reading-2026-11-08",
+      "method": "Direct viewing of the annotation-cleaned 144 dpi page renders and 260-800 dpi crops of the same pages; no OCR, no paid service",
+      "observations": "Whole table read from two 300 dpi crops covering all 39 label rows and their values; each value column line checked against its label line, including the four '< 10 mg/l' effluent values and the superscripts."
+    }
+  }
+}

@@ -1,0 +1,152 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:T5.63",
+  "unit_id": "SEW-2013-A:T5.63",
+  "manual_id": "SEW-2013-A",
+  "kind": "table",
+  "number": "5.63",
+  "title": "Design details of the biological nitrification-denitrification Pegasus process (Munakata City, Japan)",
+  "state": "pending",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "regions": [
+    {
+      "pdf_page": 510,
+      "page_label": "5 - 206",
+      "bbox": [
+        83.1,
+        144.9,
+        509.1,
+        521.6
+      ],
+      "render_sha256": "8eec27ba0990a25a214b3b0ddd2f375eba809ff9c8d5b791fa80361cd82cfdd6"
+    }
+  ],
+  "headers": [
+    "",
+    "",
+    ""
+  ],
+  "rows": [
+    [
+      "Maximum daily low (m3/day)",
+      "",
+      "11,300"
+    ],
+    [
+      "Primary settling tank",
+      "Surface-loading (m³/m²/day)",
+      "36"
+    ],
+    [
+      "",
+      "Retention time (hours)",
+      "1.7"
+    ],
+    [
+      "Anoxic tank",
+      "Capacity (m³)",
+      "2,008"
+    ],
+    [
+      "",
+      "Retention time (hours)",
+      "4.3"
+    ],
+    [
+      "Oxic tank",
+      "Capacity (m³)",
+      "1,436"
+    ],
+    [
+      "",
+      "Retention time (hours)",
+      "3.0"
+    ],
+    [
+      "",
+      "Pellet dosing ratio (%)",
+      "7.5"
+    ],
+    [
+      "",
+      "Circulation ratio of nitrified liquor to influent flow (-)",
+      "1.5-3.0"
+    ],
+    [
+      "Final settling tank",
+      "Surface-loading (m³/m²/day)",
+      "25"
+    ],
+    [
+      "",
+      "Retention time (hours)",
+      "2.9"
+    ],
+    [
+      "PAC feeder",
+      "Dosage of coagulant\n(L/1,000m³)",
+      "70"
+    ],
+    [
+      "",
+      "A/p (-)",
+      "1"
+    ]
+  ],
+  "cell_spans": [
+    {
+      "column": 0,
+      "row": 0,
+      "colspan": 2,
+      "description": "Printed 'Maximum daily low (m3/day)' spans the two label columns"
+    },
+    {
+      "column": 0,
+      "row": 1,
+      "rowspan": 2,
+      "description": "Printed 'Primary settling tank' covers its two sub-rows"
+    },
+    {
+      "column": 0,
+      "row": 3,
+      "rowspan": 2,
+      "description": "Printed 'Anoxic tank' covers its two sub-rows"
+    },
+    {
+      "column": 0,
+      "row": 5,
+      "rowspan": 4,
+      "description": "Printed 'Oxic tank' covers its four sub-rows"
+    },
+    {
+      "column": 0,
+      "row": 9,
+      "rowspan": 2,
+      "description": "Printed 'Final settling tank' covers its two sub-rows"
+    },
+    {
+      "column": 0,
+      "row": 11,
+      "rowspan": 2,
+      "description": "Printed 'PAC feeder' covers its two sub-rows"
+    }
+  ],
+  "markdown": "|  |  |  |\n| --- | --- | --- |\n| Maximum daily low (m3/day) |  | 11,300 |\n| Primary settling tank | Surface-loading (m³/m²/day) | 36 |\n|  | Retention time (hours) | 1.7 |\n| Anoxic tank | Capacity (m³) | 2,008 |\n|  | Retention time (hours) | 4.3 |\n| Oxic tank | Capacity (m³) | 1,436 |\n|  | Retention time (hours) | 3.0 |\n|  | Pellet dosing ratio (%) | 7.5 |\n|  | Circulation ratio of nitrified liquor to influent flow (-) | 1.5-3.0 |\n| Final settling tank | Surface-loading (m³/m²/day) | 25 |\n|  | Retention time (hours) | 2.9 |\n| PAC feeder | Dosage of coagulant<br>(L/1,000m³) | 70 |\n|  | A/p (-) | 1 |",
+  "notes": [
+    "Printed below the table: 'Source: Hitachi Plant Technologies, Ltd.'",
+    "The table prints no header row: the first printed row is 'Maximum daily low (m3/day)' with its value 11,300, and all three header cells are empty strings.",
+    "Printed as 'Maximum daily low (m3/day)' with a plain digit 3, while every other unit in the table superscripts its exponents ('m3/m2/day', 'Capacity (m3)'). The plain form is retained and not corrected.",
+    "Row-span labels ('Primary settling tank', 'Anoxic tank', 'Oxic tank', 'Final settling tank', 'PAC feeder') are printed once; they are transcribed on the first of their rows and the remaining label cells are empty strings.",
+    "Printed 'Dosage of coagulant' with the unit '(L/1,000m3)' on a second line; joined with a line break kept inside the cell.",
+    "Printed as 'A/p (-)'; the ratio is not expanded anywhere in the table or the surrounding text.",
+    "The caption title is printed on two centred lines and joined here with a space.",
+    "Printed as 'Surface-loading' with a hyphen and lower-case l; retained."
+  ],
+  "verification": {
+    "transcription": {
+      "pass_id": "sew-t07-first-reading-2026-11-08",
+      "method": "Direct viewing of the annotation-cleaned 144 dpi page renders and 260-800 dpi crops of the same pages; no OCR, no paid service",
+      "observations": "Three-column structure and all thirteen rows read from two 450 dpi crops; each label line checked against its value line and each row-span boundary traced on the crops."
+    }
+  }
+}

@@ -13,7 +13,10 @@
     {
       "batch": "sew-t07",
       "taskId": "node:delegated-task:command%3Amcp%3Aa050c0da-bcca-4d9f-9067-27a22e4026e1%3Adelegate-task%3Aomakase-vt-sew-t07",
-      "childThreadId": "thread:delegated-task:command%3Amcp%3Aa050c0da-bcca-4d9f-9067-27a22e4026e1%3Adelegate-task%3Aomakase-vt-sew-t07"
+      "childThreadId": "thread:delegated-task:command%3Amcp%3Aa050c0da-bcca-4d9f-9067-27a22e4026e1%3Adelegate-task%3Aomakase-vt-sew-t07",
+      "terminal_status": "failed",
+      "terminal_reason": "Request timed out.",
+      "recovery": "Saved drafts/renders inventoried in sew-t07/timeout-recovery.json; reassigned as three disjoint ten-page tasks. No verification/review credit. See sew-timeout-recovery-2026-11-08.json."
     },
     {
       "batch": "sew-t08",
@@ -26,12 +29,18 @@
     {
       "batch": "sew-t09",
       "taskId": "node:delegated-task:command%3Amcp%3Aa050c0da-bcca-4d9f-9067-27a22e4026e1%3Adelegate-task%3Aomakase-vt-sew-t09",
-      "childThreadId": "thread:delegated-task:command%3Amcp%3Aa050c0da-bcca-4d9f-9067-27a22e4026e1%3Adelegate-task%3Aomakase-vt-sew-t09"
+      "childThreadId": "thread:delegated-task:command%3Amcp%3Aa050c0da-bcca-4d9f-9067-27a22e4026e1%3Adelegate-task%3Aomakase-vt-sew-t09",
+      "terminal_status": "failed",
+      "terminal_reason": "Request timed out.",
+      "recovery": "No drafts or report saved. Thirty full-page and additional crop renders inventoried in sew-t09/timeout-recovery.json; reassigned to three disjoint ten-page tasks. No review/verification credit."
     },
     {
       "batch": "sew-t10",
       "taskId": "node:delegated-task:command%3Amcp%3Aa050c0da-bcca-4d9f-9067-27a22e4026e1%3Adelegate-task%3Aomakase-vt-sew-t10",
-      "childThreadId": "thread:delegated-task:command%3Amcp%3Aa050c0da-bcca-4d9f-9067-27a22e4026e1%3Adelegate-task%3Aomakase-vt-sew-t10"
+      "childThreadId": "thread:delegated-task:command%3Amcp%3Aa050c0da-bcca-4d9f-9067-27a22e4026e1%3Adelegate-task%3Aomakase-vt-sew-t10",
+      "terminal_status": "failed",
+      "terminal_reason": "Request timed out.",
+      "recovery": "Saved drafts/renders inventoried in sew-t10/timeout-recovery.json; reassigned as three disjoint ten-page tasks. No verification/review credit. See sew-timeout-recovery-2026-11-08.json."
     },
     {
       "batch": "sew-t11",

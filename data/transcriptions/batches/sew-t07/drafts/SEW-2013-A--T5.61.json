@@ -1,0 +1,95 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:T5.61",
+  "unit_id": "SEW-2013-A:T5.61",
+  "manual_id": "SEW-2013-A",
+  "kind": "table",
+  "number": "5.61",
+  "title": "Design Details of the biological nitrification-denitrification Linpor process (Freising, Germany)",
+  "state": "pending",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "regions": [
+    {
+      "pdf_page": 509,
+      "page_label": "5 - 205",
+      "bbox": [
+        76.6,
+        397.0,
+        512.7,
+        539.6
+      ],
+      "render_sha256": "96807583f6ff5404a4103b1e0de6a5153a83f5a497ab2653236d9b31a673a7bc"
+    }
+  ],
+  "headers": [
+    "",
+    "Flow rate (MLD)",
+    "Suspended",
+    "Fixed",
+    "Average",
+    "Carrier Volume (%)",
+    "F/M (1/d)"
+  ],
+  "rows": [
+    [
+      "Design",
+      "23.6",
+      "3,800",
+      "15,000",
+      "5,800",
+      "22",
+      "0.12"
+    ],
+    [
+      "Operation",
+      "21.4",
+      "5,700",
+      "18,000",
+      "7,700",
+      "20",
+      "0.04"
+    ]
+  ],
+  "cell_spans": [
+    {
+      "column": 2,
+      "header": true,
+      "colspan": 3,
+      "description": "Printed 'MLSS(mg/L)' spans the Suspended, Fixed and Average columns"
+    },
+    {
+      "column": 1,
+      "header": true,
+      "rowspan": 2,
+      "description": "Printed 'Flow rate (MLD)' spans both header rows"
+    },
+    {
+      "column": 5,
+      "header": true,
+      "rowspan": 2,
+      "description": "Printed 'Carrier Volume (%)' spans both header rows"
+    },
+    {
+      "column": 6,
+      "header": true,
+      "rowspan": 2,
+      "description": "Printed 'F/M (1/d)' spans both header rows"
+    }
+  ],
+  "markdown": "|  | Flow rate (MLD) | Suspended | Fixed | Average | Carrier Volume (%) | F/M (1/d) |\n| --- | --- | --- | --- | --- | --- | --- |\n| Design | 23.6 | 3,800 | 15,000 | 5,800 | 22 | 0.12 |\n| Operation | 21.4 | 5,700 | 18,000 | 7,700 | 20 | 0.04 |",
+  "notes": [
+    "Printed below the table: 'Source:  Gilligan and Morper, 1999' (two spaces after the colon).",
+    "The caption title is printed on two centred lines: 'Table 5.61  Design Details of the biological nitrification-denitrification Linpor process' and '(Freising, Germany)'; joined with a space.",
+    "Printed 'MLSS(mg/L)' has no space before the parenthesis; retained.",
+    "The printed top-left header cell is empty; kept as an empty header cell.",
+    "Printed 'Flow rate (MLD)' is set on three lines ('Flow' / 'rate' / '(MLD)') and 'Carrier Volume (%)' on three lines; joined with spaces.",
+    "Printed title reads 'Design Details' with a capital D, while Table 5.63 prints 'Design details'; both retained as printed."
+  ],
+  "verification": {
+    "transcription": {
+      "pass_id": "sew-t07-first-reading-2026-11-08",
+      "method": "Direct viewing of the annotation-cleaned 144 dpi page renders and 260-800 dpi crops of the same pages; no OCR, no paid service",
+      "observations": "Header levels and both data rows read from a 420 dpi crop; the three MLSS sub-headings and the seven values per row checked individually."
+    }
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:T5.60",
+  "unit_id": "SEW-2013-A:T5.60",
+  "manual_id": "SEW-2013-A",
+  "kind": "table",
+  "number": "5.60",
+  "title": "Merits of FAB technology as stated by its Promoter",
+  "state": "pending",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "regions": [
+    {
+      "pdf_page": 509,
+      "page_label": "5 - 205",
+      "bbox": [
+        123.3,
+        71.3,
+        479.9,
+        291.7
+      ],
+      "render_sha256": "ea36c4475df74f4f67b59db74f6f1630f77c3a4d4254e2bc96565d2b4a80b80c"
+    }
+  ],
+  "headers": [
+    "Features",
+    "Benefits"
+  ],
+  "rows": [
+    [
+      "Attached growth process",
+      "No sludge recycle\nNo monitoring of MLSS\nLow sludge production"
+    ],
+    [
+      "High Biofilm surface area",
+      "High loading rates\nCompact plants\nSmall foot print"
+    ],
+    [
+      "Fluidised Bed",
+      "Non clogging design\nBetter oxygen transfer efficiency\nReduced power consumption\nReduces coliform\nLow maintenance\nTank of any shape can be utilized"
+    ]
+  ],
+  "cell_spans": [],
+  "markdown": "| Features | Benefits |\n| --- | --- |\n| Attached growth process | No sludge recycle<br>No monitoring of MLSS<br>Low sludge production |\n| High Biofilm surface area | High loading rates<br>Compact plants<br>Small foot print |\n| Fluidised Bed | Non clogging design<br>Better oxygen transfer efficiency<br>Reduced power consumption<br>Reduces coliform<br>Low maintenance<br>Tank of any shape can be utilized |",
+  "notes": [
+    "No Source line is printed for this table.",
+    "Each benefits cell holds several printed lines with no internal rules; the printed line breaks are kept inside the cell.",
+    "Printed as 'Small foot print' (two words) and 'Fluidised Bed'; retained.",
+    "Printed title capitalises 'Promoter'; retained.",
+    "Printed 'High Biofilm surface area' capitalises Biofilm; retained."
+  ],
+  "verification": {
+    "transcription": {
+      "pass_id": "sew-t07-first-reading-2026-11-08",
+      "method": "Direct viewing of the annotation-cleaned 144 dpi page renders and 260-800 dpi crops of the same pages; no OCR, no paid service",
+      "observations": "Both columns and all nine description lines read from a 400 dpi crop of the table."
+    }
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:T6.2",
+  "unit_id": "SEW-2013-A:T6.2",
+  "manual_id": "SEW-2013-A",
+  "kind": "table",
+  "number": "6.2",
+  "title": "Solids concentration by treatment process",
+  "state": "pending",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "regions": [
+    {
+      "pdf_page": 525,
+      "page_label": "6 - 2",
+      "bbox": [
+        76.7,
+        430.0,
+        514.0,
+        675.0
+      ],
+      "render_sha256": "af0a18e052a98dedc4f8c7dd6310063809d0556d588b0a1390f764c998d14e39"
+    }
+  ],
+  "headers": [
+    "Treatment process",
+    "Excess sludge",
+    "Mixed sludge"
+  ],
+  "rows": [
+    [
+      "Conventional activated sludge process",
+      "0.5-1.0",
+      "1.0"
+    ],
+    [
+      "Oxidation ditch process",
+      "0.5-1.0",
+      "-"
+    ],
+    [
+      "Extended aeration process",
+      "0.5-1.0",
+      "-"
+    ],
+    [
+      "Sequencing batch reactor process (low load)",
+      "0.5-1.0",
+      "-"
+    ],
+    [
+      "Biological aerobic filtration process",
+      "-",
+      "1.0"
+    ],
+    [
+      "Contact oxidation process",
+      "0.8",
+      "1.0"
+    ]
+  ],
+  "cell_spans": [
+    {
+      "column": 1,
+      "header": true,
+      "colspan": 2,
+      "description": "Printed 'Solids concentration (%)' spans the Excess sludge and Mixed sludge columns"
+    },
+    {
+      "column": 0,
+      "header": true,
+      "rowspan": 2,
+      "description": "Printed 'Treatment process' spans both header rows"
+    }
+  ],
+  "markdown": "| Treatment process | Excess sludge | Mixed sludge |\n| --- | --- | --- |\n| Conventional activated sludge process | 0.5-1.0 | 1.0 |\n| Oxidation ditch process | 0.5-1.0 | - |\n| Extended aeration process | 0.5-1.0 | - |\n| Sequencing batch reactor process (low load) | 0.5-1.0 | - |\n| Biological aerobic filtration process | - | 1.0 |\n| Contact oxidation process | 0.8 | 1.0 |",
+  "notes": [
+    "Printed below the table: 'Source: Guideline and Manual for Planning and Design in Japan, JSWA, 2009', with JSWA in italics.",
+    "Transcriber layout note: two printed header rows. Row 1 reads 'Treatment process' and 'Solids concentration (%)' (spanning two columns); row 2 reads 'Excess sludge' and 'Mixed sludge'.",
+    "The Mixed sludge column prints '-' for three processes; retained as printed.",
+    "Printed as 'Sequencing batch reactor process (low load)' with a lower-case 'low load'; retained.",
+    "Printed caption ends with a trailing space after 'process'; not reproduced in the title."
+  ],
+  "verification": {
+    "transcription": {
+      "pass_id": "sew-t07-first-reading-2026-11-08",
+      "method": "Direct viewing of the annotation-cleaned 144 dpi page renders and 260-800 dpi crops of the same pages; no OCR, no paid service",
+      "observations": "Header levels and all six data rows read from a 300 dpi crop; the six concentration values and the four hyphens checked individually."
+    }
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:Ep528-1",
+  "unit_id": "SEW-2013-A:Ep528-1",
+  "manual_id": "SEW-2013-A",
+  "kind": "equation",
+  "number": "p528-1",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "state": "pending",
+  "regions": [
+    {
+      "pdf_page": 528,
+      "page_label": "6 - 5",
+      "bbox": [
+        55.0,
+        555.8,
+        324.0,
+        577.0
+      ],
+      "render_sha256": "6ea9943b1778ad075b76462eef65f0041446519fa52dbb798180ab06ace052b3"
+    }
+  ],
+  "title": "Multiplication factor k for undigested sludge (Figure 6.2 upper curve)",
+  "parent_id": "SEW-2013-A:6.2.1.2",
+  "latex": "k = 0.125P^{2} - 0.1656P + 1.5733",
+  "readable": "k for undigested sludge = 0.125P² - 0.1656P + 1.5733",
+  "symbols": [
+    {
+      "symbol": "k",
+      "definition": "multiplication factor (head loss multiplication factor)"
+    },
+    {
+      "symbol": "P",
+      "definition": "% of sludge solids"
+    }
+  ],
+  "applicability": "Simplified equation of the upper curve of Figure 6.2, printed under the sentence 'The equations for these curves are simplified as follows where P is the % of sludge solids.'",
+  "notes": [
+    "Ep528-1 is a service locator, not a printed equation number.",
+    "The upper curve is labelled 'Untreated primary and concentrated sludges' inside Figure 6.2 while this equation line reads 'undigested sludge'; both printed forms are retained.",
+    "The exponent 2 is printed as a superscript and is visible in the page image.",
+    "Polynomial order is retained as printed (quadratic first, linear second, then the constant); no reordering or simplification is applied."
+  ],
+  "verification": {
+    "transcription": {
+      "pass_id": "sew-t07-first-reading-2026-11-08",
+      "method": "Direct viewing of the annotation-cleaned 144 dpi page renders and 260-800 dpi crops of the same pages; no OCR, no paid service",
+      "observations": "Line read from a 450 dpi crop and the superscript checked at 800 dpi. The coefficient digits (0.125, 0.1656, 1.5733) were read twice from two overlapping crops."
+    }
+  }
+}

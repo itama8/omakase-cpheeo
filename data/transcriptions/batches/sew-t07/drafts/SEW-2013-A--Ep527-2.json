@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:Ep527-2",
+  "unit_id": "SEW-2013-A:Ep527-2",
+  "manual_id": "SEW-2013-A",
+  "kind": "equation",
+  "number": "p527-2",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "state": "pending",
+  "regions": [
+    {
+      "pdf_page": 527,
+      "page_label": "6 - 4",
+      "bbox": [
+        50.0,
+        638.5,
+        370.0,
+        659.0
+      ],
+      "render_sha256": "239431a75bd34a9c49ea9aef999370e34bdace6cb82015c9347bf6cce68ae03e"
+    }
+  ],
+  "title": "Friction compounding factor F for digested sludge",
+  "parent_id": "SEW-2013-A:6.2",
+  "latex": "F = 1.52 + (0.041 \\times P \\times P) - (0.227 \\times P)",
+  "readable": "F for digested sludge is = 1.52 + (0.041×P×P) – (0.227×P)",
+  "symbols": [
+    {
+      "symbol": "F",
+      "definition": "friction compounding factor"
+    },
+    {
+      "symbol": "P",
+      "definition": "solids content in the sludge"
+    }
+  ],
+  "applicability": "Step 5 of the same printed procedure: the digested-sludge form of the friction compounding factor used after the Manning friction loss is calculated as for water.",
+  "notes": [
+    "Ep527-2 is a service locator, not a printed equation number.",
+    "Printed as '5.  F for digested sludge is = 1.52 + (0.041×P×P) – (0.227×P)'. As in step 4 the word 'is' precedes '=' and the square term is printed 'P×P'; both retained.",
+    "Step 6 of the same list prints 'Allow for an additional factor of safety of 10%.' with no formula; it is not transcribed as an equation.",
+    "P is given no unit in the printed list; none is added.",
+    "The two forms differ only in their coefficients and constants (2.88 / 0.176 / 0.866 for undigested sludge, 1.52 / 0.041 / 0.227 for digested sludge); no algebraic simplification is applied."
+  ],
+  "verification": {
+    "transcription": {
+      "pass_id": "sew-t07-first-reading-2026-11-08",
+      "method": "Direct viewing of the annotation-cleaned 144 dpi page renders and 260-800 dpi crops of the same pages; no OCR, no paid service",
+      "observations": "Line read from a 500 dpi crop; the coefficients checked against the undigested-sludge line above it at 800 dpi."
+    }
+  }
+}

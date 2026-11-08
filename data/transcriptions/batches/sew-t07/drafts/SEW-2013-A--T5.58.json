@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:T5.58",
+  "unit_id": "SEW-2013-A:T5.58",
+  "manual_id": "SEW-2013-A",
+  "kind": "table",
+  "number": "5.58",
+  "title": "Dimensions of the carrier materials",
+  "state": "pending",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "regions": [
+    {
+      "pdf_page": 504,
+      "page_label": "5 - 200",
+      "bbox": [
+        49.0,
+        388.9,
+        501.9,
+        521.5
+      ],
+      "render_sha256": "312f8522ef7ce907d24492ec24c6703a4cd2e7da42fd279b550146f2d445b62b"
+    }
+  ],
+  "headers": [
+    "Name",
+    "Material",
+    "Dimension, mm"
+  ],
+  "rows": [
+    [
+      "Captor®",
+      "Polyurethane",
+      "30 x 25 x 25"
+    ],
+    [
+      "Linpor®",
+      "Polyurethane",
+      "10 to 13 cubes"
+    ]
+  ],
+  "cell_spans": [
+    {
+      "column": 1,
+      "header": true,
+      "colspan": 2,
+      "description": "Printed 'Carrier specifications' spans the Material and Dimension columns"
+    }
+  ],
+  "markdown": "| Name | Material | Dimension, mm |\n| --- | --- | --- |\n| Captor® | Polyurethane | 30 x 25 x 25 |\n| Linpor® | Polyurethane | 10 to 13 cubes |",
+  "notes": [
+    "Printed below the table: 'Source:  Metcalf & Eddy, 2003' (two spaces after the colon).",
+    "Transcriber layout note: two printed header levels. Level 1 reads 'Name' and 'Carrier specifications'; level 2 reads 'Material' and 'Dimension, mm'.",
+    "The dimension is printed '30 x 25 x 25' with a lower-case letter x, not a multiplication sign; retained. Table 5.59 on page 506 prints '3×3×3 mm' with a multiplication sign.",
+    "The registered trade mark sign is printed after Captor and Linpor; retained.",
+    "Printed as '10 to 13 cubes' (words, no dimension signs); retained."
+  ],
+  "verification": {
+    "transcription": {
+      "pass_id": "sew-t07-first-reading-2026-11-08",
+      "method": "Direct viewing of the annotation-cleaned 144 dpi page renders and 260-800 dpi crops of the same pages; no OCR, no paid service",
+      "observations": "Caption, both header levels and both data rows read from a 400 dpi crop of the table band."
+    }
+  }
+}

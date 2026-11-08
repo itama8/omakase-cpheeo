@@ -1,0 +1,164 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:T6.5",
+  "unit_id": "SEW-2013-A:T6.5",
+  "manual_id": "SEW-2013-A",
+  "kind": "table",
+  "number": "6.5",
+  "title": "Types of sludge pumps and their application",
+  "state": "pending",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "regions": [
+    {
+      "pdf_page": 529,
+      "page_label": "6 - 6",
+      "bbox": [
+        70.9,
+        76.0,
+        480.9,
+        758.0
+      ],
+      "render_sha256": "48c5bd066f6f62500c24cd607e22847df4d79143c94bf0a4979e81fa96691fb5"
+    }
+  ],
+  "headers": [
+    "No",
+    "Type of Pump",
+    "Primary sludge",
+    "Return sludge",
+    "Excess sludge",
+    "Chemical sludge",
+    "Thickened sludge",
+    "Digested sludge"
+  ],
+  "rows": [
+    [
+      "1",
+      "Air lift",
+      "",
+      "✓",
+      "✓",
+      "",
+      "",
+      ""
+    ],
+    [
+      "2",
+      "Archimedean screw",
+      "",
+      "✓",
+      "✓",
+      "",
+      "",
+      ""
+    ],
+    [
+      "3",
+      "Centrifugal",
+      "✓",
+      "✓",
+      "✓",
+      "✓",
+      "",
+      ""
+    ],
+    [
+      "4",
+      "Double diaphragm",
+      "✓",
+      "✓",
+      "✓",
+      "✓",
+      "✓",
+      "✓"
+    ],
+    [
+      "5",
+      "Plunger",
+      "✓",
+      "",
+      "",
+      "✓",
+      "✓",
+      "✓"
+    ],
+    [
+      "6",
+      "Progressive cavity",
+      "✓",
+      "✓",
+      "✓",
+      "✓",
+      "✓",
+      "✓"
+    ],
+    [
+      "7",
+      "Reciprocating piston",
+      "",
+      "",
+      "",
+      "",
+      "✓",
+      "✓"
+    ],
+    [
+      "8",
+      "Rotary-lobe",
+      "",
+      "",
+      "",
+      "✓",
+      "✓",
+      "✓"
+    ],
+    [
+      "9",
+      "Single diaphragm",
+      "✓",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    [
+      "10",
+      "Screw centrifugal",
+      "✓",
+      "✓",
+      "✓",
+      "",
+      "",
+      ""
+    ],
+    [
+      "11",
+      "Torque flow",
+      "✓",
+      "✓",
+      "✓",
+      "✓",
+      "",
+      "✓"
+    ]
+  ],
+  "cell_spans": [],
+  "markdown": "| No | Type of Pump | Primary sludge | Return sludge | Excess sludge | Chemical sludge | Thickened sludge | Digested sludge |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| 1 | Air lift |  | ✓ | ✓ |  |  |  |\n| 2 | Archimedean screw |  | ✓ | ✓ |  |  |  |\n| 3 | Centrifugal | ✓ | ✓ | ✓ | ✓ |  |  |\n| 4 | Double diaphragm | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |\n| 5 | Plunger | ✓ |  |  | ✓ | ✓ | ✓ |\n| 6 | Progressive cavity | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |\n| 7 | Reciprocating piston |  |  |  |  | ✓ | ✓ |\n| 8 | Rotary-lobe |  |  |  | ✓ | ✓ | ✓ |\n| 9 | Single diaphragm | ✓ |  |  |  |  |  |\n| 10 | Screw centrifugal | ✓ | ✓ | ✓ |  |  |  |\n| 11 | Torque flow | ✓ | ✓ | ✓ | ✓ |  | ✓ |",
+  "notes": [
+    "The page prints its content rotated on a portrait page and the page label '6 - 6' is rotated with it. The table was read from a 400 dpi render rotated into reading orientation.",
+    "A printed tick mark is transcribed as ✓; a blank printed cell is an empty string. Ticks are printed in slanted hand-set form, not as a checked box.",
+    "No Source line is printed for this table.",
+    "The table ends on this page: page 530 carries Figure 6.3 a 'Types of sludge pumps' and does not continue Table 6.5, although the baseline index records page_end 530 for this unit.",
+    "Printed pump names are retained, including 'Archimedean screw', 'Double diaphragm', 'Progressive cavity', 'Reciprocating piston', 'Rotary-lobe', 'Screw centrifugal' and 'Torque flow'.",
+    "The printed header is 'No' without a full stop; retained. The six sludge-type headings are each printed on two lines and joined with spaces.",
+    "Rows 7 and 8 print ticks only in the thickened and digested sludge columns; row 9 prints a single tick under Primary sludge; row 11 prints ticks in four columns but none under Thickened sludge. All are retained as printed."
+  ],
+  "verification": {
+    "transcription": {
+      "pass_id": "sew-t07-first-reading-2026-11-08",
+      "method": "Direct viewing of the annotation-cleaned 144 dpi page renders and 260-800 dpi crops of the same pages; no OCR, no paid service",
+      "observations": "All eleven rows and six tick columns read from a 200 dpi rotated page view and then re-read row by row from four 400 dpi rotated bands (rows 1-2, 3-8, 9-11); each tick was confirmed against its column rule on the high-resolution bands."
+    }
+  }
+}

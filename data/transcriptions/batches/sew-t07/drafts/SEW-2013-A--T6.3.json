@@ -1,0 +1,74 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:T6.3",
+  "unit_id": "SEW-2013-A:T6.3",
+  "manual_id": "SEW-2013-A",
+  "kind": "table",
+  "number": "6.3",
+  "title": "Example of solids recovery rate in each treatment stage",
+  "state": "pending",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "regions": [
+    {
+      "pdf_page": 527,
+      "page_label": "6 - 4",
+      "bbox": [
+        74.0,
+        111.5,
+        518.4,
+        404.1
+      ],
+      "render_sha256": "616214b71de83b69444004ea2b4a083089dda33ce668048940e95f3b26635da0"
+    }
+  ],
+  "headers": [
+    "Process",
+    "",
+    ""
+  ],
+  "rows": [
+    [
+      "Sludge thickening",
+      "Gravity thickening\nCentrifugal thickening\nAir floatation thickening (dispersed air)\nGravity belt thickening",
+      "80 to 90%\n85 to 95%\nMore than 95%\nMore than 95%"
+    ],
+    [
+      "Sludge digestion",
+      "Sludge reduction ratio due to formation of gas, etc.",
+      "30 to 40%"
+    ],
+    [
+      "Sludge dewatering",
+      "Pressure-type screw press dewatering\nRotary pressure dewatering\nBelt press dewatering\nCentrifugal dewatering",
+      "More than 95%\nMore than 95%\n90 to 95%\nMore than 95%"
+    ],
+    [
+      "Sludge incineration",
+      "Sludge reduction ratio due to formation of gas, etc.\nRecovery rate",
+      "40 to 80%\n80 to 90%"
+    ]
+  ],
+  "cell_spans": [
+    {
+      "column": 1,
+      "header": true,
+      "colspan": 2,
+      "description": "Printed 'Solids recovery rate' spans the middle and last columns; neither column has a heading of its own"
+    }
+  ],
+  "markdown": "| Process |  |  |\n| --- | --- | --- |\n| Sludge thickening | Gravity thickening<br>Centrifugal thickening<br>Air floatation thickening (dispersed air)<br>Gravity belt thickening | 80 to 90%<br>85 to 95%<br>More than 95%<br>More than 95% |\n| Sludge digestion | Sludge reduction ratio due to formation of gas, etc. | 30 to 40% |\n| Sludge dewatering | Pressure-type screw press dewatering<br>Rotary pressure dewatering<br>Belt press dewatering<br>Centrifugal dewatering | More than 95%<br>More than 95%<br>90 to 95%<br>More than 95% |\n| Sludge incineration | Sludge reduction ratio due to formation of gas, etc.<br>Recovery rate | 40 to 80%<br>80 to 90% |",
+  "notes": [
+    "Printed below the table: 'Source: Guideline and Manual for Planning and Design in Japan, JSWA, 2009', with JSWA in italics.",
+    "The two right-hand columns carry no headings of their own: the middle column names one or more processes or ratios and the last column prints the matching rates on the same printed lines. Each printed line pair is kept inside one cell with the printed line breaks.",
+    "Printed as 'Air floatation thickening (dispersed air)' (not 'flotation'); retained.",
+    "Printed as 'Pressure-type screw press dewatering' with a hyphen; retained.",
+    "Row 4 prints two different quantities in the middle column ('Sludge reduction ratio due to formation of gas, etc.' and 'Recovery rate'), each with its own rate in the last column; kept as printed."
+  ],
+  "verification": {
+    "transcription": {
+      "pass_id": "sew-t07-first-reading-2026-11-08",
+      "method": "Direct viewing of the annotation-cleaned 144 dpi page renders and 260-800 dpi crops of the same pages; no OCR, no paid service",
+      "observations": "Header row and all four rows read from two 430 dpi crops; the four thickening rates, the dewatering rates and the incineration pair checked line by line against their labels."
+    }
+  }
+}

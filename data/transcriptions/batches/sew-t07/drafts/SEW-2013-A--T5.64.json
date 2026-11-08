@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:T5.64",
+  "unit_id": "SEW-2013-A:T5.64",
+  "manual_id": "SEW-2013-A",
+  "kind": "table",
+  "number": "5.64",
+  "title": "Performance of the biological nitrification-denitrification Pegasus process (Munakata City, Japan)",
+  "state": "pending",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "regions": [
+    {
+      "pdf_page": 510,
+      "page_label": "5 - 206",
+      "bbox": [
+        86.2,
+        543.0,
+        506.1,
+        752.6
+      ],
+      "render_sha256": "6e13ff9612eebf55127ec384c52503b6801439226cbdcc7c9895edbf7a27b6dd"
+    }
+  ],
+  "headers": [
+    "Water quality",
+    "Influent",
+    "Effluent from secondary settling tank",
+    "After rapid filtration"
+  ],
+  "rows": [
+    [
+      "BOD (mg/l)",
+      "210",
+      "14.2",
+      "10"
+    ],
+    [
+      "SS (mg/l)",
+      "250",
+      "20.5",
+      "5"
+    ],
+    [
+      "T-N (mg/l)",
+      "40",
+      "10.2",
+      "10"
+    ],
+    [
+      "T-P (mg/l)",
+      "6",
+      "0.4",
+      "0.3"
+    ]
+  ],
+  "cell_spans": [],
+  "markdown": "| Water quality | Influent | Effluent from secondary settling tank | After rapid filtration |\n| --- | --- | --- | --- |\n| BOD (mg/l) | 210 | 14.2 | 10 |\n| SS (mg/l) | 250 | 20.5 | 5 |\n| T-N (mg/l) | 40 | 10.2 | 10 |\n| T-P (mg/l) | 6 | 0.4 | 0.3 |",
+  "notes": [
+    "Printed below the table: 'Source: Hitachi Plant Technologies, Ltd.'",
+    "Printed header 'Effluent from secondary settling tank' is set on three lines; joined with spaces.",
+    "No cell spans are printed in this table.",
+    "The three value-column headings print no units; the stub carries 'mg/l' for every row.",
+    "The caption title is printed on two centred lines and joined here with a space."
+  ],
+  "verification": {
+    "transcription": {
+      "pass_id": "sew-t07-first-reading-2026-11-08",
+      "method": "Direct viewing of the annotation-cleaned 144 dpi page renders and 260-800 dpi crops of the same pages; no OCR, no paid service",
+      "observations": "All four header labels and all twelve values read from a 300 dpi crop; the decimal places (14.2, 20.5, 10.2, 0.4, 0.3) checked individually."
+    }
+  }
+}

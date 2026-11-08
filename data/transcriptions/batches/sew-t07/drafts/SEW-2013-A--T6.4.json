@@ -1,0 +1,97 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:T6.4",
+  "unit_id": "SEW-2013-A:T6.4",
+  "manual_id": "SEW-2013-A",
+  "kind": "table",
+  "number": "6.4",
+  "title": "Hazen Williams value of C for sludge flows",
+  "state": "pending",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "regions": [
+    {
+      "pdf_page": 528,
+      "page_label": "6 - 5",
+      "bbox": [
+        71.0,
+        70.5,
+        520.5,
+        238.6
+      ],
+      "render_sha256": "337aff7a69dd8c7dd4ee6075bf12917e7d4c28fab0b2fa47766cbaba99cec593"
+    }
+  ],
+  "headers": [
+    "Sludge solids (%)",
+    "Raw Sludge",
+    "Digested Sludge",
+    "Sludge solids (%)",
+    "Raw Sludge",
+    "Digested Sludge",
+    "Sludge solids (%)",
+    "Raw Sludge",
+    "Digested Sludge"
+  ],
+  "rows": [
+    [
+      "0",
+      "100",
+      "100",
+      "4",
+      "53",
+      "78",
+      "8",
+      "33",
+      "60"
+    ],
+    [
+      "1",
+      "83",
+      "100",
+      "5",
+      "47",
+      "73",
+      "9",
+      "29",
+      "55"
+    ],
+    [
+      "2",
+      "71",
+      "91",
+      "6",
+      "42",
+      "69",
+      "10",
+      "25",
+      "48"
+    ],
+    [
+      "3",
+      "60",
+      "83",
+      "7",
+      "37",
+      "65",
+      "",
+      "",
+      ""
+    ]
+  ],
+  "cell_spans": [],
+  "markdown": "| Sludge solids (%) | Raw Sludge | Digested Sludge | Sludge solids (%) | Raw Sludge | Digested Sludge | Sludge solids (%) | Raw Sludge | Digested Sludge |\n| --- | --- | --- | --- | --- | --- | --- | --- | --- |\n| 0 | 100 | 100 | 4 | 53 | 78 | 8 | 33 | 60 |\n| 1 | 83 | 100 | 5 | 47 | 73 | 9 | 29 | 55 |\n| 2 | 71 | 91 | 6 | 42 | 69 | 10 | 25 | 48 |\n| 3 | 60 | 83 | 7 | 37 | 65 |  |  |  |",
+  "notes": [
+    "The table prints the same three-column block three times side by side (0-3 %, 4-7 % and 8-10 %) instead of one continuous pair of columns. All nine columns are transcribed with the block headings repeated.",
+    "In the third block the heading 'Sludge solids (%)' and the values 8, 9 and 10 are printed inside one merged cell with no internal rules; the values are placed on their printed row positions and pair with 33/60, 29/55 and 25/48. The fourth row of the third block prints no values.",
+    "Capitalisation 'Raw Sludge' and 'Digested Sludge' is retained.",
+    "No Source line is printed for this table; the 'Source: Metcalf & Eddy' line below belongs to Figure 6.2.",
+    "Printed title reads 'Hazen Williams' without a hyphen; retained."
+  ],
+  "verification": {
+    "transcription": {
+      "pass_id": "sew-t07-first-reading-2026-11-08",
+      "method": "Direct viewing of the annotation-cleaned 144 dpi page renders and 260-800 dpi crops of the same pages; no OCR, no paid service",
+      "observations": "All nine columns and four rows read from a 600 dpi crop of the block, including a second crop of the third block to establish that its solids values sit inside one merged cell."
+    }
+  }
+}

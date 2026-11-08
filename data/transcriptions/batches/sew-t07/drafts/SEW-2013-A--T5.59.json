@@ -1,0 +1,71 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:T5.59",
+  "unit_id": "SEW-2013-A:T5.59",
+  "manual_id": "SEW-2013-A",
+  "kind": "table",
+  "number": "5.59",
+  "title": "Parameters of the pellets of the Pegasus process",
+  "state": "pending",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "regions": [
+    {
+      "pdf_page": 506,
+      "page_label": "5 - 202",
+      "bbox": [
+        139.0,
+        580.5,
+        446.2,
+        767.0
+      ],
+      "render_sha256": "b496a15a24f451d3aacb5d361cd761f459c7e692e43476862edcc939bf6d66f3"
+    }
+  ],
+  "headers": [
+    "Pellet material",
+    "Polyethylene glycol (PEG)"
+  ],
+  "rows": [
+    [
+      "Pellet size",
+      "3×3×3 mm"
+    ],
+    [
+      "PEG volume fraction",
+      "10 - 20%"
+    ],
+    [
+      "Micro-organism fraction",
+      "2%"
+    ],
+    [
+      "Density",
+      "1.03 g/cm³"
+    ],
+    [
+      "Surface area",
+      "700 m²/m³ reactor volume"
+    ],
+    [
+      "Biofilm thickness",
+      "~ 60 μm"
+    ]
+  ],
+  "cell_spans": [],
+  "markdown": "| Pellet material | Polyethylene glycol (PEG) |\n| --- | --- |\n| Pellet size | 3×3×3 mm |\n| PEG volume fraction | 10 - 20% |\n| Micro-organism fraction | 2% |\n| Density | 1.03 g/cm³ |\n| Surface area | 700 m²/m³ reactor volume |\n| Biofilm thickness | ~ 60 μm |",
+  "notes": [
+    "Printed below the table: 'Source: Hitachi Plant Technologies, Ltd., 2010'.",
+    "The table prints no column headings: the first printed row is a label/value pair ('Pellet material' / 'Polyethylene glycol (PEG)') and is kept as the header row.",
+    "Printed '3×3×3 mm' uses a multiplication sign; retained (Table 5.58 on page 504 prints a lower-case x).",
+    "Printed '~ 60 μm' with a space after the tilde; retained.",
+    "Printed as 'Micro-organism fraction' with a hyphen; retained.",
+    "Printed '700 m2/m3 reactor volume' superscripts both exponents; written m²/m³."
+  ],
+  "verification": {
+    "transcription": {
+      "pass_id": "sew-t07-first-reading-2026-11-08",
+      "method": "Direct viewing of the annotation-cleaned 144 dpi page renders and 260-800 dpi crops of the same pages; no OCR, no paid service",
+      "observations": "All six label rows and values read from a 300 dpi crop; the multiplication signs, the micro sign and the tilde spacing checked at 400 dpi."
+    }
+  }
+}

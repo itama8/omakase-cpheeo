@@ -1,0 +1,123 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:T5.66",
+  "unit_id": "SEW-2013-A:T5.66",
+  "manual_id": "SEW-2013-A",
+  "kind": "table",
+  "number": "5.66",
+  "title": "Performance of EBB test in Nobeoka city",
+  "state": "pending",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "regions": [
+    {
+      "pdf_page": 517,
+      "page_label": "5 - 213",
+      "bbox": [
+        104.5,
+        70.5,
+        494.7,
+        316.5
+      ],
+      "render_sha256": "1332064b5bc1aa734e248d07fb4448221c1cf628ed01dd603b7dba066814c97e"
+    }
+  ],
+  "headers": [
+    "",
+    "Before EBB",
+    "7days",
+    "14days"
+  ],
+  "rows": [
+    [
+      "pH",
+      "6.9",
+      "6.6",
+      "6.5"
+    ],
+    [
+      "DO (mg/l)",
+      "6.0",
+      "7.4",
+      "7.5"
+    ],
+    [
+      "BOD (mg/l)",
+      "2.5",
+      "0.7",
+      "0.7"
+    ],
+    [
+      "CODₘₙ (mg/l)",
+      "8.3",
+      "2.7",
+      "4.0"
+    ],
+    [
+      "SS (mg/l)",
+      "110",
+      "10",
+      "5"
+    ],
+    [
+      "Total coliform (10²) (MPN/100ml)",
+      "7.9",
+      "4.6",
+      "1.3"
+    ],
+    [
+      "T-N (mg/l)",
+      "1.30",
+      "0.39",
+      "0.30"
+    ],
+    [
+      "T-P (mg/l)",
+      "0.34",
+      "0.096",
+      "0.041"
+    ],
+    [
+      "Turbidity",
+      "31",
+      "5.4",
+      "2.8"
+    ]
+  ],
+  "cell_spans": [
+    {
+      "column": 0,
+      "header": true,
+      "rowspan": 2,
+      "description": "Printed empty top-left header cell spans both header rows"
+    },
+    {
+      "column": 1,
+      "header": true,
+      "rowspan": 2,
+      "description": "Printed 'Before EBB' spans both header rows"
+    },
+    {
+      "column": 2,
+      "header": true,
+      "colspan": 2,
+      "description": "Printed 'After EBB' spans the 7days and 14days columns"
+    }
+  ],
+  "markdown": "|  | Before EBB | 7days | 14days |\n| --- | --- | --- | --- |\n| pH | 6.9 | 6.6 | 6.5 |\n| DO (mg/l) | 6.0 | 7.4 | 7.5 |\n| BOD (mg/l) | 2.5 | 0.7 | 0.7 |\n| CODₘₙ (mg/l) | 8.3 | 2.7 | 4.0 |\n| SS (mg/l) | 110 | 10 | 5 |\n| Total coliform (10²) (MPN/100ml) | 7.9 | 4.6 | 1.3 |\n| T-N (mg/l) | 1.30 | 0.39 | 0.30 |\n| T-P (mg/l) | 0.34 | 0.096 | 0.041 |\n| Turbidity | 31 | 5.4 | 2.8 |",
+  "notes": [
+    "Printed below the table: 'Source: http://www.ariakeebb.com'.",
+    "Transcriber layout note: two printed header rows. Row 1 is an empty cell, 'Before EBB' and 'After EBB' (spanning two columns); row 2 holds '7days' and '14days' under 'After EBB'. Header labels are flattened to the printed leaf labels.",
+    "Printed '7days' and '14days' without a space; retained.",
+    "Printed 'CODMn' with Mn as a subscript; written CODₘₙ.",
+    "Printed 'Total coliform (102) (MPN/100ml)' with the 2 as a superscript; written (10²). The unit prints no space before 'ml'; retained.",
+    "Printed caption reads 'Nobeoka city' with a lower-case c while the running text above prints 'Nobeoka City'; retained.",
+    "Printed as 'pH', 'DO', 'SS', 'Turbidity' with no unit; retained."
+  ],
+  "verification": {
+    "transcription": {
+      "pass_id": "sew-t07-first-reading-2026-11-08",
+      "method": "Direct viewing of the annotation-cleaned 144 dpi page renders and 260-800 dpi crops of the same pages; no OCR, no paid service",
+      "observations": "Header rows and all nine data rows read from a 450 dpi crop; the COD subscript, the superscript 2 in (102) and every decimal place checked individually."
+    }
+  }
+}

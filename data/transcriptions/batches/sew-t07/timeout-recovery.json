@@ -1,0 +1,647 @@
+{
+  "recorded_at_utc": "2026-11-08T13:48:28.626961+00:00",
+  "task_id": "node:delegated-task:command%3Amcp%3Aa050c0da-bcca-4d9f-9067-27a22e4026e1%3Adelegate-task%3Aomakase-vt-sew-t07",
+  "terminal_status": "failed",
+  "terminal_reason": "Request timed out.",
+  "saved_drafts": [
+    {
+      "path": "data/transcriptions/batches/sew-t07/drafts/SEW-2013-A--Ep527-1.json",
+      "id": "SEW-2013-A:Ep527-1",
+      "sha256": "64f28a6431432f82ca2b5499c31807da289465e5f1d9a5fd62fa1edc70115eae",
+      "first_pdf_page": 527
+    },
+    {
+      "path": "data/transcriptions/batches/sew-t07/drafts/SEW-2013-A--Ep527-2.json",
+      "id": "SEW-2013-A:Ep527-2",
+      "sha256": "b16e652d2c9eef3432ec3f47b4ee0bc748806a0b744004dfea6c569c232e3f77",
+      "first_pdf_page": 527
+    },
+    {
+      "path": "data/transcriptions/batches/sew-t07/drafts/SEW-2013-A--Ep528-1.json",
+      "id": "SEW-2013-A:Ep528-1",
+      "sha256": "4f0438b5ae2bca1cadd9bc119fc8f254f1d84245bbaf07ad9408384c5c08fc07",
+      "first_pdf_page": 528
+    },
+    {
+      "path": "data/transcriptions/batches/sew-t07/drafts/SEW-2013-A--Ep528-2.json",
+      "id": "SEW-2013-A:Ep528-2",
+      "sha256": "9bc44bba490d6761f7fe5f015be17694009be7c57522cfa067bea80e2b25c7e4",
+      "first_pdf_page": 528
+    },
+    {
+      "path": "data/transcriptions/batches/sew-t07/drafts/SEW-2013-A--T5.52.json",
+      "id": "SEW-2013-A:T5.52",
+      "sha256": "decd524b5f566a62d3f36f16689252051d65ce2b4858d6907593464f0940450d",
+      "first_pdf_page": 492
+    },
+    {
+      "path": "data/transcriptions/batches/sew-t07/drafts/SEW-2013-A--T5.53.json",
+      "id": "SEW-2013-A:T5.53",
+      "sha256": "c66b029ca2f6433fc920ab19e2cc2fb935eb5e3fe32c38919393922ee53f0bc2",
+      "first_pdf_page": 492
+    },
+    {
+      "path": "data/transcriptions/batches/sew-t07/drafts/SEW-2013-A--T5.54.json",
+      "id": "SEW-2013-A:T5.54",
+      "sha256": "7beda80946ac65bd7286ec18ea2686e14d80d82367efc31768c42f3f9b20e348",
+      "first_pdf_page": 499
+    },
+    {
+      "path": "data/transcriptions/batches/sew-t07/drafts/SEW-2013-A--T5.55.json",
+      "id": "SEW-2013-A:T5.55",
+      "sha256": "ae6c3f9a259d02dcc9e1021044379b42dc57ab790cba50d06e6e2742ebdc2206",
+      "first_pdf_page": 500
+    },
+    {
+      "path": "data/transcriptions/batches/sew-t07/drafts/SEW-2013-A--T5.56.json",
+      "id": "SEW-2013-A:T5.56",
+      "sha256": "a3969c106414679f44228f168907c734c5ff5d22b0cb5a31cacb2e70602532d2",
+      "first_pdf_page": 500
+    },
+    {
+      "path": "data/transcriptions/batches/sew-t07/drafts/SEW-2013-A--T5.57.json",
+      "id": "SEW-2013-A:T5.57",
+      "sha256": "14e982ee5c68faed80fe6f1afdd4fa656681e20088bbb848d82adecd4389bb3c",
+      "first_pdf_page": 502
+    },
+    {
+      "path": "data/transcriptions/batches/sew-t07/drafts/SEW-2013-A--T5.58.json",
+      "id": "SEW-2013-A:T5.58",
+      "sha256": "eb067c4851552dc3267ea01e1e85f901f7370293b1029b06afc5fe192c9ebab5",
+      "first_pdf_page": 504
+    },
+    {
+      "path": "data/transcriptions/batches/sew-t07/drafts/SEW-2013-A--T5.59.json",
+      "id": "SEW-2013-A:T5.59",
+      "sha256": "386d001b54cd7a61803b78ef40c02b172945037458cab7a7700d8f80e3921a74",
+      "first_pdf_page": 506
+    },
+    {
+      "path": "data/transcriptions/batches/sew-t07/drafts/SEW-2013-A--T5.60.json",
+      "id": "SEW-2013-A:T5.60",
+      "sha256": "74aa5bd94edfdb3340c14fae9c80c3d18f1d7b5a05f3a8df813e4b783efcfb99",
+      "first_pdf_page": 509
+    },
+    {
+      "path": "data/transcriptions/batches/sew-t07/drafts/SEW-2013-A--T5.61.json",
+      "id": "SEW-2013-A:T5.61",
+      "sha256": "6baeede37977f05ebaa1129731dd1a4ce2a80621f8624f178f2e2abd1e912ddb",
+      "first_pdf_page": 509
+    },
+    {
+      "path": "data/transcriptions/batches/sew-t07/drafts/SEW-2013-A--T5.62.json",
+      "id": "SEW-2013-A:T5.62",
+      "sha256": "98dda169c24281456e75b1e67b49b3fe1e0d7a1c26cc7e49161f681222656daa",
+      "first_pdf_page": 509
+    },
+    {
+      "path": "data/transcriptions/batches/sew-t07/drafts/SEW-2013-A--T5.63.json",
+      "id": "SEW-2013-A:T5.63",
+      "sha256": "d9d1c880b398065e133b47a6798500bf64c51cdc8bcac1d54e18adf1d9223912",
+      "first_pdf_page": 510
+    },
+    {
+      "path": "data/transcriptions/batches/sew-t07/drafts/SEW-2013-A--T5.64.json",
+      "id": "SEW-2013-A:T5.64",
+      "sha256": "1853ab7965df9b479affefd155ea15f830ded1c4548b1d91c58e75f7a0a7bc1e",
+      "first_pdf_page": 510
+    },
+    {
+      "path": "data/transcriptions/batches/sew-t07/drafts/SEW-2013-A--T5.65.json",
+      "id": "SEW-2013-A:T5.65",
+      "sha256": "9b5288fe23f967ce0d6096fe54bd6fe4c8cc76e145750ba3fabee36b97aeb4fd",
+      "first_pdf_page": 511
+    },
+    {
+      "path": "data/transcriptions/batches/sew-t07/drafts/SEW-2013-A--T5.66.json",
+      "id": "SEW-2013-A:T5.66",
+      "sha256": "2ca5beba705a3905c5c693e08c10555fe9d1e1700e426758823c2aec14965299",
+      "first_pdf_page": 517
+    },
+    {
+      "path": "data/transcriptions/batches/sew-t07/drafts/SEW-2013-A--T6.1.json",
+      "id": "SEW-2013-A:T6.1",
+      "sha256": "c18299a0cd1cf570602c257161db33ea307fd1dc8426f18a49b1e1363a94ca13",
+      "first_pdf_page": 525
+    },
+    {
+      "path": "data/transcriptions/batches/sew-t07/drafts/SEW-2013-A--T6.2.json",
+      "id": "SEW-2013-A:T6.2",
+      "sha256": "14cf60372b82f1a86ff0adc5f6818b931308abd483974442a0c725b00c55f9e7",
+      "first_pdf_page": 525
+    },
+    {
+      "path": "data/transcriptions/batches/sew-t07/drafts/SEW-2013-A--T6.3.json",
+      "id": "SEW-2013-A:T6.3",
+      "sha256": "b4139c0da5e2f928120c37c1fe95549494d5279b4ca03c16dd4fad139601cba2",
+      "first_pdf_page": 527
+    },
+    {
+      "path": "data/transcriptions/batches/sew-t07/drafts/SEW-2013-A--T6.4.json",
+      "id": "SEW-2013-A:T6.4",
+      "sha256": "6687f1572ca79c1be79557d7efa629d2fd1a86fe5d038f727641928fbab24845",
+      "first_pdf_page": 528
+    },
+    {
+      "path": "data/transcriptions/batches/sew-t07/drafts/SEW-2013-A--T6.5.json",
+      "id": "SEW-2013-A:T6.5",
+      "sha256": "3a9960f40540eb068f20ebb2be4a80b268fb4691ed3f997a88d659c27cf28497",
+      "first_pdf_page": 529
+    }
+  ],
+  "saved_page_reports": 0,
+  "saved_page_renders": 30,
+  "saved_files": [
+    {
+      "path": "tmp/pdfs/sew-t07/bbox.py",
+      "sha256": "518e4517ec3e0dee34de23776fdbf870ff2f05276c564a3cad50546d23ffafd2",
+      "bytes": 845
+    },
+    {
+      "path": "tmp/pdfs/sew-t07/build.py",
+      "sha256": "ac6549b18042708497f0f9b8d2b8d4d362f892490e835821fe7002a3ce3a3bc9",
+      "bytes": 45415
+    },
+    {
+      "path": "tmp/pdfs/sew-t07/p492-nh4-t553.png",
+      "sha256": "15d3e0d1f4b210cff2f2a50aa9f314b919d7d76852462d8e1e0746a04bd8c41e",
+      "bytes": 6766
+    },
+    {
+      "path": "tmp/pdfs/sew-t07/p492-t552.png",
+      "sha256": "09406660ab7f075487f21d4d7ca119bc7cbc50070304f7315a9d44a5b8781813",
+      "bytes": 70543
+    },
+    {
+      "path": "tmp/pdfs/sew-t07/p492-t553.png",
+      "sha256": "09c3a3bc5a6a1d556bb394ba38663e44429f3c703c1aaf6957341e88526c6ee8",
+      "bytes": 46118
+    },
+    {
+      "path": "tmp/pdfs/sew-t07/p499-a.png",
+      "sha256": "3069aed8149777de77845f7c0f7a2d41d6df77ab0124dbd3d3fd58f6c7da963a",
+      "bytes": 122042
+    },
+    {
+      "path": "tmp/pdfs/sew-t07/p499-b.png",
+      "sha256": "9687b804e44073bb745dd344ea07415213f7398b014e14c89a3e95c347a351fb",
+      "bytes": 137128
+    },
+    {
+      "path": "tmp/pdfs/sew-t07/p500-t555.png",
+      "sha256": "9dbf13b25c5e59c3cbf423d4687cb1f7c165d3d883546eeeff4ebc241237c5c4",
+      "bytes": 215083
+    },
+    {
+      "path": "tmp/pdfs/sew-t07/p500-t556.png",
+      "sha256": "9e182ca332356ee8a3a64a68cb746e18e11236f348e97699615755fe5c774562",
+      "bytes": 70299
+    },
+    {
+      "path": "tmp/pdfs/sew-t07/p502-bot.png",
+      "sha256": "d6af5bf955df39f41d7be235617787a69d1c3980667bcddf7ec176474431584d",
+      "bytes": 116389
+    },
+    {
+      "path": "tmp/pdfs/sew-t07/p502-dash.png",
+      "sha256": "57f469ed595fcf70727c0e3891f6d746cb3cde4ecd2fe5c23d5053adb709b00f",
+      "bytes": 12271
+    },
+    {
+      "path": "tmp/pdfs/sew-t07/p502-note.png",
+      "sha256": "19ef63359f496e16148bbf58e74b3ce4ef250519fc8c87edb67d9d8e27586935",
+      "bytes": 16799
+    },
+    {
+      "path": "tmp/pdfs/sew-t07/p502-top.png",
+      "sha256": "896dff22e5334e9031be198c754ce118c9a0ee940a1468c384921e758bcabbad",
+      "bytes": 100664
+    },
+    {
+      "path": "tmp/pdfs/sew-t07/p509-nh4.png",
+      "sha256": "5494d7f0affa6fc6ba0fd95f0821e7f4451d44c8239784cdc3b712ac8745f01c",
+      "bytes": 12230
+    },
+    {
+      "path": "tmp/pdfs/sew-t07/p509-nox.png",
+      "sha256": "728a725c96311faa621fd2e17b791e9edddb7f83c2b53546a7ad85e06184dfed",
+      "bytes": 10992
+    },
+    {
+      "path": "tmp/pdfs/sew-t07/p509-t561.png",
+      "sha256": "dc68b2926775fa05beca6e87d75ab472f84df30d0770cc7272cbe037de03b268",
+      "bytes": 59777
+    },
+    {
+      "path": "tmp/pdfs/sew-t07/p509-t562-left.png",
+      "sha256": "a6a7e06071805635ad2e00e207f5867854b7c35e4211f7615c0db0f56a4ec8c4",
+      "bytes": 19815
+    },
+    {
+      "path": "tmp/pdfs/sew-t07/p509-t562.png",
+      "sha256": "572c74be75d4dd3ff61458e82841960038be5ed1fda41d3a76218c44af90deba",
+      "bytes": 78275
+    },
+    {
+      "path": "tmp/pdfs/sew-t07/p510-t563-bot.png",
+      "sha256": "48ec5156fba1bd886c4f982120562c643885d885cd9b49bbff5dec95f5f96ac3",
+      "bytes": 91654
+    },
+    {
+      "path": "tmp/pdfs/sew-t07/p510-t563-top.png",
+      "sha256": "7646f08b42312eff1e708efbf02c01b7b2c7ba1acf66ea2a028687f053d29438",
+      "bytes": 80388
+    },
+    {
+      "path": "tmp/pdfs/sew-t07/p517-t566-low.png",
+      "sha256": "93cf86776c4c72f7f653c041b051540ab8958be6e7cf52f7e6e39b3a887bb9d6",
+      "bytes": 15223
+    },
+    {
+      "path": "tmp/pdfs/sew-t07/p517-t566.png",
+      "sha256": "5d824b311505bc4bd5b7f1a9fec8f707fb9f349d25c0eec33bcd979d97f1ca64",
+      "bytes": 102647
+    },
+    {
+      "path": "tmp/pdfs/sew-t07/p527-steps.png",
+      "sha256": "9d2ca87cfd6e26429530157b97ea5cbe3c79d0dd19bcd8b05a64117f6104617a",
+      "bytes": 76788
+    },
+    {
+      "path": "tmp/pdfs/sew-t07/p527-steps45.png",
+      "sha256": "1ff73f50334a5708c7998f096388d6f949ffd0008cb1173f5d9062c09ae5df18",
+      "bytes": 34142
+    },
+    {
+      "path": "tmp/pdfs/sew-t07/p527-t63-bot.png",
+      "sha256": "80af0c611be9f3656d159e5dff82d4d4bde59640e62b2586268ceda59a2ce145",
+      "bytes": 118479
+    },
+    {
+      "path": "tmp/pdfs/sew-t07/p527-t63-top.png",
+      "sha256": "0492117d2289b5dd62d2899a8231aa69100e2cb62a23ecf42672edec6ad02715",
+      "bytes": 87811
+    },
+    {
+      "path": "tmp/pdfs/sew-t07/p527-t63.png",
+      "sha256": "6e9b3736ff3859a660b61c9681df5d9d12db4eef796b90b896e6accc8d716d31",
+      "bytes": 76761
+    },
+    {
+      "path": "tmp/pdfs/sew-t07/p528-dig-sup.png",
+      "sha256": "63e72fbe042398d48d1e6a811e61b1e0365fe5ee4d10f5367cc8aa021233e4f3",
+      "bytes": 10944
+    },
+    {
+      "path": "tmp/pdfs/sew-t07/p528-eqs.png",
+      "sha256": "9ff29c61af6d9e97e9b9e04ec9096d46c2a770e42e07bd9b497b823b898004cf",
+      "bytes": 55611
+    },
+    {
+      "path": "tmp/pdfs/sew-t07/p528-eqs2.png",
+      "sha256": "8a66892b4aa36b9a1161e575da3825e83a6b0345c85e690eced439696c6040e5",
+      "bytes": 29105
+    },
+    {
+      "path": "tmp/pdfs/sew-t07/p528-eqs3.png",
+      "sha256": "e125f20ca882ab83ba8ff4330518a568d0aea9fbbe07f4a5d6aca7e2b3a9f0a1",
+      "bytes": 115378
+    },
+    {
+      "path": "tmp/pdfs/sew-t07/p528-t64-group3.png",
+      "sha256": "10f1ac680d1060492c9855bf6b88b1c6766a439717b659953564c98483f04e0f",
+      "bytes": 44374
+    },
+    {
+      "path": "tmp/pdfs/sew-t07/p528-t64.png",
+      "sha256": "c811ac8c50889d5b6ac27a66d0f0b982bf291e976eebae4e15666ba83a1b4f9c",
+      "bytes": 138517
+    },
+    {
+      "path": "tmp/pdfs/sew-t07/p529-band-0.png",
+      "sha256": "6004eb9402162c9b51a7896382fbc4bfcc384d519039f4fee49fb920874899ca",
+      "bytes": 124022
+    },
+    {
+      "path": "tmp/pdfs/sew-t07/p529-band-1.png",
+      "sha256": "425470dd1be9c658057bca7b03e6ec72a3f0218f37155eb6bf9d204f24c74b97",
+      "bytes": 78653
+    },
+    {
+      "path": "tmp/pdfs/sew-t07/p529-band-2.png",
+      "sha256": "1b4f869b54fa53703a20e5ee42273af5f9c79a027c2d8e1f62c936228ec455bf",
+      "bytes": 46689
+    },
+    {
+      "path": "tmp/pdfs/sew-t07/p529-band-3.png",
+      "sha256": "6b11ef2cc3580ff1a077b92b928af1841ac994bdc8800e5188e5d79a12b42479",
+      "bytes": 415
+    },
+    {
+      "path": "tmp/pdfs/sew-t07/p529-hi-raw.png",
+      "sha256": "376cdf36c28ca5453e525058a25e1d7a2dc7667511783e586b871bfae6e4aec2",
+      "bytes": 389691
+    },
+    {
+      "path": "tmp/pdfs/sew-t07/p529-hi.png",
+      "sha256": "c7e90da8ca3d8659b58d39dc1c08977f1cdf8d006149c72f5e81bc6cfea148c7",
+      "bytes": 248671
+    },
+    {
+      "path": "tmp/pdfs/sew-t07/p529-raw.png",
+      "sha256": "f97257550b8e06f298e40d092e70b55173c9e9e22eb4e79d951b144559ad6d46",
+      "bytes": 302785
+    },
+    {
+      "path": "tmp/pdfs/sew-t07/p529-rot-raw.png",
+      "sha256": "f97257550b8e06f298e40d092e70b55173c9e9e22eb4e79d951b144559ad6d46",
+      "bytes": 302785
+    },
+    {
+      "path": "tmp/pdfs/sew-t07/p529-rot.png",
+      "sha256": "492137ce2ea21a778ed0cdc2443fe47d767234ad0ea473b0ebb736c78b1b4cd1",
+      "bytes": 251434
+    },
+    {
+      "path": "tmp/pdfs/sew-t07/p530-raw.png",
+      "sha256": "30672f5ba6587295ee93391e8be89ed50ad8234d2861a1f79de871f879d2fe45",
+      "bytes": 2872503
+    },
+    {
+      "path": "tmp/pdfs/sew-t07/p530-rot.png",
+      "sha256": "05867145aa4f2c4374a058ec652c19c389f67f48f39009f3a851cfbc971f73eb",
+      "bytes": 2037409
+    },
+    {
+      "path": "tmp/pdfs/sew-t07/page-492.png",
+      "sha256": "50108735d26d1574bb5988d287cef254959962b5d747c5348f67045d05b28464",
+      "bytes": 254711
+    },
+    {
+      "path": "tmp/pdfs/sew-t07/page-494.png",
+      "sha256": "f7ff6fb1c344b9ef916f032cb2483982d40fe2930f6a8252b027eb172051c7b1",
+      "bytes": 347274
+    },
+    {
+      "path": "tmp/pdfs/sew-t07/page-496.png",
+      "sha256": "264879b30bd646bf0d6bc5aa43a2b0649e94eed371acd59eed9d70f9d1f09b7e",
+      "bytes": 1992698
+    },
+    {
+      "path": "tmp/pdfs/sew-t07/page-497.png",
+      "sha256": "444ebb7a5375c2a6f05821fbf71f6fe4814c4582fd6b147e7ae6de153cdb5f54",
+      "bytes": 320606
+    },
+    {
+      "path": "tmp/pdfs/sew-t07/page-498.png",
+      "sha256": "17a4cc721280ece49d79cb36cb26d07c189b2a07cb0bab05e871bb6e0b87945c",
+      "bytes": 299617
+    },
+    {
+      "path": "tmp/pdfs/sew-t07/page-499.png",
+      "sha256": "2302d549934823589e5b7bb3d49d109ad0da56d61f857aea5da9b68462d5b159",
+      "bytes": 287482
+    },
+    {
+      "path": "tmp/pdfs/sew-t07/page-500.png",
+      "sha256": "388caabfc8b7ccf570eb8d42f01f927f38b99acfdb9679ac31ab531e01cf75b0",
+      "bytes": 349313
+    },
+    {
+      "path": "tmp/pdfs/sew-t07/page-501.png",
+      "sha256": "d45db2012f70fd53c164e62a57b5be63450552f375ddc35a22f7d3d6560d5c6c",
+      "bytes": 274948
+    },
+    {
+      "path": "tmp/pdfs/sew-t07/page-502.png",
+      "sha256": "43c737e13e00119bba175c13580104a6b84fb1dfaf6fedc8d0298b163d65cf4d",
+      "bytes": 339721
+    },
+    {
+      "path": "tmp/pdfs/sew-t07/page-503.png",
+      "sha256": "4a564934478b8ffff67db2a63e7c5c265a307203c1c909f6477f7f4465578335",
+      "bytes": 793292
+    },
+    {
+      "path": "tmp/pdfs/sew-t07/page-504.png",
+      "sha256": "fe75ee770fc427c546b97e9488437351f5eb6f157d7ed33c481978d0c97eeeb3",
+      "bytes": 319379
+    },
+    {
+      "path": "tmp/pdfs/sew-t07/page-505.png",
+      "sha256": "bbec9f40cba9035a1948697fe62aacfed6a2f518d825893463c5d123b4d5240e",
+      "bytes": 573141
+    },
+    {
+      "path": "tmp/pdfs/sew-t07/page-506.png",
+      "sha256": "81626f3a3ca67fdc0508153e2f4d8d38ebe4fa3eabbf7fc82adbc94bf3572f97",
+      "bytes": 496659
+    },
+    {
+      "path": "tmp/pdfs/sew-t07/page-507.png",
+      "sha256": "30b5d344aee4c05d7d7eacc172b054115dc58d7d7f11583801c34e9b2382dc3f",
+      "bytes": 633905
+    },
+    {
+      "path": "tmp/pdfs/sew-t07/page-508.png",
+      "sha256": "0302375e77d69af91efa44339fdf0853af19c4f5f3540aa5d3db8fe77a3c1b61",
+      "bytes": 393236
+    },
+    {
+      "path": "tmp/pdfs/sew-t07/page-509.png",
+      "sha256": "fa0e7b16788a835560c89e0878cbd86d64aa3c9951078e0652a193610509a0e3",
+      "bytes": 300574
+    },
+    {
+      "path": "tmp/pdfs/sew-t07/page-510.png",
+      "sha256": "d0852d4200b39eab875151aaae9ae5e90ee4d299651ff47a1490eba9f583015f",
+      "bytes": 259666
+    },
+    {
+      "path": "tmp/pdfs/sew-t07/page-511.png",
+      "sha256": "4453494fa2070d6ffeac67b77b989364a9b6502f42e0b1471f189c316c93ce44",
+      "bytes": 350349
+    },
+    {
+      "path": "tmp/pdfs/sew-t07/page-516.png",
+      "sha256": "7a71125e8f7f1233b51c706b8bc225b9698db29e5179112ef61523bdc372013d",
+      "bytes": 262637
+    },
+    {
+      "path": "tmp/pdfs/sew-t07/page-517.png",
+      "sha256": "d22e0ceadb6bf032c4e785e0a048063d07f07e6d9f3c07aeb14db1316b1f04e3",
+      "bytes": 254964
+    },
+    {
+      "path": "tmp/pdfs/sew-t07/page-519.png",
+      "sha256": "e2056ec4b9e5594f940eef2b4f9b399c97db647e0e3971f5e8c61a162650a84f",
+      "bytes": 377094
+    },
+    {
+      "path": "tmp/pdfs/sew-t07/page-520.png",
+      "sha256": "7543ff713842d9d565237fb353bd96bb11307cb2d8f5356d3e6694265ab5f617",
+      "bytes": 307728
+    },
+    {
+      "path": "tmp/pdfs/sew-t07/page-522.png",
+      "sha256": "5574090e03005a744d4a1dd866aa18f8fb041dce9c13be52b2ceee4dc29552f5",
+      "bytes": 507094
+    },
+    {
+      "path": "tmp/pdfs/sew-t07/page-524.png",
+      "sha256": "c3e858416f322b5cb430e219a7dc77dab772975496e9ace18efd3ef56096d95e",
+      "bytes": 282489
+    },
+    {
+      "path": "tmp/pdfs/sew-t07/page-525.png",
+      "sha256": "39a1b9aa0cf927d48e4fbb754c88b7e9354bc4749ddc79f14b887d840172bd9e",
+      "bytes": 292881
+    },
+    {
+      "path": "tmp/pdfs/sew-t07/page-526.png",
+      "sha256": "a7778f087888b8b8bf8deb73877c13a97384d8dfd4114597f8cc3027e5598026",
+      "bytes": 297444
+    },
+    {
+      "path": "tmp/pdfs/sew-t07/page-527.png",
+      "sha256": "45ebd0e72ac7007b25a4a525b32550384f062cf54869a53de043846af8bd67ba",
+      "bytes": 315822
+    },
+    {
+      "path": "tmp/pdfs/sew-t07/page-528.png",
+      "sha256": "e8d43c85710fcfc0b168b84c3c348be11f18603c89f6fcd09454bfcb6c4d28bb",
+      "bytes": 404347
+    },
+    {
+      "path": "tmp/pdfs/sew-t07/page-529.png",
+      "sha256": "afdf6a47d2245ebd4f00a1a3d893102ac5b4eca1c21e94e32fc2a29ca4711c91",
+      "bytes": 170009
+    },
+    {
+      "path": "tmp/pdfs/sew-t07/page-530.png",
+      "sha256": "03a596a9b982d485e2f4a54526aa44c4f1b17fffd9804289e6c9b505e1512b23",
+      "bytes": 1567201
+    },
+    {
+      "path": "tmp/pdfs/sew-t07/region-Ep527-1.png",
+      "sha256": "3267bf551235fff7bda7a9b4ac766d6424114abf76f9cf44ff1b7dfdc29e4e69",
+      "bytes": 7540
+    },
+    {
+      "path": "tmp/pdfs/sew-t07/region-Ep527-2.png",
+      "sha256": "239431a75bd34a9c49ea9aef999370e34bdace6cb82015c9347bf6cce68ae03e",
+      "bytes": 7227
+    },
+    {
+      "path": "tmp/pdfs/sew-t07/region-Ep528-1.png",
+      "sha256": "6ea9943b1778ad075b76462eef65f0041446519fa52dbb798180ab06ace052b3",
+      "bytes": 6672
+    },
+    {
+      "path": "tmp/pdfs/sew-t07/region-Ep528-2.png",
+      "sha256": "05f796f6a9e4b4edc10eecd712b282f555c2fde0119d41a8780663f8d73e0bb5",
+      "bytes": 7088
+    },
+    {
+      "path": "tmp/pdfs/sew-t07/region-T5.52.png",
+      "sha256": "112130c13ab4f702c5b92749dc61fd30e48831529a3c487bdab1c001fe93aef1",
+      "bytes": 61041
+    },
+    {
+      "path": "tmp/pdfs/sew-t07/region-T5.53.png",
+      "sha256": "555e713cbbed9f71745848b63c7904f5daaf24ff10864927017f24a656f2aabf",
+      "bytes": 32243
+    },
+    {
+      "path": "tmp/pdfs/sew-t07/region-T5.54.png",
+      "sha256": "b2c513f5c2d6014dc71d98e1e2af3b29449f8c00be4f737a1044feefd4d12a85",
+      "bytes": 268835
+    },
+    {
+      "path": "tmp/pdfs/sew-t07/region-T5.55.png",
+      "sha256": "f9436be59f1cf035b9769ac058046e18efdc3707d0cd3f4b0a18fb9af9cb499d",
+      "bytes": 149101
+    },
+    {
+      "path": "tmp/pdfs/sew-t07/region-T5.56.png",
+      "sha256": "58c7398140c70f1c957711863abefb66577e106849f5e984831277df3711269f",
+      "bytes": 47835
+    },
+    {
+      "path": "tmp/pdfs/sew-t07/region-T5.57.png",
+      "sha256": "5089fd0bb5c9a248326b3d3ba615e6e6f9dd3c20be4effb5377375bf5e686d25",
+      "bytes": 182965
+    },
+    {
+      "path": "tmp/pdfs/sew-t07/region-T5.58.png",
+      "sha256": "312f8522ef7ce907d24492ec24c6703a4cd2e7da42fd279b550146f2d445b62b",
+      "bytes": 48299
+    },
+    {
+      "path": "tmp/pdfs/sew-t07/region-T5.59.png",
+      "sha256": "b496a15a24f451d3aacb5d361cd761f459c7e692e43476862edcc939bf6d66f3",
+      "bytes": 66396
+    },
+    {
+      "path": "tmp/pdfs/sew-t07/region-T5.60.png",
+      "sha256": "ea36c4475df74f4f67b59db74f6f1630f77c3a4d4254e2bc96565d2b4a80b80c",
+      "bytes": 102398
+    },
+    {
+      "path": "tmp/pdfs/sew-t07/region-T5.61.png",
+      "sha256": "96807583f6ff5404a4103b1e0de6a5153a83f5a497ab2653236d9b31a673a7bc",
+      "bytes": 66896
+    },
+    {
+      "path": "tmp/pdfs/sew-t07/region-T5.62.png",
+      "sha256": "6d5227b02890e258ab60e821e28c8ee803db3fc0de5ed6ca054942edc4a03e38",
+      "bytes": 77809
+    },
+    {
+      "path": "tmp/pdfs/sew-t07/region-T5.63.png",
+      "sha256": "8eec27ba0990a25a214b3b0ddd2f375eba809ff9c8d5b791fa80361cd82cfdd6",
+      "bytes": 149756
+    },
+    {
+      "path": "tmp/pdfs/sew-t07/region-T5.64.png",
+      "sha256": "6e13ff9612eebf55127ec384c52503b6801439226cbdcc7c9895edbf7a27b6dd",
+      "bytes": 65759
+    },
+    {
+      "path": "tmp/pdfs/sew-t07/region-T5.65.png",
+      "sha256": "6b892ccf0459dacaf98787b6a56cf5fd49eb9822685e251ec971120697a0618d",
+      "bytes": 36599
+    },
+    {
+      "path": "tmp/pdfs/sew-t07/region-T5.66.png",
+      "sha256": "1332064b5bc1aa734e248d07fb4448221c1cf628ed01dd603b7dba066814c97e",
+      "bytes": 80754
+    },
+    {
+      "path": "tmp/pdfs/sew-t07/region-T6.1.png",
+      "sha256": "5ea08f9553faff78b60dbc5347b7bc20295abae42261a6f1cd1930cba287b8db",
+      "bytes": 46599
+    },
+    {
+      "path": "tmp/pdfs/sew-t07/region-T6.2.png",
+      "sha256": "af0a18e052a98dedc4f8c7dd6310063809d0556d588b0a1390f764c998d14e39",
+      "bytes": 98128
+    },
+    {
+      "path": "tmp/pdfs/sew-t07/region-T6.3.png",
+      "sha256": "616214b71de83b69444004ea2b4a083089dda33ce668048940e95f3b26635da0",
+      "bytes": 162966
+    },
+    {
+      "path": "tmp/pdfs/sew-t07/region-T6.4.png",
+      "sha256": "337aff7a69dd8c7dd4ee6075bf12917e7d4c28fab0b2fa47766cbaba99cec593",
+      "bytes": 81280
+    },
+    {
+      "path": "tmp/pdfs/sew-t07/region-T6.5.png",
+      "sha256": "48c5bd066f6f62500c24cd607e22847df4d79143c94bf0a4979e81fa96691fb5",
+      "bytes": 141675
+    }
+  ],
+  "interpretation": "Saved drafts remain pending; renders are recovery inputs. No review or verification credit from the timeout task."
+}
