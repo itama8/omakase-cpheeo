@@ -1,0 +1,21 @@
+{
+  "checked_at_utc": "2026-11-08T12:53:35.620443+00:00",
+  "live_commit": "9287acd",
+  "live_snapshot": "/tmp/omakase-cpheeo-live-9287acd",
+  "app_pid": 3856177,
+  "tunnel_pid_unchanged": 2874173,
+  "public_mcp_url": "https://arlington-accepting-lip-insertion.trycloudflare.com/mcp",
+  "verified_records": 279,
+  "unclear_records": 1,
+  "public_mcp_smoke": "PASS",
+  "public_smoke_log": "/tmp/cpheeo-9287acd-public-smoke.log",
+  "local_smoke_log": "/tmp/cpheeo-9287acd-local-smoke.log",
+  "public_new_table_fetch": "PASS: Part A T1.1,T1.2,T1.3 and Part B T1.1,T1.2 all verified with correct source-page arrays",
+  "rollback_snapshots": [
+    "/tmp/omakase-cpheeo-live-1f37a9e",
+    "/tmp/omakase-cpheeo-live-9a0a3c8",
+    "/tmp/omakase-cpheeo-live-bdbd3cb",
+    "/tmp/omakase-cpheeo-live-7b97062"
+  ],
+  "scope_complete": false
+}
