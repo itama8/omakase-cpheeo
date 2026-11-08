@@ -1,0 +1,279 @@
+# Paraphrase groups: several natural phrasings of one engineering question, all answered
+# by the same units. Prompted by an external MCP consumer review (ChatGPT, 2026-11) that
+# found search locates concepts but is inconsistent across rephrasings of one question.
+#
+# A group is scored on its WORST-ranked phrasing (an assistant only sees the phrasing it
+# happened to write), plus hit@1 / hit@k across all phrasings:
+#   uv run omakase-cpheeo eval --questions eval/paraphrase-groups.yaml -v
+#
+# Phrasing styles:
+#   short   - a few keywords, as typed into a search box
+#   manual  - uses the manual's own heading or terms
+#   natural - a plain engineer's question
+#   long    - a long question with qualifiers, as an assistant writes it
+#   gap     - different vocabulary from the manual (synonyms, abbreviations, jargon)
+#   review  - the exact phrasing reported by the review
+# Phrasings were written before being run, and are not edited to make them pass.
+# Every expected id was checked against the unit text on 2026-11-09 (transcribed index).
+# `source: review` groups come from the review; `source: regression` worked at review time.
+
+groups:
+  # ---- Seeded from the review
+  - id: P01
+    target: Total head of pumping (sewage)
+    source: review
+    expect: [SEW-2013-A:4.7.2]
+    phrasings:
+      - {style: review, q: "Which components of total dynamic head must be considered when sizing a sewage pump that discharges through a rising main into a pressured receiving line?"}
+      - {style: review, q: "What makes up the total head of a sewage pump: static head, velocity head, pressure head and friction losses?"}
+      - {style: manual, q: "computation of the total head of pumping"}
+      - {style: natural, q: "How do I calculate the pump head for a sewage pumping station?"}
+      - {style: gap, q: "TDH calculation for a sewage lift station pump"}
+
+  - id: P02
+    target: Grit chambers after the pumps when sewers are deep
+    source: review
+    expect: [SEW-2013-A:5.6.2]
+    phrasings:
+      - {style: review, q: "When can a grit chamber be installed downstream of a sewage pump station rather than upstream, according to CPHEEO?"}
+      - {style: short, q: "grit chamber after pumps deep sewers"}
+      - {style: natural, q: "Should grit removal come before or after the pumps at a sewage treatment plant inlet?"}
+      - {style: manual, q: "Where sewers are laid at great depth, can only a bar screen be provided ahead of the pumps with grit chambers following the pumps?"}
+      - {style: natural, q: "Is 100% standby required for grit removal units?"}
+
+  - id: P03
+    target: Surge and water hammer in sewage pumping
+    source: review
+    expect: [SEW-2013-A:4.10]
+    phrasings:
+      - {style: short, q: "sewage pump water hammer"}
+      - {style: short, q: "surge analysis sewage pumping power failure"}
+      - {style: long, q: "What surge analysis is required for a sewage rising main when pumps trip during a sudden power failure, and what transient effects must be addressed?"}
+      - {style: gap, q: "Does a sewage force main need a transient analysis for pump trip?"}
+      - {style: manual, q: "surging of pump and water hammer"}
+
+  - id: P04
+    target: Filter backwash (air scour and water wash) rates
+    source: review
+    # 8.7.3.9 gives air 36-45 m/hr, water 24-40 m/hr; Annexure 8.5 prints 35-45 cum/sqm/min
+    # for both (suspicious units). Either one answers the question.
+    expect: [WS-2024-A:8.7.3.9, WS-2024-A:AN8.5]
+    phrasings:
+      - {style: short, q: "filter backwash rate"}
+      - {style: short, q: "air scour rate rapid sand filter"}
+      - {style: natural, q: "What air scour and water wash rates are recommended for backwashing rapid sand filters?"}
+      - {style: natural, q: "How long should a rapid gravity filter be backwashed and at what wash water rate?"}
+      - {style: manual, q: "air scour and high-rate backwash"}
+
+  - id: P05
+    target: Manning's n for sewer pipe materials
+    source: regression
+    expect: [SEW-2013-A:T3.11]
+    phrasings:
+      - {style: review, q: "Manning n for plastic and concrete sewers"}
+      - {style: gap, q: "roughness coefficient for PVC sewer pipe"}
+      - {style: natural, q: "What value of Manning's n should I use for HDPE and RCC sewers?"}
+      - {style: manual, q: "Manning's coefficient of roughness n for stated materials"}
+      - {style: long, q: "Which pipe friction coefficient should be used in Manning's formula when designing a gravity sewer in stoneware or concrete?"}
+
+  - id: P06
+    target: Wet well volume from pump start frequency
+    source: regression
+    expect: [SEW-2013-A:E4.1, SEW-2013-A:4.6.6]
+    phrasings:
+      - {style: short, q: "wet well pump start frequency"}
+      - {style: natural, q: "How many times per hour can a sewage pump start, and how does that set the wet well volume?"}
+      - {style: gap, q: "minimum cycle time for pumps in a sewage sump"}
+      - {style: manual, q: "effective volume of wet well"}
+      - {style: short, q: "wet well sizing for submersible sewage pumps"}
+
+  - id: P07
+    target: Residual chlorine during monsoon
+    source: regression
+    expect: [WS-2024-A:9.8.4]
+    phrasings:
+      - {style: review, q: "residual chlorine during monsoon"}
+      - {style: long, q: "What chlorine residual should be maintained at the tail end of the distribution system during the rainy season?"}
+      - {style: gap, q: "minimum free chlorine at consumer end during epidemics"}
+      - {style: short, q: "0.5 mg/L residual chlorine monsoon"}
+
+  - id: P08
+    target: Specific speed of a centrifugal pump
+    source: regression
+    expect: [SEW-2013-A:E4.2]
+    phrasings:
+      - {style: review, q: "centrifugal pump specific speed"}
+      - {style: natural, q: "What is the formula for the specific speed of a sewage pump?"}
+      - {style: long, q: "How is the specific speed Ns of a centrifugal sewage pump calculated from rotational speed, discharge and head?"}
+      - {style: gap, q: "Ns = N sqrt(Q) / H^0.75 sewage pump"}
+
+  # ---- Sewerage manual (2013 Part A)
+  - id: P09
+    target: Peak factor for sewage flow
+    expect: [SEW-2013-A:T3.2]
+    phrasings:
+      - {style: manual, q: "peak factor for contributory population"}
+      - {style: natural, q: "What peaking factor should be applied to average sewage flow for a town of 1.5 lakh?"}
+      - {style: gap, q: "ratio of peak to average sewage flow"}
+      - {style: gap, q: "Harmon or Babbitt peak factor for sewer design"}
+
+  - id: P10
+    target: Design velocities in gravity sewers
+    expect: [SEW-2013-A:T3.9, SEW-2013-A:3.15.1, SEW-2013-A:3.15]
+    phrasings:
+      - {style: short, q: "self cleansing velocity sewer"}
+      - {style: natural, q: "What is the minimum velocity in a sanitary sewer to prevent silting?"}
+      - {style: natural, q: "What is the maximum permissible velocity in gravity sewers to avoid erosion?"}
+      - {style: manual, q: "design velocities to be ensured in gravity sewers"}
+
+  - id: P11
+    target: Groundwater infiltration allowance
+    expect: [SEW-2013-A:T3.3, SEW-2013-A:3.6]
+    phrasings:
+      - {style: short, q: "groundwater infiltration allowance"}
+      - {style: long, q: "How much infiltration should I add to the sewer design flow where the water table is high?"}
+      - {style: gap, q: "inflow and infiltration I/I allowance for sewers"}
+      - {style: manual, q: "ground water infiltration"}
+
+  - id: P12
+    target: Drop manholes
+    expect: [SEW-2013-A:3.25, SEW-2013-A:F3.29]
+    phrasings:
+      - {style: short, q: "drop manhole"}
+      - {style: natural, q: "When is a drop connection needed at a manhole?"}
+      - {style: long, q: "What height difference between the incoming and outgoing sewer inverts makes a drop manhole necessary?"}
+      - {style: gap, q: "backdrop manhole for sewers"}
+
+  - id: P13
+    target: Buffer zone around a sewage treatment plant
+    expect: [SEW-2013-A:5.3.7.1]
+    phrasings:
+      - {style: manual, q: "buffer zone around STP"}
+      - {style: natural, q: "What distance should be kept between a sewage treatment plant and houses?"}
+      - {style: gap, q: "setback from STP to residential area for odour nuisance"}
+      - {style: natural, q: "Is a buffer zone needed if the STP has a deodorization system?"}
+
+  - id: P14
+    target: Number and capacity of pumps in a sewage pumping station
+    expect: [SEW-2013-A:4.5.4]
+    phrasings:
+      - {style: manual, q: "number of pumps in a sewage pumping station"}
+      - {style: long, q: "How many pumps, and of what capacities in multiples of DWF, should a small sewage pumping station have?"}
+      - {style: short, q: "pump combination 1 DWF 2 DWF 3 DWF"}
+      - {style: gap, q: "how many standby pumps for a sewage lift station"}
+
+  - id: P15
+    target: Velocity to prevent hydrogen sulphide in sewers
+    expect: [SEW-2013-A:3.15.2, SEW-2013-A:3.15.2.1, SEW-2013-A:T3.10]
+    phrasings:
+      - {style: manual, q: "minimum velocity for preventing hydrogen sulphide in sewers"}
+      - {style: natural, q: "How fast must sewage flow to avoid H2S generation and crown corrosion?"}
+      - {style: gap, q: "Z formula for sulphide build up in sewers"}
+      - {style: gap, q: "sewer velocity to keep slime and septicity down"}
+
+  - id: P16
+    target: Septic tank sizes
+    expect: [SEW-2013-A:T9.7, SEW-2013-A:T9.8, SEW-2013-A:9.3.4]
+    phrasings:
+      - {style: short, q: "septic tank size for 10 users"}
+      - {style: natural, q: "What dimensions should a septic tank have for a household of five people?"}
+      - {style: natural, q: "septic tank capacity for a housing colony of 200 users"}
+      - {style: gap, q: "how big should a soak-pit-and-tank system be for a small family home"}
+
+  - id: P17
+    target: Velocity in sewage pumping mains
+    expect: [SEW-2013-A:4.20.3]
+    phrasings:
+      - {style: short, q: "velocity in sewage pumping main"}
+      - {style: natural, q: "What velocity range should a sewage force main be designed for?"}
+      - {style: natural, q: "minimum and maximum velocity in sewage rising mains"}
+      - {style: long, q: "For a short sewage force main under 600 m with a low lift, what design velocity is recommended?"}
+
+  - id: P18
+    target: Effect of silting and erosion on pumping main performance (appendix)
+    expect: [SEW-2013-A:A4.3]
+    phrasings:
+      - {style: manual, q: "effects of silting and erosion on sewage pumping main performance"}
+      - {style: natural, q: "How does sediment deposition change the friction loss in a sewage force main?"}
+      - {style: short, q: "Law College force main losses Chennai"}
+
+  - id: P19
+    target: Activated sludge design parameters
+    expect: [SEW-2013-A:T5.9]
+    phrasings:
+      - {style: short, q: "activated sludge design parameters"}
+      - {style: natural, q: "What F/M ratio and MLSS should be used for a conventional activated sludge plant?"}
+      - {style: gap, q: "SRT and HRT for extended aeration"}
+      - {style: manual, q: "characteristics and design parameters of activated sludge systems for sewage"}
+
+  # ---- Water supply manual (2024 Parts A, B)
+  - id: P20
+    target: Design period of water supply components
+    expect: [WS-2024-A:T2.2, WS-2024-A:2.8.2.1]
+    phrasings:
+      - {style: short, q: "design period for water treatment plant"}
+      - {style: natural, q: "How many years should a water transmission main be designed for?"}
+      - {style: gap, q: "design horizon for water supply scheme components"}
+      - {style: manual, q: "design period in years for water supply components"}
+
+  - id: P21
+    target: Per capita water supply levels
+    expect: [WS-2024-A:T2.4, WS-2024-A:2.8.2.3]
+    phrasings:
+      - {style: manual, q: "per capita water supply"}
+      - {style: natural, q: "How many litres per person per day should be adopted for water supply in a city of 5 lakh?"}
+      - {style: gap, q: "lpcd norms for metro cities"}
+      - {style: short, q: "135 lpcd or 150 lpcd"}
+
+  - id: P22
+    target: Rate of filtration for rapid sand filters
+    # Annexure 8.5 repeats the rate (5-6 cum/sqm/hr).
+    expect: [WS-2024-A:8.7.3.2, WS-2024-A:AN8.5]
+    phrasings:
+      - {style: manual, q: "rate of filtration rapid sand filter"}
+      - {style: natural, q: "What loading rate in m/h should a rapid gravity filter be designed for?"}
+      - {style: natural, q: "filter loading rate when one filter bed is out of service"}
+      - {style: gap, q: "rapid sand filter design flux"}
+
+  - id: P23
+    target: Surface loading and detention period for clarifiers
+    expect: [WS-2024-A:T8.5, WS-2024-A:8.6.4, WS-2024-A:AN8.5]
+    phrasings:
+      - {style: short, q: "surface loading rate clariflocculator"}
+      - {style: natural, q: "What detention time and overflow rate should be used for a clariflocculator?"}
+      - {style: gap, q: "settling tank surface overflow rate in water treatment"}
+      - {style: short, q: "detention period for plain sedimentation tank"}
+
+  - id: P24
+    target: Hazen-Williams C values for water mains
+    expect: [WS-2024-A:T6.2, WS-2024-A:6.5.1.4]
+    phrasings:
+      - {style: short, q: "Hazen-Williams C value for DI water pipe"}
+      - {style: natural, q: "What C value should be used for design of cement mortar lined ductile iron water mains?"}
+      - {style: gap, q: "friction coefficient for water pipes in the Hazen Williams formula"}
+      - {style: manual, q: "Hazen-Williams coefficients for water supply pipe materials"}
+
+  - id: P25
+    target: Economical size of a pumping main (water)
+    expect: [WS-2024-A:AN6.1, WS-2024-A:6.7]
+    phrasings:
+      - {style: manual, q: "economical size of pumping main"}
+      - {style: natural, q: "How do I select the most economic diameter of a water rising main?"}
+      - {style: gap, q: "pumping main diameter optimisation capital cost versus energy cost"}
+
+  - id: P26
+    target: Breakpoint chlorination
+    expect: [WS-2024-A:9.6.3, WS-2024-A:F9.2]
+    phrasings:
+      - {style: manual, q: "breakpoint chlorination"}
+      - {style: natural, q: "What does the break point chlorination curve show?"}
+      - {style: gap, q: "chlorine dose needed to get a free residual when water has ammonia"}
+
+  - id: P27
+    target: Storage and handling of chlorine cylinders (O&M)
+    # Part A 9.10.3 covers the design of the cylinder/tonner store.
+    expect: [WS-2024-B:5.4.8.6, WS-2024-A:9.10.3]
+    phrasings:
+      - {style: manual, q: "storage and handling of chlorine cylinders"}
+      - {style: natural, q: "How should chlorine tonners be stored at a water treatment plant?"}
+      - {style: gap, q: "explosives licence for chlorine containers at a WTP"}
