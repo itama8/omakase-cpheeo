@@ -1,0 +1,90 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:T5.31",
+  "unit_id": "SEW-2013-A:T5.31",
+  "manual_id": "SEW-2013-A",
+  "kind": "table",
+  "number": "5.31",
+  "title": "Performance of Yoshinogawa STP, Japan (FY 2009",
+  "state": "verified",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "regions": [
+    {
+      "pdf_page": 468,
+      "page_label": "5 - 164",
+      "bbox": [
+        57.0,
+        72.0,
+        532.0,
+        148.0
+      ],
+      "render_sha256": "3482983faaf1215eb1e72cf77ece56ba6b7086b6a8b56ae10c856ae851c8e608"
+    }
+  ],
+  "headers": [
+    "",
+    "BOD, mg/L",
+    "BOD, mg/L",
+    "BOD, mg/L",
+    "SS, mg/L",
+    "SS, mg/L",
+    "SS, mg/L",
+    "TN, mg/L",
+    "TN, mg/L",
+    "TN, mg/L"
+  ],
+  "rows": [
+    [
+      "Influent / Effluent / % Removal",
+      "173",
+      "3.3",
+      "98.1",
+      "186",
+      "6",
+      "96.8",
+      "28.6",
+      "7",
+      "75.5"
+    ]
+  ],
+  "cell_spans": [
+    {
+      "column": 1,
+      "header": true,
+      "colspan": 3,
+      "description": "Printed group heading 'BOD, mg/L' spans three value columns (Influent, Effluent, % Removal)"
+    },
+    {
+      "column": 4,
+      "header": true,
+      "colspan": 3,
+      "description": "Printed group heading 'SS, mg/L' spans three value columns"
+    },
+    {
+      "column": 7,
+      "header": true,
+      "colspan": 3,
+      "description": "Printed group heading 'TN, mg/L' spans three value columns"
+    }
+  ],
+  "markdown": "|  | BOD, mg/L | BOD, mg/L | BOD, mg/L | SS, mg/L | SS, mg/L | SS, mg/L | TN, mg/L | TN, mg/L | TN, mg/L |\n| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |\n| Influent / Effluent / % Removal | 173 | 3.3 | 98.1 | 186 | 6 | 96.8 | 28.6 | 7 | 75.5 |",
+  "notes": [
+    "Source: Regional Sewerage Centre of Nara Prefecture, Japan, 2009",
+    "Printed as 'Table 5.31  Performance of Yoshinogawa STP, Japan (FY 2009' with no closing parenthesis; not corrected.",
+    "Transcriber layout note: the table has two printed header levels. The upper level carries the three pollutant group headings; the single lower-left cell reads 'Influent / Effluent / % Removal' and fixes the order of the three values under each group. No separate Influent/Effluent/Removal labels are printed above the values.",
+    "Water quality values are otherwise unlabelled by unit apart from the group headings (BOD, SS and TN in mg/L)."
+  ],
+  "verification": {
+    "transcription": {
+      "pass_id": "sew-t06-first-reading-2026-11-08",
+      "method": "Direct viewing of the annotation-cleaned 144 dpi page render and 300-420 dpi crops; no OCR, no paid service",
+      "observations": "Group headings, the order label and all nine values read from a 300 dpi crop. Value order verified against the printed 'Influent / Effluent / % Removal' label."
+    },
+    "visual_recheck": {
+      "pass_id": "parent-recheck-sew-t06",
+      "method": "distinct second visual inspection of exact source-region renders (incl. rotated/zoomed crops) by parent assistant; not independent human review",
+      "observations": "Parent compared every cell, header and note against 144-dpi region renders (all five rotated T5.29 regions included).",
+      "content_sha256": "554d76aa1d1ba7c90fb1b2fd7acfaf8ebc7872819efea56dea1a33a884d7e4f5"
+    }
+  }
+}

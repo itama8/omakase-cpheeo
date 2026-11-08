@@ -1,0 +1,87 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:T5.39",
+  "unit_id": "SEW-2013-A:T5.39",
+  "manual_id": "SEW-2013-A",
+  "kind": "table",
+  "number": "5.39",
+  "title": "Typical design parameters of Bardenpho process",
+  "state": "verified",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "regions": [
+    {
+      "pdf_page": 480,
+      "page_label": "5 - 176",
+      "bbox": [
+        54.0,
+        70.0,
+        537.0,
+        253.0
+      ],
+      "render_sha256": "e4b83259205281e5c45039d7b7eceec8243f97affbd8cf389db04ecbebf1fff5"
+    }
+  ],
+  "headers": [
+    "Process",
+    "SRT (d)",
+    "MLSS (mg/L)",
+    "Total",
+    "Anaerobic",
+    "Anoxic",
+    "Aerobic",
+    "Return Activated Sludge % of influent (%)",
+    "Internal Recycle % of influent (%)"
+  ],
+  "rows": [
+    [
+      "Bardenpho (4-stage)",
+      "10-20",
+      "3,000-4,000",
+      "8-20",
+      "-",
+      "1-3 (1st stage)\n2-4 (3rd stage)",
+      "4-12 (2nd stage)\n0.5-1 (4th stage)",
+      "50-100",
+      "200-400"
+    ],
+    [
+      "Bardenpho (5-stage)",
+      "10-20",
+      "3,000-4,000",
+      "9-22",
+      "0.5-1.5",
+      "1-3 (2nd stage)\n2-4 (4th stage)",
+      "4-12 (3rd stage)\n0.5-1 (5th stage)",
+      "50-100",
+      "200-400"
+    ]
+  ],
+  "cell_spans": [
+    {
+      "column": 3,
+      "header": true,
+      "colspan": 4,
+      "description": "Printed group heading 'Retention time (hrs)' spans Total, Anaerobic, Anoxic and Aerobic"
+    }
+  ],
+  "markdown": "| Process | SRT (d) | MLSS (mg/L) | Total | Anaerobic | Anoxic | Aerobic | Return Activated Sludge % of influent (%) | Internal Recycle % of influent (%) |\n| --- | --- | --- | --- | --- | --- | --- | --- | --- |\n| Bardenpho (4-stage) | 10-20 | 3,000-4,000 | 8-20 | - | 1-3 (1st stage)\n2-4 (3rd stage) | 4-12 (2nd stage)\n0.5-1 (4th stage) | 50-100 | 200-400 |\n| Bardenpho (5-stage) | 10-20 | 3,000-4,000 | 9-22 | 0.5-1.5 | 1-3 (2nd stage)\n2-4 (4th stage) | 4-12 (3rd stage)\n0.5-1 (5th stage) | 50-100 | 200-400 |",
+  "notes": [
+    "Transcriber layout note: header is printed on two levels. Upper level reads 'Process / SRT (d) / MLSS (mg/L) / Retention time (hrs) / Return Activated Sludge % of influent (%) / Internal Recycle % of influent (%)'; lower level reads 'Total / Anaerobic / Anoxic / Aerobic' under Retention time (hrs).",
+    "Stage order is printed with superscript ordinals ('1st', '2nd', '3rd', '4th', '5th'); written here on the text baseline.",
+    "The 4-stage row prints only two retention-time pairs (1st stage and 3rd stage anoxic, 2nd stage and 4th stage aerobic) with no anaerobic value ('-'); the 5-stage row prints an anaerobic value and shifts the stage ordinals. Both retained as printed.",
+    "The two 'Anoxic' and 'Aerobic' cells hold two printed lines each; the line break is retained inside the cell."
+  ],
+  "verification": {
+    "transcription": {
+      "pass_id": "sew-t06-first-reading-2026-11-08",
+      "method": "Direct viewing of the annotation-cleaned 144 dpi page render and 300-420 dpi crops; no OCR, no paid service",
+      "observations": "Both data rows read from a 420 dpi crop, including the superscript ordinals and the two-line anoxic/aerobic cells."
+    },
+    "visual_recheck": {
+      "pass_id": "parent-recheck-sew-t06",
+      "method": "distinct second visual inspection of exact source-region renders (incl. rotated/zoomed crops) by parent assistant; not independent human review",
+      "observations": "Parent compared every cell, header and note against 144-dpi region renders (all five rotated T5.29 regions included).",
+      "content_sha256": "4ef01ea3cd1a2e3d1b2726dd2bf285e7a6b9135c9490bc34353c64a389b51b45"
+    }
+  }
+}

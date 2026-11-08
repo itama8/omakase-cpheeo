@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:T5.46",
+  "unit_id": "SEW-2013-A:T5.46",
+  "manual_id": "SEW-2013-A",
+  "kind": "table",
+  "number": "5.46",
+  "title": "Operating condition of MBR process (Arakawa STP)",
+  "state": "verified",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "regions": [
+    {
+      "pdf_page": 489,
+      "page_label": "5 - 185",
+      "bbox": [
+        90.0,
+        72.0,
+        493.0,
+        229.0
+      ],
+      "render_sha256": "1db5529c67b459e05bcd7a7f44597e62f6e7064eb02c324e8abb0d3b6556a818"
+    }
+  ],
+  "headers": [
+    "Anoxic",
+    "Oxic",
+    "SRT (days)",
+    "MLSS (mg/L)",
+    "Flux (L/m²/day)",
+    "Applied Vacuum (kPa)",
+    "Nitrified Recycle (% of influent)"
+  ],
+  "rows": [
+    [
+      "3.0",
+      "3.0",
+      "20.0",
+      "9,200",
+      "500-1,000",
+      "15-35",
+      "300"
+    ]
+  ],
+  "cell_spans": [
+    {
+      "column": 0,
+      "header": true,
+      "colspan": 2,
+      "description": "Printed group heading 'HRT(hours)' spans the Anoxic and Oxic sub-headings"
+    }
+  ],
+  "markdown": "| Anoxic | Oxic | SRT (days) | MLSS (mg/L) | Flux (L/m²/day) | Applied Vacuum (kPa) | Nitrified Recycle (% of influent) |\n| --- | --- | --- | --- | --- | --- | --- |\n| 3.0 | 3.0 | 20.0 | 9,200 | 500-1,000 | 15-35 | 300 |",
+  "notes": [
+    "Printed below the table: 'Source: JSWA, 2003'.",
+    "Transcriber layout note: header is printed on two levels. Upper level reads 'HRT(hours) / SRT (days) / MLSS (mg/L) / Flux (L/m²/day) / Applied Vacuum (kPa) / Nitrified Recycle (% of influent)'; lower level reads 'Anoxic' and 'Oxic' under HRT(hours).",
+    "Printed as 'HRT(hours)' with no space before the parenthesis; retained.",
+    "Single printed data row."
+  ],
+  "verification": {
+    "transcription": {
+      "pass_id": "sew-t06-first-reading-2026-11-08",
+      "method": "Direct viewing of the annotation-cleaned 144 dpi page render and 360-540 dpi crops; no OCR, no paid service",
+      "observations": "All seven headings and seven values read from a 360 dpi crop."
+    },
+    "visual_recheck": {
+      "pass_id": "parent-recheck-sew-t06",
+      "method": "distinct second visual inspection of exact source-region renders (incl. rotated/zoomed crops) by parent assistant; not independent human review",
+      "observations": "Parent compared every cell, header and note against 144-dpi region renders (all five rotated T5.29 regions included).",
+      "content_sha256": "68f2cc26be71b705d27a984750a51610ace7fdf2a58b48efcca7e43cc2ace951"
+    }
+  }
+}

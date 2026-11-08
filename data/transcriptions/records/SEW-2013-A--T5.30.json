@@ -1,0 +1,94 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:T5.30",
+  "unit_id": "SEW-2013-A:T5.30",
+  "manual_id": "SEW-2013-A",
+  "kind": "table",
+  "number": "5.30",
+  "title": "Operational conditions of Yoshinogawa STP, Japan (FY 2009)",
+  "state": "verified",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "regions": [
+    {
+      "pdf_page": 467,
+      "page_label": "5 - 163",
+      "bbox": [
+        81.0,
+        609.0,
+        520.0,
+        769.0
+      ],
+      "render_sha256": "03a355722f8ef3d03aa5fd4ad6c63fc7d9a55757ecb52130558b670b4b0321ca"
+    }
+  ],
+  "headers": [
+    "Index",
+    "Influent Flow (m³/d)",
+    "HRT (hrs) Anoxic",
+    "HRT (hrs) Oxic",
+    "F/M",
+    "MLSS (mg/l)",
+    "Sludge Age (days)",
+    "Internal Recirculation (%)",
+    "Return Sludge (%)"
+  ],
+  "rows": [
+    [
+      "Average",
+      "50",
+      "3.3",
+      "8.4",
+      "0.083",
+      "2,130",
+      "17.0",
+      "75",
+      "51"
+    ],
+    [
+      "Range",
+      "8,287-11,265",
+      "2.9-3.6",
+      "7.3-9.1",
+      ".058-0.122",
+      ",810-2,370",
+      "13.2-20.3",
+      "",
+      "50-54"
+    ]
+  ],
+  "cell_spans": [
+    {
+      "column": 2,
+      "header": true,
+      "colspan": 2,
+      "description": "Printed header 'HRT (hrs)' spans the Anoxic and Oxic sub-headings"
+    },
+    {
+      "column": 7,
+      "row": 0,
+      "rowspan": 2,
+      "description": "Printed single cell 75 covers the Average and Range rows; Return Sludge is printed separately for each row"
+    }
+  ],
+  "markdown": "| Index | Influent Flow (m³/d) | HRT (hrs) Anoxic | HRT (hrs) Oxic | F/M | MLSS (mg/l) | Sludge Age (days) | Internal Recirculation (%) | Return Sludge (%) |\n| --- | --- | --- | --- | --- | --- | --- | --- | --- |\n| Average | 50 | 3.3 | 8.4 | 0.083 | 2,130 | 17.0 | 75 | 51 |\n| Range | 8,287-11,265 | 2.9-3.6 | 7.3-9.1 | .058-0.122 | ,810-2,370 | 13.2-20.3 |  | 50-54 |",
+  "notes": [
+    "Source:Regional Sewerage Centre of Nara Prefecture, Japan, 2009",
+    "Transcriber layout note: headers are printed on two levels. The upper level reads 'Influent / Flow / (m³/d)' and 'HRT (hrs)'; the lower level reads 'Anoxic' and 'Oxic' under HRT. The flattened header labels above keep both printed parts.",
+    "Printed as ',810-2,370' for the MLSS range: the leading thousands digit is missing from the printed cell. Not corrected.",
+    "Printed Average Influent Flow is 50 while the printed Range of the same column is 8,287-11,265. Both are retained without reconciliation.",
+    "F/M and Sludge Age values are printed without units in the body; only the header carries '(days)' for Sludge Age."
+  ],
+  "verification": {
+    "transcription": {
+      "pass_id": "sew-t06-first-reading-2026-11-08",
+      "method": "Direct viewing of the annotation-cleaned 144 dpi page render and 300-420 dpi crops; no OCR, no paid service",
+      "observations": "Every header and cell read from a 300 dpi crop. Range cells read digit by digit, including the printed ',810-2,370' and '.058-0.122'."
+    },
+    "visual_recheck": {
+      "pass_id": "parent-recheck-sew-t06",
+      "method": "distinct second visual inspection of exact source-region renders (incl. rotated/zoomed crops) by parent assistant; not independent human review",
+      "observations": "Parent compared every cell, header and note against 144-dpi region renders (all five rotated T5.29 regions included).",
+      "content_sha256": "7a54f87bb1fe1c9730de45d58c6dab7558a137ccc17881664b78a1a06fe7a149"
+    }
+  }
+}

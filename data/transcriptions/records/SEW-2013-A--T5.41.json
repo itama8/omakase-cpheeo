@@ -1,0 +1,75 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:T5.41",
+  "unit_id": "SEW-2013-A:T5.41",
+  "manual_id": "SEW-2013-A",
+  "kind": "table",
+  "number": "5.41",
+  "title": "Typical design parameters of A2O process",
+  "state": "verified",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "regions": [
+    {
+      "pdf_page": 481,
+      "page_label": "5 - 177",
+      "bbox": [
+        76.0,
+        639.0,
+        516.0,
+        768.0
+      ],
+      "render_sha256": "3707e007004562d2ecc4ba92ad04afb963c38e8bc7e6ca54c754c2dda0aca2e5"
+    }
+  ],
+  "headers": [
+    "F/M as MLVSS",
+    "SRT (days)",
+    "MLSS (mg/L)",
+    "Anaerobic",
+    "Anoxic",
+    "Oxic",
+    "Return activated sludge (% of influent)",
+    "Nitrified Recycle (% of influent)"
+  ],
+  "rows": [
+    [
+      "0.15-0.25",
+      "4-27",
+      "3,000-5,000",
+      "0.5-1.5",
+      "0.5-1.0",
+      "3.5-6.0",
+      "20-50",
+      "100-300"
+    ]
+  ],
+  "cell_spans": [
+    {
+      "column": 3,
+      "header": true,
+      "colspan": 3,
+      "description": "Printed group heading 'HRT(hours)' spans the Anaerobic, Anoxic and Oxic sub-headings"
+    }
+  ],
+  "markdown": "| F/M as MLVSS | SRT (days) | MLSS (mg/L) | Anaerobic | Anoxic | Oxic | Return activated sludge (% of influent) | Nitrified Recycle (% of influent) |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| 0.15-0.25 | 4-27 | 3,000-5,000 | 0.5-1.5 | 0.5-1.0 | 3.5-6.0 | 20-50 | 100-300 |",
+  "notes": [
+    "Source: Pennsylvania Department of Environmental Protection",
+    "Transcriber layout note: header is printed on two levels. Upper level reads 'F/M as MLVSS / SRT (days) / MLSS (mg/L) / HRT(hours) / Return activated sludge (% of influent) / Nitrified Recycle (% of influent)'; lower level reads 'Anaerobic / Anoxic / Oxic' under HRT(hours).",
+    "Printed as 'HRT(hours)' with no space before the parenthesis; retained.",
+    "The three HRT cells print a range broken over two lines (0.5- / 1.5, 0.5- / 1.0, 3.5- / 6.0); each is written as the single printed range.",
+    "The narrow HRT column header prints 'Anaer' and 'obic' on two lines (line wrap); joined as 'Anaerobic'."
+  ],
+  "verification": {
+    "transcription": {
+      "pass_id": "sew-t06-first-reading-2026-11-08",
+      "method": "Direct viewing of the annotation-cleaned 144 dpi page render and 300-420 dpi crops; no OCR, no paid service",
+      "observations": "Every heading and the single data row read from a 420 dpi crop."
+    },
+    "visual_recheck": {
+      "pass_id": "parent-recheck-sew-t06",
+      "method": "distinct second visual inspection of exact source-region renders (incl. rotated/zoomed crops) by parent assistant; not independent human review",
+      "observations": "Parent compared every cell, header and note against 144-dpi region renders (all five rotated T5.29 regions included). Corrections: 'Anaer obic' is a printed line wrap, not a spelling; joined with a layout note",
+      "content_sha256": "d81a707ac47780cb312b5765d37ce01a73f70a192636e357ae0706b57cadfb30"
+    }
+  }
+}

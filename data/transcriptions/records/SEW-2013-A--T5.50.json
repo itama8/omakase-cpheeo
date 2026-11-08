@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:T5.50",
+  "unit_id": "SEW-2013-A:T5.50",
+  "manual_id": "SEW-2013-A",
+  "kind": "table",
+  "number": "5.50",
+  "title": "Operating condition of MBR process",
+  "state": "verified",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "regions": [
+    {
+      "pdf_page": 490,
+      "page_label": "5 - 186",
+      "bbox": [
+        174.0,
+        653.0,
+        441.0,
+        755.0
+      ],
+      "render_sha256": "368871c59de574c53eb9856000993aa6f1b5227da8d7d6c542c050c01366cc38"
+    }
+  ],
+  "headers": [
+    "MLSS, (mg/l)",
+    "Flux, (l/m²/day)"
+  ],
+  "rows": [
+    [
+      "8,000-12,000",
+      "400-600"
+    ]
+  ],
+  "cell_spans": [],
+  "markdown": "| MLSS, (mg/l) | Flux, (l/m²/day) |\n| --- | --- |\n| 8,000-12,000 | 400-600 |",
+  "notes": [
+    "Printed below the table: 'Source: JSWA'.",
+    "Printed caption gives no plant name; the running text on the page names the Fukuzaki Sewage Treatment Plant, Japan.",
+    "Printed as 'MLSS, (mg/l)' and 'Flux, (l/m²/day)' with a comma before the unit and a lower-case l in the flux unit; retained."
+  ],
+  "verification": {
+    "transcription": {
+      "pass_id": "sew-t06-first-reading-2026-11-08",
+      "method": "Direct viewing of the annotation-cleaned 144 dpi page render and 420-540 dpi crops; no OCR, no paid service",
+      "observations": "Both headings and both values read from a 540 dpi crop; '8,000-12,000' checked digit by digit."
+    },
+    "visual_recheck": {
+      "pass_id": "parent-recheck-sew-t06",
+      "method": "distinct second visual inspection of exact source-region renders (incl. rotated/zoomed crops) by parent assistant; not independent human review",
+      "observations": "Parent compared every cell, header and note against 144-dpi region renders (all five rotated T5.29 regions included).",
+      "content_sha256": "6bb87ce0d92a4234723ae7e17824081036eec3896da3c3970cb68143aa71a5d6"
+    }
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:Tp483-1",
+  "unit_id": "SEW-2013-A:Tp483-1",
+  "manual_id": "SEW-2013-A",
+  "kind": "table",
+  "number": "p483-1",
+  "title": "Filtration spectrum data grid inside Figure 5.74 Membrane characteristics",
+  "state": "verified",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "regions": [
+    {
+      "pdf_page": 483,
+      "page_label": "5 - 179",
+      "bbox": [
+        113.0,
+        474.0,
+        491.0,
+        545.0
+      ],
+      "render_sha256": "14172f2127c455f31b8aee37c5bfd38ac8ddf62cce829bb555bf16ef48a31111"
+    }
+  ],
+  "headers": [
+    "Mol.Wt.",
+    "100",
+    "1000",
+    "100,000",
+    "1,000,000"
+  ],
+  "rows": [
+    [
+      "Pressure [psi]",
+      "1,000-400",
+      "600-100",
+      "200-70",
+      "125-15"
+    ],
+    [
+      "[bar]",
+      "68.9-27.6",
+      "41.4-6.9",
+      "13.8-4.8",
+      "8.6-1"
+    ],
+    [
+      "Microns",
+      "0.001",
+      "0.01",
+      "0.1",
+      "1.0"
+    ]
+  ],
+  "cell_spans": [],
+  "markdown": "| Mol.Wt. | 100 | 1000 | 100,000 | 1,000,000 |\n| --- | --- | --- | --- | --- |\n| Pressure [psi] | 1,000-400 | 600-100 | 200-70 | 125-15 |\n| [bar] | 68.9-27.6 | 41.4-6.9 | 13.8-4.8 | 8.6-1 |\n| Microns | 0.001 | 0.01 | 0.1 | 1.0 |",
+  "notes": [
+    "Unnumbered table; Tp<physical-page>-<sequence> is a service locator, not a printed table number.",
+    "This grid is the bottom band of the printed diagram Figure 5.74 (filtration spectrum). It is printed as a ruled table and is transcribed as a table, not as a figure description.",
+    "Transcriber layout note: the printed top row 'Mol.Wt.' carries both the row label and the four column values; it is used here as the header row. The rows below read 'Pressure / [psi] / [bar]' in one label cell (three printed lines) and 'Microns' in the last row.",
+    "Printed caption below the figure: 'Figure 5.74  Membrane characteristics'.",
+    "Ranges run high-to-low as printed (1,000-400 psi and 68.9-27.6 bar, then 600-100, 200-70, 125-15 psi and 41.4-6.9, 13.8-4.8, 8.6-1 bar). Order retained; no re-sorting.",
+    "Pressure is preset twice in different units ([psi] and [bar]) for the same column; both rows are retained.",
+    "The classes named in the diagram above the grid (Reverse Osmosis, Nanofiltration, Ultrafiltration, Microfiltration, Particle Filtration) are diagram labels, not table cells, and are not part of this table.",
+    "Transcriber note: the figure's vertical column separators run upward past the grid, so they cross the top edge of this region; the grid's own top rule is the first horizontal line inside it. Nothing from the ellipse diagram above is included as a value.",
+    "Layout: the Microns values 0.001, 0.01, 0.1 and 1.0 are printed on the vertical boundaries between Mol.Wt./Pressure columns, not centred in them; they are placed in the cells here only for searchability and do not assert column correspondence."
+  ],
+  "verification": {
+    "transcription": {
+      "pass_id": "sew-t06-first-reading-2026-11-08",
+      "method": "Direct viewing of the annotation-cleaned 144 dpi page render and 360-480 dpi crops; no OCR, no paid service",
+      "observations": "The grid was read from 480 dpi crops of the data band. Mol.Wt., pressure and micron values were checked digit by digit, including '68.9-27.6' and '13.8-4.8'."
+    },
+    "visual_recheck": {
+      "pass_id": "parent-recheck-sew-t06",
+      "method": "distinct second visual inspection of exact source-region renders (incl. rotated/zoomed crops) by parent assistant; not independent human review",
+      "observations": "Parent compared every cell, header and note against 144-dpi region renders (all five rotated T5.29 regions included). Corrections: added boundary-position note for Microns row",
+      "content_sha256": "284e0931fb489b6548c43866762aca1acddf838588956f54303ff97cb45b9fda"
+    }
+  },
+  "create_unit": true,
+  "parent_id": "SEW-2013-A:5.18.10.1"
+}

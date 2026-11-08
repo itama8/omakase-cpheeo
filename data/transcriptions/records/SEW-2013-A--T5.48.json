@@ -1,0 +1,65 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:T5.48",
+  "unit_id": "SEW-2013-A:T5.48",
+  "manual_id": "SEW-2013-A",
+  "kind": "table",
+  "number": "5-48",
+  "title": "Performance of MBR process",
+  "state": "verified",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "regions": [
+    {
+      "pdf_page": 490,
+      "page_label": "5 - 186",
+      "bbox": [
+        142.0,
+        72.0,
+        443.0,
+        198.0
+      ],
+      "render_sha256": "e3aee5bfa26f46cd064a292b8c0f80c560010e5f2b5bfd89d408fecd523bde6d"
+    }
+  ],
+  "headers": [
+    "Parameter",
+    "BOD",
+    "COD",
+    "TSS"
+  ],
+  "rows": [
+    [
+      "Influent(mg/l)",
+      "208",
+      "424",
+      "210"
+    ],
+    [
+      "Effluent(mg/l)",
+      "<4",
+      "22",
+      "<2"
+    ]
+  ],
+  "cell_spans": [],
+  "markdown": "| Parameter | BOD | COD | TSS |\n| --- | --- | --- | --- |\n| Influent(mg/l) | 208 | 424 | 210 |\n| Effluent(mg/l) | <4 | 22 | <2 |",
+  "notes": [
+    "Printed below the table: 'Source: Churchhouse, 2003'.",
+    "Printed number is '5-48' (hyphen) in the caption; kept as printed.",
+    "Printed without a space before the unit parenthesis ('Influent(mg/l)', 'Effluent(mg/l)'); retained.",
+    "The table carries no statement of which plant or period it refers to; the running text on the page names the Porlock Sewage Treatment Plant, United Kingdom."
+  ],
+  "verification": {
+    "transcription": {
+      "pass_id": "sew-t06-first-reading-2026-11-08",
+      "method": "Direct viewing of the annotation-cleaned 144 dpi page render and 360-540 dpi crops; no OCR, no paid service",
+      "observations": "Both rows and four headings read from a 420 dpi crop; '<4' and '<2' checked."
+    },
+    "visual_recheck": {
+      "pass_id": "parent-recheck-sew-t06",
+      "method": "distinct second visual inspection of exact source-region renders (incl. rotated/zoomed crops) by parent assistant; not independent human review",
+      "observations": "Parent compared every cell, header and note against 144-dpi region renders (all five rotated T5.29 regions included).",
+      "content_sha256": "d5516b66cbe42ad71260338d1ffd66bb7fe5388e849868f0db158a5c96fadb16"
+    }
+  }
+}

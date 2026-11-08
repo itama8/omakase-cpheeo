@@ -1,0 +1,63 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:T5.35",
+  "unit_id": "SEW-2013-A:T5.35",
+  "manual_id": "SEW-2013-A",
+  "kind": "table",
+  "number": "5.35",
+  "title": "Typical criteria for Step-feed multistage biological nitrogen removal process",
+  "state": "verified",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "regions": [
+    {
+      "pdf_page": 475,
+      "page_label": "5 - 171",
+      "bbox": [
+        64.0,
+        72.0,
+        535.0,
+        192.0
+      ],
+      "render_sha256": "1a6521b4f3b5171d23f10905cbddb6eb6b1325169b61166e0139c6babcfbea5b"
+    }
+  ],
+  "headers": [
+    "SRT (days)",
+    "F/M as MLVSS",
+    "Volumetric Loading (kg BOD₅/m³/d)",
+    "MLSS (mg/l)",
+    "HRT (V/Q) (hours)",
+    "Return Activated Sludge Qr/Q"
+  ],
+  "rows": [
+    [
+      "5–15",
+      "0.2–0.4",
+      "0.64–0.96",
+      "2,000–3,500",
+      "3–5",
+      "0.25–0.75"
+    ]
+  ],
+  "cell_spans": [],
+  "markdown": "| SRT (days) | F/M as MLVSS | Volumetric Loading (kg BOD₅/m³/d) | MLSS (mg/l) | HRT (V/Q) (hours) | Return Activated Sludge Qr/Q |\n| --- | --- | --- | --- | --- | --- |\n| 5–15 | 0.2–0.4 | 0.64–0.96 | 2,000–3,500 | 3–5 | 0.25–0.75 |",
+  "notes": [
+    "Source: Metcalf & Eddy, 2003",
+    "Single printed data row under six column headings.",
+    "Ranges are printed with en dashes (–); retained.",
+    "Printed header reads 'F/M as MLVSS' and 'HRT (V/Q) (hours)'."
+  ],
+  "verification": {
+    "transcription": {
+      "pass_id": "sew-t06-first-reading-2026-11-08",
+      "method": "Direct viewing of the annotation-cleaned 144 dpi page render and 300-360 dpi crops; no OCR, no paid service",
+      "observations": "Six headings and six cells read from a 360 dpi crop; decimal places (0.64–0.96, 2,000–3,500, 0.25–0.75) checked individually."
+    },
+    "visual_recheck": {
+      "pass_id": "parent-recheck-sew-t06",
+      "method": "distinct second visual inspection of exact source-region renders (incl. rotated/zoomed crops) by parent assistant; not independent human review",
+      "observations": "Parent compared every cell, header and note against 144-dpi region renders (all five rotated T5.29 regions included).",
+      "content_sha256": "cedd3cec8188d7f865cdceb96a6e3deafa04b0e1bd7c3c8ee2a3429b0793fbda"
+    }
+  }
+}

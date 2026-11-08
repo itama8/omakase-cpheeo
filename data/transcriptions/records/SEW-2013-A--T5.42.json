@@ -1,0 +1,79 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:T5.42",
+  "unit_id": "SEW-2013-A:T5.42",
+  "manual_id": "SEW-2013-A",
+  "kind": "table",
+  "number": "5.42",
+  "title": "Description of each process",
+  "state": "verified",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "regions": [
+    {
+      "pdf_page": 487,
+      "page_label": "5 - 183",
+      "bbox": [
+        57.0,
+        412.0,
+        541.0,
+        606.0
+      ],
+      "render_sha256": "cf659044220581cb58140e39963998aef35aecfbaf86601a2a320650f9fde164"
+    }
+  ],
+  "headers": [
+    "Bar Screen",
+    "Fine Screen",
+    "Equalization/ Balancing Tank",
+    "Ultra Fine Screen",
+    "Anoxic Tank",
+    "Aeration Tank",
+    "Membrane Bio Reactor",
+    "Treated Water Holding Tank"
+  ],
+  "rows": [
+    [
+      "1 Nos.",
+      "1 Nos.",
+      "1 Nos.",
+      "2 Nos.",
+      "2 Nos.",
+      "2 Nos.",
+      "4 Nos.",
+      "1 Nos."
+    ],
+    [
+      "Opening 20 mm",
+      "Opening 6 mm",
+      "2,900 m³ (HRT 6 hrs)",
+      "Opening 1 mm,",
+      "370 m³ (Total) (HRT 1.9 hrs)",
+      "830 m³ (Total) (HRT 6.5 hrs)",
+      "473 m³ (Total)",
+      "2,244 m³"
+    ]
+  ],
+  "cell_spans": [],
+  "markdown": "| Bar Screen | Fine Screen | Equalization/ Balancing Tank | Ultra Fine Screen | Anoxic Tank | Aeration Tank | Membrane Bio Reactor | Treated Water Holding Tank |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| 1 Nos. | 1 Nos. | 1 Nos. | 2 Nos. | 2 Nos. | 2 Nos. | 4 Nos. | 1 Nos. |\n| Opening 20 mm | Opening 6 mm | 2,900 m³ (HRT 6 hrs) | Opening 1 mm, | 370 m³ (Total) (HRT 1.9 hrs) | 830 m³ (Total) (HRT 6.5 hrs) | 473 m³ (Total) | 2,244 m³ |",
+  "notes": [
+    "Printed below the table: 'Source: Pamphlet issued by DJB'.",
+    "Transcriber layout note: the table has no left-hand label column. The first printed row gives numbers of units ('Nos.') and the second gives the size and retention time of each unit. Both rows are data rows under the printed unit-name header.",
+    "Printed as 'Opening 1 mm,' in the Ultra Fine Screen cell, with a trailing comma and no further text; retained.",
+    "Printed as '1 Nos.' in the Bar Screen, Fine Screen, Equalization/Balancing Tank and Treated Water Holding Tank cells (singular 'Nos.' with count 1); retained.",
+    "Unit-name headers wrap over two or three printed lines ('Equalization/ / Balancing / Tank'); the printed slash in 'Equalization/ Balancing Tank' is retained.",
+    "The second row prints tank volume and, for three tanks, a retention time in a second line inside the same cell; the line break is retained."
+  ],
+  "verification": {
+    "transcription": {
+      "pass_id": "sew-t06-first-reading-2026-11-08",
+      "method": "Direct viewing of the annotation-cleaned 144 dpi page render and 360-480 dpi crops; no OCR, no paid service",
+      "observations": "Both rows and all eight headers read from a 360 dpi crop; the m³ superscripts, '2,900', '2,244' and the HRT values checked individually."
+    },
+    "visual_recheck": {
+      "pass_id": "parent-recheck-sew-t06",
+      "method": "distinct second visual inspection of exact source-region renders (incl. rotated/zoomed crops) by parent assistant; not independent human review",
+      "observations": "Parent compared every cell, header and note against 144-dpi region renders (all five rotated T5.29 regions included).",
+      "content_sha256": "cc12d9d68bc4e30c16a45fc5d018bdfb0fe60128bcbceac3db0bc1d12a35ae72"
+    }
+  }
+}

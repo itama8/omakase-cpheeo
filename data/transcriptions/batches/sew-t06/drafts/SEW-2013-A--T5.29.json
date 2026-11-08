@@ -227,7 +227,9 @@
     "The EBB row description has no closing full stop as printed.",
     "Transcriber observation: the membrane pore-size classes printed in this table (MF 0.08 to 2.0, UF 0.005 to 0.2, NF 0.001 to 0.01, RO 0.0001 to 0.001 microns) differ from the ranges printed in the running text on physical page 483 (MF 0.1 and 1 micron, UF 0.005 and 0.05 micron, NF around 0.001 micron). Both are transcribed as printed; neither is reconciled.",
     "Printed note below the table on physical page 466: 'Note: These are not a comprehensive listing as many newer processes keep evolving at any given time. However, in respect of biological processes, the descriptions above are meant for understanding the basics of the stated processes.'",
-    "The scanned table is inserted sideways on a portrait page; each page region was rendered and rotated 90 degrees before reading. All value text is raster in the source."
+    "The scanned table is inserted sideways on a portrait page; each page region was rendered and rotated 90 degrees before reading. All value text is raster in the source.",
+    "Transcriber observation on the merged cells: the Type cell printed 'Phosphorus (P) removal' on physical page 463 has no dividing rule down to the Anaerobic-Anoxic-Oxic row, so it visually covers the Chemical precipitation, Bardenpho and Anaerobic-Anoxic-Oxic rows even though the Objective cell printed beside the last two rows reads '(N) & (P) Simultaneous removal'. The row span is recorded as printed; no grouping is inferred.",
+    "Transcriber observation: the objective cell printed on physical page 464 is empty beside the Chemical precipitation row and then carries '(N) & (P) Simultaneous removal' beside the Bardenpho and Anaerobic-Anoxic-Oxic rows, with a rule above it."
   ],
   "verification": {
     "transcription": {
