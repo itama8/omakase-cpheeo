@@ -1,0 +1,46 @@
+{
+  "recorded_at_utc": "2026-11-08T12:29:00Z",
+  "note": "Task identities for continuation; query task_status for current liveness. sew-t05's 14 draft records are already integrated; do not integrate them twice. Other drafts still need parent visual comparison.",
+  "tasks": [
+    {
+      "batch": "sew-t05",
+      "taskId": "node:delegated-task:command%3Amcp%3A08510d62-8d63-4cad-ae76-09739796d69b%3Adelegate-task%3Aomakase-vt-sew-t05",
+      "childThreadId": "thread:delegated-task:command%3Amcp%3A08510d62-8d63-4cad-ae76-09739796d69b%3Adelegate-task%3Aomakase-vt-sew-t05"
+    },
+    {
+      "batch": "sew-t07",
+      "taskId": "node:delegated-task:command%3Amcp%3Aa050c0da-bcca-4d9f-9067-27a22e4026e1%3Adelegate-task%3Aomakase-vt-sew-t07",
+      "childThreadId": "thread:delegated-task:command%3Amcp%3Aa050c0da-bcca-4d9f-9067-27a22e4026e1%3Adelegate-task%3Aomakase-vt-sew-t07"
+    },
+    {
+      "batch": "sew-t08",
+      "taskId": "node:delegated-task:command%3Amcp%3Aa050c0da-bcca-4d9f-9067-27a22e4026e1%3Adelegate-task%3Aomakase-vt-sew-t08",
+      "childThreadId": "thread:delegated-task:command%3Amcp%3Aa050c0da-bcca-4d9f-9067-27a22e4026e1%3Adelegate-task%3Aomakase-vt-sew-t08"
+    },
+    {
+      "batch": "sew-t09",
+      "taskId": "node:delegated-task:command%3Amcp%3Aa050c0da-bcca-4d9f-9067-27a22e4026e1%3Adelegate-task%3Aomakase-vt-sew-t09",
+      "childThreadId": "thread:delegated-task:command%3Amcp%3Aa050c0da-bcca-4d9f-9067-27a22e4026e1%3Adelegate-task%3Aomakase-vt-sew-t09"
+    },
+    {
+      "batch": "sew-t10",
+      "taskId": "node:delegated-task:command%3Amcp%3Aa050c0da-bcca-4d9f-9067-27a22e4026e1%3Adelegate-task%3Aomakase-vt-sew-t10",
+      "childThreadId": "thread:delegated-task:command%3Amcp%3Aa050c0da-bcca-4d9f-9067-27a22e4026e1%3Adelegate-task%3Aomakase-vt-sew-t10"
+    },
+    {
+      "batch": "sew-t11",
+      "taskId": "node:delegated-task:command%3Amcp%3Aa050c0da-bcca-4d9f-9067-27a22e4026e1%3Adelegate-task%3Aomakase-vt-sew-t11",
+      "childThreadId": "thread:delegated-task:command%3Amcp%3Aa050c0da-bcca-4d9f-9067-27a22e4026e1%3Adelegate-task%3Aomakase-vt-sew-t11"
+    },
+    {
+      "batch": "water-a-t01",
+      "taskId": "node:delegated-task:command%3Amcp%3A05efbfda-5a8a-40bb-a971-2e99724fd930%3Adelegate-task%3Aomakase-vt-water-a-t01",
+      "childThreadId": "thread:delegated-task:command%3Amcp%3A05efbfda-5a8a-40bb-a971-2e99724fd930%3Adelegate-task%3Aomakase-vt-water-a-t01"
+    },
+    {
+      "batch": "water-b-t01",
+      "taskId": "node:delegated-task:command%3Amcp%3A05efbfda-5a8a-40bb-a971-2e99724fd930%3Adelegate-task%3Aomakase-vt-water-b-t01",
+      "childThreadId": "thread:delegated-task:command%3Amcp%3A05efbfda-5a8a-40bb-a971-2e99724fd930%3Adelegate-task%3Aomakase-vt-water-b-t01"
+    }
+  ]
+}

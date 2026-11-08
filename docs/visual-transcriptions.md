@@ -54,7 +54,7 @@ Do not regenerate the page inventory as a substitute for actual review. Regenera
 
 ## Validation limits
 
-`eval/verified-transcriptions.yaml` checks retrieved values/formulas, full numerical rows, anomalies and continuations. At this checkpoint, 30/30 queries retrieve the expected content in the top five, 29/30 at rank one, MRR 0.983. The original APD set and ranking/appendix regressions must also pass. The manhole query's expected handle alone is not proof that its source contains manhole sizes.
+`eval/verified-transcriptions.yaml` checks retrieved values/formulas, full numerical rows, anomalies and continuations. At this checkpoint, 43/43 queries retrieve the expected content in the top five, 40/43 at rank one, MRR 0.965. The original APD set and ranking/appendix regressions must also pass. The manhole query's expected handle alone is not proof that its source contains manhole sizes.
 
 The checks were authored with sources open and are optimistic regression checks, not independent retrieval accuracy measurements. The checker reports measured local warm SQLite search-plus-fetch latency, excluding network, image rendering and model time. `data/transcriptions/validation.txt` records the measured run. Source digests prevent drift; automated checks cannot establish that a human/assistant read every glyph correctly.
 

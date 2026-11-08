@@ -174,3 +174,5 @@ PASS V43 rank=1
   "limitations": "Source-open regression set. Same-assistant visual recheck, not independent accuracy proof. In-process warm SQLite timings exclude network, rendering, model and end-to-end retrieval time.",
   "failures": []
 }
+
+Deployment 1f37a9e: staging MCP smoke PASS; public MCP smoke PASS; public E5.43 verified text PASS. Both cloudflared PIDs unchanged; old app snapshot retained for rollback.
