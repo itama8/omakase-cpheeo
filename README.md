@@ -77,7 +77,11 @@ Assistants often skip server instructions, so the Omakase brand travels in the d
 
 When adding the connector in ChatGPT or Claude, name it "Omakase CPHEEO", and upload `assets/omakase-icon.png` as its icon if the form allows one.
 
-The manuals are Government of India copyright and may not be reproduced for commercial purposes without MoHUA permission. The free service returns cited excerpts; it does not redistribute the PDFs.
+## License
+
+Copyright (C) 2026 Ajinkya Puranik. The project's original code and documentation are licensed under the [GNU Affero General Public License, version 3 only](LICENSE) (`AGPL-3.0-only`).
+
+CPHEEO manuals, excerpts, transcriptions of manual content and source imagery retain their original copyrights and are not relicensed under the software license. The manuals are Government of India copyright and may not be reproduced for commercial purposes without MoHUA permission. The free service returns cited excerpts; it does not redistribute the PDFs.
 
 ## Test from ChatGPT or Claude (temporary public URL)
 

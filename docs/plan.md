@@ -20,6 +20,8 @@ Excluded: superseded editions (1999 water supply, the May 2012 sewerage draft), 
 
 ## Licensing
 
+The project's original code and documentation are licensed under AGPL-3.0-only; see `LICENSE`. This software license does not relicense CPHEEO source material, including its excerpts, transcriptions or imagery.
+
 The manuals are Government of India copyright: "No portion, part or whole, of this document may be reproduced/printed for any type of commercial purposes without prior permission of the Ministry of Housing and Urban Affairs." The free service returns cited excerpts and points to the official source. Charging for access to manual content needs MoHUA permission first.
 
 ## Pipeline

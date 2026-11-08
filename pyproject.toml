@@ -3,6 +3,8 @@ name = "omakase-cpheeo"
 version = "0.1.0"
 description = "Search and cite CPHEEO manuals over MCP and REST"
 readme = "README.md"
+license = "AGPL-3.0-only"
+license-files = ["LICENSE"]
 authors = [
     { name = "Ajinkya Puranik", email = "a2ajinkya@gmail.com" }
 ]
