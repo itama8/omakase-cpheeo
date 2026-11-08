@@ -1,0 +1,132 @@
+{
+  "schema_version": 1,
+  "id": "WS-2024-B:T1.1",
+  "unit_id": "WS-2024-B:T1.1",
+  "manual_id": "WS-2024-B",
+  "kind": "table",
+  "number": "1.1",
+  "title": "Summary of Good Practices Drawn from City Case Studies",
+  "source_sha256": "1cfd336b3e2928b95cec3899d3e1d15807b5598d78730d6fe3eef381021844e7",
+  "state": "verified",
+  "regions": [
+    {
+      "pdf_page": 72,
+      "page_label": "5",
+      "bbox": [
+        0.0,
+        0.0,
+        595.5599975585938,
+        842.0399780273438
+      ],
+      "render_sha256": "76690a79882e16a92ea0658fb467ed8390fa4408be4c69e8b67615ca15c28be3"
+    }
+  ],
+  "headers": [
+    "Good Practice",
+    "City or Utility"
+  ],
+  "rows": [
+    [
+      "Fundamentals",
+      ""
+    ],
+    [
+      "Having dynamic leadership at the top",
+      "Singapore, Phnom Penh, Bangkok, WATCO, Malkapur"
+    ],
+    [
+      "Use of integrated water management policy",
+      "Shenzhen, Singapore"
+    ],
+    [
+      "Corporatisation of water utilities",
+      "Bangkok, Jamshedpur, WATCO"
+    ],
+    [
+      "Regulating private sector participation effectively",
+      "Manila, Shenzhen"
+    ],
+    [
+      "Service Delivery",
+      ""
+    ],
+    [
+      "Increasing coverage and improving water availability",
+      "Bangkok, Colombo, MWCI, Phnom Penh, Singapore, Malkapur"
+    ],
+    [
+      "Reducing NRW",
+      "Jamshedpur, MWCI, Phnom Penh, Singapore, Malkapur"
+    ],
+    [
+      "Securing clean, safe, and reliable water supplies",
+      "Bangkok, MWCI, Phnom Penh, Singapore, Malkapur"
+    ],
+    [
+      "Improving service to the poor",
+      "Bangkok, Jamshedpur, MWCI, Phnom Penh, Singapore"
+    ],
+    [
+      "Adopting the practise of demand-side management",
+      "Singapore"
+    ],
+    [
+      "Monitoring and reporting effectively",
+      "Bangkok, Jamshedpur, Singapore"
+    ],
+    [
+      "Financial and Human Resources Management",
+      ""
+    ],
+    [
+      "Improving staff productivity",
+      "Bangkok, Jamshedpur, MWCI, Phnom Penh, Singapore"
+    ],
+    [
+      "Pricing water for efficiency and sustainability",
+      "Jamshedpur, MWCI, Phnom Penh, Singapore, Malkapur"
+    ],
+    [
+      "Improving revenue collection",
+      "Bangkok, Colombo, Jamshedpur, MWCI, Phnom Penh, Shenzhen, Singapore, Malkapur"
+    ]
+  ],
+  "cell_spans": [
+    {
+      "row": 0,
+      "column": 0,
+      "row_span": 1,
+      "column_span": 2
+    },
+    {
+      "row": 5,
+      "column": 0,
+      "row_span": 1,
+      "column_span": 2
+    },
+    {
+      "row": 12,
+      "column": 0,
+      "row_span": 1,
+      "column_span": 2
+    }
+  ],
+  "notes": [
+    "Source: ADB: Good Practices in Urban Water Management: Decoding Good Practices for Successful Future (2012)",
+    "Group-heading rows span both printed columns; empty second cells are merge placeholders, not printed blank data cells. Row indices in cell_spans are zero-based and exclude the header. Printed WATCO, MWCI and practise are retained."
+  ],
+  "verification": {
+    "transcription": {
+      "pass_id": "water-b-68-79-first-reading-2026-11-08",
+      "method": "Direct visual reading using tools.view_image of annotation-cleaned full source pages at 144 dpi; no OCR.",
+      "observations": "Read the two column headings, three full-width category headings and each of the 13 practice/utility pairs directly from page-72.png. Read source line beneath table; preserved each city list in order, including Malkapur and MWCI."
+    },
+    "visual_recheck": {
+      "pass_id": "parent-water-b-t01-2026-11-08",
+      "method": "Distinct parent visual comparison of pages 72 and 74-76 against candidate cells, after earlier draft and sibling-batch comparison; no OCR, not independent human review.",
+      "observations": "Compared every cell, group heading and source note. Confirmed the two cross-page logical rows and repeated merged objective labels. ",
+      "content_sha256": "34022eb6aee3a573284d3f2760c010fbbdd789395beda07e1daeb9ca63fa73f8"
+    }
+  },
+  "markdown": "| Good Practice | City or Utility |\n| --- | --- |\n| Fundamentals |  |\n| Having dynamic leadership at the top | Singapore, Phnom Penh, Bangkok, WATCO, Malkapur |\n| Use of integrated water management policy | Shenzhen, Singapore |\n| Corporatisation of water utilities | Bangkok, Jamshedpur, WATCO |\n| Regulating private sector participation effectively | Manila, Shenzhen |\n| Service Delivery |  |\n| Increasing coverage and improving water availability | Bangkok, Colombo, MWCI, Phnom Penh, Singapore, Malkapur |\n| Reducing NRW | Jamshedpur, MWCI, Phnom Penh, Singapore, Malkapur |\n| Securing clean, safe, and reliable water supplies | Bangkok, MWCI, Phnom Penh, Singapore, Malkapur |\n| Improving service to the poor | Bangkok, Jamshedpur, MWCI, Phnom Penh, Singapore |\n| Adopting the practise of demand-side management | Singapore |\n| Monitoring and reporting effectively | Bangkok, Jamshedpur, Singapore |\n| Financial and Human Resources Management |  |\n| Improving staff productivity | Bangkok, Jamshedpur, MWCI, Phnom Penh, Singapore |\n| Pricing water for efficiency and sustainability | Jamshedpur, MWCI, Phnom Penh, Singapore, Malkapur |\n| Improving revenue collection | Bangkok, Colombo, Jamshedpur, MWCI, Phnom Penh, Shenzhen, Singapore, Malkapur |"
+}

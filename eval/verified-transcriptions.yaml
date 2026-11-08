@@ -174,3 +174,12 @@ questions:
     expect: [SEW-2013-A:T5.26]
     row: ['4', '11 KV 3 phase', 'XLPE- Cross Linked, Polyethylene insulated, PVC sheathed Cable', 'IS: 7098']
     contains: ['there is no row 3']
+  - id: V44
+    question: Table 1.1 city good practices urban water management
+    expect: [WS-2024-B:T1.1]
+    row: ['Improving revenue collection', 'Bangkok, Colombo, Jamshedpur, MWCI, Phnom Penh, Shenzhen, Singapore, Malkapur']
+  - id: V45
+    question: Table 1.2 O&M best practices critical success factors
+    expect: [WS-2024-B:T1.2]
+    contains: ['Proper digital and GIS Asset mapping', 'Conditional assessment', 'Section 12.7.3', 'strategic- infrastructure-2014']
+    region_pages: [74, 75, 76]

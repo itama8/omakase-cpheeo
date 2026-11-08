@@ -1,0 +1,34 @@
+{
+  "records": [
+    {
+      "id": "WS-2024-B:T1.1",
+      "candidate": "data/transcriptions/batches/water-b-68-79/records/WS-2024-B--T1.1.json",
+      "original_candidate_sha256": "1579b42ebc9ed907bc29c6c6329c33e123bb875657c0b8475c34af3533684a68",
+      "sealed_content_sha256": "34022eb6aee3a573284d3f2760c010fbbdd789395beda07e1daeb9ca63fa73f8",
+      "corrections": []
+    },
+    {
+      "id": "WS-2024-B:T1.2",
+      "candidate": "data/transcriptions/batches/water-b-68-79/records/WS-2024-B--T1.2.json",
+      "original_candidate_sha256": "be2f389f745df4556b80ff35d2c394017a1624936c065ef63b419dae806872c2",
+      "sealed_content_sha256": "2fca515c3ddbb84286a8b135ce8b93ccb41185dd31fad3391ba5751175aedad3",
+      "corrections": [
+        "Restored printed internal space in source URL; no cell corrections."
+      ]
+    }
+  ],
+  "new_reviewed_pages": [
+    70,
+    72,
+    73,
+    74,
+    75,
+    76,
+    83,
+    84,
+    91,
+    94
+  ],
+  "scope": "Tables and equations only; prose sidebars and non-mathematical diagrams inspected and excluded.",
+  "limitations": "Assistant visual comparison, no perfect-accuracy claim; parent did not infer verification from pending candidate existence."
+}

@@ -176,3 +176,71 @@ PASS V43 rank=1
 }
 
 Deployment 1f37a9e: staging MCP smoke PASS; public MCP smoke PASS; public E5.43 verified text PASS. Both cloudflared PIDs unchanged; old app snapshot retained for rollback.
+
+2026-11-08 water-b-t01 parent integration checkpoint
+276 local verified records; 120 tables, 156 equations. 311 completed review pages; 2,606 remain including partial.
+18 unittest tests passed; 305 pinned source regions stable.
+APD 27/27; search ranking 12/12 top one; appendices 13/13.
+Preservation PASS: 4,956 original units, 2,321 source images, 7,640 original passages unchanged.
+An initial V45 assertion assumed a prose page label; source-region metadata already contained pages 74,75,76. The check now compares those structured pages exactly.
+PASS V01 rank=1
+PASS V02 rank=1
+PASS V03 rank=1
+PASS V04 rank=1
+PASS V05 rank=1
+PASS V06 rank=1
+PASS V07 rank=1
+PASS V08 rank=1
+PASS V09 rank=1
+PASS V10 rank=1
+PASS V11 rank=1
+PASS V12 rank=1
+PASS V13 rank=1
+PASS V14 rank=2
+PASS V15 rank=1
+PASS V16 rank=1
+PASS V17 rank=1
+PASS V18 rank=1
+PASS V19 rank=1
+PASS V20 rank=1
+PASS V21 rank=1
+PASS V22 rank=1
+PASS V23 rank=1
+PASS V24 rank=1
+PASS V25 rank=1
+PASS V26 rank=1
+PASS V27 rank=1
+PASS V28 rank=1
+PASS V29 rank=1
+PASS V30 rank=1
+PASS V31 rank=1
+PASS V32 rank=1
+PASS V33 rank=1
+PASS V34 rank=2
+PASS V35 rank=1
+PASS V36 rank=1
+PASS V37 rank=1
+PASS V38 rank=2
+PASS V39 rank=1
+PASS V40 rank=1
+PASS V41 rank=1
+PASS V42 rank=1
+PASS V43 rank=1
+PASS V44 rank=3
+PASS V45 rank=3
+{
+  "questions": 45,
+  "content_checks_passed": 45,
+  "top1": 40,
+  "top5": 45,
+  "mrr": 0.937037037037037,
+  "local_warm_search_fetch_ms": {
+    "samples": 225,
+    "median": 44.827392004663125,
+    "p95": 57.722762983758
+  },
+  "limitations": "Source-open regression set. Same-assistant visual recheck, not independent accuracy proof. In-process warm SQLite timings exclude network, rendering, model and end-to-end retrieval time.",
+  "failures": []
+}
+
+Deployment unchanged: public server still uses tested 1f37a9e snapshot (274 verified records); these two additional tables are local pending the next deployment batch.

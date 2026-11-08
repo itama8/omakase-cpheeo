@@ -1,0 +1,169 @@
+{
+  "schema_version": 1,
+  "id": "WS-2024-B:T1.2",
+  "unit_id": "WS-2024-B:T1.2",
+  "manual_id": "WS-2024-B",
+  "kind": "table",
+  "number": "1.2",
+  "title": "Checklist of O&M Best Practices/Critical Success Factors",
+  "source_sha256": "1cfd336b3e2928b95cec3899d3e1d15807b5598d78730d6fe3eef381021844e7",
+  "state": "verified",
+  "regions": [
+    {
+      "pdf_page": 74,
+      "page_label": "7",
+      "bbox": [
+        0.0,
+        0.0,
+        842.0399780273438,
+        595.5599975585938
+      ],
+      "render_sha256": "81ce9ad378dd1c5f08ad65f19062964a03a9fcfe4e71565477eb9299bad504d2"
+    },
+    {
+      "pdf_page": 75,
+      "page_label": "8",
+      "bbox": [
+        0.0,
+        0.0,
+        842.0399780273438,
+        595.5599975585938
+      ],
+      "render_sha256": "f7659aa9c3d90a1c650b3c65956e6cf517a5cc23342e00804d7cad320aebd448"
+    },
+    {
+      "pdf_page": 76,
+      "page_label": "9",
+      "bbox": [
+        0.0,
+        0.0,
+        842.0399780273438,
+        595.5599975585938
+      ],
+      "render_sha256": "d1a09efdca6f10770d677480ab2b1c1ee62034347fed4e1d3fd69c105dd241e0"
+    }
+  ],
+  "headers": [
+    "Objective (editorial; no printed header)",
+    "Approach (editorial; no printed header)",
+    "Practice column 1 (editorial; no printed header)",
+    "Practice column 2 (editorial; no printed header)",
+    "Practice column 3 (editorial; no printed header)"
+  ],
+  "rows": [
+    [
+      "Increase Utility of Facilities",
+      "Maximize asset utilization",
+      "Enhance capacity of existing system. e.g. Reducing NRW",
+      "Apply demand management. e.g. Introduction of telescopic water pricing",
+      "Optimize availability/ reduce downtime e.g. Scheduling short-duration maintenance tasks for off-peak hours."
+    ],
+    [
+      "Increase Utility of Facilities",
+      "Enhance quality for users",
+      "Adopt a customer-centric operating model. e.g. Providing water as per SLBs.",
+      "Enhance the end-to-end user experience e.g. Ensuring grievance redressal in minimum time.",
+      "Use smart technologies to refine performance e.g. Use smart meter which will invoice as per consumption and reduce the cost of meter-reading."
+    ],
+    [
+      "Decrease total cost",
+      "Reduce O&M costs",
+      "Implement lean and automated processes e.g. Use of CMMS",
+      "Optimize procurement costs and outsourcing e.g. In areas where the requisite technology is discouragingly expensive or where specialist skills would be needed, operators can opt to outsource maintenance works or information technology (IT) services",
+      "Right size management and support functions e.g. Adjust their overheads and organizational structures by delayering, introducing shared services and optimizing the level of (de-centralization)"
+    ],
+    [
+      "Decrease total cost",
+      "Mitigate Externalities",
+      "Arrange comprehensive sustainability e.g. Water treatment plants can change from being net energy consumers to net energy producers by installing Solar Cells on roof top.",
+      "Embed sustainability e.g., engaging the broader workforce on Environment, health and safety aspects and not just creating a sustainability department",
+      "Co-operative with relevant stakeholders. Operators should also take a multi-stakeholder engagement approach, actively communicating with communities in outreach campaigns and collaborating with fellow operators and users to generate a greater positive impact across the infrastructure system."
+    ],
+    [
+      "Increase lifetime value",
+      "Extend asset life",
+      "Invest in preventive and predictive maintenance",
+      "Control excessive asset consumption and stress e.g., regulating the use of pumps only in operating range",
+      "Enhance disaster resilience. Effort should be made to incorporate more resilience into existing assets. Efforts should focus not only on structural measures, such as building protective barriers and retrofitting existing facilities, but also on cost-effective, non-structural measures, including the creation of natural buffer zones and the adaptation of more resilient design."
+    ],
+    [
+      "Increase lifetime value",
+      "Reinvest with a life cycle view",
+      "Prioritise project options with whole life cycle Cost Benefit Analysis. Before committing to major capital expenditure, it should first identify all possible project options and investigate more cost-effective solutions, such as optimization, loss reduction, demand-side measures, system wide capacity balancing.",
+      "Select contracting mode for best value for money. e.g., most efficient delivery mode – public sector, PPP or private sector – should be chosen on the basis of a value-for-money assessment, taking into account the potential quality of service and level of risk to the government budget",
+      "Prepare for efficient project delivery"
+    ],
+    [
+      "Enable O&M best practice",
+      "Ensure funding",
+      "Dedicate user taxes via maintenance funds",
+      "Apply inclusive user charges",
+      "Capture ancillary business opportunities. e.g. Realizing revenue from advertisement of ESRs, parking, etc."
+    ],
+    [
+      "Enable O&M best practice",
+      "Build capabilities",
+      "Introduce asset management planning. e.g. conduct regular assessments of the existing asset base, and create an infrastructure balance sheet to show how the stock of assets has evolved and to forecast the required maintenance funding. Proper digital and GIS Asset mapping has to be carried out as detailed in Advisory on GIS mapping of water supply and sewerage project. Conditional assessment and Retrofitting are also important aspects of Asset management which can be referred from Section 2.7.2 & Section 2.10.2 of Chapter 2 and Section 12.7.3 of Chapter 12 in Part A of this manual.",
+      "Apply data, benchmarks, and tools. e.g., Infrastructure asset management processes and frameworks (such as ISO 55000) shall be introduced",
+      "Conduct training and develop talent. Increase formal O&M education and training in the various disciplines by academia, international financial institutions (IFIs), governments and the private sector, and to enhance other forms of knowledge exchange. Actually, the O&M phase itself is an excellent learning environment, as its stability and long-term orientation enable uninterrupted learning curves over a project’s life cycle"
+    ],
+    [
+      "Enable O&M best practice",
+      "Reform governance",
+      "Corporatize and professionalize public agencies. It often captures the advantages of a privately run company, including enhanced productivity, streamlined processes, commercial orientation and financial sustainability, while remaining accountable to the public and serving the public interest.",
+      "Foster cooperation between agencies. It involves cultivating a shared vision, mutual respect, and in-depth understanding of each other’s roles.",
+      "Consider private sector participation"
+    ]
+  ],
+  "cell_spans": [
+    {
+      "row": 0,
+      "column": 0,
+      "row_span": 2,
+      "column_span": 1,
+      "representation": "text repeated in expanded rows"
+    },
+    {
+      "row": 2,
+      "column": 0,
+      "row_span": 2,
+      "column_span": 1,
+      "representation": "text repeated in expanded rows"
+    },
+    {
+      "row": 4,
+      "column": 0,
+      "row_span": 2,
+      "column_span": 1,
+      "representation": "text repeated in expanded rows"
+    },
+    {
+      "row": 6,
+      "column": 0,
+      "row_span": 3,
+      "column_span": 1,
+      "representation": "text repeated in expanded rows"
+    }
+  ],
+  "notes": [
+    "The printed table has five columns and no separate header row; headers above are editorial column descriptors. Bold lead-ins and examples are serialized within each cell in reading order. First-column merged groups are expanded to repeat their text on each logical row. Row indices in cell_spans are zero-based and exclude the editorial header.",
+    "The Extend asset life row crosses physical pages 74–75: the last two practice cells continue at the top of page 75. The Build capabilities row crosses physical pages 75–76: its first practice cell continues with Proper digital and GIS Asset mapping; the other practice cells continue as empty layout area on page 76. No new blank row is inferred.",
+    "Source: Report of World Economic Forum on “Strategic Infrastructure – Steps to Operate and Maintain Infrastructure Efficiently and Effectively”, 2014 (https://reports.weforum.org/strategic- infrastructure-2014/executive-summary/)",
+    "Printed Conditional assessment, Co-operative, user taxes, and (de-centralization) are retained; line-break hyphenations within cost-effective are joined.",
+    "Printed URL contains a space after strategic- before infrastructure-2014; retained as printed, not repaired into a working link."
+  ],
+  "verification": {
+    "transcription": {
+      "pass_id": "water-b-68-79-first-reading-2026-11-08",
+      "method": "Direct visual reading using tools.view_image of annotation-cleaned full source pages at 144 dpi; no OCR.",
+      "observations": "Read every cell of the five-column table over page-74.png, page-75.png and page-76.png. Traced colored merged objective groups and nine logical rows. Joined the split Extend asset life cells across pages 74/75 and the Build capabilities asset-management cell across pages 75/76; read the source citation below the final row. No independent second comparison or sealing performed."
+    },
+    "visual_recheck": {
+      "pass_id": "parent-water-b-t01-2026-11-08",
+      "method": "Distinct parent visual comparison of pages 72 and 74-76 against candidate cells, after earlier draft and sibling-batch comparison; no OCR, not independent human review.",
+      "observations": "Compared every cell, group heading and source note. Confirmed the two cross-page logical rows and repeated merged objective labels. Restored printed internal space in source URL; no cell corrections.",
+      "content_sha256": "2fca515c3ddbb84286a8b135ce8b93ccb41185dd31fad3391ba5751175aedad3"
+    }
+  },
+  "markdown": "| Objective (editorial; no printed header) | Approach (editorial; no printed header) | Practice column 1 (editorial; no printed header) | Practice column 2 (editorial; no printed header) | Practice column 3 (editorial; no printed header) |\n| --- | --- | --- | --- | --- |\n| Increase Utility of Facilities | Maximize asset utilization | Enhance capacity of existing system. e.g. Reducing NRW | Apply demand management. e.g. Introduction of telescopic water pricing | Optimize availability/ reduce downtime e.g. Scheduling short-duration maintenance tasks for off-peak hours. |\n| Increase Utility of Facilities | Enhance quality for users | Adopt a customer-centric operating model. e.g. Providing water as per SLBs. | Enhance the end-to-end user experience e.g. Ensuring grievance redressal in minimum time. | Use smart technologies to refine performance e.g. Use smart meter which will invoice as per consumption and reduce the cost of meter-reading. |\n| Decrease total cost | Reduce O&M costs | Implement lean and automated processes e.g. Use of CMMS | Optimize procurement costs and outsourcing e.g. In areas where the requisite technology is discouragingly expensive or where specialist skills would be needed, operators can opt to outsource maintenance works or information technology (IT) services | Right size management and support functions e.g. Adjust their overheads and organizational structures by delayering, introducing shared services and optimizing the level of (de-centralization) |\n| Decrease total cost | Mitigate Externalities | Arrange comprehensive sustainability e.g. Water treatment plants can change from being net energy consumers to net energy producers by installing Solar Cells on roof top. | Embed sustainability e.g., engaging the broader workforce on Environment, health and safety aspects and not just creating a sustainability department | Co-operative with relevant stakeholders. Operators should also take a multi-stakeholder engagement approach, actively communicating with communities in outreach campaigns and collaborating with fellow operators and users to generate a greater positive impact across the infrastructure system. |\n| Increase lifetime value | Extend asset life | Invest in preventive and predictive maintenance | Control excessive asset consumption and stress e.g., regulating the use of pumps only in operating range | Enhance disaster resilience. Effort should be made to incorporate more resilience into existing assets. Efforts should focus not only on structural measures, such as building protective barriers and retrofitting existing facilities, but also on cost-effective, non-structural measures, including the creation of natural buffer zones and the adaptation of more resilient design. |\n| Increase lifetime value | Reinvest with a life cycle view | Prioritise project options with whole life cycle Cost Benefit Analysis. Before committing to major capital expenditure, it should first identify all possible project options and investigate more cost-effective solutions, such as optimization, loss reduction, demand-side measures, system wide capacity balancing. | Select contracting mode for best value for money. e.g., most efficient delivery mode – public sector, PPP or private sector – should be chosen on the basis of a value-for-money assessment, taking into account the potential quality of service and level of risk to the government budget | Prepare for efficient project delivery |\n| Enable O&M best practice | Ensure funding | Dedicate user taxes via maintenance funds | Apply inclusive user charges | Capture ancillary business opportunities. e.g. Realizing revenue from advertisement of ESRs, parking, etc. |\n| Enable O&M best practice | Build capabilities | Introduce asset management planning. e.g. conduct regular assessments of the existing asset base, and create an infrastructure balance sheet to show how the stock of assets has evolved and to forecast the required maintenance funding. Proper digital and GIS Asset mapping has to be carried out as detailed in Advisory on GIS mapping of water supply and sewerage project. Conditional assessment and Retrofitting are also important aspects of Asset management which can be referred from Section 2.7.2 & Section 2.10.2 of Chapter 2 and Section 12.7.3 of Chapter 12 in Part A of this manual. | Apply data, benchmarks, and tools. e.g., Infrastructure asset management processes and frameworks (such as ISO 55000) shall be introduced | Conduct training and develop talent. Increase formal O&M education and training in the various disciplines by academia, international financial institutions (IFIs), governments and the private sector, and to enhance other forms of knowledge exchange. Actually, the O&M phase itself is an excellent learning environment, as its stability and long-term orientation enable uninterrupted learning curves over a project’s life cycle |\n| Enable O&M best practice | Reform governance | Corporatize and professionalize public agencies. It often captures the advantages of a privately run company, including enhanced productivity, streamlined processes, commercial orientation and financial sustainability, while remaining accountable to the public and serving the public interest. | Foster cooperation between agencies. It involves cultivating a shared vision, mutual respect, and in-depth understanding of each other’s roles. | Consider private sector participation |"
+}

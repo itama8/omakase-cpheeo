@@ -32,6 +32,9 @@ for q in questions:
         for text in q.get('contains',[]):
             if text not in doc['text']:errors.append(f'missing content {text!r}')
         if 'row' in q and not any(q['row'] in t.get('rows',[]) for t in records):errors.append('wrong numerical row')
+        if 'region_pages' in q:
+            pages={region['pdf_page'] for t in records for region in t.get('source_image_refs',[])}
+            if pages != set(q['region_pages']):errors.append(f'wrong source-region pages: {sorted(pages)}')
         if 'via Omakase CPHEEO' not in doc['text']:errors.append('missing attribution')
     for _ in range(5):
         start=time.perf_counter();lib.search(q['question'],limit=5);lib.fetch(q['expect'][0]);latencies.append((time.perf_counter()-start)*1000)

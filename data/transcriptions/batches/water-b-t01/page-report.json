@@ -1,0 +1,223 @@
+{
+  "schema_version": 1,
+  "batch": "water-b-t01",
+  "manual_id": "WS-2024-B",
+  "source_sha256": "1cfd336b3e2928b95cec3899d3e1d15807b5598d78730d6fe3eef381021844e7",
+  "source_path": "/home/a2ajinkya/Downloads/CPHEEO/Water Supply_2023/Part-B-Manual-Operation-and-Maintenance(5).pdf",
+  "scope": "First-pass visual transcription drafts only; state pending; no verification, sealing, ledger, DB or deployment writes.",
+  "pages": [
+    {
+      "pdf_page": 70,
+      "page_label": "3",
+      "image_viewed": "tmp/pdfs/water-b-t01/page-70.png",
+      "targets": [],
+      "no_targets_reason": "Full page is body prose only: end of section 1.1.1-adjacent text, section 1.1.2 Objective of Operation and Maintenance, and section 1.2 Operation and Maintenance Scenario. No table, caption, numbered or unnumbered equation, or figure on this page.",
+      "continuations": [],
+      "unclear": [],
+      "notes": "24x7 appears twice as continuous-service notation, not a multiplication formula. Printed 'breakdown ofequipment' (missing word space) occurs in the last paragraph of the maintenance definition; preserved as printed and not a transcription target.",
+      "image_sha256": "71a3cfb2daa169e0946afe4b4300aa5fd9ec0bfb17f4ad29f1305208c17e6737",
+      "image_viewed_this_turn": true
+    },
+    {
+      "pdf_page": 72,
+      "page_label": "5",
+      "image_viewed": "tmp/pdfs/water-b-t01/page-72.png",
+      "targets": [
+        "WS-2024-B:T1.1"
+      ],
+      "no_targets_reason": null,
+      "continuations": [],
+      "unclear": [],
+      "notes": "Section 1.3 and complete Table 1.1 'Summary of Good Practices Drawn from City Case Studies' (2 columns, 3 merged category rows, 13 practice/utility pairs, ADB 2012 source line) observed on the image and matching the already-existing pending draft at data/transcriptions/batches/water-b-68-79/records/WS-2024-B--T1.1.json, which also has a recorded distinct recheck. Duplicate id skipped per brief; no draft written in this batch. No equation, unnumbered expression or figure on this page.",
+      "duplicate_reference": {
+        "id": "WS-2024-B:T1.1",
+        "existing_candidate_path": "data/transcriptions/batches/water-b-68-79/records/WS-2024-B--T1.1.json",
+        "existing_state": "pending",
+        "reason_skipped": "Same table unit already drafted and rechecked in sibling batch; brief says skip duplicate IDs."
+      },
+      "image_sha256": "602b1c4bdeb90928f51e5abbf2a242cd1c94e1e7af73ac9a7deb9cd08033e5a5",
+      "image_viewed_this_turn": true
+    },
+    {
+      "pdf_page": 73,
+      "page_label": "6",
+      "image_viewed": "tmp/pdfs/water-b-t01/page-73.png",
+      "targets": [],
+      "no_targets_reason": "Sections 1.4 Organisation of Maintenance, 1.4.1 Key Criteria of O&M Contract and 1.4.2 Best Practices/Critical Success Factors, all body prose; the lower two-thirds of the page is blank. No table, equation or figure here; Table 1.2 is only referenced and starts on page 74.",
+      "continuations": [],
+      "unclear": [],
+      "notes": "Prose mentions KPIs in words only; no printed formula, symbol list or numeric expression.",
+      "image_sha256": "8b1c0863df46407bc710947632ac989b0d7564c048266d3fdebee3b09d024d57",
+      "image_viewed_this_turn": true
+    },
+    {
+      "pdf_page": 74,
+      "page_label": "7",
+      "image_viewed": "tmp/pdfs/water-b-t01/page-74.png",
+      "targets": [
+        "WS-2024-B:T1.2"
+      ],
+      "no_targets_reason": null,
+      "continuations": [],
+      "unclear": [],
+      "notes": "Landscape page. Table 1.2 'Checklist of O&M Best Practices/Critical Success Factors' begins here: caption above a 5-column grid with no printed header row, so the first printed row is objective groups Increase Utility of Facilities / Decrease total cost / Increase lifetime value in column 1 with sub-objectives in column 2. Matches the already-existing pending multi-page draft at data/transcriptions/batches/water-b-68-79/records/WS-2024-B--T1.2.json; duplicate id skipped per brief, no draft written here. No equation or figure on this page.",
+      "duplicate_reference": {
+        "id": "WS-2024-B:T1.2",
+        "existing_candidate_path": "data/transcriptions/batches/water-b-68-79/records/WS-2024-B--T1.2.json",
+        "existing_state": "pending",
+        "reason_skipped": "Same multi-page table already drafted (pages 74-76) and rechecked in sibling batch; brief says skip duplicate IDs."
+      },
+      "image_sha256": "db7b36fca5a50e71279a3f05a3804f305f969dc40cd3ccff5aed67aa49c03125",
+      "image_viewed_this_turn": true
+    },
+    {
+      "pdf_page": 75,
+      "page_label": "8",
+      "image_viewed": "tmp/pdfs/water-b-t01/page-75.png",
+      "targets": [
+        "WS-2024-B:T1.2"
+      ],
+      "no_targets_reason": null,
+      "continuations": [
+        "Table 1.2 continued from page 74; ends mid-row and continues on page 76 (last row Build capabilities / Conduct training and develop talent)."
+      ],
+      "unclear": [],
+      "notes": "Landscape continuation: top row finishes Extend asset life (Control excessive asset consumption / Enhance disaster resilience), then Reinvest with a life cycle view row and the Enable O&M best practice group with Ensure funding and Build capabilities. Same unit as the existing pending draft WS-2024-B--T1.2.json in sibling batch; duplicate id skipped, no draft written here. Printed abbreviations PPP, ESRs, IFIs, ISO 55000 appear as printed. No equation or figure.",
+      "image_sha256": "f8541286f33e1f5c863fde6614627f66a197a4dc04ed33b54d4e919cab1b424c",
+      "image_viewed_this_turn": true
+    },
+    {
+      "pdf_page": 76,
+      "page_label": "9",
+      "image_viewed": "tmp/pdfs/water-b-t01/page-76.png",
+      "targets": [
+        "WS-2024-B:T1.2"
+      ],
+      "no_targets_reason": null,
+      "continuations": [
+        "Table 1.2 continued from page 75 and ends on this page; source citation printed beneath the table."
+      ],
+      "unclear": [],
+      "notes": "Landscape. Top-left cell continues Build capabilities (Proper digital and GIS Asset mapping, Conditional assessment and Retrofitting with section cross-references), then Reform governance row (Corporatize and professionalize public agencies, Foster cooperation between agencies, Consider private sector participation). Source line cites World Economic Forum 2014 with a URL printed with a space after 'strategic-' ('strategic- infrastructure-2014'), preserved as printed. Same unit as the existing pending draft WS-2024-B--T1.2.json in sibling batch; duplicate id skipped, no draft written here. No equation or figure.",
+      "image_sha256": "380de4b58e3719df36e875667205170c4cce068ac9e870f63751f7d9ce56a0c6",
+      "image_viewed_this_turn": true
+    },
+    {
+      "pdf_page": 83,
+      "page_label": "16",
+      "image_viewed": "tmp/pdfs/water-b-t01/page-83.png",
+      "targets": [],
+      "no_targets_reason": "Sections 2.3.8 Lack of Specially Trained Personnel and 2.4 Development of Strategy / 2.4.1 Focus Areas, plus Figure 2.1 Water Utility Focus Areas. The figure is a labelled 'Water Utility Focus Areas' diagram (nine overlapping circles with side bullet boxes); it is a figure unit, not a table or an equation, and contains no mathematical expression, so it is outside this batch's table/equation target kinds.",
+      "continuations": [],
+      "unclear": [],
+      "notes": "Figure 2.1 labels read as printed: central 'Water Utility Focus Areas'; circles Source, Treatment, Transmission & Distribution, Human Resources, SCADA, Digital Twin Automation & AI, Asset Management, Financial Sustainability; top box 'Sustainable & Reliable Source'; side boxes give bullets such as 'DMA based Reliable Network for 24x7 Supply', 'NRW Reduction', 'Computerised Maintenance Management System Implemented (CMMS)'. Printed wording 'as per as per Figure 2.1' repeats the phrase and is preserved as an observation only; not corrected and not a target.",
+      "image_sha256": "0f0739107957aa9aeda8b4259f3655401eeed6f9ce5b48917a8fd9a984d9400b",
+      "image_viewed_this_turn": true
+    },
+    {
+      "pdf_page": 84,
+      "page_label": "17",
+      "image_viewed": "tmp/pdfs/water-b-t01/page-84.png",
+      "targets": [],
+      "no_targets_reason": "Sections 2.4.2 Elements of Effective O&M and 2.4.3 Strategy for Efficient O&M with lettered list (a)-(h). The page carries Figure 2.2 Elements of Effective O&M, a three-circle venn diagram (Management, Effective O&M Strategy, Capacity Building, Technical) with no mathematical content; figure units are outside this batch's table/equation scope.",
+      "continuations": [],
+      "unclear": [],
+      "notes": "Printed 'tapo all consumers' in item (h) runs the words 'tap to' together without a space; preserved as an observation, not corrected, and not a target. No table, numbered or unnumbered equation on this page.",
+      "image_sha256": "575b491d5a48ec87cd316030206f742a3b116e1f69677e293fe7922babb04151",
+      "image_viewed_this_turn": true
+    },
+    {
+      "pdf_page": 91,
+      "page_label": "24",
+      "image_viewed": "tmp/pdfs/water-b-t01/page-91.png",
+      "targets": [],
+      "no_targets_reason": "Top of page ends a bordered case-study box carried over from page 90 (closing sentence plus 'Source: Puri, Odisha'). Then sections 2.6.4 Automation (lettered items a-e), 2.6.5 Improvements in Water Quality Control and 2.6.6 Water Audit, followed by a second bordered inset case study 'Implementation of 24x7 Water Supply Project through PPP in Nagpur, Maharashtra'. Both boxes are prose sidebars with no rows, columns or captions and are not tables; no equation or unnumbered mathematical expression appears.",
+      "continuations": [
+        "Bordered case-study box with the closing sentence and source line (Puri, Odisha) continues from page 90 and ends near the top of this page."
+      ],
+      "unclear": [],
+      "notes": "Quantities 500 MLD, Rs. 95 Crore, 50 Crore, 600 MLD and 490 MLD are prose figures inside the Nagpur box, not a printed formula or table. Printed spelling mixes 'metre' (underground chamber) and 'meter' in the same item; preserved as printed and not corrected. No table or equation target on this page.",
+      "image_sha256": "0b2dd2678be3599aa10cdd8132ce1438de251edef2fce94ce5fd1e67b246eacc",
+      "image_viewed_this_turn": true
+    },
+    {
+      "pdf_page": 94,
+      "page_label": "27",
+      "image_viewed": "tmp/pdfs/water-b-t01/page-94.png",
+      "targets": [],
+      "no_targets_reason": "Figure 2.3 Schematic of Information Management System occupies the upper third: a bitmap/vector schematic with labelled icons (BWSSB Staff, Customer, Call Center, GIS, Website, Centralized CMS, Billing, HR, Legacy Data, Project Management, Water/Asset Management, Common IT Platform, Cloud) and source line (Source: BWSSB IT Department). It is a figure with no rows or columns or mathematical content. Below it, section 2.6.10 Computerised Maintenance Management system (CMMS) is body prose. No table, equation or unnumbered mathematical expression on this page.",
+      "continuations": [],
+      "unclear": [],
+      "notes": "Figure 2.3's label appears inside the screenshot as 'Common IT Platform'; the caption reads 'Figure 2.3: Schematic of Information Management System'. Figure units are outside this batch's table/equation target kinds. No numbers or formulas besides the section number 2.6.10.",
+      "image_sha256": "fb79ae7601141f51b9cc81872140279537f4887a045795dcee428e80ade76887",
+      "image_viewed_this_turn": true
+    }
+  ],
+  "render_spec": "omakase_cpheeo.extract.open_clean (annotations removed in memory only) + Page.get_pixmap(dpi=144); source PDF opened read-only, never saved.",
+  "summary": {
+    "assigned_pages": [
+      70,
+      72,
+      73,
+      74,
+      75,
+      76,
+      83,
+      84,
+      91,
+      94
+    ],
+    "pages_with_targets": [
+      72,
+      74,
+      75,
+      76
+    ],
+    "pages_without_targets": [
+      70,
+      73,
+      83,
+      84,
+      91,
+      94
+    ],
+    "unique_table_ids_seen": [
+      "WS-2024-B:T1.1",
+      "WS-2024-B:T1.2"
+    ],
+    "unique_equation_ids_seen": [],
+    "new_drafts_written": [],
+    "duplicate_targets_skipped": [
+      "WS-2024-B:T1.1",
+      "WS-2024-B:T1.2"
+    ],
+    "unnumbered_targets": [],
+    "continuations_found": 1,
+    "unclear_items": 0
+  },
+  "duplicate_handling": {
+    "policy": "Brief: skip ids already drafted/recorded; these two exist only as pending candidates in a sibling batch, not in data/transcriptions/records/, so no draft was rewritten here to avoid two candidates for one id.",
+    "items": [
+      {
+        "id": "WS-2024-B:T1.1",
+        "candidate": "data/transcriptions/batches/water-b-68-79/records/WS-2024-B--T1.1.json",
+        "candidate_state": "pending",
+        "cross_reading_by_this_batch": "Page 72 image re-read. Printed headers Good Practice / City or Utility, three merged group rows (Fundamentals, Service Delivery, Financial and Human Resources Management), 13 practice/utility pairs and the ADB 2012 source line all agree with the existing candidate. No correction proposed.",
+        "existing_recheck": "data/transcriptions/batches/water-b-68-79-recheck/report.json records a distinct visual recheck with outcome matches_source_no_corrections."
+      },
+      {
+        "id": "WS-2024-B:T1.2",
+        "candidate": "data/transcriptions/batches/water-b-68-79/records/WS-2024-B--T1.2.json",
+        "candidate_state": "pending",
+        "cross_reading_by_this_batch": "Pages 74-76 images re-read. Five columns with no printed header row, three first-column objective groups (Increase Utility of Facilities, Decrease total cost, Increase lifetime value) plus Enable O&M best practice, nine logical rows, cross-page continuation of Extend asset life and Build capabilities, and the World Economic Forum 2014 source line all agree with the existing candidate. No correction proposed.",
+        "existing_recheck": "data/transcriptions/batches/water-b-68-79-recheck/report.json records a distinct visual recheck; outcome line present in that report."
+      }
+    ]
+  },
+  "scope_gaps": [
+    "Figure units on assigned pages were not transcribed because this batch's target kinds are table and equation only: Figure 2.1 Water Utility Focus Areas (page 83), Figure 2.2 Elements of Effective O&M (page 84), Figure 2.3 Schematic of Information Management System (page 94). None contains mathematical notation.",
+    "Bordered prose inset boxes on page 91 (Puri, Odisha continuation and the Nagpur PPP case study) are sidebars without rows, columns or captions; not serialized as tables. If the parent wants such boxes captured, a separate target kind is needed.",
+    "Pages 72 and 74-76 duplicate units already drafted in the water-b-68-79 batch; those candidates still need parent-controlled sealing/promotion."
+  ],
+  "handoff": "All ten assigned pages were rendered and visually inspected. No new transcription target exists on this page set beyond the two duplicate table units. Parent owns comparison, sealing, promotion, coverage, DB and deployment."
+}
