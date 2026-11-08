@@ -1,0 +1,216 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:Tp417-1",
+  "unit_id": "SEW-2013-A:Tp417-1",
+  "manual_id": "SEW-2013-A",
+  "kind": "table",
+  "number": "p417-1",
+  "title": "Critical Parameter panel of Table 5.18 (unnumbered panel)",
+  "state": "pending",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "regions": [
+    {
+      "pdf_page": 417,
+      "page_label": "5 - 113",
+      "bbox": [
+        61.7,
+        385.0,
+        538.8,
+        764.6
+      ],
+      "render_sha256": "4a5275e41f7b19f19972b3f9b95d9a239a276fb74b1708dcbd17c7e3459d1408"
+    }
+  ],
+  "headers": [
+    "Locations",
+    "Critical Parameter: 1997",
+    "Critical Parameter: 1998",
+    "Critical Parameter: 1999",
+    "Critical Parameter: 2000",
+    "Critical Parameter: 2001",
+    "Critical Parameter: 2008*"
+  ],
+  "rows": [
+    [
+      "Rishikesh",
+      "CF",
+      "CF",
+      "CF",
+      "",
+      "",
+      ""
+    ],
+    [
+      "Haridwar",
+      "CF",
+      "CF",
+      "CF",
+      "",
+      "",
+      ""
+    ],
+    [
+      "Garhmukteshwar",
+      "BOD",
+      "BOD",
+      "",
+      "",
+      "BOD,CF",
+      ""
+    ],
+    [
+      "Kannauj U/S",
+      "BOD,CF",
+      "BOD",
+      "CF",
+      "CF",
+      "CF",
+      "CF"
+    ],
+    [
+      "Kannauj D/S",
+      "BOD,CF",
+      "BOD",
+      "CF",
+      "BOD,CF",
+      "BOD,CF",
+      "BOD,CF"
+    ],
+    [
+      "Kanpur D/S",
+      "BOD,CF",
+      "",
+      "CF",
+      "CF",
+      "CF",
+      "CF"
+    ],
+    [
+      "Raibarrelly",
+      "CF",
+      "CF",
+      "CF",
+      "",
+      "",
+      ""
+    ],
+    [
+      "Allahabad U/S",
+      "BOD,CF",
+      "CF",
+      "CF",
+      "",
+      "",
+      "CF,BOD"
+    ],
+    [
+      "Allahabad D/S",
+      "BOD,CF",
+      "CF",
+      "CF",
+      "",
+      "",
+      "CF,BOD"
+    ],
+    [
+      "Varanasi U/S",
+      "BOD,CF",
+      "BOD",
+      "CF",
+      "",
+      "CF",
+      "BOD,CF"
+    ],
+    [
+      "Varanasi D/S",
+      "DO,BOD,CF",
+      "DO,BOD",
+      "BOD",
+      "",
+      "",
+      "BOD,CF"
+    ],
+    [
+      "Gazipur",
+      "BOD,CF",
+      "BOD",
+      "BOD",
+      "CF",
+      "",
+      ""
+    ],
+    [
+      "Buxar",
+      "BOD",
+      "CF",
+      "CF",
+      "CF",
+      "CF",
+      "CF"
+    ],
+    [
+      "Patna U/S",
+      "CF",
+      "CF",
+      "CF",
+      "CF",
+      "CF",
+      ""
+    ],
+    [
+      "Patna D/S",
+      "CF",
+      "CF",
+      "CF",
+      "CF",
+      "CF",
+      ""
+    ],
+    [
+      "Rajmahal",
+      "CF",
+      "CF",
+      "CF",
+      "CF",
+      "CF",
+      "CF"
+    ],
+    [
+      "Palta",
+      "BOD",
+      "",
+      "",
+      "BOD,CF",
+      "BOD,CF",
+      "CF"
+    ],
+    [
+      "Uluberia",
+      "",
+      "",
+      "",
+      "",
+      "BOD,CF",
+      "BOD,CF"
+    ]
+  ],
+  "cell_spans": [],
+  "markdown": "| Locations | Critical Parameter: 1997 | Critical Parameter: 1998 | Critical Parameter: 1999 | Critical Parameter: 2000 | Critical Parameter: 2001 | Critical Parameter: 2008* |\n| --- | --- | --- | --- | --- | --- | --- |\n| Rishikesh | CF | CF | CF |  |  |  |\n| Haridwar | CF | CF | CF |  |  |  |\n| Garhmukteshwar | BOD | BOD |  |  | BOD,CF |  |\n| Kannauj U/S | BOD,CF | BOD | CF | CF | CF | CF |\n| Kannauj D/S | BOD,CF | BOD | CF | BOD,CF | BOD,CF | BOD,CF |\n| Kanpur D/S | BOD,CF |  | CF | CF | CF | CF |\n| Raibarrelly | CF | CF | CF |  |  |  |\n| Allahabad U/S | BOD,CF | CF | CF |  |  | CF,BOD |\n| Allahabad D/S | BOD,CF | CF | CF |  |  | CF,BOD |\n| Varanasi U/S | BOD,CF | BOD | CF |  | CF | BOD,CF |\n| Varanasi D/S | DO,BOD,CF | DO,BOD | BOD |  |  | BOD,CF |\n| Gazipur | BOD,CF | BOD | BOD | CF |  |  |\n| Buxar | BOD | CF | CF | CF | CF | CF |\n| Patna U/S | CF | CF | CF | CF | CF |  |\n| Patna D/S | CF | CF | CF | CF | CF |  |\n| Rajmahal | CF | CF | CF | CF | CF | CF |\n| Palta | BOD |  |  | BOD,CF | BOD,CF | CF |\n| Uluberia |  |  |  |  | BOD,CF | BOD,CF |",
+  "notes": [
+    "Source: MOEF, 2009",
+    "Unnumbered table: this is the lower panel of the numbered Table 5.18, whose in-table header row prints 'Locations' again with 'Critical Parameter' above the six year columns. It is authored as a separate record so that each record holds a rectangular grid.",
+    "Legend printed below the table: A- Drinking Water Source without conventional treatment but after disinfection; B- Outdoor bathing (Organized); C- Drinking Water Source with Conventional treatment followed by disinfection; D- Propagation of wild life and fisheries; E- Irrigation, industrial cooling and controlled waste disposal; CF-Coliform Indicator Organisms.",
+    "Allahabad U/S and Allahabad D/S print the 2008* entry as 'CF,BOD', in the reverse order of the other rows. Retained as printed.",
+    "Empty printed cells are retained as empty strings; they are not read as zero or as NA.",
+    "Draft only: parent section was not identified from the assigned pages, so parent_id is null. Unit existence in the built index was not checked, because data/build is out of scope for this batch."
+  ],
+  "verification": {
+    "transcription": {
+      "pass_id": "sew-t05-first-reading",
+      "method": "Direct visual reading of the annotation-cleaned 144 dpi full-page PNGs and 288-300 dpi region crops, with sideways pages rotated upright before reading; no OCR, no native-text values, no paid service",
+      "observations": "First reading only. Every cell, power, dash, blank and footnote was read from the image and retained as printed; printed anomalies are listed in notes and were not corrected."
+    }
+  },
+  "create_unit": true,
+  "parent_id": null
+}

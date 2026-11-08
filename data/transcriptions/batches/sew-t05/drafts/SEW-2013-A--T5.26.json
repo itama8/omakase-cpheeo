@@ -1,0 +1,91 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:T5.26",
+  "unit_id": "SEW-2013-A:T5.26",
+  "manual_id": "SEW-2013-A",
+  "kind": "table",
+  "number": "5.26",
+  "title": "Types of cables for different voltages",
+  "state": "pending",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "regions": [
+    {
+      "pdf_page": 437,
+      "page_label": "5 - 133",
+      "bbox": [
+        89.7,
+        73.5,
+        527.7,
+        269.6
+      ],
+      "render_sha256": "a260ec979b8844f9405e358c988c03ae444016a7512562a408239c80c1d80207"
+    }
+  ],
+  "headers": [
+    "No",
+    "Range of Voltage",
+    "Type of Cable to be used",
+    "IS Ref."
+  ],
+  "rows": [
+    [
+      "1.",
+      "1 phase - 230 V",
+      "PVC insulated, PVC Sheathed",
+      "IS: 1554"
+    ],
+    [
+      "",
+      "3 phase - 415 V",
+      "",
+      ""
+    ],
+    [
+      "2.",
+      "Up to 6.6 KV",
+      "PVC insulated, PVC Sheathed",
+      "IS: 1554"
+    ],
+    [
+      "4",
+      "11 KV 3 phase",
+      "XLPE- Cross Linked, Polyethylene insulated, PVC sheathed Cable",
+      "IS: 7098"
+    ],
+    [
+      "5",
+      "1 phase – 230 V",
+      "Paper insulated, lead sheathed",
+      "IS: 692"
+    ]
+  ],
+  "cell_spans": [
+    {
+      "row": 0,
+      "column": 2,
+      "rowspan": 2
+    },
+    {
+      "row": 0,
+      "column": 3,
+      "rowspan": 2
+    }
+  ],
+  "markdown": "| No | Range of Voltage | Type of Cable to be used | IS Ref. |\n| --- | --- | --- | --- |\n| 1. | 1 phase - 230 V | PVC insulated, PVC Sheathed | IS: 1554 |\n|  | 3 phase - 415 V |  |  |\n| 2. | Up to 6.6 KV | PVC insulated, PVC Sheathed | IS: 1554 |\n| 4 | 11 KV 3 phase | XLPE- Cross Linked, Polyethylene insulated, PVC sheathed Cable | IS: 7098 |\n| 5 | 1 phase – 230 V | Paper insulated, lead sheathed | IS: 692 |",
+  "notes": [
+    "Source: CPHEEO, 1993",
+    "Printed row numbering is 1., 2., 4, 5: there is no row 3 and no IS reference is printed for it. The gap is retained and not renumbered.",
+    "Row 1 prints two voltages in one cell on two lines. The cell is expanded into two rows so that no embedded line break is needed; the Type of Cable and IS Ref. cells apply to both printed lines.",
+    "Row 5 prints an en dash in '1 phase – 230 V' while row 1 prints hyphens; both are retained.",
+    "Draft only: unit existence in the built index was not checked, because data/build is out of scope for this batch."
+  ],
+  "verification": {
+    "transcription": {
+      "pass_id": "sew-t05-first-reading",
+      "method": "Direct visual reading of the annotation-cleaned 144 dpi full-page PNGs and 288-300 dpi region crops, with sideways pages rotated upright before reading; no OCR, no native-text values, no paid service",
+      "observations": "First reading only. Every cell, power, dash, blank and footnote was read from the image and retained as printed; printed anomalies are listed in notes and were not corrected."
+    }
+  },
+  "create_unit": true,
+  "parent_id": "SEW-2013-A:5.12.3.16"
+}
