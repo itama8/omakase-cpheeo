@@ -1,0 +1,165 @@
+# Paraphrase groups after ranking changes (heading-coverage boost, commit c469b3a)
+# Index: transcribed snapshot /tmp/omk/cpheeo.sqlite, unchanged (no re-ingest needed), 2026-11-09
+# Other sets:
+#   questions: 27/27 answered in top 5; MRR 0.88
+#   sewage-appendices: 13/13 answered in top 5; MRR 0.95
+#   search-ranking(-k1): 12/12 answered in top 1; MRR 1.00
+#   verified: 64/64 top5, top1 53, MRR 0.909, content 64, median 48ms, failures 0
+
+FAIL  P01  worst >25  hit@1 2/5  hit@5 2/5  Total head of pumping (sewage)
+          6  [review] Which components of total dynamic head must be considered when sizing a sewage pump that discharges through a rising main into a pressured receiving line?
+             expected ['SEW-2013-A:4.7.2']; got ['SEW-2013-A:A4.3', 'SEW-2013-A:TA4.3-1', 'SEW-2013-A:TA4.3-2', 'SEW-2013-A:4.10', 'SEW-2013-A:A4.4']
+          1  [review] What makes up the total head of a sewage pump: static head, velocity head, pressure head and friction losses?
+          1  [manual] computation of the total head of pumping
+          6  [natural] How do I calculate the pump head for a sewage pumping station?
+             expected ['SEW-2013-A:4.7.2']; got ['SEW-2013-A:FA4.3-1', 'SEW-2013-A:A4.3', 'SEW-2013-A:CH4', 'SEW-2013-A:2.18.2', 'SEW-2013-A:A4.2']
+        >25  [gap] TDH calculation for a sewage lift station pump
+             expected ['SEW-2013-A:4.7.2']; got ['SEW-2013-A:4.18', 'SEW-2013-A:4.5.5', 'SEW-2013-A:4.5.3', 'SEW-2013-A:F4.12', 'SEW-2013-A:3.72']
+PASS  P02  worst   4  hit@1 4/5  hit@5 5/5  Grit chambers after the pumps when sewers are deep
+          4  [review] When can a grit chamber be installed downstream of a sewage pump station rather than upstream, according to CPHEEO?
+          1  [short] grit chamber after pumps deep sewers
+          1  [natural] Should grit removal come before or after the pumps at a sewage treatment plant inlet?
+          1  [manual] Where sewers are laid at great depth, can only a bar screen be provided ahead of the pumps with grit chambers following the pumps?
+          1  [natural] Is 100% standby required for grit removal units?
+PASS  P03  worst   4  hit@1 2/5  hit@5 5/5  Surge and water hammer in sewage pumping
+          1  [short] sewage pump water hammer
+          3  [short] surge analysis sewage pumping power failure
+          4  [long] What surge analysis is required for a sewage rising main when pumps trip during a sudden power failure, and what transient effects must be addressed?
+          3  [gap] Does a sewage force main need a transient analysis for pump trip?
+          1  [manual] surging of pump and water hammer
+PASS  P04  worst   3  hit@1 4/5  hit@5 5/5  Filter backwash (air scour and water wash) rates
+          1  [short] filter backwash rate
+          1  [short] air scour rate rapid sand filter
+          1  [natural] What air scour and water wash rates are recommended for backwashing rapid sand filters?
+          3  [natural] How long should a rapid gravity filter be backwashed and at what wash water rate?
+          1  [manual] air scour and high-rate backwash
+PASS  P05  worst   3  hit@1 4/5  hit@5 5/5  Manning's n for sewer pipe materials
+          1  [review] Manning n for plastic and concrete sewers
+          1  [gap] roughness coefficient for PVC sewer pipe
+          1  [natural] What value of Manning's n should I use for HDPE and RCC sewers?
+          1  [manual] Manning's coefficient of roughness n for stated materials
+          3  [long] Which pipe friction coefficient should be used in Manning's formula when designing a gravity sewer in stoneware or concrete?
+FAIL  P06  worst  21  hit@1 3/5  hit@5 4/5  Wet well volume from pump start frequency
+          1  [short] wet well pump start frequency
+          1  [natural] How many times per hour can a sewage pump start, and how does that set the wet well volume?
+         21  [gap] minimum cycle time for pumps in a sewage sump
+             expected ['SEW-2013-A:E4.1', 'SEW-2013-A:4.6.6']; got ['SEW-2013-A:5.7.4.2.6.2', 'SEW-2013-A:5.18.20.2', 'SEW-2013-A:4.5.1', 'SEW-2013-A:5.18.12.1', 'SEW-2013-A:TA7.3-13']
+          1  [manual] effective volume of wet well
+          3  [short] wet well sizing for submersible sewage pumps
+PASS  P07  worst   1  hit@1 4/4  hit@5 4/4  Residual chlorine during monsoon
+          1  [review] residual chlorine during monsoon
+          1  [long] What chlorine residual should be maintained at the tail end of the distribution system during the rainy season?
+          1  [gap] minimum free chlorine at consumer end during epidemics
+          1  [short] 0.5 mg/L residual chlorine monsoon
+PASS  P08  worst   1  hit@1 4/4  hit@5 4/4  Specific speed of a centrifugal pump
+          1  [review] centrifugal pump specific speed
+          1  [natural] What is the formula for the specific speed of a sewage pump?
+          1  [long] How is the specific speed Ns of a centrifugal sewage pump calculated from rotational speed, discharge and head?
+          1  [gap] Ns = N sqrt(Q) / H^0.75 sewage pump
+PASS  P09  worst   3  hit@1 1/4  hit@5 4/4  Peak factor for sewage flow
+          1  [manual] peak factor for contributory population
+          2  [natural] What peaking factor should be applied to average sewage flow for a town of 1.5 lakh?
+          3  [gap] ratio of peak to average sewage flow
+          2  [gap] Harmon or Babbitt peak factor for sewer design
+PASS  P10  worst   4  hit@1 1/4  hit@5 4/4  Design velocities in gravity sewers
+          4  [short] self cleansing velocity sewer
+          2  [natural] What is the minimum velocity in a sanitary sewer to prevent silting?
+          2  [natural] What is the maximum permissible velocity in gravity sewers to avoid erosion?
+          1  [manual] design velocities to be ensured in gravity sewers
+PASS  P11  worst   1  hit@1 4/4  hit@5 4/4  Groundwater infiltration allowance
+          1  [short] groundwater infiltration allowance
+          1  [long] How much infiltration should I add to the sewer design flow where the water table is high?
+          1  [gap] inflow and infiltration I/I allowance for sewers
+          1  [manual] ground water infiltration
+FAIL  P12  worst  21  hit@1 3/4  hit@5 3/4  Drop manholes
+          1  [short] drop manhole
+          1  [natural] When is a drop connection needed at a manhole?
+          1  [long] What height difference between the incoming and outgoing sewer inverts makes a drop manhole necessary?
+         21  [gap] backdrop manhole for sewers
+             expected ['SEW-2013-A:3.25', 'SEW-2013-A:F3.29']; got ['SEW-2013-A:3.71.1', 'SEW-2013-A:3.30', 'SEW-2013-A:3.37', 'SEW-2013-A:T3.31', 'SEW-2013-A:T3.15']
+FAIL  P13  worst >25  hit@1 2/4  hit@5 2/4  Buffer zone around a sewage treatment plant
+          1  [manual] buffer zone around STP
+        >25  [natural] What distance should be kept between a sewage treatment plant and houses?
+             expected ['SEW-2013-A:5.3.7.1']; got ['SEW-2013-A:9.3.3.3.2', 'SEW-2013-A:T5.33', 'SEW-2013-A:2.18.2', 'SEW-2013-A:TA2.1.5', 'SEW-2013-A:T9.16']
+         21  [gap] setback from STP to residential area for odour nuisance
+             expected ['SEW-2013-A:5.3.7.1']; got ['SEW-2013-A:5.8.4.3.3', 'SEW-2013-A:A5.10', 'SEW-2013-A:TA2.1.5', 'SEW-2013-A:F5.67', 'SEW-2013-A:T5.33']
+          1  [natural] Is a buffer zone needed if the STP has a deodorization system?
+PASS  P14  worst   3  hit@1 3/4  hit@5 4/4  Number and capacity of pumps in a sewage pumping station
+          1  [manual] number of pumps in a sewage pumping station
+          1  [long] How many pumps, and of what capacities in multiples of DWF, should a small sewage pumping station have?
+          1  [short] pump combination 1 DWF 2 DWF 3 DWF
+          3  [gap] how many standby pumps for a sewage lift station
+FAIL  P15  worst >25  hit@1 3/4  hit@5 3/4  Velocity to prevent hydrogen sulphide in sewers
+          1  [manual] minimum velocity for preventing hydrogen sulphide in sewers
+        >25  [natural] How fast must sewage flow to avoid H2S generation and crown corrosion?
+             expected ['SEW-2013-A:3.15.2', 'SEW-2013-A:3.15.2.1', 'SEW-2013-A:T3.10']; got ['SEW-2013-A:3.69.5.1', 'SEW-2013-A:5.1.3', 'SEW-2013-A:3.69.5.2', 'SEW-2013-A:2.14.3', 'SEW-2013-A:3.5']
+          1  [gap] Z formula for sulphide build up in sewers
+          1  [gap] sewer velocity to keep slime and septicity down
+FAIL  P16  worst   9  hit@1 2/4  hit@5 3/4  Septic tank sizes
+          1  [short] septic tank size for 10 users
+          4  [natural] What dimensions should a septic tank have for a household of five people?
+          1  [natural] septic tank capacity for a housing colony of 200 users
+          9  [gap] how big should a soak-pit-and-tank system be for a small family home
+             expected ['SEW-2013-A:T9.7', 'SEW-2013-A:T9.8', 'SEW-2013-A:9.3.4']; got ['SEW-2013-A:9.3.4.5', 'SEW-2013-A:9.1.2.3', 'SEW-2013-A:9.3.3.3.2', 'SEW-2013-A:9.3.6', 'SEW-2013-A:9.1.2.2']
+PASS  P17  worst   2  hit@1 2/4  hit@5 4/4  Velocity in sewage pumping mains
+          2  [short] velocity in sewage pumping main
+          2  [natural] What velocity range should a sewage force main be designed for?
+          1  [natural] minimum and maximum velocity in sewage rising mains
+          1  [long] For a short sewage force main under 600 m with a low lift, what design velocity is recommended?
+PASS  P18  worst   3  hit@1 1/3  hit@5 3/3  Effect of silting and erosion on pumping main performance (appendix)
+          1  [manual] effects of silting and erosion on sewage pumping main performance
+          2  [natural] How does sediment deposition change the friction loss in a sewage force main?
+          3  [short] Law College force main losses Chennai
+FAIL  P19  worst  12  hit@1 2/4  hit@5 3/4  Activated sludge design parameters
+          1  [short] activated sludge design parameters
+          3  [natural] What F/M ratio and MLSS should be used for a conventional activated sludge plant?
+         12  [gap] SRT and HRT for extended aeration
+             expected ['SEW-2013-A:T5.9']; got ['SEW-2013-A:5.8.1.7.4', 'SEW-2013-A:5.8.1.7.5.1', 'SEW-2013-A:E5.22', 'SEW-2013-A:T5.46', 'SEW-2013-A:T5.37']
+          1  [manual] characteristics and design parameters of activated sludge systems for sewage
+FAIL  P20  worst >25  hit@1 1/4  hit@5 2/4  Design period of water supply components
+          3  [short] design period for water treatment plant
+        >25  [natural] How many years should a water transmission main be designed for?
+             expected ['WS-2024-A:T2.2', 'WS-2024-A:2.8.2.1']; got ['WS-2024-A:AN6.6-F1', 'WS-2024-A:11.1.3.1', 'WS-2024-A:6.8.1', 'WS-2024-A:6.9.1', 'WS-2024-A:AN16.1-F4']
+        >25  [gap] design horizon for water supply scheme components
+             expected ['WS-2024-A:T2.2', 'WS-2024-A:2.8.2.1']; got ['WS-2024-A:4.13.11.1', 'WS-2024-A:F14.2', 'WS-2024-B:11.1.1', 'WS-2024-A:4.13.11', 'WS-2024-A:F14.3']
+          1  [manual] design period in years for water supply components
+FAIL  P21  worst  12  hit@1 0/4  hit@5 2/4  Per capita water supply levels
+          6  [manual] per capita water supply
+             expected ['WS-2024-A:T2.4', 'WS-2024-A:2.8.2.3']; got ['WS-2024-A:4.13.11.1', 'WS-2024-B:11.1.6', 'WS-2024-A:2.8.2.4', 'WS-2024-A:4.13.11', 'WS-2024-C:4.3.2.1']
+         12  [natural] How many litres per person per day should be adopted for water supply in a city of 5 lakh?
+             expected ['WS-2024-A:T2.4', 'WS-2024-A:2.8.2.3']; got ['WS-2024-A:4.13.11.1', 'WS-2024-C:5.5.1', 'WS-2024-A:4.13.11', 'WS-2024-A:T1.3', 'WS-2024-A:T2.7']
+          3  [gap] lpcd norms for metro cities
+          2  [short] 135 lpcd or 150 lpcd
+FAIL  P22  worst  20  hit@1 1/4  hit@5 2/4  Rate of filtration for rapid sand filters
+          1  [manual] rate of filtration rapid sand filter
+          6  [natural] What loading rate in m/h should a rapid gravity filter be designed for?
+             expected ['WS-2024-A:8.7.3.2', 'WS-2024-A:AN8.5']; got ['WS-2024-A:F8.40', 'WS-2024-A:F8.43', 'WS-2024-A:F8.48', 'WS-2024-A:F8.45', 'WS-2024-A:8.7.8.2']
+          2  [natural] filter loading rate when one filter bed is out of service
+         20  [gap] rapid sand filter design flux
+             expected ['WS-2024-A:8.7.3.2', 'WS-2024-A:AN8.5']; got ['WS-2024-B:F5.7', 'WS-2024-A:8.7.3.5', 'WS-2024-B:5.4.7.2', 'WS-2024-A:8.7.3.6', 'WS-2024-A:T8.9']
+PASS  P23  worst   4  hit@1 1/4  hit@5 4/4  Surface loading and detention period for clarifiers
+          4  [short] surface loading rate clariflocculator
+          4  [natural] What detention time and overflow rate should be used for a clariflocculator?
+          4  [gap] settling tank surface overflow rate in water treatment
+          1  [short] detention period for plain sedimentation tank
+FAIL  P24  worst   6  hit@1 1/4  hit@5 3/4  Hazen-Williams C values for water mains
+          3  [short] Hazen-Williams C value for DI water pipe
+          4  [natural] What C value should be used for design of cement mortar lined ductile iron water mains?
+          6  [gap] friction coefficient for water pipes in the Hazen Williams formula
+             expected ['WS-2024-A:T6.2', 'WS-2024-A:6.5.1.4']; got ['WS-2024-A:6.5.1.2', 'SEW-2013-A:3.16.2', 'SEW-2013-A:E3.17', 'WS-2024-A:E6.3', 'SEW-2013-A:T3.14']
+          1  [manual] Hazen-Williams coefficients for water supply pipe materials
+PASS  P25  worst   3  hit@1 2/3  hit@5 3/3  Economical size of a pumping main (water)
+          1  [manual] economical size of pumping main
+          3  [natural] How do I select the most economic diameter of a water rising main?
+          1  [gap] pumping main diameter optimisation capital cost versus energy cost
+PASS  P26  worst   3  hit@1 2/3  hit@5 3/3  Breakpoint chlorination
+          1  [manual] breakpoint chlorination
+          1  [natural] What does the break point chlorination curve show?
+          3  [gap] chlorine dose needed to get a free residual when water has ammonia
+PASS  P27  worst   2  hit@1 2/3  hit@5 3/3  Storage and handling of chlorine cylinders (O&M)
+          1  [manual] storage and handling of chlorine cylinders
+          2  [natural] How should chlorine tonners be stored at a water treatment plant?
+          1  [gap] explosives licence for chlorine containers at a WTP
+
+16/27 groups with every phrasing in top 5; worst-rank MRR 0.29
+phrasings: hit@1 61/110 (55%), hit@5 93/110 (85%), MRR 0.67
