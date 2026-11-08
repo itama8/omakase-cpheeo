@@ -1,0 +1,137 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:T6.7",
+  "unit_id": "SEW-2013-A:T6.7",
+  "manual_id": "SEW-2013-A",
+  "kind": "table",
+  "number": "6.7",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "state": "pending",
+  "regions": [
+    {
+      "pdf_page": 551,
+      "page_label": "6 - 28",
+      "bbox": [
+        81.0,
+        70.0,
+        511.0,
+        438.0
+      ],
+      "render_sha256": "183e7e0a0f10363c93156127d77c2adeff9486e75fc10679201e86f24fe16fa6"
+    }
+  ],
+  "title": "Comparative Evaluation of Different Sludge Thickening Processes",
+  "headers": [
+    "Evaluation Criteria",
+    "Gravity",
+    "Dissolved Air Flotation",
+    "Centrifugation",
+    "Gravity Belt",
+    "Rotating Drum"
+  ],
+  "rows": [
+    [
+      "Space requirement",
+      "High",
+      "Medium",
+      "Low",
+      "Medium",
+      "Medium"
+    ],
+    [
+      "Operation and maintenance",
+      "Simple",
+      "Medium",
+      "High",
+      "Medium",
+      "Medium"
+    ],
+    [
+      "Typical Application",
+      "Primary and Combined",
+      "Waste activated sludge",
+      "Waste activated sludge",
+      "Waste activated sludge",
+      "Waste activated sludge"
+    ],
+    [
+      "Conditioning Chemicals",
+      "None",
+      "High",
+      "High",
+      "Medium",
+      "Medium"
+    ],
+    [
+      "Power requirement",
+      "Low",
+      "High",
+      "High",
+      "Medium",
+      "Medium"
+    ],
+    [
+      "Capital Cost",
+      "Low",
+      "High",
+      "High",
+      "Medium",
+      "Medium"
+    ],
+    [
+      "Operation Cost",
+      "Low",
+      "High",
+      "High",
+      "Medium",
+      "Medium"
+    ],
+    [
+      "Thickened Sludge solids concentration",
+      "Medium",
+      "Low",
+      "High",
+      "Medium to high",
+      "Medium to high"
+    ],
+    [
+      "Building corrosion if enclosed",
+      "High",
+      "Medium",
+      "None",
+      "Medium",
+      "Medium"
+    ],
+    [
+      "Odour problem",
+      "Serious",
+      "Moderate",
+      "Low",
+      "Moderate",
+      "Moderate"
+    ]
+  ],
+  "cell_spans": [
+    {
+      "column": 2,
+      "row": 0,
+      "description": "Header printed on two lines, 'Dissolved' over 'Air Flotation'; joined here with a space."
+    }
+  ],
+  "markdown": "| Evaluation Criteria | Gravity | Dissolved Air Flotation | Centrifugation | Gravity Belt | Rotating Drum |\n| --- | --- | --- | --- | --- | --- |\n| Space requirement | High | Medium | Low | Medium | Medium |\n| Operation and maintenance | Simple | Medium | High | Medium | Medium |\n| Typical Application | Primary and Combined | Waste activated sludge | Waste activated sludge | Waste activated sludge | Waste activated sludge |\n| Conditioning Chemicals | None | High | High | Medium | Medium |\n| Power requirement | Low | High | High | Medium | Medium |\n| Capital Cost | Low | High | High | Medium | Medium |\n| Operation Cost | Low | High | High | Medium | Medium |\n| Thickened Sludge solids concentration | Medium | Low | High | Medium to high | Medium to high |\n| Building corrosion if enclosed | High | Medium | None | Medium | Medium |\n| Odour problem | Serious | Moderate | Low | Moderate | Moderate |",
+  "notes": [
+    "Header 'Dissolved Air Flotation' is printed on two lines; the two-line break is not collapsible in a table cell and is joined with a single space.",
+    "Row labels are printed with capitalised second words ('Typical Application', 'Conditioning Chemicals', 'Capital Cost', 'Operation Cost') on some rows and lower case on others ('Space requirement', 'Power requirement'); case kept as printed.",
+    "British spelling 'Odour problem' kept; not changed to 'Odor'.",
+    "The running text on page 550 announces this table as 'Table 6-7 overleaf' with a hyphen, while the printed caption here reads 'Table 6.7'. Both forms left as printed.",
+    "The cell 'Own' or any other entry is not invented: every one of the 50 value cells is printed and was read from the page. No cell is blank.",
+    "No source line or footnote is printed with this table."
+  ],
+  "verification": {
+    "transcription": {
+      "pass_id": "sew-t08-first-reading",
+      "method": "Direct visual reading of full 144 dpi annotation-cleaned page PNGs plus 288-450 dpi detail crops of each item, rotated where the printed table is set sideways; no OCR, no paid service, no delegation",
+      "observations": "First reading only. Every printed value, coefficient, power, sign, bracket, spelling and unit retained as printed; source oddities kept and flagged rather than corrected. No distinct second visual pass performed and no verification seal."
+    }
+  }
+}

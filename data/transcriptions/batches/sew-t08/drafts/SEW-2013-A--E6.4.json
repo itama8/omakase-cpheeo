@@ -1,0 +1,63 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:E6.4",
+  "unit_id": "SEW-2013-A:E6.4",
+  "manual_id": "SEW-2013-A",
+  "kind": "equation",
+  "number": "6.4",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "state": "pending",
+  "regions": [
+    {
+      "pdf_page": 558,
+      "page_label": "6 - 35",
+      "bbox": [
+        55.0,
+        362.0,
+        516.0,
+        391.0
+      ],
+      "render_sha256": "c4fafac91dfbd63b4bdaae45fc9ef3b09b3dd86e1277ea7abf56ab428953158c"
+    }
+  ],
+  "title": "Volume of second stage digester",
+  "parent_id": "SEW-2013-A:6.4.5.2",
+  "latex": "V''=\\left[V_f-\\frac{2}{3}\\left(V_f-V_d\\right)\\right]T-V_d\\,T_2",
+  "readable": "V'' = [Vf - 2/3(Vf - Vd)]T - Vd T2",
+  "symbols": [
+    {
+      "symbol": "V''",
+      "definition": "Volume of second stage digester, m³"
+    },
+    {
+      "symbol": "Vf",
+      "definition": "Volume of fresh sludge m³ added per day"
+    },
+    {
+      "symbol": "Vd",
+      "definition": "Volume of digested sludge m³ withdrawn per day"
+    },
+    {
+      "symbol": "T",
+      "definition": "Detention time in the second stage digester which is of the order of 10 days and"
+    },
+    {
+      "symbol": "T2",
+      "definition": "Storage in days, during monsoon"
+    }
+  ],
+  "applicability": "Section 6.4.5.2: the second stage digester volume, where supernatant separation and gravity thickening complete digestion, less the monsoon storage already credited to the second stage tank.",
+  "notes": [
+    "Printed exactly as shown: V'' = [Vf -2/3(Vf -Vd)]T -Vd T2. The double prime is printed as two raised commas; the minus before Vd sits between the bracket term and the second product with no multiplication sign, and T is closed up against the closing bracket.",
+    "The printed symbol 'T' is followed in the definition list by 'which is of the order of 10 days and', so the definition breaks off mid-sentence exactly as printed.",
+    "The symbol list for equations 6.3 and 6.4 is printed once, after 6.4 (physical page 558, roughly y 382 to 543 in PDF points); the recorded region covers only the printed equation line and its number, and the shared list is transcribed in full in both this record and the E6.3 record.",
+    "Transcriber note: the slash form '2/3' is printed as text, not as a stacked fraction; the LaTeX uses a fraction only for legibility."
+  ],
+  "verification": {
+    "transcription": {
+      "pass_id": "sew-t08-first-reading",
+      "method": "Direct visual reading of full 144 dpi annotation-cleaned page PNGs plus 288-450 dpi detail crops of each item, rotated where the printed table is set sideways; no OCR, no paid service, no delegation",
+      "observations": "First reading only. Every printed value, coefficient, power, sign, bracket, spelling and unit retained as printed; source oddities kept and flagged rather than corrected. No distinct second visual pass performed and no verification seal."
+    }
+  }
+}

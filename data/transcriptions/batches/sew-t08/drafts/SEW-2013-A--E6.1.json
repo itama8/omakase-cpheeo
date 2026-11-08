@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:E6.1",
+  "unit_id": "SEW-2013-A:E6.1",
+  "manual_id": "SEW-2013-A",
+  "kind": "equation",
+  "number": "6.1",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "state": "pending",
+  "regions": [
+    {
+      "pdf_page": 557,
+      "page_label": "6 - 34",
+      "bbox": [
+        50.0,
+        520.0,
+        512.0,
+        660.0
+      ],
+      "render_sha256": "cb60efd439b4fbef4a611d19c3447c79d94bc9ee0647abcd8852428e4974044f"
+    }
+  ],
+  "title": "Capacity of a low rate digester",
+  "parent_id": "SEW-2013-A:6.4.5.1",
+  "latex": "V=\\left[V_f-\\frac{2}{3}\\left(V_f-V_d\\right)\\right]T_1",
+  "readable": "V = [Vf - 2/3(Vf - Vd)]T1",
+  "symbols": [
+    {
+      "symbol": "V",
+      "definition": "Volume of digester, m³"
+    },
+    {
+      "symbol": "Vf",
+      "definition": "Volume of fresh sludge m³ added per day"
+    },
+    {
+      "symbol": "Vd",
+      "definition": "Volume of digested sludge m³ withdrawn per day"
+    },
+    {
+      "symbol": "T1",
+      "definition": "HRT, days"
+    }
+  ],
+  "applicability": "Section 6.4.5.1, sizing of low rate digesters: because supernatant is withdrawn during digestion the digested sludge volume decreases, so the digester capacity is computed from the fresh sludge volume, the digested sludge volume and the hydraulic retention time, with two thirds of the shrinkage taken into account.",
+  "notes": [
+    "Printed exactly as shown: V=[Vf -2/3(Vf -Vd)]T1, with the 2/3 as a slash fraction, square brackets around the bracketed term and no multiplication sign between the closing bracket and T1. Nothing was rearranged.",
+    "Subscripts f, d and 1 are printed as subscripts and are rendered as such.",
+    "No subscript or superscript is printed on the '2/3' and it is not typeset as a stacked fraction; the slash form is reproduced in the LaTeX as a fraction only for legibility and the printed slash form is given in the readable line.",
+    "Symbol list is printed under the heading 'Where,' immediately below the equation and is the only symbol definition printed; no other quantity in the equation is defined on this page."
+  ],
+  "verification": {
+    "transcription": {
+      "pass_id": "sew-t08-first-reading",
+      "method": "Direct visual reading of full 144 dpi annotation-cleaned page PNGs plus 288-450 dpi detail crops of each item, rotated where the printed table is set sideways; no OCR, no paid service, no delegation",
+      "observations": "First reading only. Every printed value, coefficient, power, sign, bracket, spelling and unit retained as printed; source oddities kept and flagged rather than corrected. No distinct second visual pass performed and no verification seal."
+    }
+  }
+}

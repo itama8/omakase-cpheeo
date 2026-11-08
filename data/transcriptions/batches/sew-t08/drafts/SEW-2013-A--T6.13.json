@@ -1,0 +1,97 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:T6.13",
+  "unit_id": "SEW-2013-A:T6.13",
+  "manual_id": "SEW-2013-A",
+  "kind": "table",
+  "number": "6.13",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "state": "pending",
+  "regions": [
+    {
+      "pdf_page": 593,
+      "page_label": "6 - 70",
+      "bbox": [
+        57.0,
+        63.0,
+        494.0,
+        777.0
+      ],
+      "render_sha256": "354608ea7723b3640808b57bde1d74cc4243aefee04940cee7926f9c610e219d"
+    },
+    {
+      "pdf_page": 594,
+      "page_label": "6 - 71",
+      "bbox": [
+        66.0,
+        110.0,
+        779.0,
+        493.0
+      ],
+      "render_sha256": "a13473efd383f83c3dbd4a78e464a473c69ba58a06668150157c98141a2d625e"
+    }
+  ],
+  "title": "Comparison of advantages and disadvantages of dewatering systems",
+  "headers": [
+    "",
+    "Advantages",
+    "Disadvantages"
+  ],
+  "rows": [
+    [
+      "Screw Press",
+      "1)Low rotational speed results in low maintenance and noise. 2)Low operating energy consumption 3)Containment of odours and aerosol, 4)Low building corrosion potential 5)Simple operation with low operator attention 6)Lower wash water and pressure than belt presses.",
+      "1) Cake concentration may be relatively low for primary sludges. 2) Larger footprint 3) Few indigenous manufacturers available as of this time 4) Requires wash water 5) Lower solids capture than other processes in some cases. 6) More dependency on supplier for repairs"
+    ],
+    [
+      "Rotary Press",
+      "1)Uses less energy than centrifuges or belt filter presses 2)Small footprint, minimum building size, Odours contained, 3)Minimal moving parts, less vibration 4)Minimal start-up and shutdown time 5)Uses less wash water than belt filter presses",
+      "1) More dependent on polymers than centrifuges / belt filter presses 2) Low throughput than other mechanical dewatering processes 3) Screen clogging potential 4) Heavy rated overhead crane to lift and maintain channels 5) Higher building requirements in structurals"
+    ],
+    [
+      "Belt Press",
+      "1)Staffing requirements are less. 2)Maintenance is relatively simple. Belt change is the major cost. 3)Energy is relatively low than some other dewatering equipment. 4)Can be started and shut down quickly compared to centrifuges. 5)Less noise compared to centrifuges. 6)The rotary speed is lesser as compared to centrifuges.",
+      "1) A significant potential for odours and sprays 2) More operator attention when feed sludge contents varies 3) High oil & grease causes blinding the belt and lesser cake solids 4) Sludge to be screened / ground as sharp objects damage to belt 5) Belt washing time consuming and requires more wash water. 6) Roller alignments requires skilled setting in repairs"
+    ],
+    [
+      "Filter Press",
+      "1)Produces drier cakes than other dewatering equipment 2)For solids of more than 35 % in cake, they can be cost-effective 3)Can adapt to a wide range of sludge characteristics 4)Produces a high-quality filtrate. Lowers recycle stream treatment 5)Cost-effective when the dewatered cake must be incinerated.",
+      "1) Relatively high O&M costs. 2) Treatment chemicals required 3) Needs periodic manual removal of adherence of cake to the filter 4) Increased washing of filter media or higher conditioner dosages. 5) Requires significant amounts of energy to pressurize the units."
+    ],
+    [
+      "Centrifuges",
+      "1)Lower O&M costs and can outperform conventional belt presses 2)Require a small amount of floor space relative to their capacity 3)Require minimal operator attention when operations are stable 4)Low exposure to pathogens, aerosols and odours for operators. 5)Relatively easier to clean in situ 6)Can handle higher than design loadings 7)Solids recovery can be sustained by higher polymer dosage 8)Major maintenance items can be easily removed and replaced.",
+      "1) High power consumption and fairly noisy 2) Experience of operating is required to optimize performance. 3) Difficult to monitor as view of centrate and feed is obstructed. 4) The base must be stationary and level due to dynamic loading. 5) Spare parts are supplier oriented 6) Internal parts are subject to abrasive wear. 7) Start-up and shut down may take an hour. 8) Heavy dependence on supplier for repairs"
+    ],
+    [
+      "Vacuum Filter",
+      "1) Formation and discharge of sludge cake is easily visible. 2) Operation is easily understood visually 3) Does not require highly-skilled operator attention 4) Will operate even if the chemical dosage is not optimized, 5) Has a low maintenance requirement for a continuously operation 6) Certain cases with lime conditioning may cause O&M issues.",
+      "1) Higher energy per unit of sludge Vacuum pumps are noisy. 2) Lime / Ferric chloride conditioning causes cleaning problems. 3) Lime use can produce strong ammonia smell in digested sludge. 4) Polymer conditioning is not always effective on vacuum filters. 5) Heavy dependence on supplier for repairs to filter medium 6) Alignment of filter medium is crucial after repairs."
+    ]
+  ],
+  "cell_spans": [
+    {
+      "column": 0,
+      "row": 0,
+      "description": "The top-left header cell above the equipment-name column is printed empty."
+    }
+  ],
+  "markdown": "|  | Advantages | Disadvantages |\n| --- | --- | --- |\n| Screw Press | 1)Low rotational speed results in low maintenance and noise. 2)Low operating energy consumption 3)Containment of odours and aerosol, 4)Low building corrosion potential 5)Simple operation with low operator attention 6)Lower wash water and pressure than belt presses. | 1) Cake concentration may be relatively low for primary sludges. 2) Larger footprint 3) Few indigenous manufacturers available as of this time 4) Requires wash water 5) Lower solids capture than other processes in some cases. 6) More dependency on supplier for repairs |\n| Rotary Press | 1)Uses less energy than centrifuges or belt filter presses 2)Small footprint, minimum building size, Odours contained, 3)Minimal moving parts, less vibration 4)Minimal start-up and shutdown time 5)Uses less wash water than belt filter presses | 1) More dependent on polymers than centrifuges / belt filter presses 2) Low throughput than other mechanical dewatering processes 3) Screen clogging potential 4) Heavy rated overhead crane to lift and maintain channels 5) Higher building requirements in structurals |\n| Belt Press | 1)Staffing requirements are less. 2)Maintenance is relatively simple. Belt change is the major cost. 3)Energy is relatively low than some other dewatering equipment. 4)Can be started and shut down quickly compared to centrifuges. 5)Less noise compared to centrifuges. 6)The rotary speed is lesser as compared to centrifuges. | 1) A significant potential for odours and sprays 2) More operator attention when feed sludge contents varies 3) High oil & grease causes blinding the belt and lesser cake solids 4) Sludge to be screened / ground as sharp objects damage to belt 5) Belt washing time consuming and requires more wash water. 6) Roller alignments requires skilled setting in repairs |\n| Filter Press | 1)Produces drier cakes than other dewatering equipment 2)For solids of more than 35 % in cake, they can be cost-effective 3)Can adapt to a wide range of sludge characteristics 4)Produces a high-quality filtrate. Lowers recycle stream treatment 5)Cost-effective when the dewatered cake must be incinerated. | 1) Relatively high O&M costs. 2) Treatment chemicals required 3) Needs periodic manual removal of adherence of cake to the filter 4) Increased washing of filter media or higher conditioner dosages. 5) Requires significant amounts of energy to pressurize the units. |\n| Centrifuges | 1)Lower O&M costs and can outperform conventional belt presses 2)Require a small amount of floor space relative to their capacity 3)Require minimal operator attention when operations are stable 4)Low exposure to pathogens, aerosols and odours for operators. 5)Relatively easier to clean in situ 6)Can handle higher than design loadings 7)Solids recovery can be sustained by higher polymer dosage 8)Major maintenance items can be easily removed and replaced. | 1) High power consumption and fairly noisy 2) Experience of operating is required to optimize performance. 3) Difficult to monitor as view of centrate and feed is obstructed. 4) The base must be stationary and level due to dynamic loading. 5) Spare parts are supplier oriented 6) Internal parts are subject to abrasive wear. 7) Start-up and shut down may take an hour. 8) Heavy dependence on supplier for repairs |\n| Vacuum Filter | 1) Formation and discharge of sludge cake is easily visible. 2) Operation is easily understood visually 3) Does not require highly-skilled operator attention 4) Will operate even if the chemical dosage is not optimized, 5) Has a low maintenance requirement for a continuously operation 6) Certain cases with lime conditioning may cause O&M issues. | 1) Higher energy per unit of sludge Vacuum pumps are noisy. 2) Lime / Ferric chloride conditioning causes cleaning problems. 3) Lime use can produce strong ammonia smell in digested sludge. 4) Polymer conditioning is not always effective on vacuum filters. 5) Heavy dependence on supplier for repairs to filter medium 6) Alignment of filter medium is crucial after repairs. |",
+  "notes": [
+    "The table starts on physical page 593 (printed 6 - 70) with the Screw Press, Rotary Press and Belt Press rows and continues on physical page 594 (printed 6 - 71) with Filter Press, Centrifuges and Vacuum Filter; the two-page table is one record with both regions, and the header row 'Advantages / Disadvantages' is reprinted at the top of the continuation.",
+    "Both pages are set sideways as scanned images: page 593 is a portrait page whose content is rotated, page 594 is a landscape page. They were read after rotating the rendered page upright.",
+    "Every item in a cell is printed as its own numbered line, 1) to 8). The numbered lines are joined with single spaces here because a markdown cell cannot hold line breaks; no wording, numbering or punctuation was changed.",
+    "Numbering style is inconsistent in print: the Screw Press advantages and the first five Rotary Press advantages print the number closed up against the text ('1)Low rotational speed...'), most other cells print a space after the bracket ('1) Cake concentration...'). Kept as printed.",
+    "Printed wording kept though it is odd or ungrammatical: 'Higher building requirements in structurals' (Rotary Press disadvantages), 'Low throughput than other mechanical dewatering processes' (Rotary Press disadvantages), 'Belt washing time consuming and requires more wash water.' (Belt Press disadvantages), 'Higher energy per unit of sludge Vacuum pumps are noisy.' (Vacuum Filter disadvantages, two statements run together), 'Has a low maintenance requirement for a continuously operation' and 'Will operate even if the chemical dosage is not optimized,' (Vacuum Filter advantages, both breaking off). None corrected.",
+    "The row label is printed 'Centrifuges' here, though Table 6.7 on page 551 and the body text of section 6.7.9 name the process 'Centrifugation' / 'Centrifugal Dewatering Machine'. Kept as printed.",
+    "Belt Press advantages print 'the rotary speed is lesser as compared to centrifuges' with lower-case 'the'; kept as printed.",
+    "No caption, source line or footnote appears on the continuation page 594 as printed; the caption and header row are on page 593."
+  ],
+  "verification": {
+    "transcription": {
+      "pass_id": "sew-t08-first-reading",
+      "method": "Direct visual reading of full 144 dpi annotation-cleaned page PNGs plus 288-450 dpi detail crops of each item, rotated where the printed table is set sideways; no OCR, no paid service, no delegation",
+      "observations": "First reading only. Every printed value, coefficient, power, sign, bracket, spelling and unit retained as printed; source oddities kept and flagged rather than corrected. No distinct second visual pass performed and no verification seal."
+    }
+  }
+}

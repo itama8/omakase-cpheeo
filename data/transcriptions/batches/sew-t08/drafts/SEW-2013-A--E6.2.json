@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:E6.2",
+  "unit_id": "SEW-2013-A:E6.2",
+  "manual_id": "SEW-2013-A",
+  "kind": "equation",
+  "number": "6.2",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "state": "pending",
+  "regions": [
+    {
+      "pdf_page": 557,
+      "page_label": "6 - 34",
+      "bbox": [
+        50.0,
+        717.0,
+        518.0,
+        770.0
+      ],
+      "render_sha256": "6b69ac0da5885098d0499b875ebec9fb44b07d38d13f834448b229bbcd5a52d1"
+    }
+  ],
+  "title": "Additional monsoon storage volume",
+  "parent_id": "SEW-2013-A:6.4.5.1",
+  "latex": "\\text{Additional monsoon storage volume}=V_d\\,T_2",
+  "readable": "Additional monsoon storage volume = Vd T2",
+  "symbols": [
+    {
+      "symbol": "Vd",
+      "definition": "Volume of digested sludge m³ withdrawn per day"
+    },
+    {
+      "symbol": "T2",
+      "definition": "the storage in days, during monsoon"
+    }
+  ],
+  "applicability": "Section 6.4.5.1: where sludge drying beds alone are used and left open, monsoon rainfall causes environmental problems, so monsoon storage must be provided; this expression fixes the extra volume.",
+  "notes": [
+    "Printed exactly as shown: 'Additional monsoon storage volume = Vd T2', with no multiplication sign and no bracket.",
+    "The symbol Vd is not redefined in this equation's own list; the definition reproduced above is the one printed for equation 6.1 on the same page ('Volume of digested sludge m³ withdrawn per day').",
+    "The only definition printed with this equation is the running line 'Where, T2 is the storage in days, during monsoon', which is not set as a symbol list. It is reproduced here as a symbol entry and flagged.",
+    "Transcriber note: the sentence ends 'Where, T2 is the storage in days, during monsoon' with no closing full stop."
+  ],
+  "verification": {
+    "transcription": {
+      "pass_id": "sew-t08-first-reading",
+      "method": "Direct visual reading of full 144 dpi annotation-cleaned page PNGs plus 288-450 dpi detail crops of each item, rotated where the printed table is set sideways; no OCR, no paid service, no delegation",
+      "observations": "First reading only. Every printed value, coefficient, power, sign, bracket, spelling and unit retained as printed; source oddities kept and flagged rather than corrected. No distinct second visual pass performed and no verification seal."
+    }
+  }
+}

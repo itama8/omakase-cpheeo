@@ -18,7 +18,10 @@
     {
       "batch": "sew-t08",
       "taskId": "node:delegated-task:command%3Amcp%3Aa050c0da-bcca-4d9f-9067-27a22e4026e1%3Adelegate-task%3Aomakase-vt-sew-t08",
-      "childThreadId": "thread:delegated-task:command%3Amcp%3Aa050c0da-bcca-4d9f-9067-27a22e4026e1%3Adelegate-task%3Aomakase-vt-sew-t08"
+      "childThreadId": "thread:delegated-task:command%3Amcp%3Aa050c0da-bcca-4d9f-9067-27a22e4026e1%3Adelegate-task%3Aomakase-vt-sew-t08",
+      "terminal_status": "failed",
+      "terminal_reason": "Request timed out.",
+      "recovery": "Preserved saved drafts/renders; reassigned as three disjoint ten-page tasks. See batches/sew-timeout-recovery-2026-11-08.json. No records from these original batches have been promoted."
     },
     {
       "batch": "sew-t09",
@@ -33,7 +36,10 @@
     {
       "batch": "sew-t11",
       "taskId": "node:delegated-task:command%3Amcp%3Aa050c0da-bcca-4d9f-9067-27a22e4026e1%3Adelegate-task%3Aomakase-vt-sew-t11",
-      "childThreadId": "thread:delegated-task:command%3Amcp%3Aa050c0da-bcca-4d9f-9067-27a22e4026e1%3Adelegate-task%3Aomakase-vt-sew-t11"
+      "childThreadId": "thread:delegated-task:command%3Amcp%3Aa050c0da-bcca-4d9f-9067-27a22e4026e1%3Adelegate-task%3Aomakase-vt-sew-t11",
+      "terminal_status": "failed",
+      "terminal_reason": "Request timed out.",
+      "recovery": "Preserved saved drafts/renders; reassigned as three disjoint ten-page tasks. See batches/sew-timeout-recovery-2026-11-08.json. No records from these original batches have been promoted."
     },
     {
       "batch": "water-a-t01",

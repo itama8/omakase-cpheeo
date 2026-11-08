@@ -1,0 +1,90 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:T6.9",
+  "unit_id": "SEW-2013-A:T6.9",
+  "manual_id": "SEW-2013-A",
+  "kind": "table",
+  "number": "6.9",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "state": "pending",
+  "regions": [
+    {
+      "pdf_page": 556,
+      "page_label": "6 - 33",
+      "bbox": [
+        63.0,
+        556.0,
+        536.0,
+        744.0
+      ],
+      "render_sha256": "3222749649b0d8770a1905e28c7bc2c45884da1e6e911840cf5afcb623b6785e"
+    }
+  ],
+  "title": "Solids retention time at different temperatures (high rate digestion)",
+  "headers": [
+    "Operating Temperature, °C",
+    "SRTc",
+    "Suggested for Design (SRTd)",
+    "Ratio"
+  ],
+  "rows": [
+    [
+      "18",
+      "11",
+      "28",
+      "28/11 = 2.54"
+    ],
+    [
+      "24",
+      "8",
+      "20",
+      "20/8 = 2.5"
+    ],
+    [
+      "30",
+      "6",
+      "14",
+      "14/6 = 2.3"
+    ],
+    [
+      "35",
+      "4",
+      "10",
+      "10/4 = 2.5"
+    ],
+    [
+      "40",
+      "4",
+      "10",
+      "10/4 = 2.5"
+    ]
+  ],
+  "cell_spans": [
+    {
+      "column": 0,
+      "row": 0,
+      "rowspan": 2,
+      "description": "'Operating Temperature, °C' is one tall cell spanning the two printed header rows."
+    },
+    {
+      "column": 1,
+      "row": 0,
+      "colspan": 3,
+      "description": "Upper-tier header 'Solids Retention Time, days' spans the SRTc, Suggested for Design (SRTd) and Ratio columns; the lower tier prints those three sub-headings."
+    }
+  ],
+  "markdown": "| Operating Temperature, °C | SRTc | Suggested for Design (SRTd) | Ratio |\n| --- | --- | --- | --- |\n| 18 | 11 | 28 | 28/11 = 2.54 |\n| 24 | 8 | 20 | 20/8 = 2.5 |\n| 30 | 6 | 14 | 14/6 = 2.3 |\n| 35 | 4 | 10 | 10/4 = 2.5 |\n| 40 | 4 | 10 | 10/4 = 2.5 |",
+  "notes": [
+    "Two-tier header: 'Solids Retention Time, days' covers the SRTc, Suggested for Design (SRTd) and Ratio columns; the first column 'Operating Temperature, °C' spans both header rows.",
+    "Ratio column is printed as a worked division, e.g. '28/11 = 2.54'; the expressions are transcribed verbatim and not recomputed. 28/11 is 2.5454... and 14/6 is 2.3333..., so the printed results are truncated rather than rounded; printed values retained.",
+    "Lower-case 'c' and 'd' in 'SRTc' and 'SRTd' kept as printed.",
+    "The Figure 6.7 caption printed immediately above this table describes a 'laboratory scale completely mixed aerobic digester' although this table and its column heads are for high rate (anaerobic) digestion; both are printed as shown and neither was changed."
+  ],
+  "verification": {
+    "transcription": {
+      "pass_id": "sew-t08-first-reading",
+      "method": "Direct visual reading of full 144 dpi annotation-cleaned page PNGs plus 288-450 dpi detail crops of each item, rotated where the printed table is set sideways; no OCR, no paid service, no delegation",
+      "observations": "First reading only. Every printed value, coefficient, power, sign, bracket, spelling and unit retained as printed; source oddities kept and flagged rather than corrected. No distinct second visual pass performed and no verification seal."
+    }
+  }
+}

@@ -1,0 +1,119 @@
+{
+  "note": "Timed-out first passes split into disjoint ten-page recovery tasks. Saved drafts and renders preserved; no recovered record is verified until parent comparison. Query task_status for liveness.",
+  "tasks": [
+    {
+      "batch": "sew-t08-r1",
+      "prior": "sew-t08",
+      "pages": [
+        531,
+        532,
+        533,
+        534,
+        535,
+        543,
+        550,
+        551,
+        552,
+        554
+      ],
+      "taskId": "node:delegated-task:command%3Amcp%3A05efbfda-5a8a-40bb-a971-2e99724fd930%3Adelegate-task%3Aomakase-vt-sew-t08-r1",
+      "childThreadId": "thread:delegated-task:command%3Amcp%3A05efbfda-5a8a-40bb-a971-2e99724fd930%3Adelegate-task%3Aomakase-vt-sew-t08-r1",
+      "status": "running"
+    },
+    {
+      "batch": "sew-t08-r2",
+      "prior": "sew-t08",
+      "pages": [
+        555,
+        556,
+        557,
+        558,
+        559,
+        562,
+        563,
+        564,
+        570,
+        574
+      ],
+      "taskId": "node:delegated-task:command%3Amcp%3A05efbfda-5a8a-40bb-a971-2e99724fd930%3Adelegate-task%3Aomakase-vt-sew-t08-r2",
+      "childThreadId": "thread:delegated-task:command%3Amcp%3A05efbfda-5a8a-40bb-a971-2e99724fd930%3Adelegate-task%3Aomakase-vt-sew-t08-r2",
+      "status": "running"
+    },
+    {
+      "batch": "sew-t08-r3",
+      "prior": "sew-t08",
+      "pages": [
+        575,
+        576,
+        578,
+        586,
+        587,
+        588,
+        592,
+        593,
+        594,
+        596
+      ],
+      "taskId": "node:delegated-task:command%3Amcp%3A05efbfda-5a8a-40bb-a971-2e99724fd930%3Adelegate-task%3Aomakase-vt-sew-t08-r3",
+      "childThreadId": "thread:delegated-task:command%3Amcp%3A05efbfda-5a8a-40bb-a971-2e99724fd930%3Adelegate-task%3Aomakase-vt-sew-t08-r3",
+      "status": "running"
+    },
+    {
+      "batch": "sew-t11-r1",
+      "prior": "sew-t11",
+      "pages": [
+        675,
+        677,
+        678,
+        679,
+        680,
+        681,
+        682,
+        683,
+        684,
+        688
+      ],
+      "taskId": "node:delegated-task:command%3Amcp%3A05efbfda-5a8a-40bb-a971-2e99724fd930%3Adelegate-task%3Aomakase-vt-sew-t11-r1",
+      "childThreadId": "thread:delegated-task:command%3Amcp%3A05efbfda-5a8a-40bb-a971-2e99724fd930%3Adelegate-task%3Aomakase-vt-sew-t11-r1",
+      "status": "running"
+    },
+    {
+      "batch": "sew-t11-r2",
+      "prior": "sew-t11",
+      "pages": [
+        689,
+        690,
+        691,
+        692,
+        693,
+        695,
+        696,
+        697,
+        698,
+        701
+      ],
+      "taskId": "node:delegated-task:command%3Amcp%3A05efbfda-5a8a-40bb-a971-2e99724fd930%3Adelegate-task%3Aomakase-vt-sew-t11-r2",
+      "childThreadId": "thread:delegated-task:command%3Amcp%3A05efbfda-5a8a-40bb-a971-2e99724fd930%3Adelegate-task%3Aomakase-vt-sew-t11-r2",
+      "status": "running"
+    },
+    {
+      "batch": "sew-t11-r3",
+      "prior": "sew-t11",
+      "pages": [
+        702,
+        703,
+        704,
+        706,
+        707,
+        708,
+        709,
+        710,
+        711,
+        712
+      ],
+      "taskId": "node:delegated-task:command%3Amcp%3A05efbfda-5a8a-40bb-a971-2e99724fd930%3Adelegate-task%3Aomakase-vt-sew-t11-r3",
+      "childThreadId": "thread:delegated-task:command%3Amcp%3A05efbfda-5a8a-40bb-a971-2e99724fd930%3Adelegate-task%3Aomakase-vt-sew-t11-r3",
+      "status": "running"
+    }
+  ]
+}

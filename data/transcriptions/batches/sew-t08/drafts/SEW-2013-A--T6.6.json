@@ -1,0 +1,94 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:T6.6",
+  "unit_id": "SEW-2013-A:T6.6",
+  "manual_id": "SEW-2013-A",
+  "kind": "table",
+  "number": "6.6",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "state": "pending",
+  "regions": [
+    {
+      "pdf_page": 543,
+      "page_label": "6 - 20",
+      "bbox": [
+        66.0,
+        316.0,
+        494.0,
+        507.0
+      ],
+      "render_sha256": "9cdc04e2f41d4bf3074d6d4a06d1956cafd64652f406d0fc57688e227b98fd31"
+    }
+  ],
+  "title": "Surface loadings and solids concentration",
+  "headers": [
+    "Type of Sludge",
+    "Solids Surface Loading (kg/day/sqm)",
+    "Thickened Sludge Solids Concentration (%)"
+  ],
+  "rows": [
+    [
+      "Separate Sludge",
+      "",
+      ""
+    ],
+    [
+      "Primary",
+      "90 - 140",
+      "5 – 10"
+    ],
+    [
+      "Activated",
+      "25 - 30",
+      "2.5 - 3.0"
+    ],
+    [
+      "Trickling filter",
+      "40 - 45",
+      "7 – 9"
+    ],
+    [
+      "Combined Sludge",
+      "",
+      ""
+    ],
+    [
+      "Primary + activated",
+      "30 - 50",
+      "5 – 8"
+    ],
+    [
+      "Primary + trickling filter",
+      "50 - 60",
+      "7 – 9"
+    ]
+  ],
+  "cell_spans": [
+    {
+      "column": 0,
+      "row": 0,
+      "colspan": 3,
+      "description": "Printed group heading 'Separate Sludge' fills the full width; its loading and concentration cells are printed blank."
+    },
+    {
+      "column": 0,
+      "row": 4,
+      "colspan": 3,
+      "description": "Printed group heading 'Combined Sludge' fills the full width; its loading and concentration cells are printed blank."
+    }
+  ],
+  "markdown": "| Type of Sludge | Solids Surface Loading (kg/day/sqm) | Thickened Sludge Solids Concentration (%) |\n| --- | --- | --- |\n| Separate Sludge |  |  |\n| Primary | 90 - 140 | 5 – 10 |\n| Activated | 25 - 30 | 2.5 - 3.0 |\n| Trickling filter | 40 - 45 | 7 – 9 |\n| Combined Sludge |  |  |\n| Primary + activated | 30 - 50 | 5 – 8 |\n| Primary + trickling filter | 50 - 60 | 7 – 9 |",
+  "notes": [
+    "Prints the range separator inconsistently: the loading column uses a space-hyphen-space form ('90 - 140') while the concentration column uses a space en-dash-space form in '5 – 10' and '7 – 9' but a hyphen in '2.5 - 3.0'. All separators kept exactly as printed; not harmonised.",
+    "Area unit printed as 'sqm' in the header, not m².",
+    "'Separate Sludge' and 'Combined Sludge' are group headings, not sludge types with values; the two value cells beside each are printed empty and are not filled in.",
+    "No source line or footnote is printed with this table."
+  ],
+  "verification": {
+    "transcription": {
+      "pass_id": "sew-t08-first-reading",
+      "method": "Direct visual reading of full 144 dpi annotation-cleaned page PNGs plus 288-450 dpi detail crops of each item, rotated where the printed table is set sideways; no OCR, no paid service, no delegation",
+      "observations": "First reading only. Every printed value, coefficient, power, sign, bracket, spelling and unit retained as printed; source oddities kept and flagged rather than corrected. No distinct second visual pass performed and no verification seal."
+    }
+  }
+}

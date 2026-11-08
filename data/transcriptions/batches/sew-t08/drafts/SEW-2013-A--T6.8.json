@@ -1,0 +1,60 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:T6.8",
+  "unit_id": "SEW-2013-A:T6.8",
+  "manual_id": "SEW-2013-A",
+  "kind": "table",
+  "number": "6.8",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "state": "pending",
+  "regions": [
+    {
+      "pdf_page": 555,
+      "page_label": "6 - 32",
+      "bbox": [
+        59.0,
+        216.0,
+        533.0,
+        391.0
+      ],
+      "render_sha256": "f829c3a08c4ff49343aa5ce19127e44a3a6cfebe9e27c56a18298d4bdbfc30e5"
+    }
+  ],
+  "title": "Typical design criteria for sizing mesophilic anaerobic sludge digesters",
+  "headers": [
+    "Parameters",
+    "Low Rate Digestion",
+    "High Rate Digestion"
+  ],
+  "rows": [
+    [
+      "Volatile Solids Loading Rate, kgVSS/day/m³",
+      "0.6 - 1.6",
+      "1.6 - 6.4"
+    ],
+    [
+      "Solids Retention Time, days",
+      "(*)",
+      "10 - 20"
+    ],
+    [
+      "Hydraulic Retention Time, days",
+      "30 - 40",
+      "10 - 20"
+    ]
+  ],
+  "cell_spans": [],
+  "markdown": "| Parameters | Low Rate Digestion | High Rate Digestion |\n| --- | --- | --- |\n| Volatile Solids Loading Rate, kgVSS/day/m³ | 0.6 - 1.6 | 1.6 - 6.4 |\n| Solids Retention Time, days | (*) | 10 - 20 |\n| Hydraulic Retention Time, days | 30 - 40 | 10 - 20 |",
+  "notes": [
+    "Printed note below the table, kept with the table region: 'Note:  (*) Computation of actual SRT is difficult as it depends on the capacity utilization.'",
+    "The table prints 'kgVSS/day/m³' with no space between kg and VSS and with a superscript 3, while the running text immediately above prints 'kg VSS/day/m3' with a space and a plain 3. Both forms kept as printed.",
+    "The Low Rate Digestion cell for Solids Retention Time prints only the asterisk reference '(*)', not a number; it is not filled in from the note or from Table 6.9."
+  ],
+  "verification": {
+    "transcription": {
+      "pass_id": "sew-t08-first-reading",
+      "method": "Direct visual reading of full 144 dpi annotation-cleaned page PNGs plus 288-450 dpi detail crops of each item, rotated where the printed table is set sideways; no OCR, no paid service, no delegation",
+      "observations": "First reading only. Every printed value, coefficient, power, sign, bracket, spelling and unit retained as printed; source oddities kept and flagged rather than corrected. No distinct second visual pass performed and no verification seal."
+    }
+  }
+}
