@@ -5,7 +5,10 @@
     {
       "batch": "sew-t05",
       "taskId": "node:delegated-task:command%3Amcp%3A08510d62-8d63-4cad-ae76-09739796d69b%3Adelegate-task%3Aomakase-vt-sew-t05",
-      "childThreadId": "thread:delegated-task:command%3Amcp%3A08510d62-8d63-4cad-ae76-09739796d69b%3Adelegate-task%3Aomakase-vt-sew-t05"
+      "childThreadId": "thread:delegated-task:command%3Amcp%3A08510d62-8d63-4cad-ae76-09739796d69b%3Adelegate-task%3Aomakase-vt-sew-t05",
+      "terminal_status": "failed",
+      "terminal_reason": "Request timed out.",
+      "recovery": "All 14 drafts and their sealed content digests matched the parent integration manifest and the current live snapshot. Work already integrated in 1f37a9e; do not retry or integrate again."
     },
     {
       "batch": "sew-t07",

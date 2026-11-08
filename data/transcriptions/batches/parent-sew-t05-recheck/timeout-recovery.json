@@ -1,0 +1,14 @@
+{
+  "checked_at_utc": "2026-11-08T13:03:26.638956+00:00",
+  "task_id": "node:delegated-task:command%3Amcp%3A08510d62-8d63-4cad-ae76-09739796d69b%3Adelegate-task%3Aomakase-vt-sew-t05",
+  "terminal_status": "failed",
+  "terminal_reason": "Request timed out.",
+  "checked_records": 14,
+  "all_original_draft_hashes_match": true,
+  "all_parent_sealed_content_digests_match": true,
+  "all_live_snapshot_content_digests_match": true,
+  "live_snapshot": "/tmp/omakase-cpheeo-live-9287acd",
+  "integration_commit": "1f37a9e",
+  "action": "No retry or duplicate integration; completed content remains verified and deployed.",
+  "limitations": "This checks saved evidence and deployment consistency, not a new visual reading or a claim of perfect accuracy."
+}
