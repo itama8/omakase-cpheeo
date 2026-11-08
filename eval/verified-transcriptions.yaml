@@ -183,3 +183,20 @@ questions:
     expect: [WS-2024-B:T1.2]
     contains: ['Proper digital and GIS Asset mapping', 'Conditional assessment', 'Section 12.7.3', 'strategic- infrastructure-2014']
     region_pages: [74, 75, 76]
+  - id: V46
+    question: Table 1.1 comparison intermittent continuous pressurised water supply
+    expect: [WS-2024-A:T1.1]
+    row: ['13', 'Water is not easily available to low-income people', 'Water is supplied to all including low-income people']
+    region_pages: [91, 92]
+  - id: V47
+    question: Table 1.2 performance indicator benchmark water supply services
+    expect: [WS-2024-A:T1.2]
+    row: ['2', 'Per capita supply of water (LPCD)', '135*', '114']
+    contains: ['No footnote or key', '900 cities in five States']
+    region_pages: [95, 96]
+  - id: V48
+    question: Table 1.3 average water use per person per day urban area
+    expect: [WS-2024-A:T1.3]
+    row: ['', 'Total', '135']
+    contains: ['150 LPCD', 'not part of the table']
+    region_pages: [96]

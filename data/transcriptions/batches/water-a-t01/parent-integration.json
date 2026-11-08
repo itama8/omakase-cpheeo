@@ -1,0 +1,37 @@
+{
+  "verified_records": [
+    {
+      "id": "WS-2024-A:T1.1",
+      "draft_sha256": "f5d12046a1b6f7f367be62012542e037aaff7c8de9dbaeb74b733122655d816d",
+      "content_sha256": "58e9470da95b241c2b1b36064e3dccc99b51ea21c053c4b3b59fad4815ee390f",
+      "corrections": []
+    },
+    {
+      "id": "WS-2024-A:T1.2",
+      "draft_sha256": "bf6e5b92ad4543bbd0f5ecda7c66bb7688eeb43ddb9d481ea47d1eadf88e30bf",
+      "content_sha256": "433ff639d35cda1aaeca8002e4ef644c84d921af1d66ec536ff4694fcd5a7ab1",
+      "corrections": [
+        "Clarified that only the source note continues onto page 96; no cell changes."
+      ]
+    },
+    {
+      "id": "WS-2024-A:T1.3",
+      "draft_sha256": "671ab382488b0ed93c2cdc84d1e5361e89f89e65a4a90387380a859f2d47dfa3",
+      "content_sha256": "36a952380ddef720f4e4f20509560684f4cdadefb71629230b7f740c5499333a",
+      "corrections": []
+    }
+  ],
+  "new_reviewed_pages": [
+    86,
+    87,
+    88,
+    91,
+    92,
+    93,
+    94,
+    95,
+    96,
+    97
+  ],
+  "limitations": "Assistant comparison, not independent human review or perfect accuracy; unassigned pages and figure prose are not newly transcribed."
+}

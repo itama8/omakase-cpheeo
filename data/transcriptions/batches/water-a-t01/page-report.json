@@ -1,0 +1,181 @@
+{
+  "schema_version": 1,
+  "manual_id": "WS-2024-A",
+  "batch": "water-a-t01",
+  "physical_pages": [
+    86,
+    97
+  ],
+  "assigned_pages": [
+    86,
+    87,
+    88,
+    91,
+    92,
+    93,
+    94,
+    95,
+    96,
+    97
+  ],
+  "source_sha256": "b60f2fb548357aec676b18ef31e3b37fb0e5e8a1aec8f886880b951113848b0a",
+  "source_path": "/home/a2ajinkya/Downloads/CPHEEO/Water Supply_2023/Part-A-Manual-Engineering-Planning-Design-and-Implementation(3).pdf",
+  "source_annotation_policy": "open_clean deletes annotations in memory; the source PDF is opened read-only and never saved.",
+  "rendering": "Full pages at 144 dpi plus 3x clipped crops for tables; evidence regions hashed with omakase_cpheeo.transcriptions.region_png (Matrix(2,2), alpha=False).",
+  "scope": "First visual reading and pending drafts only. No verification, sealing, ledger, coverage, DB, server or git writes.",
+  "records": [
+    "drafts/WS-2024-A--T1.1.json",
+    "drafts/WS-2024-A--T1.2.json",
+    "drafts/WS-2024-A--T1.3.json"
+  ],
+  "pages": [
+    {
+      "pdf_page": 86,
+      "page_label": "1",
+      "targets": [],
+      "record_filenames": [],
+      "no_targets_reason": "Prose and one map figure (Figure 1.1) only; no table, equation or unnumbered mathematical expression.",
+      "continuations": [],
+      "unclear": [],
+      "image_viewed": "tmp/pdfs/water-a-t01/page-86.png",
+      "render_sha256": "faeb3fc116f842aa6a37bfe50f0e9b3e70e5277ba28d7428afeb7ef58162de07",
+      "observations": "Chapter 1 Introduction; section 1.1 Background. Figure 1.1 water-stress map with a colour legend (Low (<10%), Low to Medium (10-20%), Medium to High (20-40%), High (40-60%), Extremely High (>80%), Arid & Low Water Use). The legend is figure-internal, not a table, and is left to the figure pipeline; its printed bands jump from 40-60% to >80%, an unfilled 60-80% band, noted but not altered. Inline percentages and the 9th ordinal are prose, not formulas."
+    },
+    {
+      "pdf_page": 87,
+      "page_label": "2",
+      "targets": [],
+      "record_filenames": [],
+      "no_targets_reason": "Prose, sections 1.2 and 1.3, and pie-chart Figure 1.2 with data labels; no table, equation or unnumbered mathematical expression.",
+      "continuations": [],
+      "unclear": [],
+      "image_viewed": "tmp/pdfs/water-a-t01/page-87.png",
+      "render_sha256": "161a70f31242ca9b385316af51b1c4b46ddffc8c9aaabae130f3e6a181bb0a44",
+      "observations": "Figure 1.2 data labels as printed: Tap water from treated source 62%, Tapwater from untreated source 9%, Hand pump 12%, Tubewell/Borewell 9%, Other sources 2%, Uncovered well 4%, Covered well 2%; the seven shares total 100. Labels are chart annotations, not a printed table. No equation."
+    },
+    {
+      "pdf_page": 88,
+      "page_label": "3",
+      "targets": [],
+      "record_filenames": [],
+      "no_targets_reason": "Prose only (sections 1.4 and 1.4.1, numbered challenge list). The math_text signal comes from inline figures such as 26.7 deaths per 1000 live births, 85% rural and 48% urban, and the parenthetical (<95% reliable); none is a printed formula or relational expression.",
+      "continuations": [],
+      "unclear": [],
+      "image_viewed": "tmp/pdfs/water-a-t01/page-88.png",
+      "render_sha256": "f440f8e162d291c0c19e13a65a800c6072ecc80336bc40a281521f0b40d97f02",
+      "observations": "No table, displayed equation, ratio notation with symbols, or figure on this page. 24×7 appears as continuous-supply notation. Challenge items (i) and (ii)(a)(b) are prose lists."
+    },
+    {
+      "pdf_page": 91,
+      "page_label": "6",
+      "targets": [
+        "WS-2024-A:T1.1"
+      ],
+      "record_filenames": [
+        "drafts/WS-2024-A--T1.1.json"
+      ],
+      "no_targets_reason": null,
+      "continuations": [
+        "Table 1.1 rows 12 and 13 continue on physical page 92 with the header row reprinted."
+      ],
+      "unclear": [],
+      "image_viewed": "tmp/pdfs/water-a-t01/page-91.png",
+      "render_sha256": "2ee0b9cea162c00f66bfef58381564161a969a6ab34700f0965055c5f59ce6af",
+      "observations": "Items 7-12 finish section 1.4.3; section 1.5 begins; Table 1.1 caption and rows 1-11 read cell by cell at 3x zoom (tmp/pdfs/water-a-t01/p91-table1.1-zoom.png). Three columns, no merged cells, no footnote or source note. Nothing else on the page needs transcription."
+    },
+    {
+      "pdf_page": 92,
+      "page_label": "7",
+      "targets": [
+        "WS-2024-A:T1.1"
+      ],
+      "record_filenames": [
+        "drafts/WS-2024-A--T1.1.json"
+      ],
+      "no_targets_reason": null,
+      "continuations": [
+        "Continuation of Table 1.1 from physical page 91: repeated header row plus rows 12 and 13."
+      ],
+      "unclear": [],
+      "image_viewed": "tmp/pdfs/water-a-t01/page-92.png",
+      "render_sha256": "fb9ec7c4bb2b5234a50493ca4c7fa487460f8e131aebfaefcfdd3c0f0aa095ec",
+      "observations": "Top of page carries the Table 1.1 continuation (zoom tmp/pdfs/water-a-t01/p92-table1.1-cont-zoom.png), then the closing paragraph, section 1.5.1, and Figure 1.3 with panels (a)-(d). Figure panels are drawings with labels only, no table and no formula; left to the figure pipeline."
+    },
+    {
+      "pdf_page": 93,
+      "page_label": "8",
+      "targets": [],
+      "record_filenames": [],
+      "no_targets_reason": "Prose and bullets only (items (b)-(d) of section 1.5.1, sections 1.5.2 and 1.5.3). math_text signal comes from inline prose figures such as 95% dependable source, 79,790 population, 27.6 mortality ratio and Rs 558 to 658 per month; none is a printed formula or expression.",
+      "continuations": [],
+      "unclear": [],
+      "image_viewed": "tmp/pdfs/water-a-t01/page-93.png",
+      "render_sha256": "8e8abfa69fc348b21a08b276d14fd4ee144fd550010a0287093692d8c7a87dd2",
+      "observations": "No table, displayed equation, symbolic ratio or figure. 24×7 and 95% appear as prose notation."
+    },
+    {
+      "pdf_page": 94,
+      "page_label": "9",
+      "targets": [],
+      "record_filenames": [],
+      "no_targets_reason": "Figures 1.4 and 1.5 (both cross-section schematics with inside labels), prose, sections 1.6, 1.6.1 and bullets. The single bullet total outlay of Rs. 299,000 Cr. is a money figure in prose, not a formula.",
+      "continuations": [],
+      "unclear": [],
+      "image_viewed": "tmp/pdfs/water-a-t01/page-94.png",
+      "render_sha256": "e5443ad4052d32012f0b708ed4715bf7c261232e7732e3551e34e043050334f0",
+      "observations": "Figure 1.4 Intermittent System and Figure 1.5 24×7 Pressurised Water Supply System carry captions and in-drawing labels (Outside dirt/contaminants entering, Vacuum, Empty Pipeline; Dirt Can't Enter, Pressurised Pipeline). Drawing labels only, no table and no formula; left to the figure pipeline. Section 1.6.1 subitems (i)-(iii) are prose headings, not a table."
+    },
+    {
+      "pdf_page": 95,
+      "page_label": "10",
+      "targets": [
+        "WS-2024-A:T1.2"
+      ],
+      "record_filenames": [
+        "drafts/WS-2024-A--T1.2.json"
+      ],
+      "no_targets_reason": null,
+      "continuations": [
+        "The table body ends on this page; its source line is printed at the top of physical page 96 and is captured as a second region of the same record."
+      ],
+      "unclear": [
+        "Meaning of the asterisk on 135* is not printed anywhere on pages 95-96; kept verbatim, not resolved."
+      ],
+      "image_viewed": "tmp/pdfs/water-a-t01/page-95.png",
+      "render_sha256": "b81f559cbc6e5cf81345fac7c2a5119f8526541485813d60d48d4f30bc0e9326",
+      "observations": "AMRUT 2.0 bullets finish, then 1.6.2, 1.6.3, 1.7 and the Service Level Benchmarking paragraph; Table 1.2 caption and nine rows read cell by cell at 3x zoom (tmp/pdfs/water-a-t01/p95-table1.2-zoom.png). Four columns, no merged cells, no footnote under the table. The 74th Amendment superscripts are ordinals."
+    },
+    {
+      "pdf_page": 96,
+      "page_label": "11",
+      "targets": [
+        "WS-2024-A:T1.2",
+        "WS-2024-A:T1.3"
+      ],
+      "record_filenames": [
+        "drafts/WS-2024-A--T1.2.json",
+        "drafts/WS-2024-A--T1.3.json"
+      ],
+      "no_targets_reason": null,
+      "continuations": [
+        "Top line is the source note of Table 1.2 from the preceding page (captured in that record)."
+      ],
+      "unclear": [],
+      "image_viewed": "tmp/pdfs/water-a-t01/page-96.png",
+      "render_sha256": "089300c4f3b03e1b9083af0cdba06ace39390864335032d4523a03a814b386f0",
+      "observations": "Source line for Table 1.2, one paragraph, Table 1.3 caption plus seven rows and the total row read at 3x zoom (tmp/pdfs/water-a-t01/p96-table1.3-zoom.png), then sections 1.8, 1.8.1, 1.8.2 and 1.8.3 as prose. 955mm in 24 hours is a prose rainfall figure, not a formula."
+    },
+    {
+      "pdf_page": 97,
+      "page_label": "12",
+      "targets": [],
+      "record_filenames": [],
+      "no_targets_reason": "Prose only: section 1.8.4, section 1.9, section 1.9.1 and bullet lists. math_text signal comes from 24×7 notation and NRW to 20% in prose; no printed formula or expression.",
+      "continuations": [],
+      "unclear": [],
+      "image_viewed": "tmp/pdfs/water-a-t01/page-97.png",
+      "render_sha256": "41724c423d107c784866b885060cc59cce8dd5e9645ee9aa4af05f030afe8b3c",
+      "observations": "No table, equation or figure. Printed acronym inconsistency retained in the record of observations: the section heading prints IUWRM while the sentence beneath prints IURWM system; neither is a table or formula, so nothing is transcribed and no correction is made."
+    }
+  ]
+}

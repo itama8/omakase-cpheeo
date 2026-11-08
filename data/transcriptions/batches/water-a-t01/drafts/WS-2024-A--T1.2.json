@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "id": "WS-2024-A:T1.2",
+  "unit_id": "WS-2024-A:T1.2",
+  "manual_id": "WS-2024-A",
+  "kind": "table",
+  "number": "1.2",
+  "source_sha256": "b60f2fb548357aec676b18ef31e3b37fb0e5e8a1aec8f886880b951113848b0a",
+  "state": "pending",
+  "regions": [
+    {
+      "pdf_page": 95,
+      "page_label": "10",
+      "bbox": [
+        71.0,
+        573.5,
+        555.0,
+        777.5
+      ],
+      "render_sha256": "c4af192c4f99811d11398b37a2715db99c724c905348cec374843b6bcaddb36a"
+    },
+    {
+      "pdf_page": 96,
+      "page_label": "11",
+      "bbox": [
+        121.5,
+        68.0,
+        509.0,
+        86.0
+      ],
+      "render_sha256": "58476c546948dee75c9aeed68c0b6258282feb28becda094777fe30393c13843"
+    }
+  ],
+  "title": "Performance indicator and benchmark for water supply services",
+  "headers": [
+    "S. N.",
+    "Performance indicator",
+    "Targeted Benchmark",
+    "Average values in India"
+  ],
+  "rows": [
+    [
+      "1",
+      "Coverage of water supply connections",
+      "100%",
+      "70%"
+    ],
+    [
+      "2",
+      "Per capita supply of water (LPCD)",
+      "135*",
+      "114"
+    ],
+    [
+      "3",
+      "Extent of metering of water connections",
+      "100%",
+      "22%"
+    ],
+    [
+      "4",
+      "Extent of NRW",
+      "15%",
+      "31%"
+    ],
+    [
+      "5",
+      "Continuity of water supply",
+      "24 hours",
+      "2.7 hours"
+    ],
+    [
+      "6",
+      "Quality of water supplied",
+      "100%",
+      "95%"
+    ],
+    [
+      "7",
+      "Efficiency in redressal of customer complaints",
+      "80%",
+      "89%"
+    ],
+    [
+      "8",
+      "Cost recovery in water supply services",
+      "100%",
+      "72%"
+    ],
+    [
+      "9",
+      "Efficiency in collection of water supply-related charges",
+      "90%",
+      "60%"
+    ]
+  ],
+  "markdown": "| S. N. | Performance indicator | Targeted Benchmark | Average values in India |\n| --- | --- | --- | --- |\n| 1 | Coverage of water supply connections | 100% | 70% |\n| 2 | Per capita supply of water (LPCD) | 135* | 114 |\n| 3 | Extent of metering of water connections | 100% | 22% |\n| 4 | Extent of NRW | 15% | 31% |\n| 5 | Continuity of water supply | 24 hours | 2.7 hours |\n| 6 | Quality of water supplied | 100% | 95% |\n| 7 | Efficiency in redressal of customer complaints | 80% | 89% |\n| 8 | Cost recovery in water supply services | 100% | 72% |\n| 9 | Efficiency in collection of water supply-related charges | 90% | 60% |",
+  "notes": [
+    "Whole table, caption and all nine rows sit on physical page 95 (printed 10); nothing continues onto page 96.",
+    "The source note is printed separately at the top of physical page 96 (printed 11), before the next paragraph: Source: PAS-SLB data from www.pas.org.in covering 900 cities in five States. www.pas.org.in is printed underlined as a hyperlink. It is captured in the second region and is not part of a row.",
+    "Third-column header is set on two printed lines, Targeted / Benchmark, and is flattened with a single space. Fourth-column header prints as one line, Average values in India.",
+    "First-column header is printed S. N. with periods, unlike the bare SN of Table 1.3.",
+    "Row 2 targeted benchmark is printed 135* with an asterisk. No footnote or key explaining the asterisk is printed on page 95 or page 96; the asterisk is kept verbatim and no value is substituted. The paragraph following the table on page 96 separately states that for cities with population more than 10 lakhs the target benchmark is 150 LPCD (IS 1172:1993), which the table note does not reconcile.",
+    "Row 9 indicator is set on two printed lines (…water supply-related / charges) and is joined with a single space; the hyphen in supply-related is printed.",
+    "Abbreviations LPCD and NRW are printed and retained without expansion, since the table does not expand them.",
+    "No cell is merged; cell_spans is empty. No continuation or footnote line appears beneath the table body."
+  ]
+}

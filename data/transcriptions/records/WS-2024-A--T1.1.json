@@ -1,0 +1,131 @@
+{
+  "schema_version": 1,
+  "id": "WS-2024-A:T1.1",
+  "unit_id": "WS-2024-A:T1.1",
+  "manual_id": "WS-2024-A",
+  "kind": "table",
+  "number": "1.1",
+  "source_sha256": "b60f2fb548357aec676b18ef31e3b37fb0e5e8a1aec8f886880b951113848b0a",
+  "state": "verified",
+  "regions": [
+    {
+      "pdf_page": 91,
+      "bbox": [
+        70.5,
+        544.0,
+        555.5,
+        768.0
+      ],
+      "render_sha256": "97551a803cee5dd47e5ee1d7557f030f17db3c4d9b241d98cf3c691b92623508",
+      "page_label": "6"
+    },
+    {
+      "pdf_page": 92,
+      "bbox": [
+        70.5,
+        69.5,
+        555.5,
+        145.5
+      ],
+      "render_sha256": "f3411785944bc84b3685dcfc8bf5980b0fca04d4b8288e8ab88d3eef623be1d9",
+      "page_label": "7"
+    }
+  ],
+  "title": "Comparison of Intermittent water supply with 24×7 pressurised water supply system",
+  "headers": [
+    "S N",
+    "Demerits of Intermittent System",
+    "Merits of 24×7 System"
+  ],
+  "rows": [
+    [
+      "1",
+      "Large doses of chlorine",
+      "Reduces contamination"
+    ],
+    [
+      "2",
+      "Capacities underutilised",
+      "Better health outcomes"
+    ],
+    [
+      "3",
+      "Valves - wear and tear",
+      "Life of network increases"
+    ],
+    [
+      "4",
+      "More manpower - Zoning",
+      "Reduces contamination"
+    ],
+    [
+      "5",
+      "Large sizes of pipes",
+      "Better demand management"
+    ],
+    [
+      "6",
+      "Supply hours affect poor",
+      "Reduces consumption"
+    ],
+    [
+      "7",
+      "Storage is required",
+      "Consumer satisfaction"
+    ],
+    [
+      "8",
+      "Pay for pumping",
+      "Willingness to pay-slums"
+    ],
+    [
+      "9",
+      "High health risks",
+      "Time is managed effectively"
+    ],
+    [
+      "10",
+      "Meters go out of order",
+      "Time for rewarding activities"
+    ],
+    [
+      "11",
+      "Store and throw water",
+      "Lowers health risks"
+    ],
+    [
+      "12",
+      "Wastage of treated water",
+      "Attracts industries"
+    ],
+    [
+      "13",
+      "Water is not easily available to low-income people",
+      "Water is supplied to all including low-income people"
+    ]
+  ],
+  "markdown": "| S N | Demerits of Intermittent System | Merits of 24×7 System |\n| --- | --- | --- |\n| 1 | Large doses of chlorine | Reduces contamination |\n| 2 | Capacities underutilised | Better health outcomes |\n| 3 | Valves - wear and tear | Life of network increases |\n| 4 | More manpower - Zoning | Reduces contamination |\n| 5 | Large sizes of pipes | Better demand management |\n| 6 | Supply hours affect poor | Reduces consumption |\n| 7 | Storage is required | Consumer satisfaction |\n| 8 | Pay for pumping | Willingness to pay-slums |\n| 9 | High health risks | Time is managed effectively |\n| 10 | Meters go out of order | Time for rewarding activities |\n| 11 | Store and throw water | Lowers health risks |\n| 12 | Wastage of treated water | Attracts industries |\n| 13 | Water is not easily available to low-income people | Water is supplied to all including low-income people |",
+  "notes": [
+    "Table 1.1 begins and ends its rows 1 to 11 on physical page 91 (printed 6) and continues on physical page 92 (printed 7) with the header row reprinted and rows 12 and 13, then the discussion paragraph. No cells are merged; cell_spans is empty.",
+    "First column header is printed as a stacked two-line cell, S above N, without periods and without the word No. Transcribed as S N. Serial numbers run 1 to 13 across the page break.",
+    "Third-column header uses the multiplication sign: 24×7, not the letter x.",
+    "Row 4 cell is printed More manpower - Zoning (space, hyphen, space) and row 3 is Valves - wear and tear; both retained as printed.",
+    "Row 8 merits cell is printed Willingness to pay-slums, with no space after the hyphen; retained as printed.",
+    "Row 13 cells are set on two printed lines (…low-income / people). The line break is joined with a single space; no word is added or removed.",
+    "The table prints no source note, no footnote marker and no continuation note (such as continued) between the two pages."
+  ],
+  "cell_spans": [],
+  "verification": {
+    "transcription": {
+      "pass_id": "water-a-t01-first-reading",
+      "method": "Direct visual reading of annotation-cleaned 144-dpi page renders and 3x table crops by delegated Pi child; no OCR.",
+      "observations": "Read all table cells, repeated headers and cross-page source line; see batch REPORT.md and page-report.json."
+    },
+    "visual_recheck": {
+      "pass_id": "parent-water-a-t01-2026-11-08",
+      "method": "Distinct parent visual comparison against full-page images and source-region/zoomed PNGs; not independent human review.",
+      "observations": "Compared all 13 comparison rows, all nine benchmark rows and eight water-use rows, including headers and blank total serial cell. Confirmed unresolved 135* and separate 150 LPCD prose; no printed values changed. ",
+      "content_sha256": "58e9470da95b241c2b1b36064e3dccc99b51ea21c053c4b3b59fad4815ee390f"
+    }
+  }
+}

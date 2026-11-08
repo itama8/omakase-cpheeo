@@ -1,0 +1,20 @@
+{
+  "note": "Additional disjoint Part C batch; query task_status for liveness.",
+  "batch": "water-c-t01",
+  "taskId": "node:delegated-task:command%3Amcp%3A05efbfda-5a8a-40bb-a971-2e99724fd930%3Adelegate-task%3Aomakase-vt-water-c-t01",
+  "childThreadId": "thread:delegated-task:command%3Amcp%3A05efbfda-5a8a-40bb-a971-2e99724fd930%3Adelegate-task%3Aomakase-vt-water-c-t01",
+  "providerInstanceId": "pi",
+  "model": "default",
+  "pages": [
+    66,
+    67,
+    69,
+    70,
+    71,
+    74,
+    78,
+    79,
+    80,
+    81
+  ]
+}

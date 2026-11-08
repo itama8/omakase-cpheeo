@@ -278,6 +278,16 @@
     },
     "WS-2024-A": {
       "reviewed_pages": [
+        86,
+        87,
+        88,
+        91,
+        92,
+        93,
+        94,
+        95,
+        96,
+        97,
         368,
         369,
         370,
@@ -299,7 +309,7 @@
         "823": "Table 13.1 continuation transcribed; native Table 13.2 continues onward and has not been fully checked.",
         "1157": "Table 5 caption checked; preceding native input tables have not received a cell-by-cell visual comparison."
       },
-      "notes": "All six baseline image-only table units transcribed, including continuations outside their former bounds. This is not an all-page inventory of visual tables in this manual."
+      "notes": "All six baseline image-only table units transcribed, including continuations outside their former bounds. This is not an all-page inventory of visual tables in this manual. water-a-t01: ten target pages (86,87,88,91-97) separately inspected by parent; three tables sealed, including T1.1 continuation on page 92 and T1.2 source line on page 96. Unexplained 135* retained."
     },
     "WS-2024-B": {
       "reviewed_pages": [

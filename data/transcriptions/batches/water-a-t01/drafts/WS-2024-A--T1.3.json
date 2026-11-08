@@ -1,0 +1,80 @@
+{
+  "schema_version": 1,
+  "id": "WS-2024-A:T1.3",
+  "unit_id": "WS-2024-A:T1.3",
+  "manual_id": "WS-2024-A",
+  "kind": "table",
+  "number": "1.3",
+  "source_sha256": "b60f2fb548357aec676b18ef31e3b37fb0e5e8a1aec8f886880b951113848b0a",
+  "state": "pending",
+  "regions": [
+    {
+      "pdf_page": 96,
+      "page_label": "11",
+      "bbox": [
+        138.5,
+        125.0,
+        487.0,
+        297.5
+      ],
+      "render_sha256": "9791739371ae9fa862cc751353cb25e8cd7ce8c7c7b9e0fe4a0a7048fc23f7d6"
+    }
+  ],
+  "title": "Average water use per person per day in urban area",
+  "headers": [
+    "SN",
+    "Purpose",
+    "Quantity (LPCD)"
+  ],
+  "rows": [
+    [
+      "1",
+      "Drinking",
+      "5"
+    ],
+    [
+      "2",
+      "Cooking",
+      "5"
+    ],
+    [
+      "3",
+      "Bathing",
+      "50"
+    ],
+    [
+      "4",
+      "Toilet flushing",
+      "30"
+    ],
+    [
+      "5",
+      "Washing utensils",
+      "15"
+    ],
+    [
+      "6",
+      "Washing the house",
+      "10"
+    ],
+    [
+      "7",
+      "Washing of clothes",
+      "20"
+    ],
+    [
+      "",
+      "Total",
+      "135"
+    ]
+  ],
+  "markdown": "| SN | Purpose | Quantity (LPCD) |\n| --- | --- | --- |\n| 1 | Drinking | 5 |\n| 2 | Cooking | 5 |\n| 3 | Bathing | 50 |\n| 4 | Toilet flushing | 30 |\n| 5 | Washing utensils | 15 |\n| 6 | Washing the house | 10 |\n| 7 | Washing of clothes | 20 |\n|  | Total | 135 |",
+  "notes": [
+    "Table is complete on physical page 96 (printed 11): seven numbered purpose rows and one total row.",
+    "Serial-column header is printed SN without periods, unlike S. N. in Table 1.2 on the preceding page.",
+    "Third-column header is set on two printed lines, Quantity / (LPCD), and is flattened with a single space.",
+    "Total row prints an empty serial cell, the word Total centred in the Purpose column, and 135. The printed rules keep the serial column separated, so the row is not a merged cell; cell_spans is empty and the empty serial cell is kept as an empty string.",
+    "The seven printed quantities add to 135 (5+5+50+30+15+10+20), matching the printed total. This is a reading check only; no printed value is changed.",
+    "Introductory sentence above the table on the same page gives 150 LPCD as the target benchmark for cities above 10 lakhs population (IS 1172:1993) and refers to this table; the number 150 is not part of the table and is not added to it."
+  ]
+}
