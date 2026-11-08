@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:E3.45",
+  "unit_id": "SEW-2013-A:E3.45",
+  "manual_id": "SEW-2013-A",
+  "kind": "equation",
+  "number": "3.45",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "state": "verified",
+  "regions": [
+    {
+      "pdf_page": 235,
+      "page_label": "3 - 90",
+      "bbox": [
+        50,
+        525,
+        545,
+        661
+      ],
+      "render_sha256": "070aa861d13d052924647ef72857edb1b0e066aa50def2d248cef78dc3bc48cb"
+    }
+  ],
+  "title": "Safe field supporting strength of rigid pipe",
+  "parent_id": "SEW-2013-A:3.51",
+  "latex": "\\text{Safe field supporting strength}=\\text{Safe working strength}\\times\\text{load factor}",
+  "readable": "Safe field supporting strength = Safe working strength × load factor",
+  "symbols": [],
+  "applicability": "Basic design relationships for rigid pipe.",
+  "notes": [],
+  "verification": {
+    "transcription": {
+      "pass_id": "visual-2026-11-08-01",
+      "method": "direct visual reading of rendered source page; no OCR",
+      "observations": "Read each cell or formula and its printed context directly."
+    },
+    "visual_recheck": {
+      "pass_id": "visual-2026-11-08-ch3-structural-02",
+      "method": "distinct second direct visual comparison; same assistant, not independent human review",
+      "observations": "Rechecked coefficients, grouping, powers, signs, numbered and unnumbered labels, printed definitions and applicability in a distinct source-region pass. ",
+      "content_sha256": "3c98f055f982cc5ac8b626a9b8b6ec1646e0babda0e2416e626db98d1355492b"
+    }
+  }
+}

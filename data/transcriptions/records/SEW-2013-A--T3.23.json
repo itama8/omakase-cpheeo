@@ -1,0 +1,164 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:T3.23",
+  "unit_id": "SEW-2013-A:T3.23",
+  "manual_id": "SEW-2013-A",
+  "kind": "table",
+  "number": "3.23",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "state": "verified",
+  "regions": [
+    {
+      "pdf_page": 229,
+      "page_label": "3 - 84",
+      "bbox": [
+        73,
+        72,
+        508,
+        369
+      ],
+      "render_sha256": "23ecf17424322aae752289db26e1a50a75b10f680795ddab95169bc9a9a67abd"
+    }
+  ],
+  "title": "Selection of bedding for different depths and different diameters",
+  "headers": [
+    "Diameter (mm)",
+    "Bedding type for cover depth in m: up to 2.5",
+    "2.5 - 3.5",
+    "3.5 - 5.0",
+    "5.0 - 6.0",
+    "Diameter (mm)",
+    "Bedding type for cover depth in m: up to 2.5",
+    "2.5 - 3.5",
+    "3.5 - 5.0",
+    "5.0 - 6.0"
+  ],
+  "rows": [
+    [
+      "400",
+      "Ab",
+      "Ab",
+      "Ab",
+      "Ac",
+      "1,400",
+      "B",
+      "Ab",
+      "Ab",
+      "Ab"
+    ],
+    [
+      "500",
+      "Ab",
+      "Ab",
+      "Ab",
+      "Ab",
+      "1,500",
+      "B",
+      "Ab",
+      "Ab",
+      "Ab"
+    ],
+    [
+      "600",
+      "B",
+      "Ab",
+      "Ab",
+      "Ab",
+      "1,600",
+      "B",
+      "Ab",
+      "Ab",
+      "Ab"
+    ],
+    [
+      "700",
+      "B",
+      "Ab",
+      "Ab",
+      "Ab",
+      "1,800",
+      "B",
+      "Ab",
+      "Ab",
+      "Ab"
+    ],
+    [
+      "750",
+      "B",
+      "Ab",
+      "Ab",
+      "Ab",
+      "2,000",
+      "B",
+      "Ab",
+      "Ab",
+      "Ab"
+    ],
+    [
+      "800",
+      "B",
+      "Ab",
+      "Ab",
+      "Ab",
+      "2,200",
+      "B",
+      "Ab",
+      "Ab",
+      "Ac"
+    ],
+    [
+      "900",
+      "B",
+      "Ab",
+      "Ab",
+      "Ab",
+      "2,400",
+      "B",
+      "Ab",
+      "Ab",
+      "Ac"
+    ],
+    [
+      "1,000",
+      "B",
+      "Ab",
+      "Ab",
+      "Ab",
+      "2,600",
+      "B",
+      "Ab",
+      "Ab",
+      "Ac"
+    ],
+    [
+      "1,200",
+      "B",
+      "Ab",
+      "Ab",
+      "Ab",
+      "2,800",
+      "B",
+      "Ab",
+      "Ab",
+      "Ac"
+    ]
+  ],
+  "cell_spans": [],
+  "markdown": "| Diameter (mm) | Bedding type for cover depth in m: up to 2.5 | 2.5 - 3.5 | 3.5 - 5.0 | 5.0 - 6.0 | Diameter (mm) | Bedding type for cover depth in m: up to 2.5 | 2.5 - 3.5 | 3.5 - 5.0 | 5.0 - 6.0 |\n| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |\n| 400 | Ab | Ab | Ab | Ac | 1,400 | B | Ab | Ab | Ab |\n| 500 | Ab | Ab | Ab | Ab | 1,500 | B | Ab | Ab | Ab |\n| 600 | B | Ab | Ab | Ab | 1,600 | B | Ab | Ab | Ab |\n| 700 | B | Ab | Ab | Ab | 1,800 | B | Ab | Ab | Ab |\n| 750 | B | Ab | Ab | Ab | 2,000 | B | Ab | Ab | Ab |\n| 800 | B | Ab | Ab | Ab | 2,200 | B | Ab | Ab | Ac |\n| 900 | B | Ab | Ab | Ab | 2,400 | B | Ab | Ab | Ac |\n| 1,000 | B | Ab | Ab | Ab | 2,600 | B | Ab | Ab | Ac |\n| 1,200 | B | Ab | Ab | Ab | 2,800 | B | Ab | Ab | Ac |",
+  "notes": [
+    "Transcriber layout note: both five-column blocks continue one diameter list. The shared depth-unit heading applies to the four depth columns within each block."
+  ],
+  "verification": {
+    "transcription": {
+      "pass_id": "visual-2026-11-08-01",
+      "method": "direct visual reading of rendered source page; no OCR",
+      "observations": "Read each cell or formula and its printed context directly."
+    },
+    "visual_recheck": {
+      "pass_id": "visual-2026-11-08-ch3-structural-02",
+      "method": "distinct second direct visual comparison; same assistant, not independent human review",
+      "observations": "Rechecked every cell of 9 rows, headers/units and all printed notes in the separate source-region pass. ",
+      "content_sha256": "d43e1fd6a463e0887cb6dcd773906da66a7ef07b8b01946adef1cc76aef847ae"
+    }
+  }
+}

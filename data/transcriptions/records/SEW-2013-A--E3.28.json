@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:E3.28",
+  "unit_id": "SEW-2013-A:E3.28",
+  "manual_id": "SEW-2013-A",
+  "kind": "equation",
+  "number": "3.28",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "state": "verified",
+  "regions": [
+    {
+      "pdf_page": 216,
+      "page_label": "3 - 71",
+      "bbox": [
+        50,
+        73,
+        545,
+        551
+      ],
+      "render_sha256": "a36edc52bbd44b70d7d60ab1c8a3914b72b93fb882dae48631a39ad343f996b0"
+    }
+  ],
+  "title": "Marston load for imperfect trench installation",
+  "parent_id": "SEW-2013-A:3.43.1",
+  "latex": "W_c=C_n\\,w\\,B_c^2",
+  "readable": "W_c = C_n w B_c^2",
+  "symbols": [],
+  "applicability": "Imperfect trench conduits. Values of Cn may be obtained from Figure 3.36 for negative projecting conduits taking Bc = Bd on the assumption that the trench fill is no wider than the pipe.",
+  "notes": [],
+  "verification": {
+    "transcription": {
+      "pass_id": "visual-2026-11-08-01",
+      "method": "direct visual reading of rendered source page; no OCR",
+      "observations": "Read each cell or formula and its printed context directly."
+    },
+    "visual_recheck": {
+      "pass_id": "visual-2026-11-08-ch3-structural-02",
+      "method": "distinct second direct visual comparison; same assistant, not independent human review",
+      "observations": "Rechecked coefficients, grouping, powers, signs, numbered and unnumbered labels, printed definitions and applicability in a distinct source-region pass. ",
+      "content_sha256": "0ef4a7141e23d2fd29da5ed0a17efe45a8d323e1fc6b66ac63f49127b7e05259"
+    }
+  }
+}

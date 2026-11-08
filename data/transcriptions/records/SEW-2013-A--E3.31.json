@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:E3.31",
+  "unit_id": "SEW-2013-A:E3.31",
+  "manual_id": "SEW-2013-A",
+  "kind": "equation",
+  "number": "3.31",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "state": "verified",
+  "regions": [
+    {
+      "pdf_page": 220,
+      "page_label": "3 - 75",
+      "bbox": [
+        50,
+        469,
+        545,
+        762
+      ],
+      "render_sha256": "d5a2d9d5d25895b85d1980542cf9187ca76fdce9450b113052f2886e5d2e32ba"
+    }
+  ],
+  "title": "Marston load in tunnel installation",
+  "parent_id": "SEW-2013-A:3.45",
+  "latex": "W_t=C_t B_t(wB_t-2C)",
+  "readable": "W_t = C_t B_t (w B_t - 2 C)",
+  "symbols": [
+    {
+      "symbol": "W_t",
+      "definition": "Load on the pipe or tunnel support in kg/m"
+    },
+    {
+      "symbol": "w",
+      "definition": "Unit weight of soil above the tunnel in kg/m³"
+    },
+    {
+      "symbol": "B_t",
+      "definition": "Maximum width of the funnel excavation in m"
+    },
+    {
+      "symbol": "C",
+      "definition": "Coefficient of cohesion in kg/m² and"
+    },
+    {
+      "symbol": "C_t",
+      "definition": "Load coefficient which is a function of the ratio (H/Bt) of the distance from the ground surface to the top of the tunnel to the maximum width of tunnel excavation and of the coefficient of internal friction of the material of the tunnel."
+    }
+  ],
+  "applicability": "Tunnel condition. When the coefficient of cohesion is zero, the formula reduces to the same form as in trench condition Equation 3.29.",
+  "notes": [
+    "Transcriber note: the B_t definition visibly prints \"funnel excavation\"; the formula and definition are retained as printed."
+  ],
+  "verification": {
+    "transcription": {
+      "pass_id": "visual-2026-11-08-01",
+      "method": "direct visual reading of rendered source page; no OCR",
+      "observations": "Read each cell or formula and its printed context directly."
+    },
+    "visual_recheck": {
+      "pass_id": "visual-2026-11-08-ch3-structural-02",
+      "method": "distinct second direct visual comparison; same assistant, not independent human review",
+      "observations": "Rechecked coefficients, grouping, powers, signs, numbered and unnumbered labels, printed definitions and applicability in a distinct source-region pass. ",
+      "content_sha256": "80a1798c3d3017a3e8cb05a7d88d68d27ab99b08c4e5cbde81a62dc17d054b6d"
+    }
+  }
+}

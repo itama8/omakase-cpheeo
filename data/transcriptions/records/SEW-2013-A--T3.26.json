@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:T3.26",
+  "unit_id": "SEW-2013-A:T3.26",
+  "manual_id": "SEW-2013-A",
+  "kind": "table",
+  "number": "3.26",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "state": "verified",
+  "regions": [
+    {
+      "pdf_page": 234,
+      "page_label": "3 - 89",
+      "bbox": [
+        70,
+        589,
+        532,
+        743
+      ],
+      "render_sha256": "3893447612c92ab79b5287dcd37f0da0020fa58de7962510e23e5c850ecd4d9b"
+    }
+  ],
+  "title": "Values of Z for different pipe beddings",
+  "headers": [
+    "Fraction of conduit on which lateral pressure act ‘m’",
+    "Value of ‘Z’ for ‘A’ Class Beddings",
+    "Value of ‘Z’ for Other Beddings",
+    "Fraction of conduit on which lateral pressure act ‘m’",
+    "Value of ‘Z’ for ‘A’ Class Beddings",
+    "Value of ‘Z’ for Other Beddings"
+  ],
+  "rows": [
+    [
+      "0.0",
+      "0.150",
+      "0.000",
+      "0.7",
+      "0.811",
+      "0.594"
+    ],
+    [
+      "0.3",
+      "0.743",
+      "0.217",
+      "0.9",
+      "0.678",
+      "0.655"
+    ],
+    [
+      "0.5",
+      "0.856",
+      "0.423",
+      "1.0",
+      "0.638",
+      "0.638"
+    ]
+  ],
+  "cell_spans": [],
+  "markdown": "| Fraction of conduit on which lateral pressure act ‘m’ | Value of ‘Z’ for ‘A’ Class Beddings | Value of ‘Z’ for Other Beddings | Fraction of conduit on which lateral pressure act ‘m’ | Value of ‘Z’ for ‘A’ Class Beddings | Value of ‘Z’ for Other Beddings |\n| --- | --- | --- | --- | --- | --- |\n| 0.0 | 0.150 | 0.000 | 0.7 | 0.811 | 0.594 |\n| 0.3 | 0.743 | 0.217 | 0.9 | 0.678 | 0.655 |\n| 0.5 | 0.856 | 0.423 | 1.0 | 0.638 | 0.638 |",
+  "notes": [
+    "Source: CPHEEO, 1993",
+    "The two three-column blocks continue one list."
+  ],
+  "verification": {
+    "transcription": {
+      "pass_id": "visual-2026-11-08-01",
+      "method": "direct visual reading of rendered source page; no OCR",
+      "observations": "Read each cell or formula and its printed context directly."
+    },
+    "visual_recheck": {
+      "pass_id": "visual-2026-11-08-ch3-structural-02",
+      "method": "distinct second direct visual comparison; same assistant, not independent human review",
+      "observations": "Rechecked every cell of 3 rows, headers/units and all printed notes in the separate source-region pass. ",
+      "content_sha256": "0ff087e79db1ed30ce28dd5f5d287977d3a343ca8fb2b2687ca96a30831e0b42"
+    }
+  }
+}

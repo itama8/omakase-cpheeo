@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:E3.22",
+  "unit_id": "SEW-2013-A:E3.22",
+  "manual_id": "SEW-2013-A",
+  "kind": "equation",
+  "number": "3.22",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "state": "verified",
+  "regions": [
+    {
+      "pdf_page": 183,
+      "page_label": "3 - 38",
+      "bbox": [
+        50,
+        73,
+        545,
+        284
+      ],
+      "render_sha256": "b7d7c8ce01830066b077cdb5e27bd9fb9a7765619014a2d383e3c66c4665ecfc"
+    }
+  ],
+  "title": "Babbitt side-flow leaping weir length",
+  "parent_id": "SEW-2013-A:3.18.1",
+  "latex": "L=7.6\\times10^{-4}\\times V\\times D\\times\\operatorname{Log}(h_1/h_2)",
+  "readable": "L = 7.6 × 10^-4 × V × D × Log(h_1/h_2)",
+  "symbols": [
+    {
+      "symbol": "L",
+      "definition": "Required length in m"
+    },
+    {
+      "symbol": "V",
+      "definition": "Velocity of approach in m/s"
+    },
+    {
+      "symbol": "D",
+      "definition": "Dia of the sewer in mm"
+    },
+    {
+      "symbol": "h1, h2",
+      "definition": "Heads in m above the crest of the weir upstream and downstream"
+    }
+  ],
+  "applicability": "The formula is limited to conditions in which the weir is placed in the side of a circular pipe at a distance above the bottom, greater than d/4 and less than d/2 where ‘d’ is the diameter of the pipe and the edge of the weir is sharp and parallel to the invert of the channel. Its usefulness is limited in that it was devised for pipes between 450 and 600 mm in diameter and where the depth of flow above the weir should not exceed 3d/4.",
+  "notes": [
+    "Transcriber note: the printed Log has no explicit base; no base is inferred."
+  ],
+  "verification": {
+    "transcription": {
+      "pass_id": "visual-2026-11-08-01",
+      "method": "direct visual reading of rendered source page; no OCR",
+      "observations": "Read each cell or formula and its printed context directly."
+    },
+    "visual_recheck": {
+      "pass_id": "visual-2026-11-08-equations-06",
+      "method": "distinct second visual inspection of exact source-region renders; same assistant, not an independent reviewer",
+      "observations": "Rechecked all formula coefficients, powers, denominators/grouping, numbered references, definitions and printed applicability. Retained the V-notch tangent inconsistency and undefined log base and g without correction.",
+      "content_sha256": "860d94133a86245f941c5476b5c4f6e86dbfdfb494729cb54b8be62f4ab4672b"
+    }
+  }
+}

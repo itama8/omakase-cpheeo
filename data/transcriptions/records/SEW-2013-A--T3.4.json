@@ -1,0 +1,122 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:T3.4",
+  "unit_id": "SEW-2013-A:T3.4",
+  "manual_id": "SEW-2013-A",
+  "kind": "table",
+  "number": "3.4",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "state": "verified",
+  "regions": [
+    {
+      "pdf_page": 150,
+      "page_label": "3 - 5",
+      "bbox": [
+        97,
+        73,
+        512,
+        479
+      ],
+      "render_sha256": "8eec484a75aa7c26a9d05f09894b56d0f29d7c2479cf4776034e265720616a22"
+    }
+  ],
+  "title": "Institutional needs for potable water",
+  "headers": [
+    "No.",
+    "Institutions",
+    "Water Supply (litres)"
+  ],
+  "rows": [
+    [
+      "1",
+      "Hospital including laundry and beds exceeding 100",
+      "450 per bed"
+    ],
+    [
+      "2",
+      "Hospital including laundry and beds not exceeding 100",
+      "340 per bed"
+    ],
+    [
+      "3",
+      "Lodging houses / hotels",
+      "180 per bed"
+    ],
+    [
+      "4",
+      "Hostels",
+      "135 lpcd"
+    ],
+    [
+      "5",
+      "Nurses homes and medical quarters",
+      "135 lpcd"
+    ],
+    [
+      "6",
+      "Boarding schools/colleges",
+      "135 lpcd"
+    ],
+    [
+      "7",
+      "Restaurants",
+      "70 per seat"
+    ],
+    [
+      "8",
+      "Airports and Seaports, duty staff",
+      "70 lpcd"
+    ],
+    [
+      "9",
+      "Airports and Seaports, alighting and boarding persons",
+      "15 lpcd"
+    ],
+    [
+      "10",
+      "Train and Bus stations, duty staff",
+      "70 lpcd"
+    ],
+    [
+      "11",
+      "Train and Bus stations, alighting and boarding persons",
+      "15 lpcd"
+    ],
+    [
+      "12",
+      "Day schools/colleges",
+      "45 lpcd"
+    ],
+    [
+      "13",
+      "Offices",
+      "45 lpcd"
+    ],
+    [
+      "14",
+      "Factories, duty staff",
+      "45 lpcd"
+    ],
+    [
+      "15",
+      "Cinema, concert halls and theatres",
+      "15 lpcd"
+    ]
+  ],
+  "cell_spans": [],
+  "markdown": "| No. | Institutions | Water Supply (litres) |\n| --- | --- | --- |\n| 1 | Hospital including laundry and beds exceeding 100 | 450 per bed |\n| 2 | Hospital including laundry and beds not exceeding 100 | 340 per bed |\n| 3 | Lodging houses / hotels | 180 per bed |\n| 4 | Hostels | 135 lpcd |\n| 5 | Nurses homes and medical quarters | 135 lpcd |\n| 6 | Boarding schools/colleges | 135 lpcd |\n| 7 | Restaurants | 70 per seat |\n| 8 | Airports and Seaports, duty staff | 70 lpcd |\n| 9 | Airports and Seaports, alighting and boarding persons | 15 lpcd |\n| 10 | Train and Bus stations, duty staff | 70 lpcd |\n| 11 | Train and Bus stations, alighting and boarding persons | 15 lpcd |\n| 12 | Day schools/colleges | 45 lpcd |\n| 13 | Offices | 45 lpcd |\n| 14 | Factories, duty staff | 45 lpcd |\n| 15 | Cinema, concert halls and theatres | 15 lpcd |",
+  "notes": [],
+  "verification": {
+    "transcription": {
+      "pass_id": "visual-2026-11-08-01",
+      "method": "direct visual reading of rendered source page; no OCR",
+      "observations": "Read each cell or formula and its printed context directly."
+    },
+    "visual_recheck": {
+      "pass_id": "visual-2026-11-08-04",
+      "method": "separate second visual comparison with rendered source region; same assistant, not an independent reviewer",
+      "observations": "All 15 institution rows and per-bed/per-seat/lpcd units rechecked.",
+      "content_sha256": "318f89b949155420f0be0e6585bea9063ccc3f6e75c47e08371e5627577c2f1c"
+    }
+  }
+}

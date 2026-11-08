@@ -67,7 +67,7 @@ def passages_of(unit: Unit) -> list[str]:
     return out
 
 
-def build(units: list[Unit], manuals: tuple[Manual, ...] = MANUALS, db_path: Path = DEFAULT_DB) -> Path:
+def build(units: list[Unit], manuals: tuple[Manual, ...] = MANUALS, db_path: Path = DEFAULT_DB, *, transcription_records: Path | None = None) -> Path:
     db_path.parent.mkdir(parents=True, exist_ok=True)
     tmp = db_path.with_suffix(".tmp")
     tmp.unlink(missing_ok=True)
@@ -118,6 +118,9 @@ def build(units: list[Unit], manuals: tuple[Manual, ...] = MANUALS, db_path: Pat
                 "INSERT INTO passages VALUES (?,?,?,?,?)",
                 (u.id, seq, handle_tokens(u), f"{u.title} {context}".strip(), text),
             )
+    if transcription_records is not None:
+        from .transcriptions import apply
+        apply(con, transcription_records)
     con.commit()
     con.execute("INSERT INTO passages(passages) VALUES ('optimize')")
     con.commit()
@@ -128,7 +131,7 @@ def build(units: list[Unit], manuals: tuple[Manual, ...] = MANUALS, db_path: Pat
 
 _WORD = re.compile(r"[A-Za-z0-9]+")
 _NUMBERED_REF = re.compile(
-    r"\b(table|tab|fig|figure|section|sec|clause|para|paragraph|chapter|ch|appendix|app|annexure|annex)\.?\s*"
+    r"\b(equation|eq|table|tab|fig|figure|section|sec|clause|para|paragraph|chapter|ch|appendix|app|annexure|annex)\.?\s*"
     r"([A-Z]\s*[.-]?\s*\d+(?:[.-]\s*\d+)*(?:\s*[A-Z]\b)?(?:[.-]\s*\d+)*|AA\b|A\b|\d+(?:[.-]\d+)*[A-Za-z]?)", re.I,
 )
 
@@ -153,7 +156,7 @@ def explicit_refs(text: str) -> list[tuple[str, str]]:
     out = []
     for kind, number in _NUMBERED_REF.findall(text):
         k = kind.lower()
-        kind = "table" if k.startswith("tab") else "figure" if k.startswith("fig") else "chapter" if k.startswith("ch") else "annexure" if k.startswith("annex") else "appendix" if k.startswith("app") else "section"
+        kind = "equation" if k in ("eq", "equation") else "table" if k.startswith("tab") else "figure" if k.startswith("fig") else "chapter" if k.startswith("ch") else "annexure" if k.startswith("annex") else "appendix" if k.startswith("app") else "section"
         number = re.sub(r"\s+", "", number).upper()
         number = re.sub(r"^([A-Z])\.(?=\d)", r"\1", number)
         if number[0].isdigit():

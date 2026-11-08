@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:E3.8",
+  "unit_id": "SEW-2013-A:E3.8",
+  "manual_id": "SEW-2013-A",
+  "kind": "equation",
+  "number": "3.8",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "state": "verified",
+  "regions": [
+    {
+      "pdf_page": 157,
+      "page_label": "3 - 12",
+      "bbox": [
+        50,
+        598,
+        545,
+        772
+      ],
+      "render_sha256": "89832580cd201dc5fe562bf61d6dec9a8ad3e315737f7fca07fb75f37edbb9a9"
+    }
+  ],
+  "title": "Rectangular weir with end contractions discharge",
+  "parent_id": "SEW-2013-A:3.10",
+  "latex": "Q=1.85\\times(L-0.2H)\\times H^{1.5}",
+  "readable": "Q = 1.85 × (L - 0.2H) × H power 1.5",
+  "symbols": [
+    {
+      "symbol": "Q",
+      "definition": "cum/sec"
+    },
+    {
+      "symbol": "H",
+      "definition": "m"
+    },
+    {
+      "symbol": "L",
+      "definition": "length of weir"
+    }
+  ],
+  "applicability": "Similar to the rectangular weir except that the length of the weir is smaller than the width of the drain. The depth of flow is measured over the overflow edge of the notch.",
+  "notes": [],
+  "verification": {
+    "transcription": {
+      "pass_id": "visual-2026-11-08-01",
+      "method": "direct visual reading of rendered source page; no OCR",
+      "observations": "Read each cell or formula and its printed context directly."
+    },
+    "visual_recheck": {
+      "pass_id": "visual-2026-11-08-equations-06",
+      "method": "distinct second visual inspection of exact source-region renders; same assistant, not an independent reviewer",
+      "observations": "Rechecked all formula coefficients, powers, denominators/grouping, numbered references, definitions and printed applicability. Retained the V-notch tangent inconsistency and undefined log base and g without correction.",
+      "content_sha256": "975a60c72bae3a559f4c76b9f5087c612256a850c4ba9b1b8dd5ff2985b45caf"
+    }
+  }
+}

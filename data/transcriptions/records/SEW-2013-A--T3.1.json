@@ -1,0 +1,68 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:T3.1",
+  "unit_id": "SEW-2013-A:T3.1",
+  "manual_id": "SEW-2013-A",
+  "kind": "table",
+  "number": "3.1",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "state": "verified",
+  "regions": [
+    {
+      "pdf_page": 147,
+      "page_label": "3 - 2",
+      "bbox": [
+        97,
+        211,
+        497,
+        408
+      ],
+      "render_sha256": "81fefb3ef74e6000d9ad37cf094fc7e64aafd8894b9d7ad1752202d031f0c838"
+    }
+  ],
+  "title": "Densities of Population vs. Populated areas",
+  "headers": [
+    "Size of town (Population)",
+    "Density of population per hectare"
+  ],
+  "rows": [
+    [
+      "Up to 5,000",
+      "75-150"
+    ],
+    [
+      "Above 5,001 to 20,000",
+      "150-250"
+    ],
+    [
+      "Above 20,001 to 50,000",
+      "250-300"
+    ],
+    [
+      "Above 50,001 to 1,00,000",
+      "300-350"
+    ],
+    [
+      "Above 1,00,001",
+      "350-1,000"
+    ]
+  ],
+  "cell_spans": [],
+  "markdown": "| Size of town (Population) | Density of population per hectare |\n| --- | --- |\n| Up to 5,000 | 75-150 |\n| Above 5,001 to 20,000 | 150-250 |\n| Above 20,001 to 50,000 | 250-300 |\n| Above 50,001 to 1,00,000 | 300-350 |\n| Above 1,00,001 | 350-1,000 |",
+  "notes": [
+    "Source: CPHEEO, 1993"
+  ],
+  "verification": {
+    "transcription": {
+      "pass_id": "visual-2026-11-08-01",
+      "method": "direct visual reading of rendered source page; no OCR",
+      "observations": "Read each cell or formula and its printed context directly."
+    },
+    "visual_recheck": {
+      "pass_id": "visual-2026-11-08-04",
+      "method": "separate second visual comparison with rendered source region; same assistant, not an independent reviewer",
+      "observations": "All five population ranges and density ranges including 350-1,000 rechecked.",
+      "content_sha256": "8c8451dadd14b23a1cc3a87fce22edc8a5f46fc77928a13c62fb610e191c7a42"
+    }
+  }
+}

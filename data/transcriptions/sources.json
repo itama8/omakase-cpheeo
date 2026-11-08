@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "manuals": {
+    "SEW-2013-A": {
+      "file": "Seweage CPHEEO.pdf",
+      "sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+      "physical_pages": 963,
+      "review_pages": 871,
+      "indexed_tables": 192,
+      "image_table_units": 192
+    },
+    "WS-2024-A": {
+      "file": "Water Supply_2023/Part-A-Manual-Engineering-Planning-Design-and-Implementation(3).pdf",
+      "sha256": "b60f2fb548357aec676b18ef31e3b37fb0e5e8a1aec8f886880b951113848b0a",
+      "physical_pages": 1283,
+      "review_pages": 1198,
+      "indexed_tables": 215,
+      "image_table_units": 6
+    },
+    "WS-2024-B": {
+      "file": "Water Supply_2023/Part-B-Manual-Operation-and-Maintenance(5).pdf",
+      "sha256": "1cfd336b3e2928b95cec3899d3e1d15807b5598d78730d6fe3eef381021844e7",
+      "physical_pages": 702,
+      "review_pages": 635,
+      "indexed_tables": 93,
+      "image_table_units": 2
+    },
+    "WS-2024-C": {
+      "file": "Water Supply_2023/Part-C-Manual-Management(4).pdf",
+      "sha256": "f1cc3a56b1cb4dc0d1c140a3d0f9731ff4e5e1c8273a3ebb225b47db4ae3c29c",
+      "physical_pages": 265,
+      "review_pages": 213,
+      "indexed_tables": 35,
+      "image_table_units": 1
+    }
+  }
+}

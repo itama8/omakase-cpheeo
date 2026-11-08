@@ -1,0 +1,75 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:T3.18",
+  "unit_id": "SEW-2013-A:T3.18",
+  "manual_id": "SEW-2013-A",
+  "kind": "table",
+  "number": "3.18",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "state": "verified",
+  "regions": [
+    {
+      "pdf_page": 217,
+      "page_label": "3 - 72",
+      "bbox": [
+        88,
+        590,
+        513,
+        751
+      ],
+      "render_sha256": "e2b9ef5be1b5736b649bd2459e4caaefe01ef046ecf937073ab0f3c7b2312054"
+    }
+  ],
+  "title": "Weights of common filling material",
+  "headers": [
+    "Materials",
+    "Weight (kg/m³)",
+    "Materials",
+    "Weight (kg/m³)"
+  ],
+  "rows": [
+    [
+      "Dry Sand",
+      "1,600",
+      "Saturated Clay",
+      "2,080"
+    ],
+    [
+      "Ordinary (Damp Sand)",
+      "1,840",
+      "Saturated Top Soil",
+      "1,840"
+    ],
+    [
+      "Wet Sand",
+      "1,920",
+      "Sand and Damp Soil",
+      "1,600"
+    ],
+    [
+      "Damp Clay",
+      "1,920",
+      "",
+      ""
+    ]
+  ],
+  "cell_spans": [],
+  "markdown": "| Materials | Weight (kg/m³) | Materials | Weight (kg/m³) |\n| --- | --- | --- | --- |\n| Dry Sand | 1,600 | Saturated Clay | 2,080 |\n| Ordinary (Damp Sand) | 1,840 | Saturated Top Soil | 1,840 |\n| Wet Sand | 1,920 | Sand and Damp Soil | 1,600 |\n| Damp Clay | 1,920 |  |  |",
+  "notes": [
+    "Source: CPHEEO, 1993",
+    "Two material/weight column pairs continue one list; final two cells are blank."
+  ],
+  "verification": {
+    "transcription": {
+      "pass_id": "visual-2026-11-08-01",
+      "method": "direct visual reading of rendered source page; no OCR",
+      "observations": "Read each cell or formula and its printed context directly."
+    },
+    "visual_recheck": {
+      "pass_id": "visual-2026-11-08-ch3-structural-02",
+      "method": "distinct second direct visual comparison; same assistant, not independent human review",
+      "observations": "Rechecked every cell of 4 rows, headers/units and all printed notes in the separate source-region pass. ",
+      "content_sha256": "a45f852693f8761611cefc0f40e69331e67067802a5f4f508a0e351d609d2bf4"
+    }
+  }
+}

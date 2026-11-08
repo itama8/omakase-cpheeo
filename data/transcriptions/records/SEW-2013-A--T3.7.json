@@ -1,0 +1,167 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:T3.7",
+  "unit_id": "SEW-2013-A:T3.7",
+  "manual_id": "SEW-2013-A",
+  "kind": "table",
+  "number": "3.7",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "state": "verified",
+  "regions": [
+    {
+      "pdf_page": 154,
+      "page_label": "3 - 9",
+      "bbox": [
+        98,
+        314,
+        520,
+        566
+      ],
+      "render_sha256": "a0e657cecc6b3fe4a8d78952bc536221070e90ee079806863872c87808aae3c7"
+    }
+  ],
+  "title": "Duration vs. intensity of storms",
+  "headers": [
+    "Duration in Minutes / Intensity mm/hr",
+    "30",
+    "35",
+    "40",
+    "45",
+    "50",
+    "60",
+    "75",
+    "100",
+    "125"
+  ],
+  "rows": [
+    [
+      "5",
+      "",
+      "",
+      "",
+      "",
+      "100",
+      "40",
+      "18",
+      "10",
+      "2"
+    ],
+    [
+      "10",
+      "",
+      "",
+      "90",
+      "72",
+      "41",
+      "25",
+      "10",
+      "5",
+      "1"
+    ],
+    [
+      "15",
+      "",
+      "82",
+      "75",
+      "45",
+      "20",
+      "12",
+      "5",
+      "1",
+      ""
+    ],
+    [
+      "20",
+      "83",
+      "62",
+      "51",
+      "31",
+      "10",
+      "9",
+      "4",
+      "2",
+      ""
+    ],
+    [
+      "30",
+      "73",
+      "40",
+      "22",
+      "10",
+      "8",
+      "4",
+      "2",
+      "",
+      ""
+    ],
+    [
+      "40",
+      "34",
+      "16",
+      "8",
+      "4",
+      "2",
+      "1",
+      "",
+      "",
+      ""
+    ],
+    [
+      "50",
+      "14",
+      "8",
+      "4",
+      "3",
+      "1",
+      "",
+      "",
+      "",
+      ""
+    ],
+    [
+      "60",
+      "8",
+      "4",
+      "2",
+      "1",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    [
+      "90",
+      "4",
+      "2",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ]
+  ],
+  "cell_spans": [],
+  "markdown": "| Duration in Minutes / Intensity mm/hr | 30 | 35 | 40 | 45 | 50 | 60 | 75 | 100 | 125 |\n| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |\n| 5 |  |  |  |  | 100 | 40 | 18 | 10 | 2 |\n| 10 |  |  | 90 | 72 | 41 | 25 | 10 | 5 | 1 |\n| 15 |  | 82 | 75 | 45 | 20 | 12 | 5 | 1 |  |\n| 20 | 83 | 62 | 51 | 31 | 10 | 9 | 4 | 2 |  |\n| 30 | 73 | 40 | 22 | 10 | 8 | 4 | 2 |  |  |\n| 40 | 34 | 16 | 8 | 4 | 2 | 1 |  |  |  |\n| 50 | 14 | 8 | 4 | 3 | 1 |  |  |  |  |\n| 60 | 8 | 4 | 2 | 1 |  |  |  |  |  |\n| 90 | 4 | 2 |  |  |  |  |  |  |  |",
+  "notes": [
+    "No. of storms of stated intensity or more for a period of 26 years",
+    "Source: CPHEEO, 1993",
+    "Adjacent printed explanation: The stepped line indicates the location of the storm occurring once in 2 years, i.e., 13 times in 26 years. The time-intensity values for this frequency are obtained by interpolation from Table 3.8.",
+    "Transcriber layout note: empty strings represent blank printed positions, not zero observations. The stepped graphical line remains available in the source image."
+  ],
+  "verification": {
+    "transcription": {
+      "pass_id": "visual-2026-11-08-01",
+      "method": "direct visual reading of rendered source page; no OCR",
+      "observations": "Read each cell or formula and its printed context directly."
+    },
+    "visual_recheck": {
+      "pass_id": "visual-2026-11-08-04",
+      "method": "separate second visual comparison with rendered source region; same assistant, not an independent reviewer",
+      "observations": "Every storm-count position and blank rechecked against the stepped table; graphic line retained in source.",
+      "content_sha256": "1f5716ceb3ce66a6b32649090aa1d9f5e8d8609f350735ce699c7a39ea258632"
+    }
+  }
+}

@@ -1,0 +1,125 @@
+{
+  "schema_version": 1,
+  "id": "WS-2024-A:AN6.3-T7",
+  "unit_id": "WS-2024-A:AN6.3-T7",
+  "manual_id": "WS-2024-A",
+  "kind": "table",
+  "number": "7, Annexure 6.3",
+  "title": "COST RESULTS",
+  "source_sha256": "b60f2fb548357aec676b18ef31e3b37fb0e5e8a1aec8f886880b951113848b0a",
+  "state": "verified",
+  "regions": [
+    {
+      "pdf_page": 1119,
+      "page_label": "1033",
+      "bbox": [
+        65,
+        70,
+        550,
+        550
+      ],
+      "render_sha256": "b68afbe0210523dc6dc4216980337d39a6c9431112f578fc3773fd57f31542a8"
+    }
+  ],
+  "headers": [
+    "Diameter",
+    "Length",
+    "Cost",
+    "Cumulative Cost"
+  ],
+  "rows": [
+    [
+      "80",
+      "83",
+      "62,012",
+      "62,012"
+    ],
+    [
+      "100",
+      "201",
+      "1,91,437",
+      "2,53,448"
+    ],
+    [
+      "150",
+      "618",
+      "8,54,596",
+      "11,08,044"
+    ],
+    [
+      "200",
+      "3,493",
+      "65,32,612",
+      "76,40,656"
+    ],
+    [
+      "250",
+      "202",
+      "5,01,782",
+      "81,42,438"
+    ],
+    [
+      "300",
+      "777",
+      "24,14,860",
+      "1,05,57,298"
+    ],
+    [
+      "350",
+      "1,082",
+      "42,38,468",
+      "1,47,95,766"
+    ],
+    [
+      "400",
+      "356",
+      "16,22,648",
+      "1,64,18,414"
+    ],
+    [
+      "450",
+      "7,789",
+      "4,33,06,840",
+      "5,97,25,254"
+    ],
+    [
+      "500",
+      "13",
+      "85,570",
+      "5,98,10,824"
+    ],
+    [
+      "600",
+      "2,187",
+      "1,78,75,783",
+      "7,76,86,607"
+    ],
+    [
+      "Total",
+      "16,801",
+      "7,76,86,607",
+      ""
+    ]
+  ],
+  "markdown": "| Diameter | Length | Cost | Cumulative Cost |\n| --- | --- | --- | --- |\n| 80 | 83 | 62,012 | 62,012 |\n| 100 | 201 | 1,91,437 | 2,53,448 |\n| 150 | 618 | 8,54,596 | 11,08,044 |\n| 200 | 3,493 | 65,32,612 | 76,40,656 |\n| 250 | 202 | 5,01,782 | 81,42,438 |\n| 300 | 777 | 24,14,860 | 1,05,57,298 |\n| 350 | 1,082 | 42,38,468 | 1,47,95,766 |\n| 400 | 356 | 16,22,648 | 1,64,18,414 |\n| 450 | 7,789 | 4,33,06,840 | 5,97,25,254 |\n| 500 | 13 | 85,570 | 5,98,10,824 |\n| 600 | 2,187 | 1,78,75,783 | 7,76,86,607 |\n| Total | 16,801 | 7,76,86,607 |  |",
+  "notes": [
+    "Remarks: 1. Some of the links as shown in pipe data (Table 6) are of two sizes. For example, pipe 1 of 2,200 m in length is split into two sizes of 600 mm and 500 mm having a length of 2,187 m and 13 m, respectively.",
+    "2. Small lengths of split sizes like 13 m in link 1 of 500 mm can be changed to a higher size to avoid a reducer. This will, however, result in the excess head at one or more reservoirs which will then be required to be dissipated by providing head-dissipating devices.",
+    "3. Incidentally, dropping 500 mm size, will not require any procurement of that size as can be seen from Table 6.3.7.",
+    "Transcriber note: units are absent from the printed column headers and have not been invented. The following source page starts Annexure 6.4, not a table continuation. Worked network example."
+  ],
+  "cell_spans": [],
+  "verification": {
+    "transcription": {
+      "pass_id": "visual-2026-11-08-water-01",
+      "method": "direct visual reading of all source and continuation pages, no OCR",
+      "observations": "Read headers, merged groups, every printed cell, blanks and notes from rendered PDF pages."
+    },
+    "visual_recheck": {
+      "pass_id": "visual-2026-11-08-water-02",
+      "method": "separate second visual comparison of each exact source-region render including every continuation; same assistant, not an independent reviewer",
+      "observations": "Rechecked all 12 rows, column headers, values/units, merged relationships and printed notes across 1 source regions.",
+      "content_sha256": "518316cfccac202776692401bdf9a186aa8bc59c479105374a0594e4cb73619d"
+    }
+  }
+}

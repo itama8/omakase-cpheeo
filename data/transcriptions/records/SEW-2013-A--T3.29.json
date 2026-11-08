@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:T3.29",
+  "unit_id": "SEW-2013-A:T3.29",
+  "manual_id": "SEW-2013-A",
+  "kind": "table",
+  "number": "3.29",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "state": "verified",
+  "regions": [
+    {
+      "pdf_page": 253,
+      "page_label": "3 - 108",
+      "bbox": [
+        117,
+        225,
+        463,
+        345
+      ],
+      "render_sha256": "e6c1bdce88535bc78cccd193deb9067b354f10e45a063679a2ed621d4045ad11"
+    }
+  ],
+  "title": "Criteria for selection of trenchless technology",
+  "headers": [
+    "No.",
+    "Diameter of Pipe",
+    "Suitable Trenchless Technology"
+  ],
+  "rows": [
+    [
+      "1",
+      "< 1,000 mm",
+      "Guided Boring"
+    ],
+    [
+      "2",
+      "1,000 mm – 1,500 mm",
+      "Pipe Jacking"
+    ],
+    [
+      "3",
+      "> 1,500 mm",
+      "Tunnel Boring"
+    ]
+  ],
+  "cell_spans": [],
+  "markdown": "| No. | Diameter of Pipe | Suitable Trenchless Technology |\n| --- | --- | --- |\n| 1 | < 1,000 mm | Guided Boring |\n| 2 | 1,000 mm – 1,500 mm | Pipe Jacking |\n| 3 | > 1,500 mm | Tunnel Boring |",
+  "notes": [],
+  "verification": {
+    "transcription": {
+      "pass_id": "visual-2026-11-08-01",
+      "method": "direct visual reading of rendered source page; no OCR",
+      "observations": "Read each cell or formula and its printed context directly."
+    },
+    "visual_recheck": {
+      "pass_id": "visual-2026-11-08-ch3-structural-02",
+      "method": "distinct second direct visual comparison; same assistant, not independent human review",
+      "observations": "Rechecked every cell of 3 rows, headers/units and all printed notes in the separate source-region pass. ",
+      "content_sha256": "972514bf0e47dabfa4cdce6a057d2cd20532bf1c6fe38fbdffb8663eb0db3872"
+    }
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:E3.21",
+  "unit_id": "SEW-2013-A:E3.21",
+  "manual_id": "SEW-2013-A",
+  "kind": "equation",
+  "number": "3.21",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "state": "verified",
+  "regions": [
+    {
+      "pdf_page": 179,
+      "page_label": "3 - 34",
+      "bbox": [
+        50,
+        567,
+        545,
+        745
+      ],
+      "render_sha256": "5dbe035563ef60590b03aafe49d282be20d38a3517d1a88bad12d9db22408f8c"
+    }
+  ],
+  "title": "Head loss in bends",
+  "parent_id": "SEW-2013-A:3.17.2",
+  "latex": "h_b=k_b V^2/(2g)",
+  "readable": "h_b = k_b V^2 / 2g",
+  "symbols": [
+    {
+      "symbol": "k_b",
+      "definition": "friction coefficient which is a function of the ratio of radius of curvature of the bend to the width of conduit, deflection angle, and cross section of flow."
+    }
+  ],
+  "applicability": "Head loss in bends. The friction factor for various fittings are given in Table 4-2 in Chapter 4.",
+  "notes": [],
+  "verification": {
+    "transcription": {
+      "pass_id": "visual-2026-11-08-01",
+      "method": "direct visual reading of rendered source page; no OCR",
+      "observations": "Read each cell or formula and its printed context directly."
+    },
+    "visual_recheck": {
+      "pass_id": "visual-2026-11-08-equations-06",
+      "method": "distinct second visual inspection of exact source-region renders; same assistant, not an independent reviewer",
+      "observations": "Rechecked all formula coefficients, powers, denominators/grouping, numbered references, definitions and printed applicability. Retained the V-notch tangent inconsistency and undefined log base and g without correction.",
+      "content_sha256": "164be8cf14a827ecb91712d95438dd042ddd011f07911688d1eeb54fa2d9f227"
+    }
+  }
+}

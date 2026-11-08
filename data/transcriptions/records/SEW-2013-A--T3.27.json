@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:T3.27",
+  "unit_id": "SEW-2013-A:T3.27",
+  "manual_id": "SEW-2013-A",
+  "kind": "table",
+  "number": "3.27",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "state": "verified",
+  "regions": [
+    {
+      "pdf_page": 248,
+      "page_label": "3 - 103",
+      "bbox": [
+        74,
+        72,
+        522,
+        187
+      ],
+      "render_sha256": "af7e710d229631d1e38747146337117ce71384034915cf4f9a79773196c42b45"
+    }
+  ],
+  "title": "Maximum jetting pressure in case of different types of pipes",
+  "headers": [
+    "No.",
+    "Maximum Jetting Pressure",
+    "Concrete",
+    "Clay",
+    "Plastic",
+    "Bricks/fibre"
+  ],
+  "rows": [
+    [
+      "1",
+      "Meter of Water",
+      "3450",
+      "3450",
+      "1800",
+      "1030"
+    ],
+    [
+      "2",
+      "BAR",
+      "345",
+      "345",
+      "180",
+      "103"
+    ]
+  ],
+  "cell_spans": [],
+  "markdown": "| No. | Maximum Jetting Pressure | Concrete | Clay | Plastic | Bricks/fibre |\n| --- | --- | --- | --- | --- | --- |\n| 1 | Meter of Water | 3450 | 3450 | 1800 | 1030 |\n| 2 | BAR | 345 | 345 | 180 | 103 |",
+  "notes": [
+    "Source: Water Research Centre, 2005",
+    "Adjacent printed caution: Care must be exercised in the field when applying the pressures to clean the sewers since the pressures stated in Table 3.27 are the maximum pressures."
+  ],
+  "verification": {
+    "transcription": {
+      "pass_id": "visual-2026-11-08-01",
+      "method": "direct visual reading of rendered source page; no OCR",
+      "observations": "Read each cell or formula and its printed context directly."
+    },
+    "visual_recheck": {
+      "pass_id": "visual-2026-11-08-ch3-structural-02",
+      "method": "distinct second direct visual comparison; same assistant, not independent human review",
+      "observations": "Rechecked every cell of 2 rows, headers/units and all printed notes in the separate source-region pass. ",
+      "content_sha256": "bc9e3ca7f7704b39b11a966a3d037e1877e79cff7bad79c8291c79ed9679adce"
+    }
+  }
+}

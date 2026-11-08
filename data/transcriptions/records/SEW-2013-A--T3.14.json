@@ -1,0 +1,121 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:T3.14",
+  "unit_id": "SEW-2013-A:T3.14",
+  "manual_id": "SEW-2013-A",
+  "kind": "table",
+  "number": "3.14",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "state": "verified",
+  "regions": [
+    {
+      "pdf_page": 178,
+      "page_label": "3 - 33",
+      "bbox": [
+        54,
+        73,
+        545,
+        756
+      ],
+      "render_sha256": "59d6d196ebfb2ecb4bec43f6ffba90c88879a31d483670ff00bd7a01e988c12e"
+    }
+  ],
+  "title": "Hazen-Williams coefficients",
+  "headers": [
+    "No. / Group",
+    "Conduit Material",
+    "Recommended values for New Pipes(A)",
+    "Recommended values for Design"
+  ],
+  "rows": [
+    [
+      "1 Unlined metallic pipes",
+      "Cast iron, Ductile iron",
+      "130",
+      "100"
+    ],
+    [
+      "1 Unlined metallic pipes",
+      "Mild steel",
+      "140",
+      "100"
+    ],
+    [
+      "2 Centrifugally lined metallic pipes / Cast iron, Ductile iron and Mild steel pipes lined with cement mortar or epoxy",
+      "Up to 1200 mm dia",
+      "140",
+      "140"
+    ],
+    [
+      "2 Centrifugally lined metallic pipes / Cast iron, Ductile iron and Mild steel pipes lined with cement mortar or epoxy",
+      "Above 1200 mm dia",
+      "145",
+      "145"
+    ],
+    [
+      "3 Projection method cement mortar lined metallic pipes",
+      "Cast iron, Ductile iron and Mild steel pipes",
+      "130(B)",
+      "110(C)"
+    ],
+    [
+      "4 Non-metallic pipes",
+      "RCC spun concrete upto 1200 mm diameter",
+      "140",
+      "140"
+    ],
+    [
+      "4 Non-metallic pipes",
+      "RCC spun concrete above 1200 mm diameter",
+      "145",
+      "145"
+    ],
+    [
+      "4 Non-metallic pipes",
+      "Pre-stressed concrete upto 1200 mm diameter",
+      "140",
+      "140"
+    ],
+    [
+      "4 Non-metallic pipes",
+      "Pre-stressed concrete above 1200 mm diameter",
+      "145",
+      "145"
+    ],
+    [
+      "4 Non-metallic pipes",
+      "Asbestos cement",
+      "150",
+      "140"
+    ],
+    [
+      "4 Non-metallic pipes",
+      "HDPE, UPVC, GRP, FRP",
+      "150",
+      "140"
+    ]
+  ],
+  "cell_spans": [],
+  "markdown": "| No. / Group | Conduit Material | Recommended values for New Pipes(A) | Recommended values for Design |\n| --- | --- | --- | --- |\n| 1 Unlined metallic pipes | Cast iron, Ductile iron | 130 | 100 |\n| 1 Unlined metallic pipes | Mild steel | 140 | 100 |\n| 2 Centrifugally lined metallic pipes / Cast iron, Ductile iron and Mild steel pipes lined with cement mortar or epoxy | Up to 1200 mm dia | 140 | 140 |\n| 2 Centrifugally lined metallic pipes / Cast iron, Ductile iron and Mild steel pipes lined with cement mortar or epoxy | Above 1200 mm dia | 145 | 145 |\n| 3 Projection method cement mortar lined metallic pipes | Cast iron, Ductile iron and Mild steel pipes | 130(B) | 110(C) |\n| 4 Non-metallic pipes | RCC spun concrete upto 1200 mm diameter | 140 | 140 |\n| 4 Non-metallic pipes | RCC spun concrete above 1200 mm diameter | 145 | 145 |\n| 4 Non-metallic pipes | Pre-stressed concrete upto 1200 mm diameter | 140 | 140 |\n| 4 Non-metallic pipes | Pre-stressed concrete above 1200 mm diameter | 145 | 145 |\n| 4 Non-metallic pipes | Asbestos cement | 150 | 140 |\n| 4 Non-metallic pipes | HDPE, UPVC, GRP, FRP | 150 | 140 |",
+  "notes": [
+    "A The C values for new pipes included in the above table are for determining the acceptability of surface finish of new pipelines. The user agency may specify that flow test may be conducted for determining the C values of laid pipelines.",
+    "B For pipes of diameter 500 mm and above, the range of C values may be from 90 to 125 for pipes less than 500 mm.",
+    "C In the absence of specific data, this value is recommended. However, in case authentic field data is available, higher rates upto 130 may be adopted.",
+    "Note: Even though the C value can be taken as 145 for Water supply, but for sewage, 140 shall be taken for design purpose.",
+    "Source: CPHEEO, 1999",
+    "Transcriber layout note: full-width group headings are repeated in the group column. Footnote B is preserved as printed, including its ambiguous diameter wording."
+  ],
+  "verification": {
+    "transcription": {
+      "pass_id": "visual-2026-11-08-01",
+      "method": "direct visual reading of rendered source page; no OCR",
+      "observations": "Read each cell or formula and its printed context directly."
+    },
+    "visual_recheck": {
+      "pass_id": "visual-2026-11-08-04",
+      "method": "separate second visual comparison with rendered source region; same assistant, not an independent reviewer",
+      "observations": "All 11 data rows, group headings, three lettered notes and sewage-specific 140 note rechecked.",
+      "content_sha256": "2488c0204ef211346273b226135a78342197c49f8e4c58cb6cfa100eed371081"
+    }
+  }
+}

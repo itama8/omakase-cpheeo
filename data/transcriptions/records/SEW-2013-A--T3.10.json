@@ -1,0 +1,60 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:T3.10",
+  "unit_id": "SEW-2013-A:T3.10",
+  "manual_id": "SEW-2013-A",
+  "kind": "table",
+  "number": "3.10",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "state": "verified",
+  "regions": [
+    {
+      "pdf_page": 172,
+      "page_label": "3 - 27",
+      "bbox": [
+        101,
+        341,
+        485,
+        482
+      ],
+      "render_sha256": "384a67b137b5a17f8c053c78b6d3c15aa8bd9a7f69a44e4e1dce2bc8809e993c"
+    }
+  ],
+  "title": "Sulphide generation based on Z values",
+  "headers": [
+    "Z Values",
+    "Sulphide Condition"
+  ],
+  "rows": [
+    [
+      "Z < 5,000",
+      "Sulphide rarely generated"
+    ],
+    [
+      "5,000 ≤ Z ≤ 10,000",
+      "Marginal condition for sulphide generation"
+    ],
+    [
+      "Z > 10,000",
+      "Sulphide generation common"
+    ]
+  ],
+  "cell_spans": [],
+  "markdown": "| Z Values | Sulphide Condition |\n| --- | --- |\n| Z < 5,000 | Sulphide rarely generated |\n| 5,000 ≤ Z ≤ 10,000 | Marginal condition for sulphide generation |\n| Z > 10,000 | Sulphide generation common |",
+  "notes": [
+    "Source: WPCF, ASCE, 1982"
+  ],
+  "verification": {
+    "transcription": {
+      "pass_id": "visual-2026-11-08-01",
+      "method": "direct visual reading of rendered source page; no OCR",
+      "observations": "Read each cell or formula and its printed context directly."
+    },
+    "visual_recheck": {
+      "pass_id": "visual-2026-11-08-04",
+      "method": "separate second visual comparison with rendered source region; same assistant, not an independent reviewer",
+      "observations": "All inequalities, inclusive 5,000 and 10,000 limits and conditions rechecked.",
+      "content_sha256": "b64c1bb99556f96ce46d97ea7eca6e14ef00594369a17b746447b67ffd76df84"
+    }
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:E5.30",
+  "unit_id": "SEW-2013-A:E5.30",
+  "manual_id": "SEW-2013-A",
+  "kind": "equation",
+  "number": "5.30",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "state": "verified",
+  "regions": [
+    {
+      "pdf_page": 373,
+      "page_label": "5 - 69",
+      "bbox": [
+        54,
+        131,
+        544,
+        416
+      ],
+      "render_sha256": "41d5b0f9dab91da5ebb52240d815b973a85ef5df1b0053545134664c77db5f5a"
+    }
+  ],
+  "title": "Oxygen transfer capacity under field conditions",
+  "parent_id": "SEW-2013-A:5.8.1.7.5.3",
+  "latex": "N = \\frac{N_s(C_s-C_L)\\times 1.024^{(T-20)}\\alpha}{9.17}",
+  "readable": "N = N_s (C_s - C_L) × 1.024^(T - 20) α / 9.17",
+  "symbols": [
+    {
+      "symbol": "N",
+      "definition": "Oxygen transferred under field conditions, kg O₂/kWh"
+    },
+    {
+      "symbol": "N_s",
+      "definition": "Oxygen transfer capacity under standard conditions, kg O₂/kWh"
+    },
+    {
+      "symbol": "C_s",
+      "definition": "Dissolved oxygen saturation for sewage at operating temperature, mg/l"
+    },
+    {
+      "symbol": "C_L",
+      "definition": "Operation DO level in aeration tank usually 1 to 2 mg/1"
+    },
+    {
+      "symbol": "T",
+      "definition": "Temperature, °C"
+    },
+    {
+      "symbol": "α",
+      "definition": "Correction factor for oxygen transfer for sewage."
+    }
+  ],
+  "applicability": "Aerators are rated based on the amount of oxygen they can transfer to tap water under standard conditions of 20°C, 760 mm Hg barometric pressure and zero DO. The oxygen transfer capacity under field conditions can be calculated from the standard oxygen transfer capacity by the formula.",
+  "notes": [
+    "C_s is calculated from dissolved oxygen saturation for tap water at the operating temperature and altitude (Tables 5.10 and 5.11), multiplied by β, usually 0.95 for domestic sewage with TDS in the normal range of 1,200 to 1,500 mg/l.",
+    "Transcriber note: the C_L definition prints mg/1 (digit one). It is preserved here. Table 5.10 prints 9.2 at 20°C; Equation 5.30 prints denominator 9.17. Neither value has been harmonized."
+  ],
+  "verification": {
+    "transcription": {
+      "pass_id": "visual-2026-11-08-01",
+      "method": "direct visual reading of rendered source page; no OCR",
+      "observations": "Read each cell or formula and its printed context directly."
+    },
+    "visual_recheck": {
+      "pass_id": "visual-2026-11-08-02",
+      "method": "distinct second inspection of 144-dpi exact source-region render against authored record",
+      "observations": "Rechecked denominator 9.17, factor 1.024, exponent (T-20), alpha in numerator, C_s and C_L subscripts, all six definitions, and beta/TDS context; retained printed mg/1.",
+      "content_sha256": "21881408dd36368d193722dc1ee78d20945b83419e8c35e9bfdfd9acf6759492"
+    }
+  }
+}

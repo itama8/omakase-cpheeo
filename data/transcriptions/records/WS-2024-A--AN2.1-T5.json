@@ -1,0 +1,199 @@
+{
+  "schema_version": 1,
+  "id": "WS-2024-A:AN2.1-T5",
+  "unit_id": "WS-2024-A:AN2.1-T5",
+  "manual_id": "WS-2024-A",
+  "kind": "table",
+  "number": "5, Annexure 2.1",
+  "title": "Observed NRW",
+  "source_sha256": "b60f2fb548357aec676b18ef31e3b37fb0e5e8a1aec8f886880b951113848b0a",
+  "state": "verified",
+  "regions": [
+    {
+      "pdf_page": 996,
+      "page_label": "910",
+      "bbox": [
+        65,
+        347,
+        550,
+        711
+      ],
+      "render_sha256": "077130eb86d592aa1178c47f795a40648a20cdb49c768e00e5b0991541a3ed0d"
+    }
+  ],
+  "headers": [
+    "S No",
+    "Year",
+    "Block 6 2 DMA’s",
+    "Block 7 2 DMA’s",
+    "Block10 4 DMA’s",
+    "Block 12 4 DMA’s",
+    "Block 13 11 DMA’s",
+    "Block 14 01 DMA",
+    "Remarks"
+  ],
+  "rows": [
+    [
+      "A",
+      "Before Implementation of 24×7",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    [
+      "1",
+      "Initial NRW",
+      "18.54%",
+      "23.81%",
+      "41.19%",
+      "41.51%",
+      "67.01%",
+      "41.81%",
+      "Before 24×7"
+    ],
+    [
+      "",
+      "Initial NRW (merged aggregate)",
+      "38.97%",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "Before 24×7"
+    ],
+    [
+      "Population",
+      "",
+      "2031",
+      "2098",
+      "4786",
+      "8369",
+      "8013",
+      "4493",
+      ""
+    ],
+    [
+      "B",
+      "After Implementation of 24×7",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    [
+      "1",
+      "2019",
+      "6.54%",
+      "3.93%",
+      "8.45%",
+      "",
+      "",
+      "",
+      "After 24×7"
+    ],
+    [
+      "2",
+      "2020",
+      "0.31%",
+      "1.06%",
+      "5.16%",
+      "",
+      "",
+      "",
+      "After 24×7"
+    ],
+    [
+      "3",
+      "2021",
+      "1.75%",
+      "2.00%",
+      "5.85%",
+      "",
+      "",
+      "",
+      "After 24×7"
+    ],
+    [
+      "4",
+      "2022",
+      "4.40%",
+      "5.72%",
+      "6.21%",
+      "",
+      "4.47%",
+      "",
+      "After 24×7"
+    ],
+    [
+      "5",
+      "2023",
+      "5.74%",
+      "5.46%",
+      "7.56%",
+      "7.52%",
+      "6.47%",
+      "8.20%",
+      "After 24×7"
+    ],
+    [
+      "Average",
+      "",
+      "3.75%",
+      "3.63%",
+      "6.65%",
+      "7.52%",
+      "5.47%",
+      "8.20%",
+      "After 24×7"
+    ],
+    [
+      "Average (merged aggregate)",
+      "",
+      "5.87%",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ]
+  ],
+  "markdown": "| S No | Year | Block 6 2 DMA’s | Block 7 2 DMA’s | Block10 4 DMA’s | Block 12 4 DMA’s | Block 13 11 DMA’s | Block 14 01 DMA | Remarks |\n| --- | --- | --- | --- | --- | --- | --- | --- | --- |\n| A | Before Implementation of 24×7 |  |  |  |  |  |  |  |\n| 1 | Initial NRW | 18.54% | 23.81% | 41.19% | 41.51% | 67.01% | 41.81% | Before 24×7 |\n|  | Initial NRW (merged aggregate) | 38.97% |  |  |  |  |  | Before 24×7 |\n| Population |  | 2031 | 2098 | 4786 | 8369 | 8013 | 4493 |  |\n| B | After Implementation of 24×7 |  |  |  |  |  |  |  |\n| 1 | 2019 | 6.54% | 3.93% | 8.45% |  |  |  | After 24×7 |\n| 2 | 2020 | 0.31% | 1.06% | 5.16% |  |  |  | After 24×7 |\n| 3 | 2021 | 1.75% | 2.00% | 5.85% |  |  |  | After 24×7 |\n| 4 | 2022 | 4.40% | 5.72% | 6.21% |  | 4.47% |  | After 24×7 |\n| 5 | 2023 | 5.74% | 5.46% | 7.56% | 7.52% | 6.47% | 8.20% | After 24×7 |\n| Average |  | 3.75% | 3.63% | 6.65% | 7.52% | 5.47% | 8.20% | After 24×7 |\n| Average (merged aggregate) |  | 5.87% |  |  |  |  |  |  |",
+  "notes": [
+    "Transcriber layout note: 38.97% and 5.87% each occupy a merged cell spanning the six block columns; they are aggregate values, not Block 6 values. Before/After remarks are vertically merged. Parenthetical merged-aggregate labels in this transcription explain layout and are not printed labels. Blank data cells remain blank. No averages have been recalculated.",
+    "The next source page begins the Indi case study, not a continuation of this table."
+  ],
+  "cell_spans": [
+    {
+      "row": 2,
+      "column": 2,
+      "colspan": 6
+    },
+    {
+      "row": 11,
+      "column": 2,
+      "colspan": 6
+    }
+  ],
+  "verification": {
+    "transcription": {
+      "pass_id": "visual-2026-11-08-water-01",
+      "method": "direct visual reading of all source and continuation pages, no OCR",
+      "observations": "Read headers, merged groups, every printed cell, blanks and notes from rendered PDF pages."
+    },
+    "visual_recheck": {
+      "pass_id": "visual-2026-11-08-water-02",
+      "method": "separate second visual comparison of each exact source-region render including every continuation; same assistant, not an independent reviewer",
+      "observations": "Rechecked all 12 rows, column headers, values/units, merged relationships and printed notes across 1 source regions. Kept the final aggregate-row Remarks cell blank after comparing merge boundaries.",
+      "content_sha256": "f6f56b5642983c17b691f221f732c1961a5f6fe8cbefb091840acc98bb6ba032"
+    }
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:E3.39",
+  "unit_id": "SEW-2013-A:E3.39",
+  "manual_id": "SEW-2013-A",
+  "kind": "equation",
+  "number": "3.39",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "state": "verified",
+  "regions": [
+    {
+      "pdf_page": 226,
+      "page_label": "3 - 81",
+      "bbox": [
+        50,
+        163,
+        545,
+        431
+      ],
+      "render_sha256": "e737485e49531f692436b5f749e3d0aacd14cf53020ad53acab8b01ee6410f99"
+    }
+  ],
+  "title": "Safe supporting strength relationship",
+  "parent_id": "SEW-2013-A:3.50.2",
+  "latex": "W=\\frac{\\text{Field supporting strength}}{\\text{Factor of safety}}=\\frac{\\text{Load factor}\\times\\text{three edge bearing strength}}{\\text{Factor of safety}}",
+  "readable": "W = Field supporting strength / Factor of safety = Load factor × three edge bearing strength / Factor of safety",
+  "symbols": [],
+  "applicability": "Field supporting strength does not include a factor of safety. Load factor is the ratio of strength under the stated field loading and bedding to strength measured by the three-edge-bearing test. A factor of safety of at least 1.5 should be applied to the specified minimum three-edge-bearing strength for all rigid conduits.",
+  "notes": [],
+  "verification": {
+    "transcription": {
+      "pass_id": "visual-2026-11-08-01",
+      "method": "direct visual reading of rendered source page; no OCR",
+      "observations": "Read each cell or formula and its printed context directly."
+    },
+    "visual_recheck": {
+      "pass_id": "visual-2026-11-08-ch3-structural-02",
+      "method": "distinct second direct visual comparison; same assistant, not independent human review",
+      "observations": "Rechecked coefficients, grouping, powers, signs, numbered and unnumbered labels, printed definitions and applicability in a distinct source-region pass. ",
+      "content_sha256": "ae176d99c4c08bd6dfe4644d6dcef44ba8d782ee3dc56dd0d5d7e4a931d8f533"
+    }
+  }
+}

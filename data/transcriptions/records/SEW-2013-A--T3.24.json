@@ -1,0 +1,101 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:T3.24",
+  "unit_id": "SEW-2013-A:T3.24",
+  "manual_id": "SEW-2013-A",
+  "kind": "table",
+  "number": "3.24",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "state": "verified",
+  "regions": [
+    {
+      "pdf_page": 231,
+      "page_label": "3 - 86",
+      "bbox": [
+        69,
+        131,
+        515,
+        444
+      ],
+      "render_sha256": "98284ff73d7fc8f9fab81e5b4b323f083634e4bc26c4a40969a2bd82b217712b"
+    }
+  ],
+  "title": "Load factor for different classes of bedding",
+  "headers": [
+    "Class of bedding",
+    "Condition",
+    "Load factor"
+  ],
+  "rows": [
+    [
+      "Aa",
+      "Concrete cradle-plain concrete and lightly tamped backfill",
+      "2.2"
+    ],
+    [
+      "Ab",
+      "Concrete cradle-plain concrete and carefully tamped backfill",
+      "2.8"
+    ],
+    [
+      "Ac",
+      "Concrete cradle-RCC with P-0.4%",
+      "Up to 3.4"
+    ],
+    [
+      "Ad",
+      "Arch type – plain concrete",
+      "2.8"
+    ],
+    [
+      "Ad",
+      "RCC with P = 0.4%",
+      "Up to 3.4"
+    ],
+    [
+      "Ad",
+      "RCC with P = 0.1%",
+      "Up to 4.8"
+    ],
+    [
+      "Ad",
+      "P is ratio of area of steel to area of concrete at the crown)",
+      ""
+    ],
+    [
+      "B",
+      "Shaped bottom or compacted granular bedding with carefully compacted backfill",
+      "1.9"
+    ],
+    [
+      "C",
+      "Shaped bottom or compacted granular bedding with lightly compacted backfill",
+      "1.5"
+    ],
+    [
+      "D",
+      "Flat bottom trench",
+      "1.1"
+    ]
+  ],
+  "cell_spans": [],
+  "markdown": "| Class of bedding | Condition | Load factor |\n| --- | --- | --- |\n| Aa | Concrete cradle-plain concrete and lightly tamped backfill | 2.2 |\n| Ab | Concrete cradle-plain concrete and carefully tamped backfill | 2.8 |\n| Ac | Concrete cradle-RCC with P-0.4% | Up to 3.4 |\n| Ad | Arch type – plain concrete | 2.8 |\n| Ad | RCC with P = 0.4% | Up to 3.4 |\n| Ad | RCC with P = 0.1% | Up to 4.8 |\n| Ad | P is ratio of area of steel to area of concrete at the crown) |  |\n| B | Shaped bottom or compacted granular bedding with carefully compacted backfill | 1.9 |\n| C | Shaped bottom or compacted granular bedding with lightly compacted backfill | 1.5 |\n| D | Flat bottom trench | 1.1 |",
+  "notes": [
+    "Source: CPHEEO, 1993",
+    "Transcriber layout note: the merged Ad label is repeated over its four rows, including the printed definition of P. The blank load factor beside that definition is retained.",
+    "Transcriber note: the source prints \"P-0.4%\" for Ac and \"P = 0.1%\" for the final reinforced Ad row; these are preserved. Table 3.22 separately prints 1.0% for Ad; the discrepancy is not reconciled."
+  ],
+  "verification": {
+    "transcription": {
+      "pass_id": "visual-2026-11-08-01",
+      "method": "direct visual reading of rendered source page; no OCR",
+      "observations": "Read each cell or formula and its printed context directly."
+    },
+    "visual_recheck": {
+      "pass_id": "visual-2026-11-08-ch3-structural-02",
+      "method": "distinct second direct visual comparison; same assistant, not independent human review",
+      "observations": "Rechecked every cell of 10 rows, headers/units and all printed notes in the separate source-region pass. Rechecked all ten rows including the merged Ad block, P definition and 0.1% versus Table 3.22 1.0% discrepancy.",
+      "content_sha256": "b6749ac3eb32c9e82544f06107792b0842ffff8a33734f07cfc26e7123fba760"
+    }
+  }
+}

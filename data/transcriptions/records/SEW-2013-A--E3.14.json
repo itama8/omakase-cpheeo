@@ -1,0 +1,79 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:E3.14",
+  "unit_id": "SEW-2013-A:E3.14",
+  "manual_id": "SEW-2013-A",
+  "kind": "equation",
+  "number": "3.14",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "state": "verified",
+  "regions": [
+    {
+      "pdf_page": 172,
+      "page_label": "3 - 27",
+      "bbox": [
+        50,
+        605,
+        545,
+        770
+      ],
+      "render_sha256": "ecbecf4824606ca98c5cc3349c971db9faf1b2b074f23c89c78eedb9c82aeeb6"
+    },
+    {
+      "pdf_page": 173,
+      "page_label": "3 - 28",
+      "bbox": [
+        50,
+        73,
+        545,
+        351
+      ],
+      "render_sha256": "8c8a3d92c3d3356db02fd356afaed050bf8871e1f2afe783e560aa7162b1b799"
+    }
+  ],
+  "title": "Manning’s formula for gravity flow",
+  "parent_id": "SEW-2013-A:3.15.4",
+  "latex": "V=(1/n)\\times\\left[R^{2/3}S^{1/2}\\right]",
+  "readable": "V = (1/n) × [R^(2/3) S^(1/2)]",
+  "symbols": [
+    {
+      "symbol": "Q",
+      "definition": "Discharge in l/s"
+    },
+    {
+      "symbol": "S",
+      "definition": "Slope of hydraulic gradient"
+    },
+    {
+      "symbol": "D",
+      "definition": "Internal diameter of pipe line in mm"
+    },
+    {
+      "symbol": "R",
+      "definition": "Hydraulic radius in m"
+    },
+    {
+      "symbol": "V",
+      "definition": "Velocity in m/s"
+    },
+    {
+      "symbol": "n",
+      "definition": "Manning’s coefficient of roughness as in Table 3-11"
+    }
+  ],
+  "applicability": "Manning’s formula for gravity flow.",
+  "notes": [],
+  "verification": {
+    "transcription": {
+      "pass_id": "visual-2026-11-08-01",
+      "method": "direct visual reading of rendered source page; no OCR",
+      "observations": "Read each cell or formula and its printed context directly."
+    },
+    "visual_recheck": {
+      "pass_id": "visual-2026-11-08-04",
+      "method": "separate second visual comparison with rendered source region; same assistant, not an independent reviewer",
+      "observations": "Rechecked formula coefficients, exponents, grouping, printed number, symbol definitions and applicability in a distinct source-region inspection. Shared definitions on next page rechecked, Q in l/s and D in mm.",
+      "content_sha256": "c50a65ce70216cd584adb576161957d75032e4f4dda88057ed68410ba9e6ba39"
+    }
+  }
+}

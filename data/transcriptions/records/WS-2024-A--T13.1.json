@@ -1,0 +1,191 @@
+{
+  "schema_version": 1,
+  "id": "WS-2024-A:T13.1",
+  "unit_id": "WS-2024-A:T13.1",
+  "manual_id": "WS-2024-A",
+  "kind": "table",
+  "number": "13.1",
+  "title": "Water meter Classification- According to ISO 4064-3 (1999) Standard",
+  "source_sha256": "b60f2fb548357aec676b18ef31e3b37fb0e5e8a1aec8f886880b951113848b0a",
+  "state": "verified",
+  "regions": [
+    {
+      "pdf_page": 822,
+      "page_label": "737",
+      "bbox": [
+        65,
+        620,
+        550,
+        730
+      ],
+      "render_sha256": "bc6dee2853cc394bef33b97e29baae68fd63e1a81675019b56bb315f196747ce"
+    },
+    {
+      "pdf_page": 823,
+      "page_label": "738",
+      "bbox": [
+        65,
+        70,
+        550,
+        300
+      ],
+      "render_sha256": "e8b06ff52277fa71129d89f2ae5d0731f49d28e5eafe5c214f2fe9d78a9bdb01"
+    }
+  ],
+  "headers": [
+    "Nominal Diameter",
+    "Qn (m3/hr)",
+    "Qmax (m3/hr)",
+    "Class A: Qmin (litres/hr)",
+    "Class A: Qt (litres/hr)",
+    "Class A: Ratio",
+    "Class B: Qmin (litres/hr)",
+    "Class B: Qt (litres/hr)",
+    "Class B: Ratio",
+    "Class C: Qmin (litres/hr)",
+    "Class C: Qt (litres/hr)",
+    "Class C: Ratio",
+    "Class D: Qmin (litres/hr)",
+    "Class D: Qt (litres/hr)",
+    "Class D: Ratio"
+  ],
+  "rows": [
+    [
+      "DN15",
+      "1",
+      "2",
+      "–",
+      "–",
+      "",
+      "–",
+      "–",
+      "",
+      "–",
+      "–",
+      "",
+      "7.5",
+      "11.5",
+      "133"
+    ],
+    [
+      "DN15",
+      "1.5",
+      "3",
+      "60",
+      "150",
+      "25",
+      "30",
+      "120",
+      "50",
+      "15",
+      "22.5",
+      "100",
+      "11.25",
+      "17.25",
+      "133"
+    ],
+    [
+      "DN20",
+      "2.5",
+      "5",
+      "100",
+      "250",
+      "25",
+      "50",
+      "200",
+      "50",
+      "25",
+      "37.5",
+      "100",
+      "18.75",
+      "28.75",
+      "133"
+    ],
+    [
+      "DN25",
+      "3.5",
+      "7",
+      "140",
+      "350",
+      "25",
+      "70",
+      "280",
+      "50",
+      "35",
+      "52.5",
+      "100",
+      "26.25",
+      "40.25",
+      "133"
+    ],
+    [
+      "DN25",
+      "6",
+      "12",
+      "240",
+      "600",
+      "25",
+      "120",
+      "480",
+      "50",
+      "60",
+      "90",
+      "100",
+      "–",
+      "–",
+      ""
+    ],
+    [
+      "DN32",
+      "6",
+      "12",
+      "240",
+      "600",
+      "25",
+      "120",
+      "480",
+      "50",
+      "60",
+      "90",
+      "100",
+      "–",
+      "–",
+      ""
+    ],
+    [
+      "DN40",
+      "10",
+      "20",
+      "400",
+      "1000",
+      "25",
+      "200",
+      "800",
+      "50",
+      "100",
+      "150",
+      "100",
+      "–",
+      "–",
+      ""
+    ]
+  ],
+  "markdown": "| Nominal Diameter | Qn (m3/hr) | Qmax (m3/hr) | Class A: Qmin (litres/hr) | Class A: Qt (litres/hr) | Class A: Ratio | Class B: Qmin (litres/hr) | Class B: Qt (litres/hr) | Class B: Ratio | Class C: Qmin (litres/hr) | Class C: Qt (litres/hr) | Class C: Ratio | Class D: Qmin (litres/hr) | Class D: Qt (litres/hr) | Class D: Ratio |\n| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |\n| DN15 | 1 | 2 | – | – |  | – | – |  | – | – |  | 7.5 | 11.5 | 133 |\n| DN15 | 1.5 | 3 | 60 | 150 | 25 | 30 | 120 | 50 | 15 | 22.5 | 100 | 11.25 | 17.25 | 133 |\n| DN20 | 2.5 | 5 | 100 | 250 | 25 | 50 | 200 | 50 | 25 | 37.5 | 100 | 18.75 | 28.75 | 133 |\n| DN25 | 3.5 | 7 | 140 | 350 | 25 | 70 | 280 | 50 | 35 | 52.5 | 100 | 26.25 | 40.25 | 133 |\n| DN25 | 6 | 12 | 240 | 600 | 25 | 120 | 480 | 50 | 60 | 90 | 100 | – | – |  |\n| DN32 | 6 | 12 | 240 | 600 | 25 | 120 | 480 | 50 | 60 | 90 | 100 | – | – |  |\n| DN40 | 10 | 20 | 400 | 1000 | 25 | 200 | 800 | 50 | 100 | 150 | 100 | – | – |  |",
+  "notes": [
+    "Transcriber layout note: the grouped Class A/B/C/D headings on printed page 737 apply to the three subcolumns each on page 738. Empty strings denote blank cells; printed dashes are retained. No Qn/Qmax unit conversion has been made."
+  ],
+  "cell_spans": [],
+  "verification": {
+    "transcription": {
+      "pass_id": "visual-2026-11-08-water-01",
+      "method": "direct visual reading of all source and continuation pages, no OCR",
+      "observations": "Read headers, merged groups, every printed cell, blanks and notes from rendered PDF pages."
+    },
+    "visual_recheck": {
+      "pass_id": "visual-2026-11-08-water-02",
+      "method": "separate second visual comparison of each exact source-region render including every continuation; same assistant, not an independent reviewer",
+      "observations": "Rechecked all 7 rows, column headers, values/units, merged relationships and printed notes across 2 source regions.",
+      "content_sha256": "a6c7ef1b507dc8cb9081dcdf6cc231a75a3d9fc99bff7200d146656ebe641437"
+    }
+  }
+}

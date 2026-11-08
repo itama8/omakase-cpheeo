@@ -1,0 +1,60 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:E3.23",
+  "unit_id": "SEW-2013-A:E3.23",
+  "manual_id": "SEW-2013-A",
+  "kind": "equation",
+  "number": "3.23",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "state": "verified",
+  "regions": [
+    {
+      "pdf_page": 209,
+      "page_label": "3 - 64",
+      "bbox": [
+        50,
+        528,
+        545,
+        770
+      ],
+      "render_sha256": "61da4a1400966d388ff8c9951a3bdfff35e7921a79cebe32a51e1064d1587540"
+    }
+  ],
+  "title": "General form of Marston’s formula",
+  "parent_id": "SEW-2013-A:3.41",
+  "latex": "W=CwB^2",
+  "readable": "W = C w B^2",
+  "symbols": [
+    {
+      "symbol": "W",
+      "definition": "Vertical load in kgs per metre length acting on the conduit due to gravity earth loads"
+    },
+    {
+      "symbol": "w",
+      "definition": "Unit weight of earth, kg/m³"
+    },
+    {
+      "symbol": "B",
+      "definition": "Width of trench or conduit in meters depending upon the type of installation conditions, m"
+    },
+    {
+      "symbol": "C",
+      "definition": "Dimensionless co-efficient that measures the effect of (a) Ratio of height of fill to width of trench or conduit (b) Shearing forces between interior and adjacent earth prisms and (c) Direction and amount of relative settlement between interior and adjacent earth prisms for embankment conditions."
+    }
+  ],
+  "applicability": "Vertical load on buried conduits due to gravity earth forces. Calculated backfill load is the ultimate-settlement load; lateral pressure is computed by Rankine’s theory; negligible cohesion except for tunnel conditions.",
+  "notes": [],
+  "verification": {
+    "transcription": {
+      "pass_id": "visual-2026-11-08-01",
+      "method": "direct visual reading of rendered source page; no OCR",
+      "observations": "Read each cell or formula and its printed context directly."
+    },
+    "visual_recheck": {
+      "pass_id": "visual-2026-11-08-ch3-structural-02",
+      "method": "distinct second direct visual comparison; same assistant, not independent human review",
+      "observations": "Rechecked coefficients, grouping, powers, signs, numbered and unnumbered labels, printed definitions and applicability in a distinct source-region pass. ",
+      "content_sha256": "1106a1d7269164c9a89e7f1d006d2691cd09a3184fc4bf5faca5b1f2f9bbcdd7"
+    }
+  }
+}

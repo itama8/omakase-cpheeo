@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:E3.11",
+  "unit_id": "SEW-2013-A:E3.11",
+  "manual_id": "SEW-2013-A",
+  "kind": "equation",
+  "number": "3.11",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "state": "verified",
+  "regions": [
+    {
+      "pdf_page": 171,
+      "page_label": "3 - 26",
+      "bbox": [
+        50,
+        73,
+        545,
+        338
+      ],
+      "render_sha256": "cb9026444efe9046c38ece5f37e46ade6e626da070fea43a5fb9c292f4eec488"
+    }
+  ],
+  "title": "Shield’s formula for self-cleansing velocity",
+  "parent_id": "SEW-2013-A:3.15.1",
+  "latex": "V=\\frac{1}{n}\\left(R^{1/6}\\sqrt{K_S(S_S-1)d_P}\\right)",
+  "readable": "V = (1/n) [R^(1/6) sqrt(K_S (S_S - 1) d_P)]",
+  "symbols": [
+    {
+      "symbol": "n",
+      "definition": "Manning’s n"
+    },
+    {
+      "symbol": "R",
+      "definition": "Hydraulic Mean Radius in m"
+    },
+    {
+      "symbol": "K_S",
+      "definition": "Dimensionless constant with a value of about 0.04 to start motion of granular particles and about 0.8 for adequate self cleansing of sewers"
+    },
+    {
+      "symbol": "S_S",
+      "definition": "Specific gravity of particle"
+    },
+    {
+      "symbol": "d_P",
+      "definition": "Particle size in mm"
+    }
+  ],
+  "applicability": "To ensure that deposition of suspended solids does not take place, self-cleansing velocities using Shield’s formula is considered in the design of sewers. Specific gravity of grit is usually in the range of 2.4 to 2.65.",
+  "notes": [
+    "Transcriber note: the printed particle-size unit is mm; no dimensional repair or unit conversion has been made."
+  ],
+  "verification": {
+    "transcription": {
+      "pass_id": "visual-2026-11-08-01",
+      "method": "direct visual reading of rendered source page; no OCR",
+      "observations": "Read each cell or formula and its printed context directly."
+    },
+    "visual_recheck": {
+      "pass_id": "visual-2026-11-08-04",
+      "method": "separate second visual comparison with rendered source region; same assistant, not an independent reviewer",
+      "observations": "Rechecked formula coefficients, exponents, grouping, printed number, symbol definitions and applicability in a distinct source-region inspection. ",
+      "content_sha256": "32999ec473122ff2024e96dd7b750d08985308069ec2f207ca2d3e0fbc1d664a"
+    }
+  }
+}

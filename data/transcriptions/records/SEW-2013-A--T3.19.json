@@ -1,0 +1,270 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:T3.19",
+  "unit_id": "SEW-2013-A:T3.19",
+  "manual_id": "SEW-2013-A",
+  "kind": "table",
+  "number": "3.19",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "state": "verified",
+  "regions": [
+    {
+      "pdf_page": 218,
+      "page_label": "3 - 73",
+      "bbox": [
+        50,
+        73,
+        545,
+        776
+      ],
+      "render_sha256": "d6ee2619a9d8cf61a1558ba52b716463cfac2ad03706df348794821f0d1e4933"
+    }
+  ],
+  "title": "Values of Cd for calculating loads on pipes in trenches",
+  "headers": [
+    "Ratio H/B_d",
+    "Safe working Values of C_d: Minimum possible without cohesion**",
+    "Safe working Values of C_d: Maximum for Ordinary Sand***",
+    "Safe working Values of C_d: Completely Top Soil",
+    "Safe working Values of C_d: Ordinary maximum for clay****",
+    "Safe working Values of C_d: Extreme maximum for clay*****"
+  ],
+  "rows": [
+    [
+      "0.5",
+      "0.455",
+      "0.461",
+      "0.464",
+      "0.469",
+      "0.474"
+    ],
+    [
+      "1.0",
+      "0.830",
+      "0.852",
+      "0.864",
+      "0.881",
+      "0.898"
+    ],
+    [
+      "1.5",
+      "1.140",
+      "1.183",
+      "1.208",
+      "1.242",
+      "1.278"
+    ],
+    [
+      "2.0",
+      "1.395",
+      "1.464",
+      "1.504",
+      "1.560",
+      "1.618"
+    ],
+    [
+      "2.5",
+      "1.606",
+      "1.702",
+      "1.764",
+      "1.838",
+      "1.923"
+    ],
+    [
+      "3.0",
+      "1.780",
+      "1.904",
+      "1.978",
+      "2.083",
+      "2.196"
+    ],
+    [
+      "3.5",
+      "1.923",
+      "2.075",
+      "2.167",
+      "2.298",
+      "2.441"
+    ],
+    [
+      "4.0",
+      "2.041",
+      "2.221",
+      "2.329",
+      "2.487",
+      "2.660"
+    ],
+    [
+      "4.5",
+      "2.136",
+      "2.344",
+      "2.469",
+      "2.650",
+      "2.856"
+    ],
+    [
+      "5.0",
+      "2.219",
+      "2.448",
+      "2.590",
+      "2.798",
+      "3.032"
+    ],
+    [
+      "5.5",
+      "2.286",
+      "2.537",
+      "2.693",
+      "2.926",
+      "3.190"
+    ],
+    [
+      "6.0",
+      "2.340",
+      "2.612",
+      "2.782",
+      "3.038",
+      "3.331"
+    ],
+    [
+      "6.5",
+      "2.386",
+      "2.675",
+      "2.859",
+      "3.137",
+      "3.458"
+    ],
+    [
+      "7.0",
+      "2.423",
+      "2.729",
+      "2.925",
+      "3.223",
+      "3.571"
+    ],
+    [
+      "7.5",
+      "2.454",
+      "2.775",
+      "2.982",
+      "3.299",
+      "3.673"
+    ],
+    [
+      "8.0",
+      "2.479",
+      "2.814",
+      "3.031",
+      "3.366",
+      "3.764"
+    ],
+    [
+      "8.5",
+      "2.500",
+      "2.847",
+      "3.073",
+      "3.424",
+      "3.845"
+    ],
+    [
+      "9.0",
+      "2.518",
+      "2.875",
+      "3.109",
+      "3.476",
+      "3.918"
+    ],
+    [
+      "9.5",
+      "2.532",
+      "2.898",
+      "3.141",
+      "3.521",
+      "3.983"
+    ],
+    [
+      "10.0",
+      "2.543",
+      "2.918",
+      "3.167",
+      "3.560",
+      "4.042"
+    ],
+    [
+      "11.0",
+      "2.561",
+      "2.950",
+      "3.210",
+      "3.626",
+      "4.141"
+    ],
+    [
+      "12.0",
+      "2.573",
+      "2.972",
+      "3.242",
+      "3.676",
+      "4.221"
+    ],
+    [
+      "13.0",
+      "2.581",
+      "2.989",
+      "3.266",
+      "3.715",
+      "4.285"
+    ],
+    [
+      "14.0",
+      "2.587",
+      "3.000",
+      "3.283",
+      "3.745",
+      "4.336"
+    ],
+    [
+      "15.0",
+      "2.591",
+      "3.009",
+      "3.296",
+      "3.768",
+      "4.378"
+    ],
+    [
+      "Very Great",
+      "2.599",
+      "3.030",
+      "3.333",
+      "3.846",
+      "4.548"
+    ]
+  ],
+  "cell_spans": [],
+  "markdown": "| Ratio H/B_d | Safe working Values of C_d: Minimum possible without cohesion** | Safe working Values of C_d: Maximum for Ordinary Sand*** | Safe working Values of C_d: Completely Top Soil | Safe working Values of C_d: Ordinary maximum for clay**** | Safe working Values of C_d: Extreme maximum for clay***** |\n| --- | --- | --- | --- | --- | --- |\n| 0.5 | 0.455 | 0.461 | 0.464 | 0.469 | 0.474 |\n| 1.0 | 0.830 | 0.852 | 0.864 | 0.881 | 0.898 |\n| 1.5 | 1.140 | 1.183 | 1.208 | 1.242 | 1.278 |\n| 2.0 | 1.395 | 1.464 | 1.504 | 1.560 | 1.618 |\n| 2.5 | 1.606 | 1.702 | 1.764 | 1.838 | 1.923 |\n| 3.0 | 1.780 | 1.904 | 1.978 | 2.083 | 2.196 |\n| 3.5 | 1.923 | 2.075 | 2.167 | 2.298 | 2.441 |\n| 4.0 | 2.041 | 2.221 | 2.329 | 2.487 | 2.660 |\n| 4.5 | 2.136 | 2.344 | 2.469 | 2.650 | 2.856 |\n| 5.0 | 2.219 | 2.448 | 2.590 | 2.798 | 3.032 |\n| 5.5 | 2.286 | 2.537 | 2.693 | 2.926 | 3.190 |\n| 6.0 | 2.340 | 2.612 | 2.782 | 3.038 | 3.331 |\n| 6.5 | 2.386 | 2.675 | 2.859 | 3.137 | 3.458 |\n| 7.0 | 2.423 | 2.729 | 2.925 | 3.223 | 3.571 |\n| 7.5 | 2.454 | 2.775 | 2.982 | 3.299 | 3.673 |\n| 8.0 | 2.479 | 2.814 | 3.031 | 3.366 | 3.764 |\n| 8.5 | 2.500 | 2.847 | 3.073 | 3.424 | 3.845 |\n| 9.0 | 2.518 | 2.875 | 3.109 | 3.476 | 3.918 |\n| 9.5 | 2.532 | 2.898 | 3.141 | 3.521 | 3.983 |\n| 10.0 | 2.543 | 2.918 | 3.167 | 3.560 | 4.042 |\n| 11.0 | 2.561 | 2.950 | 3.210 | 3.626 | 4.141 |\n| 12.0 | 2.573 | 2.972 | 3.242 | 3.676 | 4.221 |\n| 13.0 | 2.581 | 2.989 | 3.266 | 3.715 | 4.285 |\n| 14.0 | 2.587 | 3.000 | 3.283 | 3.745 | 4.336 |\n| 15.0 | 2.591 | 3.009 | 3.296 | 3.768 | 4.378 |\n| Very Great | 2.599 | 3.030 | 3.333 | 3.846 | 4.548 |",
+  "notes": [
+    "W_c = load on pipe in kg per linear meter",
+    "C_d = Coefficient",
+    "w = Weight of trench filling material in kg/m³",
+    "B_d = Width of trench a little below the top of the pipe in meters",
+    "* Ratio of height of fill above top of pipe to width of trench a little below the top of the pipe.",
+    "** These values give the loads generally imposed by granular filling materials before tamping or settling.",
+    "*** Use these values as safe for all ordinary cases of sand filling.",
+    "**** Thoroughly wet. Use these values as safe for all ordinary cases of clay filling.",
+    "***** Completely saturated. Use these values only for extremely unfavourable conditions.",
+    "Source: CPHEEO, 1993",
+    "Transcriber note: the third data-column header visibly prints \"Completely Top Soil\". It is preserved without adding a missing word."
+  ],
+  "verification": {
+    "transcription": {
+      "pass_id": "visual-2026-11-08-01",
+      "method": "direct visual reading of rendered source page; no OCR",
+      "observations": "Read each cell or formula and its printed context directly."
+    },
+    "visual_recheck": {
+      "pass_id": "visual-2026-11-08-ch3-structural-02",
+      "method": "distinct second direct visual comparison; same assistant, not independent human review",
+      "observations": "Rechecked every cell of 26 rows, headers/units and all printed notes in the separate source-region pass. Rechecked all 130 load coefficients and all five footnotes. No invented correction of Completely Top Soil.",
+      "content_sha256": "ab7c8ea8e2f837b5c6e66d2eaf881a7fed5a0dce4c367208490c1acd371e9bf5"
+    }
+  }
+}

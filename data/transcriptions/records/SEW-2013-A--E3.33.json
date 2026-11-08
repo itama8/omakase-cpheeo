@@ -1,0 +1,60 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:E3.33",
+  "unit_id": "SEW-2013-A:E3.33",
+  "manual_id": "SEW-2013-A",
+  "kind": "equation",
+  "number": "3.33",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "state": "verified",
+  "regions": [
+    {
+      "pdf_page": 223,
+      "page_label": "3 - 78",
+      "bbox": [
+        50,
+        73,
+        545,
+        287
+      ],
+      "render_sha256": "a34e9a00249550edbf9a63cf97e5e643f671ee9061b718a0071bba3e6e562b27"
+    }
+  ],
+  "title": "Load due to concentrated superimposed load",
+  "parent_id": "SEW-2013-A:3.47",
+  "latex": "W_{sc}=C_s(PF/L)",
+  "readable": "W_sc = C_s (P F / L)",
+  "symbols": [
+    {
+      "symbol": "W_sc",
+      "definition": "Load on the conduit in kg/m"
+    },
+    {
+      "symbol": "P",
+      "definition": "Concentrated load in kg acting on the surface"
+    },
+    {
+      "symbol": "F",
+      "definition": "Impact factor (1.0 for air field runways, 1.5 for highway traffic and air field taxi ways, 1.75 for railway traffic) and"
+    },
+    {
+      "symbol": "C_s",
+      "definition": "Load coefficient which is a function of the ratios in Equation 3.34."
+    }
+  ],
+  "applicability": "Superimposed concentrated load such as a truck wheel, by Holl’s integration of Boussinesq’s formula.",
+  "notes": [],
+  "verification": {
+    "transcription": {
+      "pass_id": "visual-2026-11-08-01",
+      "method": "direct visual reading of rendered source page; no OCR",
+      "observations": "Read each cell or formula and its printed context directly."
+    },
+    "visual_recheck": {
+      "pass_id": "visual-2026-11-08-ch3-structural-02",
+      "method": "distinct second direct visual comparison; same assistant, not independent human review",
+      "observations": "Rechecked coefficients, grouping, powers, signs, numbered and unnumbered labels, printed definitions and applicability in a distinct source-region pass. ",
+      "content_sha256": "0f58a4a55520aaab864aa4efdd3e4d9017379a263a9ad7c67ef98b13c5846561"
+    }
+  }
+}

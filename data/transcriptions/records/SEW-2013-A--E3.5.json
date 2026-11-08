@@ -1,0 +1,65 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:E3.5",
+  "unit_id": "SEW-2013-A:E3.5",
+  "manual_id": "SEW-2013-A",
+  "kind": "equation",
+  "number": "3.5",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "state": "verified",
+  "regions": [
+    {
+      "pdf_page": 156,
+      "page_label": "3 - 11",
+      "bbox": [
+        50,
+        710,
+        545,
+        762
+      ],
+      "render_sha256": "1f3c55f9f09ffa93f2e1941822d6429aeaeb264ca3c5a0d3425497c882291349"
+    },
+    {
+      "pdf_page": 157,
+      "page_label": "3 - 12",
+      "bbox": [
+        50,
+        73,
+        545,
+        142
+      ],
+      "render_sha256": "b7c948887a4448090b4332b90246c03350c23d357a6e524f5066673247750bd7"
+    }
+  ],
+  "title": "V-notch discharge as printed",
+  "parent_id": "SEW-2013-A:3.10",
+  "latex": "Q=1.42\\times\\tan(\\text{angle of V notch})\\times H^{2.5}",
+  "readable": "Q = 1.42 × tan of angle of V notch × H power 2.5",
+  "symbols": [
+    {
+      "symbol": "Q",
+      "definition": "cum/sec, as specified with Equation 3.6 on the next page"
+    },
+    {
+      "symbol": "H",
+      "definition": "m, as specified with Equation 3.6 on the next page"
+    }
+  ],
+  "applicability": "The depth of flow is measured over the lower tip of the V bottom.",
+  "notes": [
+    "TRANSCRIBER SOURCE ERROR: Equation 3.5 prints tan of angle of V notch, without a half-angle. The following paragraph says that for 90 degrees the tangent equals 1. That printed assertion is inconsistent with tan(90°). Both the equation and paragraph are retained without correction."
+  ],
+  "verification": {
+    "transcription": {
+      "pass_id": "visual-2026-11-08-01",
+      "method": "direct visual reading of rendered source page; no OCR",
+      "observations": "Read each cell or formula and its printed context directly."
+    },
+    "visual_recheck": {
+      "pass_id": "visual-2026-11-08-equations-06",
+      "method": "distinct second visual inspection of exact source-region renders; same assistant, not an independent reviewer",
+      "observations": "Rechecked all formula coefficients, powers, denominators/grouping, numbered references, definitions and printed applicability. Retained the V-notch tangent inconsistency and undefined log base and g without correction.",
+      "content_sha256": "63d34f235657bd98cf896e0c8370833a014e876c2da42062a7e12a4afc753d9c"
+    }
+  }
+}

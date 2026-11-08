@@ -1,7 +1,7 @@
 """Query operations shared by the MCP tools and the REST API.
 
 Every result carries a ready-to-paste citation and the Omakase attribution.
-Scanned content is supplied as source images, never an OCR transcription.
+Scanned content retains source images alongside explicitly verified visual transcriptions.
 """
 
 from __future__ import annotations
@@ -56,7 +56,7 @@ DOMAIN_HINTS: dict[str, tuple[str, ...]] = {
               "transmission main", "tube well", "nrw", "water meter", "chlorination"),
 }
 DOMAIN_BOOST = 1.3  # bm25 scores are negative; multiplying makes a match rank higher
-KIND_LABEL = {"section": "Section", "table": "Table", "figure": "Figure", "chapter": "Chapter", "appendix": "Appendix", "annexure": "Annexure"}
+KIND_LABEL = {"equation": "Equation", "section": "Section", "table": "Table", "figure": "Figure", "chapter": "Chapter", "appendix": "Appendix", "annexure": "Annexure"}
 
 
 def public_url() -> str | None:
@@ -76,7 +76,8 @@ def canonical_unit_id(unit_id: str) -> str:
 
 
 IMAGE_NOTE = ("This {kind} includes source images from the printed manual. Read values directly from the images "
-              "and cite the returned reference. No OCR transcription is supplied. If a value is unclear, say so.")
+              "and cite the returned reference. Verified transcriptions, when present, identify their exact source regions. "
+              "Other regions have not been verified. If a value is unclear, say so.")
 
 
 def image_url(unit_id: str, seq: int, mime: str) -> str | None:
@@ -130,6 +131,19 @@ class Library:
     def manuals(self) -> dict[str, dict]:
         return {r["id"]: dict(r) for r in self.con.execute("SELECT * FROM manuals")}
 
+    @cached_property
+    def has_transcriptions(self) -> bool:
+        return bool(self.con.execute("SELECT 1 FROM sqlite_master WHERE name='transcriptions'").fetchone())
+
+    def transcription_records(self, unit_id: str) -> list[dict]:
+        if not self.has_transcriptions:
+            return []
+        return [json.loads(r[0]) for r in self.con.execute(
+            "SELECT payload FROM transcriptions WHERE unit_id=? ORDER BY id", (unit_id,))]
+
+    def transcriptions(self, unit_id: str) -> list[dict]:
+        return [r for r in self.transcription_records(unit_id) if r['state']=='verified']
+
     # ---- formatting -------------------------------------------------------------
 
     def citation(self, row: sqlite3.Row) -> str:
@@ -137,9 +151,17 @@ class Library:
         what = f"{KIND_LABEL[row['kind']]} {row['number']}"
         if row["title"]:
             what += f" ({row['title']})" if row["kind"] in ("table", "figure") else f" {row['title'].title() if row['title'].isupper() else row['title']}"
-        pages = row["label_start"] or f"PDF p. {row['page_start']}"
-        if row["label_end"] and row["label_end"] != row["label_start"]:
-            pages = f"{pages} to {row['label_end']}"
+        transcripts = self.transcriptions(row['id'])
+        if transcripts:
+            regions = [reg for t in transcripts for reg in t['regions']]
+            first, last = min(regions,key=lambda r:r['pdf_page']), max(regions,key=lambda r:r['pdf_page'])
+            pages = first['page_label'] or f"PDF p. {first['pdf_page']}"
+            if last['pdf_page'] != first['pdf_page']:
+                pages += ' to ' + (last['page_label'] or f"PDF p. {last['pdf_page']}")
+        else:
+            pages = row["label_start"] or f"PDF p. {row['page_start']}"
+            if row["label_end"] and row["label_end"] != row["label_start"]:
+                pages = f"{pages} to {row['label_end']}"
         return f"{m['citation_title']}, {what}, p. {pages}"
 
     def _unit_dict(self, row: sqlite3.Row, *, full: bool) -> dict:
@@ -171,6 +193,25 @@ class Library:
         if row["image_count"]:
             out["images"] = self.image_refs(row["id"])
             out["image_note"] = IMAGE_NOTE.format(kind=row["kind"] if row["kind"] in ("table", "figure") else "unit")
+        transcripts = self.transcriptions(row['id'])
+        if transcripts:
+            out['transcription_status'] = 'verified'
+            out['verification_scope'] = 'Visual transcription fidelity; printed engineering correctness is not validated.'
+            out['source'] = 'visually transcribed and rechecked against the printed source; source errors are retained'
+            out['transcription_pages'] = [{'pdf_page':reg['pdf_page'],'page_label':reg['page_label']} for t in transcripts for reg in t['regions']]
+            first = min(out['transcription_pages'],key=lambda reg:reg['pdf_page'])
+            last = max(out['transcription_pages'],key=lambda reg:reg['pdf_page'])
+            out.update(pdf_page=first['pdf_page'],pdf_page_end=last['pdf_page'],page_label=first['page_label'],page_label_end=last['page_label'])
+            if full:
+                from .transcriptions import readable
+                out['verified_transcriptions'] = transcripts
+                out['verified_text'] = '\n\n'.join(readable(t) for t in transcripts)
+        pending = [r for r in self.transcription_records(row['id']) if r['state']!='verified']
+        if pending:
+            out['transcription_status'] = pending[0]['state'] if len(pending)==1 else 'incomplete'
+            out['transcription_notes'] = [note for r in pending for note in r.get('notes',[])]
+            if full:
+                out['unverified_regions'] = [{k:r[k] for k in ('id','state','regions','raw_visible_text','notes') if k in r} for r in pending]
         if full:
             out["text"] = row["text"]
             if row["table_markdown"]:
@@ -181,9 +222,11 @@ class Library:
                 out["referenced_tables"] = [f"{row['manual_id']}:{r}" for r in refs]
         return out
 
-    @staticmethod
-    def _snippet(row: sqlite3.Row, text: str) -> str:
+    def _snippet(self, row: sqlite3.Row, text: str) -> str:
         """Picture-only units show their caption."""
+        if self.transcriptions(row["id"]):
+            from .transcriptions import readable
+            return text or readable(self.transcriptions(row["id"])[0])[:600]
         if row["table_source"] == "image" or (row["kind"] == "figure" and not row["text"]):
             what = "table" if row["kind"] == "table" else "figure"
             return f"{row['title']} (a picture of the printed {what}; call fetch or get_clause with this id to see it)"
@@ -214,12 +257,18 @@ class Library:
 
     def images_for(self, clause: dict) -> list[tuple[str, dict, str, bytes]]:
         """All images with their page references, clause images first."""
-        units = [clause] + clause.get("tables", []) + clause.get("children", [])
-        out = []
-        for u in units:
-            for ref in u.get("images", []):
-                mime, data = self.image(u["id"], ref["seq"])
-                out.append((u["id"], ref, mime, data))
+        out, seen = [], set()
+        def visit(u):
+            for ref in u.get('images', []):
+                key = (u['id'],ref['seq'])
+                if key not in seen:
+                    seen.add(key)
+                    mime, data = self.image(*key)
+                    out.append((u['id'],ref,mime,data))
+            for key in ('tables','equations','children'):
+                for child in u.get(key,[]):
+                    visit(child)
+        visit(clause)
         return out
 
     # ---- operations ---------------------------------------------------------------
@@ -239,7 +288,7 @@ class Library:
             raise KeyError(f"unknown manual {manual_id!r}; call list_manuals")
         rows = self.con.execute(
             "SELECT id, kind, number, title, label_start FROM units WHERE manual_id = ? "
-            "AND kind IN ('chapter','section','table','appendix','annexure') AND (? IS NULL OR chapter = ?) ORDER BY ord",
+            "AND kind IN ('chapter','section','table','equation','appendix','annexure') AND (? IS NULL OR chapter = ?) ORDER BY ord",
             (manual_id, chapter, chapter),
         )
         entries = []
@@ -263,12 +312,23 @@ class Library:
                 (row["manual_id"], prefix + "%"),
             ).fetchall()
             out["children"] = [self._unit_dict(k, full=True) for k in kids[:60]]
+            for child in out['children']:
+                eqs = self.con.execute("SELECT * FROM units WHERE manual_id=? AND kind='equation' AND parent=? ORDER BY number",
+                                        (row['manual_id'],child['id'].split(':',1)[1])).fetchall()
+                if eqs:
+                    child['equations'] = [self._unit_dict(e,full=True) for e in eqs]
         tables = self.con.execute(
             "SELECT * FROM units WHERE manual_id = ? AND kind = 'table' AND parent = ? ORDER BY ord",
             (row["manual_id"], row["id"].split(":", 1)[1]),
         ).fetchall()
         if tables and row["kind"] in ("section", "annexure", "appendix"):
             out["tables"] = [self._unit_dict(t, full=True) for t in tables]
+        equations = self.con.execute(
+            "SELECT * FROM units WHERE manual_id=? AND kind='equation' AND parent=? ORDER BY ord,number",
+            (row['manual_id'], row['id'].split(':',1)[1]),
+        ).fetchall()
+        if equations:
+            out['equations'] = [self._unit_dict(e, full=True) for e in equations]
         out["attribution"] = attribution()
         return out
 
@@ -319,7 +379,7 @@ class Library:
             if domain is None and manual_id is None and (hint := self.hinted_domain(query)):
                 rows = sorted(rows, key=lambda r: r["score"] * (DOMAIN_BOOST if r["domain"] == hint else 1.0))
             for row in rows:
-                if row["unit_id"] in seen or (not row["text"] and not row["table_markdown"] and not row["image_count"]):
+                if row["unit_id"] in seen or (not row["text"] and not row["table_markdown"] and not row["image_count"] and not self.transcriptions(row["id"])):
                     continue
                 seen.add(row["unit_id"])
                 hit = self._unit_dict(row, full=False)
@@ -342,6 +402,10 @@ class Library:
             lines += [f"Image of p. {r['page_label'] or r['pdf_page']}: {r['url']}" for r in u["images"] if r.get("url")]
             return lines
 
+        if c.get("verified_text"):
+            parts.append(c["verified_text"])
+        if c.get("unverified_regions"):
+            parts.append("Unverified source region. " + " ".join(c.get("transcription_notes",[])))
         if c.get("table_markdown"):
             parts.append(c["table_markdown"])
             if c.get("needs_review"):
@@ -352,9 +416,19 @@ class Library:
             parts.append(c["text"])
         for t in c.get("tables", []):
             parts += ["", f"{t['citation']}"]
+            if t.get("verified_text"):
+                parts.append(t["verified_text"])
             parts += [t["table_markdown"]] if t.get("table_markdown") else picture_lines(t)
+        for e in c.get("equations", []):
+            parts += ["", e["citation"], e.get("verified_text", "Unverified equation region. " + " ".join(e.get("transcription_notes",[]))), *picture_lines(e)]
         meta = {k: c[k] for k in ("kind", "number", "page_label", "pdf_page", "citation", "citation_plain", "source_name", "source_icon") if c.get(k) is not None}
         meta["manual"] = c["manual"]["id"]
+        if c.get("unverified_regions"):
+            meta["unverified_regions"] = c["unverified_regions"]
+        if c.get("verified_transcriptions"):
+            meta["verified_transcriptions"] = c["verified_transcriptions"]
+        if c.get("equations"):
+            meta["equations"] = c["equations"]
         if c.get("needs_review"):
             meta["needs_review"] = True
         if c.get("images"):

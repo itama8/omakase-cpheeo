@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:Ep272-1",
+  "unit_id": "SEW-2013-A:Ep272-1",
+  "manual_id": "SEW-2013-A",
+  "kind": "equation",
+  "number": "p272-1",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "state": "verified",
+  "regions": [
+    {
+      "pdf_page": 272,
+      "page_label": "3 - 127",
+      "bbox": [
+        50,
+        496,
+        545,
+        755
+      ],
+      "render_sha256": "fc7393200ba79af4ac1a08ead2a4ed781461420f6736bd9e2dd73bb146c3226a"
+    }
+  ],
+  "title": "Unnumbered egg-shaped sewer full-flow hydraulic properties",
+  "parent_id": "SEW-2013-A:3.71.2",
+  "latex": "A=0.510H^2,\\quad P=2.643H,\\quad R=0.193H",
+  "readable": "Egg-shaped (full): A = 0.510 H^2; P = 2.643 H; R = 0.193 H",
+  "symbols": [],
+  "applicability": "Figure 3.62: Geometry and hydraulic properties of egg shaped sewer at full flow. Diagram marks the overall height H and circular radii H/3 and H/6.",
+  "notes": [
+    "Transcriber note: p272-1 is a service locator, not a printed equation number. A, P and R are not written out as symbol definitions within this figure; no units are added."
+  ],
+  "verification": {
+    "transcription": {
+      "pass_id": "visual-2026-11-08-01",
+      "method": "direct visual reading of rendered source page; no OCR",
+      "observations": "Read each cell or formula and its printed context directly."
+    },
+    "visual_recheck": {
+      "pass_id": "visual-2026-11-08-ch3-structural-02",
+      "method": "distinct second direct visual comparison; same assistant, not independent human review",
+      "observations": "Rechecked coefficients, grouping, powers, signs, numbered and unnumbered labels, printed definitions and applicability in a distinct source-region pass. Rechecked all three coefficients and H² exponent; drawing radii H/3 and H/6 retained.",
+      "content_sha256": "f4232833cae629c91bd25668271408f191633d9008fb7790ff7b8d0050eeebac"
+    }
+  }
+}

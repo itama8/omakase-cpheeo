@@ -1,0 +1,116 @@
+{
+  "schema_version": 1,
+  "id": "WS-2024-A:AN16.1-T1",
+  "unit_id": "WS-2024-A:AN16.1-T1",
+  "manual_id": "WS-2024-A",
+  "kind": "table",
+  "number": "1, Annexure 16.1",
+  "title": "Details of various",
+  "source_sha256": "b60f2fb548357aec676b18ef31e3b37fb0e5e8a1aec8f886880b951113848b0a",
+  "state": "verified",
+  "regions": [
+    {
+      "pdf_page": 1243,
+      "page_label": "1157",
+      "bbox": [
+        345,
+        228,
+        525,
+        753
+      ],
+      "render_sha256": "0ad95364c83df602cc07f0868aea07d92aa3c6783bd003421e9da0b46025e316"
+    },
+    {
+      "pdf_page": 1244,
+      "page_label": "1158",
+      "bbox": [
+        345,
+        70,
+        525,
+        179
+      ],
+      "render_sha256": "10c6449f02425167b1d5049ba6d1a6a57ac2ab9f833f0f36db4efeaed248ec9c"
+    }
+  ],
+  "headers": [
+    "SN",
+    "Components",
+    "Details"
+  ],
+  "rows": [
+    [
+      "1",
+      "Head Works:",
+      "Jack Well, Pump House, Approach Bridge"
+    ],
+    [
+      "2",
+      "Raw Water Pumping Machinery:",
+      "5 sets, 495HP each, Q = 205 LPS, H=118 m"
+    ],
+    [
+      "3",
+      "Raw and Pure Water Rising Main",
+      "800 mm nominal dia. DI K-9.; L-13.02 Km"
+    ],
+    [
+      "4",
+      "BPT",
+      "3.30 lakh lit"
+    ],
+    [
+      "5",
+      "RW Gr. Main from BPT to WTP",
+      "800 mm diameter DI K-7; L-25.5Km"
+    ],
+    [
+      "6",
+      "WTP for 19 villages",
+      "Capacity 47.5 mld"
+    ],
+    [
+      "7",
+      "RCC MBR (Twin):",
+      "Cap 19.73 lakh lit, St. height -30 m"
+    ],
+    [
+      "8",
+      "PW pumps for MJP MBR for 10 villages",
+      "5 sets, HP 170, Q=191 Lps; Head -40 m"
+    ],
+    [
+      "9",
+      "Feeder Main from MJP MBR",
+      "DI K-7, 700 mm to 100 mm, L=55.1 km"
+    ],
+    [
+      "10",
+      "RCC MJP ESRs",
+      "27 Nos."
+    ],
+    [
+      "11",
+      "Distribution System:",
+      "HDPE pipes 6 Kg/m², P.E. 100"
+    ]
+  ],
+  "markdown": "| SN | Components | Details |\n| --- | --- | --- |\n| 1 | Head Works: | Jack Well, Pump House, Approach Bridge |\n| 2 | Raw Water Pumping Machinery: | 5 sets, 495HP each, Q = 205 LPS, H=118 m |\n| 3 | Raw and Pure Water Rising Main | 800 mm nominal dia. DI K-9.; L-13.02 Km |\n| 4 | BPT | 3.30 lakh lit |\n| 5 | RW Gr. Main from BPT to WTP | 800 mm diameter DI K-7; L-25.5Km |\n| 6 | WTP for 19 villages | Capacity 47.5 mld |\n| 7 | RCC MBR (Twin): | Cap 19.73 lakh lit, St. height -30 m |\n| 8 | PW pumps for MJP MBR for 10 villages | 5 sets, HP 170, Q=191 Lps; Head -40 m |\n| 9 | Feeder Main from MJP MBR | DI K-7, 700 mm to 100 mm, L=55.1 km |\n| 10 | RCC MJP ESRs | 27 Nos. |\n| 11 | Distribution System: | HDPE pipes 6 Kg/m², P.E. 100 |",
+  "notes": [
+    "Printed caption: Table 1: Details of various components.",
+    "Transcriber note: row 9 continues onto printed page 1158, followed by rows 10 and 11. The printed unit in row 11 is Kg/m²; it has not been repaired or converted. Figure maps alongside the table remain source images. Case study of 19 peri-urban villages near Nagpur."
+  ],
+  "cell_spans": [],
+  "verification": {
+    "transcription": {
+      "pass_id": "visual-2026-11-08-water-01",
+      "method": "direct visual reading of all source and continuation pages, no OCR",
+      "observations": "Read headers, merged groups, every printed cell, blanks and notes from rendered PDF pages."
+    },
+    "visual_recheck": {
+      "pass_id": "visual-2026-11-08-water-02",
+      "method": "separate second visual comparison of each exact source-region render including every continuation; same assistant, not an independent reviewer",
+      "observations": "Rechecked all 11 rows, column headers, values/units, merged relationships and printed notes across 2 source regions.",
+      "content_sha256": "a19ee63925d53646ed2500c69a5d74a10d5be2eba4001d7dad87c96779198111"
+    }
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "scope_complete": false,
+  "equation_total": "unknown until every review-scope page is inspected",
+  "manuals": {
+    "SEW-2013-A": {
+      "physical_pages": 963,
+      "review_scope_pages": 871,
+      "pages_reviewed": 58,
+      "pages_partially_reviewed": 2,
+      "pages_remaining_including_partial": 813,
+      "indexed_tables": 192,
+      "baseline_image_table_units": 192,
+      "baseline_image_table_units_verified": 35,
+      "baseline_image_table_units_pending": 157,
+      "native_table_units_without_visual_transcription": 0,
+      "verified_tables": 35,
+      "verified_equations": 50
+    },
+    "WS-2024-A": {
+      "physical_pages": 1283,
+      "review_scope_pages": 1198,
+      "pages_reviewed": 10,
+      "pages_partially_reviewed": 2,
+      "pages_remaining_including_partial": 1188,
+      "indexed_tables": 215,
+      "baseline_image_table_units": 6,
+      "baseline_image_table_units_verified": 6,
+      "baseline_image_table_units_pending": 0,
+      "native_table_units_without_visual_transcription": 209,
+      "verified_tables": 6,
+      "verified_equations": 0
+    },
+    "WS-2024-B": {
+      "physical_pages": 702,
+      "review_scope_pages": 635,
+      "pages_reviewed": 7,
+      "pages_partially_reviewed": 0,
+      "pages_remaining_including_partial": 628,
+      "indexed_tables": 93,
+      "baseline_image_table_units": 2,
+      "baseline_image_table_units_verified": 2,
+      "baseline_image_table_units_pending": 0,
+      "native_table_units_without_visual_transcription": 91,
+      "verified_tables": 2,
+      "verified_equations": 0
+    },
+    "WS-2024-C": {
+      "physical_pages": 265,
+      "review_scope_pages": 213,
+      "pages_reviewed": 1,
+      "pages_partially_reviewed": 0,
+      "pages_remaining_including_partial": 212,
+      "indexed_tables": 35,
+      "baseline_image_table_units": 1,
+      "baseline_image_table_units_verified": 1,
+      "baseline_image_table_units_pending": 0,
+      "native_table_units_without_visual_transcription": 34,
+      "verified_tables": 1,
+      "verified_equations": 0
+    }
+  }
+}

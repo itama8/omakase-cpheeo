@@ -5,3 +5,6 @@ __pycache__/
 data/build/
 # Source PDFs are never committed; point OMAKASE_CPHEEO_SOURCES at the local folder.
 *.pdf
+
+# Local PDF renders and transcription authoring scratch.
+tmp/

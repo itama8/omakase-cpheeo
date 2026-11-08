@@ -1,0 +1,87 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:T3.17",
+  "unit_id": "SEW-2013-A:T3.17",
+  "manual_id": "SEW-2013-A",
+  "kind": "table",
+  "number": "3.17",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "state": "verified",
+  "regions": [
+    {
+      "pdf_page": 212,
+      "page_label": "3 - 67",
+      "bbox": [
+        90,
+        470,
+        515,
+        688
+      ],
+      "render_sha256": "18ee45e69f423c3dcad41954f60ec9a117d482e4c5b87923f682019875d57999"
+    }
+  ],
+  "title": "Recommended design values of settlement ratios",
+  "headers": [
+    "",
+    "Type of Conduit",
+    "Type of Soil",
+    "Settlement Ratio"
+  ],
+  "rows": [
+    [
+      "1",
+      "Rigid",
+      "Rock or unyielding foundation",
+      "+ 1.0"
+    ],
+    [
+      "2",
+      "Rigid",
+      "Ordinary foundation",
+      "+ 0.5 to + 0.8"
+    ],
+    [
+      "3",
+      "Rigid",
+      "Yielding foundation",
+      "0 to + 0.5"
+    ],
+    [
+      "4",
+      "Rigid",
+      "Negative projecting installation",
+      "0.3 to 0.5"
+    ],
+    [
+      "5",
+      "Flexible",
+      "Poorly compacted side fill",
+      "0.4 to 0"
+    ],
+    [
+      "6",
+      "Flexible",
+      "Well compacted side fill",
+      "0"
+    ]
+  ],
+  "cell_spans": [],
+  "markdown": "|  | Type of Conduit | Type of Soil | Settlement Ratio |\n| --- | --- | --- | --- |\n| 1 | Rigid | Rock or unyielding foundation | + 1.0 |\n| 2 | Rigid | Ordinary foundation | + 0.5 to + 0.8 |\n| 3 | Rigid | Yielding foundation | 0 to + 0.5 |\n| 4 | Rigid | Negative projecting installation | 0.3 to 0.5 |\n| 5 | Flexible | Poorly compacted side fill | 0.4 to 0 |\n| 6 | Flexible | Well compacted side fill | 0 |",
+  "notes": [
+    "Source: CPHEEO, 1993",
+    "Transcriber note: the descending range 0.4 to 0 is preserved as printed."
+  ],
+  "verification": {
+    "transcription": {
+      "pass_id": "visual-2026-11-08-01",
+      "method": "direct visual reading of rendered source page; no OCR",
+      "observations": "Read each cell or formula and its printed context directly."
+    },
+    "visual_recheck": {
+      "pass_id": "visual-2026-11-08-ch3-structural-02",
+      "method": "distinct second direct visual comparison; same assistant, not independent human review",
+      "observations": "Rechecked every cell of 6 rows, headers/units and all printed notes in the separate source-region pass. ",
+      "content_sha256": "e0a4871aa259e3ca0e8f71dd36cf3dceffe6dfb53fc7cf1dd4ee1d3d680f68b4"
+    }
+  }
+}

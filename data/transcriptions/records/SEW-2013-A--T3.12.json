@@ -1,0 +1,135 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:T3.12",
+  "unit_id": "SEW-2013-A:T3.12",
+  "manual_id": "SEW-2013-A",
+  "kind": "table",
+  "number": "3.12",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "state": "verified",
+  "regions": [
+    {
+      "pdf_page": 176,
+      "page_label": "3 - 31",
+      "bbox": [
+        50,
+        73,
+        545,
+        476
+      ],
+      "render_sha256": "089002e8b73b0c7974ba225503539dad862ee7364e500719dcb5c5fadc6c0bb0"
+    }
+  ],
+  "title": "Hydraulic properties of circular sections for Manning’s formula",
+  "headers": [
+    "Constant (n): d/D",
+    "Constant (n): v/V",
+    "Constant (n): q/Q",
+    "Variable (n): n_d/n",
+    "Variable (n): v/V",
+    "Variable (n): q/Q"
+  ],
+  "rows": [
+    [
+      "1.0",
+      "1.000",
+      "1.000",
+      "1.00",
+      "1.000",
+      "1.000"
+    ],
+    [
+      "0.9",
+      "1.124",
+      "1.066",
+      "1.07",
+      "1.056",
+      "1.020"
+    ],
+    [
+      "0.8",
+      "1.140",
+      "0.968",
+      "1.14",
+      "1.003",
+      "0.890"
+    ],
+    [
+      "0.7",
+      "1 120",
+      "0.838",
+      "1.18",
+      "0.952",
+      "0712"
+    ],
+    [
+      "0.6",
+      "1.072",
+      "0.671",
+      "1.21",
+      "0.890",
+      "0.557"
+    ],
+    [
+      "0.5",
+      "1.000",
+      "0.500",
+      "1.24",
+      "0.810",
+      "0.405"
+    ],
+    [
+      "0.4",
+      "0.902",
+      "0.337",
+      "1.27",
+      "0.713",
+      "0.266"
+    ],
+    [
+      "0.3",
+      "0 776",
+      "0.196",
+      "1.28",
+      "0.605",
+      "0.153"
+    ],
+    [
+      "0.2",
+      "0.615",
+      "0,088",
+      "1.27",
+      "0,486",
+      "0.070"
+    ],
+    [
+      "0.1",
+      "0.401",
+      "0.021",
+      "1.22",
+      "0.329",
+      "0.017"
+    ]
+  ],
+  "cell_spans": [],
+  "markdown": "| Constant (n): d/D | Constant (n): v/V | Constant (n): q/Q | Variable (n): n_d/n | Variable (n): v/V | Variable (n): q/Q |\n| --- | --- | --- | --- | --- | --- |\n| 1.0 | 1.000 | 1.000 | 1.00 | 1.000 | 1.000 |\n| 0.9 | 1.124 | 1.066 | 1.07 | 1.056 | 1.020 |\n| 0.8 | 1.140 | 0.968 | 1.14 | 1.003 | 0.890 |\n| 0.7 | 1 120 | 0.838 | 1.18 | 0.952 | 0712 |\n| 0.6 | 1.072 | 0.671 | 1.21 | 0.890 | 0.557 |\n| 0.5 | 1.000 | 0.500 | 1.24 | 0.810 | 0.405 |\n| 0.4 | 0.902 | 0.337 | 1.27 | 0.713 | 0.266 |\n| 0.3 | 0 776 | 0.196 | 1.28 | 0.605 | 0.153 |\n| 0.2 | 0.615 | 0,088 | 1.27 | 0,486 | 0.070 |\n| 0.1 | 0.401 | 0.021 | 1.22 | 0.329 | 0.017 |",
+  "notes": [
+    "Source: CPHEEO, 1993",
+    "Where, D = Depth of flow (internal dia); d = Actual depth of flow; V = Velocity at full depth; v = Velocity at depth ‘d’; n = Manning’s coefficient at full depth; nd = Manning’s coefficient at depth ‘d’; Q = Discharge at full depth; q = Discharge at depth ‘d’.",
+    "Transcriber note: the strings \"1 120\", \"0712\", \"0 776\", \"0,088\" and \"0,486\" are preserved exactly as visibly printed. They are source anomalies, not validated numerical values; no decimal corrections are inferred.",
+    "Adjacent applicability: For practical purposes, it is not possible to measure the value of n_d and hence only the fixed value of Manning’s n shall be used. The formula shall be used with constant values of n only."
+  ],
+  "verification": {
+    "transcription": {
+      "pass_id": "visual-2026-11-08-01",
+      "method": "direct visual reading of rendered source page; no OCR",
+      "observations": "Read each cell or formula and its printed context directly."
+    },
+    "visual_recheck": {
+      "pass_id": "visual-2026-11-08-04",
+      "method": "separate second visual comparison with rendered source region; same assistant, not an independent reviewer",
+      "observations": "All 60 table entries plus definitions rechecked. Malformed decimal strings retained as printed.",
+      "content_sha256": "d0fb39c200f083c91dd342cf211faa49b8ed6ea50f86ef296c1f8945fa75acbc"
+    }
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:E3.42",
+  "unit_id": "SEW-2013-A:E3.42",
+  "manual_id": "SEW-2013-A",
+  "kind": "equation",
+  "number": "3.42",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "state": "verified",
+  "regions": [
+    {
+      "pdf_page": 234,
+      "page_label": "3 - 89",
+      "bbox": [
+        50,
+        246,
+        545,
+        737
+      ],
+      "render_sha256": "4aae2cea858358888a0295dd7d9a60cd7b5ed5533871f189a58a7654ce1617c6"
+    },
+    {
+      "pdf_page": 235,
+      "page_label": "3 - 90",
+      "bbox": [
+        50,
+        73,
+        545,
+        184
+      ],
+      "render_sha256": "cc122c83e8bdb5ca07918fd37c8eacb2492507ce3cfd2dd77b0695da370d4009"
+    }
+  ],
+  "title": "Lateral-to-vertical load ratio for positive projecting conduits",
+  "parent_id": "SEW-2013-A:3.50.3.8",
+  "latex": "q=(mk/C_c)\\left[(H/B_c)+(m/2)\\right]",
+  "readable": "q = (m k / C_c) [(H / B_c) + (m / 2)]",
+  "symbols": [
+    {
+      "symbol": "k",
+      "definition": "Rankine’s ratio which may be taken as 0.33."
+    },
+    {
+      "symbol": "m",
+      "definition": "Fraction of conduit on which lateral pressure act (Table 3.26)"
+    }
+  ],
+  "applicability": "Positive projecting conduits. Values of N are given in Table 3.25 and values of Z in Table 3.26. Negative projecting conduits may use Equations 3.41 and 3.42 with k = 0.15 provided side fills are well compacted. The equations for positive projecting conditions also hold for imperfect trench conditions.",
+  "notes": [
+    "Transcriber note: only k is defined immediately after the formula; m is named in the adjoining table heading. Other symbols are retained from the printed surrounding load notation."
+  ],
+  "verification": {
+    "transcription": {
+      "pass_id": "visual-2026-11-08-01",
+      "method": "direct visual reading of rendered source page; no OCR",
+      "observations": "Read each cell or formula and its printed context directly."
+    },
+    "visual_recheck": {
+      "pass_id": "visual-2026-11-08-ch3-structural-02",
+      "method": "distinct second direct visual comparison; same assistant, not independent human review",
+      "observations": "Rechecked coefficients, grouping, powers, signs, numbered and unnumbered labels, printed definitions and applicability in a distinct source-region pass. Confirmed k=0.33, subsequent k=0.15 condition and adjoining m heading.",
+      "content_sha256": "f67ea24cab17bdff77d0b87cd77c93dd0bd4be50dc211c91139f4833967fb418"
+    }
+  }
+}

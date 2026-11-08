@@ -1,0 +1,93 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:T2.2",
+  "unit_id": "SEW-2013-A:T2.2",
+  "manual_id": "SEW-2013-A",
+  "kind": "table",
+  "number": "2.2",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "state": "verified",
+  "regions": [
+    {
+      "pdf_page": 134,
+      "page_label": "2 - 31",
+      "bbox": [
+        75,
+        521,
+        515,
+        750
+      ],
+      "render_sha256": "7e8db9c7d6bf6c4a962e9be8ee7838b5ca0beab789cf3e2bd1720a7911593152"
+    }
+  ],
+  "title": "Service level benchmarks for sewage management",
+  "headers": [
+    "Sl. No.",
+    "Proposed Indicator",
+    "Benchmark",
+    "Sl. No.",
+    "Proposed Indicator",
+    "Benchmark"
+  ],
+  "rows": [
+    [
+      "1",
+      "Coverage of toilets",
+      "100%",
+      "6",
+      "Extent of reuse and recycling of sewage",
+      "20%"
+    ],
+    [
+      "2",
+      "Coverage of sewage network services",
+      "100%",
+      "7",
+      "Efficiency in redressal of customer complaints",
+      "80%"
+    ],
+    [
+      "3",
+      "Collection efficiency of the sewage network",
+      "100%",
+      "8",
+      "Extent of cost recovery in sewage management",
+      "100%"
+    ],
+    [
+      "4",
+      "Adequacy of sewage treatment capacity",
+      "100%",
+      "9",
+      "Efficiency in collection of sewage charges",
+      "90%"
+    ],
+    [
+      "5",
+      "Quality of sewage treatment",
+      "100%",
+      "",
+      "",
+      ""
+    ]
+  ],
+  "cell_spans": [],
+  "markdown": "| Sl. No. | Proposed Indicator | Benchmark | Sl. No. | Proposed Indicator | Benchmark |\n| --- | --- | --- | --- | --- | --- |\n| 1 | Coverage of toilets | 100% | 6 | Extent of reuse and recycling of sewage | 20% |\n| 2 | Coverage of sewage network services | 100% | 7 | Efficiency in redressal of customer complaints | 80% |\n| 3 | Collection efficiency of the sewage network | 100% | 8 | Extent of cost recovery in sewage management | 100% |\n| 4 | Adequacy of sewage treatment capacity | 100% | 9 | Efficiency in collection of sewage charges | 90% |\n| 5 | Quality of sewage treatment | 100% |  |  |  |",
+  "notes": [
+    "Source: MoUD, 2011",
+    "The two three-column blocks continue one numbered list. Final three cells are blank."
+  ],
+  "verification": {
+    "transcription": {
+      "pass_id": "visual-2026-11-08-01",
+      "method": "direct visual reading of rendered source page; no OCR",
+      "observations": "Read each cell or formula and its printed context directly."
+    },
+    "visual_recheck": {
+      "pass_id": "visual-2026-11-08-04",
+      "method": "separate second visual comparison with rendered source region; same assistant, not an independent reviewer",
+      "observations": "All nine indicators, five 100% left values, right 20/80/100/90%, blanks and source rechecked.",
+      "content_sha256": "e769668dd25ef5a3ac78b597d90e66cb67e012a2e0f8219642e752c50e8831e0"
+    }
+  }
+}

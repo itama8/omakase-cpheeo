@@ -1,0 +1,50 @@
+PASS V01 rank=1
+PASS V02 rank=1
+PASS V03 rank=1
+PASS V04 rank=1
+PASS V05 rank=1
+PASS V06 rank=1
+PASS V07 rank=1
+PASS V08 rank=1
+PASS V09 rank=1
+PASS V10 rank=1
+PASS V11 rank=1
+PASS V12 rank=1
+PASS V13 rank=1
+PASS V14 rank=2
+PASS V15 rank=1
+PASS V16 rank=1
+PASS V17 rank=1
+PASS V18 rank=1
+PASS V19 rank=1
+PASS V20 rank=1
+PASS V21 rank=1
+PASS V22 rank=1
+PASS V23 rank=1
+PASS V24 rank=1
+PASS V25 rank=1
+PASS V26 rank=1
+{
+  "questions": 26,
+  "content_checks_passed": 26,
+  "top1": 25,
+  "top5": 26,
+  "mrr": 0.9807692307692307,
+  "local_warm_search_fetch_ms": {
+    "samples": 130,
+    "median": 41.84455602080561,
+    "p95": 57.65308899572119
+  },
+  "limitations": "Source-open regression set. Same-assistant visual recheck, not independent accuracy proof. In-process warm SQLite timings exclude network, rendering, model and end-to-end retrieval time.",
+  "failures": []
+}
+
+Additional checkpoint verification:
+- python -m unittest discover -s scripts -p 'test_*.py': 14/14 pass.
+- Original APD retrieval: 27/27 top five, MRR 0.84 (handle retrieval, not independent answer accuracy).
+- Diameter/ranking regression: 12/12 rank one.
+- Appendix retrieval: 13/13 top five, MRR 0.92.
+- Appendix coverage: all 51 source-listed entries and all 185 full-page appendix images preserved.
+- Baseline preservation against 7b97062: all 4,956 original units (except derived image counts), 2,321 complete source images and 7,640 original passages unchanged.
+- Local MCP smoke on port 8799: every tool; original images and legacy links; verified table row, Equation 5.30 math/image/parent/HTML, unclear fallback and missing water continuation all pass.
+- Full four-PDF re-ingestion was not repeated. Persistence across build and refresh is exercised by source-independent fixture tests; the actual snapshot was built by applying source-validated records to an offline copy of the unchanged baseline.

@@ -1,0 +1,93 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:T3.28",
+  "unit_id": "SEW-2013-A:T3.28",
+  "manual_id": "SEW-2013-A",
+  "kind": "table",
+  "number": "3.28",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "state": "verified",
+  "regions": [
+    {
+      "pdf_page": 249,
+      "page_label": "3 - 104",
+      "bbox": [
+        64,
+        204,
+        533,
+        408
+      ],
+      "render_sha256": "da2698880f371bc218b9d5fa68c15be8ea3595ae66b4f349d9c01cd1596182e5"
+    }
+  ],
+  "title": "Minimum test times per 30 m of vitrified clay sewer line for air testing",
+  "headers": [
+    "Diameter, mm",
+    "minutes",
+    "Diameter, mm",
+    "minutes",
+    "Diameter, mm",
+    "minutes"
+  ],
+  "rows": [
+    [
+      "100",
+      "0.3",
+      "400",
+      "2.1",
+      "750",
+      "4.8"
+    ],
+    [
+      "150",
+      "0.7",
+      "450",
+      "2.4",
+      "800",
+      "5.4"
+    ],
+    [
+      "200",
+      "1.2",
+      "500",
+      "3.0",
+      "900",
+      "6.0"
+    ],
+    [
+      "250",
+      "1.5",
+      "600",
+      "3.6",
+      "950",
+      "6.6"
+    ],
+    [
+      "300",
+      "1.8",
+      "700",
+      "4.2",
+      "1,070",
+      "7.3"
+    ]
+  ],
+  "cell_spans": [],
+  "markdown": "| Diameter, mm | minutes | Diameter, mm | minutes | Diameter, mm | minutes |\n| --- | --- | --- | --- | --- | --- |\n| 100 | 0.3 | 400 | 2.1 | 750 | 4.8 |\n| 150 | 0.7 | 450 | 2.4 | 800 | 5.4 |\n| 200 | 1.2 | 500 | 3.0 | 900 | 6.0 |\n| 250 | 1.5 | 600 | 3.6 | 950 | 6.6 |\n| 300 | 1.8 | 700 | 4.2 | 1,070 | 7.3 |",
+  "notes": [
+    "Adjacent applicability: After air supply is disconnected, the time taken to drop from 2.5 m to 1.7 m water column for every 30 m is noted for conformity with Table 3.28.",
+    "Three diameter/time column pairs continue one list."
+  ],
+  "verification": {
+    "transcription": {
+      "pass_id": "visual-2026-11-08-01",
+      "method": "direct visual reading of rendered source page; no OCR",
+      "observations": "Read each cell or formula and its printed context directly."
+    },
+    "visual_recheck": {
+      "pass_id": "visual-2026-11-08-ch3-structural-02",
+      "method": "distinct second direct visual comparison; same assistant, not independent human review",
+      "observations": "Rechecked every cell of 5 rows, headers/units and all printed notes in the separate source-region pass. ",
+      "content_sha256": "a95274f696a493d095bedf016954e3eaddc943270eb1ce5632e28b5830e07c3c"
+    }
+  }
+}

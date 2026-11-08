@@ -1,0 +1,201 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:T3.11",
+  "unit_id": "SEW-2013-A:T3.11",
+  "manual_id": "SEW-2013-A",
+  "kind": "table",
+  "number": "3.11",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "state": "verified",
+  "regions": [
+    {
+      "pdf_page": 174,
+      "page_label": "3 - 29",
+      "bbox": [
+        77,
+        73,
+        516,
+        746
+      ],
+      "render_sha256": "588a836d9ef61ec3945ec9f5d59392ae256784c99be23a981fba0cf7c07c7f9b"
+    }
+  ],
+  "title": "Manning’s coefficient of roughness n for stated materials",
+  "headers": [
+    "Type of Material",
+    "Condition",
+    "Manning’s n"
+  ],
+  "rows": [
+    [
+      "Salt glazed stone ware pipe",
+      "(a) Good",
+      "0.012"
+    ],
+    [
+      "Salt glazed stone ware pipe",
+      "(b) Fair",
+      "0.015"
+    ],
+    [
+      "Cement concrete pipes (With collar joints)",
+      "(a) Good",
+      "0.013"
+    ],
+    [
+      "Cement concrete pipes (With collar joints)",
+      "(b) Fair",
+      "0.015"
+    ],
+    [
+      "Spun concrete pipes (RCC & PSC),With S / S Joints, (Design Value)",
+      "",
+      "0.011"
+    ],
+    [
+      "Masonry",
+      "(a) Neat cement plaster",
+      "0.018"
+    ],
+    [
+      "Masonry",
+      "(b) Sand and cement plaster",
+      "0.015"
+    ],
+    [
+      "Masonry",
+      "(c) Concrete, steel troweled",
+      "0.014"
+    ],
+    [
+      "Masonry",
+      "(d) Concrete, wood troweled",
+      "0.015"
+    ],
+    [
+      "Masonry",
+      "(e) Brick in good condition",
+      "0.015"
+    ],
+    [
+      "Masonry",
+      "(f) Brick in rough condition",
+      "0.017"
+    ],
+    [
+      "Masonry",
+      "(g) Masonry in bad condition",
+      "0.020"
+    ],
+    [
+      "Stone-work",
+      "(a) Smooth, dressed ashlar",
+      "0.015"
+    ],
+    [
+      "Stone-work",
+      "(b) Rubble set in cement",
+      "0.017"
+    ],
+    [
+      "Stone-work",
+      "(c) Fine, well packed gravel",
+      "0.020"
+    ],
+    [
+      "Earth",
+      "(a) Regular surface in good condition",
+      "0.020"
+    ],
+    [
+      "Earth",
+      "(b) In ordinary condition",
+      "0.025"
+    ],
+    [
+      "Earth",
+      "(c) With stones and weeds",
+      "0.030"
+    ],
+    [
+      "Earth",
+      "(d) In poor condition",
+      "0.035"
+    ],
+    [
+      "Earth",
+      "(e) Partially obstructed with debris or weeds",
+      "0.050"
+    ],
+    [
+      "Steel",
+      "(a) Welded",
+      "0.013"
+    ],
+    [
+      "Steel",
+      "(b) Riveted",
+      "0.017"
+    ],
+    [
+      "Steel",
+      "(c) Slightly tuberculated",
+      "0.020"
+    ],
+    [
+      "Steel",
+      "(d) With spun cement mortar lining",
+      "0.011"
+    ],
+    [
+      "Cast Iron / Ductile Iron",
+      "(a) Unlined",
+      "0.013"
+    ],
+    [
+      "Cast Iron / Ductile Iron",
+      "(b) With spun cement mortar lining",
+      "0.011"
+    ],
+    [
+      "Asbestos cement",
+      "",
+      "0.011"
+    ],
+    [
+      "Plastic (smooth)",
+      "",
+      "0.011"
+    ],
+    [
+      "FRP",
+      "",
+      "0.01"
+    ],
+    [
+      "HDPE/UPVC",
+      "",
+      "0.01"
+    ]
+  ],
+  "cell_spans": [],
+  "markdown": "| Type of Material | Condition | Manning’s n |\n| --- | --- | --- |\n| Salt glazed stone ware pipe | (a) Good | 0.012 |\n| Salt glazed stone ware pipe | (b) Fair | 0.015 |\n| Cement concrete pipes (With collar joints) | (a) Good | 0.013 |\n| Cement concrete pipes (With collar joints) | (b) Fair | 0.015 |\n| Spun concrete pipes (RCC & PSC),With S / S Joints, (Design Value) |  | 0.011 |\n| Masonry | (a) Neat cement plaster | 0.018 |\n| Masonry | (b) Sand and cement plaster | 0.015 |\n| Masonry | (c) Concrete, steel troweled | 0.014 |\n| Masonry | (d) Concrete, wood troweled | 0.015 |\n| Masonry | (e) Brick in good condition | 0.015 |\n| Masonry | (f) Brick in rough condition | 0.017 |\n| Masonry | (g) Masonry in bad condition | 0.020 |\n| Stone-work | (a) Smooth, dressed ashlar | 0.015 |\n| Stone-work | (b) Rubble set in cement | 0.017 |\n| Stone-work | (c) Fine, well packed gravel | 0.020 |\n| Earth | (a) Regular surface in good condition | 0.020 |\n| Earth | (b) In ordinary condition | 0.025 |\n| Earth | (c) With stones and weeds | 0.030 |\n| Earth | (d) In poor condition | 0.035 |\n| Earth | (e) Partially obstructed with debris or weeds | 0.050 |\n| Steel | (a) Welded | 0.013 |\n| Steel | (b) Riveted | 0.017 |\n| Steel | (c) Slightly tuberculated | 0.020 |\n| Steel | (d) With spun cement mortar lining | 0.011 |\n| Cast Iron / Ductile Iron | (a) Unlined | 0.013 |\n| Cast Iron / Ductile Iron | (b) With spun cement mortar lining | 0.011 |\n| Asbestos cement |  | 0.011 |\n| Plastic (smooth) |  | 0.011 |\n| FRP |  | 0.01 |\n| HDPE/UPVC |  | 0.01 |",
+  "notes": [
+    "Note: Values of n may be taken as 0.015 for unlined metallic pipes and 0.011 for plastic and other smooth pipes.",
+    "Source: CPHEEO, 1999",
+    "Transcriber layout note: repeated material names expand the vertically merged source cells; no condition labels have been inferred for rows without them."
+  ],
+  "verification": {
+    "transcription": {
+      "pass_id": "visual-2026-11-08-01",
+      "method": "direct visual reading of rendered source page; no OCR",
+      "observations": "Read each cell or formula and its printed context directly."
+    },
+    "visual_recheck": {
+      "pass_id": "visual-2026-11-08-04",
+      "method": "separate second visual comparison with rendered source region; same assistant, not an independent reviewer",
+      "observations": "All 30 material/condition rows and roughness values rechecked, including FRP and HDPE/UPVC 0.01; source and note retained.",
+      "content_sha256": "4e1aba52bbf9dac9fcfd891571ca4b827bca5541cec47f50b2a2cbba63bae8af"
+    }
+  }
+}

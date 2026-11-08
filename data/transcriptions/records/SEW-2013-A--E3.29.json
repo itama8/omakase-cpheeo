@@ -1,0 +1,60 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:E3.29",
+  "unit_id": "SEW-2013-A:E3.29",
+  "manual_id": "SEW-2013-A",
+  "kind": "equation",
+  "number": "3.29",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "state": "verified",
+  "regions": [
+    {
+      "pdf_page": 217,
+      "page_label": "3 - 72",
+      "bbox": [
+        50,
+        362,
+        545,
+        579
+      ],
+      "render_sha256": "06694976f65ff04bc95e50798316a41e49171f86c1a3220575841c9a3e6292b3"
+    }
+  ],
+  "title": "Marston load on rigid conduits in trench condition",
+  "parent_id": "SEW-2013-A:3.44",
+  "latex": "W_c=C_d\\,w\\,B_d^2",
+  "readable": "W_c = C_d w B_d^2",
+  "symbols": [
+    {
+      "symbol": "W_c",
+      "definition": "Load on the pipe in kg per linear meter"
+    },
+    {
+      "symbol": "w",
+      "definition": "Unit weight of backfill soil in kg/m³"
+    },
+    {
+      "symbol": "B_d",
+      "definition": "Width of trench at the top of the pipe in m and"
+    },
+    {
+      "symbol": "C_d",
+      "definition": "Load coefficient which is a function of a ratio of height of fill to width of trench (H/B_d) and of the friction coefficient between the backfill and the sides of the trench."
+    }
+  ],
+  "applicability": "Rigid conduits in trench condition. Weights of common filling materials (w) and values of C_d for common soil conditions are given in Tables 3.18 and 3.19 respectively.",
+  "notes": [],
+  "verification": {
+    "transcription": {
+      "pass_id": "visual-2026-11-08-01",
+      "method": "direct visual reading of rendered source page; no OCR",
+      "observations": "Read each cell or formula and its printed context directly."
+    },
+    "visual_recheck": {
+      "pass_id": "visual-2026-11-08-ch3-structural-02",
+      "method": "distinct second direct visual comparison; same assistant, not independent human review",
+      "observations": "Rechecked coefficients, grouping, powers, signs, numbered and unnumbered labels, printed definitions and applicability in a distinct source-region pass. ",
+      "content_sha256": "d455621e080ee5285edb8c940fc4b0c0810534fe7343ff5362694a2960914bed"
+    }
+  }
+}

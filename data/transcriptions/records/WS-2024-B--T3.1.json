@@ -1,0 +1,120 @@
+{
+  "schema_version": 1,
+  "id": "WS-2024-B:T3.1",
+  "unit_id": "WS-2024-B:T3.1",
+  "manual_id": "WS-2024-B",
+  "kind": "table",
+  "number": "3.1",
+  "title": "O&M Activities and Maintenance Requirements at Intake for Surface Water",
+  "source_sha256": "1cfd336b3e2928b95cec3899d3e1d15807b5598d78730d6fe3eef381021844e7",
+  "state": "verified",
+  "regions": [
+    {
+      "pdf_page": 105,
+      "page_label": "38",
+      "bbox": [
+        70,
+        738,
+        535,
+        760
+      ],
+      "render_sha256": "165d567427f60056930b9617763a123dacbce1db58a5ba43f92cc11de8e54028"
+    },
+    {
+      "pdf_page": 106,
+      "page_label": "39",
+      "bbox": [
+        70,
+        70,
+        535,
+        763
+      ],
+      "render_sha256": "2430bc9957bc8cb7227ff9492edd0827110b501f99422895f4681ed85cf56afc"
+    },
+    {
+      "pdf_page": 107,
+      "page_label": "40",
+      "bbox": [
+        70,
+        70,
+        535,
+        763
+      ],
+      "render_sha256": "d3fe32167091bedb17f774528debc6861e92ec0a1ed14f9b1c225ab541c0b7c4"
+    },
+    {
+      "pdf_page": 108,
+      "page_label": "41",
+      "bbox": [
+        70,
+        70,
+        535,
+        771
+      ],
+      "render_sha256": "580fe28154aa69c715a06f50fac6c87283fbdab67ceacabde5f2f455cccbf6d6"
+    },
+    {
+      "pdf_page": 109,
+      "page_label": "42",
+      "bbox": [
+        70,
+        70,
+        535,
+        282
+      ],
+      "render_sha256": "6265ae374029d9fd386d758d633137ab6263463849e498868b938db177fc5057"
+    }
+  ],
+  "headers": [
+    "Type of Intake",
+    "O&M Activities"
+  ],
+  "rows": [
+    [
+      "a) Intake Well",
+      "O&M includes (i) removal of deposits from the bottom of the well; (ii) checking of screens for removal of floating objects; (iii) checking the functioning of watertight inlet valves; (iv) status of the bottom plug of the well; (v) lubrication of headstocks and extended spindles fitted to valves; (vi) civil structure in general; (vii) mechanical and electrical components viz., pump, motor, M.C.C., HOT/EOT hoists, electrical wiring; and (viii) delivery header pipes, joints, valves, flowmeters, etc., for water tightness and sound performance. Intake well is shown in Figure 3.1."
+    ],
+    [
+      "b) Fixed Jetty",
+      "O&M requirement of this kind of intake is almost similar to that of intake well. However, periodical painting of M.S. liner of RCC cast in situ bored piles and cleaning of the inlet screen fitted over suction bell mouth needs special attention (Figure 3.2)."
+    ],
+    [
+      "c) Floating Pontoon",
+      "A boat-shaped mild steel structure can also be used as an intake for water withdrawal. The deck of the boat is used as the floor of the pump house to accommodate all M&E accessories and piping required for withdrawal of water and delivery up to the WTP site. The pontoon is adequately anchored over the bed of the water body using chains and RCC blocks, so that movement of the pontoon is restricted over a horizontal plane (Figure 3.3). Since the basic structure is made of mild steel, periodical painting of the outer surface of the pontoon using anticorrosive paints needs to be done. For this, dry docking of the pontoon may be necessary, depending on the aggressiveness of the river water on which the pontoon floats. The chains used for anchoring need frequent inspection along with the connection with anchor blocks embedded below the bed of the water body."
+    ],
+    [
+      "d) Submerged intake crib",
+      "This is a simple arrangement for the withdrawal of surface water from surface sources where fluctuation of water level is small, and requirement of water is less compared to various other types described here which are suitable for withdrawal of large/quantity of water. The water withdrawal pipe is placed below the LWL of the raw water source over a rigid floor slab of the crib. A bell mouth of adequate size with a screen is fitted over the inlet of the suction pipe at the entry point. The screen, with bell mouth, is protected by an adequately designed wooden crib or wire crates of boulder having its support over a rigid floor of the crib. Adequate protection in the shape of grating and a fine screen is provided over the bell mouth. This type of intake requires very little maintenance except for general cleanliness of the surroundings and painting / replacement of wooden crib (Figure 3.4)."
+    ],
+    [
+      "e) Protected Side Intake",
+      "Activities: Operation of a protected-side intake system to be carried out by a caretaker (Figure 3.5). Daily adjusting a valve or a sluice gate and checking the inlet to channel or pump for obstructing debris. Preventive maintenance to include the screen painting and other metal parts. During the rainy season, the inlet needs checking. Cracks in the concrete structure are to be repaired annually. Cleaning after flooding. Requirements: Daily inspection of the inlet and adjusting of valve or sluice gate. Occasional cleaning of the inlet canal and screens. Annually painting the metal parts and repairing the cracks in concrete."
+    ],
+    [
+      "f) River Bottom intake",
+      "Activities: River bottom intake inlet to be checked regularly (Figure 3.6). Painting the screens, sluice gates, or valves. Sand traps and screens to be cleaned regularly. Every year, concrete structures should be checked for cracks and repaired as needed. Requirements: Daily inspect the inlet and adjust the valve or sluice gate. Occasionally, clean/repair the screen. Annually, paint metal parts / repair cracks in concrete."
+    ],
+    [
+      "g) Sump Intake",
+      "Activities: In sump intake, daily check-up of the sumps for sufficient water inflow / removing debris obstructing the flow (Figure 3.7). Cleaning and desilting of intake. Requirements: Daily inspection of the inlet. Occasional cleaning / repairing of the inlet for any damage due to erosion. Annually desilting the pump."
+    ]
+  ],
+  "markdown": "| Type of Intake | O&M Activities |\n| --- | --- |\n| a) Intake Well | O&M includes (i) removal of deposits from the bottom of the well; (ii) checking of screens for removal of floating objects; (iii) checking the functioning of watertight inlet valves; (iv) status of the bottom plug of the well; (v) lubrication of headstocks and extended spindles fitted to valves; (vi) civil structure in general; (vii) mechanical and electrical components viz., pump, motor, M.C.C., HOT/EOT hoists, electrical wiring; and (viii) delivery header pipes, joints, valves, flowmeters, etc., for water tightness and sound performance. Intake well is shown in Figure 3.1. |\n| b) Fixed Jetty | O&M requirement of this kind of intake is almost similar to that of intake well. However, periodical painting of M.S. liner of RCC cast in situ bored piles and cleaning of the inlet screen fitted over suction bell mouth needs special attention (Figure 3.2). |\n| c) Floating Pontoon | A boat-shaped mild steel structure can also be used as an intake for water withdrawal. The deck of the boat is used as the floor of the pump house to accommodate all M&E accessories and piping required for withdrawal of water and delivery up to the WTP site. The pontoon is adequately anchored over the bed of the water body using chains and RCC blocks, so that movement of the pontoon is restricted over a horizontal plane (Figure 3.3). Since the basic structure is made of mild steel, periodical painting of the outer surface of the pontoon using anticorrosive paints needs to be done. For this, dry docking of the pontoon may be necessary, depending on the aggressiveness of the river water on which the pontoon floats. The chains used for anchoring need frequent inspection along with the connection with anchor blocks embedded below the bed of the water body. |\n| d) Submerged intake crib | This is a simple arrangement for the withdrawal of surface water from surface sources where fluctuation of water level is small, and requirement of water is less compared to various other types described here which are suitable for withdrawal of large/quantity of water. The water withdrawal pipe is placed below the LWL of the raw water source over a rigid floor slab of the crib. A bell mouth of adequate size with a screen is fitted over the inlet of the suction pipe at the entry point. The screen, with bell mouth, is protected by an adequately designed wooden crib or wire crates of boulder having its support over a rigid floor of the crib. Adequate protection in the shape of grating and a fine screen is provided over the bell mouth. This type of intake requires very little maintenance except for general cleanliness of the surroundings and painting / replacement of wooden crib (Figure 3.4). |\n| e) Protected Side Intake | Activities: Operation of a protected-side intake system to be carried out by a caretaker (Figure 3.5). Daily adjusting a valve or a sluice gate and checking the inlet to channel or pump for obstructing debris. Preventive maintenance to include the screen painting and other metal parts. During the rainy season, the inlet needs checking. Cracks in the concrete structure are to be repaired annually. Cleaning after flooding. Requirements: Daily inspection of the inlet and adjusting of valve or sluice gate. Occasional cleaning of the inlet canal and screens. Annually painting the metal parts and repairing the cracks in concrete. |\n| f) River Bottom intake | Activities: River bottom intake inlet to be checked regularly (Figure 3.6). Painting the screens, sluice gates, or valves. Sand traps and screens to be cleaned regularly. Every year, concrete structures should be checked for cracks and repaired as needed. Requirements: Daily inspect the inlet and adjust the valve or sluice gate. Occasionally, clean/repair the screen. Annually, paint metal parts / repair cracks in concrete. |\n| g) Sump Intake | Activities: In sump intake, daily check-up of the sumps for sufficient water inflow / removing debris obstructing the flow (Figure 3.7). Cleaning and desilting of intake. Requirements: Daily inspection of the inlet. Occasional cleaning / repairing of the inlet for any damage due to erosion. Annually desilting the pump. |",
+  "notes": [
+    "Transcriber layout note: printed bullet lists are serialized in order within each cell. Activity/Requirement subheadings and figure references are preserved. Photographs and diagrams remain in the source regions; diagram-internal labels are not represented as table activity text. Caption on page 38; table rows continue through page 42. Printed \"large/quantity\" and \"pump\" in the last requirement are preserved as printed."
+  ],
+  "cell_spans": [],
+  "verification": {
+    "transcription": {
+      "pass_id": "visual-2026-11-08-water-01",
+      "method": "direct visual reading of all source and continuation pages, no OCR",
+      "observations": "Read headers, merged groups, every printed cell, blanks and notes from rendered PDF pages."
+    },
+    "visual_recheck": {
+      "pass_id": "visual-2026-11-08-water-02",
+      "method": "separate second visual comparison of each exact source-region render including every continuation; same assistant, not an independent reviewer",
+      "observations": "Rechecked all 7 rows, column headers, values/units, merged relationships and printed notes across 5 source regions. Restored motor in the Intake Well component list during comparison; checked all seven intake rows across five pages.",
+      "content_sha256": "1e7c431b95b3bc607d52778658e5cbba4367fc87388cf827831964758d064fcf"
+    }
+  }
+}

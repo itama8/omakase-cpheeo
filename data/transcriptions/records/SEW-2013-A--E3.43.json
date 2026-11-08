@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:E3.43",
+  "unit_id": "SEW-2013-A:E3.43",
+  "manual_id": "SEW-2013-A",
+  "kind": "equation",
+  "number": "3.43",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "state": "verified",
+  "regions": [
+    {
+      "pdf_page": 235,
+      "page_label": "3 - 90",
+      "bbox": [
+        50,
+        199,
+        545,
+        510
+      ],
+      "render_sha256": "7fc964ae22443a71e8e6930f4191e57aeb686f48c7da215c06920286c78aba13"
+    }
+  ],
+  "title": "Simultaneous internal pressure and external load",
+  "parent_id": "SEW-2013-A:3.50.3.8.1",
+  "latex": "t=\\frac{T(1-s^2)}{S}",
+  "readable": "t = T (1 - s^2) / S",
+  "symbols": [
+    {
+      "symbol": "t",
+      "definition": "Internal pressure in kg/cm² at failure when external load is simultaneously acting"
+    },
+    {
+      "symbol": "T",
+      "definition": "Bursting strength of a pipe in kg/cm² when no external load is simultaneously acting"
+    },
+    {
+      "symbol": "s",
+      "definition": "Three-edge-bearing load at failure in kg/linear metre when there is simultaneous action of internal pressure and"
+    },
+    {
+      "symbol": "S",
+      "definition": "Three-edge-bearing load at failure in kg/linear metre when there is no internal pressure simultaneously acting."
+    }
+  ],
+  "applicability": "Given bursting strength and three-edge strength of the pipe, the relation between internal pressure and external loads causing failure is computed by the printed formula.",
+  "notes": [
+    "Transcriber note: the numerator visibly prints T(1-s²) and the denominator S. It has not been replaced with a dimensionally repaired or normalized interaction equation."
+  ],
+  "verification": {
+    "transcription": {
+      "pass_id": "visual-2026-11-08-01",
+      "method": "direct visual reading of rendered source page; no OCR",
+      "observations": "Read each cell or formula and its printed context directly."
+    },
+    "visual_recheck": {
+      "pass_id": "visual-2026-11-08-ch3-structural-02",
+      "method": "distinct second direct visual comparison; same assistant, not independent human review",
+      "observations": "Rechecked coefficients, grouping, powers, signs, numbered and unnumbered labels, printed definitions and applicability in a distinct source-region pass. Confirmed printed T(1-s²)/S and different upper/lower-case load symbols.",
+      "content_sha256": "316dbf3925897852c943a930fc24641ffc47ceb0067df9de85b86e74c95061c9"
+    }
+  }
+}

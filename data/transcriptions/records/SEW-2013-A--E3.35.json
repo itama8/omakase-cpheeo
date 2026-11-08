@@ -1,0 +1,74 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:E3.35",
+  "unit_id": "SEW-2013-A:E3.35",
+  "manual_id": "SEW-2013-A",
+  "kind": "equation",
+  "number": "3.35",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "state": "verified",
+  "regions": [
+    {
+      "pdf_page": 223,
+      "page_label": "3 - 78",
+      "bbox": [
+        50,
+        540,
+        545,
+        771
+      ],
+      "render_sha256": "94478b00b6bd9e1e5a47f75e098033d0a384ba2994aef7de65aa25dbec3bb5a1"
+    }
+  ],
+  "title": "Load due to distributed superimposed load",
+  "parent_id": "SEW-2013-A:3.48",
+  "latex": "W_{sd}=C_s\\,p\\,F\\,B_c",
+  "readable": "W_sd = C_s p F B_c",
+  "symbols": [
+    {
+      "symbol": "W_sd",
+      "definition": "Load on the conduit in kg/m"
+    },
+    {
+      "symbol": "P",
+      "definition": "Intensity of the distributed load in kg/m²"
+    },
+    {
+      "symbol": "F",
+      "definition": "Impact factor"
+    },
+    {
+      "symbol": "B_c",
+      "definition": "Width of the conduit in m"
+    },
+    {
+      "symbol": "C_s",
+      "definition": "Load coefficient, a function of D/2H and L/2H from Table 3.21"
+    },
+    {
+      "symbol": "H",
+      "definition": "Height of the top of conduit to the ground surface in m"
+    },
+    {
+      "symbol": "D, L",
+      "definition": "Width and length in m respectively of the area over which the distributed load acts"
+    }
+  ],
+  "applicability": "Distributed superimposed loads.",
+  "notes": [
+    "Transcriber note: the formula visibly prints lower-case p; the definition list prints upper-case P. Both are preserved."
+  ],
+  "verification": {
+    "transcription": {
+      "pass_id": "visual-2026-11-08-01",
+      "method": "direct visual reading of rendered source page; no OCR",
+      "observations": "Read each cell or formula and its printed context directly."
+    },
+    "visual_recheck": {
+      "pass_id": "visual-2026-11-08-ch3-structural-02",
+      "method": "distinct second direct visual comparison; same assistant, not independent human review",
+      "observations": "Rechecked coefficients, grouping, powers, signs, numbered and unnumbered labels, printed definitions and applicability in a distinct source-region pass. ",
+      "content_sha256": "aa51a2e0847623bd2f202d731071c54351ed2837b1b5e420e46c2dee9d156326"
+    }
+  }
+}

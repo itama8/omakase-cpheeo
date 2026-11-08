@@ -1,0 +1,181 @@
+{
+  "schema_version": 1,
+  "id": "WS-2024-A:AN6.6-T5",
+  "unit_id": "WS-2024-A:AN6.6-T5",
+  "manual_id": "WS-2024-A",
+  "kind": "table",
+  "number": "5, Annexure 6.6",
+  "title": "Node results",
+  "source_sha256": "b60f2fb548357aec676b18ef31e3b37fb0e5e8a1aec8f886880b951113848b0a",
+  "state": "verified",
+  "regions": [
+    {
+      "pdf_page": 1157,
+      "page_label": "1071",
+      "bbox": [
+        65,
+        634,
+        550,
+        675
+      ],
+      "render_sha256": "6e34b2f915cafb9e143ebdf9b5b1a67f03ec587fc466ef2a128ab9ce3d1cd1b9"
+    },
+    {
+      "pdf_page": 1158,
+      "page_label": "1072",
+      "bbox": [
+        110,
+        70,
+        485,
+        422
+      ],
+      "render_sha256": "5af1f307cdd7e217e0abc2c7b8ea4c5626dc8a267046f0740f16c7176689d3c7"
+    }
+  ],
+  "headers": [
+    "Node ID",
+    "Node Name",
+    "Demand (LPS)",
+    "Elevation (m)",
+    "Head (m)",
+    "Pressure (m)",
+    "Min. Pressure (m)"
+  ],
+  "rows": [
+    [
+      "2",
+      "node2",
+      "0",
+      "7.9",
+      "46.50",
+      "38.60",
+      "3"
+    ],
+    [
+      "3",
+      "node3",
+      "0",
+      "11.39",
+      "34.92",
+      "23.53",
+      "3"
+    ],
+    [
+      "4",
+      "node4",
+      "0",
+      "7.9",
+      "34.08",
+      "26.18",
+      "3"
+    ],
+    [
+      "5",
+      "node5",
+      "0",
+      "7.9",
+      "34.05",
+      "26.15",
+      "3"
+    ],
+    [
+      "6",
+      "node6",
+      "0",
+      "7.82",
+      "33.14",
+      "25.32",
+      "3"
+    ],
+    [
+      "7",
+      "node7",
+      "0",
+      "9.97",
+      "29.17",
+      "19.20",
+      "3"
+    ],
+    [
+      "8",
+      "node8",
+      "69.44",
+      "34",
+      "37",
+      "3",
+      "3"
+    ],
+    [
+      "9",
+      "node9",
+      "12.59",
+      "25",
+      "28",
+      "3",
+      "3"
+    ],
+    [
+      "10",
+      "node10",
+      "7.94",
+      "26",
+      "29.72",
+      "3.72",
+      "3"
+    ],
+    [
+      "11",
+      "node11",
+      "23.36",
+      "26",
+      "29",
+      "3",
+      "3"
+    ],
+    [
+      "12",
+      "node12",
+      "9.44",
+      "27",
+      "30",
+      "3",
+      "3"
+    ],
+    [
+      "13",
+      "node13",
+      "37.22",
+      "26",
+      "29",
+      "3",
+      "3"
+    ],
+    [
+      "14",
+      "node14",
+      "18.7",
+      "18",
+      "21",
+      "3",
+      "3"
+    ]
+  ],
+  "markdown": "| Node ID | Node Name | Demand (LPS) | Elevation (m) | Head (m) | Pressure (m) | Min. Pressure (m) |\n| --- | --- | --- | --- | --- | --- | --- |\n| 2 | node2 | 0 | 7.9 | 46.50 | 38.60 | 3 |\n| 3 | node3 | 0 | 11.39 | 34.92 | 23.53 | 3 |\n| 4 | node4 | 0 | 7.9 | 34.08 | 26.18 | 3 |\n| 5 | node5 | 0 | 7.9 | 34.05 | 26.15 | 3 |\n| 6 | node6 | 0 | 7.82 | 33.14 | 25.32 | 3 |\n| 7 | node7 | 0 | 9.97 | 29.17 | 19.20 | 3 |\n| 8 | node8 | 69.44 | 34 | 37 | 3 | 3 |\n| 9 | node9 | 12.59 | 25 | 28 | 3 | 3 |\n| 10 | node10 | 7.94 | 26 | 29.72 | 3.72 | 3 |\n| 11 | node11 | 23.36 | 26 | 29 | 3 | 3 |\n| 12 | node12 | 9.44 | 27 | 30 | 3 | 3 |\n| 13 | node13 | 37.22 | 26 | 29 | 3 | 3 |\n| 14 | node14 | 18.7 | 18 | 21 | 3 | 3 |",
+  "notes": [
+    "Caption on printed page 1071; numerical table on printed page 1072. Worked network optimisation example; its minimum-pressure column is not a general design norm."
+  ],
+  "cell_spans": [],
+  "verification": {
+    "transcription": {
+      "pass_id": "visual-2026-11-08-water-01",
+      "method": "direct visual reading of all source and continuation pages, no OCR",
+      "observations": "Read headers, merged groups, every printed cell, blanks and notes from rendered PDF pages."
+    },
+    "visual_recheck": {
+      "pass_id": "visual-2026-11-08-water-02",
+      "method": "separate second visual comparison of each exact source-region render including every continuation; same assistant, not an independent reviewer",
+      "observations": "Rechecked all 13 rows, column headers, values/units, merged relationships and printed notes across 2 source regions.",
+      "content_sha256": "182e4e53481566b25c942e0484ef224ceb3406424400193a879d276e39784ef8"
+    }
+  }
+}

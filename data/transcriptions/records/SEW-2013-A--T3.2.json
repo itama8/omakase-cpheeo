@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:T3.2",
+  "unit_id": "SEW-2013-A:T3.2",
+  "manual_id": "SEW-2013-A",
+  "kind": "table",
+  "number": "3.2",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "state": "verified",
+  "regions": [
+    {
+      "pdf_page": 148,
+      "page_label": "3 - 3",
+      "bbox": [
+        126,
+        595,
+        478,
+        770
+      ],
+      "render_sha256": "43b97074c2f3ca88912c003479fd1b5a7c667bb80a5f84ead7789ffbf830ba56"
+    }
+  ],
+  "title": "Peak factor for Contributory Population",
+  "headers": [
+    "Contributory Population",
+    "Peak Factor"
+  ],
+  "rows": [
+    [
+      "up to 20,000",
+      "3.00"
+    ],
+    [
+      "Above 20,001 to 50,000",
+      "2.50"
+    ],
+    [
+      "Above 50,001 to 7,50,000",
+      "2.25"
+    ],
+    [
+      "above 7,50,001",
+      "2.00"
+    ]
+  ],
+  "cell_spans": [],
+  "markdown": "| Contributory Population | Peak Factor |\n| --- | --- |\n| up to 20,000 | 3.00 |\n| Above 20,001 to 50,000 | 2.50 |\n| Above 50,001 to 7,50,000 | 2.25 |\n| above 7,50,001 | 2.00 |",
+  "notes": [
+    "Source: CPHEEO, 1993"
+  ],
+  "verification": {
+    "transcription": {
+      "pass_id": "visual-2026-11-08-01",
+      "method": "direct visual reading of rendered source page; no OCR",
+      "observations": "Read each cell or formula and its printed context directly."
+    },
+    "visual_recheck": {
+      "pass_id": "visual-2026-11-08-04",
+      "method": "separate second visual comparison with rendered source region; same assistant, not an independent reviewer",
+      "observations": "All four population bands, Indian comma grouping and factors 3.00/2.50/2.25/2.00 rechecked.",
+      "content_sha256": "69a9dd4671c3f76ce60dd1cf44a43bc05496003b194b5b56e7cb1546348186d2"
+    }
+  }
+}

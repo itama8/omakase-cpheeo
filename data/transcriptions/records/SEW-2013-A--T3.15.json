@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:T3.15",
+  "unit_id": "SEW-2013-A:T3.15",
+  "manual_id": "SEW-2013-A",
+  "kind": "table",
+  "number": "3.15",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "state": "verified",
+  "regions": [
+    {
+      "pdf_page": 191,
+      "page_label": "3 - 46",
+      "bbox": [
+        50,
+        331,
+        545,
+        520
+      ],
+      "render_sha256": "6b7422e22332f6e73cb4b670a0e7213df2de3a56f2c48e987d6fb42a389998f6"
+    }
+  ],
+  "title": "Diameters of circular manholes for stated depths of sewers",
+  "headers": [
+    "Z Values",
+    "Sulphide Condition"
+  ],
+  "rows": [
+    [
+      "Z < 5,000",
+      "Sulphide rarely generated"
+    ],
+    [
+      "5,000 ≤ Z ≤ 10,000",
+      "Marginal condition for sulphide generation"
+    ],
+    [
+      "Z > 10,000",
+      "Sulphide generation common"
+    ]
+  ],
+  "cell_spans": [],
+  "markdown": "| Z Values | Sulphide Condition |\n| --- | --- |\n| Z < 5,000 | Sulphide rarely generated |\n| 5,000 ≤ Z ≤ 10,000 | Marginal condition for sulphide generation |\n| Z > 10,000 | Sulphide generation common |",
+  "notes": [
+    "Source: CPHEEO, 1993",
+    "TRANSCRIBER SOURCE ERROR: The printed caption is \"Diameters of circular manholes for stated depths of sewers\", but the printed cells repeat the sulphide-generation table. This source region contains NO manhole diameters or depth criteria. Do not use these cells as manhole sizing values.",
+    "Adjacent printed note: Where depths exceed 6 m below GL, lift stations as in Section 4.18 shall be inserted and sewage lifted to initial cover depth of 0.9 m. In specific situations deeper depth can be justified in the DPR like outfall, etc"
+  ],
+  "verification": {
+    "transcription": {
+      "pass_id": "visual-2026-11-08-01",
+      "method": "direct visual reading of rendered source page; no OCR",
+      "observations": "Read each cell or formula and its printed context directly."
+    },
+    "visual_recheck": {
+      "pass_id": "visual-2026-11-08-04",
+      "method": "separate second visual comparison with rendered source region; same assistant, not an independent reviewer",
+      "observations": "Confirmed caption/content mismatch against second source-region render; no manhole diameter values invented.",
+      "content_sha256": "9bb37a2e23f3dc347010d5e20a12d0669f0d0f429eca3ec6a5183a26a0598f25"
+    }
+  }
+}

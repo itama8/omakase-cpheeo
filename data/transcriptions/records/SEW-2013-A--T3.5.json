@@ -1,0 +1,76 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:T3.5",
+  "unit_id": "SEW-2013-A:T3.5",
+  "manual_id": "SEW-2013-A",
+  "kind": "table",
+  "number": "3.5",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "state": "verified",
+  "regions": [
+    {
+      "pdf_page": 152,
+      "page_label": "3 - 7",
+      "bbox": [
+        105,
+        73,
+        497,
+        216
+      ],
+      "render_sha256": "e77cad903d8f7ef84f2f11e9530a8ff9a8232eab4489047ead12eb82626a6645"
+    }
+  ],
+  "title": "Percentage of Imperviousness of Areas",
+  "headers": [
+    "S. No.",
+    "Type of Area",
+    "Percentage of Imperviousness"
+  ],
+  "rows": [
+    [
+      "1.",
+      "Commercial and Industrial Area",
+      "70-90"
+    ],
+    [
+      "2.",
+      "Residential Area - High Density",
+      "61-75"
+    ],
+    [
+      "",
+      "Residential Area - Low Density",
+      "35-60"
+    ],
+    [
+      "3.",
+      "Parks and undeveloped areas",
+      "10-20"
+    ]
+  ],
+  "cell_spans": [
+    {
+      "column": 0,
+      "row": 1,
+      "rowspan": 2
+    }
+  ],
+  "markdown": "| S. No. | Type of Area | Percentage of Imperviousness |\n| --- | --- | --- |\n| 1. | Commercial and Industrial Area | 70-90 |\n| 2. | Residential Area - High Density | 61-75 |\n|  | Residential Area - Low Density | 35-60 |\n| 3. | Parks and undeveloped areas | 10-20 |",
+  "notes": [
+    "Source: CPHEEO, 1993",
+    "Residential Area is a shared heading for High Density and Low Density."
+  ],
+  "verification": {
+    "transcription": {
+      "pass_id": "visual-2026-11-08-01",
+      "method": "direct visual reading of rendered source page; no OCR",
+      "observations": "Read each cell or formula and its printed context directly."
+    },
+    "visual_recheck": {
+      "pass_id": "visual-2026-11-08-04",
+      "method": "separate second visual comparison with rendered source region; same assistant, not an independent reviewer",
+      "observations": "All four range entries and merged residential category rechecked.",
+      "content_sha256": "f5d6dd63372b961e6491608a00e14c9545c31d8ffbe6364e551ce33e17f2973b"
+    }
+  }
+}

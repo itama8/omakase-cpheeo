@@ -1,0 +1,106 @@
+# Regression checks authored with sources open; not an independent accuracy estimate.
+questions:
+  - id: V01
+    question: Equation 5.30 oxygen transfer under field conditions
+    expect: [SEW-2013-A:E5.30]
+    contains: ['1.024^(T - 20)', '/ 9.17', 'kg O₂/kWh']
+  - id: V02
+    question: oxygen solubility in tap water at 30 degree temperature
+    expect: [SEW-2013-A:T5.10]
+    row: ['30', '7.5']
+  - id: V03
+    question: DO altitude correction factor 1524 meters
+    expect: [SEW-2013-A:T5.11]
+    row: ['457', '0.95', '1524', '0.82']
+  - id: V04
+    question: design period sewage pumping machinery treatment plants
+    expect: [SEW-2013-A:T2.1]
+    row: ['6', 'Pumping Machinery', '15']
+  - id: V05
+    question: contributory population peak factor 50000
+    expect: [SEW-2013-A:T3.2]
+    row: ['Above 20,001 to 50,000', '2.50']
+  - id: V06
+    question: minimum slopes of sanitary sewers
+    expect: [SEW-2013-A:T3.13]
+    row: ['200', '0.40', '250', '450', '0.12', '830']
+  - id: V07
+    question: Manning roughness spun concrete RCC PSC S S joints
+    expect: [SEW-2013-A:T3.11]
+    contains: ['0.011', 'Design Value']
+  - id: V08
+    question: Runoff coefficients for times of concentration rectangle pervious
+    expect: [SEW-2013-A:T3.6]
+    contains: ['0.149', '0.522']
+  - id: V09
+    question: Table 3.15 manhole diameter
+    expect: [SEW-2013-A:T3.15]
+    contains: ['SOURCE ERROR', 'NO manhole diameters']
+  - id: V10
+    question: Table 3.12 hydraulic properties circular sections
+    expect: [SEW-2013-A:T3.12]
+    contains: ['0712', '1 120', '0,088', 'source anomalies']
+  - id: V11
+    question: Equation 3.16 Manning circular conduits discharge
+    expect: [SEW-2013-A:E3.16]
+    contains: ['3.118', '10^-6', 'Discharge in l/s']
+  - id: V12
+    question: Equation 3.19 Hazen Williams discharge
+    expect: [SEW-2013-A:E3.19]
+    contains: ['1.292', '10^-5', 'Discharge in m³/hr']
+  - id: V13
+    question: Table 13.1 water meter classification
+    expect: [WS-2024-A:T13.1]
+    contains: ['11.25', '17.25', '133']
+  - id: V14
+    question: Table 6 Annexure 6.3 pipe output
+    expect: [WS-2024-A:AN6.3-T6]
+    contains: ['2.974', '1,42,680', '26.27']
+  - id: V15
+    question: Various components of water balance IWA modified
+    expect: [WS-2024-B:T11.1]
+    contains: ['Service Connection Leaks up to Meters', 'atleast 3-5 hours', 'private underground sumps']
+  - id: V16
+    question: O M activities maintenance requirements intake surface water
+    expect: [WS-2024-B:T3.1]
+    contains: ['motor', 'dry docking', 'Annually desilting the pump']
+  - id: V17
+    question: Sustainable Development Goals
+    expect: [WS-2024-C:T2.1]
+    contains: ['6.B', 'water-related ecosystems', 'By 2030']
+  - id: V18
+    question: Equation 3.5 V notch
+    expect: [SEW-2013-A:E3.5]
+    contains: ['SOURCE ERROR', 'without a half-angle', 'H power 2.5']
+  - id: V19
+    question: Equation 3.24 settlement ratio
+    expect: [SEW-2013-A:E3.24]
+    contains: ['(S_m + S_g) - (S_f + d_c)', '/ S_m']
+  - id: V20
+    question: Equation 3.32 minimum fill flotation
+    expect: [SEW-2013-A:E3.32]
+    contains: ['(w_s - w_o)', '(π/4)', 'kg/linear metre']
+  - id: V21
+    question: Equation 3.41 projecting circular conduit load factor
+    expect: [SEW-2013-A:E3.41]
+    contains: ['1.431 / (N Z q)', 'no minus sign']
+  - id: V22
+    question: Equation 3.43 internal pressure external load
+    expect: [SEW-2013-A:E3.43]
+    contains: ['T (1 - s^2) / S', 'has not been replaced']
+  - id: V23
+    question: Table 3.19 loads pipes trenches Cd
+    expect: [SEW-2013-A:T3.19]
+    row: ['Very Great', '2.599', '3.030', '3.333', '3.846', '4.548']
+  - id: V24
+    question: Table 3.21 concentrated distributed superimposed load coefficients
+    expect: [SEW-2013-A:T3.21]
+    contains: ['0.584 at row 0.7', '0.574 at row 0.9']
+  - id: V25
+    question: Table 3.31 manhole spacing gravity sewers
+    expect: [SEW-2013-A:T3.31]
+    contains: ['30 m or it can be less than 30 m', '60 | 90 | 120 | 150']
+  - id: V26
+    question: egg shaped full flow hydraulic properties geometry
+    expect: [SEW-2013-A:Ep272-1]
+    contains: ['0.510 H^2', '2.643 H', '0.193 H']

@@ -1,0 +1,63 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:E3.12",
+  "unit_id": "SEW-2013-A:E3.12",
+  "manual_id": "SEW-2013-A",
+  "kind": "equation",
+  "number": "3.12",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "state": "verified",
+  "regions": [
+    {
+      "pdf_page": 171,
+      "page_label": "3 - 26",
+      "bbox": [
+        50,
+        499,
+        545,
+        768
+      ],
+      "render_sha256": "9f5fa92bedeeb4d207f057b1f33ecbca0b401e6acae13a61a143a455b6c146d9"
+    }
+  ],
+  "title": "Effective BOD for hydrogen sulphide prevention",
+  "parent_id": "SEW-2013-A:3.15.2",
+  "latex": "(\\mathrm{EBOD})=(\\mathrm{BOD})_c\\times 1.07^{(T_c-20)}",
+  "readable": "(EBOD) = (BOD)_c × 1.07^(T_c - 20)",
+  "symbols": [
+    {
+      "symbol": "EBOD",
+      "definition": "Effective EBOD in mg/l"
+    },
+    {
+      "symbol": "(BOD)_c",
+      "definition": "Climatic BOD in mg/l"
+    },
+    {
+      "symbol": "T_c",
+      "definition": "Climatic temperature in degrees Celsius"
+    },
+    {
+      "symbol": "1.07",
+      "definition": "Empirical coefficient"
+    }
+  ],
+  "applicability": "Climatic condition is defined as the combination of the average temperature for the warmest three months of the year and the average 6-hour high flow BOD for the day. Where diurnal BOD curves have not been made, this BOD may be assumed to be 1.25 times the BOD of flow proportioned 24-hour composite.",
+  "notes": [
+    "The reference for E BOD is from ASCE Manuals and Reports on Engineering Practice No. 60.",
+    "Transcriber note: the definition visibly prints \"Effective EBOD\"; it has not been silently changed to \"Effective BOD\"."
+  ],
+  "verification": {
+    "transcription": {
+      "pass_id": "visual-2026-11-08-01",
+      "method": "direct visual reading of rendered source page; no OCR",
+      "observations": "Read each cell or formula and its printed context directly."
+    },
+    "visual_recheck": {
+      "pass_id": "visual-2026-11-08-04",
+      "method": "separate second visual comparison with rendered source region; same assistant, not an independent reviewer",
+      "observations": "Rechecked formula coefficients, exponents, grouping, printed number, symbol definitions and applicability in a distinct source-region inspection. Confirmed printed Effective EBOD, 1.07 and T_c-20.",
+      "content_sha256": "21e8c94b095f75ba98a04dc2a25b729f757543e51765ef26dfe0f74697b109da"
+    }
+  }
+}

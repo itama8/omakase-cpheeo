@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:E3.30",
+  "unit_id": "SEW-2013-A:E3.30",
+  "manual_id": "SEW-2013-A",
+  "kind": "equation",
+  "number": "3.30",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "state": "verified",
+  "regions": [
+    {
+      "pdf_page": 219,
+      "page_label": "3 - 74",
+      "bbox": [
+        50,
+        73,
+        545,
+        199
+      ],
+      "render_sha256": "90475a190121b3265aca1732b2ae804c9262d0c1bc4fb04c899ecd9f6c36a2d1"
+    },
+    {
+      "pdf_page": 217,
+      "page_label": "3 - 72",
+      "bbox": [
+        50,
+        382,
+        545,
+        543
+      ],
+      "render_sha256": "24fb381c0e79aca8b08fb57d13cd355378780e2d1be8ee7b372775722490e451"
+    }
+  ],
+  "title": "Trench load modified for flexible conduits",
+  "parent_id": "SEW-2013-A:3.44",
+  "latex": "W_c=C_d\\,w\\,B_c B_d",
+  "readable": "W_c = C_d w B_c B_d",
+  "symbols": [
+    {
+      "symbol": "B_c",
+      "definition": "Outside width of the conduit in m"
+    }
+  ],
+  "applicability": "Equation 3.29 gives the total vertical load due to backfill in the horizontal plane at the top of the conduit if the pipe is rigid. For flexible conduits, the formula is modified as shown.",
+  "notes": [],
+  "verification": {
+    "transcription": {
+      "pass_id": "visual-2026-11-08-01",
+      "method": "direct visual reading of rendered source page; no OCR",
+      "observations": "Read each cell or formula and its printed context directly."
+    },
+    "visual_recheck": {
+      "pass_id": "visual-2026-11-08-ch3-structural-02",
+      "method": "distinct second direct visual comparison; same assistant, not independent human review",
+      "observations": "Rechecked coefficients, grouping, powers, signs, numbered and unnumbered labels, printed definitions and applicability in a distinct source-region pass. Definitions from Eq.3.29 region on preceding p.3-72 rechecked alongside the B_c definition.",
+      "content_sha256": "b0fa366e74f8235e44e08a2e30fb8798a7ff970397c0a6dd1adf1849265ab0f0"
+    }
+  }
+}

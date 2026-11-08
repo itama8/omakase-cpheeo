@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:Ep217-1",
+  "unit_id": "SEW-2013-A:Ep217-1",
+  "manual_id": "SEW-2013-A",
+  "kind": "equation",
+  "number": "p217-1",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "state": "verified",
+  "regions": [
+    {
+      "pdf_page": 217,
+      "page_label": "3 - 72",
+      "bbox": [
+        50,
+        73,
+        545,
+        347
+      ],
+      "render_sha256": "7f0993381e6a7f9209d7c12d29c9d8ef82f54419eda0621f9aeb0ae2fd03e507"
+    }
+  ],
+  "title": "Unnumbered load balance in Figure 3.39",
+  "parent_id": "SEW-2013-A:3.44",
+  "latex": "W_c=P-2F",
+  "readable": "W_c = P - 2 F",
+  "symbols": [
+    {
+      "symbol": "P",
+      "definition": "WEIGHT OF BACKFILL ABCD"
+    },
+    {
+      "symbol": "F",
+      "definition": "UPWARD SHEARING FORCES ON AD AND BC"
+    },
+    {
+      "symbol": "W_c",
+      "definition": "LOAD ON PIPE"
+    }
+  ],
+  "applicability": "Figure 3.39: Load producing forces under trench conditions.",
+  "notes": [
+    "Transcriber note: p217-1 is a service locator, not a printed equation number."
+  ],
+  "verification": {
+    "transcription": {
+      "pass_id": "visual-2026-11-08-01",
+      "method": "direct visual reading of rendered source page; no OCR",
+      "observations": "Read each cell or formula and its printed context directly."
+    },
+    "visual_recheck": {
+      "pass_id": "visual-2026-11-08-ch3-structural-02",
+      "method": "distinct second direct visual comparison; same assistant, not independent human review",
+      "observations": "Rechecked coefficients, grouping, powers, signs, numbered and unnumbered labels, printed definitions and applicability in a distinct source-region pass. ",
+      "content_sha256": "ef4df244fc7a33dd4c581da8079614f2ed0567a7f284a2043a89f5934b38a014"
+    }
+  }
+}

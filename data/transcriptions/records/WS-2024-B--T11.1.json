@@ -1,0 +1,140 @@
+{
+  "schema_version": 1,
+  "id": "WS-2024-B:T11.1",
+  "unit_id": "WS-2024-B:T11.1",
+  "manual_id": "WS-2024-B",
+  "kind": "table",
+  "number": "11.1",
+  "title": "Various Components of Water Balance (IWA modified)",
+  "source_sha256": "1cfd336b3e2928b95cec3899d3e1d15807b5598d78730d6fe3eef381021844e7",
+  "state": "verified",
+  "regions": [
+    {
+      "pdf_page": 490,
+      "page_label": "423",
+      "bbox": [
+        90,
+        381,
+        520,
+        786
+      ],
+      "render_sha256": "84d77c313d1f4ddd81b167217819d54a7f0d4ca2a6cc18e3f3cf405fde586fca"
+    },
+    {
+      "pdf_page": 491,
+      "page_label": "424",
+      "bbox": [
+        90,
+        70,
+        520,
+        393
+      ],
+      "render_sha256": "73371b80841cf021105b841b882c2183de9b7061f36ad75e3fd00d9773052362"
+    }
+  ],
+  "headers": [
+    "System",
+    "Category",
+    "Subcategory",
+    "Component",
+    "Revenue classification"
+  ],
+  "rows": [
+    [
+      "System Input Volume",
+      "Authorised Consumption",
+      "Billed Authorised Consumption",
+      "Billed Water Exported",
+      "Revenue Water"
+    ],
+    [
+      "System Input Volume",
+      "Authorised Consumption",
+      "Billed Authorised Consumption",
+      "Billed Metered Consumption",
+      "Revenue Water"
+    ],
+    [
+      "System Input Volume",
+      "Authorised Consumption",
+      "Billed Authorised Consumption",
+      "Billed Unmetered Consumption",
+      "Revenue Water"
+    ],
+    [
+      "System Input Volume",
+      "Authorised Consumption",
+      "Billed Authorised Consumption",
+      "Leakage or Seepage from private underground sumps*",
+      "Revenue Water"
+    ],
+    [
+      "System Input Volume",
+      "Authorised Consumption",
+      "Unbilled Authorised Consumption",
+      "Unbilled Metered Consumption",
+      "Non-Revenue Water"
+    ],
+    [
+      "System Input Volume",
+      "Authorised Consumption",
+      "Unbilled Authorised Consumption",
+      "Unbilled Unmetered Consumption",
+      "Non-Revenue Water"
+    ],
+    [
+      "System Input Volume",
+      "Water Losses",
+      "Apparent Losses",
+      "Unauthorised Consumption",
+      "Non-Revenue Water"
+    ],
+    [
+      "System Input Volume",
+      "Water Losses",
+      "Apparent Losses",
+      "Customer Meter Inaccuracy and Data Handling Errors",
+      "Non-Revenue Water"
+    ],
+    [
+      "System Input Volume",
+      "Water Losses",
+      "Real Losses",
+      "Leakage in Transmission and Distribution Mains",
+      "Non-Revenue Water"
+    ],
+    [
+      "System Input Volume",
+      "Water Losses",
+      "Real Losses",
+      "Storage/ Sumps Leaks and Overflows",
+      "Non-Revenue Water"
+    ],
+    [
+      "System Input Volume",
+      "Water Losses",
+      "Real Losses",
+      "Service Connection Leaks up to Meters",
+      "Non-Revenue Water"
+    ]
+  ],
+  "markdown": "| System | Category | Subcategory | Component | Revenue classification |\n| --- | --- | --- | --- | --- |\n| System Input Volume | Authorised Consumption | Billed Authorised Consumption | Billed Water Exported | Revenue Water |\n| System Input Volume | Authorised Consumption | Billed Authorised Consumption | Billed Metered Consumption | Revenue Water |\n| System Input Volume | Authorised Consumption | Billed Authorised Consumption | Billed Unmetered Consumption | Revenue Water |\n| System Input Volume | Authorised Consumption | Billed Authorised Consumption | Leakage or Seepage from private underground sumps* | Revenue Water |\n| System Input Volume | Authorised Consumption | Unbilled Authorised Consumption | Unbilled Metered Consumption | Non-Revenue Water |\n| System Input Volume | Authorised Consumption | Unbilled Authorised Consumption | Unbilled Unmetered Consumption | Non-Revenue Water |\n| System Input Volume | Water Losses | Apparent Losses | Unauthorised Consumption | Non-Revenue Water |\n| System Input Volume | Water Losses | Apparent Losses | Customer Meter Inaccuracy and Data Handling Errors | Non-Revenue Water |\n| System Input Volume | Water Losses | Real Losses | Leakage in Transmission and Distribution Mains | Non-Revenue Water |\n| System Input Volume | Water Losses | Real Losses | Storage/ Sumps Leaks and Overflows | Non-Revenue Water |\n| System Input Volume | Water Losses | Real Losses | Service Connection Leaks up to Meters | Non-Revenue Water |",
+  "notes": [
+    "* The ULB’s engineer should observe consumption of all households through monthly bills and wherever it is found abnormally higher than the average per capita supply (135 LPCD or 150 LPCD based on the city class x no. of person in billed household) or other required institutional or commercial consumptions, the survey team should be deputed to the households to observe the reduction in water level in consumer’s sump for atleast 3-5 hours, and knowing the quantity of the sump water loss in litre shall be noted. Further, while doing this exercise, the inflow and outflow from the sump should be ensured to be stopped. Such consumers shall be advised to replace or repair the sumps to make them watertight. When the system is stabilised for 24x7 pressurised water supply these sumps can be bypassed.",
+    "Transcriber layout note: merged category blocks are expanded into paths from System Input Volume to the printed revenue classification. The source explicitly places private underground sump leakage/seepage under Billed Authorised Consumption / Revenue Water; this unusual placement is preserved. The Water Losses block and Non-Revenue Water block continue on the second printed page. Headers in this transcription name the graphical hierarchy; they are not printed table column headings."
+  ],
+  "cell_spans": [],
+  "verification": {
+    "transcription": {
+      "pass_id": "visual-2026-11-08-water-01",
+      "method": "direct visual reading of all source and continuation pages, no OCR",
+      "observations": "Read headers, merged groups, every printed cell, blanks and notes from rendered PDF pages."
+    },
+    "visual_recheck": {
+      "pass_id": "visual-2026-11-08-water-02",
+      "method": "separate second visual comparison of each exact source-region render including every continuation; same assistant, not an independent reviewer",
+      "observations": "Rechecked all 11 rows, column headers, values/units, merged relationships and printed notes across 2 source regions.",
+      "content_sha256": "b6e01005df972a14f02ae2612aadd9d612665168f37556dff031900cc79ea182"
+    }
+  }
+}

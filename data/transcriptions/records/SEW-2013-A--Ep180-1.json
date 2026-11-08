@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:Ep180-1",
+  "unit_id": "SEW-2013-A:Ep180-1",
+  "manual_id": "SEW-2013-A",
+  "kind": "equation",
+  "number": "p180-1",
+  "title": "Water cushion expression with ambiguous printed powers",
+  "parent_id": "SEW-2013-A:3.17.4",
+  "state": "unclear",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "raw_visible_text": "h1/2 d1/3",
+  "notes": [
+    "The source prints h1/2 d1/3 on the baseline, without clear exponent or grouping notation. No LaTeX formula or repaired mathematical interpretation is asserted. h is defined as height of fall and d as depth of the crest. See the original region. p180-1 is a service locator, not a printed equation number."
+  ],
+  "regions": [
+    {
+      "pdf_page": 180,
+      "page_label": "3 - 35",
+      "bbox": [
+        50,
+        506,
+        545,
+        600
+      ],
+      "render_sha256": "3038a77c7f90259f7c877d9659aa3ea329ee1fec040062d0c24c3fb62ca78eb1"
+    }
+  ],
+  "verification": {
+    "transcription": {
+      "pass_id": "visual-2026-11-08-unclear-01",
+      "observations": "Read full page and a separate 288-dpi close-up; no clear exponents are printed. Left unresolved."
+    }
+  }
+}

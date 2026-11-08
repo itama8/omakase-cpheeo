@@ -1,0 +1,88 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:T5.10",
+  "unit_id": "SEW-2013-A:T5.10",
+  "manual_id": "SEW-2013-A",
+  "kind": "table",
+  "number": "5.10",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "state": "verified",
+  "regions": [
+    {
+      "pdf_page": 374,
+      "page_label": "5 - 70",
+      "bbox": [
+        120,
+        72,
+        445,
+        365
+      ],
+      "render_sha256": "c32f4907bf86f8f3d650ee1c6fd613b77f51cc8c4f7c8cb4ac82856a0d3e79af"
+    }
+  ],
+  "title": "DO Saturation vs. Temperature in Celsius in Tap Water at Mean Sea Level",
+  "headers": [
+    "Temperature(degree C)",
+    "Oxygen solubility (mg/l)"
+  ],
+  "rows": [
+    [
+      "0",
+      "14.6"
+    ],
+    [
+      "5",
+      "12.8"
+    ],
+    [
+      "10",
+      "11.3"
+    ],
+    [
+      "15",
+      "10.2"
+    ],
+    [
+      "20",
+      "9.2"
+    ],
+    [
+      "25",
+      "8.6"
+    ],
+    [
+      "30",
+      "7.5"
+    ],
+    [
+      "35",
+      "6.9"
+    ],
+    [
+      "40",
+      "6.4"
+    ],
+    [
+      "100 (boiling)",
+      "0.0"
+    ]
+  ],
+  "cell_spans": [],
+  "markdown": "| Temperature(degree C) | Oxygen solubility (mg/l) |\n| --- | --- |\n| 0 | 14.6 |\n| 5 | 12.8 |\n| 10 | 11.3 |\n| 15 | 10.2 |\n| 20 | 9.2 |\n| 25 | 8.6 |\n| 30 | 7.5 |\n| 35 | 6.9 |\n| 40 | 6.4 |\n| 100 (boiling) | 0.0 |",
+  "notes": [
+    "The relationship between temperature and oxygen solubility"
+  ],
+  "verification": {
+    "transcription": {
+      "pass_id": "visual-2026-11-08-01",
+      "method": "direct visual reading of rendered source page; no OCR",
+      "observations": "Read each cell or formula and its printed context directly."
+    },
+    "visual_recheck": {
+      "pass_id": "visual-2026-11-08-02",
+      "method": "distinct second inspection of 144-dpi exact source-region render against authored record",
+      "observations": "Rechecked every temperature/solubility row from 0/14.6 through 100 (boiling)/0.0, including 20/9.2, 30/7.5 and all decimal points.",
+      "content_sha256": "e6f608f79bf0351c37896010fbcec4153dda6a6c75b537857d9d21eebca63379"
+    }
+  }
+}

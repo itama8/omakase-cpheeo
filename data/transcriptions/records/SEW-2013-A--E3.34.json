@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:E3.34",
+  "unit_id": "SEW-2013-A:E3.34",
+  "manual_id": "SEW-2013-A",
+  "kind": "equation",
+  "number": "3.34",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "state": "verified",
+  "regions": [
+    {
+      "pdf_page": 223,
+      "page_label": "3 - 78",
+      "bbox": [
+        50,
+        269,
+        545,
+        526
+      ],
+      "render_sha256": "d508430b06638607cbedd418dcc40aca828810b05654a6e9f63a62846cf0386e"
+    }
+  ],
+  "title": "Concentrated-load coefficient argument ratios",
+  "parent_id": "SEW-2013-A:3.47",
+  "latex": "\\frac{B_c}{2H}\\quad\\text{and}\\quad\\frac{L}{2H}",
+  "readable": "B_c / (2 H) and L / (2 H)",
+  "symbols": [
+    {
+      "symbol": "H",
+      "definition": "Height of the top of the conduit to ground surface in m"
+    },
+    {
+      "symbol": "B_c",
+      "definition": "Outside width of conduit in m, and"
+    },
+    {
+      "symbol": "L",
+      "definition": "Effective length of the conduit to which the load is transmitted in m."
+    }
+  ],
+  "applicability": "Arguments for the load coefficient C_s. Effective length is generally taken as 1 m or the actual length of conduit if less than 1 m.",
+  "notes": [
+    "Transcriber note: this numbered expression contains two ratios, not an equality. The adjacent prose refers to Table 3.20 for C_s; Table 3.20 is visibly the cohesion table, whereas Table 3.21 carries load coefficients. The printed reference is not silently repaired."
+  ],
+  "verification": {
+    "transcription": {
+      "pass_id": "visual-2026-11-08-01",
+      "method": "direct visual reading of rendered source page; no OCR",
+      "observations": "Read each cell or formula and its printed context directly."
+    },
+    "visual_recheck": {
+      "pass_id": "visual-2026-11-08-ch3-structural-02",
+      "method": "distinct second direct visual comparison; same assistant, not independent human review",
+      "observations": "Rechecked coefficients, grouping, powers, signs, numbered and unnumbered labels, printed definitions and applicability in a distinct source-region pass. ",
+      "content_sha256": "6c2df513ea9d16ae4fe327db7d22ce8acdb82ae91ed5deb94378f777218cd3cf"
+    }
+  }
+}

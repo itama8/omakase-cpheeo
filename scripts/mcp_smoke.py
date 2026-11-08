@@ -61,13 +61,15 @@ async def main(url: str) -> int:
         fetched = await client.call_tool("fetch", {"id": "SEW-2013-A:T3.2"})
         doc = payload(fetched)
         print("fetch:", doc["title"], "| url:", doc["url"])
-        assert "2.50" not in doc["text"] and doc["metadata"]["manual"] == "SEW-2013-A"
+        assert "2.50" in doc["text"] and doc["metadata"]["manual"] == "SEW-2013-A"
         pictures = [c for c in fetched.content if c.type == "image"]
         assert pictures and pictures[0].mime_type == "image/png"
         assert base64.b64decode(pictures[0].data).startswith(b"\x89PNG")
         table_result = await client.call_tool("get_clause", {"id": "SEW-2013-A:T3.2"})
         table = payload(table_result)
-        assert table["images"] and not table.get("table_markdown") and not table.get("table_cells")
+        assert table['transcription_status']=='verified' and table['verified_transcriptions'][0]['state']=='verified'
+        assert ['Above 20,001 to 50,000','2.50'] in table['verified_transcriptions'][0]['rows']
+        assert table["images"]
         assert "OCR" not in table.get("source", "")
         assert any(c.type == "image" for c in table_result.content)
         ref = table["images"][0]
@@ -84,6 +86,25 @@ async def main(url: str) -> int:
         print("source images: table + figure MCP blocks, HTTP bytes and clause page verified")
         assert doc["title"].startswith("Omakase CPHEEO · ") and "Source: Omakase CPHEEO search" in doc["text"]
         assert doc["metadata"]["citation"].endswith(BRAND_SUFFIX) and doc["metadata"]["source_name"] == "Omakase CPHEEO"
+
+        equation_result = await client.call_tool('get_clause', {'id':'SEW-2013-A:E5.30'})
+        equation = payload(equation_result)
+        assert equation['transcription_status']=='verified' and '/ 9.17' in equation['verified_text']
+        assert '1.024' in equation['verified_transcriptions'][0]['latex']
+        assert any(b.type=='image' for b in equation_result.content)
+        eq_doc = payload(await client.call_tool('fetch',{'id':equation['id']}))
+        assert '9.17' in eq_doc['text'] and eq_doc['metadata']['verified_transcriptions']
+        parent = payload(await client.call_tool('get_clause', {'id':'SEW-2013-A:5.8.1.7.5.3'}))
+        assert any(e['id']==equation['id'] for e in parent['equations'])
+        with await asyncio.to_thread(urllib.request.urlopen, base+'/c/'+equation['id']) as page:
+            assert '9.17' in page.read().decode()
+        unclear = payload(await client.call_tool('get_clause', {'id':'SEW-2013-A:Ep180-1'}))
+        assert unclear['transcription_status']=='unclear' and 'verified_text' not in unclear and unclear['images']
+        node_table = payload(await client.call_tool('get_clause', {'id':'WS-2024-A:AN6.6-T5'}))
+        assert any(r['pdf_page']==1158 for r in node_table['images'])
+        assert node_table['verified_transcriptions'][0]['rows'][-1]==['14','node14','18.7','18','21','3','3']
+        assert '1071 to 1072' in node_table['citation']
+        print('verified content: numerical row, Equation 5.30 math/images/parent/HTML, unclear fallback and water continuation')
 
         manuals = {m["id"] for m in payload(await client.call_tool("list_manuals", {}))["manuals"]}
         print("manuals:", sorted(manuals))

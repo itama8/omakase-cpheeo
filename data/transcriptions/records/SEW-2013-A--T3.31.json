@@ -1,0 +1,71 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:T3.31",
+  "unit_id": "SEW-2013-A:T3.31",
+  "manual_id": "SEW-2013-A",
+  "kind": "table",
+  "number": "3.31",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "state": "verified",
+  "regions": [
+    {
+      "pdf_page": 272,
+      "page_label": "3 - 127",
+      "bbox": [
+        75,
+        252,
+        525,
+        381
+      ],
+      "render_sha256": "aa6e32ff5aa4d8f070f04177dfb31c00b39d67bb0545957a7184e72b799a9976"
+    }
+  ],
+  "title": "Spacing of manholes in gravity sewers not receiving house service sewers",
+  "headers": [
+    "Sewer Diameter (mm)",
+    "Up to 600",
+    "600 to 900",
+    "900 to 1200",
+    "1200 to 1500"
+  ],
+  "rows": [
+    [
+      "Maximum Manhole Space (m)",
+      "60",
+      "90",
+      "120",
+      "150"
+    ],
+    [
+      "Maximum Manhole Space (m)",
+      "30 m or it can be less than 30 m depending on the street",
+      "",
+      "",
+      ""
+    ]
+  ],
+  "cell_spans": [
+    {
+      "row": 1,
+      "column": 1,
+      "colspan": 4
+    }
+  ],
+  "markdown": "| Sewer Diameter (mm) | Up to 600 | 600 to 900 | 900 to 1200 | 1200 to 1500 |\n| --- | --- | --- | --- | --- |\n| Maximum Manhole Space (m) | 60 | 90 | 120 | 150 |\n| Maximum Manhole Space (m) | 30 m or it can be less than 30 m depending on the street |  |  |  |",
+  "notes": [
+    "Transcriber layout note: the source repeats \"Maximum Manhole Space (m)\" for the second row; its 30 m text spans all four diameter columns. Both rows are preserved without resolving their tension. Caption specifies gravity sewers not receiving house service sewers."
+  ],
+  "verification": {
+    "transcription": {
+      "pass_id": "visual-2026-11-08-01",
+      "method": "direct visual reading of rendered source page; no OCR",
+      "observations": "Read each cell or formula and its printed context directly."
+    },
+    "visual_recheck": {
+      "pass_id": "visual-2026-11-08-ch3-structural-02",
+      "method": "distinct second direct visual comparison; same assistant, not independent human review",
+      "observations": "Rechecked every cell of 2 rows, headers/units and all printed notes in the separate source-region pass. Confirmed both conflicting maximum-spacing rows and the merged 30 m text.",
+      "content_sha256": "3bc16ce4fdc9014afc714c073eae4ec5e46e6abbfbdfb5a22462de407e73970d"
+    }
+  }
+}

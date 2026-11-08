@@ -31,7 +31,8 @@ def cmd_ingest(args: argparse.Namespace) -> None:
         got = build_units(m, open_clean(path), progress=progress)
         print(f"  {len(got)} units in {time.time() - t0:.0f}s", file=sys.stderr)
         units.extend(got)
-    db = index.build(units, tuple(selected), Path(args.db))
+    from .transcriptions import RECORDS
+    db = index.build(units, tuple(selected), Path(args.db), transcription_records=RECORDS)
     review = [
         {"id": u.id, "title": u.title, "page_label": u.label_start, "pdf_page": u.page_start, "notes": u.review_notes}
         for u in units
@@ -40,6 +41,12 @@ def cmd_ingest(args: argparse.Namespace) -> None:
     review_path = Path(args.db).with_name("review.json")
     review_path.write_text(json.dumps(review, indent=1))
     print(f"index: {db}\nreview list: {review_path} ({len(review)} units)", file=sys.stderr)
+
+
+def cmd_apply_transcriptions(args: argparse.Namespace) -> None:
+    from .transcriptions import refresh
+
+    print(f"Applied {refresh(Path(args.db))} verified records")
 
 
 def cmd_search(args: argparse.Namespace) -> None:
@@ -77,6 +84,9 @@ def main() -> None:
     s = sub.add_parser("ingest", help="parse the manuals and build the index")
     s.add_argument("--manual", action="append", help="manual id to ingest (repeatable); default all")
     s.set_defaults(func=cmd_ingest)
+
+    s = sub.add_parser("apply-transcriptions", help="apply source-verified records to an offline database snapshot")
+    s.set_defaults(func=cmd_apply_transcriptions)
 
     s = sub.add_parser("search")
     s.add_argument("query", nargs="+")

@@ -31,7 +31,7 @@ How to use:
 - Call `fetch` (or `get_clause` for structured fields) with a result `id` to read the full clause or table before quoting a value.
 - Link each citation to the result's `url`, which opens the clause on an Omakase page.
 - When you state a value from the manual, quote it and give the `citation` exactly as returned. Do not cite a clause you did not retrieve.
-- Many tables and all figures are pictures of the printed page. `get_clause` and `fetch` attach those pictures as images (and give an image `url`). Read values from the image and cite the `citation`; there is no OCR transcription. If a value is unclear, say so and ask the user to check the printed page.
+- Many tables and all figures are pictures of the printed page. `get_clause` and `fetch` attach those pictures as images (and give an image `url`). Read values from the image and cite the `citation`; verified visual transcriptions are supplied where explicitly marked. These cover only their listed source regions. If a value is unclear, say so and ask the user to check the printed page.
 - If the manuals do not cover the question, say so instead of answering from memory.
 - Name the source as "Omakase CPHEEO": each `citation` already ends with "· via Omakase CPHEEO"; keep that suffix when you copy it.
 - End answers that rely on these results with: "Sources via Omakase CPHEEO search."
@@ -195,7 +195,15 @@ def _table_html(markdown: str) -> str:
 
 
 def _clause_html(c: dict) -> str:
+    import json
+
     parts = [f"<p class=cite>{html.escape(c['citation_plain'])}</p>"]
+    if c.get("unverified_regions"):
+        parts.append("<p class=warn>Unverified source region. " + html.escape(" ".join(c.get("transcription_notes",[]))) + "</p>")
+    if c.get("verified_text"):
+        parts.append("<pre style='white-space:pre-wrap'>" + html.escape(c["verified_text"]) + "</pre>")
+        evidence = [{k:t[k] for k in ('id','source_sha256','regions','verification')} for t in c['verified_transcriptions']]
+        parts.append("<p>" + html.escape(c['verification_scope']) + "</p><details><summary>Transcription source and visual checks</summary><pre style='white-space:pre-wrap'>" + html.escape(json.dumps(evidence,ensure_ascii=False,indent=2)) + "</pre></details>")
     if c.get("table_markdown"):
         parts.append(_table_html(c["table_markdown"]))
     parts += _images_html(c)
@@ -203,7 +211,9 @@ def _clause_html(c: dict) -> str:
         parts.append(f"<p>{html.escape(para)}</p>")
     for t in c.get("tables", []):
         parts.append(f"<h2>{html.escape(t['citation'])}</h2>")
-        parts.append(_table_html(t["table_markdown"]) if t.get("table_markdown") else "".join(_images_html(t)))
+        parts.append(_clause_html(t))
+    for e in c.get("equations", []):
+        parts.append(_clause_html(e))
     return "\n".join(parts)
 
 

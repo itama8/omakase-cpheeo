@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:T3.30",
+  "unit_id": "SEW-2013-A:T3.30",
+  "manual_id": "SEW-2013-A",
+  "kind": "table",
+  "number": "3.30",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "state": "verified",
+  "regions": [
+    {
+      "pdf_page": 272,
+      "page_label": "3 - 127",
+      "bbox": [
+        69,
+        72,
+        529,
+        184
+      ],
+      "render_sha256": "332114b096e8aca96b008cdfdd9bb4075be2d7d57fa6b5b725681da156f6cc94"
+    }
+  ],
+  "title": "Spacing of manholes as per Japanese Manual",
+  "headers": [
+    "Sewer Diameter (mm)",
+    "600 or less",
+    "1000 or less",
+    "1500 or less",
+    "1650 or more"
+  ],
+  "rows": [
+    [
+      "Maximum Manhole Space (m)",
+      "75",
+      "100",
+      "150",
+      "200"
+    ]
+  ],
+  "cell_spans": [],
+  "markdown": "| Sewer Diameter (mm) | 600 or less | 1000 or less | 1500 or less | 1650 or more |\n| --- | --- | --- | --- | --- |\n| Maximum Manhole Space (m) | 75 | 100 | 150 | 200 |",
+  "notes": [
+    "Source: JSWA",
+    "Transcriber note: the overlapping \"or less\" diameter headings are preserved as printed, not rewritten into mutually exclusive intervals. The following prose says Table 3.31 is now recommended after considering costs, cleaning frequency and sustainability of sewer-cleaning equipment."
+  ],
+  "verification": {
+    "transcription": {
+      "pass_id": "visual-2026-11-08-01",
+      "method": "direct visual reading of rendered source page; no OCR",
+      "observations": "Read each cell or formula and its printed context directly."
+    },
+    "visual_recheck": {
+      "pass_id": "visual-2026-11-08-ch3-structural-02",
+      "method": "distinct second direct visual comparison; same assistant, not independent human review",
+      "observations": "Rechecked every cell of 1 rows, headers/units and all printed notes in the separate source-region pass. ",
+      "content_sha256": "53d02824370bedabd828afa20907273812fa934919a716f85594ce593aa4eaa6"
+    }
+  }
+}

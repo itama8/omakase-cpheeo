@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:E3.3",
+  "unit_id": "SEW-2013-A:E3.3",
+  "manual_id": "SEW-2013-A",
+  "kind": "equation",
+  "number": "3.3",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "state": "verified",
+  "regions": [
+    {
+      "pdf_page": 155,
+      "page_label": "3 - 10",
+      "bbox": [
+        50,
+        73,
+        545,
+        327
+      ],
+      "render_sha256": "f1a1925d0b084473729e5d80e64fa6ffb85ce74ba6929f517384ea4d0df93e84"
+    }
+  ],
+  "title": "Rainfall intensity-duration relationship",
+  "parent_id": "SEW-2013-A:3.9.2.3",
+  "latex": "i=\\frac{a}{t^n}",
+  "readable": "i = a / t^n",
+  "symbols": [
+    {
+      "symbol": "i",
+      "definition": "Intensity of rainfall (mm/hr)"
+    },
+    {
+      "symbol": "t",
+      "definition": "Duration of storm (minutes)"
+    },
+    {
+      "symbol": "a, b and n",
+      "definition": "Constants"
+    }
+  ],
+  "applicability": "Two commonly used mathematical relationships. The available data on i and t are plotted and the values of intensity (i) can then be determined for any given time of concentration, (tc).",
+  "notes": [],
+  "verification": {
+    "transcription": {
+      "pass_id": "visual-2026-11-08-01",
+      "method": "direct visual reading of rendered source page; no OCR",
+      "observations": "Read each cell or formula and its printed context directly."
+    },
+    "visual_recheck": {
+      "pass_id": "visual-2026-11-08-equations-06",
+      "method": "distinct second visual inspection of exact source-region renders; same assistant, not an independent reviewer",
+      "observations": "Rechecked all formula coefficients, powers, denominators/grouping, numbered references, definitions and printed applicability. Retained the V-notch tangent inconsistency and undefined log base and g without correction.",
+      "content_sha256": "d220cec7357b2685f54d0e767819697c6c83bf55743b20319242176a03abf237"
+    }
+  }
+}

@@ -14,6 +14,8 @@ Indexed now: Manual on Sewerage and Sewage Treatment Systems, Part A: Engineerin
 ```sh
 uv run omakase-cpheeo ingest                 # parse the manuals, build data/build/cpheeo.sqlite (all four source manuals)
 uv run omakase-cpheeo search minimum slope for 200 mm sewer
+uv run python scripts/visual_coverage.py     # page review and transcription coverage
+uv run python scripts/check_verified_retrieval.py  # numerical/formula retrieval and provenance
 uv run omakase-cpheeo clause SEW-2013-A:T3.2
 uv run omakase-cpheeo eval -v                # score retrieval against eval/questions.yaml
 uv run omakase-cpheeo eval --questions eval/search-ranking.yaml -k 1 -v  # diameter ranking regressions
@@ -45,9 +47,11 @@ Sewage Parts B (Operation and Maintenance) and C (Management) are deferred until
 
 The sewage appendices have separate handles such as `SEW-2013-A:A3.2B` (lettered sheet), `SEW-2013-A:TA7.3-1` (appendix table) and `SEW-2013-A:FA3.2A-1` (appendix figure). The old grouped handles (`A3.2`, `A3.4`, `A3.5`) still return both sheets. Appendix titles and page boundaries come from the manual's native-text contents, and all 185 appendix pages are available as full-page images. Lookup accepts printed references such as "Appendix A 3.2 B" or "Table A 7.3- 1".
 
-Scanned tables are returned as source images, with no OCR transcription. Figures retain the full printed page so legends and vector drawings stay visible. Other embedded pictures are available on their containing clause. `get_clause` and `fetch` attach images as MCP image blocks; REST returns image references and the clause pages display them. Each image records its physical PDF page and printed label when available. Assistants should read the image, cite the returned reference, and say when a value is unclear; image delivery cannot guarantee a model reads every value correctly.
+Scanned tables and figures retain source imagery. Visually transcribed and separately rechecked text is available where explicitly marked `transcription_status: verified`: cells under `verified_transcriptions[].rows`, searchable text under `verified_text`, and LaTeX/readable representations for equations. Original images remain available alongside exact source-region crops, PDF hashes and verification observations. Equation handles include `SEW-2013-A:E5.30` and also appear on their parent sections.
 
-Water manual tables with native text are still read directly from the ruled grid. Search uses captions, clause text and heading context, so words found only inside scanned pictures are not searchable. No OCR is run during ingestion. Re-ingest after upgrading to this image schema before starting the server.
+**Visual transcription is incomplete.** The versioned coverage ledger currently has 94 verified records (44 tables, 50 equations) and one unclear formula. It covers all nine baseline image-only water tables and all 31 indexed sewage Chapter 3 tables, with further all-page discovery and transcription still pending. See [visual transcription coverage and workflow](docs/visual-transcriptions.md). No OCR is run. Native water table text remains available; it is not automatically considered visually verified. Unclear math returns its source image and an explicit note without invented values.
+
+Verified values, table headers, notes and mathematical text are searchable. `get_clause` and `fetch` include the text, provenance and MCP image blocks; REST returns the same data and image references; clause pages display text and source images. Verify the returned record's scope and any source-error notes before interpreting numerical values.
 
 ## Settings
 

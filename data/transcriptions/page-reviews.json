@@ -1,0 +1,112 @@
+{
+  "schema_version": 1,
+  "reviewer": "Codex assistant; distinct visual passes by the same assistant, not independent human review",
+  "manuals": {
+    "SEW-2013-A": {
+      "reviewed_pages": [
+        112,
+        134,
+        147,
+        148,
+        149,
+        150,
+        151,
+        152,
+        153,
+        154,
+        155,
+        156,
+        157,
+        161,
+        171,
+        172,
+        173,
+        174,
+        175,
+        176,
+        177,
+        178,
+        179,
+        181,
+        182,
+        183,
+        191,
+        201,
+        209,
+        210,
+        211,
+        212,
+        213,
+        214,
+        215,
+        216,
+        217,
+        218,
+        219,
+        220,
+        221,
+        222,
+        223,
+        224,
+        225,
+        226,
+        228,
+        229,
+        231,
+        232,
+        234,
+        235,
+        248,
+        249,
+        253,
+        272,
+        373,
+        374
+      ],
+      "partial_pages": {
+        "180": "Resolved as genuinely ambiguous print: h1/2 d1/3 has no clear superscript notation even in a 288-dpi close-up. Unclear record Ep180-1 serves the source crop without verified math.",
+        "233": "Figure 3.48 includes geometric callout fractions and H-dependent cushioning dimensions; not yet transcribed as expressions."
+      },
+      "notes": "Reviewed the complete rendered pages listed. Numbered tables/equations needing visual transcription are recorded separately. Native prose and native inline arithmetic were inspected but not duplicated. Pages 175 and 181 contain source graphs/diagrams retained as imagery. Diagrams are not digitized numerical tables."
+    },
+    "WS-2024-A": {
+      "reviewed_pages": [
+        822,
+        996,
+        997,
+        1117,
+        1118,
+        1119,
+        1120,
+        1158,
+        1243,
+        1244
+      ],
+      "partial_pages": {
+        "823": "Table 13.1 continuation transcribed; native Table 13.2 continues onward and has not been fully checked.",
+        "1157": "Table 5 caption checked; preceding native input tables have not received a cell-by-cell visual comparison."
+      },
+      "notes": "All six baseline image-only table units transcribed, including continuations outside their former bounds. This is not an all-page inventory of visual tables in this manual."
+    },
+    "WS-2024-B": {
+      "reviewed_pages": [
+        105,
+        106,
+        107,
+        108,
+        109,
+        490,
+        491
+      ],
+      "partial_pages": {},
+      "notes": "All seven intake rows through printed p.42 and the two-page modified IWA water balance including the footnote checked. Figure-internal labels remain imagery."
+    },
+    "WS-2024-C": {
+      "reviewed_pages": [
+        64
+      ],
+      "partial_pages": {},
+      "notes": "All eight printed SDG targets and two graphical goal labels checked. No omitted targets were added."
+    }
+  }
+}

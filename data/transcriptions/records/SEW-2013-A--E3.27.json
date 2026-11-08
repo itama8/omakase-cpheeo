@@ -1,0 +1,71 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:E3.27",
+  "unit_id": "SEW-2013-A:E3.27",
+  "manual_id": "SEW-2013-A",
+  "kind": "equation",
+  "number": "3.27",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "state": "verified",
+  "regions": [
+    {
+      "pdf_page": 214,
+      "page_label": "3 - 69",
+      "bbox": [
+        50,
+        624,
+        545,
+        767
+      ],
+      "render_sha256": "e9fe16bef8593af7a765f4c6c5b981e15eed21d7e0e32d3a107e49a24f7f9884"
+    },
+    {
+      "pdf_page": 215,
+      "page_label": "3 - 70",
+      "bbox": [
+        50,
+        434,
+        545,
+        765
+      ],
+      "render_sha256": "d54336f67808470bcaeaea68cfff99c21b8403b1b6bad74787eb3a446e238820"
+    }
+  ],
+  "title": "Settlement ratio for negative projecting conduits",
+  "parent_id": "SEW-2013-A:3.43.1",
+  "latex": "r_{sd}=\\frac{\\text{settlement of natural ground}-\\text{settlement of critical plane}}{\\text{compression of the backfill within the height }pB_d}=\\frac{S_g-(S_d+S_f+d_c)}{S_d}",
+  "readable": "r_sd = (settlement of natural ground - settlement of critical plane) / (compression of the backfill within the height p B_d) = [S_g - (S_d + S_f + d_c)] / S_d",
+  "symbols": [
+    {
+      "symbol": "Sg",
+      "definition": "SETTLEMENT OF NATURAL GROUND ADJACENT TO CONDUIT (Figure 3.37)"
+    },
+    {
+      "symbol": "Sd",
+      "definition": "DEFORMATION OF FILL FROM THE TOP OF THE CONDUIT TO THE TOP OF THE TRENCH (Figure 3.37)"
+    },
+    {
+      "symbol": "Sf",
+      "definition": "SETTLEMENT OF BOTTOM OF CONDUIT (Figure 3.37)"
+    },
+    {
+      "symbol": "dc",
+      "definition": "DEFLECTION OF THE CONDUIT (Figure 3.37)"
+    }
+  ],
+  "applicability": "Exact determination of the settlement ratio is very difficult. Recommended value of r_sd is 0.3 for design purposes. Elements of settlement ratios are shown in Figure 3.37.",
+  "notes": [],
+  "verification": {
+    "transcription": {
+      "pass_id": "visual-2026-11-08-01",
+      "method": "direct visual reading of rendered source page; no OCR",
+      "observations": "Read each cell or formula and its printed context directly."
+    },
+    "visual_recheck": {
+      "pass_id": "visual-2026-11-08-ch3-structural-02",
+      "method": "distinct second direct visual comparison; same assistant, not independent human review",
+      "observations": "Rechecked coefficients, grouping, powers, signs, numbered and unnumbered labels, printed definitions and applicability in a distinct source-region pass. Confirmed numerator S_g-(S_d+S_f+d_c), denominator S_d, and recommended r_sd 0.3. Diagram definitions on p.3-70 checked in the earlier full-page visual pass.",
+      "content_sha256": "2dd482778a408c68c01eede9cdadaf3aa1dd20f964f671859a9074c540d92eaa"
+    }
+  }
+}

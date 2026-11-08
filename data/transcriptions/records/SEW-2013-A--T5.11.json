@@ -1,0 +1,92 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:T5.11",
+  "unit_id": "SEW-2013-A:T5.11",
+  "manual_id": "SEW-2013-A",
+  "kind": "table",
+  "number": "5.11",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "state": "verified",
+  "regions": [
+    {
+      "pdf_page": 374,
+      "page_label": "5 - 70",
+      "bbox": [
+        127,
+        369,
+        441,
+        572
+      ],
+      "render_sha256": "002498ada9e47f8bb7edcfa7f7a382a33664a2126fb00166b6fcb998d27b16c5"
+    }
+  ],
+  "title": "DO Correction Factor for Altitudes",
+  "headers": [
+    "Altitude(meters)",
+    "Factor",
+    "Altitude(meters)",
+    "Factor"
+  ],
+  "rows": [
+    [
+      "0",
+      "1",
+      "1067",
+      "0.88"
+    ],
+    [
+      "152",
+      "0.98",
+      "1219",
+      "0.86"
+    ],
+    [
+      "305",
+      "0.96",
+      "1372",
+      "0.84"
+    ],
+    [
+      "457",
+      "0.95",
+      "1524",
+      "0.82"
+    ],
+    [
+      "610",
+      "0.93",
+      "1676",
+      "0.81"
+    ],
+    [
+      "762",
+      "0.91",
+      "1829",
+      "0.80"
+    ],
+    [
+      "914",
+      "0.89",
+      "",
+      ""
+    ]
+  ],
+  "cell_spans": [],
+  "markdown": "| Altitude(meters) | Factor | Altitude(meters) | Factor |\n| --- | --- | --- | --- |\n| 0 | 1 | 1067 | 0.88 |\n| 152 | 0.98 | 1219 | 0.86 |\n| 305 | 0.96 | 1372 | 0.84 |\n| 457 | 0.95 | 1524 | 0.82 |\n| 610 | 0.93 | 1676 | 0.81 |\n| 762 | 0.91 | 1829 | 0.80 |\n| 914 | 0.89 |  |  |",
+  "notes": [
+    "The two altitude/factor column pairs continue the same list; the final two cells are blank in print."
+  ],
+  "verification": {
+    "transcription": {
+      "pass_id": "visual-2026-11-08-01",
+      "method": "direct visual reading of rendered source page; no OCR",
+      "observations": "Read each cell or formula and its printed context directly."
+    },
+    "visual_recheck": {
+      "pass_id": "visual-2026-11-08-02",
+      "method": "distinct second inspection of 144-dpi exact source-region render against authored record",
+      "observations": "Rechecked all 13 altitude/factor pairs in both printed column pairs, including 457/0.95, 1524/0.82, 1829/0.80 and final blank cells.",
+      "content_sha256": "9e545a12fbf3c30469625053ec592f4c6a252e095d4997edc325406493fa44dd"
+    }
+  }
+}

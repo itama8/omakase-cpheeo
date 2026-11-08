@@ -1,0 +1,180 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:T3.6",
+  "unit_id": "SEW-2013-A:T3.6",
+  "manual_id": "SEW-2013-A",
+  "kind": "table",
+  "number": "3.6",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "state": "verified",
+  "regions": [
+    {
+      "pdf_page": 153,
+      "page_label": "3 - 8",
+      "bbox": [
+        71,
+        94,
+        474,
+        749
+      ],
+      "render_sha256": "e48796c41f35a601f1b857fb433d0bd01d3de3b9d3fbad3de68382de8356ee56"
+    }
+  ],
+  "title": "Runoff Coefficients for Times of Concentration",
+  "headers": [
+    "Weighted Average Coefficient / Duration, t, minutes",
+    "10",
+    "20",
+    "30",
+    "45",
+    "60",
+    "75",
+    "90",
+    "100",
+    "120",
+    "135",
+    "150",
+    "180"
+  ],
+  "rows": [
+    [
+      "1. Sector concentrating in stated time / a. Impervious",
+      "0.525",
+      "0.588",
+      "0.642",
+      "0.700",
+      "0.740",
+      "0.771",
+      "0.795",
+      "0.813",
+      "0.828",
+      "0.840",
+      "0.850",
+      "0.865"
+    ],
+    [
+      "1. Sector concentrating in stated time / b. 60% Impervious",
+      "0.365",
+      "0.427",
+      "0.477",
+      "0.531",
+      "0.569",
+      "0.598",
+      "0.622",
+      "0.641",
+      "0.656",
+      "0.670",
+      "0.682",
+      "0.701"
+    ],
+    [
+      "1. Sector concentrating in stated time / c. 40% Impervious",
+      "0.285",
+      "0.346",
+      "0.395",
+      "0.446",
+      "0.482",
+      "0.512",
+      "0.535",
+      "0.554",
+      "0.571",
+      "0.585",
+      "0.597",
+      "0.618"
+    ],
+    [
+      "1. Sector concentrating in stated time / d. Pervious",
+      "0.125",
+      "0.185",
+      "0.230",
+      "0.277",
+      "0.312",
+      "0.330",
+      "0.362",
+      "0.382",
+      "0.399",
+      "0.414",
+      "0.429",
+      "0.454"
+    ],
+    [
+      "2. Rectangle (length = 4 × width) concentrating in stated time / a. Impervious",
+      "0.550",
+      "0.648",
+      "0.711",
+      "0.768",
+      "0.808",
+      "0.837",
+      "0.856",
+      "0.869",
+      "0.879",
+      "0.887",
+      "0.892",
+      "0.903"
+    ],
+    [
+      "2. Rectangle (length = 4 × width) concentrating in stated time / b. 50% Impervious",
+      "0.350",
+      "0.442",
+      "0.499",
+      "0.551",
+      "0.590",
+      "0.618",
+      "0.639",
+      "0.657",
+      "0.671",
+      "0.683",
+      "0.694",
+      "0.713"
+    ],
+    [
+      "2. Rectangle (length = 4 × width) concentrating in stated time / c. 30% Impervious",
+      "0.269",
+      "0.360",
+      "0.414",
+      "0.464",
+      "0.502",
+      "0.530",
+      "0.552",
+      "0.572",
+      "0.588",
+      "0.601",
+      "0.614",
+      "0.636"
+    ],
+    [
+      "2. Rectangle (length = 4 × width) concentrating in stated time / d. Pervious",
+      "0.149",
+      "0.236",
+      "0.287",
+      "0.334",
+      "0.371",
+      "0.398",
+      "0.422",
+      "0.445",
+      "0.463",
+      "0.479",
+      "0.495",
+      "0.522"
+    ]
+  ],
+  "cell_spans": [],
+  "markdown": "| Weighted Average Coefficient / Duration, t, minutes | 10 | 20 | 30 | 45 | 60 | 75 | 90 | 100 | 120 | 135 | 150 | 180 |\n| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |\n| 1. Sector concentrating in stated time / a. Impervious | 0.525 | 0.588 | 0.642 | 0.700 | 0.740 | 0.771 | 0.795 | 0.813 | 0.828 | 0.840 | 0.850 | 0.865 |\n| 1. Sector concentrating in stated time / b. 60% Impervious | 0.365 | 0.427 | 0.477 | 0.531 | 0.569 | 0.598 | 0.622 | 0.641 | 0.656 | 0.670 | 0.682 | 0.701 |\n| 1. Sector concentrating in stated time / c. 40% Impervious | 0.285 | 0.346 | 0.395 | 0.446 | 0.482 | 0.512 | 0.535 | 0.554 | 0.571 | 0.585 | 0.597 | 0.618 |\n| 1. Sector concentrating in stated time / d. Pervious | 0.125 | 0.185 | 0.230 | 0.277 | 0.312 | 0.330 | 0.362 | 0.382 | 0.399 | 0.414 | 0.429 | 0.454 |\n| 2. Rectangle (length = 4 × width) concentrating in stated time / a. Impervious | 0.550 | 0.648 | 0.711 | 0.768 | 0.808 | 0.837 | 0.856 | 0.869 | 0.879 | 0.887 | 0.892 | 0.903 |\n| 2. Rectangle (length = 4 × width) concentrating in stated time / b. 50% Impervious | 0.350 | 0.442 | 0.499 | 0.551 | 0.590 | 0.618 | 0.639 | 0.657 | 0.671 | 0.683 | 0.694 | 0.713 |\n| 2. Rectangle (length = 4 × width) concentrating in stated time / c. 30% Impervious | 0.269 | 0.360 | 0.414 | 0.464 | 0.502 | 0.530 | 0.552 | 0.572 | 0.588 | 0.601 | 0.614 | 0.636 |\n| 2. Rectangle (length = 4 × width) concentrating in stated time / d. Pervious | 0.149 | 0.236 | 0.287 | 0.334 | 0.371 | 0.398 | 0.422 | 0.445 | 0.463 | 0.479 | 0.495 | 0.522 |",
+  "notes": [
+    "Source: CPHEEO, 1993",
+    "Transcriber layout note: the source is sideways. The two full-width group headings are repeated in each row label to preserve their relationship to the coefficients."
+  ],
+  "verification": {
+    "transcription": {
+      "pass_id": "visual-2026-11-08-01",
+      "method": "direct visual reading of rendered source page; no OCR",
+      "observations": "Read each cell or formula and its printed context directly."
+    },
+    "visual_recheck": {
+      "pass_id": "visual-2026-11-08-04",
+      "method": "separate second visual comparison with rendered source region; same assistant, not an independent reviewer",
+      "observations": "All 96 coefficients rechecked in the horizontal render. Corrected the rectangle/pervious/10-minute cell from the first-pass 0.140 to visibly printed 0.149 before verification.",
+      "content_sha256": "bda9ad7605eb7bd1808c8c651148586ce4785d5bc439a71c830b70819cb94a38"
+    }
+  }
+}

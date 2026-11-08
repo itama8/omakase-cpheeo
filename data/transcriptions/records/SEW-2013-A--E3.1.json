@@ -1,0 +1,60 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:E3.1",
+  "unit_id": "SEW-2013-A:E3.1",
+  "manual_id": "SEW-2013-A",
+  "kind": "equation",
+  "number": "3.1",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "state": "verified",
+  "regions": [
+    {
+      "pdf_page": 151,
+      "page_label": "3 - 6",
+      "bbox": [
+        50,
+        76,
+        545,
+        758
+      ],
+      "render_sha256": "7b8c9bd5a81c6a9ad88b310bdd06a8a6fa55e6f607e6e861f0e0f0b114ed0c47"
+    }
+  ],
+  "title": "Rational formula for peak runoff",
+  "parent_id": "SEW-2013-A:3.9.1",
+  "latex": "Q=10\\,C\\,i\\,A",
+  "readable": "Q = 10 C i A",
+  "symbols": [
+    {
+      "symbol": "Q",
+      "definition": "Runoff in m³/hr"
+    },
+    {
+      "symbol": "C",
+      "definition": "Dimensionless runoff coefficient"
+    },
+    {
+      "symbol": "i",
+      "definition": "Intensity of rainfall in mm/hr"
+    },
+    {
+      "symbol": "A",
+      "definition": "Area of drainage district in hectares"
+    }
+  ],
+  "applicability": "The maximum runoff is computed when the entire basin draining at that point contributes to the flow. Use rainfall intensity lasting for the time of concentration. Q represents only the maximum discharge caused by a particular storm.",
+  "notes": [],
+  "verification": {
+    "transcription": {
+      "pass_id": "visual-2026-11-08-01",
+      "method": "direct visual reading of rendered source page; no OCR",
+      "observations": "Read each cell or formula and its printed context directly."
+    },
+    "visual_recheck": {
+      "pass_id": "visual-2026-11-08-04",
+      "method": "separate second visual comparison with rendered source region; same assistant, not an independent reviewer",
+      "observations": "Rechecked formula coefficients, exponents, grouping, printed number, symbol definitions and applicability in a distinct source-region inspection. ",
+      "content_sha256": "aac2d5f3a21d1fa09d730a3e260bd03ce9e85256bd93bebd1b6d6cc9c0fb93f6"
+    }
+  }
+}
