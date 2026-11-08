@@ -59,6 +59,10 @@ DOMAIN_HINTS: dict[str, tuple[str, ...]] = {
 }
 DOMAIN_BOOST = 1.3  # bm25 scores are negative; multiplying makes a match rank higher
 DESIGN_INTENT = re.compile(r"\b(design|norms?|criteria|standards?|recommended|minimum|maximum|permissible|requirements?|limits?)\b", re.I)
+# A unit whose own heading words appear in the query is about the question, not merely
+# near it. Its score grows by up to this fraction, in proportion to the heading words
+# matched; measured against eval/paraphrase-groups.yaml.
+TITLE_COVER_BOOST = 0.6
 EXAMPLE_HEADING = re.compile(r"\b(examples?|illustrat\w*|worked|sample calculations?)\b", re.I)
 SEARCH_KINDS = ("section", "table", "figure", "equation", "appendix", "annexure", "chapter")
 KIND_LABEL = {"equation": "Equation", "section": "Section", "table": "Table", "figure": "Figure", "chapter": "Chapter", "appendix": "Appendix", "annexure": "Annexure"}
@@ -511,12 +515,16 @@ class Library:
             ).fetchall()
             hint = self.hinted_domain(query) if domain is None and manual_id is None else None
             title_words = self._title_words(query)
+            query_set = set(title_words)
             design_intent = bool(DESIGN_INTENT.search(query)) and not EXAMPLE_HEADING.search(query)
 
             def rank(row):
                 score = row['score'] * (DOMAIN_BOOST if row['domain'] == hint else 1.0)
                 if design_intent and self._example_context(row):
                     score *= 0.55
+                heading = set(self._title_words(row['title']))
+                if heading:
+                    score *= 1 + TITLE_COVER_BOOST * len(heading & query_set) / len(heading)
                 exact_title = bool(title_words) and title_words == self._title_words(row['title'])
                 return (not exact_title, score)
 
