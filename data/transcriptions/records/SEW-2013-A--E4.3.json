@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:E4.3",
+  "unit_id": "SEW-2013-A:E4.3",
+  "manual_id": "SEW-2013-A",
+  "kind": "equation",
+  "number": "4.3",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "state": "verified",
+  "regions": [
+    {
+      "pdf_page": 301,
+      "page_label": "4 - 28",
+      "bbox": [
+        50,
+        73,
+        545,
+        280
+      ],
+      "render_sha256": "af472b34bcd6697f87293a3efa0d356d6bd3c40d1cf32ad7b00b260a79ef464e"
+    }
+  ],
+  "title": "Pump kilowatt requirement as printed",
+  "parent_id": "SEW-2013-A:4.20.2",
+  "latex": "\\text{kW required}=Q\\times H/100.5/\\acute{\\eta}",
+  "readable": "kW required = Q×H/100.5/ή",
+  "symbols": [
+    {
+      "symbol": "Q",
+      "definition": "Discharge in litres per second"
+    },
+    {
+      "symbol": "H",
+      "definition": "Total head to be got over in m"
+    },
+    {
+      "symbol": "ή",
+      "definition": "Efficiency of the pump"
+    }
+  ],
+  "applicability": "The kW of a pump shall be calculated as the printed equation. The following prose calls this the brake horse power and says actual horse power includes motor efficiency, about 0.95 for modern new motors and 0.9 for motors nearing a 15-year life cycle.",
+  "notes": [
+    "Transcriber note: denominator 100.5 and the accented eta glyph ή are visibly printed. No physical constant, unit factor or formula correction has been substituted."
+  ],
+  "verification": {
+    "transcription": {
+      "pass_id": "visual-2026-11-08-01",
+      "method": "direct visual reading of rendered source page; no OCR",
+      "observations": "Read each cell or formula and its printed context directly."
+    },
+    "visual_recheck": {
+      "pass_id": "visual-2026-11-08-ch4-02",
+      "method": "distinct second visual inspection of exact source-region render; same assistant, not independent human review",
+      "observations": "Rechecked every table cell or formula symbol/coefficient, units and printed conditions. Preserved source rounding, all 14 fitting factors, pump efficiencies including 0.40, divisor 100.5 and accented eta, and the unnumbered 0.9 motor allowance as printed.",
+      "content_sha256": "b1b0116d4179480302f08c824d306747efa53ab533216a99a1157580122300d1"
+    }
+  }
+}

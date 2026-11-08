@@ -1,0 +1,70 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:T4.1",
+  "unit_id": "SEW-2013-A:T4.1",
+  "manual_id": "SEW-2013-A",
+  "kind": "table",
+  "number": "4.1",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "state": "verified",
+  "regions": [
+    {
+      "pdf_page": 283,
+      "page_label": "4 - 10",
+      "bbox": [
+        50,
+        442,
+        545,
+        676
+      ],
+      "render_sha256": "d97d2eeff60e2db571abdd611420551e760f8519f4145e61eb2b03b60e63acef"
+    }
+  ],
+  "title": "Illustration of wet well volume in sewer systems",
+  "headers": [
+    "Printed item",
+    "Printed value"
+  ],
+  "rows": [
+    [
+      "Pumping capacity at peak flow",
+      "= 42 cubic meters per minute"
+    ],
+    [
+      "Volume required",
+      "= 15 × 42 / 4 = 158 m³"
+    ],
+    [
+      "Possible depth below invert of sewer",
+      "= 2 m"
+    ],
+    [
+      "Area needed",
+      "= 158 / 2 = 79 m²"
+    ],
+    [
+      "Diameter needed",
+      "= SQRT (4×79 /3.14) = 10 m"
+    ]
+  ],
+  "cell_spans": [],
+  "markdown": "| Printed item | Printed value |\n| --- | --- |\n| Pumping capacity at peak flow | = 42 cubic meters per minute |\n| Volume required | = 15 × 42 / 4 = 158 m³ |\n| Possible depth below invert of sewer | = 2 m |\n| Area needed | = 158 / 2 = 79 m² |\n| Diameter needed | = SQRT (4×79 /3.14) = 10 m |",
+  "notes": [
+    "Given,",
+    "The depth of the wet well required is also governed by the depth of submergence needed for the submersible pump set. This in turn is governed by the height of the submersible pump set and the floor clearance. Assuming the height of the pump set as 1.2 m and floor clearance as 0.3 m the minimum depth of the floor of the wet well below the invert of the sewer shall be 2 + 1.5 = 3.5 m.",
+    "Transcriber layout note: this printed example is a bordered block of aligned item/value lines without column headings. Printed item and Printed value are editorial column labels. The printed rounded 158 and 10 results are retained."
+  ],
+  "verification": {
+    "transcription": {
+      "pass_id": "visual-2026-11-08-01",
+      "method": "direct visual reading of rendered source page; no OCR",
+      "observations": "Read each cell or formula and its printed context directly."
+    },
+    "visual_recheck": {
+      "pass_id": "visual-2026-11-08-ch4-02",
+      "method": "distinct second visual inspection of exact source-region render; same assistant, not independent human review",
+      "observations": "Rechecked every table cell or formula symbol/coefficient, units and printed conditions. Preserved source rounding, all 14 fitting factors, pump efficiencies including 0.40, divisor 100.5 and accented eta, and the unnumbered 0.9 motor allowance as printed.",
+      "content_sha256": "53e1304c856d34ecfae38511e216f02333d1e10ab9fb5aa228b4384a5a5ab48b"
+    }
+  }
+}

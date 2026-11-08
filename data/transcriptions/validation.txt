@@ -24,27 +24,90 @@ PASS V23 rank=1
 PASS V24 rank=1
 PASS V25 rank=1
 PASS V26 rank=1
+PASS V27 rank=1
+PASS V28 rank=1
+PASS V29 rank=1
+PASS V30 rank=1
 {
-  "questions": 26,
-  "content_checks_passed": 26,
-  "top1": 25,
-  "top5": 26,
-  "mrr": 0.9807692307692307,
+  "questions": 30,
+  "content_checks_passed": 30,
+  "top1": 29,
+  "top5": 30,
+  "mrr": 0.9833333333333333,
   "local_warm_search_fetch_ms": {
-    "samples": 130,
-    "median": 41.84455602080561,
-    "p95": 57.65308899572119
+    "samples": 150,
+    "median": 42.04017798474524,
+    "p95": 55.33543898491189
   },
   "limitations": "Source-open regression set. Same-assistant visual recheck, not independent accuracy proof. In-process warm SQLite timings exclude network, rendering, model and end-to-end retrieval time.",
   "failures": []
 }
 
-Additional checkpoint verification:
-- python -m unittest discover -s scripts -p 'test_*.py': 14/14 pass.
-- Original APD retrieval: 27/27 top five, MRR 0.84 (handle retrieval, not independent answer accuracy).
-- Diameter/ranking regression: 12/12 rank one.
-- Appendix retrieval: 13/13 top five, MRR 0.92.
-- Appendix coverage: all 51 source-listed entries and all 185 full-page appendix images preserved.
-- Baseline preservation against 7b97062: all 4,956 original units (except derived image counts), 2,321 complete source images and 7,640 original passages unchanged.
-- Local MCP smoke on port 8799: every tool; original images and legacy links; verified table row, Equation 5.30 math/image/parent/HTML, unclear fallback and missing water continuation all pass.
-- Full four-PDF re-ingestion was not repeated. Persistence across build and refresh is exercised by source-independent fixture tests; the actual snapshot was built by applying source-validated records to an offline copy of the unchanged baseline.
+uv run omakase-cpheeo eval
+PASS@1  S01  What peak factor should I use for a contributory population of 50,000?
+PASS@1  S02  What groundwater infiltration allowance should be added to sewage flow?
+PASS@1  S03  What percentage of water supply should be taken as sewage generation?
+PASS@1  S04  What are the minimum and maximum design velocities in gravity sewers?
+PASS@1  S05  What is the minimum slope for a 200 mm sewer?
+PASS@1  S06  What Manning's n should be used for RCC spun pipes?
+PASS@1  S07  What is the minimum diameter of a sewer, and when is 150 mm allowed?
+PASS@1  S08  At what depth of flow should sewers be designed to run at ultimate peak flow (d/D)?
+PASS@1  S09  What is the minimum earth cover over a sewer?
+PASS@1  S10  What manhole diameter is needed for a sewer 4 m deep?
+PASS@1  S11  What is the maximum spacing between manholes on a 300 mm sewer?
+PASS@1  S12  Above what invert difference is a drop manhole required?
+PASS@2  S13  What is the minimum clear opening of a manhole cover?
+PASS@1  S14  Which type of bedding should be used for sewer pipes at a given depth and diameter?
+PASS@1  S15  Which trenchless technology suits a given pipe size and soil?
+PASS@3  P16  What detention time should be used for the wet well of a sewage pumping station?
+PASS@3  P17  What surface overflow rate and detention time apply to a grit chamber?
+PASS@1  P18  How many working and standby pumps should a sewage pumping station have?
+PASS@2  P19  How do I work out the economical size of a pumping main?
+PASS@1  L20  What design periods apply to sewers, pumping machinery and treatment plants?
+PASS@4  L21  Which population forecasting methods does the manual recommend?
+PASS@4  L22  What per capita water supply should be assumed for towns with sewerage?
+PASS@1  W24  What design period should be used for water treatment plants and service reservoirs?
+PASS@1  W25  What rate of water supply should be allowed for a floating population?
+PASS@1  W26  What Hazen-Williams C value should be used for a ductile iron transmission main?
+PASS@2  W27  How is the capacity of a service reservoir worked out?
+PASS@1  C23  Is Table 3.7 of the CPHEEO 2013 manual the table of minimum sewer slopes?
+
+27/27 answered in top 5; MRR 0.84
+
+uv run omakase-cpheeo eval --questions eval/search-ranking.yaml -k 1
+PASS@1  D01  minimum sewer diameter
+PASS@1  D02  minimum diameter for sanitary sewers
+PASS@1  D03  minimum sanitary sewer diameter
+PASS@1  D04  minimum gravity sewer diameter
+PASS@1  D05  minimum pipe diameter for gravity sewer
+PASS@1  D06  minimum diameter sewer design criteria
+PASS@1  D07  minimum size of sanitary sewer
+PASS@1  D08  minimum sewer size
+PASS@1  R09  minimum slopes of sanitary sewers
+PASS@1  R10  design velocities in gravity sewers
+PASS@1  R11  What design period should be used for water treatment plants and service reservoirs?
+PASS@1  R12  Table 3.13 minimum sanitary sewer diameter
+
+12/12 answered in top 1; MRR 1.00
+
+uv run omakase-cpheeo eval --questions eval/sewage-appendices.yaml
+PASS@1  A01  What symbols are used in the engineering manual?
+PASS@1  A02  Where is the list of Indian Standards relating to sewerage and sewage treatment?
+PASS@1  A03  Where is the mass diagram for raw sewage flow at Koyambedu STP in Chennai?
+PASS@1  A04  Where is the list of tests recommended for sewage treatment plant units?
+PASS@1  A05  How can I size clarifiers in activated sludge treatment?
+PASS@1  A06  What micro nutrients are needed for continuous flow biological reactors?
+PASS@1  A07  What micro nutrients are needed for batch flow biological reactors?
+PASS@2  A08  Where is the example design of sludge digesters?
+PASS@1  A09  Appendix A 3.2 B
+PASS@1  A10  Appendix A 5.11
+PASS@1  A11  Table A 7.3- 1
+PASS@1  A12  Figure A3.2A-1
+PASS@2  A13  How is the approach channel for a Parshall flume sized?
+
+13/13 answered in top 5; MRR 0.92
+
+uv run python scripts/check_appendix_coverage.py
+PASS: 51 source-listed appendices/sheets; 185 printed pages; complete titles, boundaries and full-page images
+
+14 source-independent tests passed at the core checkpoint. Full four-PDF re-ingestion was not repeated; full build/refresh persistence is covered by fixtures. These are optimistic source-open content regressions, not independent accuracy measurements.

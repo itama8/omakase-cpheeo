@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:Ep289-1",
+  "unit_id": "SEW-2013-A:Ep289-1",
+  "manual_id": "SEW-2013-A",
+  "kind": "equation",
+  "number": "p289-1",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "state": "verified",
+  "regions": [
+    {
+      "pdf_page": 289,
+      "page_label": "4 - 16",
+      "bbox": [
+        100,
+        392,
+        485,
+        570
+      ],
+      "render_sha256": "4acdf105e8b0d078a4d6736c76a4a9dcb7a397b61cadf639d93579f27b4bbd80"
+    }
+  ],
+  "title": "Unnumbered head-curve expression in Figure 4.6",
+  "parent_id": "SEW-2013-A:4.7.3",
+  "latex": "H_f+\\frac{v^2}{2g}",
+  "readable": "H_f + v^2 / (2 g)",
+  "symbols": [],
+  "applicability": "Figure 4.6: System head curve for a pumping system. The curve is labelled Hf + v²/(2g); the dashed horizontal line is labelled STATIC HEAD and H_stat. The horizontal marks are Q/4, Q/2, 3Q/4, Q, 5Q/4 and 3Q/2. Source: CPHEEO, 1993.",
+  "notes": [
+    "Transcriber note: p289-1 is a service locator, not a printed equation number. This is a curve label rather than an equality; symbol meanings and units are not written out in the figure. No curve coordinates have been inferred."
+  ],
+  "verification": {
+    "transcription": {
+      "pass_id": "visual-2026-11-08-01",
+      "method": "direct visual reading of rendered source page; no OCR",
+      "observations": "Read each cell or formula and its printed context directly."
+    },
+    "visual_recheck": {
+      "pass_id": "visual-2026-11-08-ch4-02",
+      "method": "distinct second visual inspection of exact source-region render; same assistant, not independent human review",
+      "observations": "Rechecked every table cell or formula symbol/coefficient, units and printed conditions. Preserved source rounding, all 14 fitting factors, pump efficiencies including 0.40, divisor 100.5 and accented eta, and the unnumbered 0.9 motor allowance as printed.",
+      "content_sha256": "a5d69989b1c77f3a522d1d0883a4494cf913418f317312c8955532bee144bc0a"
+    }
+  }
+}

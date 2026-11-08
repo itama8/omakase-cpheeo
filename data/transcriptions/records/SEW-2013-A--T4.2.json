@@ -1,0 +1,117 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:T4.2",
+  "unit_id": "SEW-2013-A:T4.2",
+  "manual_id": "SEW-2013-A",
+  "kind": "table",
+  "number": "4.2",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "state": "verified",
+  "regions": [
+    {
+      "pdf_page": 289,
+      "page_label": "4 - 16",
+      "bbox": [
+        120,
+        73,
+        443,
+        379
+      ],
+      "render_sha256": "1c93c4ee6daaaaa37bac5589664f1681a447e96ae5f67ecf6bffac262cc94845"
+    }
+  ],
+  "title": "Friction factor for fittings in pumping mains",
+  "headers": [
+    "No.",
+    "Type of Fittings",
+    "Factor"
+  ],
+  "rows": [
+    [
+      "1",
+      "Sudden contraction",
+      "0.5"
+    ],
+    [
+      "2",
+      "Entrance shape well rounded",
+      "0.5"
+    ],
+    [
+      "3",
+      "Elbow 90 degrees",
+      "1.0"
+    ],
+    [
+      "4",
+      "Elbow 45 degrees",
+      "0.75"
+    ],
+    [
+      "5",
+      "Elbow 22 degrees",
+      "0.5"
+    ],
+    [
+      "6",
+      "Tee 90 degrees",
+      "1.5"
+    ],
+    [
+      "7",
+      "Tee in straight pipe",
+      "0.3"
+    ],
+    [
+      "8",
+      "Gate valve open",
+      "0.4"
+    ],
+    [
+      "9",
+      "Valve with reducer and increaser",
+      "0.5"
+    ],
+    [
+      "10",
+      "Globe valve",
+      "10.0"
+    ],
+    [
+      "11",
+      "Angle",
+      "5.0"
+    ],
+    [
+      "12",
+      "Swing check",
+      "2.5"
+    ],
+    [
+      "13",
+      "Venturi meter",
+      "0.3"
+    ],
+    [
+      "14",
+      "Orifice",
+      "1.0"
+    ]
+  ],
+  "cell_spans": [],
+  "markdown": "| No. | Type of Fittings | Factor |\n| --- | --- | --- |\n| 1 | Sudden contraction | 0.5 |\n| 2 | Entrance shape well rounded | 0.5 |\n| 3 | Elbow 90 degrees | 1.0 |\n| 4 | Elbow 45 degrees | 0.75 |\n| 5 | Elbow 22 degrees | 0.5 |\n| 6 | Tee 90 degrees | 1.5 |\n| 7 | Tee in straight pipe | 0.3 |\n| 8 | Gate valve open | 0.4 |\n| 9 | Valve with reducer and increaser | 0.5 |\n| 10 | Globe valve | 10.0 |\n| 11 | Angle | 5.0 |\n| 12 | Swing check | 2.5 |\n| 13 | Venturi meter | 0.3 |\n| 14 | Orifice | 1.0 |",
+  "notes": [],
+  "verification": {
+    "transcription": {
+      "pass_id": "visual-2026-11-08-01",
+      "method": "direct visual reading of rendered source page; no OCR",
+      "observations": "Read each cell or formula and its printed context directly."
+    },
+    "visual_recheck": {
+      "pass_id": "visual-2026-11-08-ch4-02",
+      "method": "distinct second visual inspection of exact source-region render; same assistant, not independent human review",
+      "observations": "Rechecked every table cell or formula symbol/coefficient, units and printed conditions. Preserved source rounding, all 14 fitting factors, pump efficiencies including 0.40, divisor 100.5 and accented eta, and the unnumbered 0.9 motor allowance as printed.",
+      "content_sha256": "5bcee3623e9287643a4eadd428a55297fc01883d7fa761c3b6a694d656817a5c"
+    }
+  }
+}

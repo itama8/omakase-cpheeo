@@ -104,3 +104,19 @@ questions:
     question: egg shaped full flow hydraulic properties geometry
     expect: [SEW-2013-A:Ep272-1]
     contains: ['0.510 H^2', '2.643 H', '0.193 H']
+  - id: V27
+    question: Equation 4.2 centrifugal pump specific speed
+    expect: [SEW-2013-A:E4.2]
+    contains: ['3.65 n sqrt(Q) / H^0.75', 'Flow rate in m³/s']
+  - id: V28
+    question: Equation 4.3 pump kilowatt
+    expect: [SEW-2013-A:E4.3]
+    contains: ['Q×H/100.5/ή', 'No physical constant']
+  - id: V29
+    question: Table 4.2 friction factor fittings pumping mains
+    expect: [SEW-2013-A:T4.2]
+    row: ['10', 'Globe valve', '10.0']
+  - id: V30
+    question: Table 4.3 efficiencies pumps design
+    expect: [SEW-2013-A:T4.3]
+    row: ['4', 'Positive displacement pump sets', '0.40']

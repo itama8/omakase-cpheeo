@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:Ep301-1",
+  "unit_id": "SEW-2013-A:Ep301-1",
+  "manual_id": "SEW-2013-A",
+  "kind": "equation",
+  "number": "p301-1",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "state": "verified",
+  "regions": [
+    {
+      "pdf_page": 301,
+      "page_label": "4 - 28",
+      "bbox": [
+        50,
+        209,
+        545,
+        280
+      ],
+      "render_sha256": "d79299615298568070386dc402daf118ab03f34817bac621f5b695829f0e7cd7"
+    }
+  ],
+  "title": "Unnumbered actual pump kilowatt allowance",
+  "parent_id": "SEW-2013-A:4.20.2",
+  "latex": "\\text{Actual kW}=\\text{Brake horse power in kW}/0.9",
+  "readable": "Actual kW = Brake horse power in kW / 0.9",
+  "symbols": [],
+  "applicability": "Actual kW needed shall be taken for design purposes with the motor-efficiency allowance described immediately above.",
+  "notes": [
+    "Transcriber note: p301-1 is a service locator, not a printed equation number. The source’s brake horse power in kW wording is preserved."
+  ],
+  "verification": {
+    "transcription": {
+      "pass_id": "visual-2026-11-08-01",
+      "method": "direct visual reading of rendered source page; no OCR",
+      "observations": "Read each cell or formula and its printed context directly."
+    },
+    "visual_recheck": {
+      "pass_id": "visual-2026-11-08-ch4-02",
+      "method": "distinct second visual inspection of exact source-region render; same assistant, not independent human review",
+      "observations": "Rechecked every table cell or formula symbol/coefficient, units and printed conditions. Preserved source rounding, all 14 fitting factors, pump efficiencies including 0.40, divisor 100.5 and accented eta, and the unnumbered 0.9 motor allowance as printed.",
+      "content_sha256": "111adb32762e77c4d53573fb9fc645b0034a0f70cd9b7477fa3d813cf4f199cc"
+    }
+  }
+}

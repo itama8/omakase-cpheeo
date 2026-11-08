@@ -104,6 +104,10 @@ async def main(url: str) -> int:
         assert any(r['pdf_page']==1158 for r in node_table['images'])
         assert node_table['verified_transcriptions'][0]['rows'][-1]==['14','node14','18.7','18','21','3','3']
         assert '1071 to 1072' in node_table['citation']
+        pump_equation = payload(await client.call_tool('get_clause', {'id':'SEW-2013-A:E4.3'}))
+        assert pump_equation['transcription_status']=='verified' and '100.5' in pump_equation['verified_text']
+        pump_table = payload(await client.call_tool('get_clause', {'id':'SEW-2013-A:T4.3'}))
+        assert ['4','Positive displacement pump sets','0.40'] in pump_table['verified_transcriptions'][0]['rows']
         print('verified content: numerical row, Equation 5.30 math/images/parent/HTML, unclear fallback and water continuation')
 
         manuals = {m["id"] for m in payload(await client.call_tool("list_manuals", {}))["manuals"]}

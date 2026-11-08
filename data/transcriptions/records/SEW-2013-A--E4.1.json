@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:E4.1",
+  "unit_id": "SEW-2013-A:E4.1",
+  "manual_id": "SEW-2013-A",
+  "kind": "equation",
+  "number": "4.1",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "state": "verified",
+  "regions": [
+    {
+      "pdf_page": 283,
+      "page_label": "4 - 10",
+      "bbox": [
+        50,
+        73,
+        545,
+        435
+      ],
+      "render_sha256": "65cb954bd691850045fda96869a9c983975ea08b96ef39b467674c46c233cb2e"
+    }
+  ],
+  "title": "Effective volume of wet well",
+  "parent_id": "SEW-2013-A:4.6.6",
+  "latex": "V=T\\times Q/4",
+  "readable": "V = T × Q/4",
+  "symbols": [
+    {
+      "symbol": "V",
+      "definition": "Effective volume of wet well (in cubic meters)"
+    },
+    {
+      "symbol": "T",
+      "definition": "Time for one pump cycle (in minutes)"
+    },
+    {
+      "symbol": "Q",
+      "definition": "Pumping rate (cubic meters per minute)"
+    }
+  ],
+  "applicability": "The value of T is related to number of starts per hour and it is not advisable to exceed 6 starts per hour. T in design is taken as 10 minutes for smaller pump capacities but 15 minutes is desirable and hence the denominator in the equation is 4. Ideally this volume is below the invert of the lowest incoming sewer. Where not possible in large pumping stations, volume in sewers calculated at 0.8 times their total volume can be considered extended wet well volume.",
+  "notes": [],
+  "verification": {
+    "transcription": {
+      "pass_id": "visual-2026-11-08-01",
+      "method": "direct visual reading of rendered source page; no OCR",
+      "observations": "Read each cell or formula and its printed context directly."
+    },
+    "visual_recheck": {
+      "pass_id": "visual-2026-11-08-ch4-02",
+      "method": "distinct second visual inspection of exact source-region render; same assistant, not independent human review",
+      "observations": "Rechecked every table cell or formula symbol/coefficient, units and printed conditions. Preserved source rounding, all 14 fitting factors, pump efficiencies including 0.40, divisor 100.5 and accented eta, and the unnumbered 0.9 motor allowance as printed.",
+      "content_sha256": "f1db10f0dacc7f59cc883170f2d7c3996429e64fdbf54dece9e4b6b086fa33fc"
+    }
+  }
+}

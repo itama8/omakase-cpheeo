@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:E4.2",
+  "unit_id": "SEW-2013-A:E4.2",
+  "manual_id": "SEW-2013-A",
+  "kind": "equation",
+  "number": "4.2",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "state": "verified",
+  "regions": [
+    {
+      "pdf_page": 286,
+      "page_label": "4 - 13",
+      "bbox": [
+        50,
+        159,
+        545,
+        756
+      ],
+      "render_sha256": "f14aab2c8a34c7ca57f881f2669012e5ed8c484f8b3918d4a46ef1a523f27946"
+    }
+  ],
+  "title": "Specific speed of centrifugal pump",
+  "parent_id": "SEW-2013-A:4.7.1",
+  "latex": "n_s=\\frac{3.65n\\sqrt{Q}}{H^{0.75}}",
+  "readable": "n_s = 3.65 n sqrt(Q) / H^0.75",
+  "symbols": [
+    {
+      "symbol": "n",
+      "definition": "Speed of the pump in rpm"
+    },
+    {
+      "symbol": "Q",
+      "definition": "Flow rate in m³/s"
+    },
+    {
+      "symbol": "H",
+      "definition": "Head of the pump in m"
+    }
+  ],
+  "applicability": "Centrifugal pumps are generally classified as radial flow, mixed flow and axial flow based on specific speed. Radial-flow pumps have low specific speed, generally between 40 and 150. Mixed-flow specific speeds are 150 to 350. Above 350, flow is more or less parallel to the axis and these are called axial-flow pumps. For a double-suction pump, take only half the flow when calculating specific speed; the text states that this specific speed is only 70% of that for a single-suction design.",
+  "notes": [],
+  "verification": {
+    "transcription": {
+      "pass_id": "visual-2026-11-08-01",
+      "method": "direct visual reading of rendered source page; no OCR",
+      "observations": "Read each cell or formula and its printed context directly."
+    },
+    "visual_recheck": {
+      "pass_id": "visual-2026-11-08-ch4-02",
+      "method": "distinct second visual inspection of exact source-region render; same assistant, not independent human review",
+      "observations": "Rechecked every table cell or formula symbol/coefficient, units and printed conditions. Preserved source rounding, all 14 fitting factors, pump efficiencies including 0.40, divisor 100.5 and accented eta, and the unnumbered 0.9 motor allowance as printed.",
+      "content_sha256": "1d827ef37cd1a1429fbbb4c77b1ce85ef578a9e09d26d85f98e48c1cc92dcb7f"
+    }
+  }
+}

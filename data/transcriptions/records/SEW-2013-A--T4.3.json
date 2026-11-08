@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:T4.3",
+  "unit_id": "SEW-2013-A:T4.3",
+  "manual_id": "SEW-2013-A",
+  "kind": "table",
+  "number": "4.3",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "state": "verified",
+  "regions": [
+    {
+      "pdf_page": 300,
+      "page_label": "4 - 27",
+      "bbox": [
+        50,
+        537,
+        545,
+        771
+      ],
+      "render_sha256": "a0b3efc6047b00ae484bb766f6bff6fed485d23df34663713c12d406ad2090bc"
+    }
+  ],
+  "title": "Efficiencies of pumps to be adopted for design purposes",
+  "headers": [
+    "No.",
+    "Type of Pump Set",
+    "Efficiency"
+  ],
+  "rows": [
+    [
+      "1",
+      "Horizontal foot mounted centrifugal pump sets",
+      "0.85"
+    ],
+    [
+      "2",
+      "Vertical shaft centrifugal pump sets",
+      "0.8"
+    ],
+    [
+      "3",
+      "Submersible pump sets",
+      "0.65"
+    ],
+    [
+      "4",
+      "Positive displacement pump sets",
+      "0.40"
+    ]
+  ],
+  "cell_spans": [],
+  "markdown": "| No. | Type of Pump Set | Efficiency |\n| --- | --- | --- |\n| 1 | Horizontal foot mounted centrifugal pump sets | 0.85 |\n| 2 | Vertical shaft centrifugal pump sets | 0.8 |\n| 3 | Submersible pump sets | 0.65 |\n| 4 | Positive displacement pump sets | 0.40 |",
+  "notes": [
+    "In actual practice based on the manufacturer’s pump curves and duty point, the figures may vary and here again, the figures will vary from manufacturer to manufacturer and hence, suffice to state that for design purposes, these figures shall be used."
+  ],
+  "verification": {
+    "transcription": {
+      "pass_id": "visual-2026-11-08-01",
+      "method": "direct visual reading of rendered source page; no OCR",
+      "observations": "Read each cell or formula and its printed context directly."
+    },
+    "visual_recheck": {
+      "pass_id": "visual-2026-11-08-ch4-02",
+      "method": "distinct second visual inspection of exact source-region render; same assistant, not independent human review",
+      "observations": "Rechecked every table cell or formula symbol/coefficient, units and printed conditions. Preserved source rounding, all 14 fitting factors, pump efficiencies including 0.40, divisor 100.5 and accented eta, and the unnumbered 0.9 motor allowance as printed.",
+      "content_sha256": "4412560ee712bf44a8de1a5e567d913a57c986023ad1d5ab159e08e8a7590873"
+    }
+  }
+}
