@@ -115,3 +115,47 @@ def manual_by_id(manual_id: str) -> Manual:
         if m.id == manual_id:
             return m
     raise KeyError(manual_id)
+
+
+@dataclass(frozen=True)
+class UnindexedManual:
+    """A CPHEEO manual the service knows about but has not indexed.
+
+    Search uses these to say "that manual is not indexed" instead of letting an assistant
+    infer coverage from unrelated results in the manuals that are indexed.
+    """
+
+    id: str
+    domain: str
+    title: str
+    year: int
+    status: str  # next | planned | deferred
+    # Phrases that name the manual itself in a query ("storm water drainage manual").
+    names: tuple[str, ...] = ()
+    # Phrases for subjects only this manual covers. Weaker evidence than a name: the
+    # results are kept, with a notice that they may not answer the question.
+    topics: tuple[str, ...] = ()
+
+
+UNINDEXED: tuple[UnindexedManual, ...] = (
+    UnindexedManual(
+        id="SWD-2019", domain="stormwater", title="Manual on Storm Water Drainage Systems", year=2019, status="next",
+        names=("storm water drainage manual", "storm water manual", "manual on storm water", "storm water drainage systems manual",
+               "swd manual", "drainage manual"),
+        topics=("storm water drainage", "storm drain", "storm drains", "urban flooding", "urban flood"),
+    ),
+    UnindexedManual(
+        id="MSW-2016", domain="solid-waste", title="Manual on Municipal Solid Waste Management", year=2016, status="planned",
+        names=("solid waste management manual", "solid waste manual", "msw manual", "swm manual", "manual on municipal solid waste",
+               "manual on solid waste"),
+        topics=("solid waste", "msw", "landfill", "landfills", "landfill liner", "refuse collection", "waste to energy"),
+    ),
+    UnindexedManual(
+        id="SEW-2013-B", domain="sewerage", title="Manual on Sewerage and Sewage Treatment Systems, Part B: Operation and Maintenance",
+        year=2013, status="deferred",
+    ),
+    UnindexedManual(
+        id="SEW-2013-C", domain="sewerage", title="Manual on Sewerage and Sewage Treatment Systems, Part C: Management",
+        year=2013, status="deferred",
+    ),
+)

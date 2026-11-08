@@ -1,0 +1,13 @@
+{
+ "schema_version": 1,
+ "about": "Source-checked defects in the PDF's extracted text layer. Extracted text is never edited; these entries are shown alongside it. `extracted` must match the extracted text exactly; `reading` is what the printed page shows; `verified_id` names the verified transcription that shows it, when one exists.",
+ "defects": [
+  {
+   "unit_id": "SEW-2013-A:4.7.2",
+   "extracted": "the velocity head is 2/2g",
+   "reading": "the velocity head is computed as V²/2g",
+   "verified_id": "SEW-2013-A:Ep288-1",
+   "note": "The text layer drops 'computed as V' from the inline expression on printed p. 4-15."
+  }
+ ]
+}

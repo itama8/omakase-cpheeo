@@ -15,7 +15,7 @@ from mcp.types import CallToolResult, Icon, ImageContent, TextContent
 from starlette.requests import Request
 from starlette.responses import HTMLResponse, JSONResponse, Response
 
-from .service import SOURCE_NAME, Library, attribution, icon_url, public_url
+from .service import SOURCE_NAME, Library, ToolInputError, attribution, icon_url, public_url
 
 ASSETS = Path(__file__).resolve().parents[2] / "assets"
 ICON_SMALL = ASSETS / "omakase-icon-256.png"  # served at /icon.png
@@ -32,6 +32,9 @@ How to use:
 - Link each citation to the result's `url`, which opens the clause on an Omakase page.
 - When you state a value from the manual, quote it and give the `citation` exactly as returned. Do not cite a clause you did not retrieve.
 - Many tables and all figures are pictures of the printed page. `get_clause` and `fetch` attach those pictures as images (and give an image `url`). Read values from the image and cite the `citation`; verified visual transcriptions are supplied where explicitly marked. These cover only their listed source regions. If a value is unclear, say so and ask the user to check the printed page.
+- Read each search response's `coverage`. If its status is `requested_manual_not_indexed`, `domain_not_indexed` or `manual_not_indexed`, tell the user that manual is not available here; do not present results from other manuals as its provisions. `no_match` means the indexed manuals had nothing on the question.
+- Evidence precedence: a clause's `text` is the PDF's extracted text layer and is not visually verified. A verified transcription (`verified_text`, `equations[].verified_text`) takes precedence for the content it covers. Prefer `reading_text` over `text` when present: it marks known extraction defects and possible omissions inline. `text_quality` lists them.
+- Errors come back as `{"error": {"code", "message", "suggestions", "recovery"}}`; try a suggested id or follow `recovery`.
 - If the manuals do not cover the question, say so instead of answering from memory.
 - Name the source as "Omakase CPHEEO": each `citation` already ends with "· via Omakase CPHEEO"; keep that suffix when you copy it.
 - End answers that rely on these results with: "Sources via Omakase CPHEEO search."
@@ -62,6 +65,18 @@ def _with_images(lib: Library, payload: dict, clause: dict) -> CallToolResult:
     return CallToolResult(content=content, structured_content=payload)
 
 
+def _json_result(payload: dict, *, is_error: bool = False) -> CallToolResult:
+    import json
+
+    return CallToolResult(content=[TextContent(type="text", text=json.dumps(payload, ensure_ascii=False, indent=1))],
+                          structured_content=payload, is_error=is_error)
+
+
+def _tool_error(e: ToolInputError) -> CallToolResult:
+    """A recoverable caller mistake as data an agent can act on, not a bare exception string."""
+    return _json_result(e.to_dict(), is_error=True)
+
+
 def build_server(db: str | None = None) -> MCPServer:
     lib = Library(db)
     mcp = MCPServer(
@@ -75,47 +90,76 @@ def build_server(db: str | None = None) -> MCPServer:
     )
 
     @mcp.tool(title="Omakase CPHEEO: search manuals")
-    def search(query: str, domain: str | None = None, manual: str | None = None, kind: str | None = None, limit: int = 8) -> dict:
-        """Search the CPHEEO manuals and return citable sections and tables.
+    def search(query: str, domain: str | None = None, manual: str | None = None, kind: str | None = None, limit: int = 8) -> CallToolResult:
+        """Search the CPHEEO manuals and return citable sections, tables, figures and equations.
 
         query: the question or terms, e.g. "minimum slope for 200 mm sewer" or "Table 3.13".
-        domain: optional filter: sewerage, water, stormwater, solid-waste.
+        domain: optional filter: sewerage or water (the indexed domains). Asking for stormwater or solid-waste
+            returns no results and a coverage notice: those manuals are not indexed yet.
         manual: optional manual id from list_manuals, e.g. SEW-2013-A or WS-2024-A.
-        kind: optional unit kind: section, table, figure, appendix.
+        kind: optional unit kind: section, table, figure, equation, appendix, annexure, chapter.
         limit: number of results, 1-25.
+
+        The response's `coverage` says which manuals were searched and whether the question asks for a
+        manual that is not indexed (status requested_manual_not_indexed, domain_not_indexed, no_match, ...).
+        Results may carry `quality_flags` (known_extraction_defects, possible_omissions); read the clause
+        with get_clause or fetch before relying on such a result.
         """
-        return lib.search(query, domain=domain, manual_id=manual, kind=kind, limit=limit)
+        try:
+            return _json_result(lib.search(query, domain=domain, manual_id=manual, kind=kind, limit=limit))
+        except ToolInputError as e:
+            return _tool_error(e)
 
     @mcp.tool(title="Omakase CPHEEO: read a clause or table")
     def get_clause(id: str, include_children: bool = False) -> CallToolResult:
-        """Return section text, native PDF table rows, or source images for scanned tables and figures, by id (e.g. SEW-2013-A:3.6, SEW-2013-A:T3.2 or WS-2024-A:AN6.1).
+        """Return one unit as structured fields, by id (e.g. SEW-2013-A:3.6, SEW-2013-A:T3.2, SEW-2013-A:E4.2 or WS-2024-A:AN6.1).
+
+        Use get_clause when you need the parts separately: raw extracted `text`, `reading_text` (text with known
+        defects and possible omissions marked inline), `text_quality`, verified transcriptions with their source
+        regions, table cells, linked tables and equations, and source images. Verified transcriptions take
+        precedence over extracted text; see `evidence_precedence`. Use fetch for one readable document instead.
 
         include_children: also return the numbered subsections of a section.
         """
-        clause = lib.get_clause(id, include_children=include_children)
+        try:
+            clause = lib.get_clause(id, include_children=include_children)
+        except ToolInputError as e:
+            return _tool_error(e)
         return _with_images(lib, clause, clause)
 
     @mcp.tool(title="Omakase CPHEEO: fetch a clause")
     def fetch(id: str) -> CallToolResult:
-        """Return one section or table as a document with id, title, text, url and metadata.
+        """Return one unit as a single readable document with id, title, text, url and metadata.
+
+        The text is assembled in labelled layers: [VERIFIED TRANSCRIPTION] first, then [EXTRACTED TEXT] with
+        known defects and possible omissions marked inline, then linked tables and equations. Use get_clause
+        for the same evidence as separate structured fields.
 
         id: a result id from search, e.g. SEW-2013-A:T3.13.
         """
-        return _with_images(lib, lib.fetch(id), lib.get_clause(id))
+        try:
+            return _with_images(lib, lib.fetch(id), lib.get_clause(id))
+        except ToolInputError as e:
+            return _tool_error(e)
 
     @mcp.tool(title="Omakase CPHEEO: list manuals")
-    def list_manuals() -> dict:
-        """List the manuals in the corpus with edition, part and how many sections and tables each has."""
-        return lib.list_manuals()
+    def list_manuals() -> CallToolResult:
+        """List the indexed manuals (edition, part, unit counts) and the CPHEEO manuals that are not indexed yet."""
+        return _json_result(lib.list_manuals())
 
     @mcp.tool(title="Omakase CPHEEO: table of contents")
-    def get_toc(manual: str, chapter: str | None = None, max_depth: int = 2) -> dict:
-        """Return a manual's chapters, sections and tables. chapter limits it to one chapter (e.g. "3")."""
-        return lib.get_toc(manual, chapter=chapter, max_depth=max_depth)
+    def get_toc(manual: str, chapter: str | None = None, max_depth: int = 2) -> CallToolResult:
+        """Return a manual's chapters, sections, tables and equations. chapter limits it to one chapter (e.g. "3")."""
+        try:
+            return _json_result(lib.get_toc(manual, chapter=chapter, max_depth=max_depth))
+        except ToolInputError as e:
+            return _tool_error(e)
 
     # ---- REST: the same operations for scripts and anything that is not an MCP client.
 
     def _error(e: Exception, status: int) -> JSONResponse:
+        if isinstance(e, ToolInputError):
+            return JSONResponse(e.to_dict(), status_code=status)
         return JSONResponse({"error": str(e).strip("'\"")}, status_code=status)
 
     @mcp.custom_route("/icon.png", methods=["GET"])
@@ -153,7 +197,10 @@ def build_server(db: str | None = None) -> MCPServer:
             limit = int(p.get("limit", 8))
         except ValueError:
             return _error(ValueError("limit must be an integer"), 400)
-        return JSONResponse(lib.search(p["q"], domain=p.get("domain"), manual_id=p.get("manual"), kind=p.get("kind"), limit=limit))
+        try:
+            return JSONResponse(lib.search(p["q"], domain=p.get("domain"), manual_id=p.get("manual"), kind=p.get("kind"), limit=limit))
+        except ToolInputError as e:
+            return _error(e, 400)
 
     @mcp.custom_route("/v1/clause/{id:path}", methods=["GET"])
     async def rest_clause(request: Request) -> JSONResponse:

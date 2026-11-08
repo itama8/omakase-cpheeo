@@ -29,6 +29,10 @@ uv run python scripts/mcp_smoke.py           # exercise every MCP tool against a
 
 MCP tools (streamable HTTP at `/mcp`): `search`, `fetch`, `get_clause`, `get_toc`, `list_manuals`. `search` and `fetch` follow the result and document shape ChatGPT connectors use.
 
+- **Coverage.** Every search response has `coverage`: the manuals searched and a `status` (`ok`, `no_match`, `requested_manual_not_indexed`, `topic_may_be_outside_corpus`, `domain_not_indexed`, `manual_not_indexed`, `unknown_domain`, `unknown_manual`). Manuals known but not yet indexed (storm water 2019, solid waste 2016, sewerage Parts B/C) are listed in `corpus.UNINDEXED` and returned by `list_manuals` under `not_indexed`.
+- **Evidence precedence.** `text` is the extracted PDF text layer, never edited. Verified transcriptions take precedence for what they cover. `text_quality` lists known extraction defects (curated in `data/text-defects.json`, each tied to its verified transcription) and possible omissions (skipped items in "Firstly … Thirdly" or "(a) … (d)" lists). `reading_text` is `text` with both marked inline. `fetch` labels each layer. Search results carry `quality_flags`.
+- **Errors.** Unknown ids, manuals and kinds return `{"error": {"code", "message", "suggestions", "recovery"}}` (MCP `isError` results; REST 404/400).
+
 REST:
 
 | Endpoint | Returns |

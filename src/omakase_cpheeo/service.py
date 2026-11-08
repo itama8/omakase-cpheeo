@@ -14,7 +14,9 @@ from collections import Counter
 from functools import cached_property
 from pathlib import Path
 
+from .corpus import UNINDEXED
 from .index import DEFAULT_DB, explicit_refs, fts_query
+from .quality import TextDefects, annotate, enumeration_gaps
 
 BRAND = "Omakase"
 # Branding lives in the data an assistant copies, not only in server instructions.
@@ -58,6 +60,7 @@ DOMAIN_HINTS: dict[str, tuple[str, ...]] = {
 DOMAIN_BOOST = 1.3  # bm25 scores are negative; multiplying makes a match rank higher
 DESIGN_INTENT = re.compile(r"\b(design|norms?|criteria|standards?|recommended|minimum|maximum|permissible|requirements?|limits?)\b", re.I)
 EXAMPLE_HEADING = re.compile(r"\b(examples?|illustrat\w*|worked|sample calculations?)\b", re.I)
+SEARCH_KINDS = ("section", "table", "figure", "equation", "appendix", "annexure", "chapter")
 KIND_LABEL = {"equation": "Equation", "section": "Section", "table": "Table", "figure": "Figure", "chapter": "Chapter", "appendix": "Appendix", "annexure": "Annexure"}
 
 
@@ -112,6 +115,41 @@ def attribution() -> dict:
     if url := os.environ.get("OMAKASE_CPHEEO_BRAND_URL"):
         out["url"] = url
     return out
+
+
+class ToolInputError(Exception):
+    """A caller mistake an agent can recover from: a stable code, the reason and what to try next."""
+
+    def __init__(self, code: str, message: str, *, suggestions: list[str] | tuple[str, ...] = (), recovery: str | None = None):
+        super().__init__(message)
+        self.code, self.message, self.suggestions, self.recovery = code, message, list(suggestions), recovery
+
+    def __str__(self) -> str:  # KeyError would otherwise wrap the message in quotes
+        return self.message
+
+    def to_dict(self) -> dict:
+        err = {"code": self.code, "message": self.message}
+        if self.suggestions:
+            err["suggestions"] = self.suggestions
+        if self.recovery:
+            err["recovery"] = self.recovery
+        return {"error": err, "attribution": attribution()}
+
+
+class UnknownId(ToolInputError, KeyError):
+    """No such unit or manual. A KeyError so REST handlers return 404."""
+
+
+class InvalidArgument(ToolInputError, ValueError):
+    """An argument outside its allowed values."""
+
+
+EVIDENCE_PRECEDENCE = (
+    "`text` is the PDF's extracted text layer; it is not visually verified and can garble mathematical notation "
+    "or drop lines. Where a verified transcription (`verified_text`, or `equations[].verified_text`) covers the same "
+    "content, the verified transcription takes precedence. `reading_text`, when present, is `text` with known "
+    "extraction defects and possible omissions marked inline; `text` is kept unchanged for traceability."
+)
 
 
 class Library:
@@ -214,14 +252,46 @@ class Library:
             out['transcription_notes'] = [note for r in pending for note in r.get('notes',[])]
             if full:
                 out['unverified_regions'] = [{k:r[k] for k in ('id','state','regions','raw_visible_text','notes') if k in r} for r in pending]
+        quality = self.text_quality(row)
         if full:
             out["text"] = row["text"]
+            if quality:
+                out["text_quality"] = quality
+                out["reading_text"] = annotate(row["text"], quality.get("known_defects", []), quality["_gaps"])
+                del quality["_gaps"]
             if row["table_markdown"]:
                 out["table_markdown"] = row["table_markdown"]
                 out["table_cells"] = json.loads(row["table_cells"])
             refs = json.loads(row["refs"])
             if refs:
                 out["referenced_tables"] = [f"{row['manual_id']}:{r}" for r in refs]
+        elif quality:
+            flags = []
+            if quality.get("known_defects"):
+                flags.append("known_extraction_defects")
+            if quality.get("possible_omissions"):
+                flags.append("possible_omissions")
+            out["quality_flags"] = flags
+        return out
+
+    @cached_property
+    def defects(self) -> TextDefects:
+        return TextDefects()
+
+    def text_quality(self, row: sqlite3.Row) -> dict:
+        """Known defects and likely omissions in a unit's extracted text; empty when none are known."""
+        text = row["text"] or ""
+        if not text:
+            return {}
+        defects = self.defects.for_unit(row["id"], text)
+        gaps = enumeration_gaps(text)
+        if not defects and not gaps:
+            return {}
+        out: dict = {"status": "extracted text with known problems; see notes", "_gaps": gaps}
+        if defects:
+            out["known_defects"] = defects
+        if gaps:
+            out["possible_omissions"] = [g.to_dict() for g in gaps]
         return out
 
     def _snippet(self, row: sqlite3.Row, text: str) -> str:
@@ -283,11 +353,13 @@ class Library:
         manuals = []
         for mid, m in self.manuals.items():
             manuals.append({**m, "units": {k: n for (i, k), n in counts.items() if i == mid}})
-        return {"manuals": manuals, "attribution": attribution()}
+        not_indexed = [{"id": u.id, "domain": u.domain, "title": u.title, "year": u.year, "status": u.status} for u in UNINDEXED]
+        return {"manuals": manuals, "not_indexed": not_indexed, "attribution": attribution()}
 
     def get_toc(self, manual_id: str, chapter: str | None = None, max_depth: int = 2) -> dict:
         if manual_id not in self.manuals:
-            raise KeyError(f"unknown manual {manual_id!r}; call list_manuals")
+            raise UnknownId("unknown_manual", f"no indexed manual {manual_id!r}", suggestions=list(self.manuals),
+                            recovery="Call list_manuals for the indexed manuals and their ids.")
         rows = self.con.execute(
             "SELECT id, kind, number, title, label_start FROM units WHERE manual_id = ? "
             "AND kind IN ('chapter','section','table','equation','appendix','annexure') AND (? IS NULL OR chapter = ?) ORDER BY ord",
@@ -305,7 +377,7 @@ class Library:
         unit_id = canonical_unit_id(unit_id)
         row = self.con.execute("SELECT * FROM units WHERE id = ?", (unit_id,)).fetchone()
         if row is None:
-            raise KeyError(f"no unit {unit_id!r}; ids look like SEW-2013-A:3.5, SEW-2013-A:T3.2 or WS-2024-A:AN6.1")
+            raise self.unknown_unit(unit_id)
         out = {"source_note": source_line(row["id"]), **self._unit_dict(row, full=True)}
         if include_children and row["kind"] in ("section", "chapter"):
             prefix = row["number"] + "."
@@ -331,8 +403,40 @@ class Library:
         ).fetchall()
         if equations:
             out['equations'] = [self._unit_dict(e, full=True) for e in equations]
+        if out.get("text") or any(c.get("text") for c in out.get("children", [])):
+            out["evidence_precedence"] = EVIDENCE_PRECEDENCE
         out["attribution"] = attribution()
         return out
+
+    def unknown_unit(self, unit_id: str) -> UnknownId:
+        """An unknown id, with the nearest real ids and what to call next."""
+        manual_id, _, tail = unit_id.partition(":")
+        recovery = "Call search with the clause number or topic, or get_toc(manual, chapter) to list valid ids."
+        if not tail:
+            core = re.search(r"\d+(?:[.-]\d+)*", unit_id)
+            rows = self.con.execute("SELECT id FROM units WHERE number = ? ORDER BY ord LIMIT 5", (core.group(0),)).fetchall() if core else []
+            return UnknownId("unknown_id", f"no unit {unit_id!r}: ids are '<manual>:<handle>', e.g. SEW-2013-A:3.5, SEW-2013-A:T3.2 or WS-2024-A:AN6.1",
+                             suggestions=[r[0] for r in rows], recovery=recovery)
+        if manual_id not in self.manuals:
+            return UnknownId("unknown_manual", f"no indexed manual {manual_id!r} in id {unit_id!r}",
+                             suggestions=list(self.manuals), recovery="Call list_manuals for the indexed manuals and their ids.")
+        core = re.search(r"\d+(?:[.-]\d+)*", tail)
+        suggestions: list[str] = []
+        if core:
+            number = core.group(0)
+            # The same number under another kind (T3.2 asked as 3.2), then the nearest enclosing clause.
+            suggestions = [r[0] for r in self.con.execute(
+                "SELECT id FROM units WHERE manual_id = ? AND number = ? ORDER BY ord LIMIT 5", (manual_id, number))]
+            # Then units under the nearest enclosing number with the same handle letters (T3.99 -> tables T3.*).
+            letters = tail[:core.start()]
+            parts = re.split(r"[.-]", number)
+            while not suggestions and len(parts) > 1:
+                parts.pop()
+                handle = f"{manual_id}:{letters}{'.'.join(parts)}"
+                suggestions = [r[0] for r in self.con.execute(
+                    "SELECT id FROM units WHERE manual_id = ? AND (id = ? OR id LIKE ?) ORDER BY ord LIMIT 5",
+                    (manual_id, handle, handle + ".%"))]
+        return UnknownId("unknown_id", f"no unit {unit_id!r} in {manual_id}", suggestions=suggestions, recovery=recovery)
 
     @staticmethod
     def hinted_domain(query: str) -> str | None:
@@ -367,6 +471,9 @@ class Library:
 
     def search(self, query: str, domain: str | None = None, manual_id: str | None = None, kind: str | None = None, limit: int = 8) -> dict:
         limit = max(1, min(limit, 25))
+        if kind is not None and kind not in SEARCH_KINDS:
+            raise InvalidArgument("invalid_kind", f"unknown kind {kind!r}", suggestions=list(SEARCH_KINDS),
+                                  recovery="Use one of the suggested kinds, or omit kind to search all of them.")
         results: list[dict] = []
         seen: set[str] = set()
 
@@ -424,7 +531,51 @@ class Library:
                 results.append(hit)
                 if len(results) >= limit:
                     break
-        return {"query": query, "results": results[:limit], "attribution": attribution()}
+        results = results[:limit]
+        return {"query": query, "results": results, "coverage": self.coverage(query, domain, manual_id, len(results)),
+                "attribution": attribution()}
+
+    def coverage(self, query: str, domain: str | None, manual_id: str | None, found: int) -> dict:
+        """What was searched, and whether the question asks for a manual that is not indexed."""
+        indexed_domains = sorted({m["domain"] for m in self.manuals.values()})
+        searched = [mid for mid, m in self.manuals.items()
+                    if (domain is None or m["domain"] == domain) and (manual_id is None or mid == manual_id)]
+        out: dict = {"searched_manuals": searched, "indexed_domains": indexed_domains}
+
+        def describe(ms) -> str:
+            return "; ".join(f"{u.title} ({u.year})" for u in ms)
+
+        def set_status(status: str, message: str, ms=()) -> dict:
+            out.update(status=status, message=message)
+            if ms:
+                out["not_indexed"] = [{"id": u.id, "domain": u.domain, "title": u.title, "year": u.year, "status": u.status} for u in ms]
+            return out
+
+        if manual_id is not None and manual_id not in self.manuals:
+            ms = [u for u in UNINDEXED if manual_id.upper().startswith(u.id)]
+            if ms:
+                return set_status("manual_not_indexed", f"{describe(ms)} is not indexed, so nothing was searched. "
+                                  "Do not answer from other manuals as if they were this one.", ms)
+            return set_status("unknown_manual", f"no manual {manual_id!r}; indexed manuals: {', '.join(self.manuals)}.")
+        if domain is not None and domain not in indexed_domains:
+            ms = [u for u in UNINDEXED if u.domain == domain]
+            if ms:
+                return set_status("domain_not_indexed", f"No {domain} manual is indexed: {describe(ms)} is not yet available, "
+                                  "so nothing was searched. Do not cite other manuals as its requirements.", ms)
+            return set_status("unknown_domain", f"unknown domain {domain!r}; indexed domains: {', '.join(indexed_domains)}.")
+        text = " " + re.sub(r"[^a-z0-9]+", " ", query.lower().replace("stormwater", "storm water")).strip() + " "
+        named = [u for u in UNINDEXED if any(f" {n} " in text for n in u.names)]
+        if named:
+            return set_status("requested_manual_not_indexed", f"The question names {describe(named)}, which is not indexed. "
+                              "Any results come from other manuals and do not establish that manual's requirements; "
+                              "say that the manual is unavailable rather than citing them as its provisions.", named)
+        topical = [u for u in UNINDEXED if u.domain not in indexed_domains and any(f" {t} " in text for t in u.topics)]
+        if topical:
+            return set_status("topic_may_be_outside_corpus", f"This topic is mainly covered by {describe(topical)}, which is not "
+                              "indexed. Use the results only if they address the question directly.", topical)
+        if not found:
+            return set_status("no_match", f"No passages matched in {', '.join(searched)}. The indexed manuals may not cover this question.")
+        return set_status("ok", "Results come from the searched manuals.")
 
     def fetch(self, unit_id: str) -> dict:
         """One unit as a document: id, title, text, url, metadata (the shape ChatGPT expects)."""
@@ -439,7 +590,8 @@ class Library:
             return lines
 
         if c.get("verified_text"):
-            parts.append(c["verified_text"])
+            parts += ["[VERIFIED TRANSCRIPTION: checked against the printed page; takes precedence over extracted text for what it covers]",
+                      c["verified_text"], ""]
         if c.get("unverified_regions"):
             parts.append("Unverified source region. " + " ".join(c.get("transcription_notes",[])))
         if c.get("table_markdown"):
@@ -449,12 +601,17 @@ class Library:
                              "Confirm values against the printed page before use.")
         parts += picture_lines(c)
         if c.get("text"):
-            parts.append(c["text"])
+            label = "[EXTRACTED TEXT: PDF text layer, not visually verified"
+            if c.get("reading_text"):
+                label += "; known defects and possible omissions are marked inline in square brackets"
+            parts += [label + "]", c.get("reading_text") or c["text"]]
         for t in c.get("tables", []):
             parts += ["", f"{t['citation']}"]
             if t.get("verified_text"):
                 parts.append(t["verified_text"])
             parts += [t["table_markdown"]] if t.get("table_markdown") else picture_lines(t)
+        if c.get("equations"):
+            parts += ["", "[EQUATIONS in this clause: a verified equation takes precedence over the same expression in the extracted text; unverified ones are marked]"]
         for e in c.get("equations", []):
             parts += ["", e["citation"], e.get("verified_text", "Unverified equation region. " + " ".join(e.get("transcription_notes",[]))), *picture_lines(e)]
         meta = {k: c[k] for k in ("kind", "number", "page_label", "pdf_page", "citation", "citation_plain", "source_name", "source_icon") if c.get(k) is not None}
@@ -467,6 +624,10 @@ class Library:
             meta["equations"] = c["equations"]
         if c.get("needs_review"):
             meta["needs_review"] = True
+        if c.get("text_quality"):
+            meta["text_quality"] = c["text_quality"]
+        if c.get("evidence_precedence"):
+            meta["evidence_precedence"] = c["evidence_precedence"]
         if c.get("images"):
             meta["images"] = c["images"]
         return {"id": c["id"], "title": f"{SOURCE_NAME} · {c['citation_plain']}", "text": "\n".join(parts).strip(), "url": c.get("url"), "metadata": meta}
