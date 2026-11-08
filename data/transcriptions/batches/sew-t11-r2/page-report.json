@@ -1,0 +1,54 @@
+[
+  {
+    "pdf_page": 689,
+    "page_label": "9 - 4",
+    "targets": [],
+    "no_targets_reason": "Page carries only body prose of 9.3.2/9.3.3 and the dimensioned line drawing Figure 9.2 (Mobile toilet); no table or equation is printed.",
+    "continuations": [],
+    "unclear": [],
+    "image_viewed": "tmp/pdfs/sew-t11/page-689.png"
+  },
+  {
+    "pdf_page": 690,
+    "page_label": "9 - 5",
+    "targets": [],
+    "no_targets_reason": "Page carries short prose of 9.3.3.1.1 and the fully dimensioned Figure 9.3 (Squatting pan and trap) line drawing; no table or equation is printed.",
+    "continuations": [],
+    "unclear": [],
+    "image_viewed": "tmp/pdfs/sew-t11/page-690.png"
+  },
+  {
+    "pdf_page": 691,
+    "page_label": "9 - 6",
+    "targets": [
+      "SEW-2013-A:T9.1"
+    ],
+    "no_targets_reason": null,
+    "continuations": [],
+    "unclear": [],
+    "image_viewed": "tmp/pdfs/sew-t11/page-691.png + tmp/pdfs/sew-t11/z691-t91-a.png + tmp/pdfs/sew-t11/z691-t91-b.png + tmp/pdfs/sew-t11-r2/z691-row4-notes.png"
+  },
+  {
+    "pdf_page": 692,
+    "page_label": "9 - 7",
+    "targets": [
+      "SEW-2013-A:T9.2",
+      "SEW-2013-A:T9.3"
+    ],
+    "no_targets_reason": null,
+    "continuations": [],
+    "unclear": [],
+    "image_viewed": "tmp/pdfs/sew-t11/page-692.png + tmp/pdfs/sew-t11/z692-t92.png + tmp/pdfs/sew-t11/z692-t92-rows.png + tmp/pdfs/sew-t11/z692-t93.png + tmp/pdfs/sew-t11-r2/z692-t92-datarows.png + tmp/pdfs/sew-t11-r2/z692-t93-full.png"
+  },
+  {
+    "pdf_page": 693,
+    "page_label": "9 - 8",
+    "targets": [
+      "SEW-2013-A:T9.4"
+    ],
+    "no_targets_reason": null,
+    "continuations": [],
+    "unclear": [],
+    "image_viewed": "tmp/pdfs/sew-t11/page-693.png + tmp/pdfs/sew-t11-r2/z693-t94.png"
+  }
+]

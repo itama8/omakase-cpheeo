@@ -1,0 +1,12 @@
+{
+  "strategy": "targeted_table_equation_batches",
+  "basis": "User requested smaller batches and no review of every page.",
+  "default_targets_per_batch": 5,
+  "max_active_batches": 1,
+  "max_delegated_workers": 1,
+  "exhaustive_page_review_required": false,
+  "selection": "Use the existing table/equation inventory, extraction-failure signals, saved drafts and retrieval needs to choose concrete targets.",
+  "visual_review": "Inspect selected source regions and necessary continuations or context only. Keep distinct visual recheck and source/content digests.",
+  "coverage": "A checked crop verifies its record, not all content on its page. Keep whole-page coverage as historical audit metadata, not an outstanding work queue.",
+  "completion": "Close and report the selected batch before starting another; do not automatically fan out across manuals."
+}

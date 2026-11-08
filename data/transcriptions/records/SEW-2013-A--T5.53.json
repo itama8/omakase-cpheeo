@@ -1,0 +1,70 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:T5.53",
+  "unit_id": "SEW-2013-A:T5.53",
+  "manual_id": "SEW-2013-A",
+  "kind": "table",
+  "number": "5.53",
+  "title": "Typical effluent quality",
+  "state": "verified",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "regions": [
+    {
+      "pdf_page": 492,
+      "page_label": "5 - 188",
+      "bbox": [
+        85.7,
+        493.7,
+        514.4,
+        606.2
+      ],
+      "render_sha256": "555e713cbbed9f71745848b63c7904f5daaf24ff10864927017f24a656f2aabf"
+    }
+  ],
+  "headers": [
+    "BOD, mg/l",
+    "COD, mg/l",
+    "NH₄⁺-N, mg/l",
+    "T- N, mg/l",
+    "Turbidity"
+  ],
+  "rows": [
+    [
+      "<5",
+      "<30",
+      "<1",
+      "<10",
+      "<1"
+    ]
+  ],
+  "cell_spans": [
+    {
+      "column": 0,
+      "header": true,
+      "colspan": 5,
+      "description": "Printed 'Effluent' heading spans all five columns above the measured-parameter row"
+    }
+  ],
+  "markdown": "| BOD, mg/l | COD, mg/l | NH₄⁺-N, mg/l | T- N, mg/l | Turbidity |\n| --- | --- | --- | --- | --- |\n| <5 | <30 | <1 | <10 | <1 |",
+  "notes": [
+    "Printed below the table: 'Source: Metcalf & Eddy, 2003'.",
+    "Transcriber layout note: the table has two printed header rows. The upper row is a single cell reading 'Effluent' spanning all five columns; the lower row carries the five parameter labels transcribed as headers.",
+    "Printed as 'T- N, mg/l' with a space after the hyphen; retained (Table 5.56 prints 'T - P' and Table 5.65 'T-N').",
+    "Turbidity is printed with no unit; none is added.",
+    "Printed 'NH4+-N' has the 4 as a subscript and the charge as a superscript plus; written here as NH₄⁺-N.",
+    "All four concentrations are printed with a less-than sign and no space ('<5', '<30', '<1', '<10'); retained."
+  ],
+  "verification": {
+    "transcription": {
+      "pass_id": "sew-t07-first-reading-2026-11-08",
+      "method": "Direct viewing of the annotation-cleaned 144 dpi page renders and 260-800 dpi crops of the same pages; no OCR, no paid service",
+      "observations": "Both header rows and the single data row read from a 300 dpi crop; the plus sign on NH4 confirmed at 800 dpi against the minus sign printed in Table 5.62."
+    },
+    "visual_recheck": {
+      "pass_id": "targeted-sew-01-parent-recheck",
+      "method": "Distinct parent comparison of each selected source-region crop and larger zoom, without whole-page review; not independent human review.",
+      "observations": "Compared every selected table header, cell and source/footnote text. Preserved units, printed precision, inequalities and blank cells. ",
+      "content_sha256": "0c1e814ac4fb2df4acf056b7444f9b6bb0c4d3dfa6648f5e0c94baaced129ebb"
+    }
+  }
+}

@@ -1,0 +1,38 @@
+[
+  {
+    "pdf_page": 675,
+    "page_label": "8 - 9",
+    "targets": [],
+    "no_targets_reason": "Page carries only Figure 8.8 (Schematics of small bore sewer system), rotated 90 degrees. Dimension labels (260, 175, 75, 1500, 3000, 230, 300, 560, 100 phi) belong to the drawing, not to a table or equation.",
+    "continuations": [],
+    "unclear": [],
+    "image_viewed": "tmp/pdfs/sew-t11-r1/page-675.png"
+  },
+  {
+    "pdf_page": 677,
+    "page_label": "8 - 11",
+    "targets": [],
+    "no_targets_reason": "Body text of 8.4.4.1-8.4.4.4 with Figure 8.9 and a numbered design list (items 1-12). The list is running prose, not a table. Text points forward: biochemical performance is in Table 8-1 (page 679).",
+    "continuations": [],
+    "unclear": [],
+    "image_viewed": "tmp/pdfs/sew-t11-r1/page-677.png"
+  },
+  {
+    "pdf_page": 678,
+    "page_label": "8 - 12",
+    "targets": [],
+    "no_targets_reason": "Photo plate only: Figure 8.10 (Twin drain system) and Figure 8.11 (Another set up of twin drain system at Kodimunai), with source lines and photo captions. No table or equation.",
+    "continuations": [],
+    "unclear": [],
+    "image_viewed": "tmp/pdfs/sew-t11-r1/page-678.png"
+  },
+  {
+    "pdf_page": 679,
+    "page_label": "8 - 13",
+    "targets": ["SEW-2013-A:T8.1"],
+    "no_targets_reason": null,
+    "continuations": [],
+    "unclear": [],
+    "image_viewed": "tmp/pdfs/sew-t11-r1/page-679.png"
+  }
+]

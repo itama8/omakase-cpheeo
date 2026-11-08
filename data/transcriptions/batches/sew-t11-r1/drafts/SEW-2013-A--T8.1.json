@@ -1,0 +1,123 @@
+{
+ "schema_version": 1,
+ "id": "SEW-2013-A:T8.1",
+ "unit_id": "SEW-2013-A:T8.1",
+ "manual_id": "SEW-2013-A",
+ "kind": "table",
+ "number": "8.1",
+ "title": "Physico-chemical characteristics of the Kolachel System (Mean values)",
+ "state": "pending",
+ "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+ "regions": [
+  {
+   "pdf_page": 679,
+   "page_label": "8 - 13",
+   "bbox": [
+    79.7,
+    72.0,
+    522.3,
+    301.0
+   ],
+   "render_sha256": "da5befc7d1202d30f7dd297ca01d1c9fb49dcaea69149dc4f545f0ef9a156c44"
+  }
+ ],
+ "headers": [
+  "No",
+  "Location",
+  "BOD",
+  "COD",
+  "SS",
+  "TKN",
+  "Total P"
+ ],
+ "rows": [
+  [
+   "1",
+   "Septic Tank entry",
+   "1294",
+   "2565",
+   "4142",
+   "170",
+   "30"
+  ],
+  [
+   "2",
+   "Up flow filter entry",
+   "702",
+   "1509",
+   "1450",
+   "111",
+   "24"
+  ],
+  [
+   "3",
+   "Up flow filter outlet",
+   "399",
+   "1003",
+   "628",
+   "88",
+   "14"
+  ],
+  [
+   "4",
+   "Grey water",
+   "362",
+   "615",
+   "359",
+   "28",
+   "16"
+  ],
+  [
+   "5",
+   "Stabilization pond inlet",
+   "51",
+   "212",
+   "57",
+   "14",
+   "11"
+  ],
+  [
+   "6",
+   "Stabilization pond outlet",
+   "31",
+   "144",
+   "42",
+   "10",
+   "8"
+  ],
+  [
+   "7",
+   "Maturation pond 1 outlet",
+   "32",
+   "144",
+   "42",
+   "10",
+   "8"
+  ],
+  [
+   "8",
+   "Maturation pond 2 outlet",
+   "23",
+   "124",
+   "38",
+   "7",
+   "6"
+  ]
+ ],
+ "cell_spans": [],
+ "markdown": "| No | Location | BOD | COD | SS | TKN | Total P |\n| --- | --- | --- | --- | --- | --- | --- |\n| 1 | Septic Tank entry | 1294 | 2565 | 4142 | 170 | 30 |\n| 2 | Up flow filter entry | 702 | 1509 | 1450 | 111 | 24 |\n| 3 | Up flow filter outlet | 399 | 1003 | 628 | 88 | 14 |\n| 4 | Grey water | 362 | 615 | 359 | 28 | 16 |\n| 5 | Stabilization pond inlet | 51 | 212 | 57 | 14 | 11 |\n| 6 | Stabilization pond outlet | 31 | 144 | 42 | 10 | 8 |\n| 7 | Maturation pond 1 outlet | 32 | 144 | 42 | 10 | 8 |\n| 8 | Maturation pond 2 outlet | 23 | 124 | 38 | 7 | 6 |",
+ "notes": [
+  "Caption printed as 'Table 8.1  Physico-chemical characteristics of the Kolachel System (Mean values)'; the body text on p679 points forward to it as 'Table 8-1' (hyphen), while the caption uses a full stop.",
+  "The table is a placed raster image in the PDF, so no native text is available for it; every cell was read from the rendered image.",
+  "No units are printed for BOD, COD, SS, TKN or Total P on this table.",
+  "Title capitalisation retained: 'Physico-chemical' and 'Mean values' as printed.",
+  "Draft only: not verified; unit existence checked in the built index (SEW-2013-A:T8.1 present), so no create_unit or parent_id is set."
+ ],
+ "verification": {
+  "transcription": {
+   "pass_id": "sew-t11-r1-first-reading",
+   "method": "Direct visual reading of the annotation-cleaned 144 dpi page PNG and a 288 dpi crop of the table; no OCR, no native-text values, no paid service",
+   "observations": "First reading only. All 8 rows and 7 columns read from the image; printed digits, decimals and hyphenation retained. No second inspection or seal performed."
+  }
+ }
+}

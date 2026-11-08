@@ -1,0 +1,20 @@
+[
+  {
+    "pdf_page": 519,
+    "page_label": "5 - 215",
+    "targets": [],
+    "no_targets_reason": "Page carries Figure 5.92 (process flow diagram, Source: MoUD, 2012) and the 5.18.17.2 Advantages and Disadvantages prose lists. The figure labels are process streams only (screen, aeration tank, SST, return sludge, excess sludge, DAF sludge concentrator, digester, heat exchanger, gas holder/gas scrubber/desulphurization and engine section, filter press and sludge drying beds, underflow and backwash to aeration tank, fine screen, pre-aeration tank, BIOFOR-F rapid sand filter, effluent to river recycling); no printed equality, inequality or table appears.",
+    "continuations": [],
+    "unclear": [],
+    "image_viewed": "tmp/pdfs/sew-t07/page-519.png (read-only reuse; SHA e2056ec4b9e5594f940eef2b4f9b399c97db647e0e3971f5e8c61a162650a84f)"
+  },
+  {
+    "pdf_page": 520,
+    "page_label": "5 - 216",
+    "targets": [],
+    "no_targets_reason": "Page carries 5.18.18 Submerged Aeration Fixed Film (SAFF) Technology, its Key Features bullet list, Figure 5.93 (process flow diagram, Source: MoUD, 2012) and the start of 5.18.18.2 Advantages. Figure 5.93 labels are process streams only (Screen, Grit chamber, SAFF1, SAFF2, Blower, Thickener, Lamella settler, Filter press/Sludge drying beds, Chlorinator (Cl/Hypo Soln), Treated sewage). No printed equality, inequality or table appears; the only dimension is prose (\"Reactors up to 6 m deep\").",
+    "continuations": [],
+    "unclear": [],
+    "image_viewed": "tmp/pdfs/sew-t07/page-520.png (read-only reuse; SHA 7543ff713842d9d565237fb353bd96bb11307cb2d8f5356d3e6694265ab5f617)"
+  }
+]

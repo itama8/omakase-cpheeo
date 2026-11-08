@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:E6.1",
+  "unit_id": "SEW-2013-A:E6.1",
+  "manual_id": "SEW-2013-A",
+  "kind": "equation",
+  "number": "6.1",
+  "regions": [
+    {
+      "pdf_page": 557,
+      "page_label": "6 - 34",
+      "bbox": [
+        50.0,
+        521.0,
+        510.0,
+        660.0
+      ],
+      "render_sha256": "35664ac7231ab03a43d84ec02d4a9d61b4910eec0b2835d1e91d423a869ec2bc"
+    }
+  ],
+  "title": "Capacity of a low rate digester",
+  "parent_id": "SEW-2013-A:6.4.5.1",
+  "latex": "V=\\left[V_f-\\frac{2}{3}\\left(V_f-V_d\\right)\\right]T_1",
+  "readable": "V = [Vf - 2/3(Vf - Vd)]T1",
+  "symbols": [
+    {
+      "symbol": "V",
+      "definition": "Volume of digester, m³"
+    },
+    {
+      "symbol": "Vf",
+      "definition": "Volume of fresh sludge m³ added per day"
+    },
+    {
+      "symbol": "Vd",
+      "definition": "Volume of digested sludge m³ withdrawn per day"
+    },
+    {
+      "symbol": "T1",
+      "definition": "HRT, days"
+    }
+  ],
+  "applicability": "Section 6.4.5.1, sizing of low rate digesters: because supernatant is withdrawn during digestion the digested sludge volume decreases, so the digester capacity is computed from the fresh sludge volume, the digested sludge volume and the hydraulic retention time, with two thirds of the shrinkage taken into account.",
+  "notes": [
+    "Printed exactly as shown: 'V=[Vf -2/3(Vf -Vd)]T1', with the 2/3 as a slash form, square brackets around the bracketed term, no space between the first Vf and the following minus, and no multiplication sign between the closing bracket and T1. Nothing was rearranged or re-spaced.",
+    "Subscripts f, d and 1 are printed as dropped subscript glyphs and are rendered as subscripts in the LaTeX.",
+    "The '2/3' is printed as a plain slash expression, not a stacked fraction. The LaTeX uses \\frac only for legibility; the printed slash form is given verbatim in the readable line.",
+    "The equation number '(6.1)' is printed at the right margin on the same line as the equation and is inside the recorded region.",
+    "The symbol list is printed under the heading 'Where,' immediately below the equation, inside the recorded region, and is the only symbol definition printed; the m3 in every definition is printed with a superscript 3.",
+    "Transcriber note: the printed unit is 'm3' with superscript 3 in all three definitions; it is written m³ here as a plain-text superscript of the same digits."
+  ],
+  "verification": {
+    "transcription": {
+      "pass_id": "sew-t08-r2-first-reading",
+      "method": "Direct visual reading of 144 dpi annotation-cleaned full-page PNGs plus 250-450 dpi detail crops of each item; no OCR, no paid service, no delegation",
+      "observations": "First reading only, recovered from the timed-out sew-t08 batch and re-checked against the page images. Every printed value, coefficient, power, sign, bracket, spelling and unit retained as printed; source oddities kept and flagged rather than corrected. No verification.visual_recheck and no seal."
+    }
+  },
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "state": "pending"
+}

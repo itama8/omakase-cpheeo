@@ -232,3 +232,27 @@ questions:
     expect: [WS-2024-A:Ep98-3]
     contains: ['Initial NRW=N3; Reduced =NRW3; (NRW3<N3)', 'not as subscripts']
     region_pages: [98]
+  - id: V55
+    question: Table 5.52 MBR typical design parameters
+    expect: [SEW-2013-A:T5.52]
+    row: ['1.2-3.2', '0.1-0.4', '5-20', '5,000-20,000', '600-1,100', '4-35', '0.5-1.0']
+  - id: V56
+    question: Table 5.53 MBR typical effluent quality
+    expect: [SEW-2013-A:T5.53]
+    row: ['<5', '<30', '<1', '<10', '<1']
+    contains: ['NH₄⁺-N, mg/l', 'Effluent']
+  - id: V57
+    question: Table 5.55 operating conditions Culver SBR
+    expect: [SEW-2013-A:T5.55]
+    row: ['1.34', '54', '126', '42', '42', '42', '60', '366', '2', '5,000', '0.08-0.16', '15.5']
+    contains: ['minutes']
+  - id: V58
+    question: Table 5.56 performance Culver SBR
+    expect: [SEW-2013-A:T5.56]
+    row: ['Effluent (mg/L)', '10.5', '5.5', '2.4', '0.75']
+    contains: ['NH4⁺-N + NO3⁻-N', 'on the baseline']
+  - id: V59
+    question: Table 5.57 SBR configurations unsettled sludge
+    expect: [SEW-2013-A:T5.57]
+    row: ['3', 'Sludge Yield', 'kg dry solids/ kg BOD', '0.75 - 0.85', '0.75 - 1.0']
+    contains: ['For Phosphorous ≤ 1 mg/L', 'primary TSS removal 60%, BOD 30%']

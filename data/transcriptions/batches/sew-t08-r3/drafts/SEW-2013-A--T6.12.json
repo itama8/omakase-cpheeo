@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:T6.12",
+  "unit_id": "SEW-2013-A:T6.12",
+  "manual_id": "SEW-2013-A",
+  "kind": "table",
+  "number": "6.12",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "state": "pending",
+  "regions": [
+    {
+      "pdf_page": 578,
+      "page_label": "6 - 55",
+      "bbox": [
+        80.0,
+        444.0,
+        522.0,
+        597.0
+      ],
+      "render_sha256": "6e637d4326bbc0fe62a9d93dc8c3087dccae8ea0100b72221dcabb78e976eec6"
+    }
+  ],
+  "title": "Sludge source and volume/population equivalent",
+  "headers": [
+    "Sludge Source",
+    "m³/(P.E.)"
+  ],
+  "rows": [
+    [
+      "Primary plus waste activated sludge (WAS), extended aeration WAS",
+      "0.004"
+    ],
+    [
+      "Waste activated sludge exclusive of primary sludge",
+      "0.002"
+    ],
+    [
+      "Primary plus attached growth biological reactor sludge",
+      "0.003"
+    ]
+  ],
+  "cell_spans": [],
+  "markdown": "| Sludge Source | m³/(P.E.) |\n| --- | --- |\n| Primary plus waste activated sludge (WAS), extended aeration WAS | 0.004 |\n| Waste activated sludge exclusive of primary sludge | 0.002 |\n| Primary plus attached growth biological reactor sludge | 0.003 |",
+  "notes": [
+    "Printed line below the table, kept inside the region: 'P.E.-population equivalent as design flow divided by per capita sewage flow.'",
+    "This table repeats the caption of Table 6.11 word for word ('Sludge source and volume/population equivalent') with different values and a different unit heading; both captions are printed as shown.",
+    "Unit heading here is 'm³/(P.E.)' against '(m³/P.E.)' in Table 6.11. Kept as printed.",
+    "No (A) footnote marker and no Note line appear on this table; only the P.E. definition is printed.",
+    "Storage values are three-decimal (0.004, 0.002, 0.003) against the two-decimal values of Table 6.11. Kept as printed."
+  ],
+  "verification": {
+    "transcription": {
+      "pass_id": "sew-t08-r3-first-reading",
+      "method": "Direct visual reading of the full 144 dpi annotation-cleaned page PNG plus a 320 dpi crop of the table, caption and P.E. definition; earlier sew-t08 draft re-read and retained. No OCR, no paid service, no delegation.",
+      "observations": "First reading only (recovery batch). Caption, header, all three rows and the P.E. line checked against the image; unit prints as \"m³/(P.E.)\" here and as \"(m³/P.E.)\" in Table 6.11. Retained as printed. No distinct second visual pass and no verification seal."
+    }
+  }
+}

@@ -1,0 +1,299 @@
+{
+  "reason": "User requested smaller batches and no inspection of every page.",
+  "action": "Stopped all 18 active delegated tasks; saved files preserved. No new delegation launched.",
+  "tasks": [
+    {
+      "batch": "sew-t08-r1",
+      "taskId": "node:delegated-task:command%3Amcp%3A05efbfda-5a8a-40bb-a971-2e99724fd930%3Adelegate-task%3Aomakase-vt-sew-t08-r1",
+      "status": "interrupted",
+      "workState": "result_available",
+      "hasPendingChildRuns": false
+    },
+    {
+      "batch": "sew-t08-r2",
+      "taskId": "node:delegated-task:command%3Amcp%3A05efbfda-5a8a-40bb-a971-2e99724fd930%3Adelegate-task%3Aomakase-vt-sew-t08-r2",
+      "status": "interrupted",
+      "workState": "result_available",
+      "hasPendingChildRuns": false
+    },
+    {
+      "batch": "sew-t08-r3",
+      "taskId": "node:delegated-task:command%3Amcp%3A05efbfda-5a8a-40bb-a971-2e99724fd930%3Adelegate-task%3Aomakase-vt-sew-t08-r3",
+      "status": "interrupted",
+      "workState": "result_available",
+      "hasPendingChildRuns": false
+    },
+    {
+      "batch": "sew-t11-r1",
+      "taskId": "node:delegated-task:command%3Amcp%3A05efbfda-5a8a-40bb-a971-2e99724fd930%3Adelegate-task%3Aomakase-vt-sew-t11-r1",
+      "status": "interrupted",
+      "workState": "result_available",
+      "hasPendingChildRuns": false
+    },
+    {
+      "batch": "sew-t11-r2",
+      "taskId": "node:delegated-task:command%3Amcp%3A05efbfda-5a8a-40bb-a971-2e99724fd930%3Adelegate-task%3Aomakase-vt-sew-t11-r2",
+      "status": "interrupted",
+      "workState": "result_available",
+      "hasPendingChildRuns": false
+    },
+    {
+      "batch": "sew-t11-r3",
+      "taskId": "node:delegated-task:command%3Amcp%3A05efbfda-5a8a-40bb-a971-2e99724fd930%3Adelegate-task%3Aomakase-vt-sew-t11-r3",
+      "status": "interrupted",
+      "workState": "result_available",
+      "hasPendingChildRuns": false
+    },
+    {
+      "batch": "sew-t09-r1",
+      "taskId": "node:delegated-task:command%3Amcp%3A05efbfda-5a8a-40bb-a971-2e99724fd930%3Adelegate-task%3Aomakase-vt-sew-t09-r1",
+      "status": "interrupted",
+      "workState": "result_available",
+      "hasPendingChildRuns": false
+    },
+    {
+      "batch": "sew-t09-r2",
+      "taskId": "node:delegated-task:command%3Amcp%3A05efbfda-5a8a-40bb-a971-2e99724fd930%3Adelegate-task%3Aomakase-vt-sew-t09-r2",
+      "status": "interrupted",
+      "workState": "result_available",
+      "hasPendingChildRuns": false
+    },
+    {
+      "batch": "sew-t09-r3",
+      "taskId": "node:delegated-task:command%3Amcp%3A05efbfda-5a8a-40bb-a971-2e99724fd930%3Adelegate-task%3Aomakase-vt-sew-t09-r3",
+      "status": "interrupted",
+      "workState": "result_available",
+      "hasPendingChildRuns": false
+    },
+    {
+      "batch": "sew-t07-r1",
+      "taskId": "node:delegated-task:command%3Amcp%3A05efbfda-5a8a-40bb-a971-2e99724fd930%3Adelegate-task%3Aomakase-vt-sew-t07-r1",
+      "status": "interrupted",
+      "workState": "result_available",
+      "hasPendingChildRuns": false
+    },
+    {
+      "batch": "sew-t07-r2",
+      "taskId": "node:delegated-task:command%3Amcp%3A05efbfda-5a8a-40bb-a971-2e99724fd930%3Adelegate-task%3Aomakase-vt-sew-t07-r2",
+      "status": "interrupted",
+      "workState": "result_available",
+      "hasPendingChildRuns": false
+    },
+    {
+      "batch": "sew-t07-r3",
+      "taskId": "node:delegated-task:command%3Amcp%3A05efbfda-5a8a-40bb-a971-2e99724fd930%3Adelegate-task%3Aomakase-vt-sew-t07-r3",
+      "status": "interrupted",
+      "workState": "result_available",
+      "hasPendingChildRuns": false
+    },
+    {
+      "batch": "sew-t10-r1",
+      "taskId": "node:delegated-task:command%3Amcp%3A05efbfda-5a8a-40bb-a971-2e99724fd930%3Adelegate-task%3Aomakase-vt-sew-t10-r1",
+      "status": "interrupted",
+      "workState": "result_available",
+      "hasPendingChildRuns": false
+    },
+    {
+      "batch": "sew-t10-r2",
+      "taskId": "node:delegated-task:command%3Amcp%3A05efbfda-5a8a-40bb-a971-2e99724fd930%3Adelegate-task%3Aomakase-vt-sew-t10-r2",
+      "status": "interrupted",
+      "workState": "result_available",
+      "hasPendingChildRuns": false
+    },
+    {
+      "batch": "sew-t10-r3",
+      "taskId": "node:delegated-task:command%3Amcp%3A05efbfda-5a8a-40bb-a971-2e99724fd930%3Adelegate-task%3Aomakase-vt-sew-t10-r3",
+      "status": "interrupted",
+      "workState": "result_available",
+      "hasPendingChildRuns": false
+    },
+    {
+      "batch": "water-a-t03",
+      "taskId": "node:delegated-task:command%3Amcp%3A05efbfda-5a8a-40bb-a971-2e99724fd930%3Adelegate-task%3Aomakase-vt-water-a-t03",
+      "status": "interrupted",
+      "workState": "result_available",
+      "hasPendingChildRuns": false
+    },
+    {
+      "batch": "water-b-t03",
+      "taskId": "node:delegated-task:command%3Amcp%3A05efbfda-5a8a-40bb-a971-2e99724fd930%3Adelegate-task%3Aomakase-vt-water-b-t03",
+      "status": "interrupted",
+      "workState": "result_available",
+      "hasPendingChildRuns": false
+    },
+    {
+      "batch": "water-c-t01",
+      "taskId": "node:delegated-task:command%3Amcp%3A05efbfda-5a8a-40bb-a971-2e99724fd930%3Adelegate-task%3Aomakase-vt-water-c-t01",
+      "status": "interrupted",
+      "workState": "result_available",
+      "hasPendingChildRuns": false
+    }
+  ],
+  "preserved_files": [
+    {
+      "path": "data/transcriptions/batches/sew-t08-r1/page-report.json",
+      "sha256": "7d3d6e023602b16f7643570214547de9b1af71e13ae7d232d24c299dfb29aa52",
+      "bytes": 4540
+    },
+    {
+      "path": "data/transcriptions/batches/sew-t08-r2/drafts/SEW-2013-A--E6.1.json",
+      "sha256": "b9b95af10eba3d6dfcce25211ba730a09adb0c0bc7fa439d81b485bb9b56a465",
+      "bytes": 3146
+    },
+    {
+      "path": "data/transcriptions/batches/sew-t08-r2/drafts/SEW-2013-A--E6.2.json",
+      "sha256": "90f21976f4d4ce8b164ce0dab412bc2406297e55ed52b4d599070a5bfa669346",
+      "bytes": 2647
+    },
+    {
+      "path": "data/transcriptions/batches/sew-t08-r2/drafts/SEW-2013-A--E6.3.json",
+      "sha256": "d85fe2bb718ee83c43554e6e05584801be98964eaa55a7099b02d5bad53fd817",
+      "bytes": 2944
+    },
+    {
+      "path": "data/transcriptions/batches/sew-t08-r2/drafts/SEW-2013-A--E6.4.json",
+      "sha256": "c24dc6878c9d031ffe2ecc496317ffad8cacfd04c09e2932685eb2d7f252904a",
+      "bytes": 3704
+    },
+    {
+      "path": "data/transcriptions/batches/sew-t08-r2/drafts/SEW-2013-A--T6.8.json",
+      "sha256": "30a2eb3be900c96e8acf3105e5fa7f1de1827734fc84dabd7642be6e4821ade9",
+      "bytes": 2708
+    },
+    {
+      "path": "data/transcriptions/batches/sew-t08-r2/drafts/SEW-2013-A--T6.9.json",
+      "sha256": "9ad39b28acd6b4f56ae53d25980199b6ed8a76250bd31404d6c270c9cc9f41b4",
+      "bytes": 3653
+    },
+    {
+      "path": "data/transcriptions/batches/sew-t08-r2/page-report.json",
+      "sha256": "3dacb99d2070e69efd5dd94683a7940e5654c459863a9f02fafd47d18656c806",
+      "bytes": 3296
+    },
+    {
+      "path": "data/transcriptions/batches/sew-t08-r3/drafts/SEW-2013-A--T6.11.json",
+      "sha256": "ef5c31c97989501df22858a6ab1441638aa48348a1442c4141a941f4ad34a8ee",
+      "bytes": 3089
+    },
+    {
+      "path": "data/transcriptions/batches/sew-t08-r3/drafts/SEW-2013-A--T6.12.json",
+      "sha256": "b3a15312b54dd38c548a9982884ede560011249aa8c36a25c106eacb31b94696",
+      "bytes": 2538
+    },
+    {
+      "path": "data/transcriptions/batches/sew-t08-r3/page-report.json",
+      "sha256": "bed6171cdaec7c899b3fd3bc4c7ac9e61311c552ae8e36e785cb47f094c787f7",
+      "bytes": 5084
+    },
+    {
+      "path": "data/transcriptions/batches/sew-t11-r1/drafts/SEW-2013-A--T8.1.json",
+      "sha256": "782a326720fe05a0ac52dec6c56374e50754ff305245e0021272390979d7d455",
+      "bytes": 3072
+    },
+    {
+      "path": "data/transcriptions/batches/sew-t11-r1/page-report.json",
+      "sha256": "171c0e5e50040dd76bec731d669e1d28e85ea650e712ffc68d1e6fc0b040578d",
+      "bytes": 1424
+    },
+    {
+      "path": "data/transcriptions/batches/sew-t11-r2/drafts/SEW-2013-A--T9.1.json",
+      "sha256": "81acc4f0acc21fcb5f9a91dc61a2ce5929dad704acd04eba33ea82bba5b33fe4",
+      "bytes": 3696
+    },
+    {
+      "path": "data/transcriptions/batches/sew-t11-r2/drafts/SEW-2013-A--T9.2.json",
+      "sha256": "0e4399272d728afc289d922592679d531f64f2b295dae5074c5d1b3a15b11e80",
+      "bytes": 2930
+    },
+    {
+      "path": "data/transcriptions/batches/sew-t11-r2/drafts/SEW-2013-A--T9.3.json",
+      "sha256": "cb2cc0812942f4bf0f41accaaed04499f8231c943acacfa0b6d8281b8619a0b7",
+      "bytes": 1629
+    },
+    {
+      "path": "data/transcriptions/batches/sew-t11-r2/drafts/SEW-2013-A--T9.4.json",
+      "sha256": "ce88a3ca32f19e78ca7cdc07d9135924f759211ef0ffde0413a28a37bef67582",
+      "bytes": 2906
+    },
+    {
+      "path": "data/transcriptions/batches/sew-t11-r2/page-report.json",
+      "sha256": "1de580469b8f44d59448f90a9ee839490eb747a2e527545b297d5c14f86504d2",
+      "bytes": 1738
+    },
+    {
+      "path": "data/transcriptions/batches/sew-t11-r3/drafts/SEW-2013-A--T9.6.json",
+      "sha256": "c6ad93206ceeadc84b12efbd870eafe87016ec229fa6d09bc61850fbb9be2316",
+      "bytes": 2279
+    },
+    {
+      "path": "data/transcriptions/batches/sew-t11-r3/drafts/SEW-2013-A--T9.7.json",
+      "sha256": "a3d45e4eb364713e9d52179289ddc9cf231099281887b5a3f5800c64dab81437",
+      "bytes": 2795
+    },
+    {
+      "path": "data/transcriptions/batches/sew-t11-r3/drafts/SEW-2013-A--T9.8.json",
+      "sha256": "8ec5d6dd5ceb8028125c5015a5031c75a723e913426392d6aee9e342dd21ff69",
+      "bytes": 2983
+    },
+    {
+      "path": "data/transcriptions/batches/sew-t11-r3/page-report.json",
+      "sha256": "08bdba756c0df2eb6ecf0a55928056ecab73783bef6ca0cde381256fc7a1f53f",
+      "bytes": 6205
+    },
+    {
+      "path": "data/transcriptions/batches/sew-t09-r1/page-report.json",
+      "sha256": "587f79fae00cd01177d919afb7dd28e707f793b4ef5e99315f37bb8c9b92e8a4",
+      "bytes": 1230
+    },
+    {
+      "path": "data/transcriptions/batches/sew-t09-r2/page-report.json",
+      "sha256": "49726aba10b668cdda330aea482f6f688705e7169319885afef7c1f5ba9563f7",
+      "bytes": 964
+    },
+    {
+      "path": "data/transcriptions/batches/sew-t09-r3/page-report.json",
+      "sha256": "f39745832cd8c5df3a1b575e637330261753795cdf189320b7fe2da3712c97a8",
+      "bytes": 2038
+    },
+    {
+      "path": "data/transcriptions/batches/sew-t07-r3/page-report.json",
+      "sha256": "6a208ee788701694ca677f5525b426b94d7c334ce8310edd2dcd1f3488005803",
+      "bytes": 1641
+    },
+    {
+      "path": "data/transcriptions/batches/water-c-t01/REPORT.md",
+      "sha256": "32783f1be4447d25aa6cd806df0458d32e90312fe65bdea2dab291f650d800b7",
+      "bytes": 6649
+    },
+    {
+      "path": "data/transcriptions/batches/water-c-t01/drafts/WS-2024-C--T2.2.json",
+      "sha256": "e026c47fec2cde56576cc5944a53f090c49bf8333ae48045d7c2527f45d27ddb",
+      "bytes": 8084
+    },
+    {
+      "path": "data/transcriptions/batches/water-c-t01/drafts/WS-2024-C--T2.3.json",
+      "sha256": "854baa0afbe146d84bb056ec37f6a239fea4e3979c0c52bc2731b31417d330ef",
+      "bytes": 2308
+    },
+    {
+      "path": "data/transcriptions/batches/water-c-t01/drafts/WS-2024-C--T3.1.json",
+      "sha256": "97b9a9f461a8833142b21440431ee703b3ce7ef30e5da22d112de447389ff421",
+      "bytes": 2685
+    },
+    {
+      "path": "data/transcriptions/batches/water-c-t01/drafts/WS-2024-C--T3.2.json",
+      "sha256": "7f9748ac2fdcbe8019b8266ecd261ec3216af0d35e9f2d5f34334a1339d45c1e",
+      "bytes": 3877
+    },
+    {
+      "path": "data/transcriptions/batches/water-c-t01/drafts/WS-2024-C--T3.3.json",
+      "sha256": "ef9377198c77b29d880127a3212cc9ad06419676b5a200f2b62792b07bb1e753",
+      "bytes": 7100
+    },
+    {
+      "path": "data/transcriptions/batches/water-c-t01/page-report.json",
+      "sha256": "5131e0cdcc5e667496cd01aa33bbbda96600925decd363a922686a7760910ec6",
+      "bytes": 6438
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:T5.56",
+  "unit_id": "SEW-2013-A:T5.56",
+  "manual_id": "SEW-2013-A",
+  "kind": "table",
+  "number": "5.56",
+  "title": "Performance of the Culver SBR process",
+  "state": "verified",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "regions": [
+    {
+      "pdf_page": 500,
+      "page_label": "5 - 196",
+      "bbox": [
+        103.3,
+        287.9,
+        454.7,
+        462.5
+      ],
+      "render_sha256": "58c7398140c70f1c957711863abefb66577e106849f5e984831277df3711269f"
+    }
+  ],
+  "headers": [
+    "",
+    "BOD",
+    "TSS",
+    "NH4⁺-N + NO3⁻-N",
+    "T - P"
+  ],
+  "rows": [
+    [
+      "Influent (mg/L)",
+      "170",
+      "150",
+      "22.0",
+      "6.5"
+    ],
+    [
+      "Effluent (mg/L)",
+      "10.5",
+      "5.5",
+      "2.4",
+      "0.75"
+    ],
+    [
+      "% Removal",
+      "94",
+      "96",
+      "89",
+      "88"
+    ]
+  ],
+  "cell_spans": [],
+  "markdown": "|  | BOD | TSS | NH4⁺-N + NO3⁻-N | T - P |\n| --- | --- | --- | --- | --- |\n| Influent (mg/L) | 170 | 150 | 22.0 | 6.5 |\n| Effluent (mg/L) | 10.5 | 5.5 | 2.4 | 0.75 |\n| % Removal | 94 | 96 | 89 | 88 |",
+  "notes": [
+    "Printed below the table: 'Source: USEPA, 1986, USEPA, 1983'.",
+    "The printed top-left header cell is empty; kept as an empty header cell.",
+    "The fourth header prints NH4⁺-N + NO3⁻-N across two lines. The digits 4 and 3 are on the baseline in this scanned table; only the plus and minus charges are superscripts. They are not converted to subscripts.",
+    "Printed 'T - P' with spaces around the hyphen; retained (other tables on these pages print 'T-P').",
+    "Units differ inside one table ('mg/L' in the stub, none in the headers); retained."
+  ],
+  "verification": {
+    "transcription": {
+      "pass_id": "sew-t07-first-reading-2026-11-08",
+      "method": "Direct viewing of the annotation-cleaned 144 dpi page renders and 260-800 dpi crops of the same pages; no OCR, no paid service",
+      "observations": "All header lines and the three data rows read from a 350 dpi crop; the two-line combined nitrogen header and the decimal places (22.0, 10.5, 0.75) checked individually."
+    },
+    "visual_recheck": {
+      "pass_id": "targeted-sew-01-parent-recheck",
+      "method": "Distinct parent comparison of each selected source-region crop and larger zoom, without whole-page review; not independent human review.",
+      "observations": "Compared every selected table header, cell and source/footnote text. Preserved units, printed precision, inequalities and blank cells. Restored baseline digits 4 and 3 in nitrogen header; superscript charges retained, confirmed with 432-dpi header crop.",
+      "content_sha256": "90f1a0fe4e43a923f3a64c136ec9b4c98e33efbca60d7a3db311fe188e2a2303"
+    }
+  }
+}

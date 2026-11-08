@@ -1,0 +1,93 @@
+{
+  "schema_version": 1,
+  "id": "WS-2024-C:T3.3",
+  "unit_id": "WS-2024-C:T3.3",
+  "manual_id": "WS-2024-C",
+  "kind": "table",
+  "number": "3.3",
+  "title": "Core functions and Responsibilities of Urban Water Service Providers",
+  "source_sha256": "f1cc3a56b1cb4dc0d1c140a3d0f9731ff4e5e1c8273a3ebb225b47db4ae3c29c",
+  "state": "pending",
+  "regions": [
+    {
+      "pdf_page": 80,
+      "page_label": "28",
+      "bbox": [
+        70,
+        388,
+        535,
+        728
+      ],
+      "render_sha256": "8ee9340c64b1481b2771fa7adc67692ae4e445993912c12c221013572a4886dc"
+    },
+    {
+      "pdf_page": 81,
+      "page_label": "29",
+      "bbox": [
+        70,
+        66,
+        535,
+        510
+      ],
+      "render_sha256": "f162d54308bf2f8440439a5ad15363ca6ab5f953ff059a85ac544fd8e4e57f2f"
+    }
+  ],
+  "headers": [
+    "Core Function",
+    "Description of Responsibilities"
+  ],
+  "rows": [
+    [
+      "Technical (core function)",
+      "Overall responsibility for provision of safe and secured water supply\nPlanning, managing of water and sewerage networks\nConstruction and repair of networks including non-routine maintenance\nAsset management – conducting and operating the water service as a business and not a one-time project\nWastewater treatment and pumping\nO&M"
+    ],
+    [
+      "Commercial (this function is organised around a seamless commercial cycle from meter management to bill collection)",
+      "Customer database management\nMeter reading\nBilling and collection\nGrievance redress\nSmart commercial loss reduction with analysis and assessment of patterns of water consumption, customer category analysis, and demand profiling"
+    ],
+    [
+      "Financial – this is an important function that needs to be separated. However, in the short term, this could be performed by the existing accounts department in the municipality, but it should have one person from the water section coordinating and leading on it",
+      "Accounting\nBusiness plan and finance\nPurchasing\nInventories"
+    ],
+    [
+      "Additional or Cross Cutting Functions",
+      ""
+    ],
+    [
+      "Laboratory – this should be independent. The function could also be outsourced",
+      "Quality control of water distributed in the network and at the point of supply\nQuality control of effluents at wastewater treatment plants\nMonitoring raw water sources\nProcess and water quality control at water intake, during treatment, transport, pumping, and storage"
+    ],
+    [
+      "ICT and Management Information System (MIS) – this is an important function because of the increasing use of automation and the delivery of this function requires specialised skills",
+      "Develop strategic plan on increasing automation of typical services\nDevelop plan for procurement of hardware and software\nSpecialised training for employees on specific software"
+    ],
+    [
+      "Public relations",
+      "To enhance the customer face for the water function and provide regular information on water supply services"
+    ],
+    [
+      "Legal",
+      "This is a specialised function and should be outsourced"
+    ]
+  ],
+  "cell_spans": [
+    {
+      "description": "Printed bold full-width band inside the table body, spanning both columns (y 196.8-211.9 points on physical page 81).",
+      "row": 3,
+      "column": 0,
+      "colspan": 2
+    }
+  ],
+  "markdown": "| Core Function | Description of Responsibilities |\n| --- | --- |\n| Technical (core function) | Overall responsibility for provision of safe and secured water supply<br>Planning, managing of water and sewerage networks<br>Construction and repair of networks including non-routine maintenance<br>Asset management – conducting and operating the water service as a business and not a one-time project<br>Wastewater treatment and pumping<br>O&M |\n| Commercial (this function is organised around a seamless commercial cycle from meter management to bill collection) | Customer database management<br>Meter reading<br>Billing and collection<br>Grievance redress<br>Smart commercial loss reduction with analysis and assessment of patterns of water consumption, customer category analysis, and demand profiling |\n| Financial – this is an important function that needs to be separated. However, in the short term, this could be performed by the existing accounts department in the municipality, but it should have one person from the water section coordinating and leading on it | Accounting<br>Business plan and finance<br>Purchasing<br>Inventories |\n| Additional or Cross Cutting Functions |  |\n| Laboratory – this should be independent. The function could also be outsourced | Quality control of water distributed in the network and at the point of supply<br>Quality control of effluents at wastewater treatment plants<br>Monitoring raw water sources<br>Process and water quality control at water intake, during treatment, transport, pumping, and storage |\n| ICT and Management Information System (MIS) – this is an important function because of the increasing use of automation and the delivery of this function requires specialised skills | Develop strategic plan on increasing automation of typical services<br>Develop plan for procurement of hardware and software<br>Specialised training for employees on specific software |\n| Public relations | To enhance the customer face for the water function and provide regular information on water supply services |\n| Legal | This is a specialised function and should be outsourced |",
+  "notes": [
+    "The table is printed across two pages (physical pages 80-81). The caption and the 'Technical' and 'Commercial' rows are on page 80; page 81 repeats the header and carries the remaining rows.",
+    "Every responsibility cell is a printed bulleted list. Bullet glyphs are not reproduced as text; each printed list item is a separate line inside the cell, in printed order, and item wording is unchanged.",
+    "Row 3 of the transcription is the printed bold full-width band 'Additional or Cross Cutting Functions', which has no second cell; it is recorded as a spanning row, not as a data value.",
+    "Dashes in 'Asset management – conducting', 'Financial – this is an important function', 'Laboratory – this should be independent' and 'MIS) – this is an important function' are printed as en dashes; kept as printed.",
+    "'Commercial (this function is organised around a seamless commercial cycle from meter management to bill collection)' is printed inside the Core Function cell in parentheses; the closing parenthesis follows 'collection'.",
+    "Cell text is fully justified, so single-line cells show wide inter-word gaps ('Public    relations'); single spaces are used here, wording unchanged.",
+    "Physical column rules at x=77.4, 285.1 and 526.8 points confirm the two-column layout; the horizontal rules and the missing divider in the band row confirm the span recorded in cell_spans.",
+    "No footnotes are printed with this table.",
+    "Row indexing in cell_spans is 0-based over the eight printed cell rows; the band row is index 3."
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:T9.2",
+  "unit_id": "SEW-2013-A:T9.2",
+  "manual_id": "SEW-2013-A",
+  "kind": "table",
+  "number": "9.2",
+  "title": "Sludge accumulation rates",
+  "state": "pending",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "regions": [
+    {
+      "pdf_page": 692,
+      "page_label": "9 - 7",
+      "bbox": [
+        72.0,
+        174.0,
+        500.0,
+        373.0
+      ],
+      "render_sha256": "959fa853950cb68d898f54f1a21e0a67e9bb8144bd8891b507902423dd6a31b1"
+    }
+  ],
+  "headers": [
+    "Material used for anal cleansing",
+    "Pit under dry conditions",
+    "2 years",
+    "3 years"
+  ],
+  "rows": [
+    [
+      "Water",
+      "0.04",
+      "0.095",
+      "0.067"
+    ],
+    [
+      "Soft Paper",
+      "0.053",
+      "0.114",
+      "0.080"
+    ]
+  ],
+  "cell_spans": [
+    {
+      "column": 0,
+      "header": true,
+      "rowspan": 4,
+      "description": "Printed header cell 'Material used for anal cleansing' spans the four header rows"
+    },
+    {
+      "column": 1,
+      "header": true,
+      "colspan": 3,
+      "description": "Printed top heading 'Effective Volume in m3 per Capita per Year (A)' spans the three data columns; 'm3' is printed with a superscript 3"
+    },
+    {
+      "column": 2,
+      "header": true,
+      "colspan": 2,
+      "description": "Printed heading 'Pit under Wet conditions' spans the 2 years and 3 years columns"
+    },
+    {
+      "column": 2,
+      "header": true,
+      "colspan": 2,
+      "description": "Printed heading 'With successive desludging intervals' spans the 2 years and 3 years columns"
+    }
+  ],
+  "notes": [
+    "The printed header is a four-row stack: top row 'Material used for anal cleansing' (spanning the four rows) beside 'Effective Volume in m³ per Capita per Year (A)' (spanning the three data columns); second row 'Pit under dry conditions' beside 'Pit under Wet conditions' (spanning two columns); third row 'With successive desludging intervals' (spanning the same two columns); fourth row '2 years' and '3 years'. The flattened header list records the lowest printed row of each column.",
+    "Printed below the table: '(A)  Effective Volume is the volume of the pit below the invert level of pipe or drain.'",
+    "Printed below the table: 'Source:CPHEEO, 1993' — with no space after the colon; retained as printed.",
+    "The printed '3 years' values are lower than the corresponding '2 years' values (0.067 against 0.095 for Water, 0.080 against 0.114 for Soft Paper). Values are transcribed exactly as printed and are not corrected or reconciled.",
+    "Only two material rows are printed ('Water', 'Soft Paper'); no other cleansing material is listed."
+  ],
+  "markdown": "| Material used for anal cleansing | Pit under dry conditions | 2 years | 3 years |\n| --- | --- | --- | --- |\n| Water | 0.04 | 0.095 | 0.067 |\n| Soft Paper | 0.053 | 0.114 | 0.080 |"
+}

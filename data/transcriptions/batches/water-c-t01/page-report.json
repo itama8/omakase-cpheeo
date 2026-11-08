@@ -1,0 +1,132 @@
+[
+ {
+  "pdf_page": 66,
+  "page_label": "14",
+  "targets": [
+   "WS-2024-C:T2.2"
+  ],
+  "no_targets_reason": null,
+  "continuations": [
+   "WS-2024-C:T2.2 continues onto physical page 67 (printed 15) with the header repeated and one further cell row, 'Municipal Departments'."
+  ],
+  "unclear": [],
+  "observations": "Caption, two-row header band (Type of agency | Jurisdiction | Responsibilities spanning O&M and Capital works | State Examples) and eight cell rows. Column rules read at x=77.4, 175.2, 261.4, 323.0, 385.0 and 528.4 points; row rules at y=277.2, 294.4, 325.5, 400.1, 474.8, 505.9, 551.5, 611.6, 670.1, 701.0 and 746.5 points were used to confirm every merged cell. The three-row State-level block and the three-row PHED block were confirmed by the missing rules in the Type of agency column.",
+  "image_viewed": "tmp/pdfs/water-c-t01/page-66.png"
+ },
+ {
+  "pdf_page": 67,
+  "page_label": "15",
+  "targets": [
+   "WS-2024-C:T2.2"
+  ],
+  "no_targets_reason": null,
+  "continuations": [
+   "WS-2024-C:T2.2 is continued from physical page 66 (printed 14); the table ends on this page with the 'Municipal Departments' row and no further continuation."
+  ],
+  "unclear": [],
+  "observations": "Repeated header band and one cell row: Municipal Departments | Municipal Corporations | Municipal Department (spanning both responsibility columns) | Gujarat, Maharashtra, Tamil Nadu, Andhra Pradesh, Madhya Pradesh, Punjab (some cities). No caption on this page. Section 2.3 follows the table.",
+  "image_viewed": "tmp/pdfs/water-c-t01/page-67.png"
+ },
+ {
+  "pdf_page": 69,
+  "page_label": "17",
+  "targets": [],
+  "no_targets_reason": "Prose only (AMRUT reform agenda, then 2.3.2.2 AMRUT 2.0). No table, no set equation, no formula. Numeric prose expressions such as 'Rs. 13 crores per Rs. 100 crore' and '24×7 PWS' are running text and are not set as mathematics.",
+  "continuations": [],
+  "unclear": [],
+  "observations": "Section heading 2.3.2.2 and two headed paragraphs plus the start of the AMRUT 2.0 feature bullets.",
+  "image_viewed": "tmp/pdfs/water-c-t01/page-69.png"
+ },
+ {
+  "pdf_page": 70,
+  "page_label": "18",
+  "targets": [],
+  "no_targets_reason": "Prose only (rest of AMRUT 2.0 features, PPP and reform agenda, then 2.3.3 and 2.3.3.1 Service Level Benchmarking). No table, no equation, no formula.",
+  "continuations": [],
+  "unclear": [],
+  "observations": "Percentages and a 10 per cent / 20 per cent / 40 per cent set of reform targets appear inside running sentences; no tabular or formula layout.",
+  "image_viewed": "tmp/pdfs/water-c-t01/page-70.png"
+ },
+ {
+  "pdf_page": 71,
+  "page_label": "19",
+  "targets": [
+   "WS-2024-C:T2.3"
+  ],
+  "no_targets_reason": null,
+  "continuations": [
+   "WS-2024-C:T2.3 is complete on this page; no continuation."
+  ],
+  "unclear": [],
+  "observations": "Table 2.3 has three columns (S. No. | Indicator | Benchmark) and nine rows numbered 1 to 9; benchmarks printed 100%, 135 LPCD, 20%, 100%, 24 hours, 80%, 100%, 100%, 90%. Section 2.3.3.2 Water Quality Standards and 2.4 with bullets follow.",
+  "image_viewed": "tmp/pdfs/water-c-t01/page-71.png"
+ },
+ {
+  "pdf_page": 74,
+  "page_label": "22",
+  "targets": [],
+  "no_targets_reason": "Landscape page carrying only Figure 2.1, 'Organisational Structure of Maharashtra Water Resources Regulatory Authority' (box and connector chart). It is a figure, not a table or an equation, and it contains no mathematical callouts: every box holds a post title (Chairman, Member Water Resource Engineering, Member Law, Member Economics, Chairman Ground Water, Secretary, Director, Registrar, Dy. Director roles, Accounts Officer, Asst. Director roles, Support Admin Staff). Left undrafted by this batch, which covers tables and equations only.",
+  "continuations": [
+   "The single embedded image spans bbox [73.4, 104.1, 772.5, 430.2] points and covers the whole page area of section 2.4.2."
+  ],
+  "unclear": [],
+  "observations": "Section 2.4.2 text ends on the previous page; this page is the figure only. No table, no formula.",
+  "image_viewed": "tmp/pdfs/water-c-t01/page-74.png"
+ },
+ {
+  "pdf_page": 78,
+  "page_label": "26",
+  "targets": [
+   "WS-2024-C:T3.1"
+  ],
+  "no_targets_reason": null,
+  "continuations": [
+   "WS-2024-C:T3.1 is complete on this page; no continuation."
+  ],
+  "unclear": [],
+  "observations": "Table 3.1 has two columns (x=77.4, 302.8 and 528.4 points) and three cell rows (y=195.7-239.9, 239.9-284.0, 284.0-353.6 points under a header band at 166.1-195.7); the third right-hand cell is printed blank. Sections 3.1.2.2 and 3.1.2.3 follow the table.",
+  "image_viewed": "tmp/pdfs/water-c-t01/page-78.png"
+ },
+ {
+  "pdf_page": 79,
+  "page_label": "27",
+  "targets": [
+   "WS-2024-C:T3.2"
+  ],
+  "no_targets_reason": null,
+  "continuations": [
+   "WS-2024-C:T3.2 is complete on this page; no continuation."
+  ],
+  "unclear": [],
+  "observations": "Table 3.2 has three columns and six cadre rows under three Functional Groups, each group spanning two rows; only the first Relevant roles cell is shared by its two cadre rows. Column rules at x=77.4, 197.7, 325.4, 528.4 points and rules at y=100.0, 129.6, 144.6, 174.3, 203.8, 233.4, 248.6, 278.2 points confirm the spans.",
+  "image_viewed": "tmp/pdfs/water-c-t01/page-79.png"
+ },
+ {
+  "pdf_page": 80,
+  "page_label": "28",
+  "targets": [
+   "WS-2024-C:T3.3"
+  ],
+  "no_targets_reason": null,
+  "continuations": [
+   "WS-2024-C:T3.3 continues onto physical page 81 (printed 29) with the header repeated and five further rows, including the printed band 'Additional or Cross Cutting Functions'."
+  ],
+  "unclear": [],
+  "observations": "Caption and header, then the 'Technical (core function)' and 'Commercial (...)' rows, whose responsibility cells are printed bullet lists. Column rules at x=77.4, 285.1 and 526.8 points.",
+  "image_viewed": "tmp/pdfs/water-c-t01/page-80.png"
+ },
+ {
+  "pdf_page": 81,
+  "page_label": "29",
+  "targets": [
+   "WS-2024-C:T3.3"
+  ],
+  "no_targets_reason": null,
+  "continuations": [
+   "WS-2024-C:T3.3 is continued from physical page 80 (printed 28) and ends on this page at y=506.1 points."
+  ],
+  "unclear": [],
+  "observations": "Repeated header, then Financial, the full-width band 'Additional or Cross Cutting Functions' (no divider, y=196.8-211.9), Laboratory, ICT and MIS, Public relations and Legal rows. Section 3.1.4 Ring Fencing follows the table.",
+  "image_viewed": "tmp/pdfs/water-c-t01/page-81.png"
+ }
+]

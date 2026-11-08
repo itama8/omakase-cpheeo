@@ -1,0 +1,67 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:E6.4",
+  "unit_id": "SEW-2013-A:E6.4",
+  "manual_id": "SEW-2013-A",
+  "kind": "equation",
+  "number": "6.4",
+  "regions": [
+    {
+      "pdf_page": 558,
+      "page_label": "6 - 35",
+      "bbox": [
+        55.0,
+        363.0,
+        518.0,
+        382.0
+      ],
+      "render_sha256": "24a68053b747cd99c5ec9b5716c99fc2f479fd804932353e1485dc7326bd6f82"
+    }
+  ],
+  "title": "Volume of second stage digester",
+  "parent_id": "SEW-2013-A:6.4.5.2",
+  "latex": "V''=\\left[V_f-\\frac{2}{3}\\left(V_f-V_d\\right)\\right]T-V_d\\,T_2",
+  "readable": "V'' = [Vf - 2/3(Vf - Vd)]T - Vd T2",
+  "symbols": [
+    {
+      "symbol": "V''",
+      "definition": "Volume of second stage digester, m³"
+    },
+    {
+      "symbol": "Vf",
+      "definition": "Volume of fresh sludge m³ added per day"
+    },
+    {
+      "symbol": "Vd",
+      "definition": "Volume of digested sludge m³ withdrawn per day"
+    },
+    {
+      "symbol": "T",
+      "definition": "Detention time in the second stage digester which is of the order of 10 days and"
+    },
+    {
+      "symbol": "T2",
+      "definition": "Storage in days, during monsoon"
+    }
+  ],
+  "applicability": "Section 6.4.5.2: the second stage digester volume, where supernatant separation and gravity thickening complete digestion, less the monsoon storage already credited to the second stage tank.",
+  "notes": [
+    "Printed as 'V’’ = [Vf -2/3(Vf -Vd)]T -Vd T2': the double prime is printed as two raised comma glyphs, there is a space before and after the equals sign, the 2/3 is a slash form, and there is no multiplication sign anywhere — neither between the closing bracket and T nor between the minus and Vd.",
+    "The minus before Vd is printed as a spaced hyphen that sits between the bracket term and the second product; it is a subtraction, not a dash joining the terms.",
+    "T is closed up against the closing bracket. Subscripts f, d and 2 are printed as dropped subscript glyphs and are reproduced as subscripts.",
+    "The '2/3' is printed as a plain slash expression, not a stacked fraction; the LaTeX uses \\frac only for legibility and the printed slash form is given in the readable line.",
+    "The equation number '(6.4)' is printed at the right margin on the same line and is inside the recorded region.",
+    "The symbol list under 'Where,' on this page belongs to equations 6.3 and 6.4 together and is printed once, immediately below this equation. The recorded region covers only the equation line and its number; the shared list is transcribed in full in both this record and the E6.3 record.",
+    "The printed symbol 'T' is followed in the definition list by 'which is of the order of 10 days and', so the definition breaks off mid-sentence exactly as printed.",
+    "Printed error in the paragraph that introduces these two equations, outside the equation region: 'can also be provided in the second stand digester' ('stand' for 'stage'). Recorded as printed; not corrected."
+  ],
+  "verification": {
+    "transcription": {
+      "pass_id": "sew-t08-r2-first-reading",
+      "method": "Direct visual reading of 144 dpi annotation-cleaned full-page PNGs plus 250-450 dpi detail crops of each item; no OCR, no paid service, no delegation",
+      "observations": "First reading only, recovered from the timed-out sew-t08 batch and re-checked against the page images. Every printed value, coefficient, power, sign, bracket, spelling and unit retained as printed; source oddities kept and flagged rather than corrected. No verification.visual_recheck and no seal."
+    }
+  },
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "state": "pending"
+}

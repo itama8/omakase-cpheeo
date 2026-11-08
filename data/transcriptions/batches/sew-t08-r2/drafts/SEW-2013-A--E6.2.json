@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:E6.2",
+  "unit_id": "SEW-2013-A:E6.2",
+  "manual_id": "SEW-2013-A",
+  "kind": "equation",
+  "number": "6.2",
+  "regions": [
+    {
+      "pdf_page": 557,
+      "page_label": "6 - 34",
+      "bbox": [
+        50.0,
+        717.0,
+        527.0,
+        770.0
+      ],
+      "render_sha256": "52e5970b384b4a02ba1a162edc10afc6238185088405a2e6a550f7948d652886"
+    }
+  ],
+  "title": "Additional monsoon storage volume",
+  "parent_id": "SEW-2013-A:6.4.5.1",
+  "latex": "\\text{Additional monsoon storage volume}=V_d\\,T_2",
+  "readable": "Additional monsoon storage volume = Vd T2",
+  "symbols": [
+    {
+      "symbol": "Vd",
+      "definition": "Volume of digested sludge m³ withdrawn per day"
+    },
+    {
+      "symbol": "T2",
+      "definition": "the storage in days, during monsoon"
+    }
+  ],
+  "applicability": "Section 6.4.5.1: where sludge drying beds alone are used and left open, monsoon rainfall causes environmental problems, so monsoon storage must be provided; this expression fixes the extra volume.",
+  "notes": [
+    "Printed exactly as shown: 'Additional monsoon storage volume = Vd T2', with the whole left-hand side spelled out in words, no multiplication sign and no bracket. The number '(6.2)' is printed at the right margin of the same line.",
+    "Vd carries a dropped subscript d and T2 a dropped subscript 2, both printed and both reproduced as subscripts.",
+    "Vd is not redefined for this equation; the definition recorded here is the one printed in the equation 6.1 symbol list on the same page ('Volume of digested sludge m³ withdrawn per day').",
+    "The only definition printed with this equation is the running line 'Where, T2 is the storage in days, during monsoon', which is not set as an indented symbol list. It is reproduced as a symbol entry and flagged.",
+    "Printed as 'Where, T2 is the storage in days, during monsoon' with no closing full stop; kept."
+  ],
+  "verification": {
+    "transcription": {
+      "pass_id": "sew-t08-r2-first-reading",
+      "method": "Direct visual reading of 144 dpi annotation-cleaned full-page PNGs plus 250-450 dpi detail crops of each item; no OCR, no paid service, no delegation",
+      "observations": "First reading only, recovered from the timed-out sew-t08 batch and re-checked against the page images. Every printed value, coefficient, power, sign, bracket, spelling and unit retained as printed; source oddities kept and flagged rather than corrected. No verification.visual_recheck and no seal."
+    }
+  },
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "state": "pending"
+}

@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "id": "WS-2024-C:T3.1",
+  "unit_id": "WS-2024-C:T3.1",
+  "manual_id": "WS-2024-C",
+  "kind": "table",
+  "number": "3.1",
+  "title": "Recommendations of the Environmental Hygiene Committee",
+  "source_sha256": "f1cc3a56b1cb4dc0d1c140a3d0f9731ff4e5e1c8273a3ebb225b47db4ae3c29c",
+  "state": "pending",
+  "regions": [
+    {
+      "pdf_page": 78,
+      "page_label": "26",
+      "bbox": [
+        70,
+        150,
+        540,
+        358
+      ],
+      "render_sha256": "79506e1881abba007a1684bfd4d4eb951638bec0a72f72ff2eb43113c0ce3d38"
+    }
+  ],
+  "headers": [
+    "Recommendations implemented",
+    "Recommendations to be reconsidered for implementation"
+  ],
+  "rows": [
+    [
+      "Creation of PHE Department at state level",
+      "Creation of a cadre of public health engineers starting from district- municipal- circle-chief PHE positions"
+    ],
+    [
+      "Establishment of Public Health Laboratory at district level",
+      "Making PHE a mandatory qualification for those leading the water service function in various entities"
+    ],
+    [
+      "Setting up of Central Public Health and Environmental Engineering Organisation (CPHEEO) at central level (initially with the Ministry of Health & later with Urban Ministry)",
+      ""
+    ]
+  ],
+  "cell_spans": [],
+  "markdown": "| Recommendations implemented | Recommendations to be reconsidered for implementation |\n| --- | --- |\n| Creation of PHE Department at state level | Creation of a cadre of public health engineers starting from district- municipal- circle-chief PHE positions |\n| Establishment of Public Health Laboratory at district level | Making PHE a mandatory qualification for those leading the water service function in various entities |\n| Setting up of Central Public Health and Environmental Engineering Organisation (CPHEEO) at central level (initially with the Ministry of Health & later with Urban Ministry) |  |",
+  "notes": [
+    "The third row's right-hand cell ('Recommendations to be reconsidered for implementation') is printed blank; recorded as an empty string, nothing inferred.",
+    "Right-hand column header is printed on two lines, 'Recommendations to be' over 'reconsidered for implementation'; joined with a single space.",
+    "Row 1 right-hand cell prints 'district- municipal- circle-chief' with a space after each hyphen as part of the justified line break; transcribed as printed, not corrected.",
+    "Cell text is fully justified, so 'Establishment of Public Health Laboratory at district level' shows wide inter-word gaps in the source; single spaces are used here.",
+    "The table is complete on this page; no continuation and no footnotes."
+  ]
+}

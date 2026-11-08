@@ -1,0 +1,20 @@
+[
+  {
+    "pdf_page": 613,
+    "page_label": "6 - 90",
+    "targets": [],
+    "no_targets_reason": "Page carries only Figure 6.25, a two-panel micrograph of activated sludge before/after ultrasonic disintegration, with its source line and caption. No table, no equation, and no mathematical label inside the figure.",
+    "continuations": [],
+    "unclear": [],
+    "image_viewed": "/home/a2ajinkya/.t3/worktrees/omakase-cpheeo/feat-verified-visual-transcriptions/tmp/pdfs/sew-t09/page-613.png"
+  },
+  {
+    "pdf_page": 616,
+    "page_label": "7 - 3",
+    "targets": [],
+    "no_targets_reason": "Page is running text only: end of section 7.1 uses list (e)-(i), section headings 7.2, 7.2.1, 7.2.1.1-7.2.1.4, and prose. No table, no equation, no figure, and no mathematical label.",
+    "continuations": [],
+    "unclear": [],
+    "image_viewed": "/home/a2ajinkya/.t3/worktrees/omakase-cpheeo/feat-verified-visual-transcriptions/tmp/pdfs/sew-t09/page-616.png"
+  }
+]

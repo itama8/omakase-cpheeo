@@ -1,0 +1,59 @@
+[
+ {
+  "pdf_page": 531,
+  "page_label": "6 - 8",
+  "targets": [],
+  "no_targets_reason": "Contents: \"Figure 6.3 b Types of sludge pumps-continued\" only. Three boxed illustration panels (double acting diaphragm pump diagram pair + photo, single diaphragm pump photo pair) with descriptive paragraphs about pump operation and two web source credits, plus the disclaimer line \"Illustrations are only for familiarity of explanations & not standalone endorsements\". No tabular grid, no numbered or unnumbered equation; the descriptive prose was not converted into invented relations.",
+  "continuations": [
+   "Figure 6.3 a/b/c/d sequence continues on 532 (6.3 c) and 533 (6.3 d); this page carries the 6.3 b continuation of a figure series that began on an earlier page outside this assignment."
+  ],
+  "unclear": [],
+  "image_viewed": "tmp/pdfs/sew-t08/page-531.png"
+ },
+ {
+  "pdf_page": 532,
+  "page_label": "6 - 9",
+  "targets": [],
+  "no_targets_reason": "Contents: \"Figure 6.3 c Types of sludge pumps-continued\" only, a photographic/illustration plate of ten pump types in bordered cells. The only printed text inside the plate is web-address credits (e.g. \"http://www. lawrencepumps.com\", \"http://www.hidrostal.co.uk\", \"http://pumps.kmspecialty.com\", \"http://www.gobizkorea.com\", \"http://www.chopperpumps.com\") and non-numeric captions (\"Vertical screw impeller mounting\", \"Vertical screw centrifugal pump for primary clarifier sludge in CMWSSB Koyambedu STP in the 1990 s\", \"The screw centrifugal impellers with non clog properties of the impellers (10)\", \"The liquid flows into the cavity and is forced through the outlet as the lobes engage. The rotary lobe pump. (8)\", \"Archimedean screw pumps for (RS) at Koyambedu STP as in mid 1990 s (2)\") plus the disclaimer line. These are illustration labels, not tabular data columns or rows, so no table record was created; no equation is printed.",
+  "continuations": [
+   "Figure 6.3 series continues on 533 as \"Figure 6.3 d\"; the 6.3 c plate shown here belongs to the same continued figure block that began before this assignment."
+  ],
+  "unclear": [
+   "The first credit is printed with a space after the dot: \"http://www. lawrencepumps.com\". Retained in this report as printed; no record was created for the plate."
+  ],
+  "image_viewed": "tmp/pdfs/sew-t08/page-532.png"
+ },
+ {
+  "pdf_page": 533,
+  "page_label": "6 - 10",
+  "targets": [],
+  "no_targets_reason": "Contents: \"Figure 6.3 d Types of sludge pumps-continued\" illustration plate (reciprocating piston pump cross-section + (8) reciprocating piston pump photo; air-lift pump diagram pair) with web-credit lines and non-numeric captions \"Reciprocating piston pump (7)\" and \"Airlift pump (1)\", then the closing disclaimer line, then the first paragraph of section 6.2.2.1 Centrifugal Pumps running to the foot of the page. No tabular grid and no equation printed; the plate labels are illustration captions, not data cells.",
+  "continuations": [
+   "Section 6.2.2.1 Centrifugal Pumps begins in the lower third of this page and continues on 534."
+  ],
+  "unclear": [],
+  "image_viewed": "tmp/pdfs/sew-t08/page-533.png"
+ },
+ {
+  "pdf_page": 534,
+  "page_label": "6 - 11",
+  "targets": [],
+  "no_targets_reason": "Prose-only page: sections 6.2.2.2 Air-Lift Pumps, 6.2.2.3 Screw Pumps (with a numbered 1.-3. list of three variations) and the opening of 6.2.2.4 Reciprocating Plunger. The numbered list is running section text, not a table; no tabular grid and no displayed equation is printed. Inline design values (about 20 or 30 rpm; capacities of the order of 150 to 250 rpm per plunger; speeds between 40 to 50 rpm) are prose statements and were not turned into equation records.",
+  "continuations": [
+   "Section 6.2.2.4 Reciprocating Plunger begins at the foot of this page and continues on 535."
+  ],
+  "unclear": [],
+  "image_viewed": "tmp/pdfs/sew-t08/page-534.png"
+ },
+ {
+  "pdf_page": 535,
+  "page_label": "6 - 12",
+  "targets": [],
+  "no_targets_reason": "Prose-only page: the tail of 6.2.2.4 Reciprocating Plunger plus sections 6.2.2.5 Diaphragm Pumps, 6.2.2.6 Torque Flow Pumps and 6.2.2.7 Rotary Lobe pumps. No tabular grid and no displayed equation; the pump cross-references are to Table 6.5 notation numbers already indexed, not to a table printed on this page.",
+  "continuations": [
+   "Section 6.2.2 series continues past this page (6.2.2.8 Operational Problems follows outside this assignment)."
+  ],
+  "unclear": [],
+  "image_viewed": "tmp/pdfs/sew-t08/page-535.png"
+ }
+]

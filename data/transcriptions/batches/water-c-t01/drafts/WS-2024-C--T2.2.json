@@ -1,0 +1,179 @@
+{
+  "schema_version": 1,
+  "id": "WS-2024-C:T2.2",
+  "unit_id": "WS-2024-C:T2.2",
+  "manual_id": "WS-2024-C",
+  "kind": "table",
+  "number": "2.2",
+  "title": "Comparative Institutional Roles for Urban Water Services Delivery among Select States",
+  "source_sha256": "f1cc3a56b1cb4dc0d1c140a3d0f9731ff4e5e1c8273a3ebb225b47db4ae3c29c",
+  "state": "pending",
+  "regions": [
+    {
+      "pdf_page": 66,
+      "page_label": "14",
+      "bbox": [
+        72,
+        245,
+        534,
+        750
+      ],
+      "render_sha256": "fde5600c82d6501fc981ccf81d0a2c8b5ee27d7dcbc4f559ec26ad10a40d3b1c"
+    },
+    {
+      "pdf_page": 67,
+      "page_label": "15",
+      "bbox": [
+        72,
+        65,
+        534,
+        199
+      ],
+      "render_sha256": "47691f4d01a7f8227750b7f39a76b2399fe93142401c2730778c3379d628386c"
+    }
+  ],
+  "headers": [
+    "Type of agency",
+    "Jurisdiction",
+    "O&M",
+    "Capital works",
+    "State Examples"
+  ],
+  "rows": [
+    [
+      "State-level specialist agency",
+      "Entire state",
+      "State-level specialist agency",
+      "",
+      "Kerala (KWA) Jharkhand (WSSD + JUIDCO) Orissa (WATCO) Tripura PWD (WR)"
+    ],
+    [
+      "",
+      "Small/large cities",
+      "Municipal Authority",
+      "State- level specialist agency",
+      "Karnataka Maharashtra Tamil Nadu Punjab Uttar Pradesh"
+    ],
+    [
+      "",
+      "Small cities",
+      "State-level specialist agency",
+      "",
+      "Karnataka (some cities)"
+    ],
+    [
+      "Metropolitan-level Specialist agency",
+      "Metropolitan centres",
+      "Specialist Metropolitan Agency",
+      "",
+      "Bangalore, Chennai, Hyderabad, Guwahati"
+    ],
+    [
+      "Specialist municipal undertaking (SMU)",
+      "Large cities, Metropolitan centres",
+      "Specialist Municipal Undertaking",
+      "",
+      "Delhi Shimla"
+    ],
+    [
+      "Public Health Engineering Departments (PHED)",
+      "Entire state",
+      "Public Health Engineering Department (PHED)",
+      "",
+      "Rajasthan, Bihar, Chhattisgarh, Himachal Pradesh"
+    ],
+    [
+      "",
+      "Small cities",
+      "Municipal Authority",
+      "PHED",
+      "Andhra Pradesh, Madhya Pradesh"
+    ],
+    [
+      "",
+      "",
+      "PHED",
+      "State agencies",
+      "Rajasthan (e.g., Kota Urban Improvement Trust + PHED)"
+    ],
+    [
+      "Municipal Departments",
+      "Municipal Corporations",
+      "Municipal Department",
+      "",
+      "Gujarat, Maharashtra, Tamil Nadu, Andhra Pradesh, Madhya Pradesh, Punjab (some cities)"
+    ]
+  ],
+  "cell_spans": [
+    {
+      "column": 2,
+      "colspan": 2,
+      "header": true,
+      "description": "Printed header 'Responsibilities' spans the O&M and Capital works columns, which are its two printed sub-headers."
+    },
+    {
+      "row": 0,
+      "column": 0,
+      "rowspan": 3,
+      "description": "'State-level specialist agency' spans the three cell rows at y 325.5-400.1, 400.1-474.8 and 474.8-505.9 points on physical page 66."
+    },
+    {
+      "row": 0,
+      "column": 2,
+      "colspan": 2,
+      "description": "One printed responsibilities cell spans O&M and Capital works."
+    },
+    {
+      "row": 2,
+      "column": 2,
+      "colspan": 2,
+      "description": "One printed responsibilities cell spans O&M and Capital works."
+    },
+    {
+      "row": 3,
+      "column": 2,
+      "colspan": 2,
+      "description": "One printed responsibilities cell spans O&M and Capital works."
+    },
+    {
+      "row": 4,
+      "column": 2,
+      "colspan": 2,
+      "description": "One printed responsibilities cell spans O&M and Capital works."
+    },
+    {
+      "row": 5,
+      "column": 0,
+      "rowspan": 3,
+      "description": "'Public Health Engineering Departments (PHED)' spans the three cell rows at y 611.6-670.1, 670.1-701.0 and 701.0-746.5 points on physical page 66."
+    },
+    {
+      "row": 5,
+      "column": 2,
+      "colspan": 2,
+      "description": "One printed responsibilities cell spans O&M and Capital works."
+    },
+    {
+      "row": 6,
+      "column": 1,
+      "rowspan": 2,
+      "description": "'Small cities' spans the two cell rows at y 670.1-701.0 and 701.0-746.5 points on physical page 66."
+    }
+  ],
+  "markdown": "| Type of agency | Jurisdiction | O&M | Capital works | State Examples |\n| --- | --- | --- | --- | --- |\n| State-level specialist agency | Entire state | State-level specialist agency |  | Kerala (KWA) Jharkhand (WSSD + JUIDCO) Orissa (WATCO) Tripura PWD (WR) |\n|  | Small/large cities | Municipal Authority | State- level specialist agency | Karnataka Maharashtra Tamil Nadu Punjab Uttar Pradesh |\n|  | Small cities | State-level specialist agency |  | Karnataka (some cities) |\n| Metropolitan-level Specialist agency | Metropolitan centres | Specialist Metropolitan Agency |  | Bangalore, Chennai, Hyderabad, Guwahati |\n| Specialist municipal undertaking (SMU) | Large cities, Metropolitan centres | Specialist Municipal Undertaking |  | Delhi Shimla |\n| Public Health Engineering Departments (PHED) | Entire state | Public Health Engineering Department (PHED) |  | Rajasthan, Bihar, Chhattisgarh, Himachal Pradesh |\n|  | Small cities | Municipal Authority | PHED | Andhra Pradesh, Madhya Pradesh |\n|  |  | PHED | State agencies | Rajasthan (e.g., Kota Urban Improvement Trust + PHED) |\n| Municipal Departments | Municipal Corporations | Municipal Department |  | Gujarat, Maharashtra, Tamil Nadu, Andhra Pradesh, Madhya Pradesh, Punjab (some cities) |",
+  "notes": [
+    "The table is printed across two pages (physical pages 66-67): page 66 carries the caption, the two-row header and eight cell rows; page 67 repeats the header and prints one further cell row ('Municipal Departments').",
+    "Title as printed, complete: 'Table 2.2: Comparative Institutional Roles for Urban Water Services Delivery among Select States'. The catalog unit title for this table stops at '...among'.",
+    "Printed as 'Orissa (WATCO)'; not corrected (Odisha is the current name).",
+    "Row 2 prints 'State- level specialist agency' in the Capital works column with a space after the hyphen; transcribed as printed, not corrected.",
+    "Rows 1-3 print 'State-level specialist agency' once in the Type of agency column. Because the third cell row begins on the next state grouping in the source layout, the state-level block is recorded as a three-row span exactly as ruled in the table.",
+    "Cell text is printed fully justified, so single cells are broken across lines with wide inter-word gaps ('Kerala (KWA)    Jharkhand (WSSD    + JUIDCO)'). Line breaks are joined with single spaces; every word and mark is as printed.",
+    "Type of agency, Jurisdiction and State Examples headers each span the printed two-row header band; O&M and Capital works sit under the printed 'Responsibilities' heading.",
+    "Physical column rules are at x=77.4, 175.2, 261.4, 323.0, 385.0 and 528.4 points; horizontal rules differ by row and were used to confirm every merged cell recorded in cell_spans.",
+    "State Examples cells are printed either as comma-separated lists or as one name per line. Row 'Small/large cities' prints Karnataka, Maharashtra, Tamil Nadu, Punjab and Uttar Pradesh one per line with no commas, and row 'Specialist municipal undertaking (SMU)' prints Delhi and Shimla the same way; those cells are joined here with single spaces only, no separators added.",
+    "Row 'Small/large cities' Jurisdiction cell is printed 'Small/large' over 'cities' with a solidus; kept as printed.",
+    "The Type of agency cell of the Specialist municipal undertaking row is printed 'Specialist municipal undertaking (SMU)' across four lines; the 'Metropolitan-level Specialist agency' cell breaks after 'Metropolitan-'; hyphens are line-break hyphens in the source and are kept.",
+    "Baseline catalog metadata splits this table across pages 66-67 with label range 14-15; both pages were read for this transcription.",
+    "Row indexing in cell_spans is 0-based over the nine cell rows; the header entry is marked header=true. Row 8 ('Municipal Departments') is the row printed on physical page 67."
+  ]
+}

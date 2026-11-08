@@ -1,0 +1,80 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:T9.8",
+  "unit_id": "SEW-2013-A:T9.8",
+  "manual_id": "SEW-2013-A",
+  "kind": "table",
+  "number": "9.8",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "state": "pending",
+  "regions": [
+    {
+      "pdf_page": 704,
+      "page_label": "9 - 19",
+      "bbox": [
+        58.0,
+        326.0,
+        545.0,
+        616.0
+      ],
+      "render_sha256": "45283e102d9d91cae4424ecca26e2a7514a6bfc8a6963d769fd70d8a8c99108a"
+    }
+  ],
+  "title": "Recommended size of septic tank for housing colony upto 300 users",
+  "headers": [
+    "No. of Users",
+    "Length (m)",
+    "Breadth (m)",
+    "Liquid depth (cleaning interval of): 2 years",
+    "Liquid depth (cleaning interval of): 3 years"
+  ],
+  "rows": [
+    [
+      "50",
+      "5.0",
+      "2.00",
+      "1.0",
+      "1.24"
+    ],
+    [
+      "100",
+      "7.5",
+      "2.65",
+      "1.0",
+      "1.24"
+    ],
+    [
+      "150",
+      "10.0",
+      "3.00",
+      "1.0",
+      "1.24"
+    ],
+    [
+      "200",
+      "12.0",
+      "3.30",
+      "1.0",
+      "1.24"
+    ],
+    [
+      "300",
+      "15.0",
+      "4.00",
+      "1.0",
+      "1.24"
+    ]
+  ],
+  "cell_spans": [],
+  "markdown": "| No. of Users | Length (m) | Breadth (m) | Liquid depth (cleaning interval of): 2 years | Liquid depth (cleaning interval of): 3 years |\n| --- | --- | --- | --- | --- |\n| 50 | 5.0 | 2.00 | 1.0 | 1.24 |\n| 100 | 7.5 | 2.65 | 1.0 | 1.24 |\n| 150 | 10.0 | 3.00 | 1.0 | 1.24 |\n| 200 | 12.0 | 3.30 | 1.0 | 1.24 |\n| 300 | 15.0 | 4.00 | 1.0 | 1.24 |",
+  "notes": [
+    "Source printed below the notes: Source: CPHEEO, 1993",
+    "Printed header has two levels: the first-level cell 'Liquid depth (cleaning interval of)' spans the last two columns, above the second-level cells '2 years' and '3 years'. The two levels are flattened into the header strings above with ': ' and cell_spans is empty; no cell is merged in the body.",
+    "The Table 9.8 header prints 'Liquid depth (cleaning interval of)' without the '(m)' unit that Table 9.7 prints as 'Liquid depth (m) (cleaning interval of)'. Retained as printed; the unit is not inserted.",
+    "The caption prints 'upto' as one word: 'Recommended size of septic tank for housing colony upto 300 users'. Retained.",
+    "Note 1 is printed 'Note 1: A provision of 300 mm should be made for free board.' (spelled 'board' here, unlike the 'free broad' of Table 9.7).",
+    "Note 2 is printed 'Note 2: The sizes of septic tanks are based on certain assumptions on peak discharges, as estimated in IS: 2470 (Part 1) and while choosing the size of septic tank exact calculations shall be made.'",
+    "Note 3 is printed 'Note 3: For population over 100, the tank may be divided into independent parallel chambers of maintenance and cleaning.'",
+    "Wrapped note lines are joined with single spaces. Every 3-year value prints 1.24 and every 2-year value prints 1.0; transcribed as printed without adjustment."
+  ]
+}

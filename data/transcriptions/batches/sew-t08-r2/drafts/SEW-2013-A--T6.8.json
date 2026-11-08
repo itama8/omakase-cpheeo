@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:T6.8",
+  "unit_id": "SEW-2013-A:T6.8",
+  "manual_id": "SEW-2013-A",
+  "kind": "table",
+  "number": "6.8",
+  "regions": [
+    {
+      "pdf_page": 555,
+      "page_label": "6 - 32",
+      "bbox": [
+        58.0,
+        214.0,
+        498.0,
+        390.0
+      ],
+      "render_sha256": "8a19b3aa9c1cbcf670c7a531057e5bdfd5e8af257892337116a244b8c158506f"
+    }
+  ],
+  "title": "Typical design criteria for sizing mesophilic anaerobic sludge digesters",
+  "headers": [
+    "Parameters",
+    "Low Rate Digestion",
+    "High Rate Digestion"
+  ],
+  "rows": [
+    [
+      "Volatile Solids Loading Rate, kgVSS/day/m³",
+      "0.6 - 1.6",
+      "1.6 - 6.4"
+    ],
+    [
+      "Solids Retention Time, days",
+      "(*)",
+      "10 - 20"
+    ],
+    [
+      "Hydraulic Retention Time, days",
+      "30 - 40",
+      "10 - 20"
+    ]
+  ],
+  "cell_spans": [],
+  "markdown": "| Parameters | Low Rate Digestion | High Rate Digestion |\n| --- | --- | --- |\n| Volatile Solids Loading Rate, kgVSS/day/m³ | 0.6 - 1.6 | 1.6 - 6.4 |\n| Solids Retention Time, days | (*) | 10 - 20 |\n| Hydraulic Retention Time, days | 30 - 40 | 10 - 20 |",
+  "notes": [
+    "Printed note below the table is inside the region and kept with it: 'Note:  (*) Computation of actual SRT is difficult as it depends on the capacity utilization.'",
+    "The table prints 'kgVSS/day/m³' with no space between kg and VSS and with a superscript 3, while the running text immediately above prints '(kg VSS/day/m3)' with a space and a plain 3. Both forms kept as printed; not harmonised.",
+    "The Low Rate Digestion cell for Solids Retention Time prints only the asterisk reference '(*)' and no value; it is not filled in from the printed note or from Table 6.9.",
+    "Range values print as '0.6 - 1.6', '1.6 - 6.4', '30 - 40' and '10 - 20' with a spaced hyphen; reproduced as printed.",
+    "Header row prints the column titles as 'Low Rate Digestion' and 'High Rate Digestion' with no unit row beneath."
+  ],
+  "verification": {
+    "transcription": {
+      "pass_id": "sew-t08-r2-first-reading",
+      "method": "Direct visual reading of 144 dpi annotation-cleaned full-page PNGs plus 250-450 dpi detail crops of each item; no OCR, no paid service, no delegation",
+      "observations": "First reading only, recovered from the timed-out sew-t08 batch and re-checked against the page images. Every printed value, coefficient, power, sign, bracket, spelling and unit retained as printed; source oddities kept and flagged rather than corrected. No verification.visual_recheck and no seal."
+    }
+  },
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "state": "pending"
+}

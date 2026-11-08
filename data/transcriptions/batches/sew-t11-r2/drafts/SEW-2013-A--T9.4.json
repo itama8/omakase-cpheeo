@@ -1,0 +1,89 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:T9.4",
+  "unit_id": "SEW-2013-A:T9.4",
+  "manual_id": "SEW-2013-A",
+  "kind": "table",
+  "number": "9.4",
+  "title": "Size of leach pits",
+  "state": "pending",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "regions": [
+    {
+      "pdf_page": 693,
+      "page_label": "9 - 8",
+      "bbox": [
+        50.0,
+        420.0,
+        536.0,
+        578.0
+      ],
+      "render_sha256": "056ddecbe1a4b93b4fa9f1e47c937d9a2d5be09c2c02eb7ccf44944fa43e9318"
+    }
+  ],
+  "headers": [
+    "",
+    "5 Users Dia",
+    "5 Users Depth(A)",
+    "10 Users Dia",
+    "10 Users Depth(A)",
+    "15 Users Dia",
+    "15 Users Depth(A)"
+  ],
+  "rows": [
+    [
+      "Dry Pits",
+      "900",
+      "1,000",
+      "1,100",
+      "1,300",
+      "1,300",
+      "1,400"
+    ],
+    [
+      "Wet Pits",
+      "1,000",
+      "1,300",
+      "1,400",
+      "1,400",
+      "1,600",
+      "1,500"
+    ]
+  ],
+  "cell_spans": [
+    {
+      "column": 0,
+      "header": true,
+      "rowspan": 2,
+      "description": "Printed leading header cell of the two header rows is blank; the stub column holds 'Dry Pits' and 'Wet Pits'"
+    },
+    {
+      "column": 1,
+      "header": true,
+      "colspan": 2,
+      "description": "Printed heading '5 Users' spans the Dia and Depth(A) columns"
+    },
+    {
+      "column": 3,
+      "header": true,
+      "colspan": 2,
+      "description": "Printed heading '10 Users' spans the Dia and Depth(A) columns"
+    },
+    {
+      "column": 5,
+      "header": true,
+      "colspan": 2,
+      "description": "Printed heading '15 Users' spans the Dia and Depth(A) columns"
+    }
+  ],
+  "notes": [
+    "The printed header has two rows: the user-group row '5 Users', '10 Users', '15 Users' each spanning a Dia and a Depth(A) column, above the sub-header row 'Dia', 'Depth(A)', 'Dia', 'Depth(A)', 'Dia', 'Depth(A)'. The flattened header list prefixes each sub-header with its user group.",
+    "The stub header cell above 'Dry Pits'/'Wet Pits' is blank in the printed grid and is recorded as an empty string.",
+    "The sub-headers are printed as 'Depth(A)' with no space before the bracket; retained as printed.",
+    "'10 Users' is not hyphenated and '5 Users'/'15 Users' are printed with a space, as shown; retained.",
+    "Printed below the table: 'Note: (A)  Depth from bottom of pit to invert level of incoming pipe or drain (all dimensions in mm)'.",
+    "Printed below the table: 'Source: CPHEEO, 1993'.",
+    "All dimensions are printed with thousands separators (e.g. '1,000', '1,100'); retained exactly as printed."
+  ],
+  "markdown": "|  | 5 Users Dia | 5 Users Depth(A) | 10 Users Dia | 10 Users Depth(A) | 15 Users Dia | 15 Users Depth(A) |\n| --- | --- | --- | --- | --- | --- | --- |\n| Dry Pits | 900 | 1,000 | 1,100 | 1,300 | 1,300 | 1,400 |\n| Wet Pits | 1,000 | 1,300 | 1,400 | 1,400 | 1,600 | 1,500 |"
+}

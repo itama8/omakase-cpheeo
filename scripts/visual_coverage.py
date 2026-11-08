@@ -13,7 +13,10 @@ def report():
     tables = json.loads((ROOT/'table-inventory.json').read_text())['tables']
     records = load_records()
     verified = {r['unit_id']:r for r in records if r['state']=='verified'}
-    result = {'scope_complete':False,'equation_total':'unknown until every review-scope page is inspected', 'manuals':{}}
+    result = {'scope_complete':False,'review_strategy':'targeted_table_equation_batches',
+              'exhaustive_page_review_required':False,
+              'equation_total':'not established by targeted review',
+              'page_counts_note':'Historical page coverage, not an outstanding whole-page review queue.', 'manuals':{}}
     for mid,source in sources.items():
         ledger=json.loads((ROOT/f'{mid}-pages.json').read_text())
         assert ledger['source_sha256']==source['sha256']

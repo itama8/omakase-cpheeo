@@ -1,0 +1,95 @@
+[
+ {
+  "pdf_page": 575,
+  "page_label": "6 - 52",
+  "targets": [],
+  "no_targets_reason": "Figure 6.14 only (four site photographs of digester gas stripping systems with a four-part 'Top Left / Right / Bottom Left' caption) plus running text and the section 6.5 / 6.5.1 headings. No table grid and no printed formula; the photographs and their caption were not converted into invented content.",
+  "continuations": [
+   "Table 6.10 (physical page 574) is not continued here: the page opens with Figure 6.14 and its photograph block.",
+   "Section 6.5 AEROBIC SLUDGE DIGESTION and subsection 6.5.1 General start on this page and continue on 576."
+  ],
+  "unclear": [],
+  "image_viewed": "tmp/pdfs/sew-t08-r3/page-575.png"
+ },
+ {
+  "pdf_page": 576,
+  "page_label": "6 - 53",
+  "targets": [
+   "SEW-2013-A:T6.11"
+  ],
+  "no_targets_reason": null,
+  "continuations": [
+   "The five numbered advantages listed at the top of the page belong to the section 6.5.1 discussion started on 575 and are running text, not a table.",
+   "Table 6.11 is self-contained on this page, followed by its (A) Note line and the P.E. definition."
+  ],
+  "unclear": [
+   "No unreadable glyph. The heading prints '(m³/P.E.)' with the parentheses wrapping the whole quantity, unlike 'm³/(P.E.)' in Table 6.12; re-read at 300 dpi and kept as printed."
+  ],
+  "image_viewed": "tmp/pdfs/sew-t08-r3/page-576.png"
+ },
+ {
+  "pdf_page": 578,
+  "page_label": "6 - 55",
+  "targets": [
+   "SEW-2013-A:T6.12"
+  ],
+  "no_targets_reason": null,
+  "continuations": [
+   "Table 6.12 is self-contained, followed by the P.E. definition line; section 6.6 SLUDGE DRYING BEDS starts below it and continues on later pages not assigned to this batch."
+  ],
+  "unclear": [
+   "No unreadable glyph. The caption repeats Table 6.11's caption word for word with different values; both retained as printed."
+  ],
+  "image_viewed": "tmp/pdfs/sew-t08-r3/page-578.png"
+ },
+ {
+  "pdf_page": 586,
+  "page_label": "6 - 63",
+  "targets": [],
+  "no_targets_reason": "Figure 6.15 (photograph of a screw press dewatering machine with its ISHIGAKI COMPANY, LTD source line) and a five-item numbered 'Disadvantages' list for the screw press, followed by section 6.7.6 Rotary Press body text. The numbered list is running prose, not a ruled table, so no table record was created; it is not duplicated as an equation either.",
+  "continuations": [
+   "The screw press disadvantages list is the tail of the screw press advantages/disadvantages discussion started on an earlier page; the same points reappear as a row of Table 6.13 on 593-594.",
+   "Section 6.7.6 Rotary Press text continues on 587 and refers forward to Figure 6.16 'overleaf'."
+  ],
+  "unclear": [],
+  "image_viewed": "tmp/pdfs/sew-t08-r3/page-586.png"
+ },
+ {
+  "pdf_page": 587,
+  "page_label": "6 - 64",
+  "targets": [],
+  "no_targets_reason": "Figure 6.16 (photograph of a rotary press dewatering machine, caption '1,200φ, 4 channels', Source: Sanki Engineering Co., Ltd.) plus two numbered prose lists, 'Advantages' (10 items) and 'Disadvantages' (5 items). Neither list is a ruled grid, so no table record was made and no equation is printed.",
+  "continuations": [
+   "These rotary press advantages/disadvantages reappear condensed as one row of Table 6.13 on 593-594.",
+   "Section 6.7.7 Belt Press Filter follows on 588."
+  ],
+  "unclear": [
+   "No unreadable glyph. Caption prints the diameter symbol as 'φ' in '1,200φ'; kept as printed and not converted to 1200 mm."
+  ],
+  "image_viewed": "tmp/pdfs/sew-t08-r3/page-587.png"
+ },
+ {
+  "pdf_page": 588,
+  "page_label": "6 - 65",
+  "targets": [],
+  "no_targets_reason": "Section 6.7.7 Belt Press body text and Figure 6.17 (a two-panel figure: labelled belt-press flow schematic on the left, machine photograph and 'Source: SEIKISUI AQUA SYSTEMS Co., Ltd.' on the right). The figure's callout labels are diagram labels, not a data grid, and no equation is printed; only the 'Advantages' heading and its first numbered item start at the foot of the page.",
+  "continuations": [
+   "The belt press Advantages/Disadvantages numbered lists continue on 589 (not assigned); they reappear condensed as one row of Table 6.13 on 593-594.",
+   "Figure 6.17 is self-contained on this page."
+  ],
+  "unclear": [],
+  "image_viewed": "tmp/pdfs/sew-t08-r3/page-588.png"
+ },
+ {
+  "pdf_page": 592,
+  "page_label": "6 - 69",
+  "targets": [],
+  "no_targets_reason": "Vacuum filter 'Advantages' (4 numbered items) and 'Disadvantages' (6 numbered items) prose lists, the section 6.7.11 heading whose only content is the cross-reference 'compared in Table 6.13 overleaf', and the start of 6.8 Sludge Disinfection / 6.8.1 Heat Drying. No ruled table and no printed formula on this page.",
+  "continuations": [
+   "Section 6.7.11 Comparison of Dewatering Systems points forward to Table 6.13, which begins on 593; the table itself is not printed here and no part of it was transcribed from this page.",
+   "Section 6.8.1 Heat Drying text continues on 593 above the table."
+  ],
+  "unclear": [],
+  "image_viewed": "tmp/pdfs/sew-t08-r3/page-592.png"
+ }
+]

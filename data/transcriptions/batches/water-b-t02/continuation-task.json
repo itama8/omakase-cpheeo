@@ -1,5 +1,5 @@
 {
-  "note": "Replacement batch; query task_status for current liveness.",
+  "note": "Historical assignments stopped at user scope reset. Do not resume broad page sweeps; follow work-policy.json.",
   "batch": "water-b-t03",
   "taskId": "node:delegated-task:command%3Amcp%3A05efbfda-5a8a-40bb-a971-2e99724fd930%3Adelegate-task%3Aomakase-vt-water-b-t03",
   "childThreadId": "thread:delegated-task:command%3Amcp%3A05efbfda-5a8a-40bb-a971-2e99724fd930%3Adelegate-task%3Aomakase-vt-water-b-t03",
@@ -16,5 +16,7 @@
     138,
     144,
     146
-  ]
+  ],
+  "status": "interrupted",
+  "stop_reason": "User narrowed work to small targeted batches; superseded by data/transcriptions/work-policy.json."
 }

@@ -1,0 +1,60 @@
+[
+  {
+    "pdf_page": 555,
+    "page_label": "6 - 32",
+    "targets": [
+      "SEW-2013-A:T6.8"
+    ],
+    "no_targets_reason": null,
+    "continuations": [],
+    "unclear": [
+      "The Low Rate Digestion value for Solids Retention Time is printed only as '(*)' pointing at the page note; no number is printed for that cell, so the record keeps the asterisk and does not derive a value."
+    ],
+    "image_viewed": "/home/a2ajinkya/.t3/worktrees/omakase-cpheeo/feat-verified-visual-transcriptions/tmp/pdfs/sew-t08/page-555.png",
+    "additional_images": [
+      "/home/a2ajinkya/.t3/worktrees/omakase-cpheeo/feat-verified-visual-transcriptions/tmp/pdfs/sew-t08-r2/d-555-t68.png",
+      "/home/a2ajinkya/.t3/worktrees/omakase-cpheeo/feat-verified-visual-transcriptions/tmp/pdfs/sew-t08-r2/d-555-note.png",
+      "/home/a2ajinkya/.t3/worktrees/omakase-cpheeo/feat-verified-visual-transcriptions/tmp/pdfs/sew-t08-r2/regions/SEW-2013-A--T6.8-p555.png"
+    ]
+  },
+  {
+    "pdf_page": 556,
+    "page_label": "6 - 33",
+    "targets": [
+      "SEW-2013-A:T6.9"
+    ],
+    "no_targets_reason": null,
+    "continuations": [],
+    "unclear": [
+      "The Ratio column prints rounded results that do not match its own arithmetic (28/11 = 2.54, 14/6 = 2.3). Both the quotients and the printed results are retained; the intended rounding rule is not printed."
+    ],
+    "image_viewed": "/home/a2ajinkya/.t3/worktrees/omakase-cpheeo/feat-verified-visual-transcriptions/tmp/pdfs/sew-t08/page-556.png",
+    "additional_images": [
+      "/home/a2ajinkya/.t3/worktrees/omakase-cpheeo/feat-verified-visual-transcriptions/tmp/pdfs/sew-t08-r2/d-556-t69.png",
+      "/home/a2ajinkya/.t3/worktrees/omakase-cpheeo/feat-verified-visual-transcriptions/tmp/pdfs/sew-t08-r2/d-556-t69-rows.png",
+      "/home/a2ajinkya/.t3/worktrees/omakase-cpheeo/feat-verified-visual-transcriptions/tmp/pdfs/sew-t08-r2/d-556-bottom.png",
+      "/home/a2ajinkya/.t3/worktrees/omakase-cpheeo/feat-verified-visual-transcriptions/tmp/pdfs/sew-t08-r2/regions/SEW-2013-A--T6.9-p556.png"
+    ]
+  },
+  {
+    "pdf_page": 557,
+    "page_label": "6 - 34",
+    "targets": [
+      "SEW-2013-A:E6.1",
+      "SEW-2013-A:E6.2"
+    ],
+    "no_targets_reason": null,
+    "continuations": [],
+    "unclear": [
+      "Equation 6.2 uses Vd without defining it on its own line; the only printed definition for Vd is the one given in the equation 6.1 symbol list earlier on the same page. Recorded as printed, not merged."
+    ],
+    "image_viewed": "/home/a2ajinkya/.t3/worktrees/omakase-cpheeo/feat-verified-visual-transcriptions/tmp/pdfs/sew-t08/page-557.png",
+    "additional_images": [
+      "/home/a2ajinkya/.t3/worktrees/omakase-cpheeo/feat-verified-visual-transcriptions/tmp/pdfs/sew-t08-r2/z-557-e61.png",
+      "/home/a2ajinkya/.t3/worktrees/omakase-cpheeo/feat-verified-visual-transcriptions/tmp/pdfs/sew-t08-r2/z-557-sym.png",
+      "/home/a2ajinkya/.t3/worktrees/omakase-cpheeo/feat-verified-visual-transcriptions/tmp/pdfs/sew-t08-r2/z-557-e62.png",
+      "/home/a2ajinkya/.t3/worktrees/omakase-cpheeo/feat-verified-visual-transcriptions/tmp/pdfs/sew-t08-r2/regions/SEW-2013-A--E6.1-p557.png",
+      "/home/a2ajinkya/.t3/worktrees/omakase-cpheeo/feat-verified-visual-transcriptions/tmp/pdfs/sew-t08-r2/regions/SEW-2013-A--E6.2-p557.png"
+    ]
+  }
+]

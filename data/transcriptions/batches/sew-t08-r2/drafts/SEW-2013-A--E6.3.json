@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:E6.3",
+  "unit_id": "SEW-2013-A:E6.3",
+  "manual_id": "SEW-2013-A",
+  "kind": "equation",
+  "number": "6.3",
+  "regions": [
+    {
+      "pdf_page": 558,
+      "page_label": "6 - 35",
+      "bbox": [
+        55.0,
+        337.0,
+        518.0,
+        364.0
+      ],
+      "render_sha256": "467e0a16d708f79da338b8bea2245af43edae55b8e871a8603ac6a516c0adceb"
+    }
+  ],
+  "title": "Volume of first stage digester",
+  "parent_id": "SEW-2013-A:6.4.5.2",
+  "latex": "V'=V_f\\,T_h",
+  "readable": "V' = Vf Th",
+  "symbols": [
+    {
+      "symbol": "V'",
+      "definition": "Volume of first stage digester, m³"
+    },
+    {
+      "symbol": "Vf",
+      "definition": "Volume of fresh sludge m³ added per day"
+    },
+    {
+      "symbol": "Th",
+      "definition": "Detention time in the high rate digester, days"
+    }
+  ],
+  "applicability": "Section 6.4.5.2, sizing of a high rate digester: with good mixing and pre-thickening there is no stratification, so the first stage digester volume is fixed only by the fresh sludge volume and the high rate detention time.",
+  "notes": [
+    "Printed as 'V’= Vf Th': the prime is printed as a raised comma glyph (typographic apostrophe), there is no space before the equals sign and one space after it, and no multiplication sign between Vf and Th.",
+    "The prime glyph is kept as a prime in the LaTeX and written as an apostrophe in the readable line; it is not part of the letter V.",
+    "Subscripts f and h are printed as dropped subscript glyphs and are reproduced as subscripts.",
+    "The equation number '(6.3)' is printed at the right margin on the same line and is inside the recorded region.",
+    "The symbol list under 'Where,' on this page belongs to equations 6.3 and 6.4 together and is printed once, below 6.4. The recorded region covers only the equation line and its number; the shared list is transcribed in full in both this record and the E6.4 record.",
+    "Printed error in the paragraph that introduces these two equations, outside the equation region and therefore not transcribed as part of it: 'can also be provided in the second stand digester', where 'stand' appears for 'stage'. Recorded here as printed; not corrected."
+  ],
+  "verification": {
+    "transcription": {
+      "pass_id": "sew-t08-r2-first-reading",
+      "method": "Direct visual reading of 144 dpi annotation-cleaned full-page PNGs plus 250-450 dpi detail crops of each item; no OCR, no paid service, no delegation",
+      "observations": "First reading only, recovered from the timed-out sew-t08 batch and re-checked against the page images. Every printed value, coefficient, power, sign, bracket, spelling and unit retained as printed; source oddities kept and flagged rather than corrected. No verification.visual_recheck and no seal."
+    }
+  },
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "state": "pending"
+}

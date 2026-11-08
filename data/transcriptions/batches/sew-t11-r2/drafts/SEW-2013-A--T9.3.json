@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:T9.3",
+  "unit_id": "SEW-2013-A:T9.3",
+  "manual_id": "SEW-2013-A",
+  "kind": "table",
+  "number": "9.3",
+  "title": "Long term infiltration rates of different types of soils",
+  "state": "pending",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "regions": [
+    {
+      "pdf_page": 692,
+      "page_label": "9 - 7",
+      "bbox": [
+        72.0,
+        496.0,
+        500.0,
+        657.0
+      ],
+      "render_sha256": "9d310922f930a8c1f849563a5d8995b5413d6967867fc404996e6f8766f029cd"
+    }
+  ],
+  "headers": [
+    "No.",
+    "Soil type",
+    "litres / sqm / day"
+  ],
+  "rows": [
+    [
+      "1",
+      "Sand",
+      "50"
+    ],
+    [
+      "2",
+      "Sandy loam, loams",
+      "30"
+    ],
+    [
+      "3",
+      "Porous silty loams, porous silty, silty clay loams",
+      "20"
+    ],
+    [
+      "4",
+      "Compact silty loams, compact silty clay loams, clay",
+      "10"
+    ]
+  ],
+  "cell_spans": [],
+  "notes": [
+    "The third header is printed as 'litres / sqm / day' with spaces around both slashes; retained as printed.",
+    "Row 2 Soil type is printed 'Sandy loam, loams' (singular 'loam' followed by plural 'loams'); retained verbatim, not corrected.",
+    "Printed below the table: 'Source:  CPHEEO, 1993'.",
+    "No footnote is printed with this table."
+  ],
+  "markdown": "| No. | Soil type | litres / sqm / day |\n| --- | --- | --- |\n| 1 | Sand | 50 |\n| 2 | Sandy loam, loams | 30 |\n| 3 | Porous silty loams, porous silty, silty clay loams | 20 |\n| 4 | Compact silty loams, compact silty clay loams, clay | 10 |"
+}

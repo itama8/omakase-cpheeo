@@ -1,0 +1,60 @@
+{
+  "selection": "Five compact pending MBR/SBR table drafts selected from the existing table inventory and saved candidates. Table 5.54 and all other targets deferred.",
+  "verified_records": [
+    {
+      "id": "SEW-2013-A:T5.52",
+      "source_draft": "data/transcriptions/batches/sew-t07/drafts/SEW-2013-A--T5.52.json",
+      "draft_sha256": "decd524b5f566a62d3f36f16689252051d65ce2b4858d6907593464f0940450d",
+      "content_sha256": "9a533e4eb8c328a9b20dd5620edf93af3fe9538bc9d37c7947a5ec4afafbc0ca",
+      "corrections": []
+    },
+    {
+      "id": "SEW-2013-A:T5.53",
+      "source_draft": "data/transcriptions/batches/sew-t07/drafts/SEW-2013-A--T5.53.json",
+      "draft_sha256": "c66b029ca2f6433fc920ab19e2cc2fb935eb5e3fe32c38919393922ee53f0bc2",
+      "content_sha256": "0c1e814ac4fb2df4acf056b7444f9b6bb0c4d3dfa6648f5e0c94baaced129ebb",
+      "corrections": []
+    },
+    {
+      "id": "SEW-2013-A:T5.55",
+      "source_draft": "data/transcriptions/batches/sew-t07/drafts/SEW-2013-A--T5.55.json",
+      "draft_sha256": "ae6c3f9a259d02dcc9e1021044379b42dc57ab790cba50d06e6e2742ebdc2206",
+      "content_sha256": "98dac2e400e53d06fce9e62acc54fe8948d89a9ecd1036b916364f110400b61a",
+      "corrections": []
+    },
+    {
+      "id": "SEW-2013-A:T5.56",
+      "source_draft": "data/transcriptions/batches/sew-t07/drafts/SEW-2013-A--T5.56.json",
+      "draft_sha256": "a3969c106414679f44228f168907c734c5ff5d22b0cb5a31cacb2e70602532d2",
+      "content_sha256": "90f1a0fe4e43a923f3a64c136ec9b4c98e33efbca60d7a3db311fe188e2a2303",
+      "corrections": [
+        "Restored baseline digits 4 and 3 in nitrogen header; superscript charges retained, confirmed with 432-dpi header crop."
+      ]
+    },
+    {
+      "id": "SEW-2013-A:T5.57",
+      "source_draft": "data/transcriptions/batches/sew-t07/drafts/SEW-2013-A--T5.57.json",
+      "draft_sha256": "14e982ee5c68faed80fe6f1afdd4fa656681e20088bbb848d82adecd4389bb3c",
+      "content_sha256": "fad92030ade1a29449091a8db215ee8da9f0142d17d2df7d55d771c0a94e8962",
+      "corrections": [
+        "Joined wrapped Sludge Yield unit with a single space in both structured cells and Markdown."
+      ]
+    }
+  ],
+  "page_regions_only": {
+    "492": [
+      "SEW-2013-A:T5.52",
+      "SEW-2013-A:T5.53"
+    ],
+    "500": [
+      "SEW-2013-A:T5.55",
+      "SEW-2013-A:T5.56"
+    ],
+    "502": [
+      "SEW-2013-A:T5.57"
+    ]
+  },
+  "whole_page_reviews_added": 0,
+  "limitations": "Targeted transcription fidelity check only; no exhaustive page sweep, independent human review or perfect-accuracy claim.",
+  "status": "complete"
+}

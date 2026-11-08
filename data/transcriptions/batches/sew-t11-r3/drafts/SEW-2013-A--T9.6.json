@@ -1,0 +1,71 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:T9.6",
+  "unit_id": "SEW-2013-A:T9.6",
+  "manual_id": "SEW-2013-A",
+  "kind": "table",
+  "number": "9.6",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "state": "pending",
+  "regions": [
+    {
+      "pdf_page": 702,
+      "page_label": "9 - 17",
+      "bbox": [
+        104.0,
+        373.5,
+        497.0,
+        596.5
+      ],
+      "render_sha256": "c232e958efc6bb82db19f9857f6f0acba95a97764f902053a9e4b9889edf2374"
+    }
+  ],
+  "title": "Design criteria and performance parameters for digester",
+  "headers": [
+    "No.",
+    "Item",
+    "Magnitude"
+  ],
+  "rows": [
+    [
+      "1",
+      "Volumetric Organic loading, kg VS/m³ d",
+      "1.6"
+    ],
+    [
+      "2",
+      "Hydraulic residence time, d",
+      "25-30"
+    ],
+    [
+      "3",
+      "Solids concentration of slurry fed to digester, %",
+      "5"
+    ],
+    [
+      "4",
+      "Volatile solids destroyed during digestion, %",
+      "45-55"
+    ],
+    [
+      "5",
+      "Gas yield, m³/kg of VS added in m³/capita/d",
+      "0.5"
+    ],
+    [
+      "6",
+      "m³/capita/d",
+      "0.034"
+    ]
+  ],
+  "cell_spans": [],
+  "markdown": "| No. | Item | Magnitude |\n| --- | --- | --- |\n| 1 | Volumetric Organic loading, kg VS/m³ d | 1.6 |\n| 2 | Hydraulic residence time, d | 25-30 |\n| 3 | Solids concentration of slurry fed to digester, % | 5 |\n| 4 | Volatile solids destroyed during digestion, % | 45-55 |\n| 5 | Gas yield, m³/kg of VS added in m³/capita/d | 0.5 |\n| 6 | m³/capita/d | 0.034 |",
+  "notes": [
+    "Source printed below the table: Source: CPHEEO, 1993",
+    "Row 5 Item cell prints two quantities on one printed line: 'Gas yield, m³/kg of VS added in m³/capita/d'. Retained as one cell string; the two quantities are not split and no value is supplied for the second.",
+    "Row 6 prints only a unit, 'm³/capita/d', as the Item, with magnitude 0.034. Retained as printed.",
+    "The superscript 3 in every printed unit (m³) is recorded as ³; the printed exponent is not flattened to m3.",
+    "Row 1 prints 'Volumetric Organic loading' with a capital O; retained as printed, not corrected.",
+    "Numeric ranges (25-30, 45-55) are printed with a hyphen and are retained as one string."
+  ]
+}

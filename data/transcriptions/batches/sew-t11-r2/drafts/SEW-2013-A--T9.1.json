@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:T9.1",
+  "unit_id": "SEW-2013-A:T9.1",
+  "manual_id": "SEW-2013-A",
+  "kind": "table",
+  "number": "9.1",
+  "title": "Material and other details for latrine unit",
+  "state": "pending",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "regions": [
+    {
+      "pdf_page": 691,
+      "page_label": "9 - 6",
+      "bbox": [
+        52.0,
+        166.0,
+        539.0,
+        498.0
+      ],
+      "render_sha256": "556838a1e80bd2214728a94e4f86bf7c28ba68fd22b88e24976546913d9a1454"
+    }
+  ],
+  "headers": [
+    "No.",
+    "Squatting Pan",
+    "Trap",
+    "Footrests",
+    "Connecting Drain"
+  ],
+  "rows": [
+    [
+      "1",
+      "Horizontal length of pan should be at least 425 mm and longitudinal bottom slope 25 -28°",
+      "It should be 70 to 75 mm with 20 mm water seal",
+      "It should be 250×125 mm with 15 to 20 mm height",
+      "May be non-pressure pipes of PVC minimum 75 mm dia"
+    ],
+    [
+      "2",
+      "Material: Ceramic, FRP, PP, HDPE, PVC, Cement mosaic or Cement concrete",
+      "Fibre Glass, Ceramic, HDPE or CC traps",
+      "Ceramic or concrete with mosaic finish brick or stone",
+      "Bricks or stone semi-circular bottom"
+    ],
+    [
+      "3",
+      "Should conform to IS: 2556 (Pt. III), IS: 11246, GRP Sq. Pan",
+      "Should conform to IS: 2556 ( Pt. XIII)",
+      "Should conform to IS: 2556 ( Pt. X)",
+      "Slope should be 1 in 5 to 1 in 15 as per site conditions"
+    ],
+    [
+      "4",
+      "(A)",
+      "",
+      "",
+      "(B)"
+    ]
+  ],
+  "cell_spans": [],
+  "notes": [
+    "Row 4 of the grid carries only the footnote markers '(A)' (Squatting Pan column) and '(B)' (Connecting Drain column); the two footnotes are printed immediately below the table.",
+    "Footnote (A) is printed as '(A)- Ceramic, FRP, PP are smooth and require less water for flushing. FRP cheaper, lighter and easier to transport than the other' — it lacks a verb in 'FRP cheaper' and ends 'than the other' (singular); both retained as printed, not corrected.",
+    "Footnote (B) is printed as '(B)- The inlet pipe should project 100 mm in to the leach pit.A junction chamber of 250×250 mm should be provided in case of pipe' — printed 'in to' as two words and with no space after 'pit.'; retained as printed, not corrected.",
+    "Row 1 Squatting Pan prints the slope as '25 -28°' (space before the hyphen, none after); retained as printed.",
+    "Row 3 prints '(Pt. III)' without a space after the bracket in the Squatting Pan cell, but '( Pt. XIII)' and '( Pt. X)' with a space in the Trap and Footrests cells; retained as printed.",
+    "Row 4 Trap and Footrests cells are blank in the printed grid and are recorded as empty strings; the grid rules show they are separate cells, not one merged cell.",
+    "Printed below the table: 'Source:  CPHEEO, 1993'."
+  ],
+  "markdown": "| No. | Squatting Pan | Trap | Footrests | Connecting Drain |\n| --- | --- | --- | --- | --- |\n| 1 | Horizontal length of pan should be at least 425 mm and longitudinal bottom slope 25 -28° | It should be 70 to 75 mm with 20 mm water seal | It should be 250×125 mm with 15 to 20 mm height | May be non-pressure pipes of PVC minimum 75 mm dia |\n| 2 | Material: Ceramic, FRP, PP, HDPE, PVC, Cement mosaic or Cement concrete | Fibre Glass, Ceramic, HDPE or CC traps | Ceramic or concrete with mosaic finish brick or stone | Bricks or stone semi-circular bottom |\n| 3 | Should conform to IS: 2556 (Pt. III), IS: 11246, GRP Sq. Pan | Should conform to IS: 2556 ( Pt. XIII) | Should conform to IS: 2556 ( Pt. X) | Slope should be 1 in 5 to 1 in 15 as per site conditions |\n| 4 | (A) |  |  | (B) |"
+}

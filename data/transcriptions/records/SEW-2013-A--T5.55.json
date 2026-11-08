@@ -1,0 +1,114 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:T5.55",
+  "unit_id": "SEW-2013-A:T5.55",
+  "manual_id": "SEW-2013-A",
+  "kind": "table",
+  "number": "5.55",
+  "title": "Operating conditions of the Culver SBR process",
+  "state": "verified",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "regions": [
+    {
+      "pdf_page": 500,
+      "page_label": "5 - 196",
+      "bbox": [
+        50.8,
+        141.9,
+        541.1,
+        280.5
+      ],
+      "render_sha256": "f9436be59f1cf035b9769ac058046e18efdc3707d0cd3f4b0a18fb9af9cb499d"
+    }
+  ],
+  "headers": [
+    "Average flow (MLD)",
+    "Fill and Mix",
+    "Fill and Aeration",
+    "React",
+    "Settle",
+    "Decant",
+    "Idle",
+    "Total cycle time",
+    "Number of Basins",
+    "MLSS (mg/L)",
+    "F/M (a)",
+    "SRT (days)"
+  ],
+  "rows": [
+    [
+      "1.34",
+      "54",
+      "126",
+      "42",
+      "42",
+      "42",
+      "60",
+      "366",
+      "2",
+      "5,000",
+      "0.08-0.16",
+      "15.5"
+    ]
+  ],
+  "cell_spans": [
+    {
+      "column": 1,
+      "header": true,
+      "colspan": 7,
+      "description": "Printed 'Mode of Operation (minutes)' spans the seven time columns"
+    },
+    {
+      "column": 0,
+      "header": true,
+      "rowspan": 2,
+      "description": "Printed 'Average flow (MLD)' spans both header rows"
+    },
+    {
+      "column": 8,
+      "header": true,
+      "rowspan": 2,
+      "description": "Printed 'Number of Basins' spans both header rows"
+    },
+    {
+      "column": 9,
+      "header": true,
+      "rowspan": 2,
+      "description": "Printed 'MLSS (mg/L)' spans both header rows"
+    },
+    {
+      "column": 10,
+      "header": true,
+      "rowspan": 2,
+      "description": "Printed 'F/M (a)' spans both header rows"
+    },
+    {
+      "column": 11,
+      "header": true,
+      "rowspan": 2,
+      "description": "Printed 'SRT (days)' spans both header rows"
+    }
+  ],
+  "markdown": "| Average flow (MLD) | Fill and Mix | Fill and Aeration | React | Settle | Decant | Idle | Total cycle time | Number of Basins | MLSS (mg/L) | F/M (a) | SRT (days) |\n| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |\n| 1.34 | 54 | 126 | 42 | 42 | 42 | 60 | 366 | 2 | 5,000 | 0.08-0.16 | 15.5 |",
+  "notes": [
+    "Printed below the table: 'Source: USEPA, 1986, USEPA, 1983'.",
+    "Transcriber layout note: three printed levels. Level 1 reads 'Average flow (MLD) / Mode of Operation (minutes) / Number of Basins / MLSS (mg/L) / F/M (a) / SRT (days)'; level 2 reads the seven time columns 'Fill and Mix / Fill and Aeration / React / Settle / Decant / Idle / Total cycle time'; level 3 is the single data row. Header labels are flattened to the printed leaf labels.",
+    "The six printed phase times add up to the printed total: 54 + 126 + 42 + 42 + 42 + 60 = 366 minutes. Not corrected or recomputed in the cell values.",
+    "Printed 'F/M (a)' has no unit after the 'a'; retained.",
+    "Unit case is printed 'MLSS (mg/L)' and 'F/M (a)' here while neighbouring tables print 'mg/l'; retained.",
+    "Printed 'Total cycle time' header wraps over three lines inside its column; joined with spaces."
+  ],
+  "verification": {
+    "transcription": {
+      "pass_id": "sew-t07-first-reading-2026-11-08",
+      "method": "Direct viewing of the annotation-cleaned 144 dpi page renders and 260-800 dpi crops of the same pages; no OCR, no paid service",
+      "observations": "Header levels and the single data row read from a 350 dpi crop; the twelve values, including '0.08-0.16' and '5,000', checked one by one."
+    },
+    "visual_recheck": {
+      "pass_id": "targeted-sew-01-parent-recheck",
+      "method": "Distinct parent comparison of each selected source-region crop and larger zoom, without whole-page review; not independent human review.",
+      "observations": "Compared every selected table header, cell and source/footnote text. Preserved units, printed precision, inequalities and blank cells. ",
+      "content_sha256": "98dac2e400e53d06fce9e62acc54fe8948d89a9ecd1036b916364f110400b61a"
+    }
+  }
+}

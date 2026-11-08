@@ -1,0 +1,29 @@
+[
+  {
+    "pdf_page": 597,
+    "page_label": "6 - 74",
+    "targets": [],
+    "no_targets_reason": "Figure 6.19 (In-Vessel composting reactor - Taulman composting system) is a labelled equipment drawing with no mathematical labels, equations or tables; remaining text is narrative prose with no displayed mathematics.",
+    "continuations": [],
+    "unclear": [],
+    "image_viewed": "tmp/pdfs/sew-t09/page-597.png"
+  },
+  {
+    "pdf_page": 599,
+    "page_label": "6 - 76",
+    "targets": [],
+    "no_targets_reason": "Figure 6.20 (Mixed composting of sewage and municipal solid waste) is a process flow diagram with word labels only; no mathematical labels or expressions. Section 6.10 text is narrative prose with no displayed mathematics or table.",
+    "continuations": [],
+    "unclear": [],
+    "image_viewed": "tmp/pdfs/sew-t09/page-599.png"
+  },
+  {
+    "pdf_page": 600,
+    "page_label": "6 - 77",
+    "targets": [],
+    "no_targets_reason": "Page contains only narrative prose and numbered lists (storage considerations, disposal discussion, sludge-as-soil-filler principles). No table, figure or displayed equation.",
+    "continuations": [],
+    "unclear": [],
+    "image_viewed": "tmp/pdfs/sew-t09/page-600.png"
+  }
+]

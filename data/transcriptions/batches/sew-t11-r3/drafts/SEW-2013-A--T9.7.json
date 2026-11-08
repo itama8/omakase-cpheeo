@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:T9.7",
+  "unit_id": "SEW-2013-A:T9.7",
+  "manual_id": "SEW-2013-A",
+  "kind": "table",
+  "number": "9.7",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "state": "pending",
+  "regions": [
+    {
+      "pdf_page": 704,
+      "page_label": "9 - 19",
+      "bbox": [
+        58.0,
+        70.0,
+        545.0,
+        320.0
+      ],
+      "render_sha256": "a9b514c9937b7651400df8a17090b9bfeca69a65c29c50c73cb46428a9b65f6e"
+    }
+  ],
+  "title": "Recommended size of septic tank up to 20 users",
+  "headers": [
+    "No. of Users",
+    "Length (m)",
+    "Breadth (m)",
+    "Liquid depth (m) (cleaning interval of): 2 years",
+    "Liquid depth (m) (cleaning interval of): 3 years"
+  ],
+  "rows": [
+    [
+      "5",
+      "1.5",
+      "0.75",
+      "1.0",
+      "1.05"
+    ],
+    [
+      "10",
+      "2.0",
+      "0.90",
+      "1.0",
+      "1.40"
+    ],
+    [
+      "15",
+      "2.0",
+      "0.90",
+      "1.3",
+      "2.00"
+    ],
+    [
+      "20",
+      "2.3",
+      "1.10",
+      "1.3",
+      "1.80"
+    ]
+  ],
+  "cell_spans": [],
+  "markdown": "| No. of Users | Length (m) | Breadth (m) | Liquid depth (m) (cleaning interval of): 2 years | Liquid depth (m) (cleaning interval of): 3 years |\n| --- | --- | --- | --- | --- |\n| 5 | 1.5 | 0.75 | 1.0 | 1.05 |\n| 10 | 2.0 | 0.90 | 1.0 | 1.40 |\n| 15 | 2.0 | 0.90 | 1.3 | 2.00 |\n| 20 | 2.3 | 1.10 | 1.3 | 1.80 |",
+  "notes": [
+    "Source printed below the notes: Source: CPHEEO, 1993",
+    "Printed header has two levels: the first-level cell 'Liquid depth (m) (cleaning interval of)' spans the last two columns, above the second-level cells '2 years' and '3 years'. The two levels are flattened into the header strings above with ': ' and cell_spans is empty; no cell is merged in the body.",
+    "Note 2 is printed 'Note 2: A provision of 300 mm should be made for free broad.' The word is printed 'broad', not 'board'; retained as printed, not corrected.",
+    "Note 1 is printed 'Note 1: The capacities are recommended on the assumption that discharge from only WC will be treated in the septic tank' (no full stop at the end).",
+    "Note 3 is printed 'Note 3: The sizes of septic tank are based on certain assumption on peak discharges, as estimated in IS: 2470 (part 1) and while choosing the size of septic tank exact calculations shall be made.' Singular 'assumption' and lower-case '(part 1)' retained as printed.",
+    "Wrapped note lines are joined with single spaces. Decimal forms are retained exactly as printed: '1.5', '0.75', '1.0', '1.05', '1.40', '2.00', '1.80'.",
+    "Row 15 prints a 3-year liquid depth of 2.00 that is larger than the 20-user row's 1.80 and larger than the 2-year value 1.3; transcribed as printed without adjustment."
+  ]
+}

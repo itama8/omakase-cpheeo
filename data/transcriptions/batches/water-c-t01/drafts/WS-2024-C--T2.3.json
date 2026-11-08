@@ -1,0 +1,84 @@
+{
+  "schema_version": 1,
+  "id": "WS-2024-C:T2.3",
+  "unit_id": "WS-2024-C:T2.3",
+  "manual_id": "WS-2024-C",
+  "kind": "table",
+  "number": "2.3",
+  "title": "Service Level Benchmark – Indicators Related to Water Supply",
+  "source_sha256": "f1cc3a56b1cb4dc0d1c140a3d0f9731ff4e5e1c8273a3ebb225b47db4ae3c29c",
+  "state": "pending",
+  "regions": [
+    {
+      "pdf_page": 71,
+      "page_label": "19",
+      "bbox": [
+        70,
+        150,
+        540,
+        325
+      ],
+      "render_sha256": "d0f2fa5d858d52e3fcdd57868d788885d1ef948a3f431704a809b84066c22441"
+    }
+  ],
+  "headers": [
+    "S. No.",
+    "Indicator",
+    "Benchmark"
+  ],
+  "rows": [
+    [
+      "1",
+      "Coverage of water supply connections",
+      "100%"
+    ],
+    [
+      "2",
+      "Per capita supply of water",
+      "135 LPCD"
+    ],
+    [
+      "3",
+      "Extent of NRW",
+      "20%"
+    ],
+    [
+      "4",
+      "Extent of metering",
+      "100%"
+    ],
+    [
+      "5",
+      "Continuity of water supplied",
+      "24 hours"
+    ],
+    [
+      "6",
+      "Efficiency in redressal of customer complaints",
+      "80%"
+    ],
+    [
+      "7",
+      "Quality of water supplied",
+      "100%"
+    ],
+    [
+      "8",
+      "Cost recovery",
+      "100%"
+    ],
+    [
+      "9",
+      "Efficiency in collection of water charges",
+      "90%"
+    ]
+  ],
+  "cell_spans": [],
+  "markdown": "| S. No. | Indicator | Benchmark |\n| --- | --- | --- |\n| 1 | Coverage of water supply connections | 100% |\n| 2 | Per capita supply of water | 135 LPCD |\n| 3 | Extent of NRW | 20% |\n| 4 | Extent of metering | 100% |\n| 5 | Continuity of water supplied | 24 hours |\n| 6 | Efficiency in redressal of customer complaints | 80% |\n| 7 | Quality of water supplied | 100% |\n| 8 | Cost recovery | 100% |\n| 9 | Efficiency in collection of water charges | 90% |",
+  "notes": [
+    "Title as printed uses an en dash: 'Table 2.3: Service Level Benchmark – Indicators Related to Water Supply'.",
+    "Benchmark column is printed exactly as shown: percentages with the % sign closed up to the number, '135 LPCD' and '24 hours' as written.",
+    "The table is complete on this page; no continuation and no footnotes.",
+    "Introductory sentence on the same page reads 'The water supply related indicators are presented in Table 2.3.'"
+  ]
+}

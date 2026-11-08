@@ -1,0 +1,75 @@
+{
+  "schema_version": 1,
+  "manual_id": "SEW-2013-A",
+  "batch": "sew-t11-r3",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "source_path": "/home/a2ajinkya/Downloads/CPHEEO/Seweage CPHEEO.pdf",
+  "source_annotation_policy": "open_clean deletes annotations in memory; the source PDF is opened read-only and never saved.",
+  "rendering": "Full pages at 144 dpi; reused the prior batch's read-only page PNGs under tmp/pdfs/sew-t11/ (verified against the page image before use) plus its 288 dpi zoom crops where present, and clipped 2x region renders under tmp/pdfs/sew-t11-r3/. Evidence regions hashed with omakase_cpheeo.transcriptions.region_png (Matrix(2,2), alpha=False).",
+  "scope": "First visual reading and pending drafts only. No verification, sealing, ledger, coverage, DB, server or git writes.",
+  "records": [
+    "drafts/SEW-2013-A--T9.6.json"
+  ],
+  "pages": [
+    {
+      "pdf_page": 702,
+      "page_label": "9 - 17",
+      "targets": [
+        "SEW-2013-A:T9.6"
+      ],
+      "record_filenames": [
+        "drafts/SEW-2013-A--T9.6.json"
+      ],
+      "no_targets_reason": null,
+      "continuations": [
+        "Table 9.5 Characteristics of night-soil and cow-dung: its caption on physical page 701 (r2) is followed by '(overleaf)' and the whole four-column body plus 'Source: CPHEEO, 1993' is printed at the top of this page. The unit SEW-2013-A:T9.5 starts on page 701, so it belongs to batch sew-t11-r2; not duplicated here. Body read for this report: No./Characteristics/Night Soil/Cow Dung; rows 1 Moisture content, % 85 - 90 / 74 - 82; 2 Volatile solids as % of Total Solids 80 - 88 / 70 - 80; 3 Total Nitrogen as N, % on dry basis 3 - 5 / 1.4 - 1.8; 4 Total Phosphorus as P2O5, % on dry basis 2.5 - 4.4 / 1.1 - 2.0; 5 Potassium as K2O, % on dry basis 0.7 - 1.9 / 0.8 - 1.2."
+      ],
+      "unclear": [],
+      "image_viewed": "tmp/pdfs/sew-t11/page-702.png",
+      "render_sha256": "3cf0c230ec720fb979f2eef918a2fda511dccfed3dae7c72feba6f41d93a38a3",
+      "observations": "Section 9.3.3.4.1 Design Criteria heading, then Table 9.6 caption and its six-row body read cell by cell on the 288 dpi crop z702-t96.png and reconfirmed on the hashed region render p702-T9.6-region.png. Source line 'Source: CPHEEO, 1993' included in the region. Rows 5 and 6 print unusual composite Item cells (two quantities on one line; then a bare unit m3/capita/d) - retained as printed. Below the table, prose plus a three-item roman list (i, ii, iii) describing the digester components; list is prose, not a table."
+    },
+    {
+      "pdf_page": 703,
+      "page_label": "9 - 18",
+      "targets": [],
+      "record_filenames": [],
+      "no_targets_reason": "Prose only: sections 9.3.4 Conventional Septic Tank and 9.3.4.1 Design, ending with a forward reference to Table 9.7 and Table 9.8 (both printed on physical page 704). No table, displayed equation or symbolic expression on this page.",
+      "continuations": [],
+      "unclear": [],
+      "image_viewed": "tmp/pdfs/sew-t11/page-703.png",
+      "render_sha256": "fc40ee9474e9bb50713a4d07c0e394f289b37ae90b38bacbe0ffbdf2827be121",
+      "observations": "Read the whole page. Inline prose figures only: contributory population does not exceed 300, only about 30% of settled solids anaerobically digested, minimum liquid retention time 24 hours, design period 1 to 2 days, liquid depth 1-2 m, length to breadth ratio 2-3 to 1. None is a printed formula or relational equation, so nothing is transcribed. Closing sentence gives recommended sizes 'below in Table 9.7 and Table 9.8 respectively' - captions actually appear on the next page."
+    },
+    {
+      "pdf_page": 704,
+      "page_label": "9 - 19",
+      "targets": [
+        "SEW-2013-A:T9.7",
+        "SEW-2013-A:T9.8"
+      ],
+      "record_filenames": [
+        "drafts/SEW-2013-A--T9.7.json",
+        "drafts/SEW-2013-A--T9.8.json"
+      ],
+      "no_targets_reason": null,
+      "continuations": [],
+      "unclear": [],
+      "image_viewed": "tmp/pdfs/sew-t11/page-704.png",
+      "render_sha256": "af6c0460c9b16be388260cc015fd2642859cc5fe6ca8b120f20b95038ce2d2f7",
+      "observations": "Two tables, both five columns wide with a two-level header flattened into the header strings. Table 9.7 read on z704-t97.png and its hashed region p704-T9.7-region.png (caption, table, Notes 1-3 and Source included); Table 9.8 read on z704-t98.png and p704-T9.8-region.png. Printed anomalies retained and noted: Table 9.7 Note 2 prints 'free broad' while Table 9.8 Note 1 prints 'free board'; Table 9.8's 'Liquid depth (cleaning interval of)' omits the '(m)' that Table 9.7 prints; T9.8 caption prints 'upto'. Row 15 of T9.7 prints 3-year depth 2.00 against 1.80 for 20 users, kept as printed. After the tables, section 9.3.4.2 Construction Details starts with prose (baffles dip 25 cm to 30 cm into the liquid and project 15 cm above it; outlet invert 5 to 7 cm below inlet invert) - prose dimensions, no printed formula or table."
+    },
+    {
+      "pdf_page": 706,
+      "page_label": "9 - 21",
+      "targets": [],
+      "record_filenames": [],
+      "no_targets_reason": "Full-page technical drawing only: Figure 9.8 Structure of a septic tank, printed sideways (rotated 90 degrees). No table, equation or mathematical expression; drawing labels and dimension callouts are left to the figure pipeline.",
+      "continuations": [],
+      "unclear": [],
+      "image_viewed": "tmp/pdfs/sew-t11/page-706.png",
+      "render_sha256": "cb1bd0296d80658fad614957139df5201c3abb585a854360c7ae317fbf19155a",
+      "observations": "Figure 9.8 caption: 'Structure of a septic tank'. In-drawing heading reads 'TYPICAL SKETCH OF TWO COMPARTMENT SEPTIC TANK FOR POPULATIONS OVER 50 (IS : 2470 (PART 1) - 1985)', 'ALL DIMENSIONS IN mm', 'SECTION X X', 'SLOPE 1IN:10'. Labels: INLET CHAMBER, BENCHING, BAFFLE, PENSTOCK, SCUM BOARD, TWL, OUTLET, DEFLECTOR, OPENING. Dimension callouts 150, 300, 450, 50, 75, 525, 1500, L and (OVER 1200) are drawing annotations, not a printed table or formula. Source line 'Source: CPHEEO, 1993'. Nothing here is transcribed; the page was inspected in its rendered orientation (readable by rotating 90 degrees)."
+    }
+  ]
+}

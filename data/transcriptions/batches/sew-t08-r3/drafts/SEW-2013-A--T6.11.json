@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:T6.11",
+  "unit_id": "SEW-2013-A:T6.11",
+  "manual_id": "SEW-2013-A",
+  "kind": "table",
+  "number": "6.11",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "state": "pending",
+  "regions": [
+    {
+      "pdf_page": 576,
+      "page_label": "6 - 53",
+      "bbox": [
+        57.0,
+        537.0,
+        535.0,
+        757.0
+      ],
+      "render_sha256": "cc14dd261bd866a76dc7911b08bc92d30e9dcc10ea6e2ede981bb8474100fc98"
+    }
+  ],
+  "title": "Sludge source and volume/population equivalent",
+  "headers": [
+    "Sludge Source",
+    "(m³/P.E.)"
+  ],
+  "rows": [
+    [
+      "Waste activated sludge - no primary settling",
+      "0.13 (A)"
+    ],
+    [
+      "Primary plus waste activated sludge",
+      "0.11 (A)"
+    ],
+    [
+      "Waste activated sludge excluding primary sludge",
+      "0.06 (A)"
+    ],
+    [
+      "Extended aeration activated sludge",
+      "0.09"
+    ],
+    [
+      "Primary & attached growth biological reactor sludge",
+      "0.09"
+    ]
+  ],
+  "cell_spans": [],
+  "markdown": "| Sludge Source | (m³/P.E.) |\n| --- | --- |\n| Waste activated sludge - no primary settling | 0.13 (A) |\n| Primary plus waste activated sludge | 0.11 (A) |\n| Waste activated sludge excluding primary sludge | 0.06 (A) |\n| Extended aeration activated sludge | 0.09 |\n| Primary & attached growth biological reactor sludge | 0.09 |",
+  "notes": [
+    "Printed notes below the table, kept inside the region: 'Note:  (A) These volumes also apply to waste activated sludge from single stage nitrification with less than 24 hours detention time based on design average flow;' and 'P.E.-population equivalent as design flow divided by per capita sewage flow.'",
+    "The value column heading is printed only as '(m³/P.E.)' with parentheses around the whole expression; Table 6.12 on page 578 prints the same quantity as 'm³/(P.E.)'. Both kept as printed.",
+    "The marker '(A)' is printed against the first three values only; the last two rows print a bare number. Whether that omission is intended is not stated in print.",
+    "The last source name prints '&' rather than 'and', unlike the 'plus' wording of the rows above. Kept as printed.",
+    "Note line ends with a semicolon and the P.E. definition follows as a separate paragraph; both are printed that way."
+  ],
+  "verification": {
+    "transcription": {
+      "pass_id": "sew-t08-r3-first-reading",
+      "method": "Direct visual reading of the full 144 dpi annotation-cleaned page PNG plus a 300 dpi crop of the table, its caption and both printed note lines; earlier sew-t08 draft re-read and retained. No OCR, no paid service, no delegation.",
+      "observations": "First reading only (recovery batch). Caption, both headers, all five rows and both note lines checked glyph by glyph against the image. The last two rows print a bare value with no (A) marker; the heading is printed \"(m³/P.E.)\" here against \"m³/(P.E.)\" in Table 6.12. Retained as printed. No distinct second visual pass and no verification seal."
+    }
+  }
+}

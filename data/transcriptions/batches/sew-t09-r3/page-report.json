@@ -1,0 +1,26 @@
+[
+ {
+  "pdf_page": 627,
+  "page_label": "7 - 14",
+  "targets": [],
+  "no_targets_reason": "Figure 7.7 (sewage reuse schematic at M/S RCF, Mumbai) is an equipment-flow diagram whose boxes carry only equipment names and process labels, for example Raw sewage from Ghatkopar PS, Stilling Chamber, Screen, Grit Separator, Aeration Tank, Backwash Water Storage Pumps, Secondary Clarifier, High Rate Clarifier, Gravity Sand Filters, Intermediate Storage, Pressure Filters, Backwash Pumps, Cartridge Filters, RO Feed Pumps, R O, Degasser, Final Storage, Feed Chamber, Thickener, SDB, Dried Sludge for Disposal, Filtrate Sump & Pumps. It prints no equality, inequality or formula label, so no figure-math record was created. The body text is running prose, and the prose inequality SDI < 3.0 is narrative, not an item to convert into notation (no invented equation record).",
+  "continuations": [
+   "Section 7.2.6 and Figure 7.7 are self-contained on this page.",
+   "Section 7.2.7 Bengaluru, India starts at the foot of the page and continues on 628."
+  ],
+  "unclear": [],
+  "image_viewed": "tmp/pdfs/sew-t09/page-627.png"
+ },
+ {
+  "pdf_page": 628,
+  "page_label": "7 - 15",
+  "targets": [],
+  "no_targets_reason": "Running prose continuation of section 7.2.7 Bengaluru and the start of 7.2.8 Karnal, India. No table grid and no printed equation; the contained quantities (20 km, 65 m fall, 8 km, 140 mld, 1500 mld, Rs.15.6 per kilo litre, Rs.14.2 per kilo litre) are narrative cost and distance figures, not a formula or table. The page points forward to Table 7.6 (page 629) and Figure 7.8 (page 630), neither of which is printed here.",
+  "continuations": [
+   "Section 7.2.7 text started on 627 ends here after the Table 7.6 forward reference.",
+   "Section 7.2.8 Karnal, India starts near the foot of the page and continues on 631, which carries Figure 7.9 and the CSSRI source note; note that physical page 629-630 hold Table 7.6 and Figure 7.8 between them."
+  ],
+  "unclear": [],
+  "image_viewed": "tmp/pdfs/sew-t09/page-628.png"
+ }
+]

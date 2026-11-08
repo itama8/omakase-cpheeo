@@ -1,0 +1,151 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:T5.57",
+  "unit_id": "SEW-2013-A:T5.57",
+  "manual_id": "SEW-2013-A",
+  "kind": "table",
+  "number": "5.57",
+  "title": "Typical process parameters for SBR configurations (for unsettled sludge)",
+  "state": "verified",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "regions": [
+    {
+      "pdf_page": 502,
+      "page_label": "5 - 198",
+      "bbox": [
+        86.3,
+        72.5,
+        510.3,
+        449.0
+      ],
+      "render_sha256": "5089fd0bb5c9a248326b3d3ba615e6e6f9dd3c20be4effb5377375bf5e686d25"
+    }
+  ],
+  "headers": [
+    "S. No.",
+    "Parameters",
+    "Units",
+    "Continuous Flow and Intermittent Decant",
+    "Intermittent Flow and Intermittent Decant"
+  ],
+  "rows": [
+    [
+      "1",
+      "F/M ratio",
+      "d⁻¹",
+      "0.05 - 0.08",
+      "0.05 - 0.3"
+    ],
+    [
+      "2",
+      "Sludge Age",
+      "d",
+      "15 - 20",
+      "4 - 20"
+    ],
+    [
+      "3",
+      "Sludge Yield",
+      "kg dry solids/ kg BOD",
+      "0.75 - 0.85",
+      "0.75 - 1.0"
+    ],
+    [
+      "4",
+      "MLSS",
+      "mg/L",
+      "3,000 - 4,000",
+      "3,500 – 5,000"
+    ],
+    [
+      "5",
+      "Cycle Time",
+      "h",
+      "4 - 8",
+      "2.5 - 6"
+    ],
+    [
+      "6",
+      "Settling Time",
+      "h",
+      "> 0.5",
+      "> 0.5"
+    ],
+    [
+      "7",
+      "Decant Depth",
+      "m",
+      "1.5",
+      "2.5"
+    ],
+    [
+      "8",
+      "Fill Volume Base",
+      "-",
+      "Peak Flow",
+      "Peak Flow"
+    ],
+    [
+      "9",
+      "Process Oxygen",
+      "",
+      "",
+      ""
+    ],
+    [
+      "",
+      "BOD",
+      "kg O₂/kg BOD",
+      "1.1",
+      "1.1"
+    ],
+    [
+      "",
+      "TKN",
+      "kg O₂/kg TN",
+      "4.6",
+      "4.6"
+    ],
+    [
+      "* For Phosphorous ≤ 1 mg/L, after bio-P removal, metal precipitant (Fe³⁺ or Al³⁺) shall be added. Sludge yield factor and sludge age not applicable for primary settled sewage; typical primary TSS removal 60%, BOD 30%.",
+      "",
+      "",
+      "",
+      ""
+    ]
+  ],
+  "cell_spans": [
+    {
+      "column": 0,
+      "row": 11,
+      "colspan": 5,
+      "description": "Printed asterisk note spans the full table width as the last row"
+    }
+  ],
+  "markdown": "| S. No. | Parameters | Units | Continuous Flow and Intermittent Decant | Intermittent Flow and Intermittent Decant |\n| --- | --- | --- | --- | --- |\n| 1 | F/M ratio | d⁻¹ | 0.05 - 0.08 | 0.05 - 0.3 |\n| 2 | Sludge Age | d | 15 - 20 | 4 - 20 |\n| 3 | Sludge Yield | kg dry solids/ kg BOD | 0.75 - 0.85 | 0.75 - 1.0 |\n| 4 | MLSS | mg/L | 3,000 - 4,000 | 3,500 – 5,000 |\n| 5 | Cycle Time | h | 4 - 8 | 2.5 - 6 |\n| 6 | Settling Time | h | > 0.5 | > 0.5 |\n| 7 | Decant Depth | m | 1.5 | 2.5 |\n| 8 | Fill Volume Base | - | Peak Flow | Peak Flow |\n| 9 | Process Oxygen |  |  |  |\n|  | BOD | kg O₂/kg BOD | 1.1 | 1.1 |\n|  | TKN | kg O₂/kg TN | 4.6 | 4.6 |\n| * For Phosphorous ≤ 1 mg/L, after bio-P removal, metal precipitant (Fe³⁺ or Al³⁺) shall be added. Sludge yield factor and sludge age not applicable for primary settled sewage; typical primary TSS removal 60%, BOD 30%. |  |  |  |  |",
+  "notes": [
+    "No Source line is printed for this table.",
+    "The asterisk note is printed inside the ruled table as a full-width row below the last data row; transcribed as the last row with a full-width span.",
+    "Printed as 'Phosphorous' in the asterisk note (not 'Phosphorus'); retained, not corrected.",
+    "Row 4: the value cells print '3,000 - 4,000' and '3,500 – 5,000'. The second range uses a longer dash than the first and than every other range in the table; both forms are retained as printed.",
+    "Printed header 'S. No.' is set on two lines ('S.' over 'No.').",
+    "Rows 9 to 11: 'Process Oxygen' prints no unit and no values; the sub-rows 'BOD' and 'TKN' carry the values and their S. No. cells are blank as printed.",
+    "Printed unit 'd-1' has a superscript minus one; written d⁻¹. Printed 'kg O2/kg BOD' and 'kg O2/kg TN' use a subscript 2; written O₂.",
+    "Row 8 prints a hyphen as its unit ('-') and 'Peak Flow' in both value columns; retained.",
+    "Printed as 'Fill Volume Base' and 'Settling Time'; retained.",
+    "The two value-column headings are printed across four lines each ('Continuous / Flow and / Intermittent / Decant'); joined with spaces."
+  ],
+  "verification": {
+    "transcription": {
+      "pass_id": "sew-t07-first-reading-2026-11-08",
+      "method": "Direct viewing of the annotation-cleaned 144 dpi page renders and 260-800 dpi crops of the same pages; no OCR, no paid service",
+      "observations": "Table read from two 400 dpi crops; the header block, all nine numbered rows, the BOD/TKN sub-rows and the asterisk note read separately. The dash in '3,500 – 5,000' was compared against '3,000 - 4,000' at 400 dpi and is visibly longer."
+    },
+    "visual_recheck": {
+      "pass_id": "targeted-sew-01-parent-recheck",
+      "method": "Distinct parent comparison of each selected source-region crop and larger zoom, without whole-page review; not independent human review.",
+      "observations": "Compared every selected table header, cell and source/footnote text. Preserved units, printed precision, inequalities and blank cells. Joined wrapped Sludge Yield unit with a single space in both structured cells and Markdown.",
+      "content_sha256": "fad92030ade1a29449091a8db215ee8da9f0142d17d2df7d55d771c0a94e8962"
+    }
+  }
+}
