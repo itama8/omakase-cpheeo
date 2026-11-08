@@ -1,0 +1,73 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:Tp291-1",
+  "unit_id": "SEW-2013-A:Tp291-1",
+  "manual_id": "SEW-2013-A",
+  "kind": "table",
+  "number": "p291-1",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "state": "verified",
+  "regions": [
+    {
+      "pdf_page": 291,
+      "page_label": "4 - 18",
+      "bbox": [
+        352,
+        328,
+        472,
+        424
+      ],
+      "render_sha256": "2b1b69a12e644c47174605f340aa6783450db9ca28bcc8afe87c6eb3a062ef10"
+    }
+  ],
+  "title": "Unnumbered number-of-pumps flow table in Figure 4.10",
+  "headers": [
+    "No. OF PUMPS IN OPERN",
+    "FLOW OF EACH PUMP"
+  ],
+  "rows": [
+    [
+      "1",
+      "Q₁"
+    ],
+    [
+      "2",
+      "Q₂"
+    ],
+    [
+      "3",
+      "Q₃"
+    ]
+  ],
+  "cell_spans": [
+    {
+      "description": "Each header cell is printed on three lines: 'No. OF / PUMPS / IN OPERN' and 'FLOW OF / EACH / PUMP'. Cell text joined with single spaces.",
+      "columns": [
+        0,
+        1
+      ]
+    }
+  ],
+  "markdown": "| No. OF PUMPS IN OPERN | FLOW OF EACH PUMP |\n| --- | --- |\n| 1 | Q₁ |\n| 2 | Q₂ |\n| 3 | Q₃ |",
+  "notes": [
+    "Printed as 'OPERN'; not corrected (OPERATION is presumably intended).",
+    "Printed as 'No. OF'; not corrected.",
+    "The table is printed inside the Figure 4.10 chart. The same chart carries the curve labels 'H = f (o) THREE PUMPS', 'H = f (o) ONE PUMP', 'H = f (o) TWO PUMPS', 'NPSHn = f (Q)' and 'n = f (Q)', and the discharge axis is marked 'Q3 Q2 Q1'. The lower-case 'o' in 'f (o)' is printed that way, where Q is presumably intended; preserved verbatim, not corrected.",
+    "Unnumbered table embedded in a figure; p291-1 is a service locator, not a printed table number."
+  ],
+  "verification": {
+    "transcription": {
+      "pass_id": "sew-t02-first-reading",
+      "method": "Direct visual reading of full 144 dpi annotation-cleaned page PNGs plus 200-600 dpi detail crops of each item, rotated where the printed page is landscape; no OCR, no paid service, no delegation",
+      "observations": "First reading only. Every printed value, coefficient, power, sign, bracket, spelling and unit retained as printed; source oddities kept and flagged rather than corrected. No distinct second visual pass performed."
+    },
+    "visual_recheck": {
+      "pass_id": "parent-recheck-sew-t02",
+      "method": "distinct second visual inspection of exact source-region renders (incl. rotated/zoomed crops) by parent assistant; not independent human review",
+      "observations": "Parent compared every cell/term against 144-dpi region renders and 200-dpi rotated crops; confirmed all values and printed anomalies.",
+      "content_sha256": "d1b3cd80aaa34b0279650a7a805e8e321502b37dd62657d13d2f2b4ef8b259d0"
+    }
+  },
+  "create_unit": true,
+  "parent_id": "SEW-2013-A:4.7.5"
+}

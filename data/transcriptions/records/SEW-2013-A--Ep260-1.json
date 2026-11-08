@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:Ep260-1",
+  "unit_id": "SEW-2013-A:Ep260-1",
+  "manual_id": "SEW-2013-A",
+  "kind": "equation",
+  "number": "p260-1",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "state": "verified",
+  "regions": [
+    {
+      "pdf_page": 260,
+      "page_label": "3 - 115",
+      "bbox": [
+        84,
+        500,
+        118,
+        772
+      ],
+      "render_sha256": "a2fde6d824f0bc0f9b8c21b62954f7b14f15615282a0efcfebd34de938e60f5d"
+    }
+  ],
+  "title": "Figure 3.56 label: transfer of H2S to pipe wall and oxidation to H2SO4",
+  "parent_id": "SEW-2013-A:3.69.4",
+  "latex": "\\mathrm{H_2S} + 2\\,\\mathrm{O_2} \\rightarrow \\mathrm{H_2SO_4}",
+  "readable": "H2S + 2 O2 → H2SO4",
+  "symbols": [],
+  "applicability": "Label printed inside Figure 3.56 'Sulphide gas equilibrium in negligible oxygen conditions in sewers' (Source: USEPA, 1974). The label reads 'TRANSFER OF H₂S TO PIPE WALL, OXIDATION TO H₂SO₄' with a leader arrow pointing to the acidic condensate on the pipe wall.",
+  "notes": [
+    "Unnumbered relation printed inside the Figure 3.56 diagram; p260-1 is a service locator, not a printed equation number.",
+    "No symbol definitions, units or conditions are printed for this relation.",
+    "The page is printed landscape inside a portrait page; the region bbox is in unrotated page coordinates and the evidence crop is read after rotating it 90 degrees."
+  ],
+  "verification": {
+    "transcription": {
+      "pass_id": "sew-t02-first-reading",
+      "method": "Direct visual reading of full 144 dpi annotation-cleaned page PNGs plus 200-600 dpi detail crops of each item, rotated where the printed page is landscape; no OCR, no paid service, no delegation",
+      "observations": "First reading only. Every printed value, coefficient, power, sign, bracket, spelling and unit retained as printed; source oddities kept and flagged rather than corrected. No distinct second visual pass performed."
+    },
+    "visual_recheck": {
+      "pass_id": "parent-recheck-sew-t02",
+      "method": "distinct second visual inspection of exact source-region renders (incl. rotated/zoomed crops) by parent assistant; not independent human review",
+      "observations": "Parent compared every cell/term against 144-dpi region renders and 200-dpi rotated crops; confirmed all values and printed anomalies.",
+      "content_sha256": "ec148387824da8d93a79e15887752b1af73a5a7ae8f5fbbb747008b31b8106f4"
+    }
+  }
+}

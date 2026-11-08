@@ -1,0 +1,89 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:Tp298-1",
+  "unit_id": "SEW-2013-A:Tp298-1",
+  "manual_id": "SEW-2013-A",
+  "kind": "table",
+  "number": "p298-1",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "state": "pending",
+  "regions": [
+    {
+      "pdf_page": 298,
+      "page_label": "4 - 25",
+      "bbox": [
+        157,
+        76,
+        245,
+        226
+      ],
+      "render_sha256": "c34a1b6010ca85b02f2a6f36408ca427aa951adf51fa4195178fdbbe56222896"
+    }
+  ],
+  "title": "Unnumbered equipment schedule table in Figure 4.12",
+  "headers": [
+    "NAME",
+    "SIZE",
+    "NOS."
+  ],
+  "rows": [
+    [
+      "RS",
+      "2400 X 3000",
+      "01"
+    ],
+    [
+      "D",
+      "1200 X 2100",
+      "01"
+    ],
+    [
+      "W",
+      "1500 X 1200",
+      "04"
+    ],
+    [
+      "V",
+      "1500 X 600",
+      "04"
+    ],
+    [
+      "",
+      "EXHAUST FAN",
+      "01"
+    ]
+  ],
+  "cell_spans": [
+    {
+      "description": "Row 6 ('EXHAUST FAN') has a blank printed NAME cell.",
+      "columns": [
+        0
+      ]
+    },
+    {
+      "description": "Rows 7 and 8 of the printed grid are full-width merged note rows and are recorded in notes, not as data rows.",
+      "columns": [
+        0,
+        1,
+        2
+      ]
+    }
+  ],
+  "markdown": "| NAME | SIZE | NOS. |\n| --- | --- | --- |\n| RS | 2400 X 3000 | 01 |\n| D | 1200 X 2100 | 01 |\n| W | 1500 X 1200 | 04 |\n| V | 1500 X 600 | 04 |\n|  | EXHAUST FAN | 01 |",
+  "notes": [
+    "Rows 7 and 8 of the printed table are merged full-width note rows, transcribed verbatim here: 'CIVIL WORK IS DESIGNED FOR YEAR 2041' and 'PUMP IS DESIGNED FOR YEAR 2026, IN FUTURE IT IS BEING REPLACED BY HIGHER CAPACITY PUMP.'",
+    "RS, D, W and V are printed as bare letter designations in the NAME column. The drawing marks the same letters on the wet well chambers (RS, D, W/V); no expansion is printed in the table, so none has been supplied.",
+    "The table is printed inside the landscape Figure 4.12 drawing; the region bbox is in unrotated page coordinates and the evidence crop is read after rotating it 90 degrees.",
+    "Sizes are printed with a capital X and no unit; spacing inside the SIZE cells is preserved as printed.",
+    "Unnumbered table embedded in a figure; p298-1 is a service locator, not a printed table number."
+  ],
+  "verification": {
+    "transcription": {
+      "pass_id": "sew-t02-first-reading",
+      "method": "Direct visual reading of full 144 dpi annotation-cleaned page PNGs plus 200-600 dpi detail crops of each item, rotated where the printed page is landscape; no OCR, no paid service, no delegation",
+      "observations": "First reading only. Every printed value, coefficient, power, sign, bracket, spelling and unit retained as printed; source oddities kept and flagged rather than corrected. No distinct second visual pass performed."
+    }
+  },
+  "create_unit": true,
+  "parent_id": "SEW-2013-A:4.18"
+}

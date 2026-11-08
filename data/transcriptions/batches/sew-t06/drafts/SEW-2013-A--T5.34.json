@@ -1,0 +1,166 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:T5.34",
+  "unit_id": "SEW-2013-A:T5.34",
+  "manual_id": "SEW-2013-A",
+  "kind": "table",
+  "number": "5.34",
+  "title": "Typical criteria for nitrification-denitrification systems (20°C MLSS temperature)",
+  "state": "pending",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "regions": [
+    {
+      "pdf_page": 472,
+      "page_label": "5 - 168",
+      "bbox": [
+        74.0,
+        85.0,
+        526.0,
+        612.0
+      ],
+      "render_sha256": "6f2a2df2ca88c779667573daa0e001e9f369e536fe71b4bd83d359fc15a25b55"
+    }
+  ],
+  "headers": [
+    "Parameter",
+    "Pre-denitrification",
+    "Post-denitrification",
+    "Combined Pre- and Post-denitrification"
+  ],
+  "rows": [
+    [
+      "System SRT, days",
+      "6-30",
+      "6-30",
+      "8-40"
+    ],
+    [
+      "HRT, hours",
+      "",
+      "",
+      ""
+    ],
+    [
+      "First anoxic zone",
+      "2-8",
+      "-",
+      "2-6"
+    ],
+    [
+      "First aerobic zone",
+      "6-12",
+      "6-12",
+      "6-12"
+    ],
+    [
+      "Second anoxic zone",
+      "-",
+      "2-6",
+      "2-5"
+    ],
+    [
+      "Reaeration zone",
+      "-",
+      "-",
+      "0.5-1.0"
+    ],
+    [
+      "MLSS, mg/l",
+      "1500-4000",
+      "1500-4000",
+      "2000-5000"
+    ],
+    [
+      "Nitrate recycle",
+      "2-4 Q*",
+      "",
+      "2-4 Q"
+    ],
+    [
+      "RAS flow",
+      "0.5-1 Q",
+      "0.5-1 Q",
+      "100% (Q design)"
+    ],
+    [
+      "Dissolved oxygen, mg/l",
+      "",
+      "",
+      ""
+    ],
+    [
+      "Anoxic zones",
+      "0",
+      "0",
+      "0"
+    ],
+    [
+      "Aerobic zones",
+      "1-4",
+      "1-4",
+      "1-4"
+    ],
+    [
+      "Mixing requirements",
+      "",
+      "",
+      ""
+    ],
+    [
+      "Anoxic zones, kw/10³m³",
+      "4-10",
+      "4-10",
+      "4-10"
+    ],
+    [
+      "Aerobic zones, kw/10³m³",
+      "20-40",
+      "20-40",
+      "20-40"
+    ],
+    [
+      "Airflow, aerobic, m³/min 10³ m³",
+      "10-30",
+      "10-30",
+      "10-40"
+    ]
+  ],
+  "cell_spans": [
+    {
+      "column": 0,
+      "row": 1,
+      "colspan": 4,
+      "description": "Printed section heading 'HRT, hours' spans the full table width"
+    },
+    {
+      "column": 0,
+      "row": 9,
+      "colspan": 4,
+      "description": "Printed section heading 'Dissolved oxygen, mg/l' spans the full table width"
+    },
+    {
+      "column": 0,
+      "row": 12,
+      "colspan": 4,
+      "description": "Printed section heading 'Mixing requirements' spans the full table width"
+    }
+  ],
+  "markdown": "| Parameter | Pre-denitrification | Post-denitrification | Combined Pre- and Post-denitrification |\n| --- | --- | --- | --- |\n| System SRT, days | 6-30 | 6-30 | 8-40 |\n| HRT, hours |  |  |  |\n| First anoxic zone | 2-8 | - | 2-6 |\n| First aerobic zone | 6-12 | 6-12 | 6-12 |\n| Second anoxic zone | - | 2-6 | 2-5 |\n| Reaeration zone | - | - | 0.5-1.0 |\n| MLSS, mg/l | 1500-4000 | 1500-4000 | 2000-5000 |\n| Nitrate recycle | 2-4 Q* |  | 2-4 Q |\n| RAS flow | 0.5-1 Q | 0.5-1 Q | 100% (Q design) |\n| Dissolved oxygen, mg/l |  |  |  |\n| Anoxic zones | 0 | 0 | 0 |\n| Aerobic zones | 1-4 | 1-4 | 1-4 |\n| Mixing requirements |  |  |  |\n| Anoxic zones, kw/10³m³ | 4-10 | 4-10 | 4-10 |\n| Aerobic zones, kw/10³m³ | 20-40 | 20-40 | 20-40 |\n| Airflow, aerobic, m³/min 10³ m³ | 10-30 | 10-30 | 10-40 |",
+  "notes": [
+    "Printed immediately below the table: '* Energy input is an important parameter; however, the manufacturer should be consulted for determining the number and placement of mixers. Propeller and turbine mixers have been used successfully.'",
+    "Printed immediately below the footnote: 'Source:WEF, 2010'.",
+    "The asterisk is attached to '2-4 Q*' in the Pre-denitrification cell only; the Combined column prints '2-4 Q' without an asterisk, and the Post-denitrification cell is empty. Retained exactly.",
+    "The footnote marked by the asterisk talks about mixer energy input, which reads as a note about the mixing requirements rows rather than about nitrate recycle. Retained as printed; no reading is imposed.",
+    "Printed caption writes '20°C MLSS temperature'.",
+    "The running text below the table on the same page (dissolved oxygen assumptions and item a on oxygen demand of 4.57 mg O2/mgN with 2.86 mg O2/mgN released) is prose, not a displayed equation, and is not transcribed as a formula."
+  ],
+  "verification": {
+    "transcription": {
+      "pass_id": "sew-t06-first-reading-2026-11-08",
+      "method": "Direct viewing of the annotation-cleaned 144 dpi page render and 300-360 dpi crops; no OCR, no paid service",
+      "observations": "All 16 rows read from a 300 dpi crop; the three full-width section rows identified from the missing internal rules. Printed dashes, percentages and the lone asterisk verified."
+    }
+  },
+  "create_unit": true,
+  "parent_id": "SEW-2013-A:5.34"
+}

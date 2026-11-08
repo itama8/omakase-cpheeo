@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:T5.36",
+  "unit_id": "SEW-2013-A:T5.36",
+  "manual_id": "SEW-2013-A",
+  "kind": "table",
+  "number": "5.36",
+  "title": "Performance of AO processes",
+  "state": "pending",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "regions": [
+    {
+      "pdf_page": 476,
+      "page_label": "5 - 172",
+      "bbox": [
+        78.0,
+        326.0,
+        516.0,
+        590.0
+      ],
+      "render_sha256": "e0fe9d1cd43abd151a527e8eda179193b6833028460edb55fdba914150453425"
+    }
+  ],
+  "headers": [
+    "Site",
+    "Anaerobic",
+    "Oxic",
+    "MLSS (mg/l)",
+    "Influent",
+    "Effluent",
+    "Removal %",
+    "Ref"
+  ],
+  "rows": [
+    [
+      "Largo, USA",
+      "1.5",
+      "2.6",
+      "-",
+      "8.9",
+      "1.85",
+      "79.2",
+      "1"
+    ],
+    [
+      "Pontiac, USA",
+      "1.8",
+      "6.7",
+      "2,430-2,820",
+      "3.0-4.1",
+      "0.4-0.8",
+      "80.0",
+      "2"
+    ],
+    [
+      "Kawasaki JP",
+      "2.0",
+      "3.5",
+      "2,200",
+      "2.05-4.54",
+      "0.16-0.45",
+      "90.8",
+      "3"
+    ],
+    [
+      "Fukuoka JP",
+      "3.3",
+      "9.7",
+      "1,620",
+      "8.2",
+      "0.63",
+      "92.3",
+      "3"
+    ]
+  ],
+  "cell_spans": [
+    {
+      "column": 1,
+      "header": true,
+      "colspan": 2,
+      "description": "Printed group heading 'HRT (hours)' spans the Anaerobic and Oxic sub-headings"
+    },
+    {
+      "column": 4,
+      "header": true,
+      "colspan": 3,
+      "description": "Printed group heading 'Total Phosphorous (mg/L)' spans Influent, Effluent and Removal %"
+    }
+  ],
+  "markdown": "| Site | Anaerobic | Oxic | MLSS (mg/l) | Influent | Effluent | Removal % | Ref |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| Largo, USA | 1.5 | 2.6 | - | 8.9 | 1.85 | 79.2 | 1 |\n| Pontiac, USA | 1.8 | 6.7 | 2,430-2,820 | 3.0-4.1 | 0.4-0.8 | 80.0 | 2 |\n| Kawasaki JP | 2.0 | 3.5 | 2,200 | 2.05-4.54 | 0.16-0.45 | 90.8 | 3 |\n| Fukuoka JP | 3.3 | 9.7 | 1,620 | 8.2 | 0.63 | 92.3 | 3 |",
+  "notes": [
+    "Printed below the table: 'Ref 1: USEPA, 1987', 'Ref 2: USEPA, 1987', 'Ref 3: Murata, 1992'.",
+    "Transcriber layout note: headers are printed on two levels. Row 1 reads 'Site / HRT (hours) / MLSS (mg/l) / Total Phosphorous (mg/L) / Ref'; row 2 reads 'Anaerobic / Oxic' under HRT and 'Influent / Effluent / Removal %' under Total Phosphorous. The flattened header labels above keep the printed sub-headings.",
+    "Rows 1 and 2 both point to 'USEPA, 1987' as printed. Not treated as an error and not merged.",
+    "Site names are printed with the city and country on separate lines ('Largo, USA'); the printed comma is retained on one line.",
+    "Removal percentages are printed to one decimal place (79.2, 80.0, 90.8, 92.3); trailing zeroes retained."
+  ],
+  "verification": {
+    "transcription": {
+      "pass_id": "sew-t06-first-reading-2026-11-08",
+      "method": "Direct viewing of the annotation-cleaned 144 dpi page render and 300-420 dpi crops; no OCR, no paid service",
+      "observations": "All four data rows and both header levels read from a 300 dpi crop; decimals and the MLSS range 2,430-2,820 checked digit by digit."
+    }
+  },
+  "create_unit": true,
+  "parent_id": "SEW-2013-A:5.36"
+}

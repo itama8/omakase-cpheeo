@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:T5.48",
+  "unit_id": "SEW-2013-A:T5.48",
+  "manual_id": "SEW-2013-A",
+  "kind": "table",
+  "number": "5-48",
+  "title": "Performance of MBR process",
+  "state": "pending",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "regions": [
+    {
+      "pdf_page": 490,
+      "page_label": "5 - 186",
+      "bbox": [
+        138.0,
+        86.0,
+        452.0,
+        192.0
+      ],
+      "render_sha256": "a0e3311a96c031a5d47f127ed8e2f01c609b4cf8812f9a5de9b6ae731b0971e9"
+    }
+  ],
+  "headers": [
+    "Parameter",
+    "BOD",
+    "COD",
+    "TSS"
+  ],
+  "rows": [
+    [
+      "Influent(mg/l)",
+      "208",
+      "424",
+      "210"
+    ],
+    [
+      "Effluent(mg/l)",
+      "<4",
+      "22",
+      "<2"
+    ]
+  ],
+  "cell_spans": [],
+  "markdown": "| Parameter | BOD | COD | TSS |\n| --- | --- | --- | --- |\n| Influent(mg/l) | 208 | 424 | 210 |\n| Effluent(mg/l) | <4 | 22 | <2 |",
+  "notes": [
+    "Printed below the table: 'Source: Churchhouse, 2003'.",
+    "Printed number is '5-48' (hyphen) in the caption; kept as printed.",
+    "Printed without a space before the unit parenthesis ('Influent(mg/l)', 'Effluent(mg/l)'); retained.",
+    "The table carries no statement of which plant or period it refers to; the running text on the page names the Porlock Sewage Treatment Plant, United Kingdom."
+  ],
+  "verification": {
+    "transcription": {
+      "pass_id": "sew-t06-first-reading-2026-11-08",
+      "method": "Direct viewing of the annotation-cleaned 144 dpi page render and 360-540 dpi crops; no OCR, no paid service",
+      "observations": "Both rows and four headings read from a 420 dpi crop; '<4' and '<2' checked."
+    }
+  },
+  "create_unit": true,
+  "parent_id": "SEW-2013-A:5-48"
+}

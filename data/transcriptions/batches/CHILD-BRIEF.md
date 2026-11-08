@@ -21,3 +21,5 @@ Rules
 - Report: data/transcriptions/batches/<batch>/page-report.json = list of {pdf_page, page_label, targets:[ids], no_targets_reason, continuations, unclear, image_viewed:path}.
   EVERY assigned page must appear, including pages with no targets. Plus a short REPORT.md.
 - Native PDF text may help locate, but every value must be confirmed against the image.
+- create_unit/parent_id: if the table id already exists in data/build/cpheeo.sqlite `units` (baseline indexed table), DO NOT set create_unit or parent_id. Only new/unindexed tables get "create_unit": true plus parent_id = enclosing section unit id.
+- Never silently fix spelling: e.g. a printed "CAPICITY" stays "CAPICITY" with a note.

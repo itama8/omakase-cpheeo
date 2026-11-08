@@ -1,0 +1,312 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:T5.40",
+  "unit_id": "SEW-2013-A:T5.40",
+  "manual_id": "SEW-2013-A",
+  "kind": "table",
+  "number": "5.40",
+  "title": "Performance of A2O process (Toba STP, Kyoto, Japan)",
+  "state": "pending",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "regions": [
+    {
+      "pdf_page": 481,
+      "page_label": "5 - 177",
+      "bbox": [
+        78.0,
+        68.0,
+        512.0,
+        300.0
+      ],
+      "render_sha256": "28552a22ed0ad06a0c069af7768d37b22dc05b3d30264ef91670b14b8c471398"
+    }
+  ],
+  "headers": [
+    "Run",
+    "Water Temp. (°C)",
+    "Anaer obic",
+    "Anoxic",
+    "Oxic",
+    "F/M",
+    "MLSS (mg/l)",
+    "TN or TP",
+    "Influent mg/l",
+    "Effluent mg/l",
+    "Removal (%)"
+  ],
+  "rows": [
+    [
+      "1",
+      "17.6",
+      "1.3",
+      "2.7",
+      "6.0",
+      "0.12",
+      "1,570",
+      "TN",
+      "27.0",
+      "8.3",
+      "69"
+    ],
+    [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "TP",
+      "2.7",
+      "0.8",
+      "70"
+    ],
+    [
+      "2",
+      "14.9",
+      "1.3",
+      "2.6",
+      "6.0",
+      "0.14",
+      "1,560",
+      "TN",
+      "26.9",
+      "10.0",
+      "63"
+    ],
+    [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "TP",
+      "2.8",
+      "1.1",
+      "61"
+    ],
+    [
+      "3",
+      "20.6",
+      "1.3",
+      "2.7",
+      "6.1",
+      "0.12",
+      "1,810",
+      "TN",
+      "24.7",
+      "8.9",
+      "64"
+    ],
+    [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "TP",
+      "3.0",
+      "0.3",
+      "90"
+    ],
+    [
+      "4",
+      "23.8",
+      "1.3",
+      "2.6",
+      "5.8",
+      "0.08",
+      "1,930",
+      "TN",
+      "17.5",
+      "6.9",
+      "61"
+    ],
+    [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "TP",
+      "1.9",
+      "1.5",
+      "21"
+    ]
+  ],
+  "cell_spans": [
+    {
+      "column": 0,
+      "row": 0,
+      "rowspan": 2,
+      "description": "Printed Run cell 1 covers the TN and TP sub-rows"
+    },
+    {
+      "column": 1,
+      "row": 0,
+      "rowspan": 2
+    },
+    {
+      "column": 2,
+      "row": 0,
+      "rowspan": 2
+    },
+    {
+      "column": 3,
+      "row": 0,
+      "rowspan": 2
+    },
+    {
+      "column": 4,
+      "row": 0,
+      "rowspan": 2
+    },
+    {
+      "column": 5,
+      "row": 0,
+      "rowspan": 2
+    },
+    {
+      "column": 6,
+      "row": 0,
+      "rowspan": 2
+    },
+    {
+      "column": 0,
+      "row": 2,
+      "rowspan": 2,
+      "description": "Printed Run cell 2 covers the TN and TP sub-rows"
+    },
+    {
+      "column": 1,
+      "row": 2,
+      "rowspan": 2
+    },
+    {
+      "column": 2,
+      "row": 2,
+      "rowspan": 2
+    },
+    {
+      "column": 3,
+      "row": 2,
+      "rowspan": 2
+    },
+    {
+      "column": 4,
+      "row": 2,
+      "rowspan": 2
+    },
+    {
+      "column": 5,
+      "row": 2,
+      "rowspan": 2
+    },
+    {
+      "column": 6,
+      "row": 2,
+      "rowspan": 2
+    },
+    {
+      "column": 0,
+      "row": 4,
+      "rowspan": 2,
+      "description": "Printed Run cell 3 covers the TN and TP sub-rows"
+    },
+    {
+      "column": 1,
+      "row": 4,
+      "rowspan": 2
+    },
+    {
+      "column": 2,
+      "row": 4,
+      "rowspan": 2
+    },
+    {
+      "column": 3,
+      "row": 4,
+      "rowspan": 2
+    },
+    {
+      "column": 4,
+      "row": 4,
+      "rowspan": 2
+    },
+    {
+      "column": 5,
+      "row": 4,
+      "rowspan": 2
+    },
+    {
+      "column": 6,
+      "row": 4,
+      "rowspan": 2
+    },
+    {
+      "column": 0,
+      "row": 6,
+      "rowspan": 2,
+      "description": "Printed Run cell 4 covers the TN and TP sub-rows"
+    },
+    {
+      "column": 1,
+      "row": 6,
+      "rowspan": 2
+    },
+    {
+      "column": 2,
+      "row": 6,
+      "rowspan": 2
+    },
+    {
+      "column": 3,
+      "row": 6,
+      "rowspan": 2
+    },
+    {
+      "column": 4,
+      "row": 6,
+      "rowspan": 2
+    },
+    {
+      "column": 5,
+      "row": 6,
+      "rowspan": 2
+    },
+    {
+      "column": 6,
+      "row": 6,
+      "rowspan": 2
+    },
+    {
+      "column": 2,
+      "header": true,
+      "colspan": 2,
+      "description": "Printed header 'HRT (hr)' spans the Anoxic and Oxic sub-headings"
+    }
+  ],
+  "markdown": "| Run | Water Temp. (°C) | Anaer obic | Anoxic | Oxic | F/M | MLSS (mg/l) | TN or TP | Influent mg/l | Effluent mg/l | Removal (%) |\n| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |\n| 1 | 17.6 | 1.3 | 2.7 | 6.0 | 0.12 | 1,570 | TN | 27.0 | 8.3 | 69 |\n|  |  |  |  |  |  |  | TP | 2.7 | 0.8 | 70 |\n| 2 | 14.9 | 1.3 | 2.6 | 6.0 | 0.14 | 1,560 | TN | 26.9 | 10.0 | 63 |\n|  |  |  |  |  |  |  | TP | 2.8 | 1.1 | 61 |\n| 3 | 20.6 | 1.3 | 2.7 | 6.1 | 0.12 | 1,810 | TN | 24.7 | 8.9 | 64 |\n|  |  |  |  |  |  |  | TP | 3.0 | 0.3 | 90 |\n| 4 | 23.8 | 1.3 | 2.6 | 5.8 | 0.08 | 1,930 | TN | 17.5 | 6.9 | 61 |\n|  |  |  |  |  |  |  | TP | 1.9 | 1.5 | 21 |",
+  "notes": [
+    "Source: Murata, 1992",
+    "Transcriber layout note: each printed run occupies one block with a TN line and a TP line, and the left seven columns are printed once per block. The record expands each block into two rows and leaves the repeated cells empty; the row spans are listed in cell_spans.",
+    "Printed header reads 'Anaer obic' with the word broken across two lines without a hyphen; retained here as printed.",
+    "The header block also carries 'HRT (hr)' above the Anaerobic / Anoxic / Oxic columns.",
+    "Removal percentages are printed as whole numbers (69, 70, 63, 61, 64, 90, 61, 21) while influent and effluent values carry one or two decimals; retained."
+  ],
+  "verification": {
+    "transcription": {
+      "pass_id": "sew-t06-first-reading-2026-11-08",
+      "method": "Direct viewing of the annotation-cleaned 144 dpi page render and 300-420 dpi crops; no OCR, no paid service",
+      "observations": "All four run blocks read from a 360 dpi crop covering the top and bottom halves; every TN and TP value read individually and the merged-cell rule pattern checked."
+    }
+  },
+  "create_unit": true,
+  "parent_id": "SEW-2013-A:5.40"
+}

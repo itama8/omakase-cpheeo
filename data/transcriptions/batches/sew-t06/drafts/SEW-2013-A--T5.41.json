@@ -1,0 +1,71 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:T5.41",
+  "unit_id": "SEW-2013-A:T5.41",
+  "manual_id": "SEW-2013-A",
+  "kind": "table",
+  "number": "5.41",
+  "title": "Typical design parameters of A2O process",
+  "state": "pending",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "regions": [
+    {
+      "pdf_page": 481,
+      "page_label": "5 - 177",
+      "bbox": [
+        168.0,
+        637.0,
+        442.0,
+        760.0
+      ],
+      "render_sha256": "ca259c864ea6360aa889e7a11cd706140e73e06e14253dbd1dba20f87624dfa5"
+    }
+  ],
+  "headers": [
+    "F/M as MLVSS",
+    "SRT (days)",
+    "MLSS (mg/L)",
+    "Anaer obic",
+    "Anoxic",
+    "Oxic",
+    "Return activated sludge (% of influent)",
+    "Nitrified Recycle (% of influent)"
+  ],
+  "rows": [
+    [
+      "0.15-0.25",
+      "4-27",
+      "3,000-5,000",
+      "0.5-1.5",
+      "0.5-1.0",
+      "3.5-6.0",
+      "20-50",
+      "100-300"
+    ]
+  ],
+  "cell_spans": [
+    {
+      "column": 3,
+      "header": true,
+      "colspan": 3,
+      "description": "Printed group heading 'HRT(hours)' spans the Anaerobic, Anoxic and Oxic sub-headings"
+    }
+  ],
+  "markdown": "| F/M as MLVSS | SRT (days) | MLSS (mg/L) | Anaer obic | Anoxic | Oxic | Return activated sludge (% of influent) | Nitrified Recycle (% of influent) |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| 0.15-0.25 | 4-27 | 3,000-5,000 | 0.5-1.5 | 0.5-1.0 | 3.5-6.0 | 20-50 | 100-300 |",
+  "notes": [
+    "Source: Pennsylvania Department of Environmental Protection",
+    "Transcriber layout note: header is printed on two levels. Upper level reads 'F/M as MLVSS / SRT (days) / MLSS (mg/L) / HRT(hours) / Return activated sludge (% of influent) / Nitrified Recycle (% of influent)'; lower level reads 'Anaerobic / Anoxic / Oxic' under HRT(hours).",
+    "Printed header reads 'Anaer obic' with the word broken across two lines; retained.",
+    "Printed as 'HRT(hours)' with no space before the parenthesis; retained.",
+    "The three HRT cells print a range broken over two lines (0.5- / 1.5, 0.5- / 1.0, 3.5- / 6.0); each is written as the single printed range."
+  ],
+  "verification": {
+    "transcription": {
+      "pass_id": "sew-t06-first-reading-2026-11-08",
+      "method": "Direct viewing of the annotation-cleaned 144 dpi page render and 300-420 dpi crops; no OCR, no paid service",
+      "observations": "Every heading and the single data row read from a 420 dpi crop."
+    }
+  },
+  "create_unit": true,
+  "parent_id": "SEW-2013-A:5.41"
+}

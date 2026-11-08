@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:Ep260-2",
+  "unit_id": "SEW-2013-A:Ep260-2",
+  "manual_id": "SEW-2013-A",
+  "kind": "equation",
+  "number": "p260-2",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "state": "verified",
+  "regions": [
+    {
+      "pdf_page": 260,
+      "page_label": "3 - 115",
+      "bbox": [
+        336,
+        554,
+        368,
+        696
+      ],
+      "render_sha256": "dbc152a02e5bdc794a3935a8d47f638bd226bb0dff34bd772838b58f8a7b06aa"
+    }
+  ],
+  "title": "Figure 3.56 label: oxidation of sulphide in the sewage",
+  "parent_id": "SEW-2013-A:3.69.4",
+  "latex": "2\\,\\mathrm{O_2} + 2\\,\\mathrm{HS^-} \\;\\text{—}\\; \\mathrm{S_2O_3^{2-}} + \\mathrm{H_2O}",
+  "readable": "2 O2 + 2 HS⁻ — S2O3²⁻ + H2O",
+  "symbols": [],
+  "applicability": "Label 'OXIDATION OF SULPHIDE:' printed in the sewage zone of Figure 3.56. The same block prints 'DISSOLVED SULPHIDE PRESENT, HS⁻ + H₂S' and 'DISSOLVED OXYGEN LESS THAN 0.1 mg/l'.",
+  "notes": [
+    "Printed as '2 O₂ + 2 HS⁻ — S₂O₃²⁻ + H₂O'; the two sides are separated by a horizontal dash, not by a reaction arrow like the pipe-wall reaction elsewhere in the same figure. Preserved verbatim; not corrected.",
+    "Unnumbered relation printed inside the Figure 3.56 diagram; p260-2 is a service locator, not a printed equation number.",
+    "No symbol definitions or units are printed for this relation."
+  ],
+  "verification": {
+    "transcription": {
+      "pass_id": "sew-t02-first-reading",
+      "method": "Direct visual reading of full 144 dpi annotation-cleaned page PNGs plus 200-600 dpi detail crops of each item, rotated where the printed page is landscape; no OCR, no paid service, no delegation",
+      "observations": "First reading only. Every printed value, coefficient, power, sign, bracket, spelling and unit retained as printed; source oddities kept and flagged rather than corrected. No distinct second visual pass performed."
+    },
+    "visual_recheck": {
+      "pass_id": "parent-recheck-sew-t02",
+      "method": "distinct second visual inspection of exact source-region renders (incl. rotated/zoomed crops) by parent assistant; not independent human review",
+      "observations": "Parent compared every cell/term against 144-dpi region renders and 200-dpi rotated crops; confirmed all values and printed anomalies.",
+      "content_sha256": "207b15158bda15ca2fb515ad4009d6124c5576c620235d784213f2c0b2ca1da8"
+    }
+  }
+}

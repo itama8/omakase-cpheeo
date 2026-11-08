@@ -1,0 +1,76 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:T5.45",
+  "unit_id": "SEW-2013-A:T5.45",
+  "manual_id": "SEW-2013-A",
+  "kind": "table",
+  "number": "5.45",
+  "title": "Performance of MBR process (Nordkanal STP)",
+  "state": "pending",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "regions": [
+    {
+      "pdf_page": 488,
+      "page_label": "5 - 184",
+      "bbox": [
+        76.0,
+        474.0,
+        504.0,
+        648.0
+      ],
+      "render_sha256": "3869c8b3f57e3915944018d04063ac3724d4646633918ece6ac42839bcc161b0"
+    }
+  ],
+  "headers": [
+    "",
+    "COD",
+    "NH₄⁺-N",
+    "NO₃⁻-N",
+    "PO₄³⁻-P",
+    "TSS"
+  ],
+  "rows": [
+    [
+      "Influent, mg/l",
+      "997-1,210",
+      "38.9",
+      "-",
+      "8.7",
+      "11,600- 14,800"
+    ],
+    [
+      "Effluent, mg/l",
+      "17.4-22.1",
+      "0",
+      "2.57-3.5",
+      "0.26-0.3",
+      "-"
+    ],
+    [
+      "Removal, %",
+      "98.2",
+      "100",
+      "-",
+      "96.8(A)",
+      "-"
+    ]
+  ],
+  "cell_spans": [],
+  "markdown": "|  | COD | NH₄⁺-N | NO₃⁻-N | PO₄³⁻-P | TSS |\n| --- | --- | --- | --- | --- | --- |\n| Influent, mg/l | 997-1,210 | 38.9 | - | 8.7 | 11,600- 14,800 |\n| Effluent, mg/l | 17.4-22.1 | 0 | 2.57-3.5 | 0.26-0.3 | - |\n| Removal, % | 98.2 | 100 | - | 96.8(A) | - |",
+  "notes": [
+    "Printed below the table: '(A) Ferric chloride addition' and 'Source:  Moreau, 2010'.",
+    "Transcriber layout note: the top-left cell of the printed table is empty; it is kept as an empty header cell.",
+    "Printed as '11,600- 14,800' with a space after the hyphen; retained.",
+    "Printed as '2.57-3.5' and '0.26-0.3' with unequal decimal places; retained.",
+    "The (A) marker in the PO₄³⁻-P removal cell refers to the 'Ferric chloride addition' line below the table; it is part of the printed cell text."
+  ],
+  "verification": {
+    "transcription": {
+      "pass_id": "sew-t06-first-reading-2026-11-08",
+      "method": "Direct viewing of the annotation-cleaned 144 dpi page render and 360-480 dpi crops; no OCR, no paid service",
+      "observations": "All three data rows and all five parameter headers read from a 420 dpi crop; ion charges and the '11,600- 14,800' spacing checked individually."
+    }
+  },
+  "create_unit": true,
+  "parent_id": "SEW-2013-A:5.45"
+}

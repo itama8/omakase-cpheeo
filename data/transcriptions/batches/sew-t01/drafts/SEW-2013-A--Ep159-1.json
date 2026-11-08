@@ -1,0 +1,52 @@
+{
+ "schema_version": 1,
+ "id": "SEW-2013-A:Ep159-1",
+ "unit_id": "SEW-2013-A:Ep159-1",
+ "manual_id": "SEW-2013-A",
+ "kind": "equation",
+ "number": "p159-1",
+ "title": "Palmer-Bowlus flume width and invert expressions in Figure 3.5",
+ "state": "pending",
+ "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+ "regions": [
+  {
+   "pdf_page": 159,
+   "page_label": "3 - 14",
+   "bbox": [
+    60,
+    78,
+    530,
+    482
+   ],
+   "render_sha256": "178ddd22438dff58b5c68b8431ca28ba319952d9a65d1d38d45ba19d98faf7e1"
+  }
+ ],
+ "parent_id": "SEW-2013-A:3.10",
+ "latex": "W=\\frac{5D}{12};\\qquad t=\\frac{D}{6}",
+ "readable": "W = 5D/12; t = D/6",
+ "symbols": [
+  {
+   "symbol": "D",
+   "definition": "pipe diameter"
+  },
+  {
+   "symbol": "H",
+   "definition": "water depth"
+  }
+ ],
+ "applicability": "Annotations printed inside Figure 3.5 (Palmer-Bowlus flume installation in circular sewer) express the flume width W and the small invert dimension t as fractions of the pipe diameter D. The same figure prints D=Conduit diameter and marks D/2 as the preferred head measuring point.",
+ "notes": [
+  "Unnumbered figure expressions; p159-1 is a service locator, not a printed equation number.",
+  "Printed as W= 5D/12 and t= D/6 without units; no unit or decimal value has been added.",
+  "W and t are printed as the left-hand sides but are not defined anywhere in the annotation block; only D (PIPE DIAMETER) and H (WATER DEPTH) are defined. No definition has been supplied for W or t.",
+  "The flume section in the same figure marks 2:1 side slopes and dimension H as the water depth; these are geometry labels, not additional equations.",
+  "Source: CPHEEO, 1993 is not printed on this figure; it carries no source line."
+ ],
+ "verification": {
+  "transcription": {
+   "pass_id": "sew-t01-first-reading",
+   "method": "Direct visual reading of full annotation-cleaned 144 dpi page PNGs and 288 dpi region crops; no OCR, no paid service, no delegation",
+   "observations": "First reading only. Source spelling, numbers, powers, punctuation and printed discrepancies retained. No distinct second inspection and no verification seal performed."
+  }
+ }
+}

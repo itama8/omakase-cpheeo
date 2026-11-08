@@ -1,0 +1,311 @@
+[
+  {
+    "pdf_page": 247,
+    "page_label": "3 - 102",
+    "targets": [],
+    "no_targets_reason": "Only body text of sections 3.58.6 to 3.60. The page points to Table 3-27 overleaf; no table, figure data or equation is printed here.",
+    "continuations": [
+      "Refers to Table 3-27 overleaf (p248, outside this batch)."
+    ],
+    "unclear": [],
+    "image_viewed": "/home/a2ajinkya/.t3/worktrees/omakase-cpheeo/feat-verified-visual-transcriptions/tmp/pdfs/sew-t02/page-247.png"
+  },
+  {
+    "pdf_page": 254,
+    "page_label": "3 - 109",
+    "targets": [],
+    "no_targets_reason": "Figure 3.53 guided auger boring: a line drawing with callout labels, plus body text. No table and no equation.",
+    "continuations": [],
+    "unclear": [],
+    "image_viewed": "/home/a2ajinkya/.t3/worktrees/omakase-cpheeo/feat-verified-visual-transcriptions/tmp/pdfs/sew-t02/page-254.png"
+  },
+  {
+    "pdf_page": 255,
+    "page_label": "3 - 110",
+    "targets": [],
+    "no_targets_reason": "Figure 3.54 trenchless pipe jacking: a line drawing with callout labels, plus body text. No table and no equation.",
+    "continuations": [],
+    "unclear": [],
+    "image_viewed": "/home/a2ajinkya/.t3/worktrees/omakase-cpheeo/feat-verified-visual-transcriptions/tmp/pdfs/sew-t02/page-255.png"
+  },
+  {
+    "pdf_page": 257,
+    "page_label": "3 - 112",
+    "targets": [],
+    "no_targets_reason": "Figure 3.55 different types of inlets: eight small labelled type sketches. No table and no equation.",
+    "continuations": [],
+    "unclear": [],
+    "image_viewed": "/home/a2ajinkya/.t3/worktrees/omakase-cpheeo/feat-verified-visual-transcriptions/tmp/pdfs/sew-t02/page-257.png"
+  },
+  {
+    "pdf_page": 260,
+    "page_label": "3 - 115",
+    "targets": [
+      "SEW-2013-A:Ep260-1",
+      "SEW-2013-A:Ep260-2"
+    ],
+    "no_targets_reason": null,
+    "continuations": [],
+    "unclear": [
+      "Both relations are printed inside the Figure 3.56 graphic, so their glyphs are small; they were read from 200-600 dpi rotated crops of the same page image.",
+      "The oxidation-of-sulphide label joins its two sides with a horizontal dash rather than a reaction arrow; transcribed as printed."
+    ],
+    "image_viewed": "/home/a2ajinkya/.t3/worktrees/omakase-cpheeo/feat-verified-visual-transcriptions/tmp/pdfs/sew-t02/page-260.png"
+  },
+  {
+    "pdf_page": 261,
+    "page_label": "3 - 116",
+    "targets": [],
+    "no_targets_reason": "Figure 3.58 solids accumulation at invert of mains: four lettered pipe cross-sections with velocity captions (2 fps, 1.4 to 2.0 fps, 1.0 to 1.4 fps, below 1.0 fps). These are descriptive captions, not a table, and no equation is printed.",
+    "continuations": [],
+    "unclear": [],
+    "image_viewed": "/home/a2ajinkya/.t3/worktrees/omakase-cpheeo/feat-verified-visual-transcriptions/tmp/pdfs/sew-t02/page-261.png"
+  },
+  {
+    "pdf_page": 262,
+    "page_label": "3 - 117",
+    "targets": [
+      "SEW-2013-A:E3.47"
+    ],
+    "no_targets_reason": null,
+    "continuations": [],
+    "unclear": [],
+    "image_viewed": "/home/a2ajinkya/.t3/worktrees/omakase-cpheeo/feat-verified-visual-transcriptions/tmp/pdfs/sew-t02/page-262.png"
+  },
+  {
+    "pdf_page": 266,
+    "page_label": "3 - 121",
+    "targets": [],
+    "no_targets_reason": "Photo Figure 3.59 (RCC sewer pipe with protective coating) and body text. No table and no equation.",
+    "continuations": [],
+    "unclear": [],
+    "image_viewed": "/home/a2ajinkya/.t3/worktrees/omakase-cpheeo/feat-verified-visual-transcriptions/tmp/pdfs/sew-t02/page-266.png"
+  },
+  {
+    "pdf_page": 267,
+    "page_label": "3 - 122",
+    "targets": [],
+    "no_targets_reason": "Figure 3.60 general arrangement of cathodic protection: a schematic with numbered callouts 1 to 6 and body text. No table and no equation.",
+    "continuations": [],
+    "unclear": [],
+    "image_viewed": "/home/a2ajinkya/.t3/worktrees/omakase-cpheeo/feat-verified-visual-transcriptions/tmp/pdfs/sew-t02/page-267.png"
+  },
+  {
+    "pdf_page": 271,
+    "page_label": "3 - 126",
+    "targets": [],
+    "no_targets_reason": "Figure 3.61 connection system diagrams ('Conventional System' and 'Berlin' System). The page points to Table 3.30 overleaf; no table is printed here.",
+    "continuations": [
+      "Refers to Table 3.30 overleaf (p272, outside this batch)."
+    ],
+    "unclear": [],
+    "image_viewed": "/home/a2ajinkya/.t3/worktrees/omakase-cpheeo/feat-verified-visual-transcriptions/tmp/pdfs/sew-t02/page-271.png"
+  },
+  {
+    "pdf_page": 277,
+    "page_label": "4 - 4",
+    "targets": [],
+    "no_targets_reason": "Figure 4.1 typical hand operated screen facility: a photo with a text panel, plus body text. No table and no equation.",
+    "continuations": [],
+    "unclear": [],
+    "image_viewed": "/home/a2ajinkya/.t3/worktrees/omakase-cpheeo/feat-verified-visual-transcriptions/tmp/pdfs/sew-t02/page-277.png"
+  },
+  {
+    "pdf_page": 279,
+    "page_label": "4 - 6",
+    "targets": [],
+    "no_targets_reason": "Figure 4.2 arrangement of internals in a submersible pump set: a labelled section drawing. No table and no equation.",
+    "continuations": [],
+    "unclear": [],
+    "image_viewed": "/home/a2ajinkya/.t3/worktrees/omakase-cpheeo/feat-verified-visual-transcriptions/tmp/pdfs/sew-t02/page-279.png"
+  },
+  {
+    "pdf_page": 280,
+    "page_label": "4 - 7",
+    "targets": [],
+    "no_targets_reason": "Figure 4.3 typical dry-well and wet-well installations (four labelled sections) and Figure 4.4 Archimedean screw pump (photos with a text panel). No table and no equation.",
+    "continuations": [],
+    "unclear": [],
+    "image_viewed": "/home/a2ajinkya/.t3/worktrees/omakase-cpheeo/feat-verified-visual-transcriptions/tmp/pdfs/sew-t02/page-280.png"
+  },
+  {
+    "pdf_page": 285,
+    "page_label": "4 - 12",
+    "targets": [],
+    "no_targets_reason": "Figure 4.5 typical arrangements of a submersible pump set wet well: a large drawing with dimension callouts and a note panel. No table and no equation; the drawing dimensions were not treated as a table.",
+    "continuations": [],
+    "unclear": [],
+    "image_viewed": "/home/a2ajinkya/.t3/worktrees/omakase-cpheeo/feat-verified-visual-transcriptions/tmp/pdfs/sew-t02/page-285.png"
+  },
+  {
+    "pdf_page": 288,
+    "page_label": "4 - 15",
+    "targets": [
+      "SEW-2013-A:Ep288-1"
+    ],
+    "no_targets_reason": null,
+    "continuations": [
+      "Refers to Table 4-2 overleaf (p289, outside this batch)."
+    ],
+    "unclear": [],
+    "image_viewed": "/home/a2ajinkya/.t3/worktrees/omakase-cpheeo/feat-verified-visual-transcriptions/tmp/pdfs/sew-t02/page-288.png"
+  },
+  {
+    "pdf_page": 290,
+    "page_label": "4 - 17",
+    "targets": [
+      "SEW-2013-A:Ep290-1"
+    ],
+    "no_targets_reason": null,
+    "continuations": [],
+    "unclear": [],
+    "image_viewed": "/home/a2ajinkya/.t3/worktrees/omakase-cpheeo/feat-verified-visual-transcriptions/tmp/pdfs/sew-t02/page-290.png"
+  },
+  {
+    "pdf_page": 291,
+    "page_label": "4 - 18",
+    "targets": [
+      "SEW-2013-A:Tp291-1"
+    ],
+    "no_targets_reason": null,
+    "continuations": [],
+    "unclear": [],
+    "image_viewed": "/home/a2ajinkya/.t3/worktrees/omakase-cpheeo/feat-verified-visual-transcriptions/tmp/pdfs/sew-t02/page-291.png"
+  },
+  {
+    "pdf_page": 292,
+    "page_label": "4 - 19",
+    "targets": [],
+    "no_targets_reason": "Figure 4.11 stable and unstable characteristics of centrifugal pumps: two labelled charts (STABLE and UNSTABLE), plus body text on cavitation. No table and no equation.",
+    "continuations": [],
+    "unclear": [],
+    "image_viewed": "/home/a2ajinkya/.t3/worktrees/omakase-cpheeo/feat-verified-visual-transcriptions/tmp/pdfs/sew-t02/page-292.png"
+  },
+  {
+    "pdf_page": 298,
+    "page_label": "4 - 25",
+    "targets": [
+      "SEW-2013-A:Tp298-1"
+    ],
+    "no_targets_reason": null,
+    "continuations": [],
+    "unclear": [
+      "The drawing is landscape inside a portrait page; all values were read from rotated crops of the same page image.",
+      "Small drawing callouts other than the schedule table were not transcribed."
+    ],
+    "image_viewed": "/home/a2ajinkya/.t3/worktrees/omakase-cpheeo/feat-verified-visual-transcriptions/tmp/pdfs/sew-t02/page-298.png"
+  },
+  {
+    "pdf_page": 299,
+    "page_label": "4 - 26",
+    "targets": [],
+    "no_targets_reason": "Figures 4.13 and 4.14 foundation drawings with callouts, plus body text that includes a lettered list of loads (a to e). A lettered list is not a table and no equation is printed.",
+    "continuations": [],
+    "unclear": [],
+    "image_viewed": "/home/a2ajinkya/.t3/worktrees/omakase-cpheeo/feat-verified-visual-transcriptions/tmp/pdfs/sew-t02/page-299.png"
+  },
+  {
+    "pdf_page": 302,
+    "page_label": "4 - 29",
+    "targets": [
+      "SEW-2013-A:Tp302-1"
+    ],
+    "no_targets_reason": null,
+    "continuations": [],
+    "unclear": [
+      "The table header's first character of the unit ('lps') is a bare vertical stroke in the source and cannot be resolved as capital I or lower case l."
+    ],
+    "image_viewed": "/home/a2ajinkya/.t3/worktrees/omakase-cpheeo/feat-verified-visual-transcriptions/tmp/pdfs/sew-t02/page-302.png"
+  },
+  {
+    "pdf_page": 303,
+    "page_label": "4 - 30",
+    "targets": [
+      "SEW-2013-A:Tp303-1",
+      "SEW-2013-A:Tp303-2"
+    ],
+    "no_targets_reason": null,
+    "continuations": [],
+    "unclear": [
+      "The upper chart of Figure 4.16 labels its line 'Hydraulic grade line oroginal'; the spelling is printed that way.",
+      "The two tables print different B-column ground levels (12 original, 13 adjusted) and different hydraulic level arithmetic; both are transcribed as printed with no reconciliation."
+    ],
+    "image_viewed": "/home/a2ajinkya/.t3/worktrees/omakase-cpheeo/feat-verified-visual-transcriptions/tmp/pdfs/sew-t02/page-303.png"
+  },
+  {
+    "pdf_page": 315,
+    "page_label": "5 - 11",
+    "targets": [],
+    "no_targets_reason": "Figure 5.6 schematic diagrams of activated sludge treatment with modifications (a) to (e), labelled FIG.(a) to FIG.(e). No table and no equation.",
+    "continuations": [],
+    "unclear": [],
+    "image_viewed": "/home/a2ajinkya/.t3/worktrees/omakase-cpheeo/feat-verified-visual-transcriptions/tmp/pdfs/sew-t02/page-315.png"
+  },
+  {
+    "pdf_page": 316,
+    "page_label": "5 - 12",
+    "targets": [],
+    "no_targets_reason": "Figure 5.7 fixed film synthetic media filters: a labelled section drawing, plus body text. No table and no equation.",
+    "continuations": [],
+    "unclear": [],
+    "image_viewed": "/home/a2ajinkya/.t3/worktrees/omakase-cpheeo/feat-verified-visual-transcriptions/tmp/pdfs/sew-t02/page-316.png"
+  },
+  {
+    "pdf_page": 317,
+    "page_label": "5 - 13",
+    "targets": [],
+    "no_targets_reason": "Figure 5.8 fluidized aerobic bed reactor and Figure 5.9 fluidized anaerobic bed reactor: labelled schematics. No table and no equation.",
+    "continuations": [],
+    "unclear": [],
+    "image_viewed": "/home/a2ajinkya/.t3/worktrees/omakase-cpheeo/feat-verified-visual-transcriptions/tmp/pdfs/sew-t02/page-317.png"
+  },
+  {
+    "pdf_page": 318,
+    "page_label": "5 - 14",
+    "targets": [],
+    "no_targets_reason": "Figure 5.10 up flow anaerobic sludge blanket reactor and Figure 5.11 anaerobic sludge digester mixing: labelled schematics. The page points to Table 5.5 on the following page.",
+    "continuations": [
+      "Refers to Table 5.5, printed overleaf on p319 (in this batch)."
+    ],
+    "unclear": [],
+    "image_viewed": "/home/a2ajinkya/.t3/worktrees/omakase-cpheeo/feat-verified-visual-transcriptions/tmp/pdfs/sew-t02/page-318.png"
+  },
+  {
+    "pdf_page": 319,
+    "page_label": "5 - 15",
+    "targets": [
+      "SEW-2013-A:T5.5"
+    ],
+    "no_targets_reason": null,
+    "continuations": [],
+    "unclear": [],
+    "image_viewed": "/home/a2ajinkya/.t3/worktrees/omakase-cpheeo/feat-verified-visual-transcriptions/tmp/pdfs/sew-t02/page-319.png"
+  },
+  {
+    "pdf_page": 320,
+    "page_label": "5 - 16",
+    "targets": [],
+    "no_targets_reason": "Figures 5.12 and 5.13 multi-layer secondary clarifier and reaction tank section drawings with callouts. No table and no equation.",
+    "continuations": [],
+    "unclear": [],
+    "image_viewed": "/home/a2ajinkya/.t3/worktrees/omakase-cpheeo/feat-verified-visual-transcriptions/tmp/pdfs/sew-t02/page-320.png"
+  },
+  {
+    "pdf_page": 321,
+    "page_label": "5 - 17",
+    "targets": [],
+    "no_targets_reason": "Figure 5.14 STP land area scatter chart with a symbol legend of technology categories. A chart and legend, not a table; no equation is printed.",
+    "continuations": [],
+    "unclear": [],
+    "image_viewed": "/home/a2ajinkya/.t3/worktrees/omakase-cpheeo/feat-verified-visual-transcriptions/tmp/pdfs/sew-t02/page-321.png"
+  },
+  {
+    "pdf_page": 322,
+    "page_label": "5 - 18",
+    "targets": [],
+    "no_targets_reason": "Figure 5.15 nitrification-denitrification bioreactor: a section drawing and a plan drawing with callouts. No table and no equation.",
+    "continuations": [],
+    "unclear": [],
+    "image_viewed": "/home/a2ajinkya/.t3/worktrees/omakase-cpheeo/feat-verified-visual-transcriptions/tmp/pdfs/sew-t02/page-322.png"
+  }
+]

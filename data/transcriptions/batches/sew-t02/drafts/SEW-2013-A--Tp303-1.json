@@ -1,0 +1,130 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:Tp303-1",
+  "unit_id": "SEW-2013-A:Tp303-1",
+  "manual_id": "SEW-2013-A",
+  "kind": "table",
+  "number": "p303-1",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "state": "pending",
+  "regions": [
+    {
+      "pdf_page": 303,
+      "page_label": "4 - 30",
+      "bbox": [
+        136,
+        82,
+        262,
+        756
+      ],
+      "render_sha256": "2721c690bf5198ec2a44bfb5c2cf9ac408121333d78547237b2adf1e4c3ae14a"
+    }
+  ],
+  "title": "Unnumbered original condition table in Figure 4.16",
+  "headers": [
+    "",
+    "A",
+    "B",
+    "C",
+    "D"
+  ],
+  "rows": [
+    [
+      "Hydraulic Head",
+      "13-4=9",
+      "11.5-13=(-)1.5",
+      "11-6=5",
+      "8.5-7=1.5"
+    ],
+    [
+      "Hydraulic level",
+      "13",
+      "11.5",
+      "11",
+      "8.5"
+    ],
+    [
+      "Friction loss in the reach",
+      "1.5",
+      "0.5",
+      "2.5",
+      ""
+    ],
+    [
+      "Delivery level",
+      "",
+      "",
+      "",
+      "6.5"
+    ],
+    [
+      "Invert of pipe, m",
+      "2.7",
+      "10.7",
+      "3.55",
+      "5.55"
+    ],
+    [
+      "Earth cover in the reach, m",
+      "1",
+      "1",
+      "1",
+      ""
+    ],
+    [
+      "Dia. of pipe in the reach, m",
+      "0.3",
+      "0.3",
+      "0.45",
+      ""
+    ],
+    [
+      "Ground level, m",
+      "4",
+      "12",
+      "6",
+      "7"
+    ],
+    [
+      "Location",
+      "A",
+      "B",
+      "C",
+      "D"
+    ]
+  ],
+  "cell_spans": [
+    {
+      "description": "Table title 'Original condition' is printed in the first cell, above the row labels; the row label column has no other heading.",
+      "columns": [
+        0
+      ]
+    },
+    {
+      "description": "Friction loss, earth cover and diameter rows carry one value per reached section (A, B, C) with the D cell blank as printed.",
+      "columns": [
+        1,
+        2,
+        3,
+        4
+      ]
+    }
+  ],
+  "markdown": "|  | A | B | C | D |\n| --- | --- | --- | --- | --- |\n| Hydraulic Head | 13-4=9 | 11.5-13=(-)1.5 | 11-6=5 | 8.5-7=1.5 |\n| Hydraulic level | 13 | 11.5 | 11 | 8.5 |\n| Friction loss in the reach | 1.5 | 0.5 | 2.5 |  |\n| Delivery level |  |  |  | 6.5 |\n| Invert of pipe, m | 2.7 | 10.7 | 3.55 | 5.55 |\n| Earth cover in the reach, m | 1 | 1 | 1 |  |\n| Dia. of pipe in the reach, m | 0.3 | 0.3 | 0.45 |  |\n| Ground level, m | 4 | 12 | 6 | 7 |\n| Location | A | B | C | D |",
+  "notes": [
+    "Arithmetic is printed as shown. '11.5-13=(-)1.5' is the printed form: the negative result is written in parentheses after the equals sign. Preserved verbatim, not corrected.",
+    "Formula cells are printed with irregular spacing ('13-4=9', '11-6=5', '8.5-7=1.5'); spacing is preserved as printed.",
+    "Blank cells are printed blank; no dashes or zeros have been supplied.",
+    "The table is printed under the 'Hydraulic grade line original' chart of Figure 4.16. Both Figure 4.16 tables are landscape inside a portrait page; the region bbox is in unrotated page coordinates and the evidence crop is read after rotating it 90 degrees.",
+    "Unnumbered table embedded in a figure; p303-1 is a service locator, not a printed table number."
+  ],
+  "verification": {
+    "transcription": {
+      "pass_id": "sew-t02-first-reading",
+      "method": "Direct visual reading of full 144 dpi annotation-cleaned page PNGs plus 200-600 dpi detail crops of each item, rotated where the printed page is landscape; no OCR, no paid service, no delegation",
+      "observations": "First reading only. Every printed value, coefficient, power, sign, bracket, spelling and unit retained as printed; source oddities kept and flagged rather than corrected. No distinct second visual pass performed."
+    }
+  },
+  "create_unit": true,
+  "parent_id": "SEW-2013-A:4.20.4"
+}

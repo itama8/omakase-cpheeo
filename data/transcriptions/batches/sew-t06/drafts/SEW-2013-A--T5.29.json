@@ -1,0 +1,241 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:T5.29",
+  "unit_id": "SEW-2013-A:T5.29",
+  "manual_id": "SEW-2013-A",
+  "kind": "table",
+  "number": "5.29",
+  "title": "Types of sewage treatment technologies",
+  "state": "pending",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "regions": [
+    {
+      "pdf_page": 462,
+      "page_label": "5 - 158",
+      "bbox": [
+        64.0,
+        55.0,
+        492.0,
+        762.0
+      ],
+      "render_sha256": "08b63f75fc6dfcbf161c1ad1eb73c858d1202dca3f4004242a029dbadbf2e9d5"
+    },
+    {
+      "pdf_page": 463,
+      "page_label": "5 - 159",
+      "bbox": [
+        100.0,
+        80.0,
+        527.0,
+        756.0
+      ],
+      "render_sha256": "729cd00ec368043eb19410d67a54647623cc033167643829dfc5efb70fd0dbf4"
+    },
+    {
+      "pdf_page": 464,
+      "page_label": "5 - 160",
+      "bbox": [
+        94.0,
+        70.0,
+        520.0,
+        770.0
+      ],
+      "render_sha256": "60a98849b1b0abff1d806e72df64788f929558bd94313e877bfd99bea86667fa"
+    },
+    {
+      "pdf_page": 465,
+      "page_label": "5 - 161",
+      "bbox": [
+        89.0,
+        78.0,
+        515.0,
+        755.0
+      ],
+      "render_sha256": "5a90f43850cb0ddf1b4ffeaec99149e84c0f26fce5b8bbc9c99868b3927af3c9"
+    },
+    {
+      "pdf_page": 466,
+      "page_label": "5 - 162",
+      "bbox": [
+        80.0,
+        55.0,
+        503.0,
+        770.0
+      ],
+      "render_sha256": "b45134dc567b796187a16d3a0e40465ce23d0d06c11acddce435f6acd3e2d164"
+    }
+  ],
+  "headers": [
+    "Type",
+    "Objective",
+    "Process",
+    "Description"
+  ],
+  "rows": [
+    [
+      "Tertiary",
+      "Nitrogen (N) removal",
+      "Recycled biological Nitrification/Denitrification process",
+      "Concurrent with carbonaceous BOD removal nitrification is achieved by additional oxygen input and the mixed liquor and return sludge are recycled first into an anoxic tank receiving the raw sewage where the nitrates are denitrified by the microbes and partial BOD removal and almost complete removal of nitrates are obtained thus eliminating nitrogen altogether."
+    ],
+    [
+      "",
+      "",
+      "Wuhrmann Process",
+      "This is a single sludge nitrification system with a downstream anoxic reactor. The influent enters into the aerobic tank where nitrification develops together with BOD removal and the nitrified mixed liquor passes to the anoxic reactor where the sludge is kept in suspension by moderate stirring, but no aeration. The denitrification takes place by microbes in their quest for oxygen.  The classical difficulty here is the food requirements of the microbes which has otherwise been already removed in the aerobic reactor and hence, this process is suited only for sewages with little incoming nitrogen."
+    ],
+    [
+      "",
+      "",
+      "Step-Feed Multistage Biological Nitrogen Removal Process",
+      "This process has been developed to enable efficient nitrogen removal from sewage without a major renovation The unit which consists of an anoxic tank and an oxic tank is arranged in several serial stages. The primary effluent is split and fed equally into an anoxic tank of each stage, and BOD load to MLSS in each stage is equalized. This method enables efficient nitrogen removal and easy maintenance of the process. The nitrified liquor internal recirculation from oxic to anoxic tank is carried out as needed."
+    ],
+    [
+      "",
+      "",
+      "Ammonia oxidation",
+      "Chlorination to mono, di & tri chloramines eventually releases nitrogen gas into atmosphere. It is a simple process, but the storage and handling of chlorination are a real challenge."
+    ],
+    [
+      "",
+      "",
+      "Ammonia Stripping",
+      "Ammonia in raw sewage is present as ammonium carbonate and is a dissolved salt. By raising the pH to near 9.3, this is de-ionized and the ammonia becomes dissolved ammonia gas. It is then stripped in counter current towers where the sewage is sprayed from the top and air is blown from the bottom whereby the three phase mass transfer takes place and the resulting air ammonia gas mixture rises into the plume. The air volume and plume velocity are adjusted to keep the released ammonia concentration within threshold limits ."
+    ],
+    [
+      "",
+      "",
+      "Ion Exchange",
+      "Clinoptinolite is a resin occurring in some parts of the world which has the ability to exchange the ammonium ion and has applications in very small units needing cleaner operations and where secure landfill of spent resin is possible."
+    ],
+    [
+      "Phosphorus (P) removal",
+      "",
+      "Anaerobic-Oxic Activated Sludge Process",
+      "Under controlled conditions of anaerobiasis as absence of oxygen, luxury phosphorous uptake by the microbes is reported, but the mechanism is not fully understood. However, simultaneous denitrification can also occur from return activated sludge. Process operation with a plug flow regime & non-aerated but gently mixed zone in the first part of the activated sludge are stated as critical conditions to remove considerable phosphorus. However, the process control is influenced by varying phosphorous concentrations and sometimes it may be necessary to chemically precipitate the residual phosphorous by chemical addition."
+    ],
+    [
+      "",
+      "",
+      "Chemical precipitation",
+      "Aluminium and/or Ferric salts precipitate the phosphorous. This is easy to control."
+    ],
+    [
+      "",
+      "(N) & (P) Simultaneous removal",
+      "Bardenpho process",
+      "In this four-stage process, the first two stages are identical to the Modified Ludzck Ettinger (MLE) process of an anoxic zone followed by an aeration zone with a nitrate-rich recycle from the aeration to the anoxic zone. The third stage is a secondary anoxic zone for further denitrification to the portion of the flow that is not already recycled in first two-stages. A source like Methanol may be added to this third stage for microbial carbon. The fourth and final is a re-aeration zone to strip any nitrogen gas and increase the DO concentration."
+    ],
+    [
+      "",
+      "",
+      "Anaerobic-Anoxic-Oxic Process",
+      "This process is a combination of the biological phosphorus removal process and the biological nitrogen removal process. It consists of tanks arranged in the sequence of anaerobic tank, anoxic tank and oxic tank. Influent and return activated sludge flow into the anaerobic tank while nitrified liquor is recycled with a circulating pump from the oxic (nitrification) tank to the anoxic (denitrification) tank. Ammonia nitrogen is oxidized to nitrite or nitrate in the oxic tank, and then nitrite or nitrate is denitrified to nitrogen gas in the anoxic tank. Aluminium and Ferric salts are added to chemically utilize the ionized Aluminium or iron & precipitate the phosphorous. This is a straightforward one for control."
+    ],
+    [
+      "Secondary",
+      "Polishing BOD, SS, Pathogen removal",
+      "Soil aquifer treatment",
+      "The soil organisms bring about further microbial activity is polishing these parameters and is a slow long term process. It is unique to the soil conditions, climatology, precipitation, flooding and inundation that may bring in agricultural residues of insecticides & pesticides."
+    ],
+    [
+      "",
+      "",
+      "Sequencing Batch Reactor (SBR)",
+      "This process utilizes a fill-and-draw reactor with complete mixing during the batch reaction step (after filling) and where the subsequent steps of aeration and clarification occur in the same tank. All SBR systems have common steps as (1) fill, (2) react (aeration), (3) sedimentation, (4) decant and (5) idle. For continuous-flow applications, at least two SBR tanks are provided in parallel so that one receives the sewage while the other completes its treatment cycle. Several process modifications have been made in the time durations associated with each step to achieve nitrogen and phosphorus removal."
+    ],
+    [
+      "",
+      "",
+      "Moving Bed Biofilm Reactor (MBBR)",
+      "This process is based on several synthetic biofilm carrier elements (patented and non-patented) developed for use in the aeration tank of the ASP and are suspended in the activated sludge mixed liquor in the aeration tank. These processes are intended to enhance the activated sludge process by providing a greater surface area to unit volume of the aeration tank for the additional surfaces for increased microbial population and metabolism and hence, the biomass concentration in the tank and offers the potential to reduce the basin volumes. They are used to improve the volumetric nitrification rates and to accomplish the denitrification in aeration tanks by anoxic zones within the biofilm thickness."
+    ],
+    [
+      "",
+      "",
+      "Fixed bed bio film activated sludge process (FFASP)",
+      "This process consists of a series of aerated reactors, filtration units and final polishing units. Plants with extensive root systems are placed on a supporting mesh slightly below the water level in the open aerated reactors and their roots dangling about 1.5 metres into the sewage is claimed to provide a healthy habitat for bacteria and a whole range of other organisms such as protozoa, zooplankton, worms, snails and even fish. As sewage flows through these different ecosystems in each tank, a series of self managing, cascading ecologies are stated to provide a highly robust and efficient system."
+    ],
+    [
+      "",
+      "",
+      "Immobilized Biofilm Process (Eco Bio Block, EBB)",
+      "This process is used for cleaning up polluted water sources such as sewage drains, polluted rivers, ponds, lakes, etc. The blocks are produced by mixing effective microbes with zeolites (volcanic porous stones), and alkaline cement. Once EBB is placed in polluted water, the effective microbes would multiply, treat the wastes effectively in a faster manner and clean the water body without causing any harm to plants and fish. EBB does not require energy, manpower and maintenance to perform the cleaning process. There is no operational cost practically. Since it is an online treatment, additional large land space is not required. However, the hydraulics of the drains needs validation with EBB in place"
+    ],
+    [
+      "Advanced processes",
+      "Minute Solids in sus-pension colloidal materials, dissolved organic matter, TDS microbes, etc. removal",
+      "Membrane filtration",
+      "Membrane Filtration is used to remove minute solids, colloidal material, dissolved organic matter, etc. from secondary effluents using several kinds of membranes. According to separating particles size, membranes are classified as follows:\nMicro filtration (MF) for 0.08 to 2.0 microns\nUltra filtration (UF) for 0.005 to 0.2 microns\nNano filtration (NF) for 0.001 to 0.01 microns\nReverse osmosis (RO) for 0.0001 to 0.001 microns\nThe RO membrane is essentially a desalination adaptation for removal of TDS"
+    ],
+    [
+      "",
+      "",
+      "Membrane Bioreactor",
+      "This process is a sort of aeration tank and secondary clarifier being a two in one. The secondary clarifier is avoided by filtration of mixed liquor by membrane modules either immersed into the aeration tank mixed liquor or externally fitted and the mixed liquor routed through these. Essentially it has a suspended solids free treated sewage and retains higher MLSS and reduces the volume of aeration tanks."
+    ]
+  ],
+  "cell_spans": [
+    {
+      "column": 0,
+      "row": 0,
+      "rowspan": 3,
+      "description": "Printed Type cell 'Tertiary' covers the first three process rows"
+    },
+    {
+      "column": 1,
+      "row": 0,
+      "rowspan": 3,
+      "description": "Printed Objective cell 'Nitrogen (N) removal' covers the first three process rows"
+    },
+    {
+      "column": 0,
+      "row": 6,
+      "rowspan": 4,
+      "description": "Printed Type cell 'Phosphorus (P) removal' runs down without a dividing rule to the Anaerobic-Anoxic-Oxic row"
+    },
+    {
+      "column": 1,
+      "row": 8,
+      "rowspan": 2,
+      "description": "Printed Objective cell '(N) & (P) Simultaneous removal' covers the Bardenpho and Anaerobic-Anoxic-Oxic rows"
+    },
+    {
+      "column": 0,
+      "row": 15,
+      "rowspan": 2,
+      "description": "Printed Type cell 'Advanced processes' covers the Membrane filtration and Membrane Bioreactor rows"
+    },
+    {
+      "column": 1,
+      "row": 15,
+      "rowspan": 2,
+      "description": "Printed Objective cell covers the Membrane filtration and Membrane Bioreactor rows"
+    }
+  ],
+  "markdown": "| Type | Objective | Process | Description |\n| --- | --- | --- | --- |\n| Tertiary | Nitrogen (N) removal | Recycled biological Nitrification/Denitrification process | Concurrent with carbonaceous BOD removal nitrification is achieved by additional oxygen input and the mixed liquor and return sludge are recycled first into an anoxic tank receiving the raw sewage where the nitrates are denitrified by the microbes and partial BOD removal and almost complete removal of nitrates are obtained thus eliminating nitrogen altogether. |\n|  |  | Wuhrmann Process | This is a single sludge nitrification system with a downstream anoxic reactor. The influent enters into the aerobic tank where nitrification develops together with BOD removal and the nitrified mixed liquor passes to the anoxic reactor where the sludge is kept in suspension by moderate stirring, but no aeration. The denitrification takes place by microbes in their quest for oxygen.  The classical difficulty here is the food requirements of the microbes which has otherwise been already removed in the aerobic reactor and hence, this process is suited only for sewages with little incoming nitrogen. |\n|  |  | Step-Feed Multistage Biological Nitrogen Removal Process | This process has been developed to enable efficient nitrogen removal from sewage without a major renovation The unit which consists of an anoxic tank and an oxic tank is arranged in several serial stages. The primary effluent is split and fed equally into an anoxic tank of each stage, and BOD load to MLSS in each stage is equalized. This method enables efficient nitrogen removal and easy maintenance of the process. The nitrified liquor internal recirculation from oxic to anoxic tank is carried out as needed. |\n|  |  | Ammonia oxidation | Chlorination to mono, di & tri chloramines eventually releases nitrogen gas into atmosphere. It is a simple process, but the storage and handling of chlorination are a real challenge. |\n|  |  | Ammonia Stripping | Ammonia in raw sewage is present as ammonium carbonate and is a dissolved salt. By raising the pH to near 9.3, this is de-ionized and the ammonia becomes dissolved ammonia gas. It is then stripped in counter current towers where the sewage is sprayed from the top and air is blown from the bottom whereby the three phase mass transfer takes place and the resulting air ammonia gas mixture rises into the plume. The air volume and plume velocity are adjusted to keep the released ammonia concentration within threshold limits . |\n|  |  | Ion Exchange | Clinoptinolite is a resin occurring in some parts of the world which has the ability to exchange the ammonium ion and has applications in very small units needing cleaner operations and where secure landfill of spent resin is possible. |\n| Phosphorus (P) removal |  | Anaerobic-Oxic Activated Sludge Process | Under controlled conditions of anaerobiasis as absence of oxygen, luxury phosphorous uptake by the microbes is reported, but the mechanism is not fully understood. However, simultaneous denitrification can also occur from return activated sludge. Process operation with a plug flow regime & non-aerated but gently mixed zone in the first part of the activated sludge are stated as critical conditions to remove considerable phosphorus. However, the process control is influenced by varying phosphorous concentrations and sometimes it may be necessary to chemically precipitate the residual phosphorous by chemical addition. |\n|  |  | Chemical precipitation | Aluminium and/or Ferric salts precipitate the phosphorous. This is easy to control. |\n|  | (N) & (P) Simultaneous removal | Bardenpho process | In this four-stage process, the first two stages are identical to the Modified Ludzck Ettinger (MLE) process of an anoxic zone followed by an aeration zone with a nitrate-rich recycle from the aeration to the anoxic zone. The third stage is a secondary anoxic zone for further denitrification to the portion of the flow that is not already recycled in first two-stages. A source like Methanol may be added to this third stage for microbial carbon. The fourth and final is a re-aeration zone to strip any nitrogen gas and increase the DO concentration. |\n|  |  | Anaerobic-Anoxic-Oxic Process | This process is a combination of the biological phosphorus removal process and the biological nitrogen removal process. It consists of tanks arranged in the sequence of anaerobic tank, anoxic tank and oxic tank. Influent and return activated sludge flow into the anaerobic tank while nitrified liquor is recycled with a circulating pump from the oxic (nitrification) tank to the anoxic (denitrification) tank. Ammonia nitrogen is oxidized to nitrite or nitrate in the oxic tank, and then nitrite or nitrate is denitrified to nitrogen gas in the anoxic tank. Aluminium and Ferric salts are added to chemically utilize the ionized Aluminium or iron & precipitate the phosphorous. This is a straightforward one for control. |\n| Secondary | Polishing BOD, SS, Pathogen removal | Soil aquifer treatment | The soil organisms bring about further microbial activity is polishing these parameters and is a slow long term process. It is unique to the soil conditions, climatology, precipitation, flooding and inundation that may bring in agricultural residues of insecticides & pesticides. |\n|  |  | Sequencing Batch Reactor (SBR) | This process utilizes a fill-and-draw reactor with complete mixing during the batch reaction step (after filling) and where the subsequent steps of aeration and clarification occur in the same tank. All SBR systems have common steps as (1) fill, (2) react (aeration), (3) sedimentation, (4) decant and (5) idle. For continuous-flow applications, at least two SBR tanks are provided in parallel so that one receives the sewage while the other completes its treatment cycle. Several process modifications have been made in the time durations associated with each step to achieve nitrogen and phosphorus removal. |\n|  |  | Moving Bed Biofilm Reactor (MBBR) | This process is based on several synthetic biofilm carrier elements (patented and non-patented) developed for use in the aeration tank of the ASP and are suspended in the activated sludge mixed liquor in the aeration tank. These processes are intended to enhance the activated sludge process by providing a greater surface area to unit volume of the aeration tank for the additional surfaces for increased microbial population and metabolism and hence, the biomass concentration in the tank and offers the potential to reduce the basin volumes. They are used to improve the volumetric nitrification rates and to accomplish the denitrification in aeration tanks by anoxic zones within the biofilm thickness. |\n|  |  | Fixed bed bio film activated sludge process (FFASP) | This process consists of a series of aerated reactors, filtration units and final polishing units. Plants with extensive root systems are placed on a supporting mesh slightly below the water level in the open aerated reactors and their roots dangling about 1.5 metres into the sewage is claimed to provide a healthy habitat for bacteria and a whole range of other organisms such as protozoa, zooplankton, worms, snails and even fish. As sewage flows through these different ecosystems in each tank, a series of self managing, cascading ecologies are stated to provide a highly robust and efficient system. |\n|  |  | Immobilized Biofilm Process (Eco Bio Block, EBB) | This process is used for cleaning up polluted water sources such as sewage drains, polluted rivers, ponds, lakes, etc. The blocks are produced by mixing effective microbes with zeolites (volcanic porous stones), and alkaline cement. Once EBB is placed in polluted water, the effective microbes would multiply, treat the wastes effectively in a faster manner and clean the water body without causing any harm to plants and fish. EBB does not require energy, manpower and maintenance to perform the cleaning process. There is no operational cost practically. Since it is an online treatment, additional large land space is not required. However, the hydraulics of the drains needs validation with EBB in place |\n| Advanced processes | Minute Solids in sus-pension colloidal materials, dissolved organic matter, TDS microbes, etc. removal | Membrane filtration | Membrane Filtration is used to remove minute solids, colloidal material, dissolved organic matter, etc. from secondary effluents using several kinds of membranes. According to separating particles size, membranes are classified as follows:<br>Micro filtration (MF) for 0.08 to 2.0 microns<br>Ultra filtration (UF) for 0.005 to 0.2 microns<br>Nano filtration (NF) for 0.001 to 0.01 microns<br>Reverse osmosis (RO) for 0.0001 to 0.001 microns<br>The RO membrane is essentially a desalination adaptation for removal of TDS |\n|  |  | Membrane Bioreactor | This process is a sort of aeration tank and secondary clarifier being a two in one. The secondary clarifier is avoided by filtration of mixed liquor by membrane modules either immersed into the aeration tank mixed liquor or externally fitted and the mixed liquor routed through these. Essentially it has a suspended solids free treated sewage and retains higher MLSS and reduces the volume of aeration tanks. |",
+  "notes": [
+    "Continuation table: the same table runs over physical pages 462-466 (printed 5 - 158 to 5 - 162). The printed caption appears only on physical page 462; the header row Type / Objective / Process / Description is repeated at the top of every page segment. One record, five regions.",
+    "Transcriber layout note: the Type and Objective columns are printed empty on physical pages 463, 464 and 465 for every row except 'Secondary / Polishing BOD, SS, Pathogen removal' (page 464, Soil aquifer treatment row). Empty cells are retained as empty strings rather than carrying earlier values forward.",
+    "Transcriber layout note: cell text wraps mid-word in the narrow columns; the printed breaks read 'Denitrificatio / n process', 'Phosphor / us (P) removal' and 'Simultan / eous / removal'. Words are rejoined here ('Denitrification', 'Phosphorus (P) removal', 'Simultaneous removal') and no wording is changed.",
+    "Printed as 'without a major renovation The unit which consists of ...' (missing full stop between sentences); not corrected.",
+    "Printed as 'Clinoptinolite' (Ion Exchange row); not corrected.",
+    "Printed as 'Modified Ludzck Ettinger (MLE)' (Bardenpho row); not corrected.",
+    "Printed as 'within threshold limits .' in the Ammonia Stripping row (full stop stands alone on the next printed line); retained.",
+    "Printed as 'Minute Solids in sus-pension colloidal materials, dissolved organic matter, TDS microbes, etc. removal' with the break inside 'suspension'; the hyphen is retained.",
+    "Printed as 'Fixed bed bio film activated sludge process (FFASP)' with the words kept apart; retained.",
+    "The EBB row description has no closing full stop as printed.",
+    "Transcriber observation: the membrane pore-size classes printed in this table (MF 0.08 to 2.0, UF 0.005 to 0.2, NF 0.001 to 0.01, RO 0.0001 to 0.001 microns) differ from the ranges printed in the running text on physical page 483 (MF 0.1 and 1 micron, UF 0.005 and 0.05 micron, NF around 0.001 micron). Both are transcribed as printed; neither is reconciled.",
+    "Printed note below the table on physical page 466: 'Note: These are not a comprehensive listing as many newer processes keep evolving at any given time. However, in respect of biological processes, the descriptions above are meant for understanding the basics of the stated processes.'",
+    "The scanned table is inserted sideways on a portrait page; each page region was rendered and rotated 90 degrees before reading. All value text is raster in the source."
+  ],
+  "verification": {
+    "transcription": {
+      "pass_id": "sew-t06-first-reading-2026-11-08",
+      "method": "Direct viewing of the annotation-cleaned 144 dpi page render and 288 dpi crops rotated to portrait; no OCR, no paid service",
+      "observations": "All 17 process rows read on all five page segments, each segment viewed as two overlapping rotated crops at about 288 dpi. Long descriptions were read line by line against the rendered text. Merged Type/Objective cells recorded from the rule pattern, and empty printed cells recorded as empty."
+    }
+  },
+  "create_unit": true,
+  "parent_id": "SEW-2013-A:5.29"
+}

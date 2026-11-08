@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:Ep288-1",
+  "unit_id": "SEW-2013-A:Ep288-1",
+  "manual_id": "SEW-2013-A",
+  "kind": "equation",
+  "number": "p288-1",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "state": "pending",
+  "regions": [
+    {
+      "pdf_page": 288,
+      "page_label": "4 - 15",
+      "bbox": [
+        56,
+        457,
+        166,
+        486
+      ],
+      "render_sha256": "c178619df1254cbedc3be8cd4b3a015dfb83c7567e4c9fd063c2a75d643a5ce8"
+    }
+  ],
+  "title": "Unnumbered velocity head expression in the text of section 4.7.2",
+  "parent_id": "SEW-2013-A:4.7.2",
+  "latex": "V^2/2g",
+  "readable": "velocity head is computed as V^2/2g",
+  "symbols": [],
+  "applicability": "Section 4.7.2: throttling the delivery valve changes the velocity head, 'which varies in square proportion of the velocity, because the velocity head is computed as V²/2g.'",
+  "notes": [
+    "Unnumbered inline expression set in running text; p288-1 is a service locator, not a printed equation number.",
+    "V and g are not defined on this page and no value of g is printed; none has been inferred.",
+    "The full printed line reads 'because the velocity head is computed as V²/2g.'; the region covers the expression with its immediate lead-in."
+  ],
+  "verification": {
+    "transcription": {
+      "pass_id": "sew-t02-first-reading",
+      "method": "Direct visual reading of full 144 dpi annotation-cleaned page PNGs plus 200-600 dpi detail crops of each item, rotated where the printed page is landscape; no OCR, no paid service, no delegation",
+      "observations": "First reading only. Every printed value, coefficient, power, sign, bracket, spelling and unit retained as printed; source oddities kept and flagged rather than corrected. No distinct second visual pass performed."
+    }
+  }
+}

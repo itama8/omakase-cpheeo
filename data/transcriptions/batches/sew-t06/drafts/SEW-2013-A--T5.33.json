@@ -1,0 +1,110 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:T5.33",
+  "unit_id": "SEW-2013-A:T5.33",
+  "manual_id": "SEW-2013-A",
+  "kind": "table",
+  "number": "5.33",
+  "title": "Performance of Hamamatsu City sewage treatment plant",
+  "state": "pending",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "regions": [
+    {
+      "pdf_page": 471,
+      "page_label": "5 - 167",
+      "bbox": [
+        90.0,
+        88.0,
+        522.0,
+        368.0
+      ],
+      "render_sha256": "26a38ecd66f85aeeb5b7f447f255ee12703f4dbc1832339cd74a7b798306d8fc"
+    }
+  ],
+  "headers": [
+    "Parameter",
+    "Values",
+    "Parameter",
+    "Values"
+  ],
+  "rows": [
+    [
+      "Water temperature (°C)",
+      "13.5 - 16.0",
+      "Influent",
+      ""
+    ],
+    [
+      "Flow rate (m³/day)",
+      "919 - 1,008",
+      "BOD",
+      "100 - 400"
+    ],
+    [
+      "Return sludge ratio (%)",
+      "86 - 105",
+      "T-N",
+      "30 - 50"
+    ],
+    [
+      "Retention time (hours)",
+      "23.0 - 25.1",
+      "NH₄⁺-N",
+      "20 - 30"
+    ],
+    [
+      "Waste sludge (m³/day)",
+      "10.6 - 19.2",
+      "Effluent",
+      ""
+    ],
+    [
+      "MLSS (mg/l)",
+      "3,670 - 3,880",
+      "BOD average",
+      "15"
+    ],
+    [
+      "SRT (days)",
+      "22.7 - 37.6",
+      "T-N",
+      "5 - 10"
+    ],
+    [
+      "BOD - SS loading (kg/kg/day)",
+      "0.15 - 0.23",
+      "",
+      ""
+    ],
+    [
+      "T N - SS loading (kg/kg/day)",
+      "0.028 - 0.037",
+      "",
+      ""
+    ],
+    [
+      "Sludge aeration time (days)",
+      "9.1 - 15.0",
+      "",
+      ""
+    ]
+  ],
+  "cell_spans": [],
+  "markdown": "| Parameter | Values | Parameter | Values |\n| --- | --- | --- | --- |\n| Water temperature (°C) | 13.5 - 16.0 | Influent |  |\n| Flow rate (m³/day) | 919 - 1,008 | BOD | 100 - 400 |\n| Return sludge ratio (%) | 86 - 105 | T-N | 30 - 50 |\n| Retention time (hours) | 23.0 - 25.1 | NH₄⁺-N | 20 - 30 |\n| Waste sludge (m³/day) | 10.6 - 19.2 | Effluent |  |\n| MLSS (mg/l) | 3,670 - 3,880 | BOD average | 15 |\n| SRT (days) | 22.7 - 37.6 | T-N | 5 - 10 |\n| BOD - SS loading (kg/kg/day) | 0.15 - 0.23 |  |  |\n| T N - SS loading (kg/kg/day) | 0.028 - 0.037 |  |  |\n| Sludge aeration time (days) | 9.1 - 15.0 |  |  |",
+  "notes": [
+    "Source:Moriyama et al., 1988",
+    "Transcriber layout note: the table is printed as two parameter/value pairs side by side with a repeated 'Parameter / Values' header. The right-hand pair is a nested block whose own section labels are 'Influent' and 'Effluent' (rows with no value). Rows are kept as printed, left pair first.",
+    "Printed as 'T N - SS loading (kg/kg/day)' with a space inside 'T N'; retained.",
+    "The right-hand block leaves the second 'Values' cell empty on the Influent, Effluent, BOD - SS loading, T N - SS loading and Sludge aeration time rows. Retained as empty strings.",
+    "Values are printed with spaces around the hyphen (for example 13.5 - 16.0); the spacing is retained."
+  ],
+  "verification": {
+    "transcription": {
+      "pass_id": "sew-t06-first-reading-2026-11-08",
+      "method": "Direct viewing of the annotation-cleaned 144 dpi page render and 300-360 dpi crops; no OCR, no paid service",
+      "observations": "All ten printed rows read on both halves from a 300 dpi crop; the two-level right-hand block (Influent / Effluent headings) reconstructed from the printed rows only."
+    }
+  },
+  "create_unit": true,
+  "parent_id": "SEW-2013-A:5.33"
+}

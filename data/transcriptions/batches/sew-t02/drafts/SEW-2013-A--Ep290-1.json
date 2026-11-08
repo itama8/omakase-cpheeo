@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:Ep290-1",
+  "unit_id": "SEW-2013-A:Ep290-1",
+  "manual_id": "SEW-2013-A",
+  "kind": "equation",
+  "number": "p290-1",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "state": "pending",
+  "regions": [
+    {
+      "pdf_page": 290,
+      "page_label": "4 - 17",
+      "bbox": [
+        320,
+        122,
+        402,
+        160
+      ],
+      "render_sha256": "a3b83fd9fa548d99e0611a641527b4b6e4a6388d838636052061b578b0ba71e7"
+    }
+  ],
+  "title": "Unnumbered system head curve label in Figure 4.8",
+  "parent_id": "SEW-2013-A:4.7.3",
+  "latex": "Hf+\\frac{v^2}{2g}",
+  "readable": "Hf + v^2 / (2 g)",
+  "symbols": [],
+  "applicability": "Figure 4.8 'System head curves with change in pipe sizes' (Source: CPHEEO, 1993). The lower curve is labelled Hf + v²/2g, the annotation above the upper curve reads 'INCREASE IN HEAD LOSS IN PIPE', and the axes are H and Q.",
+  "notes": [
+    "The same label is already transcribed for Figure 4.6 (SEW-2013-A:Ep289-1); this is the separate printed instance inside Figure 4.8 on page 290.",
+    "p290-1 is a service locator, not a printed equation number. No symbol definitions or units are printed in the figure; the leading term is printed as 'Hf' without a subscript."
+  ],
+  "verification": {
+    "transcription": {
+      "pass_id": "sew-t02-first-reading",
+      "method": "Direct visual reading of full 144 dpi annotation-cleaned page PNGs plus 200-600 dpi detail crops of each item, rotated where the printed page is landscape; no OCR, no paid service, no delegation",
+      "observations": "First reading only. Every printed value, coefficient, power, sign, bracket, spelling and unit retained as printed; source oddities kept and flagged rather than corrected. No distinct second visual pass performed."
+    }
+  }
+}

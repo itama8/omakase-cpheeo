@@ -1,0 +1,68 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:T5.44",
+  "unit_id": "SEW-2013-A:T5.44",
+  "manual_id": "SEW-2013-A",
+  "kind": "table",
+  "number": "5.44",
+  "title": "Operating conditions of MBR process (Nordkanal STP)",
+  "state": "pending",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "regions": [
+    {
+      "pdf_page": 488,
+      "page_label": "5 - 184",
+      "bbox": [
+        76.0,
+        352.0,
+        520.0,
+        448.0
+      ],
+      "render_sha256": "fe5ce635c865d6aab3946983d5222da9a4154deaea79d97e7234781d6ec489ec"
+    }
+  ],
+  "headers": [
+    "F/M",
+    "Anoxic",
+    "Oxic",
+    "SRT (days)",
+    "MLSS (mg/l)",
+    "Flux (l/sqm/day)",
+    "Nitrified Recycle (% of influent)"
+  ],
+  "rows": [
+    [
+      "0.04",
+      "3.1-4.9",
+      "4.8-7.6",
+      "25.0-28.6",
+      "9,200",
+      "288-552",
+      "400"
+    ]
+  ],
+  "cell_spans": [
+    {
+      "column": 1,
+      "header": true,
+      "colspan": 2,
+      "description": "Printed group heading 'HRT(hours)' spans the Anoxic and Oxic sub-headings"
+    }
+  ],
+  "markdown": "| F/M | Anoxic | Oxic | SRT (days) | MLSS (mg/l) | Flux (l/sqm/day) | Nitrified Recycle (% of influent) |\n| --- | --- | --- | --- | --- | --- | --- |\n| 0.04 | 3.1-4.9 | 4.8-7.6 | 25.0-28.6 | 9,200 | 288-552 | 400 |",
+  "notes": [
+    "Printed below the table: 'Source: Moreau, 2010'.",
+    "Transcriber layout note: header is printed on two levels. Upper level reads 'F/M / HRT(hours) / SRT (days) / MLSS (mg/l) / Flux (l/sqm/day) / Nitrified Recycle (% of influent)'; lower level reads 'Anoxic' and 'Oxic' under HRT(hours).",
+    "Printed as 'HRT(hours)' with no space before the parenthesis, and as 'Flux (l/sqm/day)' with a lower-case l; retained.",
+    "Single printed data row."
+  ],
+  "verification": {
+    "transcription": {
+      "pass_id": "sew-t06-first-reading-2026-11-08",
+      "method": "Direct viewing of the annotation-cleaned 144 dpi page render and 360-480 dpi crops; no OCR, no paid service",
+      "observations": "All seven headings and seven values read from a 420 dpi crop; '25.0-28.6' and '288-552' checked individually."
+    }
+  },
+  "create_unit": true,
+  "parent_id": "SEW-2013-A:5.44"
+}

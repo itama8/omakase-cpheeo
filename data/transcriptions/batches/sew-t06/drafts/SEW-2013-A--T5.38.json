@@ -1,0 +1,79 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:T5.38",
+  "unit_id": "SEW-2013-A:T5.38",
+  "manual_id": "SEW-2013-A",
+  "kind": "table",
+  "number": "5.38",
+  "title": "Performance of 42 MLD Bardenpho process, Kelowna STP, Canada",
+  "state": "pending",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "regions": [
+    {
+      "pdf_page": 479,
+      "page_label": "5 - 175",
+      "bbox": [
+        105.0,
+        145.0,
+        500.0,
+        372.0
+      ],
+      "render_sha256": "c3692815cba532172bd1c8cf6352af06f3c0d37786189d07e4d8d94311b921d7"
+    }
+  ],
+  "headers": [
+    "Parameter",
+    "Unit",
+    "Influent",
+    "Effluent"
+  ],
+  "rows": [
+    [
+      "TSS",
+      "mg/l",
+      "350.0",
+      "2.0"
+    ],
+    [
+      "BOD₅",
+      "mg/l",
+      "186.0",
+      "5.0"
+    ],
+    [
+      "T-P",
+      "mg/l",
+      "8.50",
+      "0.14"
+    ],
+    [
+      "T-N",
+      "mg/l",
+      "36.39",
+      "4.03"
+    ],
+    [
+      "Faecal Coliform",
+      "cfu/100ml",
+      "N/A",
+      "0.2"
+    ]
+  ],
+  "cell_spans": [],
+  "markdown": "| Parameter | Unit | Influent | Effluent |\n| --- | --- | --- | --- |\n| TSS | mg/l | 350.0 | 2.0 |\n| BOD₅ | mg/l | 186.0 | 5.0 |\n| T-P | mg/l | 8.50 | 0.14 |\n| T-N | mg/l | 36.39 | 4.03 |\n| Faecal Coliform | cfu/100ml | N/A | 0.2 |",
+  "notes": [
+    "Printed below the table: 'Flow Capacity: 42 MLD', 'Process configuration: Bardenpho process + Dual media filtration process + UV disinfection process'.",
+    "Source printed below the table: 'Source: Environmental Operators Certification Program http://www.eocp.org/plants-kelowna.html'.",
+    "Decimal places differ by parameter as printed (350.0, 2.0; 8.50, 0.14; 36.39, 4.03) and are retained.",
+    "'N/A' is printed for the influent Faecal Coliform cell; retained."
+  ],
+  "verification": {
+    "transcription": {
+      "pass_id": "sew-t06-first-reading-2026-11-08",
+      "method": "Direct viewing of the annotation-cleaned 144 dpi page render and 300-420 dpi crops; no OCR, no paid service",
+      "observations": "All five rows, units and the block below the table read from a 420 dpi crop."
+    }
+  },
+  "create_unit": true,
+  "parent_id": "SEW-2013-A:5.38"
+}

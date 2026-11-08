@@ -1,0 +1,157 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:T5.32",
+  "unit_id": "SEW-2013-A:T5.32",
+  "manual_id": "SEW-2013-A",
+  "kind": "table",
+  "number": "5.32",
+  "title": "Design criteria for biological nitrification-denitrification from results of the 31 MLD average flow Koramangala & Chellagatta (K&C) Valley STP at Bengaluru",
+  "state": "pending",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "regions": [
+    {
+      "pdf_page": 468,
+      "page_label": "5 - 164",
+      "bbox": [
+        78.0,
+        255.0,
+        522.0,
+        742.0
+      ],
+      "render_sha256": "4c8df44ba13a1144df3d67bb6225f7bdf8713a396e7ef2391c17bfe34b70f846"
+    }
+  ],
+  "headers": [
+    "No.",
+    "Design Parameter",
+    "(A)",
+    "(B)"
+  ],
+  "rows": [
+    [
+      "1.",
+      "Raw sewage BOD, mg/l",
+      "350",
+      "140"
+    ],
+    [
+      "2.",
+      "Final BOD, mg/l",
+      "17",
+      "9"
+    ],
+    [
+      "3.",
+      "Raw TKN, mg/l",
+      "37",
+      "35"
+    ],
+    [
+      "4.",
+      "Final TKN, mg/l",
+      "8",
+      "6"
+    ],
+    [
+      "5.",
+      "Raw sewage suspended solids, mg/l",
+      "400",
+      "70"
+    ],
+    [
+      "6.",
+      "Final suspended solids, mg/l",
+      "26",
+      "10"
+    ],
+    [
+      "7.",
+      "HRT in anoxic zone at average flow, hrs",
+      "1.6",
+      "2.5"
+    ],
+    [
+      "8.",
+      "HRT in aeration zone at average flow, hrs",
+      "20.5",
+      "9"
+    ],
+    [
+      "9.",
+      "MLSS in aeration zone, mg/l",
+      "3500",
+      "3000"
+    ],
+    [
+      "10.",
+      "Average DO in aeration tank",
+      "2",
+      "2"
+    ],
+    [
+      "11.",
+      "F/M in aeration",
+      "0.12",
+      "0.16"
+    ],
+    [
+      "12.",
+      "Ratio of RAS to plant flow",
+      "1.0",
+      "0.6"
+    ],
+    [
+      "13.",
+      "Ratio of MLSS return to plant flow",
+      "2.0",
+      "3.1"
+    ],
+    [
+      "14.",
+      "Surface loading in clarifier at average flow in m³/m²/day",
+      "12",
+      "24"
+    ],
+    [
+      "15.",
+      "HRT in clarifier at average flow + RAS, hrs",
+      "3.5",
+      "NG"
+    ],
+    [
+      "16.",
+      "SWD of clarifier, m",
+      "3.5",
+      "NG"
+    ],
+    [
+      "17.",
+      "Solids loading in clarifier kg MLSS/m²/day",
+      "84",
+      "115"
+    ],
+    [
+      "18.",
+      "Oxygen kg for kg BOD applied",
+      "1.2",
+      "1.48"
+    ]
+  ],
+  "cell_spans": [],
+  "markdown": "| No. | Design Parameter | (A) | (B) |\n| --- | --- | --- | --- |\n| 1. | Raw sewage BOD, mg/l | 350 | 140 |\n| 2. | Final BOD, mg/l | 17 | 9 |\n| 3. | Raw TKN, mg/l | 37 | 35 |\n| 4. | Final TKN, mg/l | 8 | 6 |\n| 5. | Raw sewage suspended solids, mg/l | 400 | 70 |\n| 6. | Final suspended solids, mg/l | 26 | 10 |\n| 7. | HRT in anoxic zone at average flow, hrs | 1.6 | 2.5 |\n| 8. | HRT in aeration zone at average flow, hrs | 20.5 | 9 |\n| 9. | MLSS in aeration zone, mg/l | 3500 | 3000 |\n| 10. | Average DO in aeration tank | 2 | 2 |\n| 11. | F/M in aeration | 0.12 | 0.16 |\n| 12. | Ratio of RAS to plant flow | 1.0 | 0.6 |\n| 13. | Ratio of MLSS return to plant flow | 2.0 | 3.1 |\n| 14. | Surface loading in clarifier at average flow in m³/m²/day | 12 | 24 |\n| 15. | HRT in clarifier at average flow + RAS, hrs | 3.5 | NG |\n| 16. | SWD of clarifier, m | 3.5 | NG |\n| 17. | Solids loading in clarifier kg MLSS/m²/day | 84 | 115 |\n| 18. | Oxygen kg for kg BOD applied | 1.2 | 1.48 |",
+  "notes": [
+    "Footnote printed below the table: '(A)- Performance of K&C Valley STP at Bengaluru, (B)- As per Example 8-2 & 8-5 of Wastewater Engineering-Metcalf & Eddy-4th Edition, NG-Not Given'.",
+    "The caption gives the average flow as '31 MLD' while the running text on the same page calls the same plant 'its 30 MLD capacity'. Both retained as printed; not reconciled.",
+    "Serial numbers are printed with a following full stop (1. to 18.) and are kept exactly.",
+    "Row 10 and row 16 carry no unit, and rows 12 and 13 are ratios (no unit). Cells are transcribed as printed, not completed."
+  ],
+  "verification": {
+    "transcription": {
+      "pass_id": "sew-t06-first-reading-2026-11-08",
+      "method": "Direct viewing of the annotation-cleaned 144 dpi page render and 300-420 dpi crops; no OCR, no paid service",
+      "observations": "All 18 numbered rows, both value columns and the printed footnote read from 300 dpi crops. NG values and decimals verified individually."
+    }
+  },
+  "create_unit": true,
+  "parent_id": "SEW-2013-A:5.32"
+}

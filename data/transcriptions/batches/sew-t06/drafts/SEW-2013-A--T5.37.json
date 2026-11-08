@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:T5.37",
+  "unit_id": "SEW-2013-A:T5.37",
+  "manual_id": "SEW-2013-A",
+  "kind": "table",
+  "number": "5.37",
+  "title": "Typical design parameters of AO process",
+  "state": "pending",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "regions": [
+    {
+      "pdf_page": 477,
+      "page_label": "5 - 173",
+      "bbox": [
+        168.0,
+        282.0,
+        436.0,
+        408.0
+      ],
+      "render_sha256": "a18914a225b9db7b17e2949426e396979b408d307496827808a4b7bb0e6e3996"
+    }
+  ],
+  "headers": [
+    "F/M as MLVSS",
+    "SRT (days)",
+    "MLSS (mg/l)",
+    "Anaerobic",
+    "Oxic",
+    "Return activated sludge (% of influent)"
+  ],
+  "rows": [
+    [
+      "0.2-0.7",
+      "2-25",
+      "2,000-4,000",
+      "0.5-1.5",
+      "1-3",
+      "25-40"
+    ]
+  ],
+  "cell_spans": [
+    {
+      "column": 3,
+      "header": true,
+      "colspan": 2,
+      "description": "Printed group heading 'HRT(hours)' spans the Anaerobic and Oxic sub-headings"
+    }
+  ],
+  "markdown": "| F/M as MLVSS | SRT (days) | MLSS (mg/l) | Anaerobic | Oxic | Return activated sludge (% of influent) |\n| --- | --- | --- | --- | --- | --- |\n| 0.2-0.7 | 2-25 | 2,000-4,000 | 0.5-1.5 | 1-3 | 25-40 |",
+  "notes": [
+    "Source: Pennsylvania Department of Environmental Protection",
+    "Transcriber layout note: header is printed on two levels. Upper level reads 'F/M as MLVSS', 'SRT (days)', 'MLSS (mg/l)', 'HRT(hours)' and 'Return activated sludge (% of influent)'; lower level reads 'Anaerobic' and 'Oxic' under HRT(hours).",
+    "Printed as 'HRT(hours)' with no space before the parenthesis; retained.",
+    "Single printed data row under six column headings."
+  ],
+  "verification": {
+    "transcription": {
+      "pass_id": "sew-t06-first-reading-2026-11-08",
+      "method": "Direct viewing of the annotation-cleaned 144 dpi page render and 300-420 dpi crops; no OCR, no paid service",
+      "observations": "All six headings and six values read from a 420 dpi crop; '0.2-0.7', '2-25', '2,000-4,000', '0.5-1.5', '1-3', '25-40' verified individually."
+    }
+  },
+  "create_unit": true,
+  "parent_id": "SEW-2013-A:5.37"
+}

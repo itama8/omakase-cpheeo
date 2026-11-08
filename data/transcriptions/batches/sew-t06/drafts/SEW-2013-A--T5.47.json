@@ -1,0 +1,139 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:T5.47",
+  "unit_id": "SEW-2013-A:T5.47",
+  "manual_id": "SEW-2013-A",
+  "kind": "table",
+  "number": "5-47",
+  "title": "Performance of MBR process (Arakawa STP)",
+  "state": "pending",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "regions": [
+    {
+      "pdf_page": 489,
+      "page_label": "5 - 185",
+      "bbox": [
+        74.0,
+        240.0,
+        512.0,
+        500.0
+      ],
+      "render_sha256": "588c21a8db8402f399a61e180dff0477c99a07b8d0ed6b1172938bc77d99f6b0"
+    }
+  ],
+  "headers": [
+    "",
+    "",
+    "pH",
+    "T-BOD",
+    "S-BOD",
+    "TSS",
+    "TN",
+    "TP",
+    "TColiform",
+    "Al"
+  ],
+  "rows": [
+    [
+      "Inf. mg/L",
+      "(A)",
+      "7.15",
+      "191",
+      "43.1",
+      "222",
+      "34.1",
+      "4.75",
+      "3.6E+05",
+      "2.48"
+    ],
+    [
+      "",
+      "(R)",
+      "6.97-7.47",
+      "92-497",
+      "21.5-78.6",
+      "65-867",
+      "21.5-58.7",
+      "2.74-9.51",
+      "9.6E+04 - 7.3E+05",
+      "0.78-11.63"
+    ],
+    [
+      "Eff. mg/L",
+      "(A)",
+      "7.17",
+      "1.0",
+      "-",
+      "<0.4",
+      "5.0",
+      "0.52",
+      "0.24",
+      "0.03"
+    ],
+    [
+      "",
+      "(R)",
+      "6.80-7.50",
+      "0.5-2.3",
+      "-",
+      "<0.4-0.7",
+      "2.1-6.9",
+      "0.09-2.16",
+      "ND-11.00",
+      "0.02-0.06"
+    ],
+    [
+      "Removal (%)",
+      "(A)",
+      "-",
+      "99.5",
+      "-",
+      "99.8",
+      "85.3",
+      "89.1",
+      "99.9",
+      "98.8"
+    ]
+  ],
+  "cell_spans": [
+    {
+      "column": 0,
+      "header": true,
+      "colspan": 2,
+      "description": "Printed top-left empty header cell spans the two left-hand label columns"
+    },
+    {
+      "column": 0,
+      "row": 0,
+      "rowspan": 2,
+      "description": "Printed 'Inf. mg/L' covers the (A) and (R) rows"
+    },
+    {
+      "column": 0,
+      "row": 2,
+      "rowspan": 2,
+      "description": "Printed 'Eff. mg/L' covers the (A) and (R) rows"
+    }
+  ],
+  "markdown": "|  |  | pH | T-BOD | S-BOD | TSS | TN | TP | TColiform | Al |\n| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |\n| Inf. mg/L | (A) | 7.15 | 191 | 43.1 | 222 | 34.1 | 4.75 | 3.6E+05 | 2.48 |\n|  | (R) | 6.97-7.47 | 92-497 | 21.5-78.6 | 65-867 | 21.5-58.7 | 2.74-9.51 | 9.6E+04 - 7.3E+05 | 0.78-11.63 |\n| Eff. mg/L | (A) | 7.17 | 1.0 | - | <0.4 | 5.0 | 0.52 | 0.24 | 0.03 |\n|  | (R) | 6.80-7.50 | 0.5-2.3 | - | <0.4-0.7 | 2.1-6.9 | 0.09-2.16 | ND-11.00 | 0.02-0.06 |\n| Removal (%) | (A) | - | 99.5 | - | 99.8 | 85.3 | 89.1 | 99.9 | 98.8 |",
+  "notes": [
+    "Printed below the table: 'T-BOD: Total BOD, s-BOD: Soluble BOD, TSS: Total suspended solids, T-N: Total nitrogen, T-P: Total phosphorus, Al: Aluminium, T-coliform: Total coliform, ND: Non- detected, E: Exponent' and 'Source: JSWA, 2003'.",
+    "Printed number is '5-47' (hyphen) in the caption while neighbouring tables use a full stop; the printed form is kept as the number.",
+    "Transcriber layout note: the printed table has two left columns (a process label and an (A)/(R) label) plus its own top-left empty cell. Only one top-left empty cell is printed; it is kept as the first empty header cell.",
+    "(A) and (R) are not expanded anywhere in the printed table; they are transcribed as printed. (A) rows hold single values and (R) rows hold ranges.",
+    "The legend prints 's-BOD' (lower case s) while the column header prints 'S-BOD' (upper case). Both are retained as printed.",
+    "Printed as 'TColiform' (no hyphen) in the header while the legend reads 'T-coliform'; retained.",
+    "Printed as 'ND-11.00' and '9.6E+04 - 7.3E+05'; the 'E+NN' exponent form and the spacing around the dash are retained.",
+    "Printed as 'Removal (%)' with the (A) cell only; no removal range row is printed.",
+    "The legend line 'T-BOD: ... ND: Non- detected, E: Exponent' is the printed key for this table and is recorded in notes only, not as table rows."
+  ],
+  "verification": {
+    "transcription": {
+      "pass_id": "sew-t06-first-reading-2026-11-08",
+      "method": "Direct viewing of the annotation-cleaned 144 dpi page render and 360-540 dpi crops; no OCR, no paid service",
+      "observations": "All five data rows, the two left-hand label columns and the legend read from 420 dpi crops of three bands of the table; every range and exponent checked digit by digit."
+    }
+  },
+  "create_unit": true,
+  "parent_id": "SEW-2013-A:5-47"
+}

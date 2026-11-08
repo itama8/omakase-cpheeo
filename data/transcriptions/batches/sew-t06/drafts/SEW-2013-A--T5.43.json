@@ -1,0 +1,103 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:T5.43",
+  "unit_id": "SEW-2013-A:T5.43",
+  "manual_id": "SEW-2013-A",
+  "kind": "table",
+  "number": "5.43",
+  "title": "Performance of 4.54 MLD STP using MBR technology, Delhi",
+  "state": "pending",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "regions": [
+    {
+      "pdf_page": 488,
+      "page_label": "5 - 184",
+      "bbox": [
+        90.0,
+        120.0,
+        482.0,
+        412.0
+      ],
+      "render_sha256": "7ba3c4c21da0637f9a064b9a9b84eec0eec016ed5e7b189a1775530d494cf477"
+    }
+  ],
+  "headers": [
+    "Parameter",
+    "Unit",
+    "Influent",
+    "Effluent"
+  ],
+  "rows": [
+    [
+      "pH",
+      "-",
+      "7.0 - 7.6",
+      "6.8 – 7.8"
+    ],
+    [
+      "Temperature",
+      "°C",
+      "18 - 38",
+      "-"
+    ],
+    [
+      "TSS",
+      "mg/l",
+      "400",
+      "<1.0"
+    ],
+    [
+      "BOD5",
+      "mg/l",
+      "250",
+      "<2"
+    ],
+    [
+      "Total COD",
+      "mg/l",
+      "750",
+      "-"
+    ],
+    [
+      "Total Kjeldahl Nitrogen",
+      "mg/l",
+      "40",
+      "<1.0"
+    ],
+    [
+      "Total NH₄⁺-N",
+      "mg/l",
+      "25",
+      "<0.5"
+    ],
+    [
+      "Total Alkalinity",
+      "mg/l",
+      "305",
+      "-"
+    ],
+    [
+      "Total Coliform",
+      "MPN/100 ml",
+      "-",
+      "2"
+    ]
+  ],
+  "cell_spans": [],
+  "markdown": "| Parameter | Unit | Influent | Effluent |\n| --- | --- | --- | --- |\n| pH | - | 7.0 - 7.6 | 6.8 – 7.8 |\n| Temperature | °C | 18 - 38 | - |\n| TSS | mg/l | 400 | <1.0 |\n| BOD5 | mg/l | 250 | <2 |\n| Total COD | mg/l | 750 | - |\n| Total Kjeldahl Nitrogen | mg/l | 40 | <1.0 |\n| Total NH₄⁺-N | mg/l | 25 | <0.5 |\n| Total Alkalinity | mg/l | 305 | - |\n| Total Coliform | MPN/100 ml | - | 2 |",
+  "notes": [
+    "Printed below the table: 'Source:  Pamphlet issued by DJB'.",
+    "Printed as 'BOD5' with the 5 on the baseline (no subscript glyph is printed); retained as printed.",
+    "The pH effluent range is printed with a longer dash (6.8 – 7.8) than the influent range (7.0 - 7.6); retained.",
+    "Rows with no effluent value print '-' rather than a number; retained."
+  ],
+  "verification": {
+    "transcription": {
+      "pass_id": "sew-t06-first-reading-2026-11-08",
+      "method": "Direct viewing of the annotation-cleaned 144 dpi page render and 360-480 dpi crops; no OCR, no paid service",
+      "observations": "All nine rows read from a 300 dpi crop; inequality signs (<1.0, <2, <0.5) and 'MPN/100 ml' checked individually."
+    }
+  },
+  "create_unit": true,
+  "parent_id": "SEW-2013-A:5.43"
+}

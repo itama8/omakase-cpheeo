@@ -1,0 +1,88 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:Tp302-1",
+  "unit_id": "SEW-2013-A:Tp302-1",
+  "manual_id": "SEW-2013-A",
+  "kind": "table",
+  "number": "p302-1",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "state": "pending",
+  "regions": [
+    {
+      "pdf_page": 302,
+      "page_label": "4 - 29",
+      "bbox": [
+        104,
+        432,
+        372,
+        542
+      ],
+      "render_sha256": "63ab6ed3110a4e851509f88e1d43a7576228d8ea56ec853e5d41668bab49bcee"
+    }
+  ],
+  "title": "Unnumbered design flow conditions table in Figure 4.15",
+  "headers": [
+    "Reach",
+    "Low flow",
+    "Average flow",
+    "Peak flow"
+  ],
+  "rows": [
+    [
+      "A-B",
+      "15",
+      "20",
+      "45"
+    ],
+    [
+      "B-C",
+      "35",
+      "50",
+      "110"
+    ],
+    [
+      "C1-C",
+      "30",
+      "50",
+      "120"
+    ],
+    [
+      "C-D",
+      "65",
+      "100",
+      "230"
+    ]
+  ],
+  "cell_spans": [
+    {
+      "description": "Printed spanning heading 'Design Flow conditions, in lps' covers the three flow columns.",
+      "columns": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "description": "'Average flow' is printed on two lines in its header cell.",
+      "columns": [
+        2
+      ]
+    }
+  ],
+  "markdown": "| Reach | Low flow | Average flow | Peak flow |\n| --- | --- | --- | --- |\n| A-B | 15 | 20 | 45 |\n| B-C | 35 | 50 | 110 |\n| C1-C | 30 | 50 | 120 |\n| C-D | 65 | 100 | 230 |",
+  "notes": [
+    "Printed spanning heading reads 'Design Flow conditions, in lps'. The first character after 'in' is a bare vertical stroke in the source and is not distinguishable as capital I or lower case l; transcribed as 'lps', the abbreviation printed in the pumpage boxes of the same figure.",
+    "Row label 'C1-C' is printed with the C1 pump box shown below the spine between B and C; the cell is preserved exactly as printed.",
+    "The same figure prints four pumpage boxes: A 'Low flow 15 lps / Average flow 20 lps / Peak flow 45 lps'; B 'Low flow 20 lps / Average flow 30 lps / Peak flow 65 lps'; C1 'Low flow 30 lps / Average flow 50 lps / Peak flow 120 lps'. C has no flow values printed beside it.",
+    "Unnumbered table embedded in a figure; p302-1 is a service locator, not a printed table number."
+  ],
+  "verification": {
+    "transcription": {
+      "pass_id": "sew-t02-first-reading",
+      "method": "Direct visual reading of full 144 dpi annotation-cleaned page PNGs plus 200-600 dpi detail crops of each item, rotated where the printed page is landscape; no OCR, no paid service, no delegation",
+      "observations": "First reading only. Every printed value, coefficient, power, sign, bracket, spelling and unit retained as printed; source oddities kept and flagged rather than corrected. No distinct second visual pass performed."
+    }
+  },
+  "create_unit": true,
+  "parent_id": "SEW-2013-A:4.20.4"
+}

@@ -1,0 +1,99 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:T5.49",
+  "unit_id": "SEW-2013-A:T5.49",
+  "manual_id": "SEW-2013-A",
+  "kind": "table",
+  "number": "5.49",
+  "title": "Number of membrane panels replaced",
+  "state": "pending",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "regions": [
+    {
+      "pdf_page": 490,
+      "page_label": "5 - 186",
+      "bbox": [
+        78.0,
+        220.0,
+        512.0,
+        470.0
+      ],
+      "render_sha256": "5baf9c2c3bb41de00e743d191e37b927b01b8e43742fb898366219f85dc6543f"
+    }
+  ],
+  "headers": [
+    "Period of membrane panels used (year)",
+    "Installed (a)",
+    "replaced (b)",
+    "Ratio of b) / (a)"
+  ],
+  "rows": [
+    [
+      "1",
+      "85,000",
+      "162",
+      "0.2"
+    ],
+    [
+      "2",
+      "73,936",
+      "227",
+      "0.3"
+    ],
+    [
+      "3",
+      "36,036",
+      "514",
+      "1.5"
+    ],
+    [
+      "4",
+      "15,386",
+      "29",
+      "0.2"
+    ],
+    [
+      "5",
+      "15,386",
+      "16",
+      "0.1"
+    ],
+    [
+      "6",
+      "4,286",
+      "20",
+      "0.5"
+    ],
+    [
+      "7",
+      "686",
+      "≤15",
+      "2.9"
+    ]
+  ],
+  "cell_spans": [
+    {
+      "column": 1,
+      "header": true,
+      "colspan": 3,
+      "description": "Printed group heading 'Number of Membrane Panels' spans Installed, replaced and Ratio"
+    }
+  ],
+  "markdown": "| Period of membrane panels used (year) | Installed (a) | replaced (b) | Ratio of b) / (a) |\n| --- | --- | --- | --- |\n| 1 | 85,000 | 162 | 0.2 |\n| 2 | 73,936 | 227 | 0.3 |\n| 3 | 36,036 | 514 | 1.5 |\n| 4 | 15,386 | 29 | 0.2 |\n| 5 | 15,386 | 16 | 0.1 |\n| 6 | 4,286 | 20 | 0.5 |\n| 7 | 686 | ≤15 | 2.9 |",
+  "notes": [
+    "Printed below the table: 'Source:  JSWA,2003'.",
+    "Printed as 'Ratio of b) / (a)' with an unmatched opening situation (a closing parenthesis after 'b' and no opening one) and spaces around the slash; retained exactly, not corrected.",
+    "Printed header reads 'replaced (b)' in lower case while the neighbouring heading reads 'Installed (a)'; retained.",
+    "Periods 4 and 5 print the same installed count (15,386); retained.",
+    "Printed as '≤15' for period 7 replaced panels; retained."
+  ],
+  "verification": {
+    "transcription": {
+      "pass_id": "sew-t06-first-reading-2026-11-08",
+      "method": "Direct viewing of the annotation-cleaned 144 dpi page render and 360-540 dpi crops; no OCR, no paid service",
+      "observations": "All seven rows read from three overlapping 420 dpi crops; every count and ratio checked digit by digit."
+    }
+  },
+  "create_unit": true,
+  "parent_id": "SEW-2013-A:5.49"
+}

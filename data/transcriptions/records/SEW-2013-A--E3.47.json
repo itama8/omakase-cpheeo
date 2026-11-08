@@ -1,0 +1,60 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:E3.47",
+  "unit_id": "SEW-2013-A:E3.47",
+  "manual_id": "SEW-2013-A",
+  "kind": "equation",
+  "number": "3.47",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "state": "verified",
+  "regions": [
+    {
+      "pdf_page": 262,
+      "page_label": "3 - 117",
+      "bbox": [
+        62,
+        234,
+        518,
+        276
+      ],
+      "render_sha256": "3e2c3d6ab713d8ebed6a98b8dd9f29d33bc9012d2a72ce6468cbc8f727f753d9"
+    }
+  ],
+  "title": "Sulphide build up in a filled pipe",
+  "parent_id": "SEW-2013-A:3.69.4.4",
+  "latex": "\\Delta C_s = 0.066\\, t\\, BOD_T \\, \\frac{\\left(1 + 0.0004\\, d\\right)}{d}",
+  "readable": "ΔC_s = 0.066 t BOD_T × (1 + 0.0004 d) / d",
+  "symbols": [
+    {
+      "symbol": "C_s",
+      "definition": "Increase of Sulphide concentration in the force main in mg/l"
+    },
+    {
+      "symbol": "t",
+      "definition": "Detention time in the main in minutes"
+    },
+    {
+      "symbol": "d",
+      "definition": "Pipe diameter in mm"
+    }
+  ],
+  "applicability": "Section 3.69.4.4 Age of Sewage: the possible sulphide build up in a filled pipe can be roughly estimated by equation (3.47).",
+  "notes": [
+    "The printed symbol list defines C_s, t and d only. BOD_T is not defined on this page; no definition has been inferred.",
+    "The formula is printed as an increment ΔC_s while the symbol list names C_s without the delta. Preserved as printed; not corrected.",
+    "Equation number (3.47) is printed in parentheses at the right margin of the formula."
+  ],
+  "verification": {
+    "transcription": {
+      "pass_id": "sew-t02-first-reading",
+      "method": "Direct visual reading of full 144 dpi annotation-cleaned page PNGs plus 200-600 dpi detail crops of each item, rotated where the printed page is landscape; no OCR, no paid service, no delegation",
+      "observations": "First reading only. Every printed value, coefficient, power, sign, bracket, spelling and unit retained as printed; source oddities kept and flagged rather than corrected. No distinct second visual pass performed."
+    },
+    "visual_recheck": {
+      "pass_id": "parent-recheck-sew-t02",
+      "method": "distinct second visual inspection of exact source-region renders (incl. rotated/zoomed crops) by parent assistant; not independent human review",
+      "observations": "Parent compared every cell/term against 144-dpi region renders and 200-dpi rotated crops; confirmed all values and printed anomalies.",
+      "content_sha256": "56b4a2e7ee2f31d69fc20d5e2115fe4030863a7857dc2cc7f5f103508fbf4f89"
+    }
+  }
+}
