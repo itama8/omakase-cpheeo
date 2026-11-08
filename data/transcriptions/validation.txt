@@ -387,3 +387,80 @@ PASS V50 rank=2
 }
 
 Deployment unchanged: 279 verified records live in tested snapshot 9287acd; two additional water tables are local pending the next deployment batch.
+
+2026-11-08 water-a-t02 parent integration checkpoint
+285 verified records; 126 tables, 159 equations. 341 completed page reviews; 2,576 remain including partial.
+18 unittest tests passed; 319 pinned source regions stable.
+APD 27/27; search ranking 12/12 top one; appendices 13/13.
+Preservation PASS: 4,956 original units, 2,321 source images, 7,640 original passages unchanged.
+Parent discovery corrected first-pass omission of explicit mathematical equalities and inequalities inside Figure 1.7; three expression-group records authored and distinctly rechecked.
+PASS V01 rank=1
+PASS V02 rank=1
+PASS V03 rank=1
+PASS V04 rank=1
+PASS V05 rank=1
+PASS V06 rank=1
+PASS V07 rank=1
+PASS V08 rank=1
+PASS V09 rank=1
+PASS V10 rank=1
+PASS V11 rank=1
+PASS V12 rank=1
+PASS V13 rank=1
+PASS V14 rank=2
+PASS V15 rank=1
+PASS V16 rank=1
+PASS V17 rank=1
+PASS V18 rank=1
+PASS V19 rank=1
+PASS V20 rank=1
+PASS V21 rank=1
+PASS V22 rank=1
+PASS V23 rank=1
+PASS V24 rank=1
+PASS V25 rank=1
+PASS V26 rank=1
+PASS V27 rank=1
+PASS V28 rank=1
+PASS V29 rank=1
+PASS V30 rank=1
+PASS V31 rank=1
+PASS V32 rank=1
+PASS V33 rank=1
+PASS V34 rank=2
+PASS V35 rank=1
+PASS V36 rank=1
+PASS V37 rank=1
+PASS V38 rank=2
+PASS V39 rank=1
+PASS V40 rank=1
+PASS V41 rank=1
+PASS V42 rank=1
+PASS V43 rank=1
+PASS V44 rank=3
+PASS V45 rank=3
+PASS V46 rank=2
+PASS V47 rank=2
+PASS V48 rank=2
+PASS V49 rank=2
+PASS V50 rank=2
+PASS V51 rank=2
+PASS V52 rank=1
+PASS V53 rank=1
+PASS V54 rank=1
+{
+  "questions": 54,
+  "content_checks_passed": 54,
+  "top1": 43,
+  "top5": 54,
+  "mrr": 0.8919753086419753,
+  "local_warm_search_fetch_ms": {
+    "samples": 270,
+    "median": 49.13297599705402,
+    "p95": 63.94468600046821
+  },
+  "limitations": "Source-open regression set. Same-assistant visual recheck, not independent accuracy proof. In-process warm SQLite timings exclude network, rendering, model and end-to-end retrieval time.",
+  "failures": []
+}
+
+Deployment unchanged: tested 9287acd snapshot serves 279 verified records. Six additional verified records are local pending the next deployment batch.

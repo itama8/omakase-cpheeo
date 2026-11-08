@@ -288,6 +288,16 @@
         95,
         96,
         97,
+        98,
+        99,
+        100,
+        103,
+        104,
+        105,
+        106,
+        107,
+        109,
+        110,
         368,
         369,
         370,
@@ -309,7 +319,7 @@
         "823": "Table 13.1 continuation transcribed; native Table 13.2 continues onward and has not been fully checked.",
         "1157": "Table 5 caption checked; preceding native input tables have not received a cell-by-cell visual comparison."
       },
-      "notes": "All six baseline image-only table units transcribed, including continuations outside their former bounds. This is not an all-page inventory of visual tables in this manual. water-a-t01: ten target pages (86,87,88,91-97) separately inspected by parent; three tables sealed, including T1.1 continuation on page 92 and T1.2 source line on page 96. Unexplained 135* retained."
+      "notes": "All six baseline image-only table units transcribed, including continuations outside their former bounds. This is not an all-page inventory of visual tables in this manual. water-a-t01: ten target pages (86,87,88,91-97) separately inspected by parent; three tables sealed, including T1.1 continuation on page 92 and T1.2 source line on page 96. Unexplained 135* retained. water-a-t02: ten assigned pages compared by parent; T2.1 and three unnumbered Figure 1.7 NRW expression groups sealed. Child exclusion of figure math was corrected. Chapter listing on pages 100-101 treated as contents list; outside continuation-check pages not added to reviewed count."
     },
     "WS-2024-B": {
       "reviewed_pages": [

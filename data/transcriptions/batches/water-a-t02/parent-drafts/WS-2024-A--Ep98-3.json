@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "id": "WS-2024-A:Ep98-3",
+  "unit_id": "WS-2024-A:Ep98-3",
+  "manual_id": "WS-2024-A",
+  "kind": "equation",
+  "number": "p98-3",
+  "title": "Figure 1.7 Operation Zone3 initial and reduced NRW expressions",
+  "parent_id": "WS-2024-A:1.9.2",
+  "source_sha256": "b60f2fb548357aec676b18ef31e3b37fb0e5e8a1aec8f886880b951113848b0a",
+  "state": "pending",
+  "regions": [
+    {
+      "pdf_page": 98,
+      "page_label": "13",
+      "bbox": [
+        175,
+        617,
+        449,
+        676
+      ],
+      "render_sha256": "47b570f75e53dc0dcca402462058ba082b74e7a7a34314ae5dc5dea71b080fcc"
+    }
+  ],
+  "latex": "\\mathrm{NRW}=\\mathrm{N3};\\quad\\text{Reduced}=\\mathrm{NRW3};\\quad(\\mathrm{NRW3}<\\mathrm{N3})",
+  "readable": "Initial NRW=N3; Reduced =NRW3; (NRW3<N3)",
+  "symbols": [],
+  "applicability": "Expressions printed inside the Initial and Reduced boxes for Operation Zone3 of Figure 1.7, Application of Decentralised Planning in Water Supply.",
+  "notes": [
+    "Unnumbered figure expressions; p98-3 is a service locator, not a printed equation number.",
+    "The digits in N3 and NRW3 are printed on the baseline, not as subscripts. Equality and less-than signs are printed, not inferred from the prose.",
+    "Reduced is the printed box label; no new variable or numerical NRW reduction is inferred. Figure arrows and DMA labels remain in the source crop.",
+    "The delegated first reading excluded these expressions as figure labels. Parent discovery included them because the agreed scope covers unnumbered symbolic expressions within figures."
+  ],
+  "verification": {
+    "transcription": {
+      "pass_id": "parent-discovery-water-a-t02-zone-3",
+      "method": "Direct visual first reading of full-page PNG and separately rendered 288-dpi figure-row crop; no OCR.",
+      "observations": "Read initial NRW equality, Reduced label equality and parenthesized strict inequality; retained all baseline digits and zone labels."
+    }
+  }
+}

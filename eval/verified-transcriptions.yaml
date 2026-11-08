@@ -211,3 +211,24 @@ questions:
     expect: [WS-2024-B:T3.3]
     row: ['Hand pump (HP)', '• Checking of HP and spout pipe • Checking of nuts and bolts. • Test-water quality • Cleaning inside of the pump • Checking of anchor-bolt • Cleaning rusty patches', '• Checking water discharge. • Repairing handle as needed. • Repairing/replacing valves. • Removing pump and cleaning of pipe.']
     region_pages: [115, 116]
+  - id: V51
+    question: Table 2.1 targeted service level benchmarks water supply
+    expect: [WS-2024-A:T2.1]
+    row: ['2', 'Per capita supply of water', '135 LPCD']
+    contains: ['Efficiency in collection of water supply-related charges | 90%', 'without any mark']
+    region_pages: [109, 110]
+  - id: V52
+    question: initial reduced NRW1 N1 operation zone
+    expect: [WS-2024-A:Ep98-1]
+    contains: ['Initial NRW=N1; Reduced =NRW1; (NRW1<N1)', 'not as subscripts']
+    region_pages: [98]
+  - id: V53
+    question: initial reduced NRW2 N2 operation zone
+    expect: [WS-2024-A:Ep98-2]
+    contains: ['Initial NRW=N2; Reduced =NRW2; (NRW2<N2)', 'not as subscripts']
+    region_pages: [98]
+  - id: V54
+    question: initial reduced NRW3 N3 operation zone
+    expect: [WS-2024-A:Ep98-3]
+    contains: ['Initial NRW=N3; Reduced =NRW3; (NRW3<N3)', 'not as subscripts']
+    region_pages: [98]

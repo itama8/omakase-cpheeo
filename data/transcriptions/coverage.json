@@ -20,17 +20,17 @@
     "WS-2024-A": {
       "physical_pages": 1283,
       "review_scope_pages": 1198,
-      "pages_reviewed": 26,
+      "pages_reviewed": 36,
       "pages_partially_reviewed": 2,
-      "pages_remaining_including_partial": 1172,
+      "pages_remaining_including_partial": 1162,
       "indexed_tables": 215,
       "baseline_image_table_units": 6,
       "discovered_table_units_verified": 0,
       "baseline_image_table_units_verified": 6,
       "baseline_image_table_units_pending": 0,
-      "native_table_units_without_visual_transcription": 202,
-      "verified_tables": 13,
-      "verified_equations": 7
+      "native_table_units_without_visual_transcription": 201,
+      "verified_tables": 14,
+      "verified_equations": 10
     },
     "WS-2024-B": {
       "physical_pages": 702,

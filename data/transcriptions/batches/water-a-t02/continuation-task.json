@@ -1,0 +1,20 @@
+{
+  "note": "Replacement batch; query task_status for current liveness.",
+  "batch": "water-a-t03",
+  "taskId": "node:delegated-task:command%3Amcp%3A05efbfda-5a8a-40bb-a971-2e99724fd930%3Adelegate-task%3Aomakase-vt-water-a-t03",
+  "childThreadId": "thread:delegated-task:command%3Amcp%3A05efbfda-5a8a-40bb-a971-2e99724fd930%3Adelegate-task%3Aomakase-vt-water-a-t03",
+  "providerInstanceId": "pi",
+  "model": "default",
+  "pages": [
+    119,
+    120,
+    121,
+    123,
+    124,
+    125,
+    126,
+    127,
+    128,
+    129
+  ]
+}

@@ -1,0 +1,111 @@
+{
+  "schema_version": 1,
+  "id": "WS-2024-A:T2.1",
+  "unit_id": "WS-2024-A:T2.1",
+  "manual_id": "WS-2024-A",
+  "kind": "table",
+  "number": "2.1",
+  "source_sha256": "b60f2fb548357aec676b18ef31e3b37fb0e5e8a1aec8f886880b951113848b0a",
+  "state": "verified",
+  "regions": [
+    {
+      "pdf_page": 109,
+      "page_label": "24",
+      "bbox": [
+        70.6,
+        634.5,
+        555.2,
+        775.3
+      ],
+      "render_sha256": "7fdaf8afb9758719e843dba0692e0fe4555ae2e44d3b6b897d3392d271c3358a"
+    },
+    {
+      "pdf_page": 110,
+      "page_label": "25",
+      "bbox": [
+        70.6,
+        76.0,
+        555.2,
+        142.7
+      ],
+      "render_sha256": "bd203a54455e0dccb0c2107ca4c3f448f258384050da86940332da65e007b082"
+    }
+  ],
+  "title": "Targeted service level benchmarks for water supply services",
+  "headers": [
+    "S. No.",
+    "Performance indicator",
+    "Targeted Benchmark"
+  ],
+  "rows": [
+    [
+      "1",
+      "Coverage of water supply connections",
+      "100%"
+    ],
+    [
+      "2",
+      "Per capita supply of water",
+      "135 LPCD"
+    ],
+    [
+      "3",
+      "Extent of metering of water connections",
+      "100%"
+    ],
+    [
+      "4",
+      "Extent of NRW",
+      "15%"
+    ],
+    [
+      "5",
+      "Continuity of water supply",
+      "24 hours"
+    ],
+    [
+      "6",
+      "Quality of water supplied",
+      "100%"
+    ],
+    [
+      "7",
+      "Efficiency in redressal of customer complaints",
+      "80%"
+    ],
+    [
+      "8",
+      "Cost recovery in water supply services",
+      "100%"
+    ],
+    [
+      "9",
+      "Efficiency in collection of water supply-related charges",
+      "90%"
+    ]
+  ],
+  "cell_spans": [],
+  "markdown": "| S. No. | Performance indicator | Targeted Benchmark |\n| --- | --- | --- |\n| 1 | Coverage of water supply connections | 100% |\n| 2 | Per capita supply of water | 135 LPCD |\n| 3 | Extent of metering of water connections | 100% |\n| 4 | Extent of NRW | 15% |\n| 5 | Continuity of water supply | 24 hours |\n| 6 | Quality of water supplied | 100% |\n| 7 | Efficiency in redressal of customer complaints | 80% |\n| 8 | Cost recovery in water supply services | 100% |\n| 9 | Efficiency in collection of water supply-related charges | 90% |",
+  "notes": [
+    "Table is printed across two physical pages: header row and serials 1-6 on physical page 109 (printed 24), serials 7-9 on physical page 110 (printed 25) with no reprinted header row; the second region holds the continuation block only, without a caption.",
+    "Third-column header is set on two printed lines, Targeted / Benchmark, and is flattened with a single space.",
+    "Serial-column header is printed S. No. with periods.",
+    "Row 9 middle cell is set on two justified printed lines, 'Efficiency in collection of water supply-' and 'related charges'; the hyphen at the break belongs to the printed '-related charges' compound, so the cell is recorded as 'Efficiency in collection of water supply-related charges' with no space and no added hyphen. No row of this table has merged cells, so cell_spans is empty.",
+    "Every printed value is a string exactly as printed, including the per-cent sign and '135 LPCD' (all four letters uppercase).",
+    "Row 2 prints '135 LPCD' here without any mark, whereas Table 1.2 on physical page 95 prints '135*' with no printed footnote; the difference is printed, not a reading error.",
+    "Introductory sentence above the table (physical page 109) reads 'The targeted SLBs for water supply notified by MoHUA in 2008 are shown in the Table 2.1' (printed 'in the Table 2.1'); the sentence is not part of the table and no value was taken from it."
+  ],
+  "verification": {
+    "transcription": {
+      "pass_id": "water-a-t02-child-first-reading",
+      "method": "Direct visual reading of annotation-cleaned full-page and zoomed region renders by delegated Pi child; no OCR.",
+      "observations": "Read all nine benchmark rows over pages 109 and 110; see page-report.json and REPORT.md."
+    },
+    "visual_recheck": {
+      "pass_id": "parent-water-a-t02-recheck-2026-11-08",
+      "method": "Distinct parent visual comparison of exact source-region PNGs after first reading; full-page and larger zooms checked for context; not independent human review.",
+      "observations": "Compared all nine rows, both source regions and the non-repeated continuation header; all printed values match. Corrected draft note describing letter case of LPCD; cell value unchanged.",
+      "content_sha256": "989be8a276d3d50e53983485f18b8e3b3ceff0969369843eec358aea1d3ead68"
+    }
+  }
+}

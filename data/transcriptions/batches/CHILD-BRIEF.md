@@ -24,3 +24,4 @@ Rules
 - create_unit/parent_id: if the table id already exists in data/build/cpheeo.sqlite `units` (baseline indexed table), DO NOT set create_unit or parent_id. Only new/unindexed tables get "create_unit": true plus parent_id = enclosing section unit id.
 - Never silently fix spelling: e.g. a printed "CAPICITY" stays "CAPICITY" with a note.
 - Equations always need parent_id = the enclosing section unit id (e.g. SEW-2013-A:5.8.1.7.5.2) from `units`.
+- Mathematical equalities, inequalities and expressions printed inside figures ARE in scope (for example Initial NRW=N1 and NRW1<N1 in WS-2024-A Figure 1.7). Do not exclude them merely because they are figure labels or lack printed equation numbers. Preserve notation; do not invent symbols for relationships stated only in prose.

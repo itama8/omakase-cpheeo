@@ -1,0 +1,84 @@
+{
+  "schema_version": 1,
+  "batch": "water-a-t02",
+  "checks": [
+    {
+      "name": "source_sha256 reproduced from the read-only source file",
+      "expected": "b60f2fb548357aec676b18ef31e3b37fb0e5e8a1aec8f886880b951113848b0a",
+      "actual": "b60f2fb548357aec676b18ef31e3b37fb0e5e8a1aec8f886880b951113848b0a",
+      "pass": true
+    },
+    {
+      "name": "every assigned page appears once in page-report.json",
+      "expected": [
+        98,
+        99,
+        100,
+        103,
+        104,
+        105,
+        106,
+        107,
+        109,
+        110
+      ],
+      "actual": [
+        98,
+        99,
+        100,
+        103,
+        104,
+        105,
+        106,
+        107,
+        109,
+        110
+      ],
+      "pass": true
+    },
+    {
+      "name": "image_viewed path exists for every page entry",
+      "expected": [],
+      "actual": [],
+      "pass": true
+    }
+  ],
+  "drafts": [
+    {
+      "path": "drafts/WS-2024-A--T2.1.json",
+      "id": "WS-2024-A:T2.1",
+      "state": "pending",
+      "regions": [
+        {
+          "pdf_page": 109,
+          "page_label": "24",
+          "bbox": [
+            70.6,
+            634.5,
+            555.2,
+            775.3
+          ],
+          "render_sha256": "7fdaf8afb9758719e843dba0692e0fe4555ae2e44d3b6b897d3392d271c3358a"
+        },
+        {
+          "pdf_page": 110,
+          "page_label": "25",
+          "bbox": [
+            70.6,
+            76.0,
+            555.2,
+            142.7
+          ],
+          "render_sha256": "bd203a54455e0dccb0c2107ca4c3f448f258384050da86940332da65e007b082"
+        }
+      ],
+      "markdown_matches_cells": true,
+      "cell_grid_ok": true,
+      "source_sha256_matches_report": true,
+      "create_unit_present": false,
+      "parent_id_present": false,
+      "verification_present": false
+    }
+  ],
+  "conclusion": "pending draft shape, cell grid, markdown, source pin and region pins reproduce; no verification block, no create_unit/parent_id (WS-2024-A:T2.1 is an indexed baseline unit)."
+}

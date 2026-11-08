@@ -1,0 +1,52 @@
+{
+  "verified_records": [
+    {
+      "id": "WS-2024-A:T2.1",
+      "draft_path": "data/transcriptions/batches/water-a-t02/drafts/WS-2024-A--T2.1.json",
+      "draft_sha256": "04092754873575b774ee6f19dd2512b0985e2c95ea905a956b3aaf24ebdf5ae8",
+      "content_sha256": "989be8a276d3d50e53983485f18b8e3b3ceff0969369843eec358aea1d3ead68",
+      "corrections": [
+        "Corrected draft note describing letter case of LPCD; cell value unchanged."
+      ]
+    },
+    {
+      "id": "WS-2024-A:Ep98-1",
+      "draft_path": "data/transcriptions/batches/water-a-t02/parent-drafts/WS-2024-A--Ep98-1.json",
+      "draft_sha256": "06ccfa5daea9e55c3a596f8e52826146b96e56da9e8206266feb765ae96e31cf",
+      "content_sha256": "a1836419afa2efbd1d4c405d5b1917902daa6af37b144dd681ee454f8a55ab77",
+      "corrections": []
+    },
+    {
+      "id": "WS-2024-A:Ep98-2",
+      "draft_path": "data/transcriptions/batches/water-a-t02/parent-drafts/WS-2024-A--Ep98-2.json",
+      "draft_sha256": "97d248341643c244130ac2c517b4078256a3e4d45622919afadf1f449c9769b7",
+      "content_sha256": "e736e6e340460bb1eb7768548f333d8df869feea20f32028df8f4f5a1d7312d0",
+      "corrections": []
+    },
+    {
+      "id": "WS-2024-A:Ep98-3",
+      "draft_path": "data/transcriptions/batches/water-a-t02/parent-drafts/WS-2024-A--Ep98-3.json",
+      "draft_sha256": "092ba0b96ba9297ccff0b238859ea90dc1597736ec0aa8870320969158bc5f38",
+      "content_sha256": "dbf823cfa45096514bab8cc8be23ec74abf3a8cd32cf145fc287f87610e429b5",
+      "corrections": []
+    }
+  ],
+  "new_reviewed_pages": [
+    98,
+    99,
+    100,
+    103,
+    104,
+    105,
+    106,
+    107,
+    109,
+    110
+  ],
+  "scope_corrections": [
+    "Page 98 Figure 1.7 contains explicit equalities and inequalities and is within the unnumbered equation scope; three supplementary records authored and distinctly rechecked by parent.",
+    "Pages 100-101 chapter listing is a contents list; no table record created.",
+    "No mathematical notation invented for the prose NRW definition or distance rule."
+  ],
+  "limitations": "Assistant visual reading and distinct comparison, not independent human review or perfect accuracy."
+}
