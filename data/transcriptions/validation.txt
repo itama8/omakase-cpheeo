@@ -546,3 +546,89 @@ PASS V59 rank=1
 }
 
 Public deployment unchanged: 279 verified records in snapshot9287acd; latest checked records remain local. No new batch launched after closing this one.
+
+2026-11-08 deployment and targeted-sew-02 checkpoint
+Snapshot f84891c: 290 verified records live at unchanged public URL; staging MCP smoke PASS; public MCP smoke PASS; newly published table/equation HTTP fetches PASS. Old snapshot retained, both cloudflared PIDs unchanged.
+Five selected sludge-treatment table crops T6.6-T6.10 separately rechecked and verified locally; no whole-page reviews added and no child tasks launched.
+295 local verified records: 136 tables, 159 equations. 18 tests passed; 329 pinned source regions stable.
+APD27/27; ranking12/12; appendices13/13. Preservation PASS: 4,956 original units, 2,321 source images, 7,640 original passages unchanged.
+PASS V01 rank=1
+PASS V02 rank=1
+PASS V03 rank=1
+PASS V04 rank=1
+PASS V05 rank=1
+PASS V06 rank=1
+PASS V07 rank=1
+PASS V08 rank=1
+PASS V09 rank=1
+PASS V10 rank=1
+PASS V11 rank=1
+PASS V12 rank=1
+PASS V13 rank=1
+PASS V14 rank=2
+PASS V15 rank=1
+PASS V16 rank=1
+PASS V17 rank=1
+PASS V18 rank=1
+PASS V19 rank=1
+PASS V20 rank=1
+PASS V21 rank=1
+PASS V22 rank=1
+PASS V23 rank=1
+PASS V24 rank=1
+PASS V25 rank=1
+PASS V26 rank=1
+PASS V27 rank=1
+PASS V28 rank=1
+PASS V29 rank=1
+PASS V30 rank=1
+PASS V31 rank=1
+PASS V32 rank=1
+PASS V33 rank=1
+PASS V34 rank=2
+PASS V35 rank=1
+PASS V36 rank=1
+PASS V37 rank=1
+PASS V38 rank=2
+PASS V39 rank=1
+PASS V40 rank=1
+PASS V41 rank=1
+PASS V42 rank=1
+PASS V43 rank=1
+PASS V44 rank=3
+PASS V45 rank=3
+PASS V46 rank=2
+PASS V47 rank=2
+PASS V48 rank=2
+PASS V49 rank=2
+PASS V50 rank=2
+PASS V51 rank=2
+PASS V52 rank=1
+PASS V53 rank=1
+PASS V54 rank=1
+PASS V55 rank=1
+PASS V56 rank=1
+PASS V57 rank=1
+PASS V58 rank=1
+PASS V59 rank=1
+PASS V60 rank=1
+PASS V61 rank=1
+PASS V62 rank=1
+PASS V63 rank=1
+PASS V64 rank=1
+{
+  "questions": 64,
+  "content_checks_passed": 64,
+  "top1": 53,
+  "top5": 64,
+  "mrr": 0.9088541666666666,
+  "local_warm_search_fetch_ms": {
+    "samples": 320,
+    "median": 48.477063013706356,
+    "p95": 64.08006098354235
+  },
+  "limitations": "Source-open regression set. Same-assistant visual recheck, not independent accuracy proof. In-process warm SQLite timings exclude network, rendering, model and end-to-end retrieval time.",
+  "failures": []
+}
+
+Five newly verified tables remain local; public snapshot contains 290 verified records.

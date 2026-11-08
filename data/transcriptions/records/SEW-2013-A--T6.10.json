@@ -1,0 +1,104 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:T6.10",
+  "unit_id": "SEW-2013-A:T6.10",
+  "manual_id": "SEW-2013-A",
+  "kind": "table",
+  "number": "6.10",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "state": "verified",
+  "regions": [
+    {
+      "pdf_page": 574,
+      "page_label": "6 - 51",
+      "bbox": [
+        78.0,
+        298.0,
+        522.0,
+        534.0
+      ],
+      "render_sha256": "20d8651ea05cfa2f7a937c98c444fac5cf5d13a81179e34ebd14097b5fbe4f91"
+    }
+  ],
+  "title": "Observed performances of the three systems for removing H₂S gas",
+  "headers": [
+    "No.",
+    "Parameter",
+    "Inlet",
+    "Representative values in the processes"
+  ],
+  "rows": [
+    [
+      "1",
+      "CH₄ %",
+      "60 to 63",
+      "64.00 to 70.20"
+    ],
+    [
+      "2",
+      "CO₂ %",
+      "20 to 28",
+      "20.51 to 27.20"
+    ],
+    [
+      "3",
+      "Hydrogen %",
+      "Nil to 2",
+      "Trace to 7.20"
+    ],
+    [
+      "4",
+      "Nitrogen %",
+      "1.3 to 6.4",
+      "1.1 to 6.8"
+    ],
+    [
+      "5",
+      "Oxygen %",
+      "0.5 to 1.2",
+      "0.40 to 2.25"
+    ],
+    [
+      "6",
+      "H₂S ppm",
+      "200 to 500",
+      "10 - 20 ppm"
+    ],
+    [
+      "7",
+      "Moisture %",
+      "varying",
+      "About 50 ppm"
+    ],
+    [
+      "8",
+      "Calorific value",
+      "4,400 to 4,800",
+      "5,500 to 5,800 kcal/nm³"
+    ]
+  ],
+  "cell_spans": [],
+  "markdown": "| No. | Parameter | Inlet | Representative values in the processes |\n| --- | --- | --- | --- |\n| 1 | CH₄ % | 60 to 63 | 64.00 to 70.20 |\n| 2 | CO₂ % | 20 to 28 | 20.51 to 27.20 |\n| 3 | Hydrogen % | Nil to 2 | Trace to 7.20 |\n| 4 | Nitrogen % | 1.3 to 6.4 | 1.1 to 6.8 |\n| 5 | Oxygen % | 0.5 to 1.2 | 0.40 to 2.25 |\n| 6 | H₂S ppm | 200 to 500 | 10 - 20 ppm |\n| 7 | Moisture % | varying | About 50 ppm |\n| 8 | Calorific value | 4,400 to 4,800 | 5,500 to 5,800 kcal/nm³ |",
+  "notes": [
+    "Caption prints the chemical formula with a subscript 2: 'H₂S gas'. Cell parameters are likewise printed with subscripts (CH₄ %, CO₂ %, H₂S ppm).",
+    "Rows 1 to 5 print no unit in the two value columns; the percent sign appears only in the Parameter column. Nothing was added to the value cells.",
+    "Row 7 is headed 'Moisture %' but its process value is printed 'About 50 ppm', a different printed unit label from the percent sign in the row heading. Printed as shown; not corrected.",
+    "Row 8 inlet value '4,400 to 4,800' carries no unit, while its process value '5,500 to 5,800 kcal/nm³' does. Nothing was added to the inlet cell.",
+    "Row 3 inlet prints the word 'Nil' and its process value prints 'Trace'; both are printed words, not numbers, and are transcribed as words.",
+    "Row 6 is the only row whose process value uses a space-hyphen-space range ('10 - 20 ppm'); the other rows print 'to' between the limits. Kept as printed.",
+    "No source line or footnote is printed with this table."
+  ],
+  "verification": {
+    "transcription": {
+      "pass_id": "sew-t08-first-reading",
+      "method": "Direct visual reading of full 144 dpi annotation-cleaned page PNGs plus 288-450 dpi detail crops of each item, rotated where the printed table is set sideways; no OCR, no paid service, no delegation",
+      "observations": "First reading only. Every printed value, coefficient, power, sign, bracket, spelling and unit retained as printed; source oddities kept and flagged rather than corrected. No distinct second visual pass performed and no verification seal."
+    },
+    "visual_recheck": {
+      "pass_id": "targeted-sew-02-parent-recheck",
+      "method": "Distinct parent comparison of each selected production source-region crop and 216-dpi zoom; no whole-page review; not independent human review.",
+      "observations": "Compared every selected header, cell and in-crop footnote. All printed table values match the saved first-reading drafts. Preserved Moisture % / About 50 ppm discrepancy without inferring the kind of concentration.",
+      "content_sha256": "7166bd78d7100af7821efb4e47f3a5755e11b14103ccee100e4c4f236c7f6ca1"
+    }
+  }
+}

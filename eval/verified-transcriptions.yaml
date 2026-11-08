@@ -256,3 +256,26 @@ questions:
     expect: [SEW-2013-A:T5.57]
     row: ['3', 'Sludge Yield', 'kg dry solids/ kg BOD', '0.75 - 0.85', '0.75 - 1.0']
     contains: ['For Phosphorous ≤ 1 mg/L', 'primary TSS removal 60%, BOD 30%']
+  - id: V60
+    question: Table 6.6 sludge surface loading concentration
+    expect: [SEW-2013-A:T6.6]
+    row: ['Primary', '90 - 140', '5 – 10']
+    contains: ['not full-width merged cells']
+  - id: V61
+    question: Table 6.7 comparative sludge thickening processes conditioning chemicals
+    expect: [SEW-2013-A:T6.7]
+    row: ['Conditioning Chemicals', 'None', 'High', 'High', 'Medium', 'Medium']
+  - id: V62
+    question: Table 6.8 mesophilic anaerobic sludge digester design
+    expect: [SEW-2013-A:T6.8]
+    row: ['Solids Retention Time, days', '(*)', '10 - 20']
+    contains: ['capacity utilization', 'kgVSS/day/m³']
+  - id: V63
+    question: Table 6.9 solids retention time high rate digestion temperature
+    expect: [SEW-2013-A:T6.9]
+    row: ['18', '11', '28', '28/11 = 2.54']
+    contains: ['14/6 = 2.3', 'Solids Retention Time, days']
+  - id: V64
+    question: Table 6.10 H2S gas removal observed performance moisture
+    expect: [SEW-2013-A:T6.10]
+    row: ['7', 'Moisture %', 'varying', 'About 50 ppm']

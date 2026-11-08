@@ -1,0 +1,70 @@
+{
+  "status": "complete",
+  "selection": "Five saved pending sludge-treatment tables selected for design/retrieval value: T6.6-T6.10. No page sweep.",
+  "verified_records": [
+    {
+      "id": "SEW-2013-A:T6.6",
+      "source_draft": "data/transcriptions/batches/sew-t08/drafts/SEW-2013-A--T6.6.json",
+      "draft_sha256": "d7d98e50758e517be5d50c20c20998f49de2ca56e1c3f61767e634bffc7f492a",
+      "content_sha256": "9c6340fc48e358235cff16673b7d614c26c747c9e190dd0d077912cdedcceb67",
+      "corrections": [
+        "Removed incorrect full-width spans for separately bordered group-label rows."
+      ]
+    },
+    {
+      "id": "SEW-2013-A:T6.7",
+      "source_draft": "data/transcriptions/batches/sew-t08/drafts/SEW-2013-A--T6.7.json",
+      "draft_sha256": "123024ee7c58f5c6dc5a321f52af10083232cfe6d5a890e9912b647713688e26",
+      "content_sha256": "62b40935df67b23611469e93f78aa331fa6938301f757c619b7712452457b3c4",
+      "corrections": [
+        "Removed out-of-crop context and unnecessary draft commentary; multiline header is not a cell merge."
+      ]
+    },
+    {
+      "id": "SEW-2013-A:T6.8",
+      "source_draft": "data/transcriptions/batches/sew-t08/drafts/SEW-2013-A--T6.8.json",
+      "draft_sha256": "a49b714455ca75c2bb6e1a2622319925bdebbdb50d8c7a6e30374a953bdbfdd3",
+      "content_sha256": "8afd5597ceff897d395a7e0edc6bf26ed66162222976b0263a9c6650f707911c",
+      "corrections": [
+        "Limited unit note to the checked table crop."
+      ]
+    },
+    {
+      "id": "SEW-2013-A:T6.9",
+      "source_draft": "data/transcriptions/batches/sew-t08/drafts/SEW-2013-A--T6.9.json",
+      "draft_sha256": "9ffb38f697caf8187e97ca7ded93092caeb038808bf426be18ea9184676dcd80",
+      "content_sha256": "89094328119d4a128bbc460d28eee4aa3a20f865a20a3010eb3e5bce9c7f7bd0",
+      "corrections": [
+        "Marked header spans as headers; removed out-of-crop figure context and inferred rounding rule."
+      ]
+    },
+    {
+      "id": "SEW-2013-A:T6.10",
+      "source_draft": "data/transcriptions/batches/sew-t08/drafts/SEW-2013-A--T6.10.json",
+      "draft_sha256": "aabc067ea7dc621637ac695daff64d7fdc50bffdb14cdf4d34819e2c5817f8b1",
+      "content_sha256": "7166bd78d7100af7821efb4e47f3a5755e11b14103ccee100e4c4f236c7f6ca1",
+      "corrections": [
+        "Preserved Moisture % / About 50 ppm discrepancy without inferring the kind of concentration."
+      ]
+    }
+  ],
+  "page_regions_only": {
+    "543": [
+      "SEW-2013-A:T6.6"
+    ],
+    "551": [
+      "SEW-2013-A:T6.7"
+    ],
+    "555": [
+      "SEW-2013-A:T6.8"
+    ],
+    "556": [
+      "SEW-2013-A:T6.9"
+    ],
+    "574": [
+      "SEW-2013-A:T6.10"
+    ]
+  },
+  "whole_page_reviews_added": 0,
+  "limitations": "Assistant transcription-fidelity comparison; no exhaustive page coverage, independent human review or perfect-accuracy claim."
+}
