@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "id": "WS-2024-A:E6.2",
+  "unit_id": "WS-2024-A:E6.2",
+  "manual_id": "WS-2024-A",
+  "kind": "equation",
+  "number": "6.2",
+  "source_sha256": "b60f2fb548357aec676b18ef31e3b37fb0e5e8a1aec8f886880b951113848b0a",
+  "state": "verified",
+  "regions": [
+    {
+      "pdf_page": 369,
+      "page_label": "284",
+      "bbox": [
+        65,
+        548,
+        555,
+        651
+      ],
+      "render_sha256": "2fe653aeed6cc2691a2e9b42634a7a3d70b2b84af7d78e42130b08663d59f09e"
+    }
+  ],
+  "title": "Colebrook-White friction factor",
+  "parent_id": "WS-2024-A:6.5.1.1",
+  "latex": "\\frac{1}{\\sqrt f}=-2\\log\\left[\\left(\\frac{k}{3.7D}\\right)+\\frac{2.51}{Re\\sqrt f}\\right]",
+  "readable": "1/sqrt(f) = -2 log[(k/(3.7 D)) + 2.51/(Re sqrt(f))]",
+  "symbols": [
+    {
+      "symbol": "f",
+      "definition": "Darcy's Friction Factor or Coefficient"
+    },
+    {
+      "symbol": "R_e",
+      "definition": "Reynold's Number = (Velocity × diameter)/Viscosity"
+    },
+    {
+      "symbol": "k",
+      "definition": "Average height of Roughness projections"
+    }
+  ],
+  "applicability": "Calculation of friction factor f in the Colebrook-White formula.",
+  "notes": [
+    "No logarithm base is specified in the printed expression. D is defined immediately above as Diameter in metres in Equation 6.1.",
+    "The displayed equation prints baseline Re, while its definition line prints R with subscript e (R_e); both denote the printed Reynold's Number."
+  ],
+  "verification": {
+    "transcription": {
+      "pass_id": "parent-water-math-first-20261108",
+      "method": "direct visual inspection of full rendered source pages; no OCR",
+      "observations": "Read displayed formulae 6.1–6.6 and all table cells, spanning labels and continuation notes directly from source images on physical pages 369–372."
+    },
+    "visual_recheck": {
+      "pass_id": "water-headloss-distinct-recheck-20261108",
+      "method": "Distinct child direct inspection of exact crops and full pages; no OCR; not independent human review.",
+      "observations": "Visually read 1/√f = −2 log [(k/(3.7D)) + 2.51/(Re√f)], numbered (6.2). Checked both square roots, negative sign, coefficient 2, 3.7, 2.51, plus sign, nested parentheses and outer square brackets. No log base is printed. The enlarged formula image shows baseline Re in the displayed denominator, agreeing with current latex/readable. In the definition line the source instead visibly prints R with subscript e. The current symbols entry Re loses that definition-line subscript; preserve the source variation rather than silently regularizing the formula. Definitions: f = Darcy's Friction Factor or Coefficient; R_e = Reynold's Number = (Velocity × diameter)/Viscosity; k = Average height of Roughness projections. No unit for k or type of viscosity is specified here; do not infer one. D inherits metres from 6.1. The full page includes a standard Fluid Mechanics reference-book sentence and IS: 2951 for Darcy-Weisbach head loss; neither supplies a logarithm base. Parent directly viewed E6.2 crop after report and confirmed the definition-line subscript e; metadata corrected without changing displayed baseline Re.",
+      "content_sha256": "8f3ba76e51c80a48e351db10b11865aee51fbc5f893e1ce6d9203d585a3b9954"
+    }
+  }
+}

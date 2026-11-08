@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:Ep819-3",
+  "unit_id": "SEW-2013-A:Ep819-3",
+  "manual_id": "SEW-2013-A",
+  "kind": "equation",
+  "number": "p819-3",
+  "title": "Geometric population in 2001",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "state": "pending",
+  "regions": [
+    {
+      "pdf_page": 819,
+      "page_label": "A - 48",
+      "bbox": [
+        50,
+        298,
+        510,
+        331
+      ],
+      "render_sha256": "e607f0763b2df945d0ab0819033c5d4f1bc06b810a8057a74f67527c919ce1b1"
+    }
+  ],
+  "verification": {
+    "transcription": {
+      "pass_id": "sew-818-826-first-reading-2026-11-08",
+      "method": "Direct viewing of full rendered pages and selected enlarged crops; no OCR",
+      "observations": "First visual transcription only. No separate second comparison performed."
+    }
+  },
+  "source_image_refs": [
+    {
+      "path": "tmp/pdfs/sew-appendix-818-826/SEW-2013-A--Ep819-3.png",
+      "role": "first-reading source crop"
+    }
+  ],
+  "parent_id": "SEW-2013-A:A2.2",
+  "latex": "P_{2001}=P_{1981}(1+r_g)^2=158800(1.2442)^2=245800",
+  "readable": "Population in 2001 = Population in 1981 × (1 + rg)^2 = 1,58,800 × (1.2442)^2 = 2,45,800.",
+  "symbols": [],
+  "applicability": "Worked example in Appendix A2.2",
+  "notes": [
+    "Unnumbered expression; Ep<physical-page>-<sequence> is a service locator, not a printed equation number."
+  ]
+}

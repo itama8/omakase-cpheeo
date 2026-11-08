@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "id": "WS-2024-A:E6.6",
+  "unit_id": "WS-2024-A:E6.6",
+  "manual_id": "WS-2024-A",
+  "kind": "equation",
+  "number": "6.6",
+  "source_sha256": "b60f2fb548357aec676b18ef31e3b37fb0e5e8a1aec8f886880b951113848b0a",
+  "state": "verified",
+  "regions": [
+    {
+      "pdf_page": 370,
+      "page_label": "285",
+      "bbox": [
+        65,
+        527,
+        560,
+        578
+      ],
+      "render_sha256": "0e754be5c7c83180190e6d8fa3767eac7904a30eea71dbd5b5df1d4bbf5dd46a"
+    }
+  ],
+  "title": "Manning's head loss in circular conduits",
+  "parent_id": "WS-2024-A:6.5.1.3",
+  "latex": "h=10.29(Q\\times n)^2\\left(\\frac{L}{D^{16/3}}\\right)",
+  "readable": "h = 10.29 (Q × n)^2 (L/D^(16/3))",
+  "symbols": [],
+  "applicability": "For a circular conduit of diameter D, the head loss can be written as Equation 6.6.",
+  "notes": [
+    "No new variable definitions or units are printed immediately with Equation 6.6; n is defined in preceding Equation 6.5."
+  ],
+  "verification": {
+    "transcription": {
+      "pass_id": "parent-water-math-first-20261108",
+      "method": "direct visual inspection of full rendered source pages; no OCR",
+      "observations": "Read displayed formulae 6.1–6.6 and all table cells, spanning labels and continuation notes directly from source images on physical pages 369–372."
+    },
+    "visual_recheck": {
+      "pass_id": "water-headloss-distinct-recheck-20261108",
+      "method": "Distinct child direct inspection of exact crops and full pages; no OCR; not independent human review.",
+      "observations": "Visually read h = 10.29 (Q × n)^2 (L/D^(16/3)), numbered (6.6). Checked coefficient 10.29, multiplication cross, square on the whole Q×n factor and fractional exponent 16/3 on D only. Circular conduit of diameter D is printed immediately above. No new definition or unit list is printed with 6.6; empty symbols and the note referring to n in 6.5 are appropriate. No extra local footnote.",
+      "content_sha256": "37ed6de687c0fb2dd75d3dac3fb16d8aa6eba9093c2ea378e6dc83a221b43097"
+    }
+  }
+}

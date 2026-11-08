@@ -1,0 +1,196 @@
+{
+  "status": "passed structural/source checks only; not visual verification",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "candidate_count": 13,
+  "draft_count": 1,
+  "region_count": 17,
+  "checks": [
+    "Loaded schema version 1 records",
+    "All pending; no visual_recheck or seal",
+    "Full source SHA matches sources.json",
+    "All region PNG hashes recomputed through production annotation-cleaned 144 dpi renderer",
+    "Candidate table targets and equation parents exist in read-only baseline",
+    "Draft T5.1 target absence confirmed",
+    "String-valued cell grids and Markdown agree",
+    "No apply, ingest, database or central ledger writes"
+  ],
+  "records": [
+    {
+      "id": "SEW-2013-A:Ep309-1",
+      "state": "pending",
+      "region_count": 1,
+      "target": "SEW-2013-A:5.1.2",
+      "existing_target": [
+        "SEW-2013-A:5.1.2",
+        "Process of Biological Sewage Treatment",
+        308,
+        310
+      ],
+      "application_blocked": false
+    },
+    {
+      "id": "SEW-2013-A:Ep309-2",
+      "state": "pending",
+      "region_count": 1,
+      "target": "SEW-2013-A:5.1.2",
+      "existing_target": [
+        "SEW-2013-A:5.1.2",
+        "Process of Biological Sewage Treatment",
+        308,
+        310
+      ],
+      "application_blocked": false
+    },
+    {
+      "id": "SEW-2013-A:Ep309-3",
+      "state": "pending",
+      "region_count": 1,
+      "target": "SEW-2013-A:5.1.2",
+      "existing_target": [
+        "SEW-2013-A:5.1.2",
+        "Process of Biological Sewage Treatment",
+        308,
+        310
+      ],
+      "application_blocked": false
+    },
+    {
+      "id": "SEW-2013-A:Ep309-4",
+      "state": "pending",
+      "region_count": 1,
+      "target": "SEW-2013-A:5.1.2",
+      "existing_target": [
+        "SEW-2013-A:5.1.2",
+        "Process of Biological Sewage Treatment",
+        308,
+        310
+      ],
+      "application_blocked": false
+    },
+    {
+      "id": "SEW-2013-A:Ep309-5",
+      "state": "pending",
+      "region_count": 1,
+      "target": "SEW-2013-A:5.1.2",
+      "existing_target": [
+        "SEW-2013-A:5.1.2",
+        "Process of Biological Sewage Treatment",
+        308,
+        310
+      ],
+      "application_blocked": false
+    },
+    {
+      "id": "SEW-2013-A:Ep309-6",
+      "state": "pending",
+      "region_count": 1,
+      "target": "SEW-2013-A:5.1.2",
+      "existing_target": [
+        "SEW-2013-A:5.1.2",
+        "Process of Biological Sewage Treatment",
+        308,
+        310
+      ],
+      "application_blocked": false
+    },
+    {
+      "id": "SEW-2013-A:Ep310-1",
+      "state": "pending",
+      "region_count": 1,
+      "target": "SEW-2013-A:5.1.2",
+      "existing_target": [
+        "SEW-2013-A:5.1.2",
+        "Process of Biological Sewage Treatment",
+        308,
+        310
+      ],
+      "application_blocked": false
+    },
+    {
+      "id": "SEW-2013-A:Ep311-1",
+      "state": "pending",
+      "region_count": 1,
+      "target": "SEW-2013-A:5.1.4.1",
+      "existing_target": [
+        "SEW-2013-A:5.1.4.1",
+        "Determination of Influent Raw Sewage Quality",
+        310,
+        312
+      ],
+      "application_blocked": false
+    },
+    {
+      "id": "SEW-2013-A:Ep312-1",
+      "state": "pending",
+      "region_count": 1,
+      "target": "SEW-2013-A:5.1.4.1",
+      "existing_target": [
+        "SEW-2013-A:5.1.4.1",
+        "Determination of Influent Raw Sewage Quality",
+        310,
+        312
+      ],
+      "application_blocked": false
+    },
+    {
+      "id": "SEW-2013-A:Ep312-2",
+      "state": "pending",
+      "region_count": 1,
+      "target": "SEW-2013-A:5.1.4.1",
+      "existing_target": [
+        "SEW-2013-A:5.1.4.1",
+        "Determination of Influent Raw Sewage Quality",
+        310,
+        312
+      ],
+      "application_blocked": false
+    },
+    {
+      "id": "SEW-2013-A:T5.2",
+      "state": "pending",
+      "region_count": 1,
+      "target": "SEW-2013-A:T5.2",
+      "existing_target": [
+        "SEW-2013-A:T5.2",
+        "Use based classification of surface waters in India",
+        306,
+        306
+      ],
+      "application_blocked": false
+    },
+    {
+      "id": "SEW-2013-A:T5.3",
+      "state": "pending",
+      "region_count": 2,
+      "target": "SEW-2013-A:T5.3",
+      "existing_target": [
+        "SEW-2013-A:T5.3",
+        "General standards for Discharge of Environmental Pollutants, Part A: Effluents as per",
+        307,
+        307
+      ],
+      "application_blocked": false
+    },
+    {
+      "id": "SEW-2013-A:T5.4",
+      "state": "pending",
+      "region_count": 2,
+      "target": "SEW-2013-A:T5.4",
+      "existing_target": [
+        "SEW-2013-A:T5.4",
+        "Concentration of various parameters in the absence of drain or outfall",
+        311,
+        311
+      ],
+      "application_blocked": false
+    },
+    {
+      "id": "SEW-2013-A:T5.1",
+      "state": "pending",
+      "region_count": 2,
+      "target": "SEW-2013-A:T5.1",
+      "existing_target": null,
+      "application_blocked": true
+    }
+  ]
+}

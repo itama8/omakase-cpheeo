@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:Ep820-3",
+  "unit_id": "SEW-2013-A:Ep820-3",
+  "manual_id": "SEW-2013-A",
+  "kind": "equation",
+  "number": "p820-3",
+  "title": "Incremental population in 2016",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "state": "verified",
+  "regions": [
+    {
+      "pdf_page": 820,
+      "page_label": "A - 49",
+      "bbox": [
+        55,
+        220,
+        420,
+        312
+      ],
+      "render_sha256": "9f3f6c2bf5bf227c2a6dcae792addba5a1fffe895378a6f1a1eaf889058896a2"
+    }
+  ],
+  "verification": {
+    "transcription": {
+      "pass_id": "sew-818-826-first-reading-2026-11-08",
+      "method": "Direct viewing of full rendered pages and selected enlarged crops; no OCR",
+      "observations": "First visual transcription only. No separate second comparison performed."
+    },
+    "visual_recheck": {
+      "pass_id": "appendix818-826-distinct-recheck-20261108",
+      "method": "Distinct child directly viewed exact crops and full pages; parent directly viewed revised regions for four corrected records; no OCR; not independent human review.",
+      "observations": "Subscripts 2016 and 1981; 3.5 × 19769 plus fraction (3.5 × 4.5 × 6047)/2; printed next line 1,58,800 + 69,192 + 24,188; result 2,75,612. These are the visible printed values, retained without arithmetic repair.",
+      "content_sha256": "02f293f8aca082fe5f600f4996d1063c7e89b23e8baec58650c0bb9f13290bd1"
+    }
+  },
+  "source_image_refs": [
+    {
+      "path": "tmp/pdfs/sew-appendix-818-826/SEW-2013-A--Ep820-3.png",
+      "role": "first-reading source crop"
+    }
+  ],
+  "parent_id": "SEW-2013-A:A2.2",
+  "latex": "P_{2016}=P_{1981}+3.5\\times19769+\\frac{3.5\\times4.5\\times6047}{2}=158800+69192+24188=275612",
+  "readable": "P_2016 = P_1981 + 3.5 × 19769 + (3.5 × 4.5 × 6047)/2 = 1,58,800 + 69,192 + 24,188 = 2,75,612.",
+  "symbols": [],
+  "applicability": "Worked example in Appendix A2.2",
+  "notes": [
+    "Unnumbered expression; Ep<physical-page>-<sequence> is a service locator, not a printed equation number."
+  ]
+}

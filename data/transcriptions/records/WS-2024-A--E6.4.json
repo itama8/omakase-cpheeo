@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "id": "WS-2024-A:E6.4",
+  "unit_id": "WS-2024-A:E6.4",
+  "manual_id": "WS-2024-A",
+  "kind": "equation",
+  "number": "6.4",
+  "source_sha256": "b60f2fb548357aec676b18ef31e3b37fb0e5e8a1aec8f886880b951113848b0a",
+  "state": "verified",
+  "regions": [
+    {
+      "pdf_page": 370,
+      "page_label": "285",
+      "bbox": [
+        65,
+        335,
+        560,
+        418
+      ],
+      "render_sha256": "86d51a207444a4b871eda0800bc17d3c04bf51e4bfc4e15b213971f76d141caf"
+    }
+  ],
+  "title": "Hazen-Williams head loss in circular conduits",
+  "parent_id": "WS-2024-A:6.5.1.2",
+  "latex": "h=10.68\\left(\\frac{Q}{C}\\right)^{1.852}\\left(\\frac{L}{D^{4.87}}\\right)",
+  "readable": "h = 10.68 (Q/C)^1.852 (L/D^4.87)",
+  "symbols": [
+    {
+      "symbol": "L",
+      "definition": "in metres"
+    },
+    {
+      "symbol": "D",
+      "definition": "in metres"
+    },
+    {
+      "symbol": "Q",
+      "definition": "in cumecs"
+    }
+  ],
+  "applicability": "For circular conduits of diameter D, head loss in terms of discharge.",
+  "notes": [
+    "C is defined in preceding Equation 6.3 as Hazen-Williams coefficient. No new printed h definition appears with 6.4."
+  ],
+  "verification": {
+    "transcription": {
+      "pass_id": "parent-water-math-first-20261108",
+      "method": "direct visual inspection of full rendered source pages; no OCR",
+      "observations": "Read displayed formulae 6.1–6.6 and all table cells, spanning labels and continuation notes directly from source images on physical pages 369–372."
+    },
+    "visual_recheck": {
+      "pass_id": "water-headloss-distinct-recheck-20261108",
+      "method": "Distinct child direct inspection of exact crops and full pages; no OCR; not independent human review.",
+      "observations": "Visually read h = 10.68 (Q/C)^1.852 (L/D^4.87), numbered (6.4). Enlarged render confirms uppercase C in Q/C. Checked 10.68, Q, C, L, uppercase D and both decimal exponents; 1.852 applies to the entire Q/C factor and 4.87 only to D. Printed definitions say L and D are in metres and Q is in cumecs. No separate h or C definition is printed here. Circular-conduit applicability matches; the record correctly refers back to 6.3 for C.",
+      "content_sha256": "89700e45dcea24cc33f7be8c44ca17f809a4b6d5948d551aff7feb391f372b70"
+    }
+  }
+}

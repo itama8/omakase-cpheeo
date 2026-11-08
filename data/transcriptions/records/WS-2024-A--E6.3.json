@@ -1,0 +1,60 @@
+{
+  "schema_version": 1,
+  "id": "WS-2024-A:E6.3",
+  "unit_id": "WS-2024-A:E6.3",
+  "manual_id": "WS-2024-A",
+  "kind": "equation",
+  "number": "6.3",
+  "source_sha256": "b60f2fb548357aec676b18ef31e3b37fb0e5e8a1aec8f886880b951113848b0a",
+  "state": "verified",
+  "regions": [
+    {
+      "pdf_page": 370,
+      "page_label": "285",
+      "bbox": [
+        65,
+        247,
+        560,
+        329
+      ],
+      "render_sha256": "8642cef0c23cab754aa832825ef7274bfd07ea90157985a946de8133f439149b"
+    }
+  ],
+  "title": "Hazen-Williams velocity formula",
+  "parent_id": "WS-2024-A:6.5.1.2",
+  "latex": "V=0.849C(r^{0.63})(S^{0.54})",
+  "readable": "V = 0.849 C (r^0.63) (S^0.54)",
+  "symbols": [
+    {
+      "symbol": "V",
+      "definition": "Average Velocity of flow in m/s"
+    },
+    {
+      "symbol": "C",
+      "definition": "Hazen-Williams coefficient"
+    },
+    {
+      "symbol": "r",
+      "definition": "Hydraulic mean radius in m"
+    },
+    {
+      "symbol": "S",
+      "definition": "Slope of hydraulic grade line (h/L)"
+    }
+  ],
+  "applicability": "Hazen-Williams formula for pressure conduits.",
+  "notes": [],
+  "verification": {
+    "transcription": {
+      "pass_id": "parent-water-math-first-20261108",
+      "method": "direct visual inspection of full rendered source pages; no OCR",
+      "observations": "Read displayed formulae 6.1–6.6 and all table cells, spanning labels and continuation notes directly from source images on physical pages 369–372."
+    },
+    "visual_recheck": {
+      "pass_id": "water-headloss-distinct-recheck-20261108",
+      "method": "Distinct child direct inspection of exact crops and full pages; no OCR; not independent human review.",
+      "observations": "Visually read V = 0.849 C (r^0.63)(S^0.54), numbered (6.3). Coefficient is 0.849, lowercase r has exponent 0.63, uppercase S has exponent 0.54. Parentheses are separate factor groups; no denominator. All four definitions and units match: V average velocity of flow in m/s; C Hazen-Williams coefficient; r hydraulic mean radius in m; S slope of hydraulic grade line (h/L). The pressure-conduit applicability is stated in the preceding page prose.",
+      "content_sha256": "3f5101c3da7f6f3e939a98e0675079db9adcfea50fdcb29971bd866b6ac3c348"
+    }
+  }
+}

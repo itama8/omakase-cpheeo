@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:Ep820-2",
+  "unit_id": "SEW-2013-A:Ep820-2",
+  "manual_id": "SEW-2013-A",
+  "kind": "equation",
+  "number": "p820-2",
+  "title": "Incremental population in 2001",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "state": "verified",
+  "regions": [
+    {
+      "pdf_page": 820,
+      "page_label": "A - 49",
+      "bbox": [
+        55,
+        129,
+        420,
+        218
+      ],
+      "render_sha256": "d7783533cf79c35ff931514725e7e04c2c3a0a5a1f4257626519fc24ecd42c57"
+    }
+  ],
+  "verification": {
+    "transcription": {
+      "pass_id": "sew-818-826-first-reading-2026-11-08",
+      "method": "Direct viewing of full rendered pages and selected enlarged crops; no OCR",
+      "observations": "First visual transcription only. No separate second comparison performed."
+    },
+    "visual_recheck": {
+      "pass_id": "appendix818-826-distinct-recheck-20261108",
+      "method": "Distinct child directly viewed exact crops and full pages; parent directly viewed revised regions for four corrected records; no OCR; not independent human review.",
+      "observations": "Subscripts 2001 and 1981; 2 × 19769 plus fraction (2 × 3 × 6047)/2; next line 1,58,800 + 39,538 + 18,141; result 2,16,479. Every term matches.",
+      "content_sha256": "318851e60a2ac43d6bf555b150ece9fd2bd55b4295cabbf7f1f738b2244580db"
+    }
+  },
+  "source_image_refs": [
+    {
+      "path": "tmp/pdfs/sew-appendix-818-826/SEW-2013-A--Ep820-2.png",
+      "role": "first-reading source crop"
+    }
+  ],
+  "parent_id": "SEW-2013-A:A2.2",
+  "latex": "P_{2001}=P_{1981}+2\\times19769+\\frac{2\\times3\\times6047}{2}=158800+39538+18141=216479",
+  "readable": "P_2001 = P_1981 + 2 × 19769 + (2 × 3 × 6047)/2 = 1,58,800 + 39,538 + 18,141 = 2,16,479.",
+  "symbols": [],
+  "applicability": "Worked example in Appendix A2.2",
+  "notes": [
+    "Unnumbered expression; Ep<physical-page>-<sequence> is a service locator, not a printed equation number."
+  ]
+}

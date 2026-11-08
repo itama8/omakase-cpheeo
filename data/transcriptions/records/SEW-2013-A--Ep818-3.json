@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:Ep818-3",
+  "unit_id": "SEW-2013-A:Ep818-3",
+  "manual_id": "SEW-2013-A",
+  "kind": "equation",
+  "number": "p818-3",
+  "title": "Arithmetic population in 2016",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "state": "verified",
+  "regions": [
+    {
+      "pdf_page": 818,
+      "page_label": "A - 47",
+      "bbox": [
+        55,
+        733,
+        535,
+        766
+      ],
+      "render_sha256": "c8d689070659df8e7d4da37d8a6e5bbae8c08a8f6576a56e0046a04d2d1172e2"
+    }
+  ],
+  "verification": {
+    "transcription": {
+      "pass_id": "sew-818-826-first-reading-2026-11-08",
+      "method": "Direct viewing of full rendered pages and selected enlarged crops; no OCR",
+      "observations": "First visual transcription only. No separate second comparison performed."
+    },
+    "visual_recheck": {
+      "pass_id": "appendix818-826-distinct-recheck-20261108",
+      "method": "Distinct child directly viewed exact crops and full pages; parent directly viewed revised regions for four corrected records; no OCR; not independent human review.",
+      "observations": "2016 = 1981 population + increase for 3.5 decades; 1,58,800 + 3.5 × 19,769 = 2,27,992. Decimal coefficient and result match.",
+      "content_sha256": "6f458a28aab11d0dd566e8ecbbd2208b55ba22a2a429ca117b4e3c06deab95eb"
+    }
+  },
+  "source_image_refs": [
+    {
+      "path": "tmp/pdfs/sew-appendix-818-826/SEW-2013-A--Ep818-3.png",
+      "role": "first-reading source crop"
+    }
+  ],
+  "parent_id": "SEW-2013-A:A2.2",
+  "latex": "P_{2016}=P_{1981}+\\text{Increase for 3.5 decades}=158800+3.5\\times19769=227992",
+  "readable": "Population in 2016 = Population in 1981 + Increase for 3.5 decades = 1,58,800 + 3.5 × 19,769 = 2,27,992.",
+  "symbols": [],
+  "applicability": "Worked example in Appendix A2.2",
+  "notes": [
+    "Unnumbered expression; Ep<physical-page>-<sequence> is a service locator, not a printed equation number."
+  ]
+}

@@ -34,6 +34,7 @@ def report():
             'pages_reviewed':len(done),'pages_partially_reviewed':len(partial),
             'pages_remaining_including_partial':len(expected-done),
             'indexed_tables':len(mine),'baseline_image_table_units':len(image_tables),
+            'discovered_table_units_verified':sum(r['manual_id']==mid and r['kind']=='table' and r.get('create_unit') is True for r in verified.values()),
             'baseline_image_table_units_verified':sum(t['id'] in verified for t in image_tables),
             'baseline_image_table_units_pending':sum(t['id'] not in verified for t in image_tables),
             'native_table_units_without_visual_transcription':sum(t['table_source']=='text' and t['id'] not in verified for t in mine),

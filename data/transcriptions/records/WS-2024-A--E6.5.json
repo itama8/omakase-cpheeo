@@ -1,0 +1,60 @@
+{
+  "schema_version": 1,
+  "id": "WS-2024-A:E6.5",
+  "unit_id": "WS-2024-A:E6.5",
+  "manual_id": "WS-2024-A",
+  "kind": "equation",
+  "number": "6.5",
+  "source_sha256": "b60f2fb548357aec676b18ef31e3b37fb0e5e8a1aec8f886880b951113848b0a",
+  "state": "verified",
+  "regions": [
+    {
+      "pdf_page": 370,
+      "page_label": "285",
+      "bbox": [
+        65,
+        443,
+        560,
+        521
+      ],
+      "render_sha256": "9ce26c80a98f41f208f2053e35418737103a0123a465087f41711fe106cd81cc"
+    }
+  ],
+  "title": "Manning's velocity formula",
+  "parent_id": "WS-2024-A:6.5.1.3",
+  "latex": "V=\\left(\\frac{1}{n}\\right)r^{2/3}S^{1/2}",
+  "readable": "V = (1/n) r^(2/3) S^(1/2)",
+  "symbols": [
+    {
+      "symbol": "V",
+      "definition": "velocity of flow in m/s"
+    },
+    {
+      "symbol": "n",
+      "definition": "Manning's coefficient of roughness"
+    },
+    {
+      "symbol": "r",
+      "definition": "hydraulic radius (m)"
+    },
+    {
+      "symbol": "S",
+      "definition": "slope of pipe, m/m"
+    }
+  ],
+  "applicability": "Manning's formula for free-flow conduits.",
+  "notes": [],
+  "verification": {
+    "transcription": {
+      "pass_id": "parent-water-math-first-20261108",
+      "method": "direct visual inspection of full rendered source pages; no OCR",
+      "observations": "Read displayed formulae 6.1–6.6 and all table cells, spanning labels and continuation notes directly from source images on physical pages 369–372."
+    },
+    "visual_recheck": {
+      "pass_id": "water-headloss-distinct-recheck-20261108",
+      "method": "Distinct child direct inspection of exact crops and full pages; no OCR; not independent human review.",
+      "observations": "Visually read V = (1/n) r^(2/3) S^(1/2), numbered (6.5). Fractions 2/3 and 1/2 are powers of r and S respectively. The 1/n factor is enclosed in parentheses. All definitions match: V velocity of flow in m/s; n Manning's coefficient of roughness; r hydraulic radius (m); S slope of pipe, m/m. The printed definition line ends with an unmatched closing parenthesis after m/m; omitting that stray prose punctuation does not change the unit or mathematical content. Free-flow applicability is supplied by preceding page prose.",
+      "content_sha256": "040ab443903416a6e712669fff3760a1e1b5929643dba0aced3a623e2893b342"
+    }
+  }
+}

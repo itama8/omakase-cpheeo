@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:Ep822-1",
+  "unit_id": "SEW-2013-A:Ep822-1",
+  "manual_id": "SEW-2013-A",
+  "kind": "equation",
+  "number": "p822-1",
+  "title": "Rational runoff formula",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "state": "pending",
+  "regions": [
+    {
+      "pdf_page": 822,
+      "page_label": "A - 51",
+      "bbox": [
+        55,
+        100,
+        545,
+        211
+      ],
+      "render_sha256": "66e8c36ef4c07e601c3c08e444a1543206e817750528fed85b09f4117b1bac6a"
+    }
+  ],
+  "verification": {
+    "transcription": {
+      "pass_id": "sew-818-826-first-reading-2026-11-08",
+      "method": "Direct viewing of full rendered pages and selected enlarged crops; no OCR",
+      "observations": "First visual transcription only. No separate second comparison performed."
+    }
+  },
+  "source_image_refs": [
+    {
+      "path": "tmp/pdfs/sew-appendix-818-826/SEW-2013-A--Ep822-1.png",
+      "role": "first-reading source crop"
+    }
+  ],
+  "parent_id": "SEW-2013-A:A3.1",
+  "latex": "Q=10CiA",
+  "readable": "Q = 10 C i A.",
+  "symbols": [
+    {
+      "symbol": "Q",
+      "definition": "Runoff in m³/hr"
+    },
+    {
+      "symbol": "C",
+      "definition": "Coefficient of runoff"
+    },
+    {
+      "symbol": "i",
+      "definition": "Intensity of rainfall in mm/hr"
+    },
+    {
+      "symbol": "A",
+      "definition": "Area of drainage district in hectares"
+    }
+  ],
+  "applicability": "Worked example in Appendix A3.1",
+  "notes": [
+    "Unnumbered expression; Ep<physical-page>-<sequence> is a service locator, not a printed equation number."
+  ]
+}

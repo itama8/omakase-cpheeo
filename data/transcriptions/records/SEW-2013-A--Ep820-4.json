@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:Ep820-4",
+  "unit_id": "SEW-2013-A:Ep820-4",
+  "manual_id": "SEW-2013-A",
+  "kind": "equation",
+  "number": "p820-4",
+  "title": "Graphical projection results",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "state": "verified",
+  "regions": [
+    {
+      "pdf_page": 820,
+      "page_label": "A - 49",
+      "bbox": [
+        55,
+        355,
+        545,
+        417
+      ],
+      "render_sha256": "7309e023c78ad4c58d423f8f067dd39477868befc3266920ec7af8eb60a905db"
+    }
+  ],
+  "verification": {
+    "transcription": {
+      "pass_id": "sew-818-826-first-reading-2026-11-08",
+      "method": "Direct viewing of full rendered pages and selected enlarged crops; no OCR",
+      "observations": "First visual transcription only. No separate second comparison performed."
+    },
+    "visual_recheck": {
+      "pass_id": "appendix818-826-distinct-recheck-20261108",
+      "method": "Distinct child directly viewed exact crops and full pages; parent directly viewed revised regions for four corrected records; no OCR; not independent human review.",
+      "observations": "Two printed year/value pairs 2001 - 253,000 and 2016 - 362,000 match. Hyphens separate year and value. Figure A2.2-1 on this same page was also viewed; no value inferred from plotting.",
+      "content_sha256": "2c7dd75322ffb0941134abe6f8acd485555c1e72d5757f39b4bf2e388df19922"
+    }
+  },
+  "source_image_refs": [
+    {
+      "path": "tmp/pdfs/sew-appendix-818-826/SEW-2013-A--Ep820-4.png",
+      "role": "first-reading source crop"
+    }
+  ],
+  "parent_id": "SEW-2013-A:A2.2",
+  "latex": "P_{2001}=253000;\\quad P_{2016}=362000",
+  "readable": "Graphical projection results as printed: 2001 - 253,000; 2016 - 362,000.",
+  "symbols": [],
+  "applicability": "Worked example in Appendix A2.2",
+  "notes": [
+    "Unnumbered expression; Ep<physical-page>-<sequence> is a service locator, not a printed equation number.",
+    "Hyphens in source separate year and population; they are not subtraction signs. No new values inferred from the graph."
+  ]
+}

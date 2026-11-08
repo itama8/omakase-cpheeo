@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:Ep312-1",
+  "unit_id": "SEW-2013-A:Ep312-1",
+  "manual_id": "SEW-2013-A",
+  "kind": "equation",
+  "number": "p312-1",
+  "title": "Aerobic BOD:N:P ratio",
+  "state": "verified",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "regions": [
+    {
+      "pdf_page": 312,
+      "page_label": "5 - 8",
+      "bbox": [
+        50,
+        282,
+        545,
+        361
+      ],
+      "render_sha256": "e0e1d9af5ac34180f442515fd7cf62e6e73559d061868f83cbdf8345712762b7"
+    }
+  ],
+  "parent_id": "SEW-2013-A:5.1.4.1",
+  "latex": "\\mathrm{BOD:N:P}\\ \\text{is}\\ 100:5:1",
+  "readable": "For aerobic process, BOD:N:P is 100:5:1",
+  "symbols": [],
+  "applicability": "General required nutrient ratio; aerobic process.",
+  "notes": [
+    "Ep<physical-page>-<sequence> is a service locator, not a printed equation number.",
+    "If the N and P is less, these are artificially added by making a solution of appropriate fertilizers and adding to the raw sewage."
+  ],
+  "verification": {
+    "transcription": {
+      "pass_id": "sew-treatment-304-313-first-reading",
+      "method": "Direct visual reading of full annotation-cleaned 144 dpi page PNGs and specified 288 dpi details; no OCR",
+      "observations": "First reading only. Source spelling, numbers, powers, punctuation and discrepancies retained. No distinct second inspection performed."
+    },
+    "visual_recheck": {
+      "pass_id": "treatment304-313-distinct-recheck-20261108",
+      "method": "Distinct child actual inspection of all exact crops, full pages and enlarged details. Parent inspected diagram and T5.1 images to resolve report findings. No OCR; not independent human review.",
+      "observations": "For aerobic process, BOD:N:P is 100:5:1 matches all three values and order. Fertilizer-addition note matches meaning and wording. No mass basis invented. Report observations are bound to this corrected record: stale draft blocker removed; chemical-product context and LaTeX labels added where reported. Original report retained in batches/treatment-304-313-recheck/report.json.",
+      "content_sha256": "a0c97f1d7a2cd12e8238cf20ea7eed09f030c5611536ee40f6cf9b1eb4f1d6df"
+    }
+  }
+}

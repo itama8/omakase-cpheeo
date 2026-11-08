@@ -144,5 +144,43 @@ class Transcriptions(unittest.TestCase):
         p.write_text(json.dumps(r))
         with self.assertRaisesRegex(ValueError,'content changed after visual recheck'):load_records(self.records)
 
+    def test_discovered_table_survives_rebuild_refresh_and_removal(self):
+        table = {**self.table, 'id':'SEW-2013-A:Tp1-1', 'unit_id':'SEW-2013-A:Tp1-1',
+                 'number':'p1-1', 'create_unit':True, 'parent_id':'SEW-2013-A:2.5',
+                 'notes':['Service locator, not a printed table number.']}
+        self.write(table)
+        self.rebuild()
+        for operation in (lambda:None, lambda:refresh(self.db,self.records), self.rebuild):
+            operation()
+            lib = Library(self.db)
+            c = lib.get_clause(table['id'])
+            self.assertEqual(c['verified_transcriptions'][0]['rows'],table['rows'])
+            self.assertEqual(c['parent'],table['parent_id'])
+            self.assertIn(table['id'],[t['id'] for t in lib.get_clause(table['parent_id'])['tables']])
+            self.assertIn('7.5',lib.fetch(table['id'])['text'])
+            self.assertTrue(lib.image(table['id'],100000)[1])
+            lib.con.close()
+        self.write({**table,'state':'pending'})
+        refresh(self.db,self.records)
+        lib = Library(self.db)
+        self.assertNotIn('verified_text',lib.get_clause(table['id']))
+        lib.con.close()
+        (self.records/'SEW-2013-A--Tp1-1.json').unlink()
+        refresh(self.db,self.records)
+        lib = Library(self.db)
+        with self.assertRaises(KeyError):lib.get_clause(table['id'])
+        self.assertEqual(lib.get_clause(self.table['id'])['verified_transcriptions'][0]['rows'],self.table['rows'])
+        lib.con.close()
+
+    def test_discovered_table_cannot_replace_original_or_use_foreign_parent(self):
+        self.rebuild()
+        original = hashlib.sha256(self.db.read_bytes()).hexdigest()
+        self.write({**self.table,'create_unit':True,'parent_id':'SEW-2013-A:2.5'})
+        with self.assertRaisesRegex(ValueError,'replace an original unit'):refresh(self.db,self.records)
+        self.assertEqual(hashlib.sha256(self.db.read_bytes()).hexdigest(),original)
+        self.write({**self.table,'create_unit':True,'parent_id':'WS-2024-A:2.5'})
+        with self.assertRaisesRegex(ValueError,'another manual'):refresh(self.db,self.records)
+        self.assertEqual(hashlib.sha256(self.db.read_bytes()).hexdigest(),original)
+
 
 if __name__=='__main__':unittest.main()

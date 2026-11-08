@@ -1,0 +1,190 @@
+{
+  "schema_version": 1,
+  "batch_id": "figure348-recheck",
+  "review_date": "2026-11-08",
+  "status": "unsealed_recheck_report_corrections_recommended",
+  "sealed": false,
+  "record_id": "SEW-2013-A:Ep233-1",
+  "record_path": "data/transcriptions/records/SEW-2013-A--Ep233-1.json",
+  "record_state_at_review": "pending",
+  "scope": "Distinct direct visual recheck of the supplied pending Figure 3.48 record, exact pinned crop and full physical page 233. No delegation, sealing or record mutation.",
+  "method": {
+    "reading": "Actual visual inspection of both freshly rendered PNGs through tools.view_image; image_url forwarded through functions.exec image(). No OCR or native PDF text extraction used.",
+    "renderer": "omakase_cpheeo.extract.open_clean, then omakase_cpheeo.transcriptions.region_png at Matrix(2,2), 144 dpi, alpha=False, PNG. Full page rendered with page.rect as bbox.",
+    "annotation_handling": "All annotations removed in memory by open_clean; source PDF unchanged.",
+    "images_actually_viewed": [
+      "/tmp/figure348-recheck-25966b0c/exact-crop.png",
+      "/tmp/figure348-recheck-25966b0c/physical-page233.png"
+    ],
+    "independence_limit": "Assistant second visual comparison; not independent human review or engineering certification."
+  },
+  "digest_checks": {
+    "source_pdf_path": "/home/a2ajinkya/Downloads/CPHEEO/Seweage CPHEEO.pdf",
+    "source_sha256_expected": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+    "source_sha256_actual": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+    "source_pin_matches": true,
+    "record_file_sha256": "3478186a7c628284635807458bcfa7919eac559c6a421412ddb3a50ced8bfe21",
+    "authored_content_sha256": "dbb58a1600423aee599d5c394841a5e1e081049990ea8e59403f072398a826a4",
+    "content_digest_algorithm": "omakase_cpheeo.transcriptions.content_digest: SHA-256 of sorted compact UTF-8 JSON with ensure_ascii=False, excluding state, verification and source_image_refs.",
+    "content_digest_recomputed_and_unchanged_before_report_write": true,
+    "crop_render_sha256_expected": "ae2ce6ea0b9e503b6b63cc2aaf83f9a56fc78df375371f1d9acd26abd0d66834",
+    "crop_render_sha256_actual": "ae2ce6ea0b9e503b6b63cc2aaf83f9a56fc78df375371f1d9acd26abd0d66834",
+    "crop_pin_matches": true,
+    "full_page_render_sha256": "b123e90c75b98dfc50d6a0cb285d0ae906b96835f5b294094d3b72efcf7d10db",
+    "note": "Digest binds these observations to the existing pending authored content. It does not seal or approve a corrected future record."
+  },
+  "page": {
+    "physical_page": 233,
+    "printed_page": "3 - 88",
+    "exact_crop_bbox_pdf_points": [
+      80,
+      76,
+      512,
+      551
+    ],
+    "full_page_bbox_pdf_points": [
+      0.0,
+      0.0,
+      595.2760009765625,
+      841.8900146484375
+    ],
+    "caption": "Figure 3.48 Classes of bedding for projecting conduits",
+    "source_line_full_page": "Source: CPHEEO, 1993"
+  },
+  "class_comparisons": [
+    {
+      "class": "A",
+      "observed_dimension_callouts": [
+        "Bc (drawn with subscript c), standalone horizontal dimension across the conduit",
+        "Bc + 20cm",
+        "MIN Bc/4",
+        "MIN 1/4 INSIDE DIAMETER"
+      ],
+      "observed_words": [
+        "M 15 / CONCRETE / BETTER",
+        "EARTH OR ROCK",
+        "CLASS A"
+      ],
+      "comparison": "Bc + 20 cm, MIN Bc/4 and MIN 1/4 INSIDE DIAMETER match readable and LaTeX, including denominator 4 and cm. The figure also has a standalone Bc horizontal dimension absent from readable and LaTeX. The existing M 15 CONCRETE BETTER wording matches the visible three lines; do not silently insert OR or rewrite BETTER.",
+      "dimension_context": "Bc + 20cm spans the concrete bed width. MIN Bc/4 points to the short vertical dimension at the right; MIN 1/4 INSIDE DIAMETER is a separate leader-associated callout. No numerical value for Bc or definition is supplied."
+    },
+    {
+      "class": "B",
+      "observed_dimension_callouts": [
+        "pBc (subscript c)"
+      ],
+      "observed_words": [
+        "THOROUGHLY / TAMPED / EARTH",
+        "ACCURATELY / SHAPED TO / FIT PIPE",
+        "CLASS B"
+      ],
+      "comparison": "pBc and all words match the record. The first glyph is visually Latin lowercase p, not rho. The callout is beside a vertical dimension from the ground line to the upper level; no unit or equality is printed."
+    },
+    {
+      "class": "C (EARTH)",
+      "observed_dimension_callouts": [
+        "MIN Bc/10 (shared callout pointing toward earth and rock dimension marks)"
+      ],
+      "observed_words": [
+        "EARTH",
+        "ACCURATELY / SHAPED TO / FIT PIPE",
+        "CLASS C (EARTH)"
+      ],
+      "comparison": "Matches Class C (earth and rock): MIN Bc/10. Denominator is 10, not 4. The central callout has horizontal leaders extending toward both Class C drawings."
+    },
+    {
+      "class": "C (ROCK)",
+      "observed_dimension_callouts": [
+        "Bc+10cm",
+        "pBc (subscript c)",
+        "shared MIN Bc/10",
+        "0.2m when H ≤ 5m",
+        "0.04m/m of H when H > 5m"
+      ],
+      "observed_words": [
+        "ROCK",
+        "GRANULAR CUSHION",
+        "CLASS C (ROCK)"
+      ],
+      "comparison": "All recorded dimensions and words match. Width offset is +10 cm, not +20 cm. Both occurrences of pBc (Classes B and C rock) use the same visible p glyph. H threshold includes equality in the first case (≤ 5 m), and the second is strictly > 5 m. The second unit is m/m of H, not merely m, and 0.04 is not 0.4. Readable retains the source when clauses; LaTeX represents them as cases without asserting an equation.",
+      "interpretation_limit": "Retain 0.04 m/m of H literally; do not invent a variable on the left, convert it into a new equality, or infer what H or p means. No definition of Bc, p or H appears on this page."
+    },
+    {
+      "class": "D (EARTH)",
+      "observed_dimension_callouts": [],
+      "observed_words": [
+        "EARTH",
+        "NOT SHAPED TO FIT / PIPE",
+        "CLASS D (EARTH)"
+      ],
+      "comparison": "Record note matches. No numerical, algebraic or minimum dimension is printed in this subfigure."
+    },
+    {
+      "class": "D (ROCK)",
+      "observed_dimension_callouts": [],
+      "observed_words": [
+        "ROCK",
+        "SHALLOW GRANULAR CUSHION",
+        "CLASS D (ROCK)"
+      ],
+      "comparison": "Record note matches. Leader points to the shallow cushion; no numerical or algebraic callout is printed."
+    }
+  ],
+  "record_field_comparison": {
+    "title_and_applicability": "Figure number, bedding classes and projecting-conduit caption agree with title/applicability. Source drawing remains necessary for dimension-arrow context.",
+    "latex_and_readable": "Recorded coefficients, operators, fractions, thresholds and units agree with the source. Both omit the standalone Class A Bc dimension.",
+    "symbols": "Empty list does not omit a printed definition: none for p, Bc or H is present on page 233. Bc is visibly a subscripted label; existing LaTeX B_c captures that.",
+    "notes": "Source year 1993, service-locator caveat, pBc spelling and all described Class A/B/C/D material/shape labels agree. Slash-separated earth/rock summaries are acceptable grouping, not literal source lines.",
+    "page_label": "3 - 88 matches the visible footer.",
+    "parent_id_limit": "No DB or adjacent-page lookup performed. Page shows the following heading 3.50.3.8; supplied parent 3.50.3.7 not independently established from a heading on this page."
+  },
+  "corrections_recommended": [
+    {
+      "id": "missing-class-a-bc",
+      "severity": "transcription_completeness",
+      "fields": [
+        "latex",
+        "readable"
+      ],
+      "observation": "Standalone Bc dimension across the Class A conduit is visible in the exact crop and full page but absent from authored math.",
+      "recommended_change": "Include standalone B_c / Bc among the Class A dimension labels, clearly as a diagram label with no asserted equality or inferred definition.",
+      "applied": false
+    },
+    {
+      "id": "crop-clips-source-prefix",
+      "severity": "crop_completeness",
+      "fields": [
+        "regions[0].bbox",
+        "regions[0].render_sha256"
+      ],
+      "observation": "Exact crop begins with clipped ource: CPHEEO, 1993 at its left edge; full page shows Source: CPHEEO, 1993. All six subfigures, their dimension labels and caption are visible in the existing crop.",
+      "recommended_change": "If retaining the source line in the source-region image, expand the left crop boundary to include the complete Source: prefix, rerender, update render_sha256 and perform a fresh comparison/content digest before any verification. No replacement crop authored in this task.",
+      "applied": false
+    }
+  ],
+  "full_page_findings": {
+    "figure_targets_seen": [
+      "Figure 3.48: Class A, Class B, Class C (earth), Class C (rock), Class D (earth), Class D (rock)"
+    ],
+    "missing_target_within_existing_figure_record": [
+      "Standalone Class A Bc dimension label"
+    ],
+    "additional_table_or_formula_targets_outside_figure": [],
+    "observed_context_below_figure": [
+      "CLASS C paragraph: conduit laid on accurately shaped earth to fit the bottom surface; for rock foundations it is laid on granular cushion and the sides are filled up.",
+      "CLASS D paragraph: conduit laid on earth not shaped to fit its bottom; rocky soil uses a shallow granular cushion.",
+      "3.50.3.8 Load Factors for Rigid Pipes: prose describes dependency on bedding type, active lateral soil pressure magnitude and pipe area over which the pressure acts."
+    ],
+    "coverage_limit": "Full physical page 233 inspected. No other table, equation, quantitative box or dimension figure observed. Adjacent pages and whole-section completeness not reviewed; no page ledger completion asserted."
+  },
+  "summary": {
+    "exact_crop_actually_viewed": true,
+    "full_page_actually_viewed": true,
+    "recorded_math_value_or_unit_errors": 0,
+    "omitted_dimension_labels": 1,
+    "crop_completeness_issues": 1,
+    "wording_corrections": [],
+    "ready_to_seal_unchanged": false
+  },
+  "write_scope": "Only data/transcriptions/batches/figure348-recheck/report.json authored in the workspace. Temporary PNGs and metadata in /tmp. Record, ledger, database, live server and source PDF unchanged. No sealing or delegation."
+}

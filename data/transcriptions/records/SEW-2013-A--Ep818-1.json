@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:Ep818-1",
+  "unit_id": "SEW-2013-A:Ep818-1",
+  "manual_id": "SEW-2013-A",
+  "kind": "equation",
+  "number": "p818-1",
+  "title": "Arithmetic increase over six decades",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "state": "verified",
+  "regions": [
+    {
+      "pdf_page": 818,
+      "page_label": "A - 47",
+      "bbox": [
+        55,
+        586,
+        540,
+        685
+      ],
+      "render_sha256": "3a47017ea0a90d4d2a24e52fe137bca446ffcf5afba0986af1fbddce1bb65fe0"
+    }
+  ],
+  "verification": {
+    "transcription": {
+      "pass_id": "sew-818-826-first-reading-2026-11-08",
+      "method": "Direct viewing of full rendered pages and selected enlarged crops; no OCR",
+      "observations": "First visual transcription only. No separate second comparison performed."
+    },
+    "visual_recheck": {
+      "pass_id": "appendix818-826-distinct-recheck-20261108",
+      "method": "Distinct child directly viewed exact crops and full pages; parent directly viewed revised regions for four corrected records; no OCR; not independent human review.",
+      "observations": "Read vertical subtraction 1,58,800 (-) 40,185 = 1,18,615, the repeated horizontal subtraction, and 1/6 × 1,18,615 = 19,769. Coefficients and minus/multiplication signs match; vertical layout is linearized. Final per-decade line is clipped at the bottom of the pinned crop; full page and arithmetic-818 expanded detail show it completely. Parent inspected corrected exact crop; replaced t_l with printed t_1, corrected related note, or expanded clipped subtraction crop as applicable. All reported objections for this record resolved.",
+      "content_sha256": "457c41cadd25f646542606040517a11a1f940c1dfaf64327388cf750a7a814ed"
+    }
+  },
+  "source_image_refs": [
+    {
+      "path": "tmp/pdfs/sew-appendix-818-826/SEW-2013-A--Ep818-1.png",
+      "role": "first-reading source crop"
+    }
+  ],
+  "parent_id": "SEW-2013-A:A2.2",
+  "latex": "158800-40185=118615;\\quad \\frac{1}{6}\\times118615=19769",
+  "readable": "Increase in population from 1921 to 1981, i.e. in 6 decades: 1,58,800 (-) 40,185 = 1,18,615 = 1,58,800 - 40,185 = 1,18,615; increase per decade = 1/6 × 1,18,615 = 19,769.",
+  "symbols": [],
+  "applicability": "Worked example in Appendix A2.2",
+  "notes": [
+    "Unnumbered expression; Ep<physical-page>-<sequence> is a service locator, not a printed equation number."
+  ]
+}

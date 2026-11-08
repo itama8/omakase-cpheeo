@@ -1,0 +1,71 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:Tp822-1",
+  "unit_id": "SEW-2013-A:Tp822-1",
+  "manual_id": "SEW-2013-A",
+  "kind": "table",
+  "number": "p822-1",
+  "title": "Unindexed time-intensity interpolation table",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "state": "verified",
+  "regions": [
+    {
+      "pdf_page": 822,
+      "page_label": "A - 51",
+      "bbox": [
+        55,
+        300,
+        525,
+        337
+      ],
+      "render_sha256": "d467b10ae1f29d5497f4092864c29e8ef56e65900cc5ef1bf506cbd31532c8c8"
+    }
+  ],
+  "verification": {
+    "transcription": {
+      "pass_id": "sew-818-826-first-reading-2026-11-08",
+      "method": "Direct viewing of full rendered pages and selected enlarged crops; no OCR",
+      "observations": "First visual transcription only. No separate second comparison performed."
+    },
+    "visual_recheck": {
+      "pass_id": "appendix818-826-distinct-recheck-20261108",
+      "method": "Distinct child directly viewed exact crops and full pages; parent directly viewed revised regions for four corrected records; no OCR; not independent human review.",
+      "observations": "Read every label and all six aligned pairs: intensity mm/hr 30,35,40,45,50,60 above duration minute 44,36,28.5,22.5,13.5,9.75. One-year storm, 26 times in 26 years is printed above. Metadata create_unit true and A3.1 parent are present in current candidate; old draft blocker no longer applies.",
+      "content_sha256": "6adf5c375265ded1fb871784811e98babf323109d1fff0f6f394bb7d82ea34f3"
+    }
+  },
+  "source_image_refs": [
+    {
+      "path": "tmp/pdfs/sew-appendix-818-826/SEW-2013-A--Tp822-1.png",
+      "role": "first-reading source crop"
+    }
+  ],
+  "headers": [
+    "Intensity, i mm/hr",
+    "30",
+    "35",
+    "40",
+    "45",
+    "50",
+    "60"
+  ],
+  "rows": [
+    [
+      "Duration, t minute",
+      "44",
+      "36",
+      "28.5",
+      "22.5",
+      "13.5",
+      "9.75"
+    ]
+  ],
+  "markdown": "| Intensity, i mm/hr | 30 | 35 | 40 | 45 | 50 | 60 |\n| --- | --- | --- | --- | --- | --- | --- |\n| Duration, t minute | 44 | 36 | 28.5 | 22.5 | 13.5 | 9.75 |",
+  "cell_spans": [],
+  "notes": [
+    "One-year storm; 26 occurrences in 26 years. Proposed service locator only.",
+    "Unnumbered table: p822-1 is a service locator, not a printed table number."
+  ],
+  "create_unit": true,
+  "parent_id": "SEW-2013-A:A3.1"
+}

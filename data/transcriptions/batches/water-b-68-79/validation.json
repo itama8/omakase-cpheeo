@@ -1,0 +1,34 @@
+{
+  "records_loaded": 2,
+  "all_pending": true,
+  "schema_version": 1,
+  "source_hash_rechecked": true,
+  "region_hash_validation": "All 4 record regions reproduced and matched by author_batch.py; these are full pages 72, 74, 75, 76.",
+  "full_source_pages_rendered_and_viewed": [
+    68,
+    69,
+    70,
+    71,
+    72,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79
+  ],
+  "table_grids": {
+    "WS-2024-B:T1.1": {
+      "columns": 2,
+      "rows_including_category_rows": 16,
+      "data_rows": 13
+    },
+    "WS-2024-B:T1.2": {
+      "columns": 5,
+      "logical_rows": 9
+    }
+  },
+  "sealed": false,
+  "database_access": "sqlite mode=ro for existing unit identity only; no apply or refresh"
+}

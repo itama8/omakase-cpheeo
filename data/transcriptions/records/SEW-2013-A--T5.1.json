@@ -1,0 +1,214 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:T5.1",
+  "unit_id": "SEW-2013-A:T5.1",
+  "manual_id": "SEW-2013-A",
+  "kind": "table",
+  "number": "5.1",
+  "title": "Contribution of human wastes in grams per capita per day",
+  "state": "verified",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "regions": [
+    {
+      "pdf_page": 305,
+      "page_label": "5 - 1",
+      "bbox": [
+        55,
+        215,
+        547,
+        781
+      ],
+      "render_sha256": "3b5af150a9e20b8baa35c45c3a7e1c4e3f02dcadb57f0ca7c08bdf39f7de4bb4"
+    },
+    {
+      "pdf_page": 306,
+      "page_label": "5 - 2",
+      "bbox": [
+        50,
+        71,
+        547,
+        195
+      ],
+      "render_sha256": "c4b176108fc7b5545106bafc93075e99981656afdf8e2469c8663c4b30cd410c"
+    }
+  ],
+  "headers": [
+    "No",
+    "Parameters",
+    "Range",
+    "Basis"
+  ],
+  "rows": [
+    [
+      "1",
+      "Biochemical oxygen demand, BOD",
+      "45-54",
+      "grams per capita per day"
+    ],
+    [
+      "2",
+      "Chemical oxygen demand, COD",
+      "1.6-1.9 times BOD",
+      "grams per capita per day"
+    ],
+    [
+      "3",
+      "Total organic carbon, TOC",
+      "0.6-1.0 times BOD",
+      "grams per capita per day"
+    ],
+    [
+      "4",
+      "Total solids, TS",
+      "170-220",
+      "grams per capita per day"
+    ],
+    [
+      "5",
+      "Suspended solids, SS",
+      "70-145",
+      "grams per capita per day"
+    ],
+    [
+      "6",
+      "Grit (inorganic,0.2 mm and above)",
+      "5-15",
+      "grams per capita per day"
+    ],
+    [
+      "7",
+      "Grease",
+      "10-30",
+      "grams per capita per day"
+    ],
+    [
+      "8",
+      "Alkalinity as calcium carbonate (CaCO₃)",
+      "20-30",
+      "grams per capita per day"
+    ],
+    [
+      "9",
+      "Chlorides",
+      "4-8",
+      "grams per capita per day"
+    ],
+    [
+      "10",
+      "Total nitrogen N",
+      "6-12",
+      "grams per capita per day"
+    ],
+    [
+      "11",
+      "Organic nitrogen",
+      "~0.4 total N",
+      "grams per capita per day"
+    ],
+    [
+      "12",
+      "Free ammonia",
+      "~0.6 total N",
+      "grams per capita per day"
+    ],
+    [
+      "13",
+      "Nitrate",
+      "~0.0-0.5 total N",
+      "grams per capita per day"
+    ],
+    [
+      "14",
+      "Total phosphorus",
+      "~0.6-4.5",
+      "grams per capita per day"
+    ],
+    [
+      "15",
+      "Organic phosphorus",
+      "~0.3 total P",
+      "grams per capita per day"
+    ],
+    [
+      "16",
+      "Inorganic(ortho- and poly-phosphates)",
+      "~0.7 total P",
+      "grams per capita per day"
+    ],
+    [
+      "17",
+      "Potassium(as potassium oxide K₂O)",
+      "2.0-6.0",
+      "grams per capita per day"
+    ],
+    [
+      "18",
+      "Total bacteria",
+      "10⁹-10¹⁰",
+      "Microorganisms in 100 ml of sewage"
+    ],
+    [
+      "19",
+      "Coliforms",
+      "10⁹-10¹⁰",
+      "Microorganisms in 100 ml of sewage"
+    ],
+    [
+      "20",
+      "Faecal streptococci",
+      "10⁵-10⁶",
+      "Microorganisms in 100 ml of sewage"
+    ],
+    [
+      "21",
+      "Salmonella Typhosa",
+      "10¹-10⁴",
+      "Microorganisms in 100 ml of sewage"
+    ],
+    [
+      "22",
+      "Protozoan cysts",
+      "Up to 10³",
+      "Microorganisms in 100 ml of sewage"
+    ],
+    [
+      "23",
+      "Helmintic eggs",
+      "Up to 10³",
+      "Microorganisms in 100 ml of sewage"
+    ],
+    [
+      "24",
+      "Virus (plaque forming units)",
+      "10²-10⁴",
+      "Microorganisms in 100 ml of sewage"
+    ]
+  ],
+  "markdown": "| No | Parameters | Range | Basis |\n| --- | --- | --- | --- |\n| 1 | Biochemical oxygen demand, BOD | 45-54 | grams per capita per day |\n| 2 | Chemical oxygen demand, COD | 1.6-1.9 times BOD | grams per capita per day |\n| 3 | Total organic carbon, TOC | 0.6-1.0 times BOD | grams per capita per day |\n| 4 | Total solids, TS | 170-220 | grams per capita per day |\n| 5 | Suspended solids, SS | 70-145 | grams per capita per day |\n| 6 | Grit (inorganic,0.2 mm and above) | 5-15 | grams per capita per day |\n| 7 | Grease | 10-30 | grams per capita per day |\n| 8 | Alkalinity as calcium carbonate (CaCO₃) | 20-30 | grams per capita per day |\n| 9 | Chlorides | 4-8 | grams per capita per day |\n| 10 | Total nitrogen N | 6-12 | grams per capita per day |\n| 11 | Organic nitrogen | ~0.4 total N | grams per capita per day |\n| 12 | Free ammonia | ~0.6 total N | grams per capita per day |\n| 13 | Nitrate | ~0.0-0.5 total N | grams per capita per day |\n| 14 | Total phosphorus | ~0.6-4.5 | grams per capita per day |\n| 15 | Organic phosphorus | ~0.3 total P | grams per capita per day |\n| 16 | Inorganic(ortho- and poly-phosphates) | ~0.7 total P | grams per capita per day |\n| 17 | Potassium(as potassium oxide K₂O) | 2.0-6.0 | grams per capita per day |\n| 18 | Total bacteria | 10⁹-10¹⁰ | Microorganisms in 100 ml of sewage |\n| 19 | Coliforms | 10⁹-10¹⁰ | Microorganisms in 100 ml of sewage |\n| 20 | Faecal streptococci | 10⁵-10⁶ | Microorganisms in 100 ml of sewage |\n| 21 | Salmonella Typhosa | 10¹-10⁴ | Microorganisms in 100 ml of sewage |\n| 22 | Protozoan cysts | Up to 10³ | Microorganisms in 100 ml of sewage |\n| 23 | Helmintic eggs | Up to 10³ | Microorganisms in 100 ml of sewage |\n| 24 | Virus (plaque forming units) | 10²-10⁴ | Microorganisms in 100 ml of sewage |",
+  "notes": [
+    "Source: Arceivala, 2000.",
+    "The author-added Basis column makes the two printed groups explicit. Printed first header Parameters spans No and Parameters. Microorganism rows are printed in two side-by-side three-column groups: 18/22, 19/23, 20/24, 21/blank; normalized here to sequential rows.",
+    "Note 1. The wastewater from toilets is usually referred to as black water and the rest of the wastewater from all other activities is referred to as grey water.",
+    "Note 2. As already cited in chapter 1, about 12.6 % of population are still not having toilets and practice open defecation. Their grey water somehow gets into sewers by way of open drains discharging into sewers.",
+    "Note 3. Thus, the BOD of raw sewage has to be foreseen realistically because this dictates the cost of the STP almost pro-rata.",
+    "Note 4 (page 306 continuation). The difference between total solids and suspended solids is the dissolved solids. When calculating its concentration, the dissolved solids in the freshwater used by the ULB must be added to arrive at the values in raw sewage.",
+    "Note 5. The raw sewage pH generally ranges 6.8 to 8.0 depending on raw water quality.",
+    "Note 6. The major nitrogen compound in domestic waste is urea CO(NH₂)₂, which is readily hydrolyzed to ammonia (NH₃) and carbon dioxide (CO₂) by the enzyme urease present in sewage. Hence, NH₃ constitutes the major fraction of total nitrogen in domestic sewage.",
+    "Page 312 says Table 5.1 is historical and Table 5-4 will be followed for biological STP design."
+  ],
+  "verification": {
+    "transcription": {
+      "pass_id": "sew-treatment-304-313-first-reading",
+      "method": "Direct visual reading of full annotation-cleaned 144 dpi page PNGs and specified 288 dpi details; no OCR",
+      "observations": "First reading only. Source spelling, numbers, powers, punctuation and discrepancies retained. No distinct second inspection performed."
+    },
+    "visual_recheck": {
+      "pass_id": "treatment304-313-distinct-recheck-20261108",
+      "method": "Distinct child actual inspection of all exact crops, full pages and enlarged details. Parent inspected diagram and T5.1 images to resolve report findings. No OCR; not independent human review.",
+      "observations": "All 24 normalized rows and 96 body cells compared. All ranges and tildes match, including ~0.0-0.5 total N and ~0.6-4.5; CaCO₃ and K₂O chemical digits match. Microorganism powers read directly: total bacteria 10⁹-10¹⁰, coliforms 10⁹-10¹⁰, faecal streptococci 10⁵-10⁶, Salmonella Typhosa 10¹-10⁴, protozoan cysts/Helmintic eggs each Up to 10³, virus 10²-10⁴. Unit is per 100 ml of sewage. Side-by-side 18/22,19/23,20/24,21/blank normalization is documented. Notes 1-6 compared on pages 305/306: black/grey water, 12.6 %, BOD cost almost pro-rata, dissolved-solids freshwater addition, pH 6.8 to 8.0, CO(NH₂)₂ to NH₃/CO₂ and urease all retained. Notes are lightly paraphrased, not a diplomatic verbatim transcription. create_unit is true and parent_id is SEW-2013-A:5.1 in actual current draft; old blocker does not apply. Historical/design distinction is confirmed on page 312. Report observations are bound to this corrected record: stale draft blocker removed; chemical-product context and LaTeX labels added where reported. Original report retained in batches/treatment-304-313-recheck/report.json.",
+      "content_sha256": "5a074fc69b9cbff61af01faddbfba68cc090201b31b7f051cb9565583787f970"
+    }
+  },
+  "create_unit": true,
+  "parent_id": "SEW-2013-A:5.1"
+}

@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:Ep819-2",
+  "unit_id": "SEW-2013-A:Ep819-2",
+  "manual_id": "SEW-2013-A",
+  "kind": "equation",
+  "number": "p819-2",
+  "title": "Geometric mean growth rate",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "state": "verified",
+  "regions": [
+    {
+      "pdf_page": 819,
+      "page_label": "A - 48",
+      "bbox": [
+        50,
+        215,
+        510,
+        298
+      ],
+      "render_sha256": "a3bcaa7812cac827c2d3db78bca2fd76f96fd05cbc6bbd719b0a9565f4bd1204"
+    }
+  ],
+  "verification": {
+    "transcription": {
+      "pass_id": "sew-818-826-first-reading-2026-11-08",
+      "method": "Direct viewing of full rendered pages and selected enlarged crops; no OCR",
+      "observations": "First visual transcription only. No separate second comparison performed."
+    },
+    "visual_recheck": {
+      "pass_id": "appendix818-826-distinct-recheck-20261108",
+      "method": "Distinct child directly viewed exact crops and full pages; parent directly viewed revised regions for four corrected records; no OCR; not independent human review.",
+      "observations": "The radical index is 6, subscript g on r; product contains .108, .356, .252, .308, .256, .278 in that order, equals .2442. Following 1921 to 1981 statement repeats rg = .2442. Candidate matches.",
+      "content_sha256": "fc773532a3ff6c05a07ccb4129016b53fa25fdc0fe1ab1cb6b2552aa34ff0c98"
+    }
+  },
+  "source_image_refs": [
+    {
+      "path": "tmp/pdfs/sew-appendix-818-826/SEW-2013-A--Ep819-2.png",
+      "role": "first-reading source crop"
+    }
+  ],
+  "parent_id": "SEW-2013-A:A2.2",
+  "latex": "r_g=\\sqrt[6]{0.108\\times0.356\\times0.252\\times0.308\\times0.256\\times0.278}=0.2442",
+  "readable": "Geometric Mean, r_g = sixth root of (0.108 × 0.356 × 0.252 × 0.308 × 0.256 × 0.278) = 0.2442; for the period 1921 to 1981, rg = 0.2442.",
+  "symbols": [],
+  "applicability": "Worked example in Appendix A2.2",
+  "notes": [
+    "Unnumbered expression; Ep<physical-page>-<sequence> is a service locator, not a printed equation number."
+  ]
+}

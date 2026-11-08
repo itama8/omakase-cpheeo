@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:Ep823-1",
+  "unit_id": "SEW-2013-A:Ep823-1",
+  "manual_id": "SEW-2013-A",
+  "kind": "equation",
+  "number": "p823-1",
+  "title": "Runoff rate per tributary hectare",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "state": "verified",
+  "regions": [
+    {
+      "pdf_page": 823,
+      "page_label": "A - 52",
+      "bbox": [
+        50,
+        73,
+        545,
+        136
+      ],
+      "render_sha256": "9a34b92927ccd0ccd1f19958f383a5c7356f2b280a87004e2f37676af5986869"
+    }
+  ],
+  "verification": {
+    "transcription": {
+      "pass_id": "sew-818-826-first-reading-2026-11-08",
+      "method": "Direct viewing of full rendered pages and selected enlarged crops; no OCR",
+      "observations": "First visual transcription only. No separate second comparison performed."
+    },
+    "visual_recheck": {
+      "pass_id": "appendix818-826-distinct-recheck-20261108",
+      "method": "Distinct child directly viewed exact crops and full pages; parent directly viewed revised regions for four corrected records; no OCR; not independent human review.",
+      "observations": "Continuation from item v: 10 C i vs t curves for imperviousness factors; 10 C i is rate in m³/hr per hectare of tributary area. Uppercase C, lowercase i and units match; time of concentration context visible.",
+      "content_sha256": "3888aafb65f2189e3a9cd30cd00eac0c4c5800c2ad35aae2d1dd9a3e1b53cd81"
+    }
+  },
+  "source_image_refs": [
+    {
+      "path": "tmp/pdfs/sew-appendix-818-826/SEW-2013-A--Ep823-1.png",
+      "role": "first-reading source crop"
+    }
+  ],
+  "parent_id": "SEW-2013-A:A3.1",
+  "latex": "10Ci",
+  "readable": "10 C i gives the rate of runoff in m³/hr per hectare of the tributary area; curves of 10 C i vs t are plotted for various values of imperviousness.",
+  "symbols": [],
+  "applicability": "Worked example in Appendix A3.1",
+  "notes": [
+    "Unnumbered expression; Ep<physical-page>-<sequence> is a service locator, not a printed equation number.",
+    "Continuation of item v on physical page 822."
+  ]
+}

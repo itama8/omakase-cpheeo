@@ -1,0 +1,532 @@
+{
+  "schema_version": 1,
+  "batch_id": "water-headloss-recheck",
+  "review_date": "2026-11-08",
+  "pass_id": "water-headloss-direct-image-recheck-20261108",
+  "status": "unsealed_recheck_report_for_parent_integration",
+  "sealed": false,
+  "scope": "Distinct direct visual comparison of exactly eight pending WS-2024-A records E6.1–E6.6 and T6.1–T6.2, all nine pinned regions and full physical pages 369–372 (printed 284–287).",
+  "method": {
+    "reading": "Actual image viewing: tools.view_image returned images forwarded via functions.exec image(); all nine crops and four full pages were inspected. Two additional enlarged source details were also viewed. No OCR or native PDF text extraction used as evidence.",
+    "renderer": "open_clean and region_png at 144 dpi for every pinned region and full page; extra details rendered from open_clean at 360 dpi with PyMuPDF get_pixmap. Annotations removed only in memory.",
+    "independence_limit": "Distinct assistant visual pass from the first-pass record observations; not independent human review. No delegation.",
+    "images_actually_viewed": [
+      "/tmp/water-headloss-recheck-02kd44rm/E6.1-region-1.png",
+      "/tmp/water-headloss-recheck-02kd44rm/E6.2-region-1.png",
+      "/tmp/water-headloss-recheck-02kd44rm/E6.3-region-1.png",
+      "/tmp/water-headloss-recheck-02kd44rm/E6.4-region-1.png",
+      "/tmp/water-headloss-recheck-02kd44rm/E6.5-region-1.png",
+      "/tmp/water-headloss-recheck-02kd44rm/E6.6-region-1.png",
+      "/tmp/water-headloss-recheck-02kd44rm/T6.1-region-1.png",
+      "/tmp/water-headloss-recheck-02kd44rm/T6.2-region-1.png",
+      "/tmp/water-headloss-recheck-02kd44rm/T6.2-region-2.png",
+      "/tmp/water-headloss-recheck-02kd44rm/full-page-369.png",
+      "/tmp/water-headloss-recheck-02kd44rm/full-page-370.png",
+      "/tmp/water-headloss-recheck-02kd44rm/full-page-371.png",
+      "/tmp/water-headloss-recheck-02kd44rm/full-page-372.png",
+      "/tmp/water-headloss-recheck-02kd44rm/E6.2-detail.png",
+      "/tmp/water-headloss-recheck-02kd44rm/E6.4-detail.png"
+    ]
+  },
+  "source": {
+    "pdf_path": "/home/a2ajinkya/Downloads/CPHEEO/Water Supply_2023/Part-A-Manual-Engineering-Planning-Design-and-Implementation(3).pdf",
+    "sha256": "b60f2fb548357aec676b18ef31e3b37fb0e5e8a1aec8f886880b951113848b0a",
+    "path_resolved_using": "src/omakase_cpheeo/corpus.py sources_dir()/manual_by_id; matched data/transcriptions/sources.json file and SHA-256",
+    "matches_all_eight_record_source_pins": true
+  },
+  "per_record_findings": [
+    {
+      "record_id": "WS-2024-A:E6.1",
+      "state_observed": "pending",
+      "result": "matches_print_with_presentation_normalization",
+      "record_file_sha256": "a2d7839d0b01cdb80c3f54fa0111a1474d1852a6b3e7de126a4451aebe0c5be5",
+      "content_digest": "2957999c2185ac029ac95356be3192bc73eefdc304d4c64861af5372a7609110",
+      "content_digest_checked": true,
+      "digest_function": "omakase_cpheeo.transcriptions.content_digest",
+      "source_pin_matches": true,
+      "regions": [
+        {
+          "pdf_page": 369,
+          "page_label": "284",
+          "bbox": [
+            65,
+            426,
+            555,
+            543
+          ],
+          "render_sha256": "14aaba941de57cf86debff292b12721f16aefb49e252a27f75730fb5264d3d41",
+          "path": "/tmp/water-headloss-recheck-02kd44rm/E6.1-region-1.png",
+          "actual_sha256": "14aaba941de57cf86debff292b12721f16aefb49e252a27f75730fb5264d3d41",
+          "pin_matches": true,
+          "crop_actually_viewed": true,
+          "full_page_actually_viewed": true
+        }
+      ],
+      "observations": [
+        "Visually read h = f L V² / (2 g D), numbered (6.1). V alone has exponent 2; the entire 2gD product is the denominator. All letters and factors match latex/readable.",
+        "All six definitions match: h head loss due to friction over length in metres; f dimensionless factor; g acceleration due to gravity in m/s²; V velocity in m/s; L length in metres; D diameter in metres.",
+        "The dimensionless (dimensionally homogeneous) wording is printed and is retained without engineering correction. The full page supplies the IS: 2951 reference below 6.2; it is not inside this crop."
+      ],
+      "precise_corrections": []
+    },
+    {
+      "record_id": "WS-2024-A:E6.2",
+      "state_observed": "pending",
+      "result": "minor_source_notation_correction_recommended",
+      "record_file_sha256": "18a276dbfb478a8b165baac0fbe85f6971245430bc3ee4c17bf1cc246cf6a81e",
+      "content_digest": "b10ff182b74f297a25ca9fc7a36775b4e07853693972dafbd12e61fba6d8e6f4",
+      "content_digest_checked": true,
+      "digest_function": "omakase_cpheeo.transcriptions.content_digest",
+      "source_pin_matches": true,
+      "regions": [
+        {
+          "pdf_page": 369,
+          "page_label": "284",
+          "bbox": [
+            65,
+            548,
+            555,
+            651
+          ],
+          "render_sha256": "2fe653aeed6cc2691a2e9b42634a7a3d70b2b84af7d78e42130b08663d59f09e",
+          "path": "/tmp/water-headloss-recheck-02kd44rm/E6.2-region-1.png",
+          "actual_sha256": "2fe653aeed6cc2691a2e9b42634a7a3d70b2b84af7d78e42130b08663d59f09e",
+          "pin_matches": true,
+          "crop_actually_viewed": true,
+          "full_page_actually_viewed": true
+        }
+      ],
+      "observations": [
+        "Visually read 1/√f = −2 log [(k/(3.7D)) + 2.51/(Re√f)], numbered (6.2). Checked both square roots, negative sign, coefficient 2, 3.7, 2.51, plus sign, nested parentheses and outer square brackets. No log base is printed.",
+        "The enlarged formula image shows baseline Re in the displayed denominator, agreeing with current latex/readable. In the definition line the source instead visibly prints R with subscript e. The current symbols entry Re loses that definition-line subscript; preserve the source variation rather than silently regularizing the formula.",
+        "Definitions: f = Darcy's Friction Factor or Coefficient; R_e = Reynold's Number = (Velocity × diameter)/Viscosity; k = Average height of Roughness projections. No unit for k or type of viscosity is specified here; do not infer one. D inherits metres from 6.1.",
+        "The full page includes a standard Fluid Mechanics reference-book sentence and IS: 2951 for Darcy-Weisbach head loss; neither supplies a logarithm base."
+      ],
+      "precise_corrections": [
+        {
+          "field": "symbols[1].symbol",
+          "current": "Re",
+          "recommended": "R_e",
+          "reason": "Definition line visibly uses a subscript e; this is a notation-fidelity correction, not a coefficient or numerical error."
+        },
+        {
+          "field": "notes (append)",
+          "recommended": "The displayed equation prints baseline Re, while its definition line prints R with subscript e (R_e); both denote the printed Reynold's Number.",
+          "reason": "Keep the current baseline Re in latex/readable to preserve the displayed formula, and document the printed variation instead of silently regularizing it."
+        }
+      ]
+    },
+    {
+      "record_id": "WS-2024-A:E6.3",
+      "state_observed": "pending",
+      "result": "matches_print_with_presentation_normalization",
+      "record_file_sha256": "fdf6c89c7249771afdb69bd9a402cf4de88a4fe33d3803490049ed8135496c5d",
+      "content_digest": "3f5101c3da7f6f3e939a98e0675079db9adcfea50fdcb29971bd866b6ac3c348",
+      "content_digest_checked": true,
+      "digest_function": "omakase_cpheeo.transcriptions.content_digest",
+      "source_pin_matches": true,
+      "regions": [
+        {
+          "pdf_page": 370,
+          "page_label": "285",
+          "bbox": [
+            65,
+            247,
+            560,
+            329
+          ],
+          "render_sha256": "8642cef0c23cab754aa832825ef7274bfd07ea90157985a946de8133f439149b",
+          "path": "/tmp/water-headloss-recheck-02kd44rm/E6.3-region-1.png",
+          "actual_sha256": "8642cef0c23cab754aa832825ef7274bfd07ea90157985a946de8133f439149b",
+          "pin_matches": true,
+          "crop_actually_viewed": true,
+          "full_page_actually_viewed": true
+        }
+      ],
+      "observations": [
+        "Visually read V = 0.849 C (r^0.63)(S^0.54), numbered (6.3). Coefficient is 0.849, lowercase r has exponent 0.63, uppercase S has exponent 0.54. Parentheses are separate factor groups; no denominator.",
+        "All four definitions and units match: V average velocity of flow in m/s; C Hazen-Williams coefficient; r hydraulic mean radius in m; S slope of hydraulic grade line (h/L). The pressure-conduit applicability is stated in the preceding page prose."
+      ],
+      "precise_corrections": []
+    },
+    {
+      "record_id": "WS-2024-A:E6.4",
+      "state_observed": "pending",
+      "result": "matches_print_with_presentation_normalization",
+      "record_file_sha256": "7100da804e5dd95811ba8aa7b069b1ecce82cf465f2e7154b01a86ad0a330f10",
+      "content_digest": "89700e45dcea24cc33f7be8c44ca17f809a4b6d5948d551aff7feb391f372b70",
+      "content_digest_checked": true,
+      "digest_function": "omakase_cpheeo.transcriptions.content_digest",
+      "source_pin_matches": true,
+      "regions": [
+        {
+          "pdf_page": 370,
+          "page_label": "285",
+          "bbox": [
+            65,
+            335,
+            560,
+            418
+          ],
+          "render_sha256": "86d51a207444a4b871eda0800bc17d3c04bf51e4bfc4e15b213971f76d141caf",
+          "path": "/tmp/water-headloss-recheck-02kd44rm/E6.4-region-1.png",
+          "actual_sha256": "86d51a207444a4b871eda0800bc17d3c04bf51e4bfc4e15b213971f76d141caf",
+          "pin_matches": true,
+          "crop_actually_viewed": true,
+          "full_page_actually_viewed": true
+        }
+      ],
+      "observations": [
+        "Visually read h = 10.68 (Q/C)^1.852 (L/D^4.87), numbered (6.4). Enlarged render confirms uppercase C in Q/C. Checked 10.68, Q, C, L, uppercase D and both decimal exponents; 1.852 applies to the entire Q/C factor and 4.87 only to D.",
+        "Printed definitions say L and D are in metres and Q is in cumecs. No separate h or C definition is printed here. Circular-conduit applicability matches; the record correctly refers back to 6.3 for C."
+      ],
+      "precise_corrections": []
+    },
+    {
+      "record_id": "WS-2024-A:E6.5",
+      "state_observed": "pending",
+      "result": "matches_print_with_presentation_normalization",
+      "record_file_sha256": "85f76252499c480b8fd5271097366fcc6c49fdef4643dba05449029230eaafd0",
+      "content_digest": "040ab443903416a6e712669fff3760a1e1b5929643dba0aced3a623e2893b342",
+      "content_digest_checked": true,
+      "digest_function": "omakase_cpheeo.transcriptions.content_digest",
+      "source_pin_matches": true,
+      "regions": [
+        {
+          "pdf_page": 370,
+          "page_label": "285",
+          "bbox": [
+            65,
+            443,
+            560,
+            521
+          ],
+          "render_sha256": "9ce26c80a98f41f208f2053e35418737103a0123a465087f41711fe106cd81cc",
+          "path": "/tmp/water-headloss-recheck-02kd44rm/E6.5-region-1.png",
+          "actual_sha256": "9ce26c80a98f41f208f2053e35418737103a0123a465087f41711fe106cd81cc",
+          "pin_matches": true,
+          "crop_actually_viewed": true,
+          "full_page_actually_viewed": true
+        }
+      ],
+      "observations": [
+        "Visually read V = (1/n) r^(2/3) S^(1/2), numbered (6.5). Fractions 2/3 and 1/2 are powers of r and S respectively. The 1/n factor is enclosed in parentheses.",
+        "All definitions match: V velocity of flow in m/s; n Manning's coefficient of roughness; r hydraulic radius (m); S slope of pipe, m/m. The printed definition line ends with an unmatched closing parenthesis after m/m; omitting that stray prose punctuation does not change the unit or mathematical content. Free-flow applicability is supplied by preceding page prose."
+      ],
+      "precise_corrections": []
+    },
+    {
+      "record_id": "WS-2024-A:E6.6",
+      "state_observed": "pending",
+      "result": "matches_print_with_presentation_normalization",
+      "record_file_sha256": "b3c815f4354d5f1464cd01c24b5dfec28636fef1e234acd349c489e8249a8c53",
+      "content_digest": "37ed6de687c0fb2dd75d3dac3fb16d8aa6eba9093c2ea378e6dc83a221b43097",
+      "content_digest_checked": true,
+      "digest_function": "omakase_cpheeo.transcriptions.content_digest",
+      "source_pin_matches": true,
+      "regions": [
+        {
+          "pdf_page": 370,
+          "page_label": "285",
+          "bbox": [
+            65,
+            527,
+            560,
+            578
+          ],
+          "render_sha256": "0e754be5c7c83180190e6d8fa3767eac7904a30eea71dbd5b5df1d4bbf5dd46a",
+          "path": "/tmp/water-headloss-recheck-02kd44rm/E6.6-region-1.png",
+          "actual_sha256": "0e754be5c7c83180190e6d8fa3767eac7904a30eea71dbd5b5df1d4bbf5dd46a",
+          "pin_matches": true,
+          "crop_actually_viewed": true,
+          "full_page_actually_viewed": true
+        }
+      ],
+      "observations": [
+        "Visually read h = 10.29 (Q × n)^2 (L/D^(16/3)), numbered (6.6). Checked coefficient 10.29, multiplication cross, square on the whole Q×n factor and fractional exponent 16/3 on D only.",
+        "Circular conduit of diameter D is printed immediately above. No new definition or unit list is printed with 6.6; empty symbols and the note referring to n in 6.5 are appropriate. No extra local footnote."
+      ],
+      "precise_corrections": []
+    },
+    {
+      "record_id": "WS-2024-A:T6.1",
+      "state_observed": "pending",
+      "result": "matches_print_with_presentation_normalization",
+      "record_file_sha256": "1b245c2490b52e28f696f9548f3cdfdc37e6daf7f346dac48f39921891eb878e",
+      "content_digest": "071e3449f94b6ecef4f83b74d85438c4619f87912d07a28483001480d925ea69",
+      "content_digest_checked": true,
+      "digest_function": "omakase_cpheeo.transcriptions.content_digest",
+      "source_pin_matches": true,
+      "regions": [
+        {
+          "pdf_page": 370,
+          "page_label": "285",
+          "bbox": [
+            65,
+            68,
+            560,
+            217
+          ],
+          "render_sha256": "b877844605430e5bcb5dc1cbe09406fc008ff02018f5b9c62578df96605a31b4",
+          "path": "/tmp/water-headloss-recheck-02kd44rm/T6.1-region-1.png",
+          "actual_sha256": "b877844605430e5bcb5dc1cbe09406fc008ff02018f5b9c62578df96605a31b4",
+          "pin_matches": true,
+          "crop_actually_viewed": true,
+          "full_page_actually_viewed": true
+        }
+      ],
+      "observations": [
+        "Compared all four headers and all 16 body cells against rows and Markdown. Caption reads Table 6.1: Design Values of roughness projections (k). Value of ‘k’ mm spans New and Design; S. No. and Pipe Material each span both header tiers. Flattening is adequately explicit in headers/notes despite empty cell_spans.",
+        "Body values by serial number: 1 = 0.15 / *; 2 = 0.06 / *; 3 = 0.035 / 0.035; 4 = 0.03 / 0.03. Both stars are literal source cells, not missing numbers.",
+        "All material names match, including Metallic Pipes Lined - Mild Steel, Cement Mortar or Epoxy lined Steel, CI, and DI pipes, and the printed PVC, GRP HDPE sequence without a comma between GRP and HDPE.",
+        "The complete star note is inside the pinned crop and matches: * Reference be made to {IS: 2951 (Part I)} for roughness values of aged metallic pipes. The Roman I is not a numeric 1. No other note or continuation."
+      ],
+      "precise_corrections": [],
+      "visually_compared_headers": [
+        "S. No.",
+        "Pipe Material",
+        "Value of ‘k’ mm / New",
+        "Value of ‘k’ mm / Design"
+      ],
+      "visually_compared_rows": [
+        [
+          "1",
+          "Metallic Pipes Unlined - Cast Iron and Ductile Iron",
+          "0.15",
+          "*"
+        ],
+        [
+          "2",
+          "Metallic Pipes Lined - Mild Steel",
+          "0.06",
+          "*"
+        ],
+        [
+          "3",
+          "Asbestos Cement, Cement Concrete, Cement Mortar or Epoxy lined Steel, CI, and DI pipes",
+          "0.035",
+          "0.035"
+        ],
+        [
+          "4",
+          "PVC, GRP HDPE, PVC-O, and other plastic pipes",
+          "0.03",
+          "0.03"
+        ]
+      ],
+      "visually_compared_source_footnotes": [
+        "* Reference be made to {IS: 2951 (Part I)} for roughness values of aged metallic pipes."
+      ],
+      "markdown_agrees_with_grid": true
+    },
+    {
+      "record_id": "WS-2024-A:T6.2",
+      "state_observed": "pending",
+      "result": "matches_print_with_presentation_normalization",
+      "record_file_sha256": "465c32f7089ab0c0e2a07ada09b6d4b4c1c1023ba95d244fb69f708132c193b3",
+      "content_digest": "50e82c19479efa62a1b1f7773851b83cfd7ebc94b7b98f5955f890b998d0886a",
+      "content_digest_checked": true,
+      "digest_function": "omakase_cpheeo.transcriptions.content_digest",
+      "source_pin_matches": true,
+      "regions": [
+        {
+          "pdf_page": 371,
+          "page_label": "286",
+          "bbox": [
+            65,
+            388,
+            560,
+            787
+          ],
+          "render_sha256": "79ff6f233b64e0c6c40800d64a575ba139eaece03f08db2f1bccb98642eed300",
+          "path": "/tmp/water-headloss-recheck-02kd44rm/T6.2-region-1.png",
+          "actual_sha256": "79ff6f233b64e0c6c40800d64a575ba139eaece03f08db2f1bccb98642eed300",
+          "pin_matches": true,
+          "crop_actually_viewed": true,
+          "full_page_actually_viewed": true
+        },
+        {
+          "pdf_page": 372,
+          "page_label": "287",
+          "bbox": [
+            65,
+            68,
+            560,
+            243
+          ],
+          "render_sha256": "eb4f07e2dfb4f3e56f1a3b01de822abb2c1e14248c9fa77c1337911693358087",
+          "path": "/tmp/water-headloss-recheck-02kd44rm/T6.2-region-2.png",
+          "actual_sha256": "eb4f07e2dfb4f3e56f1a3b01de822abb2c1e14248c9fa77c1337911693358087",
+          "pin_matches": true,
+          "crop_actually_viewed": true,
+          "full_page_actually_viewed": true
+        }
+      ],
+      "observations": [
+        "Compared all three flattened headers and all 48 body cells, including blank cells, with rows and Markdown. Caption is Table 6.2: Hazen-Williams Coefficients. Recommended C-Values spans New Pipes@ and Design Purpose; @ is a superscript source marker, retained inline in the flattened header.",
+        "Unlined Metallic Pipes group: Cast Iron, Ductile Iron = 130 / 100; Mild Steel = 140 / 100; #Galvanised Iron above 50 mm dia. = 120 / 100; #Galvanised Iron 50 mm dia. and below used for house service connections. = 120 / 55. Both # markers are present.",
+        "Centrifugally Lined Metallic Pipes group: the Cast Iron, Ductile Iron, and Mild Steel Pipes lined with cement mortar or Epoxy/Polyurethane/three-Layer Polyethylene description has two separately ruled blank numeric cells and governs the following diameter rows: Up to 1,200 mm dia. = 140 / 140; Above 1,200 mm dia. = 145 / 145. It is not itself a full-width merged row.",
+        "Projection Method Cement Mortar Lined Metallic Pipes group: Cast Iron, Ductile Iron, and Mild Steel Pipes = 130* / 110**. One star belongs to New and two to Design.",
+        "Non-Metallic Pipes group: RCC Spun concrete, Pre-stressed Concrete, Bar Wrapped Cement Concrete Pipe Up to 1,200 mm dia. = 140 / 140; same material Above 1,200 mm dia. = 145 / 145; PVC, GRP, and other plastic pipes like MDPE, HDPE, PVC-O, PVC = 150 / 145. Retain repeated PVC and the printed case/hyphens.",
+        "The four full-width group headings at zero-based rows 0, 5, 9 and 11 each span all three columns; cell_spans correctly records these. New/Design values are not assigned to group rows. The material-description row 6 remains three separate cells; its relationship to rows 7 and 8 is correctly explicit in the existing note.",
+        "On physical page 372 the uncaptioned first row is Asbestos Cement pressure pipes = 150 / 140 and belongs to Table 6.2 under Non-Metallic Pipes. The four italic note paragraphs @, #, *, ** follow in one full-width bordered notes area. All four notes are present, complete and correctly linked by markers; no fifth note is visible.",
+        "The @ note concerns acceptability of surface finish and optional flow testing of laid pipelines. The # note requires galvanising per relevant standards throughout design life. The * note says 500 mm and above and range 90 to 125 below 500 mm. The ** note recommends the value absent specific data and allows higher values up to 130 with authentic field data. Every number and qualifier matches.",
+        "The pinned second crop includes the continuation row and complete notes area through its bottom rule. Table 6.2 ends there; subsequent prose and the separately captioned Table 6.3 are not part of this record."
+      ],
+      "precise_corrections": [],
+      "visually_compared_headers": [
+        "Pipe Materials",
+        "Recommended C-Values / New Pipes@",
+        "Recommended C-Values / Design Purpose"
+      ],
+      "visually_compared_rows": [
+        [
+          "Unlined Metallic Pipes",
+          "",
+          ""
+        ],
+        [
+          "Cast Iron, Ductile Iron",
+          "130",
+          "100"
+        ],
+        [
+          "Mild Steel",
+          "140",
+          "100"
+        ],
+        [
+          "#Galvanised Iron above 50 mm dia.",
+          "120",
+          "100"
+        ],
+        [
+          "#Galvanised Iron 50 mm dia. and below used for house service connections.",
+          "120",
+          "55"
+        ],
+        [
+          "Centrifugally Lined Metallic Pipes",
+          "",
+          ""
+        ],
+        [
+          "Cast Iron, Ductile Iron, and Mild Steel Pipes lined with cement mortar or Epoxy/Polyurethane/three-Layer Polyethylene",
+          "",
+          ""
+        ],
+        [
+          "Up to 1,200 mm dia.",
+          "140",
+          "140"
+        ],
+        [
+          "Above 1,200 mm dia.",
+          "145",
+          "145"
+        ],
+        [
+          "Projection Method Cement Mortar Lined Metallic Pipes",
+          "",
+          ""
+        ],
+        [
+          "Cast Iron, Ductile Iron, and Mild Steel Pipes",
+          "130*",
+          "110**"
+        ],
+        [
+          "Non-Metallic Pipes",
+          "",
+          ""
+        ],
+        [
+          "RCC Spun concrete, Pre-stressed Concrete, Bar Wrapped Cement Concrete Pipe Up to 1,200 mm dia.",
+          "140",
+          "140"
+        ],
+        [
+          "RCC Spun concrete, Pre-stressed Concrete, Bar Wrapped Cement Concrete Pipe Above 1,200 mm dia.",
+          "145",
+          "145"
+        ],
+        [
+          "PVC, GRP, and other plastic pipes like MDPE, HDPE, PVC-O, PVC",
+          "150",
+          "145"
+        ],
+        [
+          "Asbestos Cement pressure pipes",
+          "150",
+          "140"
+        ]
+      ],
+      "visually_compared_source_footnotes": [
+        "@ The C-values for new pipes included in Table 6.2 are for determining the acceptability of the surface finish of new pipelines. The user agency may specify that a flow test may be conducted for determining the C-values of laid pipelines.",
+        "# The quality of galvanising should be in accordance with the relevant standards to ensure resistance to corrosion throughout its design life.",
+        "*For pipes of diameter 500 mm and above; the range of C-values may be from 90 to 125 for pipes less than 500 mm.",
+        "** In the absence of specific data, this value is recommended. However, in case authentic field data is available, higher values up to 130 may be adopted."
+      ],
+      "markdown_agrees_with_grid": true
+    }
+  ],
+  "full_page_findings": [
+    {
+      "physical_page": 369,
+      "printed_page": "284",
+      "observed_targets": [
+        "6.1",
+        "6.2"
+      ],
+      "observation": "Head Loss in Pipes and Darcy-Weisbach section; all displayed math on this page belongs to assigned records. Full page supplies reference/applicability context outside tight crops."
+    },
+    {
+      "physical_page": 370,
+      "printed_page": "285",
+      "observed_targets": [
+        "Table 6.1",
+        "6.3",
+        "6.4",
+        "6.5",
+        "6.6"
+      ],
+      "observation": "All listed table/formula targets covered. Later section 6.5.1.4 prose includes relative roughness k/D, Reynolds number greater than 10^7 and range 4,000 to 10^6; these are contextual prose outside equation crops, not additional numbered equations."
+    },
+    {
+      "physical_page": 371,
+      "printed_page": "286",
+      "observed_targets": [
+        "Table 6.2 main body"
+      ],
+      "observation": "Prose above table discusses C-values 140 to 145 and deterioration with age. Main body ends with plastic pipes row; Table 6.2 continues onto physical page 372."
+    },
+    {
+      "physical_page": 372,
+      "printed_page": "287",
+      "observed_targets": [
+        "Uncaptioned Table 6.2 continuation: Asbestos Cement row and four notes",
+        "Table 6.3: Manning’s Coefficient of Roughness"
+      ],
+      "observation": "Table 6.2 coverage is complete in the supplied T6.2 record, including all continuation notes. After its bottom border, separate prose gives general design values 0.013 for plastic pipes and 0.015 for other pipes. Table 6.3 starts below its own caption, has Type of lining / Condition / n columns and merged material groups; it remains untranscribed by this batch. Viewing its full-page image does not establish a verified transcription or completion of page 372.",
+      "table_6_3_untranscribed": true
+    }
+  ],
+  "summary": {
+    "records_rechecked": 8,
+    "pinned_regions_rendered_and_viewed": 9,
+    "full_physical_pages_rendered_and_viewed": [
+      369,
+      370,
+      371,
+      372
+    ],
+    "source_hash_matches": true,
+    "all_nine_render_pins_match": true,
+    "all_eight_content_digests_checked": true,
+    "numerical_or_cell_value_corrections": 0,
+    "records_with_minor_notation_correction": 1,
+    "missing_table_6_2_rows_or_footnotes": 0,
+    "remaining_known_target": "Table 6.3, physical page 372, is separate and remains untranscribed. No whole-page/whole-manual completion claim."
+  },
+  "write_scope": "Only data/transcriptions/batches/water-headloss-recheck/report.json authored in workspace. Temporary renders and metadata under /tmp. No record, ledger, DB, live service or commit edits."
+}

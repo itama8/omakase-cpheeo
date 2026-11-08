@@ -1,0 +1,68 @@
+{
+  "schema_version": 1,
+  "id": "WS-2024-A:E6.1",
+  "unit_id": "WS-2024-A:E6.1",
+  "manual_id": "WS-2024-A",
+  "kind": "equation",
+  "number": "6.1",
+  "source_sha256": "b60f2fb548357aec676b18ef31e3b37fb0e5e8a1aec8f886880b951113848b0a",
+  "state": "verified",
+  "regions": [
+    {
+      "pdf_page": 369,
+      "page_label": "284",
+      "bbox": [
+        65,
+        426,
+        555,
+        543
+      ],
+      "render_sha256": "14aaba941de57cf86debff292b12721f16aefb49e252a27f75730fb5264d3d41"
+    }
+  ],
+  "title": "Darcy-Weisbach head loss in pipes",
+  "parent_id": "WS-2024-A:6.5.1.1",
+  "latex": "h=\\frac{fLV^2}{2gD}",
+  "readable": "h = f L V^2 / (2 g D)",
+  "symbols": [
+    {
+      "symbol": "h",
+      "definition": "Head loss due to friction over length in metres"
+    },
+    {
+      "symbol": "f",
+      "definition": "Dimensionless factor"
+    },
+    {
+      "symbol": "g",
+      "definition": "Acceleration due to gravity in m/s²"
+    },
+    {
+      "symbol": "V",
+      "definition": "Velocity in m/s"
+    },
+    {
+      "symbol": "L",
+      "definition": "Length in metres"
+    },
+    {
+      "symbol": "D",
+      "definition": "Diameter in metres"
+    }
+  ],
+  "applicability": "Dimensionless (dimensionally homogeneous) equation for pipeline problems. Reference to IS: 2951 for calculation of head loss according to Darcy-Weisbach formula.",
+  "notes": [],
+  "verification": {
+    "transcription": {
+      "pass_id": "parent-water-math-first-20261108",
+      "method": "direct visual inspection of full rendered source pages; no OCR",
+      "observations": "Read displayed formulae 6.1–6.6 and all table cells, spanning labels and continuation notes directly from source images on physical pages 369–372."
+    },
+    "visual_recheck": {
+      "pass_id": "water-headloss-distinct-recheck-20261108",
+      "method": "Distinct child direct inspection of exact crops and full pages; no OCR; not independent human review.",
+      "observations": "Visually read h = f L V² / (2 g D), numbered (6.1). V alone has exponent 2; the entire 2gD product is the denominator. All letters and factors match latex/readable. All six definitions match: h head loss due to friction over length in metres; f dimensionless factor; g acceleration due to gravity in m/s²; V velocity in m/s; L length in metres; D diameter in metres. The dimensionless (dimensionally homogeneous) wording is printed and is retained without engineering correction. The full page supplies the IS: 2951 reference below 6.2; it is not inside this crop.",
+      "content_sha256": "2957999c2185ac029ac95356be3192bc73eefdc304d4c64861af5372a7609110"
+    }
+  }
+}

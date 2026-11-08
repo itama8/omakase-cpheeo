@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:Ep309-4",
+  "unit_id": "SEW-2013-A:Ep309-4",
+  "manual_id": "SEW-2013-A",
+  "kind": "equation",
+  "number": "p309-4",
+  "title": "Carbonaceous BOD sum statement in Figure 5.1",
+  "state": "pending",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "regions": [
+    {
+      "pdf_page": 309,
+      "page_label": "5 - 5",
+      "bbox": [
+        112,
+        258,
+        484,
+        285
+      ],
+      "render_sha256": "01dfd1da75034c0dec0b92389bf21c16b7ffde5e752c40586c80f1d849c825bd"
+    }
+  ],
+  "parent_id": "SEW-2013-A:5.1.2",
+  "latex": "\\text{Carbonaceous BOD is the sum of oxygen utilized during biooxidation of the organic matter and during auto oxidation of the microbial biomass}",
+  "readable": "Carbonaceous BOD is the sum of oxygen utilized during biooxidation of the organic matter and during auto oxidation of the microbial biomass",
+  "symbols": [],
+  "applicability": "Printed verbal sum statement in Figure 5.1; no symbolic equality is supplied.",
+  "notes": [
+    "Ep<physical-page>-<sequence> is a service locator, not a printed equation number."
+  ],
+  "verification": {
+    "transcription": {
+      "pass_id": "sew-treatment-304-313-first-reading",
+      "method": "Direct visual reading of full annotation-cleaned 144 dpi page PNGs and specified 288 dpi details; no OCR",
+      "observations": "First reading only. Source spelling, numbers, powers, punctuation and discrepancies retained. No distinct second inspection performed."
+    }
+  }
+}

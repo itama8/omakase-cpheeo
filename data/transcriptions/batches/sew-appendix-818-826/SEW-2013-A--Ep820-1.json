@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:Ep820-1",
+  "unit_id": "SEW-2013-A:Ep820-1",
+  "manual_id": "SEW-2013-A",
+  "kind": "equation",
+  "number": "p820-1",
+  "title": "Printed population projection formula",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "state": "pending",
+  "regions": [
+    {
+      "pdf_page": 820,
+      "page_label": "A - 49",
+      "bbox": [
+        55,
+        73,
+        420,
+        122
+      ],
+      "render_sha256": "da26553e9c5d57414048b2c03b1e779e1a5bf8e3eb2f1718320068222d38f157"
+    }
+  ],
+  "verification": {
+    "transcription": {
+      "pass_id": "sew-818-826-first-reading-2026-11-08",
+      "method": "Direct viewing of full rendered pages and selected enlarged crops; no OCR",
+      "observations": "First visual transcription only. No separate second comparison performed."
+    }
+  },
+  "source_image_refs": [
+    {
+      "path": "tmp/pdfs/sew-appendix-818-826/SEW-2013-A--Ep820-1.png",
+      "role": "first-reading source crop"
+    }
+  ],
+  "parent_id": "SEW-2013-A:A2.2",
+  "latex": "P_n=P_1+nY+\\frac{n(n+1)Y}{2}",
+  "readable": "P_n = P_1 + nY + n(n + 1)Y/2.",
+  "symbols": [],
+  "applicability": "Worked example in Appendix A2.2",
+  "notes": [
+    "Unnumbered expression; Ep<physical-page>-<sequence> is a service locator, not a printed equation number.",
+    "The source uses Y in both terms; do not silently substitute X in the linear term. Symbols are not separately defined on this page."
+  ]
+}

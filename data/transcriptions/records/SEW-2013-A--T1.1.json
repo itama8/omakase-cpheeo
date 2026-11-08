@@ -1,0 +1,81 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:T1.1",
+  "unit_id": "SEW-2013-A:T1.1",
+  "manual_id": "SEW-2013-A",
+  "kind": "table",
+  "number": "1.1",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "state": "verified",
+  "regions": [
+    {
+      "pdf_page": 92,
+      "page_label": "1 - 6",
+      "bbox": [
+        77,
+        70,
+        491,
+        296
+      ],
+      "render_sha256": "ad840de19eb08ee572195d8c6638e920f0ee834262baeb97ac54fa33061ab889"
+    }
+  ],
+  "title": "Burden of water related diseases in India, 1990",
+  "headers": [
+    "Diseases",
+    "Female",
+    "Male",
+    "Total"
+  ],
+  "rows": [
+    [
+      "Diarrheal Diseases",
+      "14.39",
+      "13.64",
+      "28.03"
+    ],
+    [
+      "Intestinal Helminths",
+      "1.00",
+      "1.06",
+      "2.06"
+    ],
+    [
+      "Trachoma",
+      "0.07",
+      "0.04",
+      "0.11"
+    ],
+    [
+      "Hepatitis",
+      "0.17",
+      "0.14",
+      "0.31"
+    ],
+    [
+      "Total – water-borne and water-related Diseases",
+      "15.63",
+      "14.88",
+      "30.51"
+    ]
+  ],
+  "cell_spans": [],
+  "markdown": "| Diseases | Female | Male | Total |\n| --- | --- | --- | --- |\n| Diarrheal Diseases | 14.39 | 13.64 | 28.03 |\n| Intestinal Helminths | 1.00 | 1.06 | 2.06 |\n| Trachoma | 0.07 | 0.04 | 0.11 |\n| Hepatitis | 0.17 | 0.14 | 0.31 |\n| Total – water-borne and water-related Diseases | 15.63 | 14.88 | 30.51 |",
+  "notes": [
+    "(In millions of DALYs)",
+    "Source: World Bank, 1993"
+  ],
+  "verification": {
+    "transcription": {
+      "pass_id": "visual-2026-11-08-01",
+      "method": "direct visual reading of rendered source page; no OCR",
+      "observations": "Read each cell or formula and its printed context directly."
+    },
+    "visual_recheck": {
+      "pass_id": "ch1-distinct-child-recheck-20261108",
+      "method": "Distinct Codex child directly viewed newly rendered pinned crops and full pages; not independent human review.",
+      "observations": "Compared all cells, formulas, units, captions, source lines and printed conditions. No substantive mismatch. Detailed per-record observations in batches/parent-ch1-recheck/report.json.",
+      "content_sha256": "58fdfdd25ab49c8f433154da5aa93ee91dbe8cb5add5f8fb8e603007966ed50f"
+    }
+  }
+}

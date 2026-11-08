@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:Ep823-3",
+  "unit_id": "SEW-2013-A:Ep823-3",
+  "manual_id": "SEW-2013-A",
+  "kind": "equation",
+  "number": "p823-3",
+  "title": "Time of flow example",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "state": "verified",
+  "regions": [
+    {
+      "pdf_page": 823,
+      "page_label": "A - 52",
+      "bbox": [
+        50,
+        411,
+        545,
+        442
+      ],
+      "render_sha256": "191e0d5f8f4618e4a97d961d36b8094c1eee3760858499884dce5173f064fca4"
+    }
+  ],
+  "verification": {
+    "transcription": {
+      "pass_id": "sew-818-826-first-reading-2026-11-08",
+      "method": "Direct viewing of full rendered pages and selected enlarged crops; no OCR",
+      "observations": "First visual transcription only. No separate second comparison performed."
+    },
+    "visual_recheck": {
+      "pass_id": "appendix818-826-distinct-recheck-20261108",
+      "method": "Distinct child directly viewed exact crops and full pages; parent directly viewed revised regions for four corrected records; no OCR; not independent human review.",
+      "observations": "Printed prose explicitly says line 1. 70/(60 × 1.0) = 1.17 min. Fraction grouping, decimal velocity and minutes match; no line-number repair.",
+      "content_sha256": "bd4bee972df8bf929602e7fceb867065cbe08780decfff93c8d520799cfc4479"
+    }
+  },
+  "source_image_refs": [
+    {
+      "path": "tmp/pdfs/sew-appendix-818-826/SEW-2013-A--Ep823-3.png",
+      "role": "first-reading source crop"
+    }
+  ],
+  "parent_id": "SEW-2013-A:A3.1",
+  "latex": "\\frac{70}{60\\times1.0}=1.17\\text{ min}",
+  "readable": "Time of flow in line 1 is calculated to be 70/(60 × 1.0) = 1.17 min.",
+  "symbols": [],
+  "applicability": "Worked example in Appendix A3.1",
+  "notes": [
+    "Unnumbered expression; Ep<physical-page>-<sequence> is a service locator, not a printed equation number.",
+    "Source says line 1; preserve this wording."
+  ]
+}

@@ -1,0 +1,159 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:T5.2",
+  "unit_id": "SEW-2013-A:T5.2",
+  "manual_id": "SEW-2013-A",
+  "kind": "table",
+  "number": "5.2",
+  "title": "Use based classification of surface waters in India",
+  "state": "pending",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "regions": [
+    {
+      "pdf_page": 306,
+      "page_label": "5 - 2",
+      "bbox": [
+        65,
+        258,
+        530,
+        666
+      ],
+      "render_sha256": "1c2f23a1a2097890680a60cfae65a61c95921ac8ca1cdd48ffabcbfcb8edc437"
+    }
+  ],
+  "headers": [
+    "Class",
+    "Designated best use",
+    "Criteria",
+    "Limits"
+  ],
+  "rows": [
+    [
+      "A",
+      "Drinking water source without conventional treatment but after disinfection",
+      "pH",
+      "6.5 to 8.5"
+    ],
+    [
+      "A",
+      "Drinking water source without conventional treatment but after disinfection",
+      "Dissolved Oxygen (D O)",
+      "6 or more"
+    ],
+    [
+      "A",
+      "Drinking water source without conventional treatment but after disinfection",
+      "BOD",
+      "2 or less"
+    ],
+    [
+      "A",
+      "Drinking water source without conventional treatment but after disinfection",
+      "Total Coliform MPN / 100 ml",
+      "50 or less"
+    ],
+    [
+      "B",
+      "Outdoor bathing (organized)",
+      "pH",
+      "6.5 to 8.5"
+    ],
+    [
+      "B",
+      "Outdoor bathing (organized)",
+      "Dissolved Oxygen (D O)",
+      "5 or more"
+    ],
+    [
+      "B",
+      "Outdoor bathing (organized)",
+      "BOD",
+      "3 or less"
+    ],
+    [
+      "B",
+      "Outdoor bathing (organized)",
+      "Total Coliform MPN / 1000 ml",
+      "50 or less"
+    ],
+    [
+      "C",
+      "Drinking water source with conventional treatment followed by disinfection",
+      "pH",
+      "6.5 to 8.5"
+    ],
+    [
+      "C",
+      "Drinking water source with conventional treatment followed by disinfection",
+      "Dissolved Oxygen (D O)",
+      "4 or more"
+    ],
+    [
+      "C",
+      "Drinking water source with conventional treatment followed by disinfection",
+      "BOD",
+      "3 or less"
+    ],
+    [
+      "C",
+      "Drinking water source with conventional treatment followed by disinfection",
+      "Total Coliform, MPN / 1000 ml",
+      "5000 or less"
+    ],
+    [
+      "D",
+      "Propagation of wild life and fisheries",
+      "pH",
+      "6.5 to 8.5"
+    ],
+    [
+      "D",
+      "Propagation of wild life and fisheries",
+      "Dissolved Oxygen (D O)",
+      "4 or more"
+    ],
+    [
+      "D",
+      "Propagation of wild life and fisheries",
+      "Free Ammonia",
+      "1.2 mg/l or less"
+    ],
+    [
+      "E",
+      "Irrigation, industrial cooling, and controlled waste disposal",
+      "pH",
+      "6.0 to 8.5"
+    ],
+    [
+      "E",
+      "Irrigation, industrial cooling, and controlled waste disposal",
+      "Electrical Conductivity, micro mhos/cm",
+      "< 2250"
+    ],
+    [
+      "E",
+      "Irrigation, industrial cooling, and controlled waste disposal",
+      "Sodium Absorption Ratio (SAR)",
+      "< 26"
+    ],
+    [
+      "E",
+      "Irrigation, industrial cooling, and controlled waste disposal",
+      "Boron",
+      "< 2 mg/l"
+    ]
+  ],
+  "markdown": "| Class | Designated best use | Criteria | Limits |\n| --- | --- | --- | --- |\n| A | Drinking water source without conventional treatment but after disinfection | pH | 6.5 to 8.5 |\n| A | Drinking water source without conventional treatment but after disinfection | Dissolved Oxygen (D O) | 6 or more |\n| A | Drinking water source without conventional treatment but after disinfection | BOD | 2 or less |\n| A | Drinking water source without conventional treatment but after disinfection | Total Coliform MPN / 100 ml | 50 or less |\n| B | Outdoor bathing (organized) | pH | 6.5 to 8.5 |\n| B | Outdoor bathing (organized) | Dissolved Oxygen (D O) | 5 or more |\n| B | Outdoor bathing (organized) | BOD | 3 or less |\n| B | Outdoor bathing (organized) | Total Coliform MPN / 1000 ml | 50 or less |\n| C | Drinking water source with conventional treatment followed by disinfection | pH | 6.5 to 8.5 |\n| C | Drinking water source with conventional treatment followed by disinfection | Dissolved Oxygen (D O) | 4 or more |\n| C | Drinking water source with conventional treatment followed by disinfection | BOD | 3 or less |\n| C | Drinking water source with conventional treatment followed by disinfection | Total Coliform, MPN / 1000 ml | 5000 or less |\n| D | Propagation of wild life and fisheries | pH | 6.5 to 8.5 |\n| D | Propagation of wild life and fisheries | Dissolved Oxygen (D O) | 4 or more |\n| D | Propagation of wild life and fisheries | Free Ammonia | 1.2 mg/l or less |\n| E | Irrigation, industrial cooling, and controlled waste disposal | pH | 6.0 to 8.5 |\n| E | Irrigation, industrial cooling, and controlled waste disposal | Electrical Conductivity, micro mhos/cm | < 2250 |\n| E | Irrigation, industrial cooling, and controlled waste disposal | Sodium Absorption Ratio (SAR) | < 26 |\n| E | Irrigation, industrial cooling, and controlled waste disposal | Boron | < 2 mg/l |",
+  "notes": [
+    "All values are in mg/l unless otherwise specified therein.",
+    "Source: The Environment (Protection) Rules, 1986 in http://cpcb.nic.in/GeneralStandards.pdf",
+    "Class and designated-use merged cells are expanded on each criterion row. Printed 1000 ml for classes B and C and 50 or less for class B are retained without repair."
+  ],
+  "verification": {
+    "transcription": {
+      "pass_id": "sew-treatment-304-313-first-reading",
+      "method": "Direct visual reading of full annotation-cleaned 144 dpi page PNGs and specified 288 dpi details; no OCR",
+      "observations": "First reading only. Source spelling, numbers, powers, punctuation and discrepancies retained. No distinct second inspection performed."
+    }
+  }
+}

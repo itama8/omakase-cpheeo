@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:Ep819-1",
+  "unit_id": "SEW-2013-A:Ep819-1",
+  "manual_id": "SEW-2013-A",
+  "kind": "equation",
+  "number": "p819-1",
+  "title": "Decadal growth rates",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "state": "pending",
+  "regions": [
+    {
+      "pdf_page": 819,
+      "page_label": "A - 48",
+      "bbox": [
+        50,
+        99,
+        510,
+        215
+      ],
+      "render_sha256": "02d1eab4773d6fa33d4c5d7f4eb3b54df9784eddecbe8756d33403f0d7c7fa4b"
+    }
+  ],
+  "verification": {
+    "transcription": {
+      "pass_id": "sew-818-826-first-reading-2026-11-08",
+      "method": "Direct viewing of full rendered pages and selected enlarged crops; no OCR",
+      "observations": "First visual transcription only. No separate second comparison performed."
+    }
+  },
+  "source_image_refs": [
+    {
+      "path": "tmp/pdfs/sew-appendix-818-826/SEW-2013-A--Ep819-1.png",
+      "role": "first-reading source crop"
+    }
+  ],
+  "parent_id": "SEW-2013-A:A2.2",
+  "latex": "r_{1931,1921}=4337/40185=0.108;\\ r_{1941,1931}=15873/44522=0.356;\\ r_{1951,1941}=15219/60395=0.252;\\ r_{1961,1951}=23272/75614=0.308;\\ r_{1971,1961}=25344/98886=0.256;\\ r_{1981,1971}=34570/124230=0.278",
+  "readable": "Rate of growth (r) per decade between: 1931 and 1921 = 4,337/40,185 = 0.108; 1941 and 1931 = 15,873/44,522 = 0.356; 1951 and 1941 = 15,219/60,395 = 0.252; 1961 and 1951 = 23,272/75,614 = 0.308; 1971 and 1961 = 25,344/98,886 = 0.256; 1981 and 1971 = 34,570/1,24,230 = 0.278.",
+  "symbols": [],
+  "applicability": "Worked example in Appendix A2.2",
+  "notes": [
+    "Unnumbered expression; Ep<physical-page>-<sequence> is a service locator, not a printed equation number."
+  ]
+}

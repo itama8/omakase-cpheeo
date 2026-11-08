@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:Ep824-1",
+  "unit_id": "SEW-2013-A:Ep824-1",
+  "manual_id": "SEW-2013-A",
+  "kind": "equation",
+  "number": "p824-1",
+  "title": "Storm sewer table concentration header",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "state": "pending",
+  "regions": [
+    {
+      "pdf_page": 824,
+      "page_label": "A - 53",
+      "bbox": [
+        144,
+        424,
+        222,
+        515
+      ],
+      "render_sha256": "93f744b0f583be3bc5b10f550831ff72b49f0d17b5a730c6c859895115d1489e"
+    }
+  ],
+  "verification": {
+    "transcription": {
+      "pass_id": "sew-818-826-first-reading-2026-11-08",
+      "method": "Direct viewing of full rendered pages and selected enlarged crops; no OCR",
+      "observations": "First visual transcription only. No separate second comparison performed."
+    }
+  },
+  "source_image_refs": [
+    {
+      "path": "tmp/pdfs/sew-appendix-818-826/SEW-2013-A--Ep824-1.png",
+      "role": "first-reading source crop"
+    }
+  ],
+  "parent_id": "SEW-2013-A:A3.1",
+  "latex": "t_c=t_i+t_f",
+  "readable": "Table A3.1-2 column 11 header: TOTAL t_c = t_i + t_f. Column 9 time of (t_i) inlet at upper end; column 10 time of flow in drain t_f.",
+  "symbols": [],
+  "applicability": "Worked example in Appendix A3.1",
+  "notes": [
+    "Unnumbered expression; Ep<physical-page>-<sequence> is a service locator, not a printed equation number.",
+    "Header is rotated on the page. Header notation differs from t_b and t_1 in the weighted expression on page 823."
+  ]
+}

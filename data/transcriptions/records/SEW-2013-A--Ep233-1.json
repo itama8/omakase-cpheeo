@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:Ep233-1",
+  "unit_id": "SEW-2013-A:Ep233-1",
+  "manual_id": "SEW-2013-A",
+  "kind": "equation",
+  "number": "p233-1",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "state": "verified",
+  "regions": [
+    {
+      "pdf_page": 233,
+      "page_label": "3 - 88",
+      "bbox": [
+        50,
+        76,
+        545,
+        557
+      ],
+      "render_sha256": "2310be592c3e323f534054e0f72300b68243be9694a8b1ca459e1f45b91aab3b"
+    }
+  ],
+  "title": "Figure 3.48 bedding dimension expressions for projecting conduits",
+  "parent_id": "SEW-2013-A:3.50.3.7",
+  "latex": "\\begin{aligned}\\text{Class A: }& B_c;\\quad B_c+20\\,\\mathrm{cm};\\quad\\min\\ B_c/4;\\quad\\min\\ (1/4)\\ \\text{inside diameter}\\\\\\text{Class B: }&pB_c\\\\\\text{Class C (earth and rock): }&\\min\\ B_c/10\\\\\\text{Class C (rock): }&B_c+10\\,\\mathrm{cm};\\quad pB_c;\\quad\\begin{cases}0.2\\,\\mathrm{m}&H\\leq5\\,\\mathrm{m}\\\\0.04\\,\\mathrm{m/m\\ of}\\ H&H>5\\,\\mathrm{m}\\end{cases}\\end{aligned}",
+  "readable": "Class A: Bc; Bc + 20 cm; MIN Bc/4; MIN 1/4 INSIDE DIAMETER. Class B: pBc. Class C (earth and rock): MIN Bc/10. Class C (rock): Bc + 10 cm; pBc; 0.2 m when H ≤ 5 m; 0.04 m/m of H when H > 5 m.",
+  "symbols": [],
+  "applicability": "Dimension callouts in Figure 3.48, Classes of bedding for projecting conduits. The source drawing is essential to identify each dimension arrow.",
+  "notes": [
+    "Unnumbered figure expressions; Ep233-1 is a service locator, not a printed equation number.",
+    "Source: CPHEEO, 1993.",
+    "Transcription retains the printed pBc callout with Latin p. The figure does not define p, Bc or H in its labels. No additional definitions or engineering equality are inferred.",
+    "Class A also reads M 15 CONCRETE BETTER, EARTH OR ROCK. Class B reads THOROUGHLY TAMPED EARTH, ACCURATELY SHAPED TO FIT PIPE. Class C labels EARTH / ROCK, ACCURATELY SHAPED TO FIT PIPE / GRANULAR CUSHION. Class D labels EARTH / ROCK, NOT SHAPED TO FIT PIPE / SHALLOW GRANULAR CUSHION, and has no mathematical callout."
+  ],
+  "verification": {
+    "transcription": {
+      "pass_id": "visual-2026-11-08-01",
+      "method": "direct visual reading of rendered source page; no OCR",
+      "observations": "Read each cell or formula and its printed context directly."
+    },
+    "visual_recheck": {
+      "pass_id": "figure348-corrected-parent-recheck-20261108",
+      "method": "Distinct child visual comparison followed by parent direct inspection of corrected exact source crop; no OCR; not independent human review.",
+      "observations": "Child found omitted standalone Bc and clipped Source prefix. Added Bc, expanded crop; parent viewed corrected 144-dpi crop and checked all six classes, Bc/4, Bc/10, +20cm/+10cm, Latin pBc, 0.2m H≤5m, 0.04m/m of H H>5m, and complete source/caption. Original child objections in batches/figure348-recheck/report.json are resolved.",
+      "content_sha256": "a20db47e089706444c3f4dacf0665170a41fc97657dec6ef75e0d3e30200b6c4"
+    }
+  }
+}

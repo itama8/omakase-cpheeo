@@ -1,0 +1,110 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:TA2.2-2",
+  "unit_id": "SEW-2013-A:TA2.2-2",
+  "manual_id": "SEW-2013-A",
+  "kind": "table",
+  "number": "A2.2-2",
+  "title": "Table A2.2-2: incremental increase",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "state": "verified",
+  "regions": [
+    {
+      "pdf_page": 819,
+      "page_label": "A - 48",
+      "bbox": [
+        50,
+        460,
+        540,
+        772
+      ],
+      "render_sha256": "87e2a4f8800ed1d0cbd0eacb19f1e2e42e68bd168cc0c0a4bda127979ec91560"
+    }
+  ],
+  "verification": {
+    "transcription": {
+      "pass_id": "sew-818-826-first-reading-2026-11-08",
+      "method": "Direct viewing of full rendered pages and selected enlarged crops; no OCR",
+      "observations": "First visual transcription only. No separate second comparison performed."
+    },
+    "visual_recheck": {
+      "pass_id": "appendix818-826-distinct-recheck-20261108",
+      "method": "Distinct child directly viewed exact crops and full pages; parent directly viewed revised regions for four corrected records; no OCR; not independent human review.",
+      "observations": "Read all four headers and all 36 body cells. Blank increase/increment fields in 1921 and blank increment in 1931 remain blank. 1951 incremental increase is - 654. Totals 1,18,615 and 30,233; average fractions 1/6 and 1/5 and results 19,769 and 6,047 match. Total/Average labels span columns 1–2.",
+      "content_sha256": "1a1834b21194b24486f17dcbaeafe0caa023a29cdc29cadc4f8a1d6541b5c126"
+    }
+  },
+  "source_image_refs": [
+    {
+      "path": "tmp/pdfs/sew-appendix-818-826/SEW-2013-A--TA2.2-2.png",
+      "role": "first-reading source crop"
+    }
+  ],
+  "headers": [
+    "Year",
+    "Population",
+    "Increase (X)",
+    "Incremental Increase (Y)"
+  ],
+  "rows": [
+    [
+      "1921",
+      "40,185",
+      "",
+      ""
+    ],
+    [
+      "1931",
+      "44,522",
+      "4,337",
+      ""
+    ],
+    [
+      "1941",
+      "60,395",
+      "15,873",
+      "11,536"
+    ],
+    [
+      "1951",
+      "75,614",
+      "15,219",
+      "- 654"
+    ],
+    [
+      "1961",
+      "98,886",
+      "23,272",
+      "8,053"
+    ],
+    [
+      "1971",
+      "124,230",
+      "25,344",
+      "2,072"
+    ],
+    [
+      "1981",
+      "158,800",
+      "34,570",
+      "9,226"
+    ],
+    [
+      "Total",
+      "",
+      "1,18,615",
+      "30,233"
+    ],
+    [
+      "Average",
+      "",
+      "1/6 × 118,615 = 19,769",
+      "1/5 × 30,233 = 6,047"
+    ]
+  ],
+  "markdown": "| Year | Population | Increase (X) | Incremental Increase (Y) |\n| --- | --- | --- | --- |\n| 1921 | 40,185 |  |  |\n| 1931 | 44,522 | 4,337 |  |\n| 1941 | 60,395 | 15,873 | 11,536 |\n| 1951 | 75,614 | 15,219 | - 654 |\n| 1961 | 98,886 | 23,272 | 8,053 |\n| 1971 | 124,230 | 25,344 | 2,072 |\n| 1981 | 158,800 | 34,570 | 9,226 |\n| Total |  | 1,18,615 | 30,233 |\n| Average |  | 1/6 × 118,615 = 19,769 | 1/5 × 30,233 = 6,047 |",
+  "cell_spans": [],
+  "notes": [
+    "Total and Average labels span the first two columns. Printed blanks retained."
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:Ep309-3",
+  "unit_id": "SEW-2013-A:Ep309-3",
+  "manual_id": "SEW-2013-A",
+  "kind": "equation",
+  "number": "p309-3",
+  "title": "Nitrification oxygen labels in Figure 5.1",
+  "state": "pending",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "regions": [
+    {
+      "pdf_page": 309,
+      "page_label": "5 - 5",
+      "bbox": [
+        175,
+        287,
+        380,
+        340
+      ],
+      "render_sha256": "31b80709f4230a5816d270df0e369ae60cf34e237ad5ccba13613b6142dde2cd"
+    }
+  ],
+  "parent_id": "SEW-2013-A:5.1.2",
+  "latex": "\\text{ammonia}\\xrightarrow{\\text{Oxygen }(3.43\\ \\mathrm{g/g})}\\text{nitrite}\\xrightarrow{\\text{Oxygen }(1.14\\ \\mathrm{g/g})}\\text{nitrate}",
+  "readable": "ammonia → nitrite → nitrate; Oxygen (3.43 g/g) on ammonia-to-nitrite; Oxygen (1.14 g/g) on nitrite-to-nitrate.",
+  "symbols": [],
+  "applicability": "Aerobic metabolism, Figure 5.1.",
+  "notes": [
+    "Ep<physical-page>-<sequence> is a service locator, not a printed equation number."
+  ],
+  "verification": {
+    "transcription": {
+      "pass_id": "sew-treatment-304-313-first-reading",
+      "method": "Direct visual reading of full annotation-cleaned 144 dpi page PNGs and specified 288 dpi details; no OCR",
+      "observations": "First reading only. Source spelling, numbers, powers, punctuation and discrepancies retained. No distinct second inspection performed."
+    }
+  }
+}

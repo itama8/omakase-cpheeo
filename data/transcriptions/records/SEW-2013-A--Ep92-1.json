@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:Ep92-1",
+  "unit_id": "SEW-2013-A:Ep92-1",
+  "manual_id": "SEW-2013-A",
+  "kind": "equation",
+  "number": "p92-1",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "state": "verified",
+  "regions": [
+    {
+      "pdf_page": 92,
+      "page_label": "1 - 6",
+      "bbox": [
+        50,
+        360,
+        543,
+        440
+      ],
+      "render_sha256": "75a9bdd7dc5154b544705bd7be2a0ceabf0a0aaad0dd5846897631115ffaa996"
+    }
+  ],
+  "title": "Illustrative economic value of life years lost from water-related diseases",
+  "parent_id": "SEW-2013-A:1.2.1",
+  "latex": "30.51\\times300=\\$\\,9.153\\ \\mathrm{billion};\\quad \\$1=\\mathrm{Rs.}\\,40",
+  "readable": "30.51×300 = $ 9.153 billion (Exchange rate during 1993, $1 = Rs 40)",
+  "symbols": [],
+  "applicability": "Illustrative economic valuation in the prose: average per capita income of $ 300 per year; annual loss of 30.51 million DALYs.",
+  "notes": [
+    "Unnumbered inline calculation; Ep92-1 is a service locator, not a printed equation number. The printed billion unit is preserved, without correcting the arithmetic or scale."
+  ],
+  "verification": {
+    "transcription": {
+      "pass_id": "visual-2026-11-08-01",
+      "method": "direct visual reading of rendered source page; no OCR",
+      "observations": "Read each cell or formula and its printed context directly."
+    },
+    "visual_recheck": {
+      "pass_id": "ch1-distinct-child-recheck-20261108",
+      "method": "Distinct Codex child directly viewed newly rendered pinned crops and full pages; not independent human review.",
+      "observations": "Compared all cells, formulas, units, captions, source lines and printed conditions. No substantive mismatch. Detailed per-record observations in batches/parent-ch1-recheck/report.json.",
+      "content_sha256": "9d55bb60d5cafc9764fc592370af4ac82b2381b708919b2a1b4cc893e4b1fd79"
+    }
+  }
+}

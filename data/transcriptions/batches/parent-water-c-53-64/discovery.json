@@ -1,0 +1,106 @@
+{
+  "manual_id": "WS-2024-C",
+  "source_sha256": "f1cc3a56b1cb4dc0d1c140a3d0f9731ff4e5e1c8273a3ebb225b47db4ae3c29c",
+  "reviewer": "parent Codex direct visual reading",
+  "method": "Viewed all 12 full-page PNGs rendered from annotation-cleaned source at 1.35 scale; no OCR.",
+  "pages": [
+    {
+      "pdf_page": 53,
+      "page_label": "1",
+      "state": "reviewed",
+      "targets": [],
+      "observations": "Introduction prose; population figures and 24×7 service label, no formula or table.",
+      "image_viewed": "tmp/pdfs/parent-water-c/p53.png"
+    },
+    {
+      "pdf_page": 54,
+      "page_label": "2",
+      "state": "reviewed",
+      "targets": [],
+      "observations": "Management definition and service-quality prose, no formula or table.",
+      "image_viewed": "tmp/pdfs/parent-water-c/p54.png"
+    },
+    {
+      "pdf_page": 55,
+      "page_label": "3",
+      "state": "reviewed",
+      "targets": [],
+      "observations": "Organisational development, financial viability and stakeholder prose, no formula or table.",
+      "image_viewed": "tmp/pdfs/parent-water-c/p55.png"
+    },
+    {
+      "pdf_page": 56,
+      "page_label": "4",
+      "state": "reviewed",
+      "targets": [],
+      "observations": "Infrastructure, optimisation and resilience prose, no formula or table.",
+      "image_viewed": "tmp/pdfs/parent-water-c/p56.png"
+    },
+    {
+      "pdf_page": 57,
+      "page_label": "5",
+      "state": "reviewed",
+      "targets": [],
+      "observations": "Figure 1.1 management-attribute wheel inspected: textual labels only, no mathematical callouts. No table.",
+      "image_viewed": "tmp/pdfs/parent-water-c/p57.png"
+    },
+    {
+      "pdf_page": 58,
+      "page_label": "6",
+      "state": "reviewed",
+      "targets": [],
+      "observations": "Management approaches prose, no formula or table.",
+      "image_viewed": "tmp/pdfs/parent-water-c/p58.png"
+    },
+    {
+      "pdf_page": 59,
+      "page_label": "7",
+      "state": "reviewed",
+      "targets": [],
+      "observations": "Hyderabad case-study prose, no formula or table.",
+      "image_viewed": "tmp/pdfs/parent-water-c/p59.png"
+    },
+    {
+      "pdf_page": 60,
+      "page_label": "8",
+      "state": "reviewed",
+      "targets": [],
+      "observations": "Figure 1.2 organisation chart inspected: titles and textual bullets, no math. Case-study percentages and 24×7 are prose, no mathematical expression or table.",
+      "image_viewed": "tmp/pdfs/parent-water-c/p60.png"
+    },
+    {
+      "pdf_page": 61,
+      "page_label": "9",
+      "state": "reviewed",
+      "targets": [],
+      "observations": "Lessons learned and contents prose, no formula or table.",
+      "image_viewed": "tmp/pdfs/parent-water-c/p61.png"
+    },
+    {
+      "pdf_page": 62,
+      "page_label": "10",
+      "state": "reviewed",
+      "targets": [],
+      "observations": "Legal-framework prose, no formula or table.",
+      "image_viewed": "tmp/pdfs/parent-water-c/p62.png"
+    },
+    {
+      "pdf_page": 63,
+      "page_label": "11",
+      "state": "reviewed",
+      "targets": [],
+      "observations": "Institutional prose and reference to Table 2.1 next page, no formula or table.",
+      "image_viewed": "tmp/pdfs/parent-water-c/p63.png"
+    },
+    {
+      "pdf_page": 64,
+      "page_label": "12",
+      "state": "reviewed",
+      "targets": [
+        "WS-2024-C:T2.1"
+      ],
+      "observations": "Existing verified Table 2.1 source image viewed; all 8 targets and two goal labels present. No additional visual table/math target.",
+      "image_viewed": "tmp/pdfs/parent-water-c/p64.png"
+    }
+  ]
+}

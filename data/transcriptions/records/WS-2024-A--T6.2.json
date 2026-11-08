@@ -1,0 +1,169 @@
+{
+  "schema_version": 1,
+  "id": "WS-2024-A:T6.2",
+  "unit_id": "WS-2024-A:T6.2",
+  "manual_id": "WS-2024-A",
+  "kind": "table",
+  "number": "6.2",
+  "source_sha256": "b60f2fb548357aec676b18ef31e3b37fb0e5e8a1aec8f886880b951113848b0a",
+  "state": "verified",
+  "regions": [
+    {
+      "pdf_page": 371,
+      "page_label": "286",
+      "bbox": [
+        65,
+        388,
+        560,
+        787
+      ],
+      "render_sha256": "79ff6f233b64e0c6c40800d64a575ba139eaece03f08db2f1bccb98642eed300"
+    },
+    {
+      "pdf_page": 372,
+      "page_label": "287",
+      "bbox": [
+        65,
+        68,
+        560,
+        243
+      ],
+      "render_sha256": "eb4f07e2dfb4f3e56f1a3b01de822abb2c1e14248c9fa77c1337911693358087"
+    }
+  ],
+  "title": "Hazen-Williams Coefficients",
+  "headers": [
+    "Pipe Materials",
+    "Recommended C-Values / New Pipes@",
+    "Recommended C-Values / Design Purpose"
+  ],
+  "rows": [
+    [
+      "Unlined Metallic Pipes",
+      "",
+      ""
+    ],
+    [
+      "Cast Iron, Ductile Iron",
+      "130",
+      "100"
+    ],
+    [
+      "Mild Steel",
+      "140",
+      "100"
+    ],
+    [
+      "#Galvanised Iron above 50 mm dia.",
+      "120",
+      "100"
+    ],
+    [
+      "#Galvanised Iron 50 mm dia. and below used for house service connections.",
+      "120",
+      "55"
+    ],
+    [
+      "Centrifugally Lined Metallic Pipes",
+      "",
+      ""
+    ],
+    [
+      "Cast Iron, Ductile Iron, and Mild Steel Pipes lined with cement mortar or Epoxy/Polyurethane/three-Layer Polyethylene",
+      "",
+      ""
+    ],
+    [
+      "Up to 1,200 mm dia.",
+      "140",
+      "140"
+    ],
+    [
+      "Above 1,200 mm dia.",
+      "145",
+      "145"
+    ],
+    [
+      "Projection Method Cement Mortar Lined Metallic Pipes",
+      "",
+      ""
+    ],
+    [
+      "Cast Iron, Ductile Iron, and Mild Steel Pipes",
+      "130*",
+      "110**"
+    ],
+    [
+      "Non-Metallic Pipes",
+      "",
+      ""
+    ],
+    [
+      "RCC Spun concrete, Pre-stressed Concrete, Bar Wrapped Cement Concrete Pipe Up to 1,200 mm dia.",
+      "140",
+      "140"
+    ],
+    [
+      "RCC Spun concrete, Pre-stressed Concrete, Bar Wrapped Cement Concrete Pipe Above 1,200 mm dia.",
+      "145",
+      "145"
+    ],
+    [
+      "PVC, GRP, and other plastic pipes like MDPE, HDPE, PVC-O, PVC",
+      "150",
+      "145"
+    ],
+    [
+      "Asbestos Cement pressure pipes",
+      "150",
+      "140"
+    ]
+  ],
+  "markdown": "| Pipe Materials | Recommended C-Values / New Pipes@ | Recommended C-Values / Design Purpose |\n| --- | --- | --- |\n| Unlined Metallic Pipes |  |  |\n| Cast Iron, Ductile Iron | 130 | 100 |\n| Mild Steel | 140 | 100 |\n| #Galvanised Iron above 50 mm dia. | 120 | 100 |\n| #Galvanised Iron 50 mm dia. and below used for house service connections. | 120 | 55 |\n| Centrifugally Lined Metallic Pipes |  |  |\n| Cast Iron, Ductile Iron, and Mild Steel Pipes lined with cement mortar or Epoxy/Polyurethane/three-Layer Polyethylene |  |  |\n| Up to 1,200 mm dia. | 140 | 140 |\n| Above 1,200 mm dia. | 145 | 145 |\n| Projection Method Cement Mortar Lined Metallic Pipes |  |  |\n| Cast Iron, Ductile Iron, and Mild Steel Pipes | 130* | 110** |\n| Non-Metallic Pipes |  |  |\n| RCC Spun concrete, Pre-stressed Concrete, Bar Wrapped Cement Concrete Pipe Up to 1,200 mm dia. | 140 | 140 |\n| RCC Spun concrete, Pre-stressed Concrete, Bar Wrapped Cement Concrete Pipe Above 1,200 mm dia. | 145 | 145 |\n| PVC, GRP, and other plastic pipes like MDPE, HDPE, PVC-O, PVC | 150 | 145 |\n| Asbestos Cement pressure pipes | 150 | 140 |",
+  "notes": [
+    "@ The C-values for new pipes included in Table 6.2 are for determining the acceptability of the surface finish of new pipelines. The user agency may specify that a flow test may be conducted for determining the C-values of laid pipelines.",
+    "# The quality of galvanising should be in accordance with the relevant standards to ensure resistance to corrosion throughout its design life.",
+    "*For pipes of diameter 500 mm and above; the range of C-values may be from 90 to 125 for pipes less than 500 mm.",
+    "** In the absence of specific data, this value is recommended. However, in case authentic field data is available, higher values up to 130 may be adopted.",
+    "Two-tier header flattened with /. Group headings span all three source columns and are retained as rows with empty value cells; the centrifugally lined material description has blank numerical cells and applies to the following two diameter rows. The uncaptioned continuation on physical page 372 supplies the Asbestos Cement row and all four notes."
+  ],
+  "cell_spans": [
+    {
+      "row": 0,
+      "column": 0,
+      "rowspan": 1,
+      "colspan": 3
+    },
+    {
+      "row": 5,
+      "column": 0,
+      "rowspan": 1,
+      "colspan": 3
+    },
+    {
+      "row": 9,
+      "column": 0,
+      "rowspan": 1,
+      "colspan": 3
+    },
+    {
+      "row": 11,
+      "column": 0,
+      "rowspan": 1,
+      "colspan": 3
+    }
+  ],
+  "verification": {
+    "transcription": {
+      "pass_id": "parent-water-math-first-20261108",
+      "method": "direct visual inspection of full rendered source pages; no OCR",
+      "observations": "Read displayed formulae 6.1–6.6 and all table cells, spanning labels and continuation notes directly from source images on physical pages 369–372."
+    },
+    "visual_recheck": {
+      "pass_id": "water-headloss-distinct-recheck-20261108",
+      "method": "Distinct child direct inspection of exact crops and full pages; no OCR; not independent human review.",
+      "observations": "Compared all three flattened headers and all 48 body cells, including blank cells, with rows and Markdown. Caption is Table 6.2: Hazen-Williams Coefficients. Recommended C-Values spans New Pipes@ and Design Purpose; @ is a superscript source marker, retained inline in the flattened header. Unlined Metallic Pipes group: Cast Iron, Ductile Iron = 130 / 100; Mild Steel = 140 / 100; #Galvanised Iron above 50 mm dia. = 120 / 100; #Galvanised Iron 50 mm dia. and below used for house service connections. = 120 / 55. Both # markers are present. Centrifugally Lined Metallic Pipes group: the Cast Iron, Ductile Iron, and Mild Steel Pipes lined with cement mortar or Epoxy/Polyurethane/three-Layer Polyethylene description has two separately ruled blank numeric cells and governs the following diameter rows: Up to 1,200 mm dia. = 140 / 140; Above 1,200 mm dia. = 145 / 145. It is not itself a full-width merged row. Projection Method Cement Mortar Lined Metallic Pipes group: Cast Iron, Ductile Iron, and Mild Steel Pipes = 130* / 110**. One star belongs to New and two to Design. Non-Metallic Pipes group: RCC Spun concrete, Pre-stressed Concrete, Bar Wrapped Cement Concrete Pipe Up to 1,200 mm dia. = 140 / 140; same material Above 1,200 mm dia. = 145 / 145; PVC, GRP, and other plastic pipes like MDPE, HDPE, PVC-O, PVC = 150 / 145. Retain repeated PVC and the printed case/hyphens. The four full-width group headings at zero-based rows 0, 5, 9 and 11 each span all three columns; cell_spans correctly records these. New/Design values are not assigned to group rows. The material-description row 6 remains three separate cells; its relationship to rows 7 and 8 is correctly explicit in the existing note. On physical page 372 the uncaptioned first row is Asbestos Cement pressure pipes = 150 / 140 and belongs to Table 6.2 under Non-Metallic Pipes. The four italic note paragraphs @, #, *, ** follow in one full-width bordered notes area. All four notes are present, complete and correctly linked by markers; no fifth note is visible. The @ note concerns acceptability of surface finish and optional flow testing of laid pipelines. The # note requires galvanising per relevant standards throughout design life. The * note says 500 mm and above and range 90 to 125 below 500 mm. The ** note recommends the value absent specific data and allows higher values up to 130 with authentic field data. Every number and qualifier matches. The pinned second crop includes the continuation row and complete notes area through its bottom rule. Table 6.2 ends there; subsequent prose and the separately captioned Table 6.3 are not part of this record.",
+      "content_sha256": "50e82c19479efa62a1b1f7773851b83cfd7ebc94b7b98f5955f890b998d0886a"
+    }
+  }
+}

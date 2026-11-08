@@ -1,0 +1,379 @@
+{
+  "schema_version": 1,
+  "batch_id": "parent-ch1-recheck",
+  "review_date": "2026-11-08",
+  "status": "unsealed_recheck_report_for_parent_integration",
+  "sealed": false,
+  "scope": "Distinct second direct visual comparison of four supplied pending records against freshly rendered exact source regions and full physical pages 92, 93, 99. No reliance on previous Scout reports.",
+  "method": {
+    "reading": "Actual image inspection through tools.view_image, with each image returned to the assistant as visual content. No OCR and no PDF native text extraction used for the comparison.",
+    "renderer": "uv run python importing omakase_cpheeo.extract.open_clean and omakase_cpheeo.transcriptions.region_png. Exact pinned crops rendered at 144 dpi; full pages rendered at 144 dpi using page.rect as bbox.",
+    "independence_limit": "A distinct assistant visual recheck in this task, not independent human review. No sealing or record verification mutation performed.",
+    "images_actually_viewed": [
+      "/tmp/parent-ch1-direct-recheck-d9kbmyq8/T1.1-region-1.png",
+      "/tmp/parent-ch1-direct-recheck-d9kbmyq8/T1.2-region-1.png",
+      "/tmp/parent-ch1-direct-recheck-d9kbmyq8/T1.3-region-1.png",
+      "/tmp/parent-ch1-direct-recheck-d9kbmyq8/Ep92-1-region-1.png",
+      "/tmp/parent-ch1-direct-recheck-d9kbmyq8/full-page-92.png",
+      "/tmp/parent-ch1-direct-recheck-d9kbmyq8/full-page-93.png",
+      "/tmp/parent-ch1-direct-recheck-d9kbmyq8/full-page-99.png"
+    ]
+  },
+  "source": {
+    "pdf_path": "/home/a2ajinkya/Downloads/CPHEEO/Seweage CPHEEO.pdf",
+    "sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+    "matches_all_four_record_source_pins": true,
+    "annotation_handling": "open_clean removed annotations in memory; original PDF unchanged."
+  },
+  "per_record_findings": [
+    {
+      "record_id": "SEW-2013-A:T1.1",
+      "result": "matches_print_with_presentation_normalization",
+      "record_file_sha256": "770d34d260aa71874039071900db0d64e3620fb6ec1bff1c2f7f6d76db5c79d6",
+      "authored_content_digest": "58fdfdd25ab49c8f433154da5aa93ee91dbe8cb5add5f8fb8e603007966ed50f",
+      "physical_page": 92,
+      "printed_page": "1 - 6",
+      "exact_pinned_bbox_pdf_points": [
+        77,
+        70,
+        491,
+        296
+      ],
+      "rendered_crop_path": "/tmp/parent-ch1-direct-recheck-d9kbmyq8/T1.1-region-1.png",
+      "render_sha256": "ad840de19eb08ee572195d8c6638e920f0ee834262baeb97ac54fa33061ab889",
+      "render_pin_matches": true,
+      "crop_actually_viewed": true,
+      "full_page_actually_viewed": true,
+      "observed": {
+        "caption": "Table 1.1 Burden of water related diseases in India, 1990",
+        "headers": [
+          "Diseases",
+          "Female",
+          "Male",
+          "Total"
+        ],
+        "rows": [
+          [
+            "Diarrheal Diseases",
+            "14.39",
+            "13.64",
+            "28.03"
+          ],
+          [
+            "Intestinal Helminths",
+            "1.00",
+            "1.06",
+            "2.06"
+          ],
+          [
+            "Trachoma",
+            "0.07",
+            "0.04",
+            "0.11"
+          ],
+          [
+            "Hepatitis",
+            "0.17",
+            "0.14",
+            "0.31"
+          ],
+          [
+            "Total – water-borne and water-related Diseases",
+            "15.63",
+            "14.88",
+            "30.51"
+          ]
+        ],
+        "units": "(In millions of DALYs)",
+        "source_line": "Source: World Bank, 1993",
+        "layout_observations": [
+          "Four columns; five body rows. All 20 body cells and four header cells compared visually with rows/headers and Markdown.",
+          "The total label wraps over three printed lines; the record joins them with spaces. No merged cells or blank numerical cells.",
+          "Caption, upper-right DALY unit line and bottom source line are fully present in the pinned crop. Trailing zeros in 1.00 and 0.04/0.07 decimal strings are retained."
+        ]
+      },
+      "mismatches": [],
+      "missing_content_within_pinned_region": [],
+      "recommended_record_edits": []
+    },
+    {
+      "record_id": "SEW-2013-A:T1.2",
+      "result": "matches_print_with_presentation_normalization",
+      "record_file_sha256": "15e2a78061aef28ee370c8c399d9d89bc7813eb1aca9caed66f5399efe3af826",
+      "authored_content_digest": "8106d6b6e9408402ae4232fb33467de5d17b2508afaf2d966cfdddd5cbe8f207",
+      "physical_page": 93,
+      "printed_page": "1 - 7",
+      "exact_pinned_bbox_pdf_points": [
+        132,
+        145,
+        460,
+        300
+      ],
+      "rendered_crop_path": "/tmp/parent-ch1-direct-recheck-d9kbmyq8/T1.2-region-1.png",
+      "render_sha256": "47fc96f552292acd937d71982e857bf7e409106d953261bbf29fb3cb1793570d",
+      "render_pin_matches": true,
+      "crop_actually_viewed": true,
+      "full_page_actually_viewed": true,
+      "observed": {
+        "caption": "Table 1.2 Poor sanitation cost to India",
+        "headers": [
+          "No.",
+          "Impact",
+          "Loss ($ billion)"
+        ],
+        "rows": [
+          [
+            "1.",
+            "Health",
+            "38.5"
+          ],
+          [
+            "2.",
+            "Access time (safe WSS)",
+            "15.0"
+          ],
+          [
+            "3.",
+            "Tourism",
+            "0.5"
+          ],
+          [
+            "",
+            "Total",
+            "54.0"
+          ]
+        ],
+        "units": "$ billion in third-column header",
+        "source_line": "Source: World Bank, 2006",
+        "layout_observations": [
+          "Three columns; four body rows. All 12 body cells, including the empty last-row number cell, and three headers compared visually with rows/headers and Markdown.",
+          "The vertical boundary between No. and Impact continues through the Total row; Total is centered in Impact, not merged across the first two columns.",
+          "Both 15.0 and 54.0 retain the printed trailing zero. Caption and source line fit the crop."
+        ]
+      },
+      "mismatches": [],
+      "missing_content_within_pinned_region": [],
+      "recommended_record_edits": []
+    },
+    {
+      "record_id": "SEW-2013-A:T1.3",
+      "result": "matches_print_with_presentation_normalization",
+      "record_file_sha256": "e7e96baa19771e489ba1d3af72d8a1d6308fa5659fe98a7e35153b0509fe5dda",
+      "authored_content_digest": "ccdb7f8138108e33aa8728d2cf076044fce8d970405e591cc630202e06a7569a",
+      "physical_page": 99,
+      "printed_page": "1 - 13",
+      "exact_pinned_bbox_pdf_points": [
+        120,
+        257,
+        496,
+        528
+      ],
+      "rendered_crop_path": "/tmp/parent-ch1-direct-recheck-d9kbmyq8/T1.3-region-1.png",
+      "render_sha256": "02ed2446703a2655597eebb7d7dd77902dd4760c183d3e944aa99d9165f880a0",
+      "render_pin_matches": true,
+      "crop_actually_viewed": true,
+      "full_page_actually_viewed": true,
+      "observed": {
+        "caption": "Table 1.3 Sewage Management (Sewerage and Sanitation)",
+        "headers": [
+          "No.",
+          "Proposed Indicator",
+          "Benchmark"
+        ],
+        "rows": [
+          [
+            "1.",
+            "Coverage of toilets",
+            "100%"
+          ],
+          [
+            "2.",
+            "Coverage of sewage network services",
+            "100%"
+          ],
+          [
+            "3.",
+            "Collection efficiency of sewage network",
+            "100%"
+          ],
+          [
+            "4.",
+            "Adequacy of sewage treatment capacity",
+            "100%"
+          ],
+          [
+            "5.",
+            "Quality of sewage treatment",
+            "100%"
+          ],
+          [
+            "6.",
+            "Extent of reuse and recycling of sewage",
+            "20%"
+          ],
+          [
+            "7.",
+            "Efficiency of redressal of customer complaints",
+            "80%"
+          ],
+          [
+            "8.",
+            "Extent of cost recovery in sewage treatment",
+            "100%"
+          ],
+          [
+            "9.",
+            "Efficiency in collection of sewage charges",
+            "90%"
+          ]
+        ],
+        "units": "Percent signs are printed in every Benchmark cell.",
+        "source_line": "Source: MoUD, 2011",
+        "layout_observations": [
+          "Three columns; nine body rows. All 27 body cells and three headers compared visually with rows/headers and Markdown.",
+          "The sixth, seventh and ninth benchmarks are 20%, 80% and 90%; row eight returns to 100%. All other rows show 100%.",
+          "No merged cells, empty cells, extra footnotes or continuation notice. The caption says Sewerage and Sanitation, although the prose above uses Sewerage and Sewage management; the record correctly follows the caption."
+        ]
+      },
+      "mismatches": [],
+      "missing_content_within_pinned_region": [],
+      "recommended_record_edits": []
+    },
+    {
+      "record_id": "SEW-2013-A:Ep92-1",
+      "result": "matches_print_with_presentation_normalization",
+      "record_file_sha256": "3a41762c2ca6c0133383f8a13f7ea5d4d2921f80456317488bacb2bf844f36f6",
+      "authored_content_digest": "9d55bb60d5cafc9764fc592370af4ac82b2381b708919b2a1b4cc893e4b1fd79",
+      "physical_page": 92,
+      "printed_page": "1 - 6",
+      "exact_pinned_bbox_pdf_points": [
+        50,
+        360,
+        543,
+        440
+      ],
+      "rendered_crop_path": "/tmp/parent-ch1-direct-recheck-d9kbmyq8/Ep92-1-region-1.png",
+      "render_sha256": "75a9bdd7dc5154b544705bd7be2a0ceabf0a0aaad0dd5846897631115ffaa996",
+      "render_pin_matches": true,
+      "crop_actually_viewed": true,
+      "full_page_actually_viewed": true,
+      "observed": {
+        "printed_calculation": "30.51×300 = $ 9.153 billion",
+        "printed_exchange_rate": "(Exchange rate during 1993, $1 = Rs 40).",
+        "printed_input_context": "average per capita income of $ 300 per year; annual loss of 30.51 million DALYs",
+        "layout_observations": [
+          "The expression is inline prose, not a numbered display equation. Multiplication is a cross, not a letter x; the result explicitly says billion.",
+          "The exchange-rate parenthesis starts at the end of the calculation line and continues onto the next line with during 1993, $1 = Rs 40). Both lines are visible in the crop.",
+          "Compared every numerical token, operator, currency and unit with readable, latex, applicability and notes. LaTeX uses a semicolon and Rs. as presentation normalization; the source uses a parenthesis and Rs without a full stop. This does not change the mathematical content; readable retains the source wording.",
+          "No variable definitions, powers, fractions, subscripts, separate equation number or engineering applicability limit are printed. Empty symbols is appropriate.",
+          "The prose supplies the million-DALY factor; do not treat 30.51×300 as a standalone dimensionless arithmetic assertion or alter the printed billion unit. The existing note about not correcting arithmetic/scale is editorial caution, not additional source text."
+        ]
+      },
+      "mismatches": [],
+      "missing_content_within_pinned_region": [],
+      "recommended_record_edits": []
+    }
+  ],
+  "full_page_findings": [
+    {
+      "physical_page": 92,
+      "printed_page": "1 - 6",
+      "tables_seen": [
+        "Table 1.1"
+      ],
+      "math_seen": [
+        "Inline 30.51×300 = $ 9.153 billion and $1 = Rs 40 exchange rate, covered by Ep92-1."
+      ],
+      "additional_table_or_formula_targets": [],
+      "additional_quantitative_box": {
+        "represented_in_these_four_records": false,
+        "location": "Below the economic-value paragraph and above section 1.2.2; outside both page-92 pinned crops.",
+        "observed_text": "Reduction in morbidity from better water supply and sanitation including safe disposal of municipal solid waste is estimated to be 26 % for diarrhoea, 27 % for trachoma, 29 % for ascaris, 77 % for schistosomiasis and 78 % for dracunculiasis. Mean reduction in diarrhoea-specific mortality can be 65 %, while overall child mortality can be reduced by 55 %.",
+        "source_line": "Source: Esrey et. al., 1991",
+        "classification": "Boxed quantitative prose, not a grid table or algebraic formula. Parent should decide whether to capture it as additional source-grounded numerical content; it is not an error or missing cell in the four assigned records."
+      },
+      "other_observed_details": [
+        "Section 1.2.2 heading reads Poor Sanitation Costs India $54 Billion.",
+        "Prose gives 6.4% of GDP in 2006, over 70% or about $38.5 billion health-related impact, and 12% acute lower respiratory infection share of health-related impacts.",
+        "Bottom paragraph gives $37.75 poorest-fifth urban per-capita impact and $21.35 national average. These are prose values, not additional displayed math/tables."
+      ]
+    },
+    {
+      "physical_page": 93,
+      "printed_page": "1 - 7",
+      "tables_seen": [
+        "Table 1.2"
+      ],
+      "math_seen": [],
+      "additional_table_or_formula_targets": [],
+      "other_observed_details": [
+        "Opening prose gives about $15 billion access-time losses and about $0.5 billion tourism losses.",
+        "Paragraph below the table prints Rs. 500 crores, Rs. 5,400, Rs. 900 and Rs. 2,180, and over 50 million people defecating in the open daily.",
+        "Later prose gives nearly 535,000 annual diarrhoea deaths among children under 5; the page ends with section 1.3 SECTOR ORGANIZATION. No additional grid table or displayed/inline calculation was observed."
+      ]
+    },
+    {
+      "physical_page": 99,
+      "printed_page": "1 - 13",
+      "tables_seen": [
+        "Table 1.3"
+      ],
+      "math_seen": [],
+      "additional_table_or_formula_targets": [],
+      "other_observed_details": [
+        "The prose above Table 1.3 mentions Standardized Service Level Benchmarks and the 2008 Handbook on Service Level Benchmarking.",
+        "Below the source line are section 1.8 EMERGING TRENDS AND TECHNOLOGIES OF SEWERAGE AND SEWAGE TREATMENT and 1.8.1 Recent Trend - Centralized vis-a-vis Decentralized Sewage Systems.",
+        "Remaining text discusses CWMS and DWMS. No further table, equation, unit-bearing formula or quantitative box is visible."
+      ]
+    }
+  ],
+  "summary": {
+    "records_rechecked": 4,
+    "exact_pinned_crops_rendered_and_viewed": 4,
+    "full_physical_pages_rendered_and_viewed": [
+      92,
+      93,
+      99
+    ],
+    "substantive_transcription_mismatches": 0,
+    "missing_math_or_tables_on_reviewed_pages": [],
+    "additional_quantitative_prose_box_for_parent": 1,
+    "coverage_limit": "Only the three specified physical pages reviewed; no claim about other Chapter 1 pages or whole-manual completeness."
+  },
+  "actual_tools_used": {
+    "tool_calls": [
+      "functions.exec",
+      "tools.exec_command",
+      "tools.view_image"
+    ],
+    "image_display": "functions.exec image() forwarded view_image image_url for each of seven images.",
+    "local_functions": [
+      "omakase_cpheeo.extract.open_clean",
+      "omakase_cpheeo.transcriptions.region_png",
+      "omakase_cpheeo.transcriptions.content_digest"
+    ],
+    "commands": [
+      "pwd",
+      "rg",
+      "cat",
+      "git status --short",
+      "sed",
+      "ls",
+      "uv run python"
+    ],
+    "python_libraries": [
+      "pathlib",
+      "json",
+      "hashlib",
+      "tempfile"
+    ],
+    "not_used": [
+      "OCR",
+      "delegation",
+      "native PDF text extraction",
+      "database access",
+      "live process or tunnel operations"
+    ]
+  },
+  "write_scope": "Only data/transcriptions/batches/parent-ch1-recheck/report.json authored in the workspace; temporary source renders placed under /tmp. Records, ledgers, summaries, database, live process and tunnel untouched."
+}

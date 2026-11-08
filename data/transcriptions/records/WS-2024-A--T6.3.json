@@ -1,0 +1,210 @@
+{
+  "schema_version": 1,
+  "id": "WS-2024-A:T6.3",
+  "unit_id": "WS-2024-A:T6.3",
+  "manual_id": "WS-2024-A",
+  "kind": "table",
+  "number": "6.3",
+  "source_sha256": "b60f2fb548357aec676b18ef31e3b37fb0e5e8a1aec8f886880b951113848b0a",
+  "state": "verified",
+  "regions": [
+    {
+      "pdf_page": 372,
+      "page_label": "287",
+      "bbox": [
+        65,
+        324,
+        562,
+        801
+      ],
+      "render_sha256": "fdbe0f4b0ea3f6aca1207f4c34559a016e6134d384acb0b153588bade760829a"
+    },
+    {
+      "pdf_page": 373,
+      "page_label": "288",
+      "bbox": [
+        65,
+        68,
+        562,
+        130
+      ],
+      "render_sha256": "88b2ecea9c32e9e1839104afa4a52d22eae101a2dcc97ebba427e3081bec23fa"
+    }
+  ],
+  "title": "Manning’s Coefficient of Roughness",
+  "headers": [
+    "Type of lining",
+    "Condition",
+    "n"
+  ],
+  "rows": [
+    [
+      "Glazed coating of enamel Timber",
+      "In perfect order",
+      "0.01"
+    ],
+    [
+      "Glazed coating of enamel Timber",
+      "(a) Plane boards carefully laid",
+      "0.014"
+    ],
+    [
+      "Glazed coating of enamel Timber",
+      "(b) Plane Boards inferior workmanship or aged,",
+      "0.016"
+    ],
+    [
+      "Glazed coating of enamel Timber",
+      "(c) Non-plane boards carefully laid",
+      "0.016"
+    ],
+    [
+      "Glazed coating of enamel Timber",
+      "(d) Non-plane boards inferior workmanship or aged",
+      "0.018"
+    ],
+    [
+      "Masonry",
+      "(a) Neat cement plaster",
+      "0.013"
+    ],
+    [
+      "Masonry",
+      "(b) Sand and cement plaster",
+      "0.015"
+    ],
+    [
+      "Masonry",
+      "(c) Concrete, Steel trowelled",
+      "0.014"
+    ],
+    [
+      "Masonry",
+      "(d) Concrete, wood trowelled",
+      "0.015"
+    ],
+    [
+      "Masonry",
+      "(e) Brick in good condition",
+      "0.015"
+    ],
+    [
+      "Masonry",
+      "(f) Brick in rough condition",
+      "0.017"
+    ],
+    [
+      "Masonry",
+      "(g) Masonry in bad condition",
+      "0.020"
+    ],
+    [
+      "Stonework",
+      "(a) Smooth, dressed ashlar",
+      "0.015"
+    ],
+    [
+      "Stonework",
+      "(b) Rubble set in cement",
+      "0.017"
+    ],
+    [
+      "Stonework",
+      "(c) Fine, well packed gravel",
+      "0.020"
+    ],
+    [
+      "Earth",
+      "(a) Regular surface in good condition",
+      "0.02"
+    ],
+    [
+      "Earth",
+      "(b) In ordinary condition",
+      "0.025"
+    ],
+    [
+      "Earth",
+      "(c) With stones and weeds",
+      "0.03"
+    ],
+    [
+      "Earth",
+      "(d) In poor condition",
+      "0.035"
+    ],
+    [
+      "Earth",
+      "(e) Partially obstructed with debris or weeds",
+      "0.05"
+    ],
+    [
+      "Steel, BWSC, PSC",
+      "(a) Welded",
+      "0.013"
+    ],
+    [
+      "Steel, BWSC, PSC",
+      "(b) Riveted",
+      "0.017"
+    ],
+    [
+      "Steel, BWSC, PSC",
+      "(c) Slightly tuberculated",
+      "0.02"
+    ],
+    [
+      "Steel, BWSC, PSC",
+      "(d) Cement Mortar lined",
+      "0.011"
+    ],
+    [
+      "Cast Iron and Ductile Iron",
+      "(a) Unlined",
+      "0.013"
+    ],
+    [
+      "Cast Iron and Ductile Iron",
+      "(b) Cement Mortar lined",
+      "0.011"
+    ],
+    [
+      "Unlined metallic pipes",
+      "",
+      "0.015"
+    ],
+    [
+      "Plastic (smooth)/ MDPE/ HDPE/PVC",
+      "",
+      "0.011"
+    ],
+    [
+      "Asbestos Cement",
+      "",
+      "0.012"
+    ],
+    [
+      "Glass Fibre Reinforced",
+      "",
+      "0.010"
+    ]
+  ],
+  "markdown": "| Type of lining | Condition | n |\n| --- | --- | --- |\n| Glazed coating of enamel Timber | In perfect order | 0.01 |\n| Glazed coating of enamel Timber | (a) Plane boards carefully laid | 0.014 |\n| Glazed coating of enamel Timber | (b) Plane Boards inferior workmanship or aged, | 0.016 |\n| Glazed coating of enamel Timber | (c) Non-plane boards carefully laid | 0.016 |\n| Glazed coating of enamel Timber | (d) Non-plane boards inferior workmanship or aged | 0.018 |\n| Masonry | (a) Neat cement plaster | 0.013 |\n| Masonry | (b) Sand and cement plaster | 0.015 |\n| Masonry | (c) Concrete, Steel trowelled | 0.014 |\n| Masonry | (d) Concrete, wood trowelled | 0.015 |\n| Masonry | (e) Brick in good condition | 0.015 |\n| Masonry | (f) Brick in rough condition | 0.017 |\n| Masonry | (g) Masonry in bad condition | 0.020 |\n| Stonework | (a) Smooth, dressed ashlar | 0.015 |\n| Stonework | (b) Rubble set in cement | 0.017 |\n| Stonework | (c) Fine, well packed gravel | 0.020 |\n| Earth | (a) Regular surface in good condition | 0.02 |\n| Earth | (b) In ordinary condition | 0.025 |\n| Earth | (c) With stones and weeds | 0.03 |\n| Earth | (d) In poor condition | 0.035 |\n| Earth | (e) Partially obstructed with debris or weeds | 0.05 |\n| Steel, BWSC, PSC | (a) Welded | 0.013 |\n| Steel, BWSC, PSC | (b) Riveted | 0.017 |\n| Steel, BWSC, PSC | (c) Slightly tuberculated | 0.02 |\n| Steel, BWSC, PSC | (d) Cement Mortar lined | 0.011 |\n| Cast Iron and Ductile Iron | (a) Unlined | 0.013 |\n| Cast Iron and Ductile Iron | (b) Cement Mortar lined | 0.011 |\n| Unlined metallic pipes |  | 0.015 |\n| Plastic (smooth)/ MDPE/ HDPE/PVC |  | 0.011 |\n| Asbestos Cement |  | 0.012 |\n| Glass Fibre Reinforced |  | 0.010 |",
+  "notes": [
+    "Merged type-of-lining labels expanded across the applicable condition rows. The source first merged label reads Glazed coating of enamel Timber; it is retained without splitting or repairing it. Condition blanks on the last four material rows are printed blanks. Continuation on physical page 373 supplies Asbestos Cement and Glass Fibre Reinforced."
+  ],
+  "cell_spans": [],
+  "verification": {
+    "transcription": {
+      "pass_id": "parent-water-math-first-20261108",
+      "method": "direct visual inspection of full rendered source pages; no OCR",
+      "observations": "Direct visual reading of Table 6.3 on physical page 372 (printed 287), including all lining/condition/n cells, and its two-row continuation with repeated headers on physical page 373 (printed 288)."
+    },
+    "visual_recheck": {
+      "pass_id": "water-roughness-distinct-recheck-20261108",
+      "method": "Distinct child directly viewed all exact crops and full pages; no OCR; not independent human review.",
+      "observations": "Read caption Table 6.3: Manning’s Coefficient of Roughness and all three headers Type of lining, Condition, n. The continuation repeats those same three headers without another caption. Compared all 90 expanded cells across 30 rows, including the two continuation rows. Row-by-row source readings are listed below; wrapped text is joined with spaces. The first material is visibly one merged cell reading Glazed coating of enamel Timber across rows 1–5. No boundary splits enamel from Timber. Repeating that entire string for all five rows preserves the source anomaly. Checked capital Plane Boards and the trailing comma in aged, in row 3; Non-plane hyphens in rows 4–5; Concrete, Steel trowelled capital S; Concrete, wood trowelled lower-case w; and all lettered (a)–(g) condition markers. Merged labels are expanded correctly: rows 1–5 first material; 6–12 Masonry; 13–15 Stonework; 16–20 Earth; 21–24 Steel, BWSC, PSC; 25–26 Cast Iron and Ductile Iron. The last four materials each have a genuinely empty Condition cell, not missing ditto text. All n strings match, including distinct trailing-zero forms 0.020 in rows 12 and 15, 0.02 in rows 16 and 23, and 0.010 in row 30. The first 0.01 is not 0.010. Physical page 372 ends with Unlined metallic pipes 0.015 and Plastic (smooth)/ MDPE/ HDPE/PVC 0.011. Physical page 373 supplies Asbestos Cement 0.012 and Glass Fibre Reinforced 0.010, both blank conditions. No continuation row is omitted. The authored note accurately describes merged-label expansion, the unsplit anomalous first label, four blank conditions and the two continuation materials. No table footnote appears beneath the continuation. Markdown reproduces the same headers and row strings; no correction to table content is required.",
+      "content_sha256": "50db0767c4b57fa143a8c3b3fb97b780bc580988838e68672cf462fdc4ae7a19"
+    }
+  }
+}

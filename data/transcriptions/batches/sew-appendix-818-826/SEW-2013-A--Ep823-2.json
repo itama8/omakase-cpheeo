@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:Ep823-2",
+  "unit_id": "SEW-2013-A:Ep823-2",
+  "manual_id": "SEW-2013-A",
+  "kind": "equation",
+  "number": "p823-2",
+  "title": "Weighted time of concentration",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "state": "pending",
+  "regions": [
+    {
+      "pdf_page": 823,
+      "page_label": "A - 52",
+      "bbox": [
+        50,
+        281,
+        545,
+        401
+      ],
+      "render_sha256": "33c9537c1cb0074cc1b6e1aa099201788b6e98baa1299bde9841c564fd15ea79"
+    }
+  ],
+  "verification": {
+    "transcription": {
+      "pass_id": "sew-818-826-first-reading-2026-11-08",
+      "method": "Direct viewing of full rendered pages and selected enlarged crops; no OCR",
+      "observations": "First visual transcription only. No separate second comparison performed."
+    }
+  },
+  "source_image_refs": [
+    {
+      "path": "tmp/pdfs/sew-appendix-818-826/SEW-2013-A--Ep823-2.png",
+      "role": "first-reading source crop"
+    }
+  ],
+  "parent_id": "SEW-2013-A:A3.1",
+  "latex": "t_c=\\frac{A_1t_b+A_2t_1}{A_1+A_2}",
+  "readable": "t_c = (A_1 t_b + A_2 t_1)/(A_1 + A_2).",
+  "symbols": [
+    {
+      "symbol": "A_1",
+      "definition": "Built up area"
+    },
+    {
+      "symbol": "A_2",
+      "definition": "Area of lawns"
+    }
+  ],
+  "applicability": "Worked example in Appendix A3.1",
+  "notes": [
+    "Unnumbered expression; Ep<physical-page>-<sequence> is a service locator, not a printed equation number."
+  ]
+}

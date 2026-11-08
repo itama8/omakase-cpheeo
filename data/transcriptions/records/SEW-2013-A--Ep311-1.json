@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:Ep311-1",
+  "unit_id": "SEW-2013-A:Ep311-1",
+  "manual_id": "SEW-2013-A",
+  "kind": "equation",
+  "number": "p311-1",
+  "title": "BOD concentration illustration below Table 5.4",
+  "state": "verified",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "regions": [
+    {
+      "pdf_page": 311,
+      "page_label": "5 - 7",
+      "bbox": [
+        80,
+        752,
+        483,
+        785
+      ],
+      "render_sha256": "735da9497d5486aa2cd2ede89e8ac007b630730ccc29eeac77b31eede94e6b83"
+    }
+  ],
+  "parent_id": "SEW-2013-A:5.1.4.1",
+  "latex": "\\mathrm{BOD}=27*1000\\ (\\mathrm{mg})\\ /\\ 135\\ \\mathrm{X}\\ 0.8\\ (\\text{litres})=250\\ \\mathrm{mg/L}",
+  "readable": "Illustration BOD = 27 *1000 (mg) / 135 X 0.8 (litres) = 250 mg/L",
+  "symbols": [],
+  "applicability": "Illustration beneath Table 5.4 for 135 L/cap/day water supply and 80 % sewage generation.",
+  "notes": [
+    "Ep<physical-page>-<sequence> is a service locator, not a printed equation number.",
+    "Source prints a slash followed by 135 X 0.8, without denominator parentheses. The printed grouping is retained; no repaired fraction or recomputed result is asserted."
+  ],
+  "verification": {
+    "transcription": {
+      "pass_id": "sew-treatment-304-313-first-reading",
+      "method": "Direct visual reading of full annotation-cleaned 144 dpi page PNGs and specified 288 dpi details; no OCR",
+      "observations": "First reading only. Source spelling, numbers, powers, punctuation and discrepancies retained. No distinct second inspection performed."
+    },
+    "visual_recheck": {
+      "pass_id": "treatment304-313-distinct-recheck-20261108",
+      "method": "Distinct child actual inspection of all exact crops, full pages and enlarged details. Parent inspected diagram and T5.1 images to resolve report findings. No OCR; not independent human review.",
+      "observations": "Literal line is Illustration BOD = 27 *1000 (mg) / 135 X 0.8 (litres) = 250 mg/L. Asterisk, slash, uppercase X, units and result match. No denominator parentheses visible. Preserve ambiguous grouping; do not replace with a fraction over (135 × 0.8) or recompute. Report observations are bound to this corrected record: stale draft blocker removed; chemical-product context and LaTeX labels added where reported. Original report retained in batches/treatment-304-313-recheck/report.json.",
+      "content_sha256": "5b6206bac0502fa855d463fec1d23383b8c8cdec588c419b1cf2c03fd7704416"
+    }
+  }
+}

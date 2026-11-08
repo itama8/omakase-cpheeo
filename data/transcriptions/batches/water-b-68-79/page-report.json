@@ -1,0 +1,352 @@
+{
+  "schema_version": 1,
+  "manual_id": "WS-2024-B",
+  "physical_pages": [
+    68,
+    79
+  ],
+  "source_sha256": "1cfd336b3e2928b95cec3899d3e1d15807b5598d78730d6fe3eef381021844e7",
+  "source_path": "/home/a2ajinkya/Downloads/CPHEEO/Water Supply_2023/Part-B-Manual-Operation-and-Maintenance(5).pdf",
+  "source_annotation_policy": "open_clean deletes annotations in memory; original PDF opened read-only, never saved.",
+  "rendering": "region_png, pymupdf Matrix(2,2), alpha=False, PNG; full page bounds in PDF points; 144 dpi.",
+  "scope": "First reading and pending transcription only. No sealing, central ledger edits, DB writes, OCR, paid services, delegation, commits or live operations.",
+  "records": [
+    "records/WS-2024-B--T1.1.json",
+    "records/WS-2024-B--T1.2.json"
+  ],
+  "discovery": {
+    "tables": 2,
+    "new_table_units": 0,
+    "equation_records": 0,
+    "unnumbered_tables": 0,
+    "figure_math": 0,
+    "unfinished_transcription_targets": []
+  },
+  "pages": [
+    {
+      "pdf_page": 68,
+      "page_label": "1",
+      "bbox": [
+        0.0,
+        0.0,
+        595.5599975585938,
+        842.0399780273438
+      ],
+      "render_sha256": "0ab232091be2f6b6c47c19909c3fef91ea8958bf22a0713e9659202f94b8fa47",
+      "filename": "page-68.png",
+      "image_path": "tmp/pdfs/water-b-68-79/page-68.png",
+      "actual_image_evidence": {
+        "tool": "tools.view_image",
+        "result": "Successfully returned and visually inspected the full page image in this assistant turn.",
+        "reading_pass": "first visual reading only"
+      },
+      "discovery_state": "first_visual_reading_complete",
+      "verification_state": "no_transcription_target_observed",
+      "observations": "Chapter 1 Introduction, section 1.1 Governance. Full page contains prose only; no table, equation, unnumbered mathematical expression or figure.",
+      "target_ids": [],
+      "record_filenames": [],
+      "unfinished_targets": [],
+      "remaining_work": []
+    },
+    {
+      "pdf_page": 69,
+      "page_label": "2",
+      "bbox": [
+        0.0,
+        0.0,
+        595.5599975585938,
+        842.0399780273438
+      ],
+      "render_sha256": "91f88c8a4e0a9d71d589a9d7b50c9eee9fa064f793431616a4c29177091f40bd",
+      "filename": "page-69.png",
+      "image_path": "tmp/pdfs/water-b-68-79/page-69.png",
+      "actual_image_evidence": {
+        "tool": "tools.view_image",
+        "result": "Successfully returned and visually inspected the full page image in this assistant turn.",
+        "reading_pass": "first visual reading only"
+      },
+      "discovery_state": "first_visual_reading_complete",
+      "verification_state": "no_transcription_target_observed",
+      "observations": "Governance continues and 1.1.1 Objective of the Manual begins. No table, calculation formula or figure. 74th is an ordinal; 24×7 denotes continuous water service in prose, not a multiplication calculation.",
+      "target_ids": [],
+      "record_filenames": [],
+      "unfinished_targets": [],
+      "remaining_work": []
+    },
+    {
+      "pdf_page": 70,
+      "page_label": "3",
+      "bbox": [
+        0.0,
+        0.0,
+        595.5599975585938,
+        842.0399780273438
+      ],
+      "render_sha256": "058ab1274277375cbb63623b2bc61daa63852f620d6ba73430fae55430e24607",
+      "filename": "page-70.png",
+      "image_path": "tmp/pdfs/water-b-68-79/page-70.png",
+      "actual_image_evidence": {
+        "tool": "tools.view_image",
+        "result": "Successfully returned and visually inspected the full page image in this assistant turn.",
+        "reading_pass": "first visual reading only"
+      },
+      "discovery_state": "first_visual_reading_complete",
+      "verification_state": "no_transcription_target_observed",
+      "observations": "Objective continues; 1.1.2 Objective of Operation and Maintenance and 1.2 Operation and Maintenance Scenario. Prose only, no table, equation or figure; 24×7 appears as service notation twice.",
+      "target_ids": [],
+      "record_filenames": [],
+      "unfinished_targets": [],
+      "remaining_work": []
+    },
+    {
+      "pdf_page": 71,
+      "page_label": "4",
+      "bbox": [
+        0.0,
+        0.0,
+        595.5599975585938,
+        842.0399780273438
+      ],
+      "render_sha256": "30eeda7edcbd6e40153c6576cb606997e90357e7c71cc5c77b41eb82132fc2e3",
+      "filename": "page-71.png",
+      "image_path": "tmp/pdfs/water-b-68-79/page-71.png",
+      "actual_image_evidence": {
+        "tool": "tools.view_image",
+        "result": "Successfully returned and visually inspected the full page image in this assistant turn.",
+        "reading_pass": "first visual reading only"
+      },
+      "discovery_state": "first_visual_reading_complete",
+      "verification_state": "no_transcription_target_observed",
+      "observations": "Scenario list a–o, prose and 1.2.1 Challenges in O&M of System. No table, equation or figure. Prose explicitly gives about 20% to 40% of total annual O&M cost for personnel and 30% to 50% for power charges; these ranges are not printed as a formula or table.",
+      "target_ids": [],
+      "record_filenames": [],
+      "unfinished_targets": [],
+      "remaining_work": []
+    },
+    {
+      "pdf_page": 72,
+      "page_label": "5",
+      "bbox": [
+        0.0,
+        0.0,
+        595.5599975585938,
+        842.0399780273438
+      ],
+      "render_sha256": "76690a79882e16a92ea0658fb467ed8390fa4408be4c69e8b67615ca15c28be3",
+      "filename": "page-72.png",
+      "image_path": "tmp/pdfs/water-b-68-79/page-72.png",
+      "actual_image_evidence": {
+        "tool": "tools.view_image",
+        "result": "Successfully returned and visually inspected the full page image in this assistant turn.",
+        "reading_pass": "first visual reading only"
+      },
+      "discovery_state": "first_visual_reading_complete",
+      "verification_state": "pending",
+      "observations": "Section 1.3 and complete Table 1.1. Two column headings, three merged category rows and 13 practice/utility pairs read cell by cell, including source below table. No math or figures.",
+      "target_ids": [
+        "WS-2024-B:T1.1"
+      ],
+      "record_filenames": [
+        "records/WS-2024-B--T1.1.json"
+      ],
+      "unfinished_targets": [],
+      "remaining_work": [
+        "Distinct second visual comparison and parent-controlled integration."
+      ]
+    },
+    {
+      "pdf_page": 73,
+      "page_label": "6",
+      "bbox": [
+        0.0,
+        0.0,
+        595.5599975585938,
+        842.0399780273438
+      ],
+      "render_sha256": "e0924880c2d5729154f8fef11ac7cf36362e0fe4c7272a618e91faa4618a878e",
+      "filename": "page-73.png",
+      "image_path": "tmp/pdfs/water-b-68-79/page-73.png",
+      "actual_image_evidence": {
+        "tool": "tools.view_image",
+        "result": "Successfully returned and visually inspected the full page image in this assistant turn.",
+        "reading_pass": "first visual reading only"
+      },
+      "discovery_state": "first_visual_reading_complete",
+      "verification_state": "no_transcription_target_observed",
+      "observations": "Sections 1.4 Organisation of Maintenance, 1.4.1 Key Criteria of O&M Contract, 1.4.2 Best Practices/Critical Success Factors. Prose references Table 1.2 on next page; no target on this page.",
+      "target_ids": [],
+      "record_filenames": [],
+      "unfinished_targets": [],
+      "remaining_work": []
+    },
+    {
+      "pdf_page": 74,
+      "page_label": "7",
+      "bbox": [
+        0.0,
+        0.0,
+        842.0399780273438,
+        595.5599975585938
+      ],
+      "render_sha256": "81ce9ad378dd1c5f08ad65f19062964a03a9fcfe4e71565477eb9299bad504d2",
+      "filename": "page-74.png",
+      "image_path": "tmp/pdfs/water-b-68-79/page-74.png",
+      "actual_image_evidence": {
+        "tool": "tools.view_image",
+        "result": "Successfully returned and visually inspected the full page image in this assistant turn.",
+        "reading_pass": "first visual reading only"
+      },
+      "discovery_state": "first_visual_reading_complete",
+      "verification_state": "pending",
+      "observations": "Table 1.2 begins in landscape orientation: five columns without a printed header row. Read first four complete logical rows and beginning of Extend asset life. Four colored objective groups have merged vertical cells. No formulas or figures.",
+      "target_ids": [
+        "WS-2024-B:T1.2"
+      ],
+      "record_filenames": [
+        "records/WS-2024-B--T1.2.json"
+      ],
+      "unfinished_targets": [],
+      "remaining_work": [
+        "Distinct second visual comparison and parent-controlled integration."
+      ]
+    },
+    {
+      "pdf_page": 75,
+      "page_label": "8",
+      "bbox": [
+        0.0,
+        0.0,
+        842.0399780273438,
+        595.5599975585938
+      ],
+      "render_sha256": "f7659aa9c3d90a1c650b3c65956e6cf517a5cc23342e00804d7cad320aebd448",
+      "filename": "page-75.png",
+      "image_path": "tmp/pdfs/water-b-68-79/page-75.png",
+      "actual_image_evidence": {
+        "tool": "tools.view_image",
+        "result": "Successfully returned and visually inspected the full page image in this assistant turn.",
+        "reading_pass": "first visual reading only"
+      },
+      "discovery_state": "first_visual_reading_complete",
+      "verification_state": "pending",
+      "observations": "Table 1.2 continuation. Top finishes Extend asset life row, then Reinvest with a life cycle view, Ensure funding, and Build capabilities. Last of these continues to next page. No formulas or figures.",
+      "target_ids": [
+        "WS-2024-B:T1.2"
+      ],
+      "record_filenames": [
+        "records/WS-2024-B--T1.2.json"
+      ],
+      "unfinished_targets": [],
+      "remaining_work": [
+        "Distinct second visual comparison and parent-controlled integration."
+      ]
+    },
+    {
+      "pdf_page": 76,
+      "page_label": "9",
+      "bbox": [
+        0.0,
+        0.0,
+        842.0399780273438,
+        595.5599975585938
+      ],
+      "render_sha256": "d1a09efdca6f10770d677480ab2b1c1ee62034347fed4e1d3fd69c105dd241e0",
+      "filename": "page-76.png",
+      "image_path": "tmp/pdfs/water-b-68-79/page-76.png",
+      "actual_image_evidence": {
+        "tool": "tools.view_image",
+        "result": "Successfully returned and visually inspected the full page image in this assistant turn.",
+        "reading_pass": "first visual reading only"
+      },
+      "discovery_state": "first_visual_reading_complete",
+      "verification_state": "pending",
+      "observations": "Table 1.2 continuation and end. Top continues Build capabilities, followed by Reform governance. Source citation beneath table. No additional table, formula or figure.",
+      "target_ids": [
+        "WS-2024-B:T1.2"
+      ],
+      "record_filenames": [
+        "records/WS-2024-B--T1.2.json"
+      ],
+      "unfinished_targets": [],
+      "remaining_work": [
+        "Distinct second visual comparison and parent-controlled integration."
+      ]
+    },
+    {
+      "pdf_page": 77,
+      "page_label": "10",
+      "bbox": [
+        0.0,
+        0.0,
+        595.5599975585938,
+        842.0399780273438
+      ],
+      "render_sha256": "be0a5e257c1ec38e46149df64d478ae8694bed38c335d1cc5c8539685544bbcd",
+      "filename": "page-77.png",
+      "image_path": "tmp/pdfs/water-b-68-79/page-77.png",
+      "actual_image_evidence": {
+        "tool": "tools.view_image",
+        "result": "Successfully returned and visually inspected the full page image in this assistant turn.",
+        "reading_pass": "first visual reading only"
+      },
+      "discovery_state": "first_visual_reading_complete",
+      "verification_state": "no_transcription_target_observed",
+      "observations": "Sections 1.5 Public Private Participation (PPP) and 1.6 Content of Part B. Numbered descriptions of 13 chapters are a prose list, not a table. No math or figures.",
+      "target_ids": [],
+      "record_filenames": [],
+      "unfinished_targets": [],
+      "remaining_work": []
+    },
+    {
+      "pdf_page": 78,
+      "page_label": "11",
+      "bbox": [
+        0.0,
+        0.0,
+        595.5599975585938,
+        842.0399780273438
+      ],
+      "render_sha256": "5c86976a9ee9726ff5a680c919198e14ee2e8e43ee364a2224b7e54efc8a2afd",
+      "filename": "page-78.png",
+      "image_path": "tmp/pdfs/water-b-68-79/page-78.png",
+      "actual_image_evidence": {
+        "tool": "tools.view_image",
+        "result": "Successfully returned and visually inspected the full page image in this assistant turn.",
+        "reading_pass": "first visual reading only"
+      },
+      "discovery_state": "first_visual_reading_complete",
+      "verification_state": "no_transcription_target_observed",
+      "observations": "Chapter 2 Operational Strategy begins, sections 2.1, 2.2 and 2.2.1. Prose and bullets only; 24×7 is continuous-service notation. No table, calculation formula or figure.",
+      "target_ids": [],
+      "record_filenames": [],
+      "unfinished_targets": [],
+      "remaining_work": []
+    },
+    {
+      "pdf_page": 79,
+      "page_label": "12",
+      "bbox": [
+        0.0,
+        0.0,
+        595.5599975585938,
+        842.0399780273438
+      ],
+      "render_sha256": "e110198b8b09f6230ae0357d251a9c7acd0c9f54f4a04d2d02e7ee1ee6785ae7",
+      "filename": "page-79.png",
+      "image_path": "tmp/pdfs/water-b-68-79/page-79.png",
+      "actual_image_evidence": {
+        "tool": "tools.view_image",
+        "result": "Successfully returned and visually inspected the full page image in this assistant turn.",
+        "reading_pass": "first visual reading only"
+      },
+      "discovery_state": "first_visual_reading_complete",
+      "verification_state": "no_transcription_target_observed",
+      "observations": "Technical bullets continue, followed by 2.2.2 Financial Aspects, 2.2.3 Environmental Aspects and 2.2.4 Institutional and Legal Aspects. No table, equation or figure; 24×7 appears in prose as a service descriptor.",
+      "target_ids": [],
+      "record_filenames": [],
+      "unfinished_targets": [],
+      "remaining_work": []
+    }
+  ],
+  "handoff": "Both targets already exist as table units; no create_unit needed. All draft content awaits second visual comparison. Parent owns central integration, DB, coverage and deployment."
+}

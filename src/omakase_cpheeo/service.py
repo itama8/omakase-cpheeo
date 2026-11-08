@@ -56,6 +56,8 @@ DOMAIN_HINTS: dict[str, tuple[str, ...]] = {
               "transmission main", "tube well", "nrw", "water meter", "chlorination"),
 }
 DOMAIN_BOOST = 1.3  # bm25 scores are negative; multiplying makes a match rank higher
+DESIGN_INTENT = re.compile(r"\b(design|norms?|criteria|standards?|recommended|minimum|maximum|permissible|requirements?|limits?)\b", re.I)
+EXAMPLE_HEADING = re.compile(r"\b(examples?|illustrat\w*|worked|sample calculations?)\b", re.I)
 KIND_LABEL = {"equation": "Equation", "section": "Section", "table": "Table", "figure": "Figure", "chapter": "Chapter", "appendix": "Appendix", "annexure": "Annexure"}
 
 
@@ -339,6 +341,30 @@ class Library:
         hit = [d for d, hints in DOMAIN_HINTS.items() if any((h in lowered) if " " in h else (h in words) for h in hints)]
         return hit[0] if len(hit) == 1 else None
 
+    @cached_property
+    def heading_contexts(self) -> dict:
+        return {(r['manual_id'], r['number']):(r['title'], r['parent'])
+                for r in self.con.execute('SELECT manual_id,number,title,parent FROM units')}
+
+    def _example_context(self, row) -> bool:
+        """Use printed headings, including owning sections, rather than expected IDs."""
+        title, parent = row['title'], row['parent']
+        visited = set()
+        while True:
+            if EXAMPLE_HEADING.search(title):
+                return True
+            key = (row['manual_id'], parent)
+            if not parent or key in visited or key not in self.heading_contexts:
+                return False
+            visited.add(key)
+            title, parent = self.heading_contexts[key]
+
+    @staticmethod
+    def _title_words(text: str) -> tuple[str, ...]:
+        # Punctuation/possessives differ across callers and PDF typography.
+        text = re.sub(r"['’]s\b", '', text.lower())
+        return tuple(w for w in re.findall(r'[a-z0-9]+', text) if w not in STOPWORDS)
+
     def search(self, query: str, domain: str | None = None, manual_id: str | None = None, kind: str | None = None, limit: int = 8) -> dict:
         limit = max(1, min(limit, 25))
         results: list[dict] = []
@@ -376,8 +402,18 @@ class Library:
                 "AND (? IS NULL OR u.kind = ?) ORDER BY score LIMIT 200",
                 (q, domain, domain, manual_id, manual_id, kind, kind),
             ).fetchall()
-            if domain is None and manual_id is None and (hint := self.hinted_domain(query)):
-                rows = sorted(rows, key=lambda r: r["score"] * (DOMAIN_BOOST if r["domain"] == hint else 1.0))
+            hint = self.hinted_domain(query) if domain is None and manual_id is None else None
+            title_words = self._title_words(query)
+            design_intent = bool(DESIGN_INTENT.search(query)) and not EXAMPLE_HEADING.search(query)
+
+            def rank(row):
+                score = row['score'] * (DOMAIN_BOOST if row['domain'] == hint else 1.0)
+                if design_intent and self._example_context(row):
+                    score *= 0.55
+                exact_title = bool(title_words) and title_words == self._title_words(row['title'])
+                return (not exact_title, score)
+
+            rows = sorted(rows, key=rank)
             for row in rows:
                 if row["unit_id"] in seen or (not row["text"] and not row["table_markdown"] and not row["image_count"] and not self.transcriptions(row["id"])):
                     continue

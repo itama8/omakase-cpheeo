@@ -1,0 +1,65 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:Tp825-1",
+  "unit_id": "SEW-2013-A:Tp825-1",
+  "manual_id": "SEW-2013-A",
+  "kind": "table",
+  "number": "p825-1",
+  "title": "Unindexed intensity-duration table embedded in Figure A3.1-3",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "state": "pending",
+  "regions": [
+    {
+      "pdf_page": 825,
+      "page_label": "A - 54",
+      "bbox": [
+        206,
+        404,
+        422,
+        458
+      ],
+      "render_sha256": "2716b788fac046bd9500896e2e227f56e5b88b705ba7737862799b5190c574fe"
+    }
+  ],
+  "verification": {
+    "transcription": {
+      "pass_id": "sew-818-826-first-reading-2026-11-08",
+      "method": "Direct viewing of full rendered pages and selected enlarged crops; no OCR",
+      "observations": "First visual transcription only. No separate second comparison performed."
+    }
+  },
+  "source_image_refs": [
+    {
+      "path": "tmp/pdfs/sew-appendix-818-826/SEW-2013-A--Tp825-1.png",
+      "role": "first-reading source crop"
+    }
+  ],
+  "headers": [
+    "INTENSITY “i” (mm / hr)",
+    "30",
+    "35",
+    "40",
+    "45",
+    "50",
+    "60"
+  ],
+  "rows": [
+    [
+      "DURATION “t” (minutes)",
+      "44",
+      "36",
+      "28.5",
+      "22.5",
+      "13.5",
+      "9.75"
+    ]
+  ],
+  "markdown": "| INTENSITY “i” (mm / hr) | 30 | 35 | 40 | 45 | 50 | 60 |\n| --- | --- | --- | --- | --- | --- | --- |\n| DURATION “t” (minutes) | 44 | 36 | 28.5 | 22.5 | 13.5 | 9.75 |",
+  "cell_spans": [],
+  "notes": [
+    "Embedded in Figure A3.1-3. Proposed service locator only; same values as unindexed table on page 822.",
+    "Unnumbered table: p825-1 is a service locator, not a printed table number."
+  ],
+  "create_unit": true,
+  "parent_id": "SEW-2013-A:A3.1"
+}

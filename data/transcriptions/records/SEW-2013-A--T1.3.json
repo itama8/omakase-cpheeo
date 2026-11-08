@@ -1,0 +1,94 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:T1.3",
+  "unit_id": "SEW-2013-A:T1.3",
+  "manual_id": "SEW-2013-A",
+  "kind": "table",
+  "number": "1.3",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "state": "verified",
+  "regions": [
+    {
+      "pdf_page": 99,
+      "page_label": "1 - 13",
+      "bbox": [
+        120,
+        257,
+        496,
+        528
+      ],
+      "render_sha256": "02ed2446703a2655597eebb7d7dd77902dd4760c183d3e944aa99d9165f880a0"
+    }
+  ],
+  "title": "Sewage Management (Sewerage and Sanitation)",
+  "headers": [
+    "No.",
+    "Proposed Indicator",
+    "Benchmark"
+  ],
+  "rows": [
+    [
+      "1.",
+      "Coverage of toilets",
+      "100%"
+    ],
+    [
+      "2.",
+      "Coverage of sewage network services",
+      "100%"
+    ],
+    [
+      "3.",
+      "Collection efficiency of sewage network",
+      "100%"
+    ],
+    [
+      "4.",
+      "Adequacy of sewage treatment capacity",
+      "100%"
+    ],
+    [
+      "5.",
+      "Quality of sewage treatment",
+      "100%"
+    ],
+    [
+      "6.",
+      "Extent of reuse and recycling of sewage",
+      "20%"
+    ],
+    [
+      "7.",
+      "Efficiency of redressal of customer complaints",
+      "80%"
+    ],
+    [
+      "8.",
+      "Extent of cost recovery in sewage treatment",
+      "100%"
+    ],
+    [
+      "9.",
+      "Efficiency in collection of sewage charges",
+      "90%"
+    ]
+  ],
+  "cell_spans": [],
+  "markdown": "| No. | Proposed Indicator | Benchmark |\n| --- | --- | --- |\n| 1. | Coverage of toilets | 100% |\n| 2. | Coverage of sewage network services | 100% |\n| 3. | Collection efficiency of sewage network | 100% |\n| 4. | Adequacy of sewage treatment capacity | 100% |\n| 5. | Quality of sewage treatment | 100% |\n| 6. | Extent of reuse and recycling of sewage | 20% |\n| 7. | Efficiency of redressal of customer complaints | 80% |\n| 8. | Extent of cost recovery in sewage treatment | 100% |\n| 9. | Efficiency in collection of sewage charges | 90% |",
+  "notes": [
+    "Source: MoUD, 2011"
+  ],
+  "verification": {
+    "transcription": {
+      "pass_id": "visual-2026-11-08-01",
+      "method": "direct visual reading of rendered source page; no OCR",
+      "observations": "Read each cell or formula and its printed context directly."
+    },
+    "visual_recheck": {
+      "pass_id": "ch1-distinct-child-recheck-20261108",
+      "method": "Distinct Codex child directly viewed newly rendered pinned crops and full pages; not independent human review.",
+      "observations": "Compared all cells, formulas, units, captions, source lines and printed conditions. No substantive mismatch. Detailed per-record observations in batches/parent-ch1-recheck/report.json.",
+      "content_sha256": "ccdb7f8138108e33aa8728d2cf076044fce8d970405e591cc630202e06a7569a"
+    }
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:Ep819-5",
+  "unit_id": "SEW-2013-A:Ep819-5",
+  "manual_id": "SEW-2013-A",
+  "kind": "equation",
+  "number": "p819-5",
+  "title": "Average increase and incremental increase",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "state": "pending",
+  "regions": [
+    {
+      "pdf_page": 819,
+      "page_label": "A - 48",
+      "bbox": [
+        275,
+        710,
+        540,
+        770
+      ],
+      "render_sha256": "81185174c92c93ee7f5f0fb3a89442c6b274544e4289767d9eb88217f7f44b7f"
+    }
+  ],
+  "verification": {
+    "transcription": {
+      "pass_id": "sew-818-826-first-reading-2026-11-08",
+      "method": "Direct viewing of full rendered pages and selected enlarged crops; no OCR",
+      "observations": "First visual transcription only. No separate second comparison performed."
+    }
+  },
+  "source_image_refs": [
+    {
+      "path": "tmp/pdfs/sew-appendix-818-826/SEW-2013-A--Ep819-5.png",
+      "role": "first-reading source crop"
+    }
+  ],
+  "parent_id": "SEW-2013-A:A2.2",
+  "latex": "\\frac16\\times118615=19769;\\quad\\frac15\\times30233=6047",
+  "readable": "Table A2.2-2 Average: 1/6 × 118,615 = 19,769; 1/5 × 30,233 = 6,047.",
+  "symbols": [],
+  "applicability": "Worked example in Appendix A2.2",
+  "notes": [
+    "Unnumbered expression; Ep<physical-page>-<sequence> is a service locator, not a printed equation number."
+  ]
+}

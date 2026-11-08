@@ -1,0 +1,100 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:TA2.2-1",
+  "unit_id": "SEW-2013-A:TA2.2-1",
+  "manual_id": "SEW-2013-A",
+  "kind": "table",
+  "number": "A2.2-1",
+  "title": "Table A2.2-1: population and increment",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "state": "verified",
+  "regions": [
+    {
+      "pdf_page": 818,
+      "page_label": "A - 47",
+      "bbox": [
+        55,
+        198,
+        545,
+        532
+      ],
+      "render_sha256": "de0153ee0df0e1b162e9d7cbe1749d6451e8e919b2882d9519be43507d3d2809"
+    }
+  ],
+  "verification": {
+    "transcription": {
+      "pass_id": "sew-818-826-first-reading-2026-11-08",
+      "method": "Direct viewing of full rendered pages and selected enlarged crops; no OCR",
+      "observations": "First visual transcription only. No separate second comparison performed."
+    },
+    "visual_recheck": {
+      "pass_id": "appendix818-826-distinct-recheck-20261108",
+      "method": "Distinct child directly viewed exact crops and full pages; parent directly viewed revised regions for four corrected records; no OCR; not independent human review.",
+      "observations": "Read all three headers and all 27 body cells. Seven year/population pairs, the dash, both totals, averages and merged Total/Average labels match. 1931 visibly prints 15,873, identical to 1941, despite the 4,337 on page 819. Preserve this anomaly.",
+      "content_sha256": "66af36d5451495f3e48cc638bf9abf4e2a48e3e530a2db5791ae6ba33a750bb3"
+    }
+  },
+  "source_image_refs": [
+    {
+      "path": "tmp/pdfs/sew-appendix-818-826/SEW-2013-A--TA2.2-1.png",
+      "role": "first-reading source crop"
+    }
+  ],
+  "headers": [
+    "Year",
+    "Population",
+    "Increment"
+  ],
+  "rows": [
+    [
+      "1921",
+      "40,185",
+      "---"
+    ],
+    [
+      "1931",
+      "44,522",
+      "15,873"
+    ],
+    [
+      "1941",
+      "60,395",
+      "15,873"
+    ],
+    [
+      "1951",
+      "75,614",
+      "15,219"
+    ],
+    [
+      "1961",
+      "98,886",
+      "23,272"
+    ],
+    [
+      "1971",
+      "124,230",
+      "25,344"
+    ],
+    [
+      "1981",
+      "158,800",
+      "34,570"
+    ],
+    [
+      "Total",
+      "",
+      "118,615"
+    ],
+    [
+      "Average",
+      "",
+      "19,769"
+    ]
+  ],
+  "markdown": "| Year | Population | Increment |\n| --- | --- | --- |\n| 1921 | 40,185 | --- |\n| 1931 | 44,522 | 15,873 |\n| 1941 | 60,395 | 15,873 |\n| 1951 | 75,614 | 15,219 |\n| 1961 | 98,886 | 23,272 |\n| 1971 | 124,230 | 25,344 |\n| 1981 | 158,800 | 34,570 |\n| Total |  | 118,615 |\n| Average |  | 19,769 |",
+  "cell_spans": [],
+  "notes": [
+    "Total and Average labels each span the first two columns; blank second cells represent that merge. The printed 1931 increment is 15,873; do not repair to 4,337."
+  ]
+}

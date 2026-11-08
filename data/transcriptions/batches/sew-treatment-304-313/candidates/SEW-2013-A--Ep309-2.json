@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:Ep309-2",
+  "unit_id": "SEW-2013-A:Ep309-2",
+  "manual_id": "SEW-2013-A",
+  "kind": "equation",
+  "number": "p309-2",
+  "title": "Auto-oxidation oxygen expression in Figure 5.1",
+  "state": "pending",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "regions": [
+    {
+      "pdf_page": 309,
+      "page_label": "5 - 5",
+      "bbox": [
+        245,
+        182,
+        490,
+        260
+      ],
+      "render_sha256": "ceadb74a6956ea6cc7cf708382f6cca55f699b082805ed0924b94c66ed56913f"
+    }
+  ],
+  "parent_id": "SEW-2013-A:5.1.2",
+  "latex": "\\text{Oxygen }(1.42K_d)",
+  "readable": "Oxygen (1.42K_d)",
+  "symbols": [
+    {
+      "symbol": "k_d",
+      "definition": "Printed auto-oxidation arrow label."
+    },
+    {
+      "symbol": "K_d",
+      "definition": "Printed symbol in oxygen expression; not defined here."
+    }
+  ],
+  "applicability": "Aerobic metabolism, Figure 5.1; auto-oxidation of new heterotrophic microbial biomass.",
+  "notes": [
+    "Ep<physical-page>-<sequence> is a service locator, not a printed equation number.",
+    "Printed auto-oxidation arrow label is lowercase k_d; oxygen expression uses uppercase K_d. Case difference retained. No rate units printed."
+  ],
+  "verification": {
+    "transcription": {
+      "pass_id": "sew-treatment-304-313-first-reading",
+      "method": "Direct visual reading of full annotation-cleaned 144 dpi page PNGs and specified 288 dpi details; no OCR",
+      "observations": "First reading only. Source spelling, numbers, powers, punctuation and discrepancies retained. No distinct second inspection performed."
+    }
+  }
+}

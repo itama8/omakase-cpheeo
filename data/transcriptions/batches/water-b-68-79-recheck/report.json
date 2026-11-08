@@ -1,0 +1,864 @@
+{
+  "schema_version": 1,
+  "pass_id": "water-b-68-79-distinct-visual-recheck-2026-11-08",
+  "manual_id": "WS-2024-B",
+  "scope": "Distinct second visual comparison of the two pending batch candidates; report only. No seal, promotion, candidate/central-record/ledger/DB/live modification, OCR, delegation or commit.",
+  "method": "New annotation-cleaned full-page and exact pinned-region PNGs at 144 dpi (PyMuPDF Matrix(2,2), alpha=False), opened through tools.view_image in this recheck turn. All eight images were returned and visually inspected. Compared each authored cell against the images, including source notes, caption, merge structure and continuation boundaries. No native PDF text extraction or OCR was used.",
+  "review_limits": "Assistant visual transcription-fidelity check; not independent human review, perfect-accuracy certification or engineering validation. Line wrapping, alignment, colour and bold styling are not serialized as cell text. Digest binds only the unchanged authored candidate reviewed here.",
+  "source": {
+    "path": "/home/a2ajinkya/Downloads/CPHEEO/Water Supply_2023/Part-B-Manual-Operation-and-Maintenance(5).pdf",
+    "expected_sha256": "1cfd336b3e2928b95cec3899d3e1d15807b5598d78730d6fe3eef381021844e7",
+    "actual_sha256": "1cfd336b3e2928b95cec3899d3e1d15807b5598d78730d6fe3eef381021844e7",
+    "matches": true,
+    "access": "Read-only; annotations removed in memory by open_clean; never saved."
+  },
+  "render_order_check": {
+    "production_renderer": "omakase_cpheeo.transcriptions.region_png, including existing reload_page fix; unchanged by this task",
+    "procedure": "Render full page, release local Page reference, render exact pinned region twice in the same cleaned document. All full-page/crop/repeated bytes matched the existing pins; no pins replaced.",
+    "initial_attempt": "Holding a Page reference across reload_page triggered a PyMuPDF AssertionError (refs_old=2, m_internal_new equals m_internal_old). Released that temporary reference and reran all four pages successfully. No product code change made."
+  },
+  "indexing": "All row and column indices below are zero-based; rows exclude headers.",
+  "records": [
+    {
+      "id": "WS-2024-B:T1.1",
+      "candidate_path": "data/transcriptions/batches/water-b-68-79/records/WS-2024-B--T1.1.json",
+      "candidate_file_sha256": "1579b42ebc9ed907bc29c6c6329c33e123bb875657c0b8475c34af3533684a68",
+      "candidate_unchanged_during_recheck": true,
+      "content_digest": "34022eb6aee3a573284d3f2760c010fbbdd789395beda07e1daeb9ca63fa73f8",
+      "content_digest_algorithm": "omakase_cpheeo.transcriptions.content_digest: SHA-256 of sorted compact UTF-8 JSON excluding state, verification and source_image_refs",
+      "first_reading_pass_id": "water-b-68-79-first-reading-2026-11-08",
+      "outcome": "matches_source_no_corrections",
+      "corrections": [],
+      "unresolved_ambiguities": [],
+      "regions": [
+        {
+          "pdf_page": 72,
+          "page_label": "5",
+          "bbox": [
+            0.0,
+            0.0,
+            595.5599975585938,
+            842.0399780273438
+          ],
+          "render_sha256": "76690a79882e16a92ea0658fb467ed8390fa4408be4c69e8b67615ca15c28be3",
+          "actual_render_sha256": "76690a79882e16a92ea0658fb467ed8390fa4408be4c69e8b67615ca15c28be3",
+          "full_page_sha256": "76690a79882e16a92ea0658fb467ed8390fa4408be4c69e8b67615ca15c28be3",
+          "source_hash_matches": true,
+          "crop_hash_matches": true,
+          "full_page_bounds_equal_pinned_bbox": true,
+          "repeated_crop_matches": true,
+          "full_page_image": "/tmp/water-b-distinct-recheck-ub7c58ci/full-72.png",
+          "pinned_region_image": "/tmp/water-b-distinct-recheck-ub7c58ci/pinned-72.png",
+          "full_page_viewed": true,
+          "pinned_region_viewed": true,
+          "image_tool": "tools.view_image"
+        }
+      ],
+      "observations": [
+        "Caption Table 1.1 and full title match. Physical 72 is printed 5. Both printed headers Good Practice and City or Utility match.",
+        "All 13 practice/utility pairs and three group headings were compared field by field. All 32 serialized row fields accounted for, including three merge placeholders; no extra or missing data row.",
+        "cell_spans correctly spans columns 0-1 at rows 0, 5 and 12; all three category names and their boundaries match the horizontal rules.",
+        "Both notes checked: source line reads ADB: Good Practices in Urban Water Management: Decoding Good Practices for Successful Future (2012); merge explanation and retained WATCO, MWCI and practise agree with the image.",
+        "Complete table and source citation fit this page; no continuation, further table, equation or figure appears on the full page."
+      ],
+      "cell_comparisons": [
+        {
+          "row": 0,
+          "pages": [
+            72
+          ],
+          "cells": [
+            {
+              "column": 0,
+              "compared_candidate_text": "Fundamentals",
+              "result": "matches_visual_source"
+            },
+            {
+              "column": 1,
+              "compared_candidate_text": "",
+              "result": "merge_placeholder_matches_structure"
+            }
+          ],
+          "observation": "Full-width Fundamentals heading, not a data pair; second field is merge placeholder."
+        },
+        {
+          "row": 1,
+          "pages": [
+            72
+          ],
+          "cells": [
+            {
+              "column": 0,
+              "compared_candidate_text": "Having dynamic leadership at the top",
+              "result": "matches_visual_source"
+            },
+            {
+              "column": 1,
+              "compared_candidate_text": "Singapore, Phnom Penh, Bangkok, WATCO, Malkapur",
+              "result": "matches_visual_source"
+            }
+          ],
+          "observation": "Leadership pair matches; city order Singapore, Phnom Penh, Bangkok, WATCO, Malkapur."
+        },
+        {
+          "row": 2,
+          "pages": [
+            72
+          ],
+          "cells": [
+            {
+              "column": 0,
+              "compared_candidate_text": "Use of integrated water management policy",
+              "result": "matches_visual_source"
+            },
+            {
+              "column": 1,
+              "compared_candidate_text": "Shenzhen, Singapore",
+              "result": "matches_visual_source"
+            }
+          ],
+          "observation": "Integrated water management policy matches; Shenzhen precedes Singapore."
+        },
+        {
+          "row": 3,
+          "pages": [
+            72
+          ],
+          "cells": [
+            {
+              "column": 0,
+              "compared_candidate_text": "Corporatisation of water utilities",
+              "result": "matches_visual_source"
+            },
+            {
+              "column": 1,
+              "compared_candidate_text": "Bangkok, Jamshedpur, WATCO",
+              "result": "matches_visual_source"
+            }
+          ],
+          "observation": "Corporatisation spelling preserved; Bangkok, Jamshedpur, WATCO."
+        },
+        {
+          "row": 4,
+          "pages": [
+            72
+          ],
+          "cells": [
+            {
+              "column": 0,
+              "compared_candidate_text": "Regulating private sector participation effectively",
+              "result": "matches_visual_source"
+            },
+            {
+              "column": 1,
+              "compared_candidate_text": "Manila, Shenzhen",
+              "result": "matches_visual_source"
+            }
+          ],
+          "observation": "Private sector regulation pair matches; Manila, Shenzhen."
+        },
+        {
+          "row": 5,
+          "pages": [
+            72
+          ],
+          "cells": [
+            {
+              "column": 0,
+              "compared_candidate_text": "Service Delivery",
+              "result": "matches_visual_source"
+            },
+            {
+              "column": 1,
+              "compared_candidate_text": "",
+              "result": "merge_placeholder_matches_structure"
+            }
+          ],
+          "observation": "Full-width Service Delivery heading; second field is merge placeholder."
+        },
+        {
+          "row": 6,
+          "pages": [
+            72
+          ],
+          "cells": [
+            {
+              "column": 0,
+              "compared_candidate_text": "Increasing coverage and improving water availability",
+              "result": "matches_visual_source"
+            },
+            {
+              "column": 1,
+              "compared_candidate_text": "Bangkok, Colombo, MWCI, Phnom Penh, Singapore, Malkapur",
+              "result": "matches_visual_source"
+            }
+          ],
+          "observation": "Coverage/availability pair matches all six utilities in printed order, including Colombo, MWCI and final Malkapur."
+        },
+        {
+          "row": 7,
+          "pages": [
+            72
+          ],
+          "cells": [
+            {
+              "column": 0,
+              "compared_candidate_text": "Reducing NRW",
+              "result": "matches_visual_source"
+            },
+            {
+              "column": 1,
+              "compared_candidate_text": "Jamshedpur, MWCI, Phnom Penh, Singapore, Malkapur",
+              "result": "matches_visual_source"
+            }
+          ],
+          "observation": "NRW pair matches all five utilities, beginning Jamshedpur and ending Malkapur."
+        },
+        {
+          "row": 8,
+          "pages": [
+            72
+          ],
+          "cells": [
+            {
+              "column": 0,
+              "compared_candidate_text": "Securing clean, safe, and reliable water supplies",
+              "result": "matches_visual_source"
+            },
+            {
+              "column": 1,
+              "compared_candidate_text": "Bangkok, MWCI, Phnom Penh, Singapore, Malkapur",
+              "result": "matches_visual_source"
+            }
+          ],
+          "observation": "Clean, safe, and reliable supplies pair matches five utilities, beginning Bangkok and ending Malkapur."
+        },
+        {
+          "row": 9,
+          "pages": [
+            72
+          ],
+          "cells": [
+            {
+              "column": 0,
+              "compared_candidate_text": "Improving service to the poor",
+              "result": "matches_visual_source"
+            },
+            {
+              "column": 1,
+              "compared_candidate_text": "Bangkok, Jamshedpur, MWCI, Phnom Penh, Singapore",
+              "result": "matches_visual_source"
+            }
+          ],
+          "observation": "Service to poor pair matches five utilities, including Jamshedpur, with final Singapore and no Malkapur."
+        },
+        {
+          "row": 10,
+          "pages": [
+            72
+          ],
+          "cells": [
+            {
+              "column": 0,
+              "compared_candidate_text": "Adopting the practise of demand-side management",
+              "result": "matches_visual_source"
+            },
+            {
+              "column": 1,
+              "compared_candidate_text": "Singapore",
+              "result": "matches_visual_source"
+            }
+          ],
+          "observation": "Source spells practise; demand-side management pair has Singapore only."
+        },
+        {
+          "row": 11,
+          "pages": [
+            72
+          ],
+          "cells": [
+            {
+              "column": 0,
+              "compared_candidate_text": "Monitoring and reporting effectively",
+              "result": "matches_visual_source"
+            },
+            {
+              "column": 1,
+              "compared_candidate_text": "Bangkok, Jamshedpur, Singapore",
+              "result": "matches_visual_source"
+            }
+          ],
+          "observation": "Monitoring/reporting pair matches Bangkok, Jamshedpur, Singapore."
+        },
+        {
+          "row": 12,
+          "pages": [
+            72
+          ],
+          "cells": [
+            {
+              "column": 0,
+              "compared_candidate_text": "Financial and Human Resources Management",
+              "result": "matches_visual_source"
+            },
+            {
+              "column": 1,
+              "compared_candidate_text": "",
+              "result": "merge_placeholder_matches_structure"
+            }
+          ],
+          "observation": "Full-width Financial and Human Resources Management heading; second field is merge placeholder."
+        },
+        {
+          "row": 13,
+          "pages": [
+            72
+          ],
+          "cells": [
+            {
+              "column": 0,
+              "compared_candidate_text": "Improving staff productivity",
+              "result": "matches_visual_source"
+            },
+            {
+              "column": 1,
+              "compared_candidate_text": "Bangkok, Jamshedpur, MWCI, Phnom Penh, Singapore",
+              "result": "matches_visual_source"
+            }
+          ],
+          "observation": "Staff productivity pair matches five utilities, beginning Bangkok and ending Singapore."
+        },
+        {
+          "row": 14,
+          "pages": [
+            72
+          ],
+          "cells": [
+            {
+              "column": 0,
+              "compared_candidate_text": "Pricing water for efficiency and sustainability",
+              "result": "matches_visual_source"
+            },
+            {
+              "column": 1,
+              "compared_candidate_text": "Jamshedpur, MWCI, Phnom Penh, Singapore, Malkapur",
+              "result": "matches_visual_source"
+            }
+          ],
+          "observation": "Pricing pair matches five utilities, beginning Jamshedpur and ending Malkapur."
+        },
+        {
+          "row": 15,
+          "pages": [
+            72
+          ],
+          "cells": [
+            {
+              "column": 0,
+              "compared_candidate_text": "Improving revenue collection",
+              "result": "matches_visual_source"
+            },
+            {
+              "column": 1,
+              "compared_candidate_text": "Bangkok, Colombo, Jamshedpur, MWCI, Phnom Penh, Shenzhen, Singapore, Malkapur",
+              "result": "matches_visual_source"
+            }
+          ],
+          "observation": "Revenue collection pair matches all eight names and order, including both Colombo and Shenzhen; final Singapore, Malkapur."
+        }
+      ],
+      "markdown_matches_checked_grid": true,
+      "header_comparisons": [
+        {
+          "column": 0,
+          "text": "Good Practice",
+          "result": "matches_printed_header"
+        },
+        {
+          "column": 1,
+          "text": "City or Utility",
+          "result": "matches_printed_header"
+        }
+      ],
+      "cell_spans_compared": [
+        {
+          "row": 0,
+          "column": 0,
+          "row_span": 1,
+          "column_span": 2
+        },
+        {
+          "row": 5,
+          "column": 0,
+          "row_span": 1,
+          "column_span": 2
+        },
+        {
+          "row": 12,
+          "column": 0,
+          "row_span": 1,
+          "column_span": 2
+        }
+      ],
+      "notes_compared_count": 2
+    },
+    {
+      "id": "WS-2024-B:T1.2",
+      "candidate_path": "data/transcriptions/batches/water-b-68-79/records/WS-2024-B--T1.2.json",
+      "candidate_file_sha256": "be2f389f745df4556b80ff35d2c394017a1624936c065ef63b419dae806872c2",
+      "candidate_unchanged_during_recheck": true,
+      "content_digest": "b4c8d446c71cbfaba3546e2fb9f68bae3ff7160838030748b5857753c7b83655",
+      "content_digest_algorithm": "omakase_cpheeo.transcriptions.content_digest: SHA-256 of sorted compact UTF-8 JSON excluding state, verification and source_image_refs",
+      "first_reading_pass_id": "water-b-68-79-first-reading-2026-11-08",
+      "outcome": "matches_source_no_corrections",
+      "corrections": [],
+      "unresolved_ambiguities": [],
+      "regions": [
+        {
+          "pdf_page": 74,
+          "page_label": "7",
+          "bbox": [
+            0.0,
+            0.0,
+            842.0399780273438,
+            595.5599975585938
+          ],
+          "render_sha256": "81ce9ad378dd1c5f08ad65f19062964a03a9fcfe4e71565477eb9299bad504d2",
+          "actual_render_sha256": "81ce9ad378dd1c5f08ad65f19062964a03a9fcfe4e71565477eb9299bad504d2",
+          "full_page_sha256": "81ce9ad378dd1c5f08ad65f19062964a03a9fcfe4e71565477eb9299bad504d2",
+          "source_hash_matches": true,
+          "crop_hash_matches": true,
+          "full_page_bounds_equal_pinned_bbox": true,
+          "repeated_crop_matches": true,
+          "full_page_image": "/tmp/water-b-distinct-recheck-ub7c58ci/full-74.png",
+          "pinned_region_image": "/tmp/water-b-distinct-recheck-ub7c58ci/pinned-74.png",
+          "full_page_viewed": true,
+          "pinned_region_viewed": true,
+          "image_tool": "tools.view_image"
+        },
+        {
+          "pdf_page": 75,
+          "page_label": "8",
+          "bbox": [
+            0.0,
+            0.0,
+            842.0399780273438,
+            595.5599975585938
+          ],
+          "render_sha256": "f7659aa9c3d90a1c650b3c65956e6cf517a5cc23342e00804d7cad320aebd448",
+          "actual_render_sha256": "f7659aa9c3d90a1c650b3c65956e6cf517a5cc23342e00804d7cad320aebd448",
+          "full_page_sha256": "f7659aa9c3d90a1c650b3c65956e6cf517a5cc23342e00804d7cad320aebd448",
+          "source_hash_matches": true,
+          "crop_hash_matches": true,
+          "full_page_bounds_equal_pinned_bbox": true,
+          "repeated_crop_matches": true,
+          "full_page_image": "/tmp/water-b-distinct-recheck-ub7c58ci/full-75.png",
+          "pinned_region_image": "/tmp/water-b-distinct-recheck-ub7c58ci/pinned-75.png",
+          "full_page_viewed": true,
+          "pinned_region_viewed": true,
+          "image_tool": "tools.view_image"
+        },
+        {
+          "pdf_page": 76,
+          "page_label": "9",
+          "bbox": [
+            0.0,
+            0.0,
+            842.0399780273438,
+            595.5599975585938
+          ],
+          "render_sha256": "d1a09efdca6f10770d677480ab2b1c1ee62034347fed4e1d3fd69c105dd241e0",
+          "actual_render_sha256": "d1a09efdca6f10770d677480ab2b1c1ee62034347fed4e1d3fd69c105dd241e0",
+          "full_page_sha256": "d1a09efdca6f10770d677480ab2b1c1ee62034347fed4e1d3fd69c105dd241e0",
+          "source_hash_matches": true,
+          "crop_hash_matches": true,
+          "full_page_bounds_equal_pinned_bbox": true,
+          "repeated_crop_matches": true,
+          "full_page_image": "/tmp/water-b-distinct-recheck-ub7c58ci/full-76.png",
+          "pinned_region_image": "/tmp/water-b-distinct-recheck-ub7c58ci/pinned-76.png",
+          "full_page_viewed": true,
+          "pinned_region_viewed": true,
+          "image_tool": "tools.view_image"
+        }
+      ],
+      "observations": [
+        "Caption Table 1.2 and full title match. Physical pages 74,75,76 are printed 7,8,9. Five columns and nine logical rows; all 45 expanded serialized fields compared.",
+        "No printed header row exists. All five authored headers explicitly identify themselves as editorial and are appropriate descriptors, not transcribed source headings.",
+        "Four first-column vertical groups match cell_spans: green Increase Utility of Facilities rows 0-1; orange Decrease total cost rows 2-3; blue Increase lifetime value rows 4-5 across p74/75; grey Enable O&M best practice rows 6-8 across p75/76. Repeated objective values are valid expanded merge text.",
+        "All four notes checked. Notes correctly join the last two practice cells of Extend asset life at p74/75 and the first practice cell of Build capabilities at p75/76. Empty continuation areas do not add logical rows or erase prior-page text.",
+        "Source citation below final row matches Report of World Economic Forum on “Strategic Infrastructure – Steps to Operate and Maintain Infrastructure Efficiently and Effectively”, 2014 and printed https://reports.weforum.org/strategic-infrastructure-2014/executive-summary/ (source URL read visually, not fetched).",
+        "Unusual printed wording Conditional assessment, Co-operative, user taxes and (de-centralization) retained. Paragraphs and examples complete; joined cost-effective line wraps and preserved source hyphens are appropriate. Bold lead-ins and ordinary examples remain in reading order.",
+        "Full pages show only this table and its two continuations with running matter; p76 ends with Reform governance and the source citation. No additional table, equation or figure observed."
+      ],
+      "cell_comparisons": [
+        {
+          "row": 0,
+          "pages": [
+            74
+          ],
+          "cells": [
+            {
+              "column": 0,
+              "compared_candidate_text": "Increase Utility of Facilities",
+              "result": "matches_visual_source"
+            },
+            {
+              "column": 1,
+              "compared_candidate_text": "Maximize asset utilization",
+              "result": "matches_visual_source"
+            },
+            {
+              "column": 2,
+              "compared_candidate_text": "Enhance capacity of existing system. e.g. Reducing NRW",
+              "result": "matches_visual_source"
+            },
+            {
+              "column": 3,
+              "compared_candidate_text": "Apply demand management. e.g. Introduction of telescopic water pricing",
+              "result": "matches_visual_source"
+            },
+            {
+              "column": 4,
+              "compared_candidate_text": "Optimize availability/ reduce downtime e.g. Scheduling short-duration maintenance tasks for off-peak hours.",
+              "result": "matches_visual_source"
+            }
+          ],
+          "observation": "All five fields compared on p74: green objective, Maximize asset utilization, existing-system/NRW example, telescopic water pricing, and off-peak short-duration maintenance. Punctuation and availability/ reduce spacing retained."
+        },
+        {
+          "row": 1,
+          "pages": [
+            74
+          ],
+          "cells": [
+            {
+              "column": 0,
+              "compared_candidate_text": "Increase Utility of Facilities",
+              "result": "matches_visual_source"
+            },
+            {
+              "column": 1,
+              "compared_candidate_text": "Enhance quality for users",
+              "result": "matches_visual_source"
+            },
+            {
+              "column": 2,
+              "compared_candidate_text": "Adopt a customer-centric operating model. e.g. Providing water as per SLBs.",
+              "result": "matches_visual_source"
+            },
+            {
+              "column": 3,
+              "compared_candidate_text": "Enhance the end-to-end user experience e.g. Ensuring grievance redressal in minimum time.",
+              "result": "matches_visual_source"
+            },
+            {
+              "column": 4,
+              "compared_candidate_text": "Use smart technologies to refine performance e.g. Use smart meter which will invoice as per consumption and reduce the cost of meter-reading.",
+              "result": "matches_visual_source"
+            }
+          ],
+          "observation": "All five fields compared on p74: green objective expanded, Enhance quality for users, customer-centric model/SLBs., end-to-end grievance redressal, and smart-meter consumption/invoicing/meter-reading example."
+        },
+        {
+          "row": 2,
+          "pages": [
+            74
+          ],
+          "cells": [
+            {
+              "column": 0,
+              "compared_candidate_text": "Decrease total cost",
+              "result": "matches_visual_source"
+            },
+            {
+              "column": 1,
+              "compared_candidate_text": "Reduce O&M costs",
+              "result": "matches_visual_source"
+            },
+            {
+              "column": 2,
+              "compared_candidate_text": "Implement lean and automated processes e.g. Use of CMMS",
+              "result": "matches_visual_source"
+            },
+            {
+              "column": 3,
+              "compared_candidate_text": "Optimize procurement costs and outsourcing e.g. In areas where the requisite technology is discouragingly expensive or where specialist skills would be needed, operators can opt to outsource maintenance works or information technology (IT) services",
+              "result": "matches_visual_source"
+            },
+            {
+              "column": 4,
+              "compared_candidate_text": "Right size management and support functions e.g. Adjust their overheads and organizational structures by delayering, introducing shared services and optimizing the level of (de-centralization)",
+              "result": "matches_visual_source"
+            }
+          ],
+          "observation": "All five fields compared on p74: orange objective, Reduce O&M costs, lean/automated processes and CMMS, entire outsourcing paragraph including (IT), and entire overheads/delayering/shared-services paragraph ending (de-centralization)."
+        },
+        {
+          "row": 3,
+          "pages": [
+            74
+          ],
+          "cells": [
+            {
+              "column": 0,
+              "compared_candidate_text": "Decrease total cost",
+              "result": "matches_visual_source"
+            },
+            {
+              "column": 1,
+              "compared_candidate_text": "Mitigate Externalities",
+              "result": "matches_visual_source"
+            },
+            {
+              "column": 2,
+              "compared_candidate_text": "Arrange comprehensive sustainability e.g. Water treatment plants can change from being net energy consumers to net energy producers by installing Solar Cells on roof top.",
+              "result": "matches_visual_source"
+            },
+            {
+              "column": 3,
+              "compared_candidate_text": "Embed sustainability e.g., engaging the broader workforce on Environment, health and safety aspects and not just creating a sustainability department",
+              "result": "matches_visual_source"
+            },
+            {
+              "column": 4,
+              "compared_candidate_text": "Co-operative with relevant stakeholders. Operators should also take a multi-stakeholder engagement approach, actively communicating with communities in outreach campaigns and collaborating with fellow operators and users to generate a greater positive impact across the infrastructure system.",
+              "result": "matches_visual_source"
+            }
+          ],
+          "observation": "All five fields compared on p74: orange objective expanded, Mitigate Externalities, net energy consumers/producers and Solar Cells on roof top, Environment/health/safety/workforce example, and complete Co-operative multi-stakeholder paragraph ending infrastructure system."
+        },
+        {
+          "row": 4,
+          "pages": [
+            74,
+            75
+          ],
+          "cells": [
+            {
+              "column": 0,
+              "compared_candidate_text": "Increase lifetime value",
+              "result": "matches_visual_source"
+            },
+            {
+              "column": 1,
+              "compared_candidate_text": "Extend asset life",
+              "result": "matches_visual_source"
+            },
+            {
+              "column": 2,
+              "compared_candidate_text": "Invest in preventive and predictive maintenance",
+              "result": "matches_visual_source"
+            },
+            {
+              "column": 3,
+              "compared_candidate_text": "Control excessive asset consumption and stress e.g., regulating the use of pumps only in operating range",
+              "result": "matches_visual_source"
+            },
+            {
+              "column": 4,
+              "compared_candidate_text": "Enhance disaster resilience. Effort should be made to incorporate more resilience into existing assets. Efforts should focus not only on structural measures, such as building protective barriers and retrofitting existing facilities, but also on cost-effective, non-structural measures, including the creation of natural buffer zones and the adaptation of more resilient design.",
+              "result": "matches_visual_source"
+            }
+          ],
+          "observation": "All five fields compared across p74/p75: blue objective, Extend asset life, preventive and predictive maintenance; control/stress cell joins use of | pumps only in operating range; resilience cell joins structural | measures and continues through protective barriers, retrofitting, cost-effective non-structural measures, natural buffer zones and more resilient design."
+        },
+        {
+          "row": 5,
+          "pages": [
+            75
+          ],
+          "cells": [
+            {
+              "column": 0,
+              "compared_candidate_text": "Increase lifetime value",
+              "result": "matches_visual_source"
+            },
+            {
+              "column": 1,
+              "compared_candidate_text": "Reinvest with a life cycle view",
+              "result": "matches_visual_source"
+            },
+            {
+              "column": 2,
+              "compared_candidate_text": "Prioritise project options with whole life cycle Cost Benefit Analysis. Before committing to major capital expenditure, it should first identify all possible project options and investigate more cost-effective solutions, such as optimization, loss reduction, demand-side measures, system wide capacity balancing.",
+              "result": "matches_visual_source"
+            },
+            {
+              "column": 3,
+              "compared_candidate_text": "Select contracting mode for best value for money. e.g., most efficient delivery mode – public sector, PPP or private sector – should be chosen on the basis of a value-for-money assessment, taking into account the potential quality of service and level of risk to the government budget",
+              "result": "matches_visual_source"
+            },
+            {
+              "column": 4,
+              "compared_candidate_text": "Prepare for efficient project delivery",
+              "result": "matches_visual_source"
+            }
+          ],
+          "observation": "All five fields compared on p75: blue objective expanded, Reinvest with a life cycle view; entire Prioritise/Cost Benefit Analysis paragraph through system wide capacity balancing; entire value-for-money/public-sector/PPP/private-sector paragraph through government budget; Prepare for efficient project delivery."
+        },
+        {
+          "row": 6,
+          "pages": [
+            75
+          ],
+          "cells": [
+            {
+              "column": 0,
+              "compared_candidate_text": "Enable O&M best practice",
+              "result": "matches_visual_source"
+            },
+            {
+              "column": 1,
+              "compared_candidate_text": "Ensure funding",
+              "result": "matches_visual_source"
+            },
+            {
+              "column": 2,
+              "compared_candidate_text": "Dedicate user taxes via maintenance funds",
+              "result": "matches_visual_source"
+            },
+            {
+              "column": 3,
+              "compared_candidate_text": "Apply inclusive user charges",
+              "result": "matches_visual_source"
+            },
+            {
+              "column": 4,
+              "compared_candidate_text": "Capture ancillary business opportunities. e.g. Realizing revenue from advertisement of ESRs, parking, etc.",
+              "result": "matches_visual_source"
+            }
+          ],
+          "observation": "All five fields compared on p75: grey objective, Ensure funding; source says user taxes via maintenance funds; inclusive user charges; ancillary revenue from advertisement of ESRs, parking, etc."
+        },
+        {
+          "row": 7,
+          "pages": [
+            75,
+            76
+          ],
+          "cells": [
+            {
+              "column": 0,
+              "compared_candidate_text": "Enable O&M best practice",
+              "result": "matches_visual_source"
+            },
+            {
+              "column": 1,
+              "compared_candidate_text": "Build capabilities",
+              "result": "matches_visual_source"
+            },
+            {
+              "column": 2,
+              "compared_candidate_text": "Introduce asset management planning. e.g. conduct regular assessments of the existing asset base, and create an infrastructure balance sheet to show how the stock of assets has evolved and to forecast the required maintenance funding. Proper digital and GIS Asset mapping has to be carried out as detailed in Advisory on GIS mapping of water supply and sewerage project. Conditional assessment and Retrofitting are also important aspects of Asset management which can be referred from Section 2.7.2 & Section 2.10.2 of Chapter 2 and Section 12.7.3 of Chapter 12 in Part A of this manual.",
+              "result": "matches_visual_source"
+            },
+            {
+              "column": 3,
+              "compared_candidate_text": "Apply data, benchmarks, and tools. e.g., Infrastructure asset management processes and frameworks (such as ISO 55000) shall be introduced",
+              "result": "matches_visual_source"
+            },
+            {
+              "column": 4,
+              "compared_candidate_text": "Conduct training and develop talent. Increase formal O&M education and training in the various disciplines by academia, international financial institutions (IFIs), governments and the private sector, and to enhance other forms of knowledge exchange. Actually, the O&M phase itself is an excellent learning environment, as its stability and long-term orientation enable uninterrupted learning curves over a project’s life cycle",
+              "result": "matches_visual_source"
+            }
+          ],
+          "observation": "All five fields compared across p75/p76: grey objective expanded and Build capabilities; whole asset planning paragraph then p76 Proper digital and GIS Asset mapping, Advisory, Conditional assessment and Retrofitting, Section 2.7.2 & Section 2.10.2 of Chapter 2 and Section 12.7.3 of Chapter 12 in Part A. Benchmarks/tools cell includes ISO 55000; full training/education/IFIs/knowledge-exchange paragraph ends project’s life cycle on p75. Last two practice fields have empty continuation layout on p76, not new blank values."
+        },
+        {
+          "row": 8,
+          "pages": [
+            76
+          ],
+          "cells": [
+            {
+              "column": 0,
+              "compared_candidate_text": "Enable O&M best practice",
+              "result": "matches_visual_source"
+            },
+            {
+              "column": 1,
+              "compared_candidate_text": "Reform governance",
+              "result": "matches_visual_source"
+            },
+            {
+              "column": 2,
+              "compared_candidate_text": "Corporatize and professionalize public agencies. It often captures the advantages of a privately run company, including enhanced productivity, streamlined processes, commercial orientation and financial sustainability, while remaining accountable to the public and serving the public interest.",
+              "result": "matches_visual_source"
+            },
+            {
+              "column": 3,
+              "compared_candidate_text": "Foster cooperation between agencies. It involves cultivating a shared vision, mutual respect, and in-depth understanding of each other’s roles.",
+              "result": "matches_visual_source"
+            },
+            {
+              "column": 4,
+              "compared_candidate_text": "Consider private sector participation",
+              "result": "matches_visual_source"
+            }
+          ],
+          "observation": "All five fields compared on p76: grey objective expanded and Reform governance; full corporatize/professionalize paragraph through public interest; agency cooperation paragraph through each other’s roles; Consider private sector participation."
+        }
+      ],
+      "markdown_matches_checked_grid": true,
+      "header_comparisons": [
+        {
+          "column": 0,
+          "text": "Objective (editorial; no printed header)",
+          "result": "correctly_labelled_editorial_no_printed_header"
+        },
+        {
+          "column": 1,
+          "text": "Approach (editorial; no printed header)",
+          "result": "correctly_labelled_editorial_no_printed_header"
+        },
+        {
+          "column": 2,
+          "text": "Practice column 1 (editorial; no printed header)",
+          "result": "correctly_labelled_editorial_no_printed_header"
+        },
+        {
+          "column": 3,
+          "text": "Practice column 2 (editorial; no printed header)",
+          "result": "correctly_labelled_editorial_no_printed_header"
+        },
+        {
+          "column": 4,
+          "text": "Practice column 3 (editorial; no printed header)",
+          "result": "correctly_labelled_editorial_no_printed_header"
+        }
+      ],
+      "cell_spans_compared": [
+        {
+          "row": 0,
+          "column": 0,
+          "row_span": 2,
+          "column_span": 1,
+          "representation": "text repeated in expanded rows"
+        },
+        {
+          "row": 2,
+          "column": 0,
+          "row_span": 2,
+          "column_span": 1,
+          "representation": "text repeated in expanded rows"
+        },
+        {
+          "row": 4,
+          "column": 0,
+          "row_span": 2,
+          "column_span": 1,
+          "representation": "text repeated in expanded rows"
+        },
+        {
+          "row": 6,
+          "column": 0,
+          "row_span": 3,
+          "column_span": 1,
+          "representation": "text repeated in expanded rows"
+        }
+      ],
+      "notes_compared_count": 4
+    }
+  ]
+}

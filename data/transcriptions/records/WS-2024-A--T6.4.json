@@ -1,0 +1,158 @@
+{
+  "schema_version": 1,
+  "id": "WS-2024-A:T6.4",
+  "unit_id": "WS-2024-A:T6.4",
+  "manual_id": "WS-2024-A",
+  "kind": "table",
+  "number": "6.4",
+  "source_sha256": "b60f2fb548357aec676b18ef31e3b37fb0e5e8a1aec8f886880b951113848b0a",
+  "state": "verified",
+  "regions": [
+    {
+      "pdf_page": 373,
+      "page_label": "288",
+      "bbox": [
+        65,
+        156,
+        560,
+        529
+      ],
+      "render_sha256": "4116b0c3c893349642bbb2d1d52766950559b0ff083c9dd06e24083ea9832200"
+    }
+  ],
+  "title": "Recommended Friction Factors* in Darcy-Weisbach Formula",
+  "headers": [
+    "S. No",
+    "Pipe Material",
+    "Diameter(mm) / From",
+    "Diameter(mm) / To",
+    "Friction Factor / New",
+    "Friction Factor / For Design Period of 30 years"
+  ],
+  "rows": [
+    [
+      "1.",
+      "R.C.C.",
+      "100",
+      "2000",
+      "0.01 to 0.02",
+      "0.01 to 0.02"
+    ],
+    [
+      "2.",
+      "A.C.",
+      "50",
+      "1000",
+      "0.01 to 0.02",
+      "0.01 to 0.02"
+    ],
+    [
+      "3.",
+      "HDPE/MPDE",
+      "20",
+      "1200",
+      "0.01 to 0.02",
+      "0.01 to 0.02"
+    ],
+    [
+      "4.",
+      "PVC - U",
+      "20",
+      "630",
+      "0.01 to 0.02",
+      "0.01 to 0.02"
+    ],
+    [
+      "5.",
+      "PVC - O",
+      "63",
+      "1200",
+      "0.01 to 0.02",
+      "0.01 to 0.02"
+    ],
+    [
+      "6.",
+      "PVC - C",
+      "15",
+      "150",
+      "0.01 to 0.02",
+      "0.01 to 0.02"
+    ],
+    [
+      "7.",
+      "Stoneware",
+      "100",
+      "600",
+      "0.01 to 0.02",
+      "0.01 to 0.02"
+    ],
+    [
+      "8.",
+      "C.I. (for corrosive waters)",
+      "100",
+      "1500",
+      "0.01 to 0.02",
+      "0.053 to 0.03"
+    ],
+    [
+      "9.",
+      "C.I. (for non-corrosive waters)",
+      "100",
+      "1500",
+      "0.01 to 0.02",
+      "0.034 to 0.07"
+    ],
+    [
+      "10.",
+      "Cement Mortar or Epoxy Lined metallic pipes (Cast Iron, Ductile Iron, Steel)",
+      "100",
+      "2000",
+      "0.01 to 0.02",
+      "0.01 to 0.02"
+    ],
+    [
+      "11.",
+      "G.I.",
+      "15",
+      "150",
+      "0.014 to 0.03",
+      "0.315 to 0.06"
+    ],
+    [
+      "12.",
+      "PSC",
+      "300",
+      "2600",
+      "0.01 to 0.02",
+      "0.01 to 0.02"
+    ],
+    [
+      "13",
+      "BWSC",
+      "250",
+      "1900",
+      "0.01 to 0.02",
+      "0.01 to 0.02"
+    ]
+  ],
+  "markdown": "| S. No | Pipe Material | Diameter(mm) / From | Diameter(mm) / To | Friction Factor / New | Friction Factor / For Design Period of 30 years |\n| --- | --- | --- | --- | --- | --- |\n| 1. | R.C.C. | 100 | 2000 | 0.01 to 0.02 | 0.01 to 0.02 |\n| 2. | A.C. | 50 | 1000 | 0.01 to 0.02 | 0.01 to 0.02 |\n| 3. | HDPE/MPDE | 20 | 1200 | 0.01 to 0.02 | 0.01 to 0.02 |\n| 4. | PVC - U | 20 | 630 | 0.01 to 0.02 | 0.01 to 0.02 |\n| 5. | PVC - O | 63 | 1200 | 0.01 to 0.02 | 0.01 to 0.02 |\n| 6. | PVC - C | 15 | 150 | 0.01 to 0.02 | 0.01 to 0.02 |\n| 7. | Stoneware | 100 | 600 | 0.01 to 0.02 | 0.01 to 0.02 |\n| 8. | C.I. (for corrosive waters) | 100 | 1500 | 0.01 to 0.02 | 0.053 to 0.03 |\n| 9. | C.I. (for non-corrosive waters) | 100 | 1500 | 0.01 to 0.02 | 0.034 to 0.07 |\n| 10. | Cement Mortar or Epoxy Lined metallic pipes (Cast Iron, Ductile Iron, Steel) | 100 | 2000 | 0.01 to 0.02 | 0.01 to 0.02 |\n| 11. | G.I. | 15 | 150 | 0.014 to 0.03 | 0.315 to 0.06 |\n| 12. | PSC | 300 | 2600 | 0.01 to 0.02 | 0.01 to 0.02 |\n| 13 | BWSC | 250 | 1900 | 0.01 to 0.02 | 0.01 to 0.02 |",
+  "notes": [
+    "* Values of f can also be considered from the Moody’s diagram. Reference be made to IS: 2951 for calculation of head loss due to friction according to Darcy-Weisbach formula.",
+    "Merged numerical cells expanded to each applicable row: New 0.01 to 0.02 spans rows1–10, and both numerical columns span rows12–13 separately; Design 0.01 to 0.02 spans rows1–7.",
+    "SOURCE ANOMALIES: the printed design ranges 0.053 to 0.03 (corrosive C.I.) and 0.315 to 0.06 (G.I.) are retained in that order without decimal correction. Source material string HDPE/MPDE is retained, not changed to MDPE."
+  ],
+  "cell_spans": [],
+  "verification": {
+    "transcription": {
+      "pass_id": "parent-water-math-first-20261108",
+      "method": "direct visual inspection of full rendered source pages; no OCR",
+      "observations": "Direct visual reading of Table 6.4 on physical page 373 (printed 288), including all material/diameter/friction cells, merged New and Design values, printed anomalies and the complete starred Moody’s diagram/IS: 2951 note."
+    },
+    "visual_recheck": {
+      "pass_id": "water-roughness-distinct-recheck-20261108",
+      "method": "Distinct child directly viewed all exact crops and full pages; no OCR; not independent human review.",
+      "observations": "Read caption Table 6.4: Recommended Friction Factors* in Darcy-Weisbach Formula, including its asterisk. Headers are S. No, Pipe Material, Diameter(mm) split From/To, and Friction Factor split New/For Design Period of 30 years. Flattened authored headers preserve the hierarchy. Compared all 78 expanded cells across 13 rows; row-by-row source readings appear below. Serial 13 has no terminal period, unlike 1. through 12. All 26 diameter endpoints match. The New value 0.01 to 0.02 is a single vertically merged cell spanning rows 1–10, including both C.I. rows and the lined-metallic row. Design 0.01 to 0.02 spans rows 1–7 only; row 10 is its own design cell. New and Design each have their own merged cell spanning rows 12–13. Every repeated authored value follows these visible boundaries. HDPE/MPDE is the visible row-3 spelling. PVC - U, PVC - O and PVC - C retain their printed spaced hyphens. Row 9 says non-corrosive; row 10 includes Cement Mortar or Epoxy Lined metallic pipes (Cast Iron, Ductile Iron, Steel), with only layout line breaks removed. Design row 8 visibly reads descending 0.053 to 0.03; row 9 reads 0.034 to 0.07. G.I. New is 0.014 to 0.03 and its Design is descending 0.315 to 0.06. These are source readings; no decimal or range-order repair is warranted. Read the entire starred note: Values of f can also be considered from the Moody’s diagram. Reference be made to IS: 2951 for calculation of head loss due to friction according to Darcy-Weisbach formula. The italic f, apostrophe, reference 2951 and formula name are represented correctly in plain text. The note is included within the pinned crop. All three authored notes match: complete starred note, numerical merge description and source anomalies. Markdown agrees with the same cell readings. The full page shows section 6.5.2 immediately after the note; there is no omitted continuation in the reviewed page.",
+      "content_sha256": "4ab3ccad33d79f6e08a918d28a2227067dd38cba04548d8f5cebc33cea0a5bd3"
+    }
+  }
+}

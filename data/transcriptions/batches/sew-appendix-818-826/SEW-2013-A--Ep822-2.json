@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:Ep822-2",
+  "unit_id": "SEW-2013-A:Ep822-2",
+  "manual_id": "SEW-2013-A",
+  "kind": "equation",
+  "number": "p822-2",
+  "title": "Generalized intensity-duration formula",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "state": "pending",
+  "regions": [
+    {
+      "pdf_page": 822,
+      "page_label": "A - 51",
+      "bbox": [
+        55,
+        350,
+        545,
+        465
+      ],
+      "render_sha256": "c78f0c960e4533d0d81ac91632516774f204f5d5a9e2c906951aa311f217a4d2"
+    }
+  ],
+  "verification": {
+    "transcription": {
+      "pass_id": "sew-818-826-first-reading-2026-11-08",
+      "method": "Direct viewing of full rendered pages and selected enlarged crops; no OCR",
+      "observations": "First visual transcription only. No separate second comparison performed."
+    }
+  },
+  "source_image_refs": [
+    {
+      "path": "tmp/pdfs/sew-appendix-818-826/SEW-2013-A--Ep822-2.png",
+      "role": "first-reading source crop"
+    }
+  ],
+  "parent_id": "SEW-2013-A:A3.1",
+  "latex": "i=\\frac{a}{t^n}",
+  "readable": "i = a/t^n.",
+  "symbols": [
+    {
+      "symbol": "i",
+      "definition": "Intensity of rainfall in mm/hr"
+    },
+    {
+      "symbol": "t",
+      "definition": "Duration in minutes"
+    },
+    {
+      "symbol": "a, n",
+      "definition": "Constants"
+    }
+  ],
+  "applicability": "Worked example in Appendix A3.1",
+  "notes": [
+    "Unnumbered expression; Ep<physical-page>-<sequence> is a service locator, not a printed equation number."
+  ]
+}

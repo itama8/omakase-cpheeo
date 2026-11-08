@@ -1,0 +1,15 @@
+{
+  "candidates": 28,
+  "kinds": {
+    "table": 6,
+    "equation": 22
+  },
+  "pending": 28,
+  "verified": 0,
+  "region_hashes_checked": 28,
+  "existing_targets_checked": 26,
+  "blocked_unindexed_table_drafts": 2,
+  "second_visual_inspection": false,
+  "table_body_rows": 32,
+  "result": "structural checks passed; not visual verification"
+}

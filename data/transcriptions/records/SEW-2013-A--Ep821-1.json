@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:Ep821-1",
+  "unit_id": "SEW-2013-A:Ep821-1",
+  "manual_id": "SEW-2013-A",
+  "kind": "equation",
+  "number": "p821-1",
+  "title": "Storm sewer example basic data",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "state": "verified",
+  "regions": [
+    {
+      "pdf_page": 821,
+      "page_label": "A - 50",
+      "bbox": [
+        50,
+        193,
+        545,
+        351
+      ],
+      "render_sha256": "7073d81f210a7163bb1989b4e27bd46b952849397d4e0e07b5dc273b0955f102"
+    }
+  ],
+  "verification": {
+    "transcription": {
+      "pass_id": "sew-818-826-first-reading-2026-11-08",
+      "method": "Direct viewing of full rendered pages and selected enlarged crops; no OCR",
+      "observations": "First visual transcription only. No separate second comparison performed."
+    },
+    "visual_recheck": {
+      "pass_id": "appendix818-826-distinct-recheck-20261108",
+      "method": "Distinct child directly viewed exact crops and full pages; parent directly viewed revised regions for four corrected records; no OCR; not independent human review.",
+      "observations": "Imperviousness .7/.2; inlet times 8/15 minutes; minimum velocity .8 mps; minimum cover .5 metres; one-year storm, Table 3.7 and Manning chart context match. Built area subscript is b; lawns subscript visibly has the foot and angled head of numeral 1, not letter l. Candidate t_l in LaTeX and readable text requires correction to t_1. Parent inspected corrected exact crop; replaced t_l with printed t_1, corrected related note, or expanded clipped subtraction crop as applicable. All reported objections for this record resolved.",
+      "content_sha256": "86ad546a7b9ac6ad87a3ce28361312473f99398e3cd68a357520b01e3fb4d31e"
+    }
+  },
+  "source_image_refs": [
+    {
+      "path": "tmp/pdfs/sew-appendix-818-826/SEW-2013-A--Ep821-1.png",
+      "role": "first-reading source crop"
+    }
+  ],
+  "parent_id": "SEW-2013-A:A3.1",
+  "latex": "\\text{Imperviousness: built/paved}=0.7;\\ \\text{open/lawns}=0.2;\\ t_b=8\\text{ min};\\ t_1=15\\text{ min};\\ v_{\\min}=0.8\\text{ mps};\\ \\text{cover}_{\\min}=0.5\\text{ m}",
+  "readable": "Basic data: built up and paved area imperviousness 0.7; open space, lawns, etc. 0.2; inlet time built up and paved area (t_b) 8 minutes; open space, lawns (t_1) 15 minutes; minimum velocity in sewer 0.8 mps; minimum depth of cover above crown 0.5 metres. Rainfall intensity = consider one year storm as area is central and high priced; use Table 3.7 and Manning’s chart.",
+  "symbols": [],
+  "applicability": "Worked example in Appendix A3.1",
+  "notes": [
+    "Unnumbered expression; Ep<physical-page>-<sequence> is a service locator, not a printed equation number."
+  ]
+}

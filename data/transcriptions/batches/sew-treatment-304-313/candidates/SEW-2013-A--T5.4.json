@@ -1,0 +1,129 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:T5.4",
+  "unit_id": "SEW-2013-A:T5.4",
+  "manual_id": "SEW-2013-A",
+  "kind": "table",
+  "number": "5.4",
+  "title": "Concentration of various parameters in the absence of drain or outfall",
+  "state": "pending",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "regions": [
+    {
+      "pdf_page": 311,
+      "page_label": "5 - 7",
+      "bbox": [
+        80,
+        439,
+        515,
+        783
+      ],
+      "render_sha256": "4b6df1e301107cad0405a194fba18b73eedfd8084ef4575dea71eec4b21f7e8d"
+    },
+    {
+      "pdf_page": 312,
+      "page_label": "5 - 8",
+      "bbox": [
+        50,
+        70,
+        548,
+        359
+      ],
+      "render_sha256": "b56abc70734503307afaa373f60c086d151200dc2236318a93b511d633b2907b"
+    }
+  ],
+  "headers": [
+    "Item (1)",
+    "Per capita contribution (g / c /d) (2)",
+    "water supply (L / c / d) (3)",
+    "Sewage Generation 80 % of (3) (4)",
+    "Concentration (mg/L) (5)"
+  ],
+  "rows": [
+    [
+      "BOD",
+      "27.0",
+      "135",
+      "108",
+      "250.0"
+    ],
+    [
+      "COD",
+      "45.9",
+      "135",
+      "108",
+      "425.0"
+    ],
+    [
+      "TSS",
+      "40.5",
+      "135",
+      "108",
+      "375.0"
+    ],
+    [
+      "VSS",
+      "28.4",
+      "135",
+      "108",
+      "262.5"
+    ],
+    [
+      "Total Nitrogen",
+      "5.4",
+      "135",
+      "108",
+      "50.0"
+    ],
+    [
+      "Organic Nitrogen",
+      "1.4",
+      "135",
+      "108",
+      "12.5"
+    ],
+    [
+      "Ammonia Nitrogen",
+      "3.5",
+      "135",
+      "108",
+      "32.5"
+    ],
+    [
+      "Nitrate Nitrogen",
+      "0.5",
+      "135",
+      "108",
+      "5.0"
+    ],
+    [
+      "Total Phosphorus",
+      "0.8",
+      "135",
+      "108",
+      "7.1"
+    ],
+    [
+      "Ortho Phosphorus",
+      "0.5",
+      "135",
+      "108",
+      "5.0"
+    ]
+  ],
+  "markdown": "| Item (1) | Per capita contribution (g / c /d) (2) | water supply (L / c / d) (3) | Sewage Generation 80 % of (3) (4) | Concentration (mg/L) (5) |\n| --- | --- | --- | --- | --- |\n| BOD | 27.0 | 135 | 108 | 250.0 |\n| COD | 45.9 | 135 | 108 | 425.0 |\n| TSS | 40.5 | 135 | 108 | 375.0 |\n| VSS | 28.4 | 135 | 108 | 262.5 |\n| Total Nitrogen | 5.4 | 135 | 108 | 50.0 |\n| Organic Nitrogen | 1.4 | 135 | 108 | 12.5 |\n| Ammonia Nitrogen | 3.5 | 135 | 108 | 32.5 |\n| Nitrate Nitrogen | 0.5 | 135 | 108 | 5.0 |\n| Total Phosphorus | 0.8 | 135 | 108 | 7.1 |\n| Ortho Phosphorus | 0.5 | 135 | 108 | 5.0 |",
+  "notes": [
+    "Two printed header rows are combined in the string headers; column references (1)-(5) retained.",
+    "Page 311: in the absence of drain or outfall, Table 5.4 can be referred for new developments for 135 L/cap /day rate of water supply; depending on rate of water supply concentrations can be forecast.",
+    "Page 312: Table 5.1 is retained as a historical value; Table 5-4 will be followed for design of biological STPs.",
+    "Page 312 reasons: list parameters directly relevant to biological BOD removal; total organic carbon, grit, grease, alkalinity, chlorides, nitrite, nitrate, potassium are said not to influence biological treatment for BOD removal; reduction of coliforms, streptococci, salmonella, protozoa, helminths and virus is incidental and not specifically designed for.",
+    "Printed BOD illustration retained separately as Ep311-1, without repairing operator grouping. Printed nutrient ratios retained as Ep312-1 and Ep312-2."
+  ],
+  "verification": {
+    "transcription": {
+      "pass_id": "sew-treatment-304-313-first-reading",
+      "method": "Direct visual reading of full annotation-cleaned 144 dpi page PNGs and specified 288 dpi details; no OCR",
+      "observations": "First reading only. Source spelling, numbers, powers, punctuation and discrepancies retained. No distinct second inspection performed."
+    }
+  }
+}

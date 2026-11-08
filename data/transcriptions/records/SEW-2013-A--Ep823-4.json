@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:Ep823-4",
+  "unit_id": "SEW-2013-A:Ep823-4",
+  "manual_id": "SEW-2013-A",
+  "kind": "equation",
+  "number": "p823-4",
+  "title": "Column 20 fall calculation",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "state": "verified",
+  "regions": [
+    {
+      "pdf_page": 823,
+      "page_label": "A - 52",
+      "bbox": [
+        50,
+        684,
+        545,
+        700
+      ],
+      "render_sha256": "a3004775a6d72b9d5cc8d2d30df9679aabd418afd100f405c449d5c774d39936"
+    }
+  ],
+  "verification": {
+    "transcription": {
+      "pass_id": "sew-818-826-first-reading-2026-11-08",
+      "method": "Direct viewing of full rendered pages and selected enlarged crops; no OCR",
+      "observations": "First visual transcription only. No separate second comparison performed."
+    },
+    "visual_recheck": {
+      "pass_id": "appendix818-826-distinct-recheck-20261108",
+      "method": "Distinct child directly viewed exact crops and full pages; parent directly viewed revised regions for four corrected records; no OCR; not independent human review.",
+      "observations": "Column 20 = Col.19 × Col.16. Both column numbers and multiplication sign match; no division introduced to repair unit handling.",
+      "content_sha256": "b1ad2c1bc1041b912e1822b54cd361ca919d94fa3decca55793c2beb6c098c5d"
+    }
+  },
+  "source_image_refs": [
+    {
+      "path": "tmp/pdfs/sew-appendix-818-826/SEW-2013-A--Ep823-4.png",
+      "role": "first-reading source crop"
+    }
+  ],
+  "parent_id": "SEW-2013-A:A3.1",
+  "latex": "\\mathrm{Col.20}=\\mathrm{Col.19}\\times\\mathrm{Col.16}",
+  "readable": "Column 20 = Col.19 × Col.16.",
+  "symbols": [],
+  "applicability": "Worked example in Appendix A3.1",
+  "notes": [
+    "Unnumbered expression; Ep<physical-page>-<sequence> is a service locator, not a printed equation number."
+  ]
+}

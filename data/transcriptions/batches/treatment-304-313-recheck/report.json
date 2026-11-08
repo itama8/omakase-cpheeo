@@ -1,0 +1,2122 @@
+{
+  "schema_version": 1,
+  "pass_id": "treatment-304-313-separate-direct-visual-recheck-2026-11-08",
+  "reviewer": "Current assistant, separate direct second visual comparison; not an independent human review",
+  "reviewed_at": "2026-11-08T08:42:05.871872+00:00",
+  "manual_id": "SEW-2013-A",
+  "physical_pages": [
+    304,
+    313
+  ],
+  "source_pdf": "/home/a2ajinkya/Downloads/CPHEEO/Seweage CPHEEO.pdf",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "instructions_read": [
+    "data/transcriptions/batches/sew-treatment-304-313/REPORT.md",
+    "data/transcriptions/batches/sew-treatment-304-313/page-report.json",
+    "docs/visual-transcriptions.md",
+    "/home/a2ajinkya/.codex/plugins/cache/openai-primary-runtime/pdf/26.923.10815/skills/pdf/SKILL.md"
+  ],
+  "method": {
+    "rendering": "Production open_clean removes annotations in memory; full pages at 144 dpi, exact record bboxes via region_png at 144 dpi, details at 288 dpi. Fresh document per final pinned region.",
+    "inspection": "All ten full-page images, all 17 final exact pinned-region images, and eight detail images were actually opened using view_image. Compared JSON fields directly to visible glyphs, every table header and normalized cell, notes including A-K, chemical digits, formula symbols, case, powers and units. No OCR or extracted PDF text used as visual proof.",
+    "scope": "14 pending files (13 candidates plus T5.1 draft); report only, no edits, seals, application, DB access, ledger changes, commit or delegation. Scratch renders are outside the repository in /tmp.",
+    "render_order_observation": "Rendering full pages before crops in one document caused five page-309 hash mismatches; repeated identical page-312 clip rendered only In for Ep312-2. All exact regions rerendered on freshly opened annotation-cleaned documents to remove render-order effects.",
+    "render_order_conclusion": "All 17 hashes match on a fresh open_clean document per crop. Initial failures are observed render-order effects, not evidence of source drift. Underlying renderer cause not established; shared-document repeated-render stability is not certified."
+  },
+  "summary": {
+    "records_rechecked": 14,
+    "exact_regions_rechecked": 17,
+    "final_region_hashes_matching": 17,
+    "full_pages_viewed": 10,
+    "table_rows_compared": 88,
+    "table_body_cells_compared": 432,
+    "table_header_cells_compared": 19,
+    "numeric_cell_corrections": 0,
+    "formula_numeric_or_symbol_corrections": 0,
+    "fidelity": "Scoped table grids and stated mathematical expressions match the source. The batch is not a complete transcription of all diagram content. T5.1 contains an obsolete administrative blocker note. Partial LaTeX representations omit content retained in readable fields. No record was sealed.",
+    "all_record_states_left_pending": true
+  },
+  "full_page_evidence": [
+    {
+      "path": "/tmp/treatment-304-313-recheck/page-304.png",
+      "sha256": "f0df155696d358339b4155adc62e3f2a3db35225450031ee6ca237c76ee441a6",
+      "pdf_page": 304,
+      "bbox": [
+        0.0,
+        0.0,
+        595.2760009765625,
+        841.8900146484375
+      ],
+      "dpi": 144,
+      "actually_viewed": true
+    },
+    {
+      "path": "/tmp/treatment-304-313-recheck/page-305.png",
+      "sha256": "c946862a6cbc667e9420532ceb391bf371ba4f67fe751e95436db76c9978646d",
+      "pdf_page": 305,
+      "bbox": [
+        0.0,
+        0.0,
+        595.2760009765625,
+        841.8900146484375
+      ],
+      "dpi": 144,
+      "actually_viewed": true
+    },
+    {
+      "path": "/tmp/treatment-304-313-recheck/page-306.png",
+      "sha256": "cc77b0473d4dd2ff7e9133c0928b5b6e30a13d5cb52144cec544259096c56663",
+      "pdf_page": 306,
+      "bbox": [
+        0.0,
+        0.0,
+        595.2760009765625,
+        841.8900146484375
+      ],
+      "dpi": 144,
+      "actually_viewed": true
+    },
+    {
+      "path": "/tmp/treatment-304-313-recheck/page-307.png",
+      "sha256": "b99c44ecf15c9f9cfed9cdb3754d985df5446185758f6aa1594d4b2e375d1422",
+      "pdf_page": 307,
+      "bbox": [
+        0.0,
+        0.0,
+        595.2760009765625,
+        841.8900146484375
+      ],
+      "dpi": 144,
+      "actually_viewed": true
+    },
+    {
+      "path": "/tmp/treatment-304-313-recheck/page-308.png",
+      "sha256": "d9ae1c40531361ccf9721d8f7b02ee150848a32d689a910b118210e174f02bb5",
+      "pdf_page": 308,
+      "bbox": [
+        0.0,
+        0.0,
+        595.2760009765625,
+        841.8900146484375
+      ],
+      "dpi": 144,
+      "actually_viewed": true
+    },
+    {
+      "path": "/tmp/treatment-304-313-recheck/page-309.png",
+      "sha256": "4a04b4fbd06b7ead5b7bd8998eb78543956b63713337dd774242f15a473eb59a",
+      "pdf_page": 309,
+      "bbox": [
+        0.0,
+        0.0,
+        595.2760009765625,
+        841.8900146484375
+      ],
+      "dpi": 144,
+      "actually_viewed": true
+    },
+    {
+      "path": "/tmp/treatment-304-313-recheck/page-310.png",
+      "sha256": "92c1458054150fef4fe2de372e9c61536a2ca2c3e87d7f530cd4a3c1f1f98512",
+      "pdf_page": 310,
+      "bbox": [
+        0.0,
+        0.0,
+        595.2760009765625,
+        841.8900146484375
+      ],
+      "dpi": 144,
+      "actually_viewed": true
+    },
+    {
+      "path": "/tmp/treatment-304-313-recheck/page-311.png",
+      "sha256": "4024fd6f3336fd45cc5b3b001cf63661483e449a7a8f853cc84d4435a5e288ad",
+      "pdf_page": 311,
+      "bbox": [
+        0.0,
+        0.0,
+        595.2760009765625,
+        841.8900146484375
+      ],
+      "dpi": 144,
+      "actually_viewed": true
+    },
+    {
+      "path": "/tmp/treatment-304-313-recheck/page-312.png",
+      "sha256": "884954f2c071ea8c1785a22d73fb7dabee8d9d454f654df29c4a898df1aee109",
+      "pdf_page": 312,
+      "bbox": [
+        0.0,
+        0.0,
+        595.2760009765625,
+        841.8900146484375
+      ],
+      "dpi": 144,
+      "actually_viewed": true
+    },
+    {
+      "path": "/tmp/treatment-304-313-recheck/page-313.png",
+      "sha256": "b6b3ec6e415e7814456c6a06c71c368a00efba7449d84e18829eb9238f2dec1e",
+      "pdf_page": 313,
+      "bbox": [
+        0.0,
+        0.0,
+        595.2760009765625,
+        841.8900146484375
+      ],
+      "dpi": 144,
+      "actually_viewed": true
+    }
+  ],
+  "detail_evidence": [
+    {
+      "path": "/tmp/treatment-304-313-recheck/detail-305.png",
+      "sha256": "f74f162629af3f0f7c4844762bca392aea2f355d90003940bc4233ed1efe2ea0",
+      "pdf_page": 305,
+      "bbox": [
+        55,
+        215,
+        547,
+        710
+      ],
+      "dpi": 288,
+      "actually_viewed": true,
+      "limitation": null
+    },
+    {
+      "path": "/tmp/treatment-304-313-recheck/detail-306.png",
+      "sha256": "fff7c08a1d559d6959dee9aec469965b76d21e17cd0aacd667b5f4ed55dd1177",
+      "pdf_page": 306,
+      "bbox": [
+        50,
+        71,
+        547,
+        765
+      ],
+      "dpi": 288,
+      "actually_viewed": true,
+      "limitation": null
+    },
+    {
+      "path": "/tmp/treatment-304-313-recheck/detail-307.png",
+      "sha256": "cb70c3a5b4428ef07e8cfda93b582cec8031314f6866d4d1e2782946bb01af15",
+      "pdf_page": 307,
+      "bbox": [
+        50,
+        70,
+        548,
+        780
+      ],
+      "dpi": 288,
+      "actually_viewed": true,
+      "limitation": null
+    },
+    {
+      "path": "/tmp/treatment-304-313-recheck/detail-308.png",
+      "sha256": "f6c947eae0fe13c02ec42921482f01ce3643d868e912a79283f4c3d8cd7a0abd",
+      "pdf_page": 308,
+      "bbox": [
+        50,
+        70,
+        548,
+        440
+      ],
+      "dpi": 288,
+      "actually_viewed": true,
+      "limitation": null
+    },
+    {
+      "path": "/tmp/treatment-304-313-recheck/detail-309.png",
+      "sha256": "68e7e1ed366f63e1f26681dd50da9a952b556308ab5ac5b5b3d017e38483e40d",
+      "pdf_page": 309,
+      "bbox": [
+        95,
+        80,
+        500,
+        765
+      ],
+      "dpi": 288,
+      "actually_viewed": true,
+      "limitation": null
+    },
+    {
+      "path": "/tmp/treatment-304-313-recheck/detail-310.png",
+      "sha256": "7effdf6fdc987b73d25a3432609e782ca6cfca7484d44ce2afa71e95bd2adbbc",
+      "pdf_page": 310,
+      "bbox": [
+        80,
+        70,
+        520,
+        410
+      ],
+      "dpi": 288,
+      "actually_viewed": true,
+      "limitation": "Initial detail-310 crop ends before bottom pathway; detail-310-complete separately covers full diagram."
+    },
+    {
+      "path": "/tmp/treatment-304-313-recheck/detail-311.png",
+      "sha256": "d8ece9efa78fcfc0b762a2396d54eb36af8b88daa2638e987eec333084f4eef6",
+      "pdf_page": 311,
+      "bbox": [
+        50,
+        430,
+        548,
+        785
+      ],
+      "dpi": 288,
+      "actually_viewed": true,
+      "limitation": null
+    },
+    {
+      "path": "/tmp/treatment-304-313-recheck/detail-310-complete.png",
+      "sha256": "cbd66dec549689dac3a17f2ce837c55bd5cd489bf0a8ae43291b442eea29fc49",
+      "pdf_page": 310,
+      "bbox": [
+        108,
+        240,
+        482,
+        463
+      ],
+      "dpi": 288,
+      "actually_viewed": true,
+      "limitation": null
+    }
+  ],
+  "records": [
+    {
+      "id": "SEW-2013-A:Ep309-1",
+      "record_path": "data/transcriptions/batches/sew-treatment-304-313/candidates/SEW-2013-A--Ep309-1.json",
+      "content_digest": "7f36c1d55a2aa2fb4d05bee633bbd0394917fd599d10b670382f7eccb2c35229",
+      "digest_algorithm": "omakase_cpheeo.transcriptions.content_digest (SHA-256 canonical authored content excluding state, verification and source_image_refs)",
+      "state_observed": "pending",
+      "result": "matches_scoped_content",
+      "image_evidence": [
+        {
+          "path": "/tmp/treatment-304-313-recheck/SEW-2013-A--Ep309-1-region-0.png",
+          "sha256": "d53f8c86ebbf985246418e9def7a653bf52a3a9bf6943eeeecfa23e3fe8c108d",
+          "pdf_page": 309,
+          "bbox": [
+            95,
+            80,
+            490,
+            287
+          ],
+          "dpi": 144,
+          "pinned_hash_matches": true,
+          "initial_sha256": "9e4e3a20c8ab6325bd224f03ca1affd7fcb6227680e910b5f3869bb33db7793a",
+          "initial_pinned_hash_matches": false,
+          "pinned_sha256": "d53f8c86ebbf985246418e9def7a653bf52a3a9bf6943eeeecfa23e3fe8c108d",
+          "actually_viewed": true
+        }
+      ],
+      "full_page_evidence": [
+        "/tmp/treatment-304-313-recheck/page-309.png"
+      ],
+      "detail_evidence": [
+        "/tmp/treatment-304-313-recheck/detail-309.png"
+      ],
+      "observations": [
+        "Oxygen (1-1.42Y) matches minus, decimal and uppercase Y; Y appears on Bio-synthesis branch. No printed units or further definition invented.",
+        "This is the oxygen label, not a transcription of the entire Figure 5.1."
+      ],
+      "corrections": [],
+      "omissions": [
+        {
+          "scope": "surrounding Figure 5.1 labels, outside narrow oxygen-expression claim",
+          "printed": "CO₂, H₂O, NH₃, Energy, etc.",
+          "location": "Bio-oxidation product branch",
+          "recommendation": "Add source-labelled diagram context if full diagram coverage is intended; do not invent equality or reaction stoichiometry."
+        }
+      ]
+    },
+    {
+      "id": "SEW-2013-A:Ep309-2",
+      "record_path": "data/transcriptions/batches/sew-treatment-304-313/candidates/SEW-2013-A--Ep309-2.json",
+      "content_digest": "186b5de2d6e827a17c55efcee5abc749463c17767db3e593a6039c1eb6993023",
+      "digest_algorithm": "omakase_cpheeo.transcriptions.content_digest (SHA-256 canonical authored content excluding state, verification and source_image_refs)",
+      "state_observed": "pending",
+      "result": "matches_scoped_content",
+      "image_evidence": [
+        {
+          "path": "/tmp/treatment-304-313-recheck/SEW-2013-A--Ep309-2-region-0.png",
+          "sha256": "ceadb74a6956ea6cc7cf708382f6cca55f699b082805ed0924b94c66ed56913f",
+          "pdf_page": 309,
+          "bbox": [
+            245,
+            182,
+            490,
+            260
+          ],
+          "dpi": 144,
+          "pinned_hash_matches": true,
+          "initial_sha256": "1f07bc523615dbbc44d1de5dddcda0bb87e4b733dc05268575bf69b7db9be8a3",
+          "initial_pinned_hash_matches": false,
+          "pinned_sha256": "ceadb74a6956ea6cc7cf708382f6cca55f699b082805ed0924b94c66ed56913f",
+          "actually_viewed": true
+        }
+      ],
+      "full_page_evidence": [
+        "/tmp/treatment-304-313-recheck/page-309.png"
+      ],
+      "detail_evidence": [
+        "/tmp/treatment-304-313-recheck/detail-309.png"
+      ],
+      "observations": [
+        "Oxygen (1.42K_d) uses uppercase K; the auto-oxidation arrow uses lowercase k_d. Both d characters are subscripts. Candidate preserves distinction and lack of rate units."
+      ],
+      "corrections": [],
+      "omissions": [
+        {
+          "scope": "surrounding Figure 5.1 labels, outside narrow oxygen-expression claim",
+          "printed": "CO₂, H₂O, NH₃, Energy, etc",
+          "location": "Auto-oxidation product branch",
+          "recommendation": "Add source-labelled diagram context if full diagram coverage is intended; do not invent equality or reaction stoichiometry."
+        }
+      ]
+    },
+    {
+      "id": "SEW-2013-A:Ep309-3",
+      "record_path": "data/transcriptions/batches/sew-treatment-304-313/candidates/SEW-2013-A--Ep309-3.json",
+      "content_digest": "2016c05b29e492f48a44398c92faefacdb83b0d5e4140d49c526645a30c29480",
+      "digest_algorithm": "omakase_cpheeo.transcriptions.content_digest (SHA-256 canonical authored content excluding state, verification and source_image_refs)",
+      "state_observed": "pending",
+      "result": "matches_scoped_content",
+      "image_evidence": [
+        {
+          "path": "/tmp/treatment-304-313-recheck/SEW-2013-A--Ep309-3-region-0.png",
+          "sha256": "31b80709f4230a5816d270df0e369ae60cf34e237ad5ccba13613b6142dde2cd",
+          "pdf_page": 309,
+          "bbox": [
+            175,
+            287,
+            380,
+            340
+          ],
+          "dpi": 144,
+          "pinned_hash_matches": true,
+          "initial_sha256": "a545c5f98e899000925ff64c562018530dc537cab9c3cc79c58110e9af722db7",
+          "initial_pinned_hash_matches": false,
+          "pinned_sha256": "31b80709f4230a5816d270df0e369ae60cf34e237ad5ccba13613b6142dde2cd",
+          "actually_viewed": true
+        }
+      ],
+      "full_page_evidence": [
+        "/tmp/treatment-304-313-recheck/page-309.png"
+      ],
+      "detail_evidence": [
+        "/tmp/treatment-304-313-recheck/detail-309.png"
+      ],
+      "observations": [
+        "ammonia to nitrite uses Oxygen (3.43 g/g); nitrite to nitrate uses Oxygen (1.14 g/g). Order, both decimal strings and g/g units match. Candidate arrows express printed connecting pathway; no balanced reaction inferred."
+      ],
+      "corrections": [],
+      "omissions": []
+    },
+    {
+      "id": "SEW-2013-A:Ep309-4",
+      "record_path": "data/transcriptions/batches/sew-treatment-304-313/candidates/SEW-2013-A--Ep309-4.json",
+      "content_digest": "e4f3941551965c7eb59411876be290663c6f976cb952fbeeb9298ae2bf41e432",
+      "digest_algorithm": "omakase_cpheeo.transcriptions.content_digest (SHA-256 canonical authored content excluding state, verification and source_image_refs)",
+      "state_observed": "pending",
+      "result": "matches_scoped_content",
+      "image_evidence": [
+        {
+          "path": "/tmp/treatment-304-313-recheck/SEW-2013-A--Ep309-4-region-0.png",
+          "sha256": "01dfd1da75034c0dec0b92389bf21c16b7ffde5e752c40586c80f1d849c825bd",
+          "pdf_page": 309,
+          "bbox": [
+            112,
+            258,
+            484,
+            285
+          ],
+          "dpi": 144,
+          "pinned_hash_matches": true,
+          "initial_sha256": "2db11a048ed752b07eb51dddee6489676ccd2fdf79dcb6e205b4e5c099e02bf8",
+          "initial_pinned_hash_matches": false,
+          "pinned_sha256": "01dfd1da75034c0dec0b92389bf21c16b7ffde5e752c40586c80f1d849c825bd",
+          "actually_viewed": true
+        }
+      ],
+      "full_page_evidence": [
+        "/tmp/treatment-304-313-recheck/page-309.png"
+      ],
+      "detail_evidence": [
+        "/tmp/treatment-304-313-recheck/detail-309.png"
+      ],
+      "observations": [
+        "Exact verbal sum matches: Carbonaceous BOD is the sum of oxygen utilized during biooxidation of the organic matter and during auto oxidation of the microbial biomass. No invented symbolic equality."
+      ],
+      "corrections": [],
+      "omissions": []
+    },
+    {
+      "id": "SEW-2013-A:Ep309-5",
+      "record_path": "data/transcriptions/batches/sew-treatment-304-313/candidates/SEW-2013-A--Ep309-5.json",
+      "content_digest": "4e355cb692b52da2502c448a6232fe06ff8bb6659e64802f33976d34bce7b863",
+      "digest_algorithm": "omakase_cpheeo.transcriptions.content_digest (SHA-256 canonical authored content excluding state, verification and source_image_refs)",
+      "state_observed": "pending",
+      "result": "matches_scoped_content",
+      "image_evidence": [
+        {
+          "path": "/tmp/treatment-304-313-recheck/SEW-2013-A--Ep309-5-region-0.png",
+          "sha256": "7ccd8dfa472349cec74a4a8d363b62753a17c8da26c28df549104b66f44d8981",
+          "pdf_page": 309,
+          "bbox": [
+            123,
+            341,
+            467,
+            370
+          ],
+          "dpi": 144,
+          "pinned_hash_matches": true,
+          "initial_sha256": "5bef6b393bc565b94e6d779917b61117b89bed47457799d4af8659e5552e7ada",
+          "initial_pinned_hash_matches": false,
+          "pinned_sha256": "7ccd8dfa472349cec74a4a8d363b62753a17c8da26c28df549104b66f44d8981",
+          "actually_viewed": true
+        }
+      ],
+      "full_page_evidence": [
+        "/tmp/treatment-304-313-recheck/page-309.png"
+      ],
+      "detail_evidence": [
+        "/tmp/treatment-304-313-recheck/detail-309.png"
+      ],
+      "observations": [
+        "Exact verbal sum matches, including unusual omission of of after sum: Nitrogenous BOD is the sum oxygen utilized during nitrification of Ammoniacal-N to Nitrite-N and Nitrite-N to Nitrate-N."
+      ],
+      "corrections": [],
+      "omissions": []
+    },
+    {
+      "id": "SEW-2013-A:Ep309-6",
+      "record_path": "data/transcriptions/batches/sew-treatment-304-313/candidates/SEW-2013-A--Ep309-6.json",
+      "content_digest": "e84fede03eeb8eae7c641ab5bd85d2a9c174471a9c1832140d5b4f52f8a5dafc",
+      "digest_algorithm": "omakase_cpheeo.transcriptions.content_digest (SHA-256 canonical authored content excluding state, verification and source_image_refs)",
+      "state_observed": "pending",
+      "result": "matches_scoped_content",
+      "image_evidence": [
+        {
+          "path": "/tmp/treatment-304-313-recheck/SEW-2013-A--Ep309-6-region-0.png",
+          "sha256": "069944f8d7f4beeb090cb293003114ccf1f4e733c8af7fa9d68b99909f46cb5c",
+          "pdf_page": 309,
+          "bbox": [
+            96,
+            438,
+            497,
+            720
+          ],
+          "dpi": 144,
+          "pinned_hash_matches": true,
+          "initial_sha256": "069944f8d7f4beeb090cb293003114ccf1f4e733c8af7fa9d68b99909f46cb5c",
+          "initial_pinned_hash_matches": true,
+          "pinned_sha256": "069944f8d7f4beeb090cb293003114ccf1f4e733c8af7fa9d68b99909f46cb5c",
+          "actually_viewed": true
+        }
+      ],
+      "full_page_evidence": [
+        "/tmp/treatment-304-313-recheck/page-309.png"
+      ],
+      "detail_evidence": [
+        "/tmp/treatment-304-313-recheck/detail-309.png"
+      ],
+      "observations": [
+        "Y branch, CH₄/H₂O/H₂S/NH₃ bio-reduction list, Energy, etc., CH₄/H₂O/NH₃ digestion list, unchanged ammonia chain, carbonaceous BOD verbal sum and methane/hydrogen-sulphide explanation match readable/notes. Trailing digestion comma is explicitly noted.",
+        "The LaTeX field is an abbreviated collection of labels: it omits Energy, etc., the verbal BOD sum, and the explanatory note already retained in readable/notes. It must not be presented as the complete Figure 5.2 transcription."
+      ],
+      "corrections": [],
+      "omissions": [
+        {
+          "field": "latex",
+          "printed": "Energy, etc.; Carbonaceous BOD is the sum of oxygen otherwise needed during biooxidation of organic matter",
+          "retained_elsewhere": true,
+          "recommendation": "Describe LaTeX as partial or include the omitted printed verbal content; readable and notes already retain it."
+        }
+      ]
+    },
+    {
+      "id": "SEW-2013-A:Ep310-1",
+      "record_path": "data/transcriptions/batches/sew-treatment-304-313/candidates/SEW-2013-A--Ep310-1.json",
+      "content_digest": "4d2727c02b7dd8cf9b9b15a8b65b535d3e65084b8a513c52628c9a42c1793142",
+      "digest_algorithm": "omakase_cpheeo.transcriptions.content_digest (SHA-256 canonical authored content excluding state, verification and source_image_refs)",
+      "state_observed": "pending",
+      "result": "matches_scoped_content",
+      "image_evidence": [
+        {
+          "path": "/tmp/treatment-304-313-recheck/SEW-2013-A--Ep310-1-region-0.png",
+          "sha256": "eb939e114ad5edc4347683539df4c1cba39f4cb8faf4b23def7a63eaa956f48f",
+          "pdf_page": 310,
+          "bbox": [
+            108,
+            240,
+            482,
+            463
+          ],
+          "dpi": 144,
+          "pinned_hash_matches": true,
+          "initial_sha256": "eb939e114ad5edc4347683539df4c1cba39f4cb8faf4b23def7a63eaa956f48f",
+          "initial_pinned_hash_matches": true,
+          "pinned_sha256": "eb939e114ad5edc4347683539df4c1cba39f4cb8faf4b23def7a63eaa956f48f",
+          "actually_viewed": true
+        }
+      ],
+      "full_page_evidence": [
+        "/tmp/treatment-304-313-recheck/page-310.png"
+      ],
+      "detail_evidence": [
+        "/tmp/treatment-304-313-recheck/detail-310.png",
+        "/tmp/treatment-304-313-recheck/detail-310-complete.png"
+      ],
+      "observations": [
+        "Full Figure 5.3 checked at detail including bottom pathway: O₂; CO₂ + NH₃ + PO₄; ORGANICS to ORGANIC ACIDS ETC. to CH₄ + CO₂ + NH₃. No phosphate charge or balanced-reaction coefficients printed or added.",
+        "Readable includes O₂ and surface CO₂/O₂; LaTeX omits O₂. Other flowchart labels are omitted from both representations. Chemical subscript typography in the authored string is a representation normalization of the image labels, not a new chemical charge."
+      ],
+      "corrections": [],
+      "omissions": [
+        {
+          "field": "latex",
+          "printed": "O₂",
+          "retained_elsewhere": true,
+          "recommendation": "Include \\mathrm{O_2} if LaTeX is intended to mirror all chemical labels already in readable."
+        },
+        {
+          "scope": "remaining Figure5.3 flowchart text",
+          "printed": [
+            "SUNLIGHT",
+            "OTHER GASES",
+            "NEW CELLS",
+            "ALGAL",
+            "DEAD CELLS",
+            "RAW WASTES",
+            "SETTLEABLE SOLIDS",
+            "BACTERIA",
+            "FACULTATIVE",
+            "EFFLUENT + ALGAL & BACTERIAL CELLS",
+            "SETTLED SLUDGE",
+            "MICROBES",
+            "AEROBIC",
+            "ANAEROBIC CONDITION"
+          ],
+          "retained_elsewhere": false,
+          "recommendation": "Explicitly call this a chemical-label/pathway subset; full diagram transcription would need these labels and their connections."
+        }
+      ]
+    },
+    {
+      "id": "SEW-2013-A:Ep311-1",
+      "record_path": "data/transcriptions/batches/sew-treatment-304-313/candidates/SEW-2013-A--Ep311-1.json",
+      "content_digest": "5b6206bac0502fa855d463fec1d23383b8c8cdec588c419b1cf2c03fd7704416",
+      "digest_algorithm": "omakase_cpheeo.transcriptions.content_digest (SHA-256 canonical authored content excluding state, verification and source_image_refs)",
+      "state_observed": "pending",
+      "result": "matches_scoped_content",
+      "image_evidence": [
+        {
+          "path": "/tmp/treatment-304-313-recheck/SEW-2013-A--Ep311-1-region-0.png",
+          "sha256": "735da9497d5486aa2cd2ede89e8ac007b630730ccc29eeac77b31eede94e6b83",
+          "pdf_page": 311,
+          "bbox": [
+            80,
+            752,
+            483,
+            785
+          ],
+          "dpi": 144,
+          "pinned_hash_matches": true,
+          "initial_sha256": "735da9497d5486aa2cd2ede89e8ac007b630730ccc29eeac77b31eede94e6b83",
+          "initial_pinned_hash_matches": true,
+          "pinned_sha256": "735da9497d5486aa2cd2ede89e8ac007b630730ccc29eeac77b31eede94e6b83",
+          "actually_viewed": true
+        }
+      ],
+      "full_page_evidence": [
+        "/tmp/treatment-304-313-recheck/page-311.png"
+      ],
+      "detail_evidence": [
+        "/tmp/treatment-304-313-recheck/detail-311.png"
+      ],
+      "observations": [
+        "Literal line is Illustration BOD = 27 *1000 (mg) / 135 X 0.8 (litres) = 250 mg/L. Asterisk, slash, uppercase X, units and result match. No denominator parentheses visible. Preserve ambiguous grouping; do not replace with a fraction over (135 × 0.8) or recompute."
+      ],
+      "corrections": [],
+      "omissions": []
+    },
+    {
+      "id": "SEW-2013-A:Ep312-1",
+      "record_path": "data/transcriptions/batches/sew-treatment-304-313/candidates/SEW-2013-A--Ep312-1.json",
+      "content_digest": "a0c97f1d7a2cd12e8238cf20ea7eed09f030c5611536ee40f6cf9b1eb4f1d6df",
+      "digest_algorithm": "omakase_cpheeo.transcriptions.content_digest (SHA-256 canonical authored content excluding state, verification and source_image_refs)",
+      "state_observed": "pending",
+      "result": "matches_scoped_content",
+      "image_evidence": [
+        {
+          "path": "/tmp/treatment-304-313-recheck/SEW-2013-A--Ep312-1-region-0.png",
+          "sha256": "e0e1d9af5ac34180f442515fd7cf62e6e73559d061868f83cbdf8345712762b7",
+          "pdf_page": 312,
+          "bbox": [
+            50,
+            282,
+            545,
+            361
+          ],
+          "dpi": 144,
+          "pinned_hash_matches": true,
+          "initial_sha256": "e0e1d9af5ac34180f442515fd7cf62e6e73559d061868f83cbdf8345712762b7",
+          "initial_pinned_hash_matches": true,
+          "pinned_sha256": "e0e1d9af5ac34180f442515fd7cf62e6e73559d061868f83cbdf8345712762b7",
+          "actually_viewed": true
+        }
+      ],
+      "full_page_evidence": [
+        "/tmp/treatment-304-313-recheck/page-312.png"
+      ],
+      "detail_evidence": [],
+      "observations": [
+        "For aerobic process, BOD:N:P is 100:5:1 matches all three values and order. Fertilizer-addition note matches meaning and wording. No mass basis invented."
+      ],
+      "corrections": [],
+      "omissions": []
+    },
+    {
+      "id": "SEW-2013-A:Ep312-2",
+      "record_path": "data/transcriptions/batches/sew-treatment-304-313/candidates/SEW-2013-A--Ep312-2.json",
+      "content_digest": "2d1c9452f7941ba35f5cceaa492ef2f706666014046b18e1728eb727c04f724c",
+      "digest_algorithm": "omakase_cpheeo.transcriptions.content_digest (SHA-256 canonical authored content excluding state, verification and source_image_refs)",
+      "state_observed": "pending",
+      "result": "matches_scoped_content",
+      "image_evidence": [
+        {
+          "path": "/tmp/treatment-304-313-recheck/SEW-2013-A--Ep312-2-region-0.png",
+          "sha256": "e0e1d9af5ac34180f442515fd7cf62e6e73559d061868f83cbdf8345712762b7",
+          "pdf_page": 312,
+          "bbox": [
+            50,
+            282,
+            545,
+            361
+          ],
+          "dpi": 144,
+          "pinned_hash_matches": true,
+          "initial_sha256": "e0e1d9af5ac34180f442515fd7cf62e6e73559d061868f83cbdf8345712762b7",
+          "initial_pinned_hash_matches": true,
+          "pinned_sha256": "e0e1d9af5ac34180f442515fd7cf62e6e73559d061868f83cbdf8345712762b7",
+          "actually_viewed": true
+        }
+      ],
+      "full_page_evidence": [
+        "/tmp/treatment-304-313-recheck/page-312.png"
+      ],
+      "detail_evidence": [],
+      "observations": [
+        "For anaerobic process, BOD:N:P is 300:5:1 matches all three values and order. Fertilizer-addition note matches meaning and wording. No mass basis invented."
+      ],
+      "corrections": [],
+      "omissions": []
+    },
+    {
+      "id": "SEW-2013-A:T5.2",
+      "record_path": "data/transcriptions/batches/sew-treatment-304-313/candidates/SEW-2013-A--T5.2.json",
+      "content_digest": "fd05268938e57e33901b23b384a11f9114be802e882915fa00a191ea7a9d41cc",
+      "digest_algorithm": "omakase_cpheeo.transcriptions.content_digest (SHA-256 canonical authored content excluding state, verification and source_image_refs)",
+      "state_observed": "pending",
+      "result": "matches_scoped_content",
+      "image_evidence": [
+        {
+          "path": "/tmp/treatment-304-313-recheck/SEW-2013-A--T5.2-region-0.png",
+          "sha256": "1c2f23a1a2097890680a60cfae65a61c95921ac8ca1cdd48ffabcbfcb8edc437",
+          "pdf_page": 306,
+          "bbox": [
+            65,
+            258,
+            530,
+            666
+          ],
+          "dpi": 144,
+          "pinned_hash_matches": true,
+          "initial_sha256": "1c2f23a1a2097890680a60cfae65a61c95921ac8ca1cdd48ffabcbfcb8edc437",
+          "initial_pinned_hash_matches": true,
+          "pinned_sha256": "1c2f23a1a2097890680a60cfae65a61c95921ac8ca1cdd48ffabcbfcb8edc437",
+          "actually_viewed": true
+        }
+      ],
+      "full_page_evidence": [
+        "/tmp/treatment-304-313-recheck/page-306.png"
+      ],
+      "detail_evidence": [
+        "/tmp/treatment-304-313-recheck/detail-306.png"
+      ],
+      "observations": [
+        "All 19 rows and 76 body cells compared, including repeated expansions of class/designated-use merged cells. All pH/DO/BOD/coliform values, inequalities, free-ammonia units and E-class thresholds match.",
+        "Preserve class A Total Coliform MPN / 100 ml = 50 or less; B MPN / 1000 ml = 50 or less; C MPN / 1000 ml = 5000 or less. No conventional-limit correction warranted.",
+        "Class D pH 6.5 to 8.5, DO 4 or more, Free Ammonia 1.2 mg/l or less. E pH 6.0 to 8.5, conductivity micro mhos/cm < 2250, Sodium Absorption Ratio (SAR) < 26, Boron < 2 mg/l. mg/l default and source credit retained."
+      ],
+      "corrections": [],
+      "omissions": [],
+      "cell_audit": {
+        "all_headers_compared": true,
+        "headers_compared": [
+          "Class",
+          "Designated best use",
+          "Criteria",
+          "Limits"
+        ],
+        "all_body_cells_compared": true,
+        "rows": [
+          {
+            "row_index_1based": 1,
+            "cells_compared": [
+              "A",
+              "Drinking water source without conventional treatment but after disinfection",
+              "pH",
+              "6.5 to 8.5"
+            ],
+            "result": "matches normalized printed cells"
+          },
+          {
+            "row_index_1based": 2,
+            "cells_compared": [
+              "A",
+              "Drinking water source without conventional treatment but after disinfection",
+              "Dissolved Oxygen (D O)",
+              "6 or more"
+            ],
+            "result": "matches normalized printed cells"
+          },
+          {
+            "row_index_1based": 3,
+            "cells_compared": [
+              "A",
+              "Drinking water source without conventional treatment but after disinfection",
+              "BOD",
+              "2 or less"
+            ],
+            "result": "matches normalized printed cells"
+          },
+          {
+            "row_index_1based": 4,
+            "cells_compared": [
+              "A",
+              "Drinking water source without conventional treatment but after disinfection",
+              "Total Coliform MPN / 100 ml",
+              "50 or less"
+            ],
+            "result": "matches normalized printed cells"
+          },
+          {
+            "row_index_1based": 5,
+            "cells_compared": [
+              "B",
+              "Outdoor bathing (organized)",
+              "pH",
+              "6.5 to 8.5"
+            ],
+            "result": "matches normalized printed cells"
+          },
+          {
+            "row_index_1based": 6,
+            "cells_compared": [
+              "B",
+              "Outdoor bathing (organized)",
+              "Dissolved Oxygen (D O)",
+              "5 or more"
+            ],
+            "result": "matches normalized printed cells"
+          },
+          {
+            "row_index_1based": 7,
+            "cells_compared": [
+              "B",
+              "Outdoor bathing (organized)",
+              "BOD",
+              "3 or less"
+            ],
+            "result": "matches normalized printed cells"
+          },
+          {
+            "row_index_1based": 8,
+            "cells_compared": [
+              "B",
+              "Outdoor bathing (organized)",
+              "Total Coliform MPN / 1000 ml",
+              "50 or less"
+            ],
+            "result": "matches normalized printed cells"
+          },
+          {
+            "row_index_1based": 9,
+            "cells_compared": [
+              "C",
+              "Drinking water source with conventional treatment followed by disinfection",
+              "pH",
+              "6.5 to 8.5"
+            ],
+            "result": "matches normalized printed cells"
+          },
+          {
+            "row_index_1based": 10,
+            "cells_compared": [
+              "C",
+              "Drinking water source with conventional treatment followed by disinfection",
+              "Dissolved Oxygen (D O)",
+              "4 or more"
+            ],
+            "result": "matches normalized printed cells"
+          },
+          {
+            "row_index_1based": 11,
+            "cells_compared": [
+              "C",
+              "Drinking water source with conventional treatment followed by disinfection",
+              "BOD",
+              "3 or less"
+            ],
+            "result": "matches normalized printed cells"
+          },
+          {
+            "row_index_1based": 12,
+            "cells_compared": [
+              "C",
+              "Drinking water source with conventional treatment followed by disinfection",
+              "Total Coliform, MPN / 1000 ml",
+              "5000 or less"
+            ],
+            "result": "matches normalized printed cells"
+          },
+          {
+            "row_index_1based": 13,
+            "cells_compared": [
+              "D",
+              "Propagation of wild life and fisheries",
+              "pH",
+              "6.5 to 8.5"
+            ],
+            "result": "matches normalized printed cells"
+          },
+          {
+            "row_index_1based": 14,
+            "cells_compared": [
+              "D",
+              "Propagation of wild life and fisheries",
+              "Dissolved Oxygen (D O)",
+              "4 or more"
+            ],
+            "result": "matches normalized printed cells"
+          },
+          {
+            "row_index_1based": 15,
+            "cells_compared": [
+              "D",
+              "Propagation of wild life and fisheries",
+              "Free Ammonia",
+              "1.2 mg/l or less"
+            ],
+            "result": "matches normalized printed cells"
+          },
+          {
+            "row_index_1based": 16,
+            "cells_compared": [
+              "E",
+              "Irrigation, industrial cooling, and controlled waste disposal",
+              "pH",
+              "6.0 to 8.5"
+            ],
+            "result": "matches normalized printed cells"
+          },
+          {
+            "row_index_1based": 17,
+            "cells_compared": [
+              "E",
+              "Irrigation, industrial cooling, and controlled waste disposal",
+              "Electrical Conductivity, micro mhos/cm",
+              "< 2250"
+            ],
+            "result": "matches normalized printed cells"
+          },
+          {
+            "row_index_1based": 18,
+            "cells_compared": [
+              "E",
+              "Irrigation, industrial cooling, and controlled waste disposal",
+              "Sodium Absorption Ratio (SAR)",
+              "< 26"
+            ],
+            "result": "matches normalized printed cells"
+          },
+          {
+            "row_index_1based": 19,
+            "cells_compared": [
+              "E",
+              "Irrigation, industrial cooling, and controlled waste disposal",
+              "Boron",
+              "< 2 mg/l"
+            ],
+            "result": "matches normalized printed cells"
+          }
+        ],
+        "markdown_agrees_with_grid": true
+      }
+    },
+    {
+      "id": "SEW-2013-A:T5.3",
+      "record_path": "data/transcriptions/batches/sew-treatment-304-313/candidates/SEW-2013-A--T5.3.json",
+      "content_digest": "bce0bf0b88d7cc4bc79f6eada2967724ebcdeb79658671e8721072e2369ba29c",
+      "digest_algorithm": "omakase_cpheeo.transcriptions.content_digest (SHA-256 canonical authored content excluding state, verification and source_image_refs)",
+      "state_observed": "pending",
+      "result": "matches_scoped_content",
+      "image_evidence": [
+        {
+          "path": "/tmp/treatment-304-313-recheck/SEW-2013-A--T5.3-region-0.png",
+          "sha256": "4cb737d0e6df15eb88b84aaead7a8655f8b4e9e420697c2114f92c42d5b4842e",
+          "pdf_page": 307,
+          "bbox": [
+            63,
+            70,
+            540,
+            766
+          ],
+          "dpi": 144,
+          "pinned_hash_matches": true,
+          "initial_sha256": "4cb737d0e6df15eb88b84aaead7a8655f8b4e9e420697c2114f92c42d5b4842e",
+          "initial_pinned_hash_matches": true,
+          "pinned_sha256": "4cb737d0e6df15eb88b84aaead7a8655f8b4e9e420697c2114f92c42d5b4842e",
+          "actually_viewed": true
+        },
+        {
+          "path": "/tmp/treatment-304-313-recheck/SEW-2013-A--T5.3-region-1.png",
+          "sha256": "0c46e5293f569c5101224d7188687272880947c6a9ce0fdf156e66744605d144",
+          "pdf_page": 308,
+          "bbox": [
+            50,
+            70,
+            545,
+            505
+          ],
+          "dpi": 144,
+          "pinned_hash_matches": true,
+          "initial_sha256": "0c46e5293f569c5101224d7188687272880947c6a9ce0fdf156e66744605d144",
+          "initial_pinned_hash_matches": true,
+          "pinned_sha256": "0c46e5293f569c5101224d7188687272880947c6a9ce0fdf156e66744605d144",
+          "actually_viewed": true
+        }
+      ],
+      "full_page_evidence": [
+        "/tmp/treatment-304-313-recheck/page-307.png",
+        "/tmp/treatment-304-313-recheck/page-308.png"
+      ],
+      "detail_evidence": [
+        "/tmp/treatment-304-313-recheck/detail-307.png",
+        "/tmp/treatment-304-313-recheck/detail-308.png"
+      ],
+      "observations": [
+        "All 35 normalized rows (34 printed numbers, two No 28 subrows), 210 body cells and six headers compared, including every dash, blank, decimal/trailing zero and exponent. No value correction found.",
+        "Merged pH 5.5 to 9.0, arsenic 0.2 and bio-assay (I) correctly expanded. Colour/odour public-sewer cell is genuinely blank. Cr 6+ is source text and must remain uncorrected. Alpha limits 10⁻⁷,10⁻⁷,10⁻⁸,10⁻⁷ and beta 10⁻⁶,10⁻⁶,10⁻⁷,10⁻⁶ match micro curie/L.",
+        "Faecal-coliform row changes destination semantics: onto land J=1,000 K=10,000; into water J=1,000 K=10,000 in MPN/100 ml. Candidate notes correctly override ordinary destination headers; notes are essential to interpretation.",
+        "All A-K notations and following historical/recommended paragraph compared. Historical BOD20/SS30 and recommended BOD10/SS10/N10/P2 mg/L and coliform230 MPN/100 ml retained as source claims, not current engineering advice."
+      ],
+      "corrections": [],
+      "omissions": [],
+      "cell_audit": {
+        "all_headers_compared": true,
+        "headers_compared": [
+          "No",
+          "Characteristics",
+          "Inland Surface Water",
+          "Public Sewers, (A)",
+          "Land for Irrigation",
+          "Marine Coastal Areas"
+        ],
+        "all_body_cells_compared": true,
+        "rows": [
+          {
+            "row_index_1based": 1,
+            "cells_compared": [
+              "1",
+              "Colour and odour",
+              "(B)",
+              "",
+              "(B)",
+              "(B)"
+            ],
+            "result": "matches normalized printed cells"
+          },
+          {
+            "row_index_1based": 2,
+            "cells_compared": [
+              "2",
+              "SS",
+              "100",
+              "600",
+              "200",
+              "(C), (D)"
+            ],
+            "result": "matches normalized printed cells"
+          },
+          {
+            "row_index_1based": 3,
+            "cells_compared": [
+              "3",
+              "Particle size of SS",
+              "(E)",
+              "-",
+              "-",
+              "(F), (G)"
+            ],
+            "result": "matches normalized printed cells"
+          },
+          {
+            "row_index_1based": 4,
+            "cells_compared": [
+              "4",
+              "pH value",
+              "5.5 to 9.0",
+              "5.5 to 9.0",
+              "5.5 to 9.0",
+              "5.5 to 9.0"
+            ],
+            "result": "matches normalized printed cells"
+          },
+          {
+            "row_index_1based": 5,
+            "cells_compared": [
+              "5",
+              "Temperature",
+              "(H)",
+              "-",
+              "-",
+              "(H)"
+            ],
+            "result": "matches normalized printed cells"
+          },
+          {
+            "row_index_1based": 6,
+            "cells_compared": [
+              "6",
+              "Oil and grease",
+              "10",
+              "20",
+              "10",
+              "10"
+            ],
+            "result": "matches normalized printed cells"
+          },
+          {
+            "row_index_1based": 7,
+            "cells_compared": [
+              "7",
+              "Total residual chlorine",
+              "1.0",
+              "-",
+              "-",
+              "1.0"
+            ],
+            "result": "matches normalized printed cells"
+          },
+          {
+            "row_index_1based": 8,
+            "cells_compared": [
+              "8",
+              "Ammoniacal nitrogen (as N)",
+              "50",
+              "50",
+              "-",
+              "50"
+            ],
+            "result": "matches normalized printed cells"
+          },
+          {
+            "row_index_1based": 9,
+            "cells_compared": [
+              "9",
+              "Total Kjeldahl Nitrogen, (TKN) (as N)",
+              "100",
+              "-",
+              "-",
+              "100"
+            ],
+            "result": "matches normalized printed cells"
+          },
+          {
+            "row_index_1based": 10,
+            "cells_compared": [
+              "10",
+              "Free ammonia (as NH₃)",
+              "5.0",
+              "-",
+              "-",
+              "5.0"
+            ],
+            "result": "matches normalized printed cells"
+          },
+          {
+            "row_index_1based": 11,
+            "cells_compared": [
+              "11",
+              "Biochemical Oxygen Demand",
+              "30",
+              "350",
+              "100",
+              "100"
+            ],
+            "result": "matches normalized printed cells"
+          },
+          {
+            "row_index_1based": 12,
+            "cells_compared": [
+              "12",
+              "Chemical Oxygen Demand",
+              "250",
+              "-",
+              "-",
+              "250"
+            ],
+            "result": "matches normalized printed cells"
+          },
+          {
+            "row_index_1based": 13,
+            "cells_compared": [
+              "13",
+              "Arsenic (as As)",
+              "0.2",
+              "0.2",
+              "0.2",
+              "0.2"
+            ],
+            "result": "matches normalized printed cells"
+          },
+          {
+            "row_index_1based": 14,
+            "cells_compared": [
+              "14",
+              "Mercury (as Hg)",
+              "0.01",
+              "0.01",
+              "-",
+              "0.01"
+            ],
+            "result": "matches normalized printed cells"
+          },
+          {
+            "row_index_1based": 15,
+            "cells_compared": [
+              "15",
+              "Lead (as Pb)",
+              "0.1",
+              "1.0",
+              "-",
+              "2.0"
+            ],
+            "result": "matches normalized printed cells"
+          },
+          {
+            "row_index_1based": 16,
+            "cells_compared": [
+              "16",
+              "Cadmium (as Cd)",
+              "2.0",
+              "1.0",
+              "-",
+              "2.0"
+            ],
+            "result": "matches normalized printed cells"
+          },
+          {
+            "row_index_1based": 17,
+            "cells_compared": [
+              "17",
+              "Hexavalent Chromium (as Cr 6+)",
+              "0.1",
+              "2.0",
+              "-",
+              "1.0"
+            ],
+            "result": "matches normalized printed cells"
+          },
+          {
+            "row_index_1based": 18,
+            "cells_compared": [
+              "18",
+              "Total Chromium (as Cr)",
+              "2.0",
+              "2.0",
+              "-",
+              "2.0"
+            ],
+            "result": "matches normalized printed cells"
+          },
+          {
+            "row_index_1based": 19,
+            "cells_compared": [
+              "19",
+              "Copper (as Cu)",
+              "3.0",
+              "3.0",
+              "-",
+              "3.0"
+            ],
+            "result": "matches normalized printed cells"
+          },
+          {
+            "row_index_1based": 20,
+            "cells_compared": [
+              "20",
+              "Zinc (as Zn)",
+              "5.0",
+              "15.0",
+              "-",
+              "15.0"
+            ],
+            "result": "matches normalized printed cells"
+          },
+          {
+            "row_index_1based": 21,
+            "cells_compared": [
+              "21",
+              "Selenium (as Se)",
+              "0.05",
+              "0.05",
+              "-",
+              "0.05"
+            ],
+            "result": "matches normalized printed cells"
+          },
+          {
+            "row_index_1based": 22,
+            "cells_compared": [
+              "22",
+              "Nickel (as Ni)",
+              "3.0",
+              "3.0",
+              "-",
+              "5.0"
+            ],
+            "result": "matches normalized printed cells"
+          },
+          {
+            "row_index_1based": 23,
+            "cells_compared": [
+              "23",
+              "Cyanide (as CN)",
+              "0.2",
+              "2.0",
+              "0.2",
+              "0.2"
+            ],
+            "result": "matches normalized printed cells"
+          },
+          {
+            "row_index_1based": 24,
+            "cells_compared": [
+              "24",
+              "Fluoride (as F)",
+              "2.0",
+              "15.0",
+              "-",
+              "15.0"
+            ],
+            "result": "matches normalized printed cells"
+          },
+          {
+            "row_index_1based": 25,
+            "cells_compared": [
+              "25",
+              "Dissolved phosphates (as P)",
+              "5.0",
+              "-",
+              "-",
+              "-"
+            ],
+            "result": "matches normalized printed cells"
+          },
+          {
+            "row_index_1based": 26,
+            "cells_compared": [
+              "26",
+              "Sulphide (as S)",
+              "2.0",
+              "-",
+              "-",
+              "5.0"
+            ],
+            "result": "matches normalized printed cells"
+          },
+          {
+            "row_index_1based": 27,
+            "cells_compared": [
+              "27",
+              "Phenolic compounds (as C₆H₅OH)",
+              "1.0",
+              "5.0",
+              "-",
+              "5.0"
+            ],
+            "result": "matches normalized printed cells"
+          },
+          {
+            "row_index_1based": 28,
+            "cells_compared": [
+              "28",
+              "Radioactive materials: Alpha emitters, micro curie/L",
+              "10⁻⁷",
+              "10⁻⁷",
+              "10⁻⁸",
+              "10⁻⁷"
+            ],
+            "result": "matches normalized printed cells"
+          },
+          {
+            "row_index_1based": 29,
+            "cells_compared": [
+              "28",
+              "Radioactive materials: Beta emitters, micro curie/L",
+              "10⁻⁶",
+              "10⁻⁶",
+              "10⁻⁷",
+              "10⁻⁶"
+            ],
+            "result": "matches normalized printed cells"
+          },
+          {
+            "row_index_1based": 30,
+            "cells_compared": [
+              "29",
+              "Bio-assay test",
+              "(I)",
+              "(I)",
+              "(I)",
+              "(I)"
+            ],
+            "result": "matches normalized printed cells"
+          },
+          {
+            "row_index_1based": 31,
+            "cells_compared": [
+              "30",
+              "Manganese (as Mn),",
+              "2.0",
+              "2.0",
+              "-",
+              "2.0"
+            ],
+            "result": "matches normalized printed cells"
+          },
+          {
+            "row_index_1based": 32,
+            "cells_compared": [
+              "31",
+              "Iron (as Fe),",
+              "3.0",
+              "3.0",
+              "-",
+              "3.0"
+            ],
+            "result": "matches normalized printed cells"
+          },
+          {
+            "row_index_1based": 33,
+            "cells_compared": [
+              "32",
+              "Vanadium (as V),",
+              "0.2",
+              "0.2",
+              "-",
+              "0.2"
+            ],
+            "result": "matches normalized printed cells"
+          },
+          {
+            "row_index_1based": 34,
+            "cells_compared": [
+              "33",
+              "Nitrate Nitrogen (as N),",
+              "10.0",
+              "-",
+              "-",
+              "20.0"
+            ],
+            "result": "matches normalized printed cells"
+          },
+          {
+            "row_index_1based": 35,
+            "cells_compared": [
+              "34.",
+              "Faecal Coliform, MPN/100 ml for discharge",
+              "1,000",
+              "10,000",
+              "1,000",
+              "10,000"
+            ],
+            "result": "matches normalized printed cells"
+          }
+        ],
+        "markdown_agrees_with_grid": true
+      },
+      "footnote_audit": [
+        {
+          "notation": "A",
+          "candidate_text": "A. These standards shall be applicable only if such sewer leads to a secondary treatment including biological treatment system; otherwise the discharge into sewers shall be treated as discharge into inland surface waters.",
+          "result": "matches source; whitespace and terminal punctuation normalized"
+        },
+        {
+          "notation": "B",
+          "candidate_text": "B. All efforts should be made to remove colour & unpleasant odour as far as practicable.",
+          "result": "matches source; whitespace and terminal punctuation normalized"
+        },
+        {
+          "notation": "C",
+          "candidate_text": "C. For process wastewater 100 mg/l",
+          "result": "matches source; whitespace and terminal punctuation normalized"
+        },
+        {
+          "notation": "D",
+          "candidate_text": "D. For cooling water effluent 10% above total suspended matter of influent.",
+          "result": "matches source; whitespace and terminal punctuation normalized"
+        },
+        {
+          "notation": "E",
+          "candidate_text": "E. Shall pass 850 micron IS Sieve",
+          "result": "matches source; whitespace and terminal punctuation normalized"
+        },
+        {
+          "notation": "F",
+          "candidate_text": "F. Floatable solids max. 3 mm",
+          "result": "matches source; whitespace and terminal punctuation normalized"
+        },
+        {
+          "notation": "G",
+          "candidate_text": "G. Settleable solids max. 850 microns",
+          "result": "matches source; whitespace and terminal punctuation normalized"
+        },
+        {
+          "notation": "H",
+          "candidate_text": "H. Shall not exceed 5°C above the receiving water temperature",
+          "result": "matches source; whitespace and terminal punctuation normalized"
+        },
+        {
+          "notation": "I",
+          "candidate_text": "I. 90 % survival of fish after 96 hours in 100 % effluent",
+          "result": "matches source; whitespace and terminal punctuation normalized"
+        },
+        {
+          "notation": "J",
+          "candidate_text": "J. Desirable",
+          "result": "matches source; whitespace and terminal punctuation normalized"
+        },
+        {
+          "notation": "K",
+          "candidate_text": "K. Maximum permissible",
+          "result": "matches source; whitespace and terminal punctuation normalized"
+        }
+      ],
+      "representation_limit": "Row34 J/K and onto-land/into-water semantics are in notes/cell_spans, not encoded in ordinary Markdown headers. Do not serve the grid without that context."
+    },
+    {
+      "id": "SEW-2013-A:T5.4",
+      "record_path": "data/transcriptions/batches/sew-treatment-304-313/candidates/SEW-2013-A--T5.4.json",
+      "content_digest": "d25b373a66e6a0d4bebad40f8d9eb2fa12c12f87f59c7a6cc98805889f59d74b",
+      "digest_algorithm": "omakase_cpheeo.transcriptions.content_digest (SHA-256 canonical authored content excluding state, verification and source_image_refs)",
+      "state_observed": "pending",
+      "result": "matches_scoped_content",
+      "image_evidence": [
+        {
+          "path": "/tmp/treatment-304-313-recheck/SEW-2013-A--T5.4-region-0.png",
+          "sha256": "4b6df1e301107cad0405a194fba18b73eedfd8084ef4575dea71eec4b21f7e8d",
+          "pdf_page": 311,
+          "bbox": [
+            80,
+            439,
+            515,
+            783
+          ],
+          "dpi": 144,
+          "pinned_hash_matches": true,
+          "initial_sha256": "4b6df1e301107cad0405a194fba18b73eedfd8084ef4575dea71eec4b21f7e8d",
+          "initial_pinned_hash_matches": true,
+          "pinned_sha256": "4b6df1e301107cad0405a194fba18b73eedfd8084ef4575dea71eec4b21f7e8d",
+          "actually_viewed": true
+        },
+        {
+          "path": "/tmp/treatment-304-313-recheck/SEW-2013-A--T5.4-region-1.png",
+          "sha256": "b56abc70734503307afaa373f60c086d151200dc2236318a93b511d633b2907b",
+          "pdf_page": 312,
+          "bbox": [
+            50,
+            70,
+            548,
+            359
+          ],
+          "dpi": 144,
+          "pinned_hash_matches": true,
+          "initial_sha256": "b56abc70734503307afaa373f60c086d151200dc2236318a93b511d633b2907b",
+          "initial_pinned_hash_matches": true,
+          "pinned_sha256": "b56abc70734503307afaa373f60c086d151200dc2236318a93b511d633b2907b",
+          "actually_viewed": true
+        }
+      ],
+      "full_page_evidence": [
+        "/tmp/treatment-304-313-recheck/page-311.png",
+        "/tmp/treatment-304-313-recheck/page-312.png"
+      ],
+      "detail_evidence": [
+        "/tmp/treatment-304-313-recheck/detail-311.png"
+      ],
+      "observations": [
+        "All ten rows, 50 body cells and five combined headers compared, preserving both source header rows (1)-(5). Units g / c /d, L / c / d, mg/L and Sewage Generation 80 % of (3) match.",
+        "All rows use 135 and 108. Contribution/concentration pairs match: BOD27.0/250.0, COD45.9/425.0, TSS40.5/375.0, VSS28.4/262.5, total N5.4/50.0, organic N1.4/12.5, ammonia N3.5/32.5, nitrate N0.5/5.0, total P0.8/7.1, ortho P0.5/5.0. Do not adjust printed rounding.",
+        "Page312 historical Table5.1 versus design Table5-4 distinction and reasons (a)-(c) retained as summaries. Printed missing comma in alkalinity chlorides is editorially separated in candidate summary, not a change to data. BOD illustration and nutrient ratios are accounted for separately."
+      ],
+      "corrections": [],
+      "omissions": [],
+      "cell_audit": {
+        "all_headers_compared": true,
+        "headers_compared": [
+          "Item (1)",
+          "Per capita contribution (g / c /d) (2)",
+          "water supply (L / c / d) (3)",
+          "Sewage Generation 80 % of (3) (4)",
+          "Concentration (mg/L) (5)"
+        ],
+        "all_body_cells_compared": true,
+        "rows": [
+          {
+            "row_index_1based": 1,
+            "cells_compared": [
+              "BOD",
+              "27.0",
+              "135",
+              "108",
+              "250.0"
+            ],
+            "result": "matches normalized printed cells"
+          },
+          {
+            "row_index_1based": 2,
+            "cells_compared": [
+              "COD",
+              "45.9",
+              "135",
+              "108",
+              "425.0"
+            ],
+            "result": "matches normalized printed cells"
+          },
+          {
+            "row_index_1based": 3,
+            "cells_compared": [
+              "TSS",
+              "40.5",
+              "135",
+              "108",
+              "375.0"
+            ],
+            "result": "matches normalized printed cells"
+          },
+          {
+            "row_index_1based": 4,
+            "cells_compared": [
+              "VSS",
+              "28.4",
+              "135",
+              "108",
+              "262.5"
+            ],
+            "result": "matches normalized printed cells"
+          },
+          {
+            "row_index_1based": 5,
+            "cells_compared": [
+              "Total Nitrogen",
+              "5.4",
+              "135",
+              "108",
+              "50.0"
+            ],
+            "result": "matches normalized printed cells"
+          },
+          {
+            "row_index_1based": 6,
+            "cells_compared": [
+              "Organic Nitrogen",
+              "1.4",
+              "135",
+              "108",
+              "12.5"
+            ],
+            "result": "matches normalized printed cells"
+          },
+          {
+            "row_index_1based": 7,
+            "cells_compared": [
+              "Ammonia Nitrogen",
+              "3.5",
+              "135",
+              "108",
+              "32.5"
+            ],
+            "result": "matches normalized printed cells"
+          },
+          {
+            "row_index_1based": 8,
+            "cells_compared": [
+              "Nitrate Nitrogen",
+              "0.5",
+              "135",
+              "108",
+              "5.0"
+            ],
+            "result": "matches normalized printed cells"
+          },
+          {
+            "row_index_1based": 9,
+            "cells_compared": [
+              "Total Phosphorus",
+              "0.8",
+              "135",
+              "108",
+              "7.1"
+            ],
+            "result": "matches normalized printed cells"
+          },
+          {
+            "row_index_1based": 10,
+            "cells_compared": [
+              "Ortho Phosphorus",
+              "0.5",
+              "135",
+              "108",
+              "5.0"
+            ],
+            "result": "matches normalized printed cells"
+          }
+        ],
+        "markdown_agrees_with_grid": true
+      }
+    },
+    {
+      "id": "SEW-2013-A:T5.1",
+      "record_path": "data/transcriptions/batches/sew-treatment-304-313/drafts/SEW-2013-A--T5.1.json",
+      "content_digest": "e3abd6d6b7cfb4736e4e32950a87cc3f041579b73a0f9097d921b2048e5ec3c7",
+      "digest_algorithm": "omakase_cpheeo.transcriptions.content_digest (SHA-256 canonical authored content excluding state, verification and source_image_refs)",
+      "state_observed": "pending",
+      "result": "matches_source_content_with_stale_administrative_note",
+      "image_evidence": [
+        {
+          "path": "/tmp/treatment-304-313-recheck/SEW-2013-A--T5.1-region-0.png",
+          "sha256": "3b5af150a9e20b8baa35c45c3a7e1c4e3f02dcadb57f0ca7c08bdf39f7de4bb4",
+          "pdf_page": 305,
+          "bbox": [
+            55,
+            215,
+            547,
+            781
+          ],
+          "dpi": 144,
+          "pinned_hash_matches": true,
+          "initial_sha256": "3b5af150a9e20b8baa35c45c3a7e1c4e3f02dcadb57f0ca7c08bdf39f7de4bb4",
+          "initial_pinned_hash_matches": true,
+          "pinned_sha256": "3b5af150a9e20b8baa35c45c3a7e1c4e3f02dcadb57f0ca7c08bdf39f7de4bb4",
+          "actually_viewed": true
+        },
+        {
+          "path": "/tmp/treatment-304-313-recheck/SEW-2013-A--T5.1-region-1.png",
+          "sha256": "c4b176108fc7b5545106bafc93075e99981656afdf8e2469c8663c4b30cd410c",
+          "pdf_page": 306,
+          "bbox": [
+            50,
+            71,
+            547,
+            195
+          ],
+          "dpi": 144,
+          "pinned_hash_matches": true,
+          "initial_sha256": "c4b176108fc7b5545106bafc93075e99981656afdf8e2469c8663c4b30cd410c",
+          "initial_pinned_hash_matches": true,
+          "pinned_sha256": "c4b176108fc7b5545106bafc93075e99981656afdf8e2469c8663c4b30cd410c",
+          "actually_viewed": true
+        }
+      ],
+      "full_page_evidence": [
+        "/tmp/treatment-304-313-recheck/page-305.png",
+        "/tmp/treatment-304-313-recheck/page-306.png"
+      ],
+      "detail_evidence": [
+        "/tmp/treatment-304-313-recheck/detail-305.png",
+        "/tmp/treatment-304-313-recheck/detail-306.png"
+      ],
+      "observations": [
+        "All 24 normalized rows and 96 body cells compared. All ranges and tildes match, including ~0.0-0.5 total N and ~0.6-4.5; CaCO₃ and K₂O chemical digits match.",
+        "Microorganism powers read directly: total bacteria 10⁹-10¹⁰, coliforms 10⁹-10¹⁰, faecal streptococci 10⁵-10⁶, Salmonella Typhosa 10¹-10⁴, protozoan cysts/Helmintic eggs each Up to 10³, virus 10²-10⁴. Unit is per 100 ml of sewage. Side-by-side 18/22,19/23,20/24,21/blank normalization is documented.",
+        "Notes 1-6 compared on pages 305/306: black/grey water, 12.6 %, BOD cost almost pro-rata, dissolved-solids freshwater addition, pH 6.8 to 8.0, CO(NH₂)₂ to NH₃/CO₂ and urease all retained. Notes are lightly paraphrased, not a diplomatic verbatim transcription.",
+        "create_unit is true and parent_id is SEW-2013-A:5.1 in actual current draft; old blocker does not apply. Historical/design distinction is confirmed on page 312."
+      ],
+      "corrections": [
+        {
+          "field": "notes[1]",
+          "current": "Draft only: no SEW-2013-A:T5.1 target exists in the read-only baseline. Cannot apply under current architecture.",
+          "required_change": "Remove obsolete blocker note. Current metadata is create_unit:true, parent_id:SEW-2013-A:5.1; no architecture blocker is asserted by this recheck.",
+          "type": "stale_administrative_note",
+          "source_content_error": false
+        }
+      ],
+      "omissions": [],
+      "cell_audit": {
+        "all_headers_compared": true,
+        "headers_compared": [
+          "No",
+          "Parameters",
+          "Range",
+          "Basis"
+        ],
+        "all_body_cells_compared": true,
+        "rows": [
+          {
+            "row_index_1based": 1,
+            "cells_compared": [
+              "1",
+              "Biochemical oxygen demand, BOD",
+              "45-54",
+              "grams per capita per day"
+            ],
+            "result": "matches normalized printed cells; author-added basis documented"
+          },
+          {
+            "row_index_1based": 2,
+            "cells_compared": [
+              "2",
+              "Chemical oxygen demand, COD",
+              "1.6-1.9 times BOD",
+              "grams per capita per day"
+            ],
+            "result": "matches normalized printed cells; author-added basis documented"
+          },
+          {
+            "row_index_1based": 3,
+            "cells_compared": [
+              "3",
+              "Total organic carbon, TOC",
+              "0.6-1.0 times BOD",
+              "grams per capita per day"
+            ],
+            "result": "matches normalized printed cells; author-added basis documented"
+          },
+          {
+            "row_index_1based": 4,
+            "cells_compared": [
+              "4",
+              "Total solids, TS",
+              "170-220",
+              "grams per capita per day"
+            ],
+            "result": "matches normalized printed cells; author-added basis documented"
+          },
+          {
+            "row_index_1based": 5,
+            "cells_compared": [
+              "5",
+              "Suspended solids, SS",
+              "70-145",
+              "grams per capita per day"
+            ],
+            "result": "matches normalized printed cells; author-added basis documented"
+          },
+          {
+            "row_index_1based": 6,
+            "cells_compared": [
+              "6",
+              "Grit (inorganic,0.2 mm and above)",
+              "5-15",
+              "grams per capita per day"
+            ],
+            "result": "matches normalized printed cells; author-added basis documented"
+          },
+          {
+            "row_index_1based": 7,
+            "cells_compared": [
+              "7",
+              "Grease",
+              "10-30",
+              "grams per capita per day"
+            ],
+            "result": "matches normalized printed cells; author-added basis documented"
+          },
+          {
+            "row_index_1based": 8,
+            "cells_compared": [
+              "8",
+              "Alkalinity as calcium carbonate (CaCO₃)",
+              "20-30",
+              "grams per capita per day"
+            ],
+            "result": "matches normalized printed cells; author-added basis documented"
+          },
+          {
+            "row_index_1based": 9,
+            "cells_compared": [
+              "9",
+              "Chlorides",
+              "4-8",
+              "grams per capita per day"
+            ],
+            "result": "matches normalized printed cells; author-added basis documented"
+          },
+          {
+            "row_index_1based": 10,
+            "cells_compared": [
+              "10",
+              "Total nitrogen N",
+              "6-12",
+              "grams per capita per day"
+            ],
+            "result": "matches normalized printed cells; author-added basis documented"
+          },
+          {
+            "row_index_1based": 11,
+            "cells_compared": [
+              "11",
+              "Organic nitrogen",
+              "~0.4 total N",
+              "grams per capita per day"
+            ],
+            "result": "matches normalized printed cells; author-added basis documented"
+          },
+          {
+            "row_index_1based": 12,
+            "cells_compared": [
+              "12",
+              "Free ammonia",
+              "~0.6 total N",
+              "grams per capita per day"
+            ],
+            "result": "matches normalized printed cells; author-added basis documented"
+          },
+          {
+            "row_index_1based": 13,
+            "cells_compared": [
+              "13",
+              "Nitrate",
+              "~0.0-0.5 total N",
+              "grams per capita per day"
+            ],
+            "result": "matches normalized printed cells; author-added basis documented"
+          },
+          {
+            "row_index_1based": 14,
+            "cells_compared": [
+              "14",
+              "Total phosphorus",
+              "~0.6-4.5",
+              "grams per capita per day"
+            ],
+            "result": "matches normalized printed cells; author-added basis documented"
+          },
+          {
+            "row_index_1based": 15,
+            "cells_compared": [
+              "15",
+              "Organic phosphorus",
+              "~0.3 total P",
+              "grams per capita per day"
+            ],
+            "result": "matches normalized printed cells; author-added basis documented"
+          },
+          {
+            "row_index_1based": 16,
+            "cells_compared": [
+              "16",
+              "Inorganic(ortho- and poly-phosphates)",
+              "~0.7 total P",
+              "grams per capita per day"
+            ],
+            "result": "matches normalized printed cells; author-added basis documented"
+          },
+          {
+            "row_index_1based": 17,
+            "cells_compared": [
+              "17",
+              "Potassium(as potassium oxide K₂O)",
+              "2.0-6.0",
+              "grams per capita per day"
+            ],
+            "result": "matches normalized printed cells; author-added basis documented"
+          },
+          {
+            "row_index_1based": 18,
+            "cells_compared": [
+              "18",
+              "Total bacteria",
+              "10⁹-10¹⁰",
+              "Microorganisms in 100 ml of sewage"
+            ],
+            "result": "matches normalized printed cells; author-added basis documented"
+          },
+          {
+            "row_index_1based": 19,
+            "cells_compared": [
+              "19",
+              "Coliforms",
+              "10⁹-10¹⁰",
+              "Microorganisms in 100 ml of sewage"
+            ],
+            "result": "matches normalized printed cells; author-added basis documented"
+          },
+          {
+            "row_index_1based": 20,
+            "cells_compared": [
+              "20",
+              "Faecal streptococci",
+              "10⁵-10⁶",
+              "Microorganisms in 100 ml of sewage"
+            ],
+            "result": "matches normalized printed cells; author-added basis documented"
+          },
+          {
+            "row_index_1based": 21,
+            "cells_compared": [
+              "21",
+              "Salmonella Typhosa",
+              "10¹-10⁴",
+              "Microorganisms in 100 ml of sewage"
+            ],
+            "result": "matches normalized printed cells; author-added basis documented"
+          },
+          {
+            "row_index_1based": 22,
+            "cells_compared": [
+              "22",
+              "Protozoan cysts",
+              "Up to 10³",
+              "Microorganisms in 100 ml of sewage"
+            ],
+            "result": "matches normalized printed cells; author-added basis documented"
+          },
+          {
+            "row_index_1based": 23,
+            "cells_compared": [
+              "23",
+              "Helmintic eggs",
+              "Up to 10³",
+              "Microorganisms in 100 ml of sewage"
+            ],
+            "result": "matches normalized printed cells; author-added basis documented"
+          },
+          {
+            "row_index_1based": 24,
+            "cells_compared": [
+              "24",
+              "Virus (plaque forming units)",
+              "10²-10⁴",
+              "Microorganisms in 100 ml of sewage"
+            ],
+            "result": "matches normalized printed cells; author-added basis documented"
+          }
+        ],
+        "markdown_agrees_with_grid": true
+      }
+    }
+  ],
+  "page_inventory": [
+    {
+      "pdf_page": 304,
+      "actually_viewed_full_page": true,
+      "observation": "No missing equation/table. Figure4.17 has 6 in min and 3/4 View; these are dimension/view labels, not equations.",
+      "image": "/tmp/treatment-304-313-recheck/page-304.png"
+    },
+    {
+      "pdf_page": 305,
+      "actually_viewed_full_page": true,
+      "observation": "T5.1 all cells and notes1-3; continuation accounted for on306.",
+      "image": "/tmp/treatment-304-313-recheck/page-305.png"
+    },
+    {
+      "pdf_page": 306,
+      "actually_viewed_full_page": true,
+      "observation": "T5.1 notes4-6 and complete T5.2; no further table/equation target found.",
+      "image": "/tmp/treatment-304-313-recheck/page-306.png"
+    },
+    {
+      "pdf_page": 307,
+      "actually_viewed_full_page": true,
+      "observation": "T5.3 all cells including faecal override; A-K continuation on308.",
+      "image": "/tmp/treatment-304-313-recheck/page-307.png"
+    },
+    {
+      "pdf_page": 308,
+      "actually_viewed_full_page": true,
+      "observation": "T5.3 A-K and following limits; Table5-20 is referenced, not reproduced. No additional standalone equation.",
+      "image": "/tmp/treatment-304-313-recheck/page-308.png"
+    },
+    {
+      "pdf_page": 309,
+      "actually_viewed_full_page": true,
+      "observation": "Six scoped records account for oxygen expressions, ratios and BOD sums. Aerobic product chemical lists and other diagram context are omitted; see missing_targets.",
+      "image": "/tmp/treatment-304-313-recheck/page-309.png"
+    },
+    {
+      "pdf_page": 310,
+      "actually_viewed_full_page": true,
+      "observation": "Ep310-1 chemical-label/pathway subset matches; full diagram labels are not transcribed. About30% liquid height is a prose scalar, not an equation.",
+      "image": "/tmp/treatment-304-313-recheck/page-310.png"
+    },
+    {
+      "pdf_page": 311,
+      "actually_viewed_full_page": true,
+      "observation": "T5.4 and literal BOD illustration accounted for; no extra equation/table.",
+      "image": "/tmp/treatment-304-313-recheck/page-311.png"
+    },
+    {
+      "pdf_page": 312,
+      "actually_viewed_full_page": true,
+      "observation": "T5.4 context and both BOD:N:P ratios accounted for. No additional equation/table. Aerobic-process list continues on313.",
+      "image": "/tmp/treatment-304-313-recheck/page-312.png"
+    },
+    {
+      "pdf_page": 313,
+      "actually_viewed_full_page": true,
+      "observation": "Figures5.4/5.5 are process flows, not equations/tables. Figure5.4 CH₄,CO₂ by-product list has no candidate; label-only coverage gap, not an invented reaction. No mathematical equality inferred.",
+      "image": "/tmp/treatment-304-313-recheck/page-313.png"
+    }
+  ],
+  "missing_targets": [
+    {
+      "pdf_page": 309,
+      "kind": "diagram_chemical_product_labels",
+      "printed": "CO₂, H₂O, NH₃, Energy, etc. (bio-oxidation) and CO₂, H₂O, NH₃, Energy, etc (auto-oxidation)",
+      "status": "Not represented in candidate text; visible in pinned regions Ep309-1/Ep309-2 and full Figure5.1.",
+      "mathematical_equation": false
+    },
+    {
+      "pdf_page": 309,
+      "kind": "diagram_context",
+      "printed": "Suspended organic matter, Hydrolysis, Non-biodegradable branches, Soluble organic matter, Residual biodegradable organic matter, Residual biomass and new microbial biomass labels in Figures5.1/5.2",
+      "status": "Only selected branch/expression context is retained. Do not claim complete diagrams.",
+      "mathematical_equation": false
+    },
+    {
+      "pdf_page": 310,
+      "kind": "diagram_context",
+      "status": "Remaining Figure5.3 labels and detailed connectivity omitted; listed under Ep310-1.",
+      "mathematical_equation": false
+    },
+    {
+      "pdf_page": 313,
+      "kind": "diagram_chemical_product_label",
+      "printed": "(CH₄, CO₂)",
+      "location": "Figure5.4 anaerobic digester by-product",
+      "status": "No candidate. If diagram chemical-list coverage is intended, retain this list with context; do not convert into reaction equation.",
+      "mathematical_equation": false
+    }
+  ],
+  "constraints": {
+    "only_repository_output": "data/transcriptions/batches/treatment-304-313-recheck/report.json",
+    "candidate_record_ledger_db_live_writes": false,
+    "sealed": false,
+    "committed": false,
+    "delegated": false
+  },
+  "missing_standalone_tables_or_mathematical_equations_found": [],
+  "limitations": [
+    "This is a direct separate assistant visual comparison, not independent human verification or engineering validation.",
+    "No pages outside304-313 reviewed. No claim of whole-corpus completeness.",
+    "Scoped expressions and normalized grids match; notes include prose summaries and editorial whitespace/punctuation. This is not diplomatic reproduction of every glyph or all diagrams.",
+    "Evidence renders are retained in /tmp and may be removed by system cleanup. Their exact source/bbox/dpi/hash are recorded for reproduction.",
+    "T5.1 administrative-note removal would change content_digest and require a comparison bound to that revised authored content; this report binds the file actually reviewed."
+  ]
+}

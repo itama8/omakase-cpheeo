@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "id": "WS-2024-A:Ep370-1",
+  "unit_id": "WS-2024-A:Ep370-1",
+  "manual_id": "WS-2024-A",
+  "kind": "equation",
+  "number": "p370-1",
+  "source_sha256": "b60f2fb548357aec676b18ef31e3b37fb0e5e8a1aec8f886880b951113848b0a",
+  "state": "verified",
+  "regions": [
+    {
+      "pdf_page": 370,
+      "page_label": "285",
+      "bbox": [
+        65,
+        634,
+        560,
+        715
+      ],
+      "render_sha256": "c4ff856d12bb06c45fd5ce8f42f8e5a7e65c0c5b7720667b33c63fa23d128dc0"
+    }
+  ],
+  "title": "Relative roughness and Reynolds-number conditions",
+  "parent_id": "WS-2024-A:6.5.1.4",
+  "latex": "\\text{relative roughness }(k/D);\\quad\\text{Reynolds number greater than }10^7;\\quad\\text{range }4{,}000\\text{ to }10^6",
+  "readable": "relative roughness (k/D); Reynolds number greater than 10^7; normal range 4,000 to 10^6",
+  "symbols": [],
+  "applicability": "For Reynolds number greater than 10^7, friction factor f (and hence C-value) is relatively independent of diameter and velocity. For normal ranges 4,000 to 10^6, f (and hence C-value) depends on diameter, velocity and relative roughness.",
+  "notes": [
+    "Unnumbered inline mathematical notation; Ep370-1 is a service locator, not a printed equation number."
+  ],
+  "verification": {
+    "transcription": {
+      "pass_id": "parent-water-math-first-20261108",
+      "method": "direct visual inspection of full rendered source pages; no OCR",
+      "observations": "Read displayed formulae 6.1–6.6 and all table cells, spanning labels and continuation notes directly from source images on physical pages 369–372."
+    },
+    "visual_recheck": {
+      "pass_id": "water-roughness-distinct-recheck-20261108",
+      "method": "Distinct child directly viewed all exact crops and full pages; no OCR; not independent human review.",
+      "observations": "Read the entire pinned paragraph and its placement under section 6.5.1.4 on the full physical page 370, printed 285. It contains inline notation, not a displayed or numbered equation. Relative roughness is visibly (k/D), with lower-case k, upper-case D and an ordinary slash. There is no exponent on k or D. The first Reynolds threshold is greater than 10 with superscript 7: 10^7, not 10^6. The normal Reynolds range is 4,000 to 10 with superscript 6: 4,000 to 10^6. The comma in 4,000 is printed. No inequality sign is printed; greater than is prose. The paragraph first states roughness depends on Reynolds number (hence velocity and diameter) and relative roughness (k/D). For Reynolds number greater than 10^7 the friction factor ‘f’ (and hence the C-value) is relatively independent of diameter and velocity. For normal ranges 4,000 to 10^6 it does depend on diameter, velocity and relative roughness. The applicability field faithfully retains both regimes and the qualifier relatively. LaTeX and readable fields preserve k/D, both powers, the threshold direction and comma grouping; the LaTeX comma grouping 4{,}000 is rendering notation. The readable field includes normal; applicability supplies Reynolds-number context. Textual summaries need not reproduce typographic quotation marks around f. The empty symbols list does not assert an absent definition. No k or D definitions are printed in this paragraph, and none are invented. The note correctly identifies Ep370-1 as a service locator without a printed equation number. The entire paragraph ends within the crop; no mathematical continuation is cut off.",
+      "content_sha256": "bb3662015d77ab6c023e82785b414f1a6df4942e0bc257a11ba20c8e2682874a"
+    }
+  }
+}

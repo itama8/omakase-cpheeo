@@ -22,6 +22,9 @@ SCHEMA = '''CREATE TABLE IF NOT EXISTS transcriptions (
 );
 CREATE TABLE IF NOT EXISTS transcription_images (
  unit_id TEXT, seq INTEGER, PRIMARY KEY (unit_id, seq)
+);
+CREATE TABLE IF NOT EXISTS transcription_units (
+ unit_id TEXT PRIMARY KEY
 );'''
 PASSAGE_BASE = 100000
 
@@ -29,7 +32,13 @@ PASSAGE_BASE = 100000
 def region_png(doc, region: dict) -> bytes:
     if not 1 <= region['pdf_page'] <= len(doc):
         raise ValueError('transcription page outside source PDF')
-    page = doc[region['pdf_page'] - 1]
+    # A prior full-page render can leave clipped image/display state on a
+    # reused Page object (observed on sewage p309), and reload_page() refuses
+    # pages still referenced elsewhere. Copy the page into a fresh one-page
+    # document so evidence bytes never depend on earlier renders.
+    single = pymupdf.open()
+    single.insert_pdf(doc, from_page=region['pdf_page'] - 1, to_page=region['pdf_page'] - 1, annots=False)
+    page = single[0]
     rect = pymupdf.Rect(region['bbox'])
     if region['pdf_page'] < 1 or rect.is_empty or not page.rect.contains(rect):
         raise ValueError('transcription region outside source page')
@@ -117,28 +126,39 @@ def apply(con: sqlite3.Connection, directory: Path = RECORDS) -> int:
             for region in r['regions']:
                 if hashlib.sha256(region_png(doc, region)).hexdigest() != region['render_sha256']:
                     raise ValueError(f"rendered source region changed: {r['id']}")
-            target = r['unit_id'] if r['kind']=='table' else r['parent_id']
+            creates_table = r['kind']=='table' and r.get('create_unit') is True
+            target = r['parent_id'] if creates_table or r['kind']=='equation' else r['unit_id']
+            if not target.startswith(mid+':'):
+                raise ValueError(f"transcription parent belongs to another manual: {target}")
             if not con.execute('SELECT 1 FROM units WHERE id=?', (target,)).fetchone():
                 raise ValueError(f"missing transcription target: {target}")
+            if creates_table and con.execute('SELECT 1 FROM units WHERE id=?', (r['unit_id'],)).fetchone():
+                if not con.execute('SELECT 1 FROM transcription_units WHERE unit_id=?', (r['unit_id'],)).fetchone():
+                    raise ValueError(f"discovered table would replace an original unit: {r['unit_id']}")
+            if creates_table and con.execute('SELECT 1 FROM transcription_units WHERE unit_id=?', (target,)).fetchone():
+                raise ValueError(f"discovered table requires an original parent: {target}")
         old_equations = [r[0] for r in con.execute("SELECT unit_id FROM transcriptions WHERE kind='equation'")]
         for uid, seq in con.execute('SELECT unit_id,seq FROM transcription_images').fetchall():
             con.execute('DELETE FROM images WHERE unit_id=? AND seq=?', (uid,seq))
         con.execute('DELETE FROM transcription_images')
         con.execute('DELETE FROM passages WHERE seq >= ?', (PASSAGE_BASE,))
-        for uid in old_equations:
+        generated = set(old_equations) | {r[0] for r in con.execute('SELECT unit_id FROM transcription_units')}
+        for uid in generated:
             con.execute('DELETE FROM units WHERE id=?', (uid,))
             con.execute('DELETE FROM images WHERE unit_id=?', (uid,))
+        con.execute('DELETE FROM transcription_units')
         con.execute('DELETE FROM transcriptions')
         for seq, r in enumerate(records, PASSAGE_BASE):
             body = readable(r) if r['state']=='verified' else f"Unverified source region ({r['state']}); read the original image."
-            if r['kind']=='equation':
+            if r['kind']=='equation' or r.get('create_unit') is True:
                 parent = con.execute('SELECT chapter,number,ord FROM units WHERE id=?', (r['parent_id'],)).fetchone()
                 first = min(r['regions'],key=lambda reg:reg['pdf_page'])
                 last = max(r['regions'],key=lambda reg:reg['pdf_page'])
                 con.execute('INSERT INTO units VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)', (
-                    r['unit_id'], r['manual_id'], 'equation', r['number'], r['title'], parent[0], parent[1],
+                    r['unit_id'], r['manual_id'], r['kind'], r['number'], r['title'], parent[0], parent[1],
                     first['pdf_page'], last['pdf_page'], first['page_label'], last['page_label'],
-                    '', '', '[]', '', len(r['regions']), 0, '[]', '[]', parent[2]))
+                    '', '', '[]', 'image' if r['kind']=='table' else '', len(r['regions']), 0, '[]', '[]', parent[2]))
+                con.execute('INSERT INTO transcription_units VALUES (?)', (r['unit_id'],))
             served = dict(r)
             served['source_image_refs'] = []
             for n, region in enumerate(r['regions']):

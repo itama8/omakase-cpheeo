@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:Ep819-4",
+  "unit_id": "SEW-2013-A:Ep819-4",
+  "manual_id": "SEW-2013-A",
+  "kind": "equation",
+  "number": "p819-4",
+  "title": "Geometric population in 2016",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "state": "verified",
+  "regions": [
+    {
+      "pdf_page": 819,
+      "page_label": "A - 48",
+      "bbox": [
+        50,
+        330,
+        510,
+        365
+      ],
+      "render_sha256": "06ea4f4dbcf7b219bca1bc75c596d2e637b1102ea260ff194655fc1c47e651e5"
+    }
+  ],
+  "verification": {
+    "transcription": {
+      "pass_id": "sew-818-826-first-reading-2026-11-08",
+      "method": "Direct viewing of full rendered pages and selected enlarged crops; no OCR",
+      "observations": "First visual transcription only. No separate second comparison performed."
+    },
+    "visual_recheck": {
+      "pass_id": "appendix818-826-distinct-recheck-20261108",
+      "method": "Distinct child directly viewed exact crops and full pages; parent directly viewed revised regions for four corrected records; no OCR; not independent human review.",
+      "observations": "Both exponents are 3.5: population 1981 × (1 + rg)^3.5 and 1,58,800 × (1.2442)^3.5 = 3,41,166. Match.",
+      "content_sha256": "3a82e74bdbf0c03211106a0f26b83ea0b52d7ac4887b43d69092155c1a94b417"
+    }
+  },
+  "source_image_refs": [
+    {
+      "path": "tmp/pdfs/sew-appendix-818-826/SEW-2013-A--Ep819-4.png",
+      "role": "first-reading source crop"
+    }
+  ],
+  "parent_id": "SEW-2013-A:A2.2",
+  "latex": "P_{2016}=P_{1981}(1+r_g)^{3.5}=158800(1.2442)^{3.5}=341166",
+  "readable": "Population in 2016 = Population in 1981 × (1 + rg)^3.5 = 1,58,800 × (1.2442)^3.5 = 3,41,166.",
+  "symbols": [],
+  "applicability": "Worked example in Appendix A2.2",
+  "notes": [
+    "Unnumbered expression; Ep<physical-page>-<sequence> is a service locator, not a printed equation number."
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:Ep310-1",
+  "unit_id": "SEW-2013-A:Ep310-1",
+  "manual_id": "SEW-2013-A",
+  "kind": "equation",
+  "number": "p310-1",
+  "title": "Facultative metabolism chemical labels in Figure 5.3",
+  "state": "pending",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "regions": [
+    {
+      "pdf_page": 310,
+      "page_label": "5 - 6",
+      "bbox": [
+        108,
+        240,
+        482,
+        463
+      ],
+      "render_sha256": "eb939e114ad5edc4347683539df4c1cba39f4cb8faf4b23def7a63eaa956f48f"
+    }
+  ],
+  "parent_id": "SEW-2013-A:5.1.2",
+  "latex": "\\mathrm{CO_2+NH_3+PO_4};\\quad\\text{ORGANICS}\\longrightarrow\\text{ORGANIC ACIDS ETC.}\\longrightarrow\\mathrm{CH_4+CO_2+NH_3}",
+  "readable": "Algal/bacterial cycle labels: O₂; CO₂ + NH₃ + PO₄. Anaerobic bottom pathway: ORGANICS → ORGANIC ACIDS ETC. → CH₄ + CO₂ + NH₃. Surface labels include CO₂ and O₂.",
+  "symbols": [],
+  "applicability": "Figure 5.3 Facultative Metabolism; Source: CPHEEO, 1993.",
+  "notes": [
+    "Ep<physical-page>-<sequence> is a service locator, not a printed equation number.",
+    "Diagram labels only: no coefficients, charge or balanced reaction is supplied. No chemical charge is added to printed PO₄."
+  ],
+  "verification": {
+    "transcription": {
+      "pass_id": "sew-treatment-304-313-first-reading",
+      "method": "Direct visual reading of full annotation-cleaned 144 dpi page PNGs and specified 288 dpi details; no OCR",
+      "observations": "First reading only. Source spelling, numbers, powers, punctuation and discrepancies retained. No distinct second inspection performed."
+    }
+  }
+}

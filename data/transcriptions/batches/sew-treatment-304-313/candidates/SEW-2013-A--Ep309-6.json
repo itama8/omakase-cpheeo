@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:Ep309-6",
+  "unit_id": "SEW-2013-A:Ep309-6",
+  "manual_id": "SEW-2013-A",
+  "kind": "equation",
+  "number": "p309-6",
+  "title": "Anaerobic metabolism labels and BOD statement in Figure 5.2",
+  "state": "pending",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "regions": [
+    {
+      "pdf_page": 309,
+      "page_label": "5 - 5",
+      "bbox": [
+        96,
+        438,
+        497,
+        720
+      ],
+      "render_sha256": "069944f8d7f4beeb090cb293003114ccf1f4e733c8af7fa9d68b99909f46cb5c"
+    }
+  ],
+  "parent_id": "SEW-2013-A:5.1.2",
+  "latex": "Y;\\quad \\mathrm{CH_4,H_2O,H_2S,NH_3};\\quad\\mathrm{CH_4,H_2O,NH_3};\\quad\\text{ammonia}\\longrightarrow\\text{ammonia}\\longrightarrow\\text{ammonia}",
+  "readable": "Bio-synthesis branch: Y. Bio-reduction products: CH₄, H₂O, H₂S, NH₃, Energy, etc. Digestion products: CH₄, H₂O, NH₃. Carbonaceous BOD is the sum of oxygen otherwise needed during biooxidation of organic matter. ammonia → ammonia → ammonia",
+  "symbols": [],
+  "applicability": "Anaerobic metabolism, Figure 5.2.",
+  "notes": [
+    "Ep<physical-page>-<sequence> is a service locator, not a printed equation number.",
+    "These are diagram labels and a verbal sum, not a balanced chemical reaction. Y is not defined here. Digestion product list ends with a printed comma after NH₃.",
+    "Figure text: CH₄, Methane gas is flammable and has calorific value, but cannot be bottled. H₂S is hydrogen sulphide gas produced from sulphate of water and has smell of rotten egg. Also, H₂S can form sulphurous / sulphuric acid, which is corrosive in nature."
+  ],
+  "verification": {
+    "transcription": {
+      "pass_id": "sew-treatment-304-313-first-reading",
+      "method": "Direct visual reading of full annotation-cleaned 144 dpi page PNGs and specified 288 dpi details; no OCR",
+      "observations": "First reading only. Source spelling, numbers, powers, punctuation and discrepancies retained. No distinct second inspection performed."
+    }
+  }
+}

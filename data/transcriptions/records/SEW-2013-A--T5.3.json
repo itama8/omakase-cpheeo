@@ -1,0 +1,394 @@
+{
+  "schema_version": 1,
+  "id": "SEW-2013-A:T5.3",
+  "unit_id": "SEW-2013-A:T5.3",
+  "manual_id": "SEW-2013-A",
+  "kind": "table",
+  "number": "5.3",
+  "title": "General standards for Discharge of Environmental Pollutants, Part A: Effluents as per Schedule VI of the Environmental (Protection) Rules 1986 and National River Conservation Directorate Guidelines for Faecal Coliforms, (Values in mg/l unless stated)",
+  "state": "verified",
+  "source_sha256": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "regions": [
+    {
+      "pdf_page": 307,
+      "page_label": "5 - 3",
+      "bbox": [
+        63,
+        70,
+        540,
+        766
+      ],
+      "render_sha256": "4cb737d0e6df15eb88b84aaead7a8655f8b4e9e420697c2114f92c42d5b4842e"
+    },
+    {
+      "pdf_page": 308,
+      "page_label": "5 - 4",
+      "bbox": [
+        50,
+        70,
+        545,
+        505
+      ],
+      "render_sha256": "0c46e5293f569c5101224d7188687272880947c6a9ce0fdf156e66744605d144"
+    }
+  ],
+  "headers": [
+    "No",
+    "Characteristics",
+    "Inland Surface Water",
+    "Public Sewers, (A)",
+    "Land for Irrigation",
+    "Marine Coastal Areas"
+  ],
+  "rows": [
+    [
+      "1",
+      "Colour and odour",
+      "(B)",
+      "",
+      "(B)",
+      "(B)"
+    ],
+    [
+      "2",
+      "SS",
+      "100",
+      "600",
+      "200",
+      "(C), (D)"
+    ],
+    [
+      "3",
+      "Particle size of SS",
+      "(E)",
+      "-",
+      "-",
+      "(F), (G)"
+    ],
+    [
+      "4",
+      "pH value",
+      "5.5 to 9.0",
+      "5.5 to 9.0",
+      "5.5 to 9.0",
+      "5.5 to 9.0"
+    ],
+    [
+      "5",
+      "Temperature",
+      "(H)",
+      "-",
+      "-",
+      "(H)"
+    ],
+    [
+      "6",
+      "Oil and grease",
+      "10",
+      "20",
+      "10",
+      "10"
+    ],
+    [
+      "7",
+      "Total residual chlorine",
+      "1.0",
+      "-",
+      "-",
+      "1.0"
+    ],
+    [
+      "8",
+      "Ammoniacal nitrogen (as N)",
+      "50",
+      "50",
+      "-",
+      "50"
+    ],
+    [
+      "9",
+      "Total Kjeldahl Nitrogen, (TKN) (as N)",
+      "100",
+      "-",
+      "-",
+      "100"
+    ],
+    [
+      "10",
+      "Free ammonia (as NH₃)",
+      "5.0",
+      "-",
+      "-",
+      "5.0"
+    ],
+    [
+      "11",
+      "Biochemical Oxygen Demand",
+      "30",
+      "350",
+      "100",
+      "100"
+    ],
+    [
+      "12",
+      "Chemical Oxygen Demand",
+      "250",
+      "-",
+      "-",
+      "250"
+    ],
+    [
+      "13",
+      "Arsenic (as As)",
+      "0.2",
+      "0.2",
+      "0.2",
+      "0.2"
+    ],
+    [
+      "14",
+      "Mercury (as Hg)",
+      "0.01",
+      "0.01",
+      "-",
+      "0.01"
+    ],
+    [
+      "15",
+      "Lead (as Pb)",
+      "0.1",
+      "1.0",
+      "-",
+      "2.0"
+    ],
+    [
+      "16",
+      "Cadmium (as Cd)",
+      "2.0",
+      "1.0",
+      "-",
+      "2.0"
+    ],
+    [
+      "17",
+      "Hexavalent Chromium (as Cr 6+)",
+      "0.1",
+      "2.0",
+      "-",
+      "1.0"
+    ],
+    [
+      "18",
+      "Total Chromium (as Cr)",
+      "2.0",
+      "2.0",
+      "-",
+      "2.0"
+    ],
+    [
+      "19",
+      "Copper (as Cu)",
+      "3.0",
+      "3.0",
+      "-",
+      "3.0"
+    ],
+    [
+      "20",
+      "Zinc (as Zn)",
+      "5.0",
+      "15.0",
+      "-",
+      "15.0"
+    ],
+    [
+      "21",
+      "Selenium (as Se)",
+      "0.05",
+      "0.05",
+      "-",
+      "0.05"
+    ],
+    [
+      "22",
+      "Nickel (as Ni)",
+      "3.0",
+      "3.0",
+      "-",
+      "5.0"
+    ],
+    [
+      "23",
+      "Cyanide (as CN)",
+      "0.2",
+      "2.0",
+      "0.2",
+      "0.2"
+    ],
+    [
+      "24",
+      "Fluoride (as F)",
+      "2.0",
+      "15.0",
+      "-",
+      "15.0"
+    ],
+    [
+      "25",
+      "Dissolved phosphates (as P)",
+      "5.0",
+      "-",
+      "-",
+      "-"
+    ],
+    [
+      "26",
+      "Sulphide (as S)",
+      "2.0",
+      "-",
+      "-",
+      "5.0"
+    ],
+    [
+      "27",
+      "Phenolic compounds (as C₆H₅OH)",
+      "1.0",
+      "5.0",
+      "-",
+      "5.0"
+    ],
+    [
+      "28",
+      "Radioactive materials: Alpha emitters, micro curie/L",
+      "10⁻⁷",
+      "10⁻⁷",
+      "10⁻⁸",
+      "10⁻⁷"
+    ],
+    [
+      "28",
+      "Radioactive materials: Beta emitters, micro curie/L",
+      "10⁻⁶",
+      "10⁻⁶",
+      "10⁻⁷",
+      "10⁻⁶"
+    ],
+    [
+      "29",
+      "Bio-assay test",
+      "(I)",
+      "(I)",
+      "(I)",
+      "(I)"
+    ],
+    [
+      "30",
+      "Manganese (as Mn),",
+      "2.0",
+      "2.0",
+      "-",
+      "2.0"
+    ],
+    [
+      "31",
+      "Iron (as Fe),",
+      "3.0",
+      "3.0",
+      "-",
+      "3.0"
+    ],
+    [
+      "32",
+      "Vanadium (as V),",
+      "0.2",
+      "0.2",
+      "-",
+      "0.2"
+    ],
+    [
+      "33",
+      "Nitrate Nitrogen (as N),",
+      "10.0",
+      "-",
+      "-",
+      "20.0"
+    ],
+    [
+      "34.",
+      "Faecal Coliform, MPN/100 ml for discharge",
+      "1,000",
+      "10,000",
+      "1,000",
+      "10,000"
+    ]
+  ],
+  "markdown": "| No | Characteristics | Inland Surface Water | Public Sewers, (A) | Land for Irrigation | Marine Coastal Areas |\n| --- | --- | --- | --- | --- | --- |\n| 1 | Colour and odour | (B) |  | (B) | (B) |\n| 2 | SS | 100 | 600 | 200 | (C), (D) |\n| 3 | Particle size of SS | (E) | - | - | (F), (G) |\n| 4 | pH value | 5.5 to 9.0 | 5.5 to 9.0 | 5.5 to 9.0 | 5.5 to 9.0 |\n| 5 | Temperature | (H) | - | - | (H) |\n| 6 | Oil and grease | 10 | 20 | 10 | 10 |\n| 7 | Total residual chlorine | 1.0 | - | - | 1.0 |\n| 8 | Ammoniacal nitrogen (as N) | 50 | 50 | - | 50 |\n| 9 | Total Kjeldahl Nitrogen, (TKN) (as N) | 100 | - | - | 100 |\n| 10 | Free ammonia (as NH₃) | 5.0 | - | - | 5.0 |\n| 11 | Biochemical Oxygen Demand | 30 | 350 | 100 | 100 |\n| 12 | Chemical Oxygen Demand | 250 | - | - | 250 |\n| 13 | Arsenic (as As) | 0.2 | 0.2 | 0.2 | 0.2 |\n| 14 | Mercury (as Hg) | 0.01 | 0.01 | - | 0.01 |\n| 15 | Lead (as Pb) | 0.1 | 1.0 | - | 2.0 |\n| 16 | Cadmium (as Cd) | 2.0 | 1.0 | - | 2.0 |\n| 17 | Hexavalent Chromium (as Cr 6+) | 0.1 | 2.0 | - | 1.0 |\n| 18 | Total Chromium (as Cr) | 2.0 | 2.0 | - | 2.0 |\n| 19 | Copper (as Cu) | 3.0 | 3.0 | - | 3.0 |\n| 20 | Zinc (as Zn) | 5.0 | 15.0 | - | 15.0 |\n| 21 | Selenium (as Se) | 0.05 | 0.05 | - | 0.05 |\n| 22 | Nickel (as Ni) | 3.0 | 3.0 | - | 5.0 |\n| 23 | Cyanide (as CN) | 0.2 | 2.0 | 0.2 | 0.2 |\n| 24 | Fluoride (as F) | 2.0 | 15.0 | - | 15.0 |\n| 25 | Dissolved phosphates (as P) | 5.0 | - | - | - |\n| 26 | Sulphide (as S) | 2.0 | - | - | 5.0 |\n| 27 | Phenolic compounds (as C₆H₅OH) | 1.0 | 5.0 | - | 5.0 |\n| 28 | Radioactive materials: Alpha emitters, micro curie/L | 10⁻⁷ | 10⁻⁷ | 10⁻⁸ | 10⁻⁷ |\n| 28 | Radioactive materials: Beta emitters, micro curie/L | 10⁻⁶ | 10⁻⁶ | 10⁻⁷ | 10⁻⁶ |\n| 29 | Bio-assay test | (I) | (I) | (I) | (I) |\n| 30 | Manganese (as Mn), | 2.0 | 2.0 | - | 2.0 |\n| 31 | Iron (as Fe), | 3.0 | 3.0 | - | 3.0 |\n| 32 | Vanadium (as V), | 0.2 | 0.2 | - | 0.2 |\n| 33 | Nitrate Nitrogen (as N), | 10.0 | - | - | 20.0 |\n| 34. | Faecal Coliform, MPN/100 ml for discharge | 1,000 | 10,000 | 1,000 | 10,000 |",
+  "notes": [
+    "Values in mg/l unless stated. Standards is the shared heading above the four destination columns.",
+    "Rows 4, 13 and 29 have one printed cell spanning all four standard columns, expanded here. Radioactive materials is a group heading and No 28 spans its alpha and beta rows.",
+    "Row 34 overrides destination headings: first two value columns are onto land, (J) 1,000 and (K) 10,000; last two are into water, (J) 1,000 and (K) 10,000. These must not be interpreted under the ordinary destination headings.",
+    "Colour and odour / Public Sewers is a blank printed cell, retained as an empty string.",
+    "A. These standards shall be applicable only if such sewer leads to a secondary treatment including biological treatment system; otherwise the discharge into sewers shall be treated as discharge into inland surface waters.",
+    "B. All efforts should be made to remove colour & unpleasant odour as far as practicable.",
+    "C. For process wastewater 100 mg/l",
+    "D. For cooling water effluent 10% above total suspended matter of influent.",
+    "E. Shall pass 850 micron IS Sieve",
+    "F. Floatable solids max. 3 mm",
+    "G. Settleable solids max. 850 microns",
+    "H. Shall not exceed 5°C above the receiving water temperature",
+    "I. 90 % survival of fish after 96 hours in 100 % effluent",
+    "J. Desirable",
+    "K. Maximum permissible",
+    "Source: The Environment (Protection) Rules, 1986 in http://cpcb.nic.in/GeneralStandards.pdf",
+    "Following paragraph on page 308: historical BOD not exceeding 20 mg/L and SS not exceeding 30 mg/L; this manual recommends, for treated sewage discharged into surface waters used as a source of drinking water, BOD not exceeding 10 mg/L, SS not exceeding 10 mg/L, Total Nitrogen as N not exceeding 10 mg/L, Dissolved Phosphorous as P not exceeding 2 mg/L, Faecal coliforms not exceeding 230 MPN / 100 ml. More details in Table 5-20."
+  ],
+  "cell_spans": [
+    {
+      "description": "Expanded four-column merged values",
+      "printed_row_numbers": [
+        "4",
+        "13",
+        "29"
+      ],
+      "columns": [
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "description": "Row 34 destination override",
+      "printed_row_number": "34.",
+      "groups": [
+        {
+          "columns": [
+            2,
+            3
+          ],
+          "heading": "onto land"
+        },
+        {
+          "columns": [
+            4,
+            5
+          ],
+          "heading": "into water"
+        }
+      ]
+    }
+  ],
+  "verification": {
+    "transcription": {
+      "pass_id": "sew-treatment-304-313-first-reading",
+      "method": "Direct visual reading of full annotation-cleaned 144 dpi page PNGs and specified 288 dpi details; no OCR",
+      "observations": "First reading only. Source spelling, numbers, powers, punctuation and discrepancies retained. No distinct second inspection performed."
+    },
+    "visual_recheck": {
+      "pass_id": "treatment304-313-distinct-recheck-20261108",
+      "method": "Distinct child actual inspection of all exact crops, full pages and enlarged details. Parent inspected diagram and T5.1 images to resolve report findings. No OCR; not independent human review.",
+      "observations": "All 35 normalized rows (34 printed numbers, two No 28 subrows), 210 body cells and six headers compared, including every dash, blank, decimal/trailing zero and exponent. No value correction found. Merged pH 5.5 to 9.0, arsenic 0.2 and bio-assay (I) correctly expanded. Colour/odour public-sewer cell is genuinely blank. Cr 6+ is source text and must remain uncorrected. Alpha limits 10⁻⁷,10⁻⁷,10⁻⁸,10⁻⁷ and beta 10⁻⁶,10⁻⁶,10⁻⁷,10⁻⁶ match micro curie/L. Faecal-coliform row changes destination semantics: onto land J=1,000 K=10,000; into water J=1,000 K=10,000 in MPN/100 ml. Candidate notes correctly override ordinary destination headers; notes are essential to interpretation. All A-K notations and following historical/recommended paragraph compared. Historical BOD20/SS30 and recommended BOD10/SS10/N10/P2 mg/L and coliform230 MPN/100 ml retained as source claims, not current engineering advice. Report observations are bound to this corrected record: stale draft blocker removed; chemical-product context and LaTeX labels added where reported. Original report retained in batches/treatment-304-313-recheck/report.json.",
+      "content_sha256": "bce0bf0b88d7cc4bc79f6eada2967724ebcdeb79658671e8721072e2369ba29c"
+    }
+  }
+}

@@ -1,0 +1,2318 @@
+{
+  "schema_version": 1,
+  "pass_id": "sew-appendix-818-826-separate-direct-visual-recheck-2026-11-08",
+  "completed_at": "2026-11-08T08:41:39.398049+00:00",
+  "state": "recheck_completed_with_findings_not_sealed",
+  "scope": "All 28 current manifest candidates, 22 equations and 6 tables; all physical source pages 818–826. Separate review pass; no delegation and no claim of independent human review.",
+  "method": "Fresh renders from open_clean; actual image viewing of every full page and exact 144-dpi pinned region, plus rotated table/header and focused 288-dpi details. Native extraction, detection, first-author assertions and hash matches were not treated as visual proof.",
+  "source_file": "/home/a2ajinkya/Downloads/CPHEEO/Seweage CPHEEO.pdf",
+  "source_sha256_expected": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "source_sha256_observed": "d6bcbe8a2dcf2b3af6377d22d39fe706ed874937d9b384a3e7e3c26d93333288",
+  "source_hash_matches": true,
+  "physical_pages_actually_inspected": [
+    818,
+    819,
+    820,
+    821,
+    822,
+    823,
+    824,
+    825,
+    826
+  ],
+  "printed_pages_actually_inspected": [
+    "A - 47",
+    "A - 48",
+    "A - 49",
+    "A - 50",
+    "A - 51",
+    "A - 52",
+    "A - 53",
+    "A - 54",
+    "A - 55"
+  ],
+  "records_checked": 28,
+  "regions_rendered_and_actually_viewed": 28,
+  "all_region_pins_match": true,
+  "new_table_metadata": "Current Tp822-1 and Tp825-1 both have create_unit:true,parent_id:SEW-2013-A:A3.1. Neither retains draft_only/application_blocker. No blocker inferred from stale first-pass report.",
+  "records": [
+    {
+      "id": "SEW-2013-A:TA2.2-1",
+      "candidate_file": "data/transcriptions/batches/sew-appendix-818-826/SEW-2013-A--TA2.2-1.json",
+      "candidate_file_sha256": "3c4ecb7a4ede7ae0f6639657baa53521d78345baf4a1cd255e3b9bacd78ad8a4",
+      "content_digest_checked": "66af36d5451495f3e48cc638bf9abf4e2a48e3e530a2db5791ae6ba33a750bb3",
+      "content_sha256": "66af36d5451495f3e48cc638bf9abf4e2a48e3e530a2db5791ae6ba33a750bb3",
+      "digest_function": "omakase_cpheeo.transcriptions.content_digest",
+      "physical_pages": [
+        818
+      ],
+      "pinned_regions": [
+        {
+          "pdf_page": 818,
+          "page_label": "A - 47",
+          "bbox": [
+            55,
+            198,
+            545,
+            532
+          ],
+          "render_sha256": "de0153ee0df0e1b162e9d7cbe1749d6451e8e919b2882d9519be43507d3d2809"
+        }
+      ],
+      "fresh_region_sha256": "de0153ee0df0e1b162e9d7cbe1749d6451e8e919b2882d9519be43507d3d2809",
+      "fresh_region_matches_pin": true,
+      "separate_direct_visual_recheck_performed": true,
+      "source_image_view_evidence": [
+        "/tmp/sew-818-826-direct-recheck/page-818.png",
+        "/tmp/sew-818-826-direct-recheck/SEW-2013-A--TA2.2-1.png"
+      ],
+      "observed_details": "Read all three headers and all 27 body cells. Seven year/population pairs, the dash, both totals, averages and merged Total/Average labels match. 1931 visibly prints 15,873, identical to 1941, despite the 4,337 on page 819. Preserve this anomaly.",
+      "fields_compared": [
+        "title/context",
+        "source region",
+        "notes",
+        "applicability",
+        "all headers, body cells, markdown and merge/blank notes"
+      ],
+      "findings": [],
+      "corrections_applied": false,
+      "disposition": "matches_source_on_direct_recheck",
+      "sealed": false,
+      "observed_headers": [
+        "Year",
+        "Population",
+        "Increment"
+      ],
+      "observed_rows": [
+        [
+          "1921",
+          "40,185",
+          "---"
+        ],
+        [
+          "1931",
+          "44,522",
+          "15,873"
+        ],
+        [
+          "1941",
+          "60,395",
+          "15,873"
+        ],
+        [
+          "1951",
+          "75,614",
+          "15,219"
+        ],
+        [
+          "1961",
+          "98,886",
+          "23,272"
+        ],
+        [
+          "1971",
+          "124,230",
+          "25,344"
+        ],
+        [
+          "1981",
+          "158,800",
+          "34,570"
+        ],
+        [
+          "Total",
+          "",
+          "118,615"
+        ],
+        [
+          "Average",
+          "",
+          "19,769"
+        ]
+      ],
+      "all_body_cells_compared": true,
+      "body_cells_compared": 27,
+      "header_cells_compared": 3,
+      "table_representation_check": "Markdown matches headers/rows; merged Total/Average labels explicitly represented by blank companion cells and notes where applicable."
+    },
+    {
+      "id": "SEW-2013-A:Ep818-1",
+      "candidate_file": "data/transcriptions/batches/sew-appendix-818-826/SEW-2013-A--Ep818-1.json",
+      "candidate_file_sha256": "1007d12dc2b997e31455dc3d6b988a9a579693c61775211ff5a401beb85386c4",
+      "content_digest_checked": "938c4544f97c4cda5f2138fe02c26cc2be236c3e4e479b68268bfbb1a9447ea9",
+      "content_sha256": "938c4544f97c4cda5f2138fe02c26cc2be236c3e4e479b68268bfbb1a9447ea9",
+      "digest_function": "omakase_cpheeo.transcriptions.content_digest",
+      "physical_pages": [
+        818
+      ],
+      "pinned_regions": [
+        {
+          "pdf_page": 818,
+          "page_label": "A - 47",
+          "bbox": [
+            55,
+            588,
+            535,
+            681
+          ],
+          "render_sha256": "b6c5f22e7524afa59f972b7b4ac561f86646fb2fc664b2dbf20994b1b9cf5c0c"
+        }
+      ],
+      "fresh_region_sha256": "b6c5f22e7524afa59f972b7b4ac561f86646fb2fc664b2dbf20994b1b9cf5c0c",
+      "fresh_region_matches_pin": true,
+      "separate_direct_visual_recheck_performed": true,
+      "source_image_view_evidence": [
+        "/tmp/sew-818-826-direct-recheck/page-818.png",
+        "/tmp/sew-818-826-direct-recheck/SEW-2013-A--Ep818-1.png",
+        "/tmp/sew-818-826-direct-recheck/arithmetic-818.png"
+      ],
+      "observed_details": "Read vertical subtraction 1,58,800 (-) 40,185 = 1,18,615, the repeated horizontal subtraction, and 1/6 × 1,18,615 = 19,769. Coefficients and minus/multiplication signs match; vertical layout is linearized. Final per-decade line is clipped at the bottom of the pinned crop; full page and arithmetic-818 expanded detail show it completely.",
+      "fields_compared": [
+        "title/context",
+        "source region",
+        "notes",
+        "applicability",
+        "latex and readable and symbols/units"
+      ],
+      "findings": [
+        {
+          "type": "region_clipping",
+          "severity": "source_evidence",
+          "field": "regions[0].bbox",
+          "observed": "Pinned bottom y=681 clips the final per-decade line. Complete equation is readable on full page and expanded detail.",
+          "requested_action": "Expand bottom to at least 683 PDF points (expanded detail bbox [55,586,540,683] was viewed), rerender and repin; recompute content_digest and recheck revised region.",
+          "content_change_required": false
+        }
+      ],
+      "corrections_applied": false,
+      "disposition": "requires_parent_correction_and_recheck",
+      "sealed": false,
+      "observed_latex": "158800-40185=118615;\\quad \\frac{1}{6}\\times118615=19769",
+      "symbol_definitions_compared": [],
+      "units_and_context_compared": true
+    },
+    {
+      "id": "SEW-2013-A:Ep818-2",
+      "candidate_file": "data/transcriptions/batches/sew-appendix-818-826/SEW-2013-A--Ep818-2.json",
+      "candidate_file_sha256": "53d8d4d30195c60b1bbfe9cb8388cafffdd7fd395e65cfaf130d8c9a06838b63",
+      "content_digest_checked": "f22c1b9edd3be36163a48a963f81e1ac0b33f58d516d183460b7b6c3b1587bed",
+      "content_sha256": "f22c1b9edd3be36163a48a963f81e1ac0b33f58d516d183460b7b6c3b1587bed",
+      "digest_function": "omakase_cpheeo.transcriptions.content_digest",
+      "physical_pages": [
+        818
+      ],
+      "pinned_regions": [
+        {
+          "pdf_page": 818,
+          "page_label": "A - 47",
+          "bbox": [
+            55,
+            684,
+            535,
+            734
+          ],
+          "render_sha256": "738b4993b7b6915482d6c63f16cf40bbc121a02ab73edf6a77dae653ae346988"
+        }
+      ],
+      "fresh_region_sha256": "738b4993b7b6915482d6c63f16cf40bbc121a02ab73edf6a77dae653ae346988",
+      "fresh_region_matches_pin": true,
+      "separate_direct_visual_recheck_performed": true,
+      "source_image_view_evidence": [
+        "/tmp/sew-818-826-direct-recheck/page-818.png",
+        "/tmp/sew-818-826-direct-recheck/SEW-2013-A--Ep818-2.png"
+      ],
+      "observed_details": "2001 = 1981 population + increase for 2 decades; 1,58,800 + 2 × 19,769; 1,58,800 + 39,538 = 1,98,338. All terms match.",
+      "fields_compared": [
+        "title/context",
+        "source region",
+        "notes",
+        "applicability",
+        "latex and readable and symbols/units"
+      ],
+      "findings": [],
+      "corrections_applied": false,
+      "disposition": "matches_source_on_direct_recheck",
+      "sealed": false,
+      "observed_latex": "P_{2001}=P_{1981}+\\text{Increase for 2 decades}=158800+2\\times19769=158800+39538=198338",
+      "symbol_definitions_compared": [],
+      "units_and_context_compared": true
+    },
+    {
+      "id": "SEW-2013-A:Ep818-3",
+      "candidate_file": "data/transcriptions/batches/sew-appendix-818-826/SEW-2013-A--Ep818-3.json",
+      "candidate_file_sha256": "8a5e7669a58826968345a22c5024274c701bbab7f465cce9d54853dffe4a1d62",
+      "content_digest_checked": "6f458a28aab11d0dd566e8ecbbd2208b55ba22a2a429ca117b4e3c06deab95eb",
+      "content_sha256": "6f458a28aab11d0dd566e8ecbbd2208b55ba22a2a429ca117b4e3c06deab95eb",
+      "digest_function": "omakase_cpheeo.transcriptions.content_digest",
+      "physical_pages": [
+        818
+      ],
+      "pinned_regions": [
+        {
+          "pdf_page": 818,
+          "page_label": "A - 47",
+          "bbox": [
+            55,
+            733,
+            535,
+            766
+          ],
+          "render_sha256": "c8d689070659df8e7d4da37d8a6e5bbae8c08a8f6576a56e0046a04d2d1172e2"
+        }
+      ],
+      "fresh_region_sha256": "c8d689070659df8e7d4da37d8a6e5bbae8c08a8f6576a56e0046a04d2d1172e2",
+      "fresh_region_matches_pin": true,
+      "separate_direct_visual_recheck_performed": true,
+      "source_image_view_evidence": [
+        "/tmp/sew-818-826-direct-recheck/page-818.png",
+        "/tmp/sew-818-826-direct-recheck/SEW-2013-A--Ep818-3.png"
+      ],
+      "observed_details": "2016 = 1981 population + increase for 3.5 decades; 1,58,800 + 3.5 × 19,769 = 2,27,992. Decimal coefficient and result match.",
+      "fields_compared": [
+        "title/context",
+        "source region",
+        "notes",
+        "applicability",
+        "latex and readable and symbols/units"
+      ],
+      "findings": [],
+      "corrections_applied": false,
+      "disposition": "matches_source_on_direct_recheck",
+      "sealed": false,
+      "observed_latex": "P_{2016}=P_{1981}+\\text{Increase for 3.5 decades}=158800+3.5\\times19769=227992",
+      "symbol_definitions_compared": [],
+      "units_and_context_compared": true
+    },
+    {
+      "id": "SEW-2013-A:Ep819-1",
+      "candidate_file": "data/transcriptions/batches/sew-appendix-818-826/SEW-2013-A--Ep819-1.json",
+      "candidate_file_sha256": "f25115ff2712211f03e6fd663b7cb7e03ccb26921b2d1621afffde25c778d287",
+      "content_digest_checked": "89a0b37c3734be997ae7e1bbace3b90acd5c745effcf5f6867c75e8ca95732d0",
+      "content_sha256": "89a0b37c3734be997ae7e1bbace3b90acd5c745effcf5f6867c75e8ca95732d0",
+      "digest_function": "omakase_cpheeo.transcriptions.content_digest",
+      "physical_pages": [
+        819
+      ],
+      "pinned_regions": [
+        {
+          "pdf_page": 819,
+          "page_label": "A - 48",
+          "bbox": [
+            50,
+            99,
+            510,
+            215
+          ],
+          "render_sha256": "02d1eab4773d6fa33d4c5d7f4eb3b54df9784eddecbe8756d33403f0d7c7fa4b"
+        }
+      ],
+      "fresh_region_sha256": "02d1eab4773d6fa33d4c5d7f4eb3b54df9784eddecbe8756d33403f0d7c7fa4b",
+      "fresh_region_matches_pin": true,
+      "separate_direct_visual_recheck_performed": true,
+      "source_image_view_evidence": [
+        "/tmp/sew-818-826-direct-recheck/page-819.png",
+        "/tmp/sew-818-826-direct-recheck/SEW-2013-A--Ep819-1.png"
+      ],
+      "observed_details": "Read all six year pairs and all six numerator/denominator/result triples: 4337/40185=.108; 15873/44522=.356; 15219/60395=.252; 23272/75614=.308; 25344/98886=.256; 34570/124230=.278. Leading zeros and printed comma grouping checked against readable text.",
+      "fields_compared": [
+        "title/context",
+        "source region",
+        "notes",
+        "applicability",
+        "latex and readable and symbols/units"
+      ],
+      "findings": [],
+      "corrections_applied": false,
+      "disposition": "matches_source_on_direct_recheck",
+      "sealed": false,
+      "observed_latex": "r_{1931,1921}=4337/40185=0.108;\\ r_{1941,1931}=15873/44522=0.356;\\ r_{1951,1941}=15219/60395=0.252;\\ r_{1961,1951}=23272/75614=0.308;\\ r_{1971,1961}=25344/98886=0.256;\\ r_{1981,1971}=34570/124230=0.278",
+      "symbol_definitions_compared": [],
+      "units_and_context_compared": true
+    },
+    {
+      "id": "SEW-2013-A:Ep819-2",
+      "candidate_file": "data/transcriptions/batches/sew-appendix-818-826/SEW-2013-A--Ep819-2.json",
+      "candidate_file_sha256": "d812a4cfd2737e11a7d0e90742b4adde56ff473a16c246d7dcdefa10452d907f",
+      "content_digest_checked": "fc773532a3ff6c05a07ccb4129016b53fa25fdc0fe1ab1cb6b2552aa34ff0c98",
+      "content_sha256": "fc773532a3ff6c05a07ccb4129016b53fa25fdc0fe1ab1cb6b2552aa34ff0c98",
+      "digest_function": "omakase_cpheeo.transcriptions.content_digest",
+      "physical_pages": [
+        819
+      ],
+      "pinned_regions": [
+        {
+          "pdf_page": 819,
+          "page_label": "A - 48",
+          "bbox": [
+            50,
+            215,
+            510,
+            298
+          ],
+          "render_sha256": "a3bcaa7812cac827c2d3db78bca2fd76f96fd05cbc6bbd719b0a9565f4bd1204"
+        }
+      ],
+      "fresh_region_sha256": "a3bcaa7812cac827c2d3db78bca2fd76f96fd05cbc6bbd719b0a9565f4bd1204",
+      "fresh_region_matches_pin": true,
+      "separate_direct_visual_recheck_performed": true,
+      "source_image_view_evidence": [
+        "/tmp/sew-818-826-direct-recheck/page-819.png",
+        "/tmp/sew-818-826-direct-recheck/SEW-2013-A--Ep819-2.png"
+      ],
+      "observed_details": "The radical index is 6, subscript g on r; product contains .108, .356, .252, .308, .256, .278 in that order, equals .2442. Following 1921 to 1981 statement repeats rg = .2442. Candidate matches.",
+      "fields_compared": [
+        "title/context",
+        "source region",
+        "notes",
+        "applicability",
+        "latex and readable and symbols/units"
+      ],
+      "findings": [],
+      "corrections_applied": false,
+      "disposition": "matches_source_on_direct_recheck",
+      "sealed": false,
+      "observed_latex": "r_g=\\sqrt[6]{0.108\\times0.356\\times0.252\\times0.308\\times0.256\\times0.278}=0.2442",
+      "symbol_definitions_compared": [],
+      "units_and_context_compared": true
+    },
+    {
+      "id": "SEW-2013-A:Ep819-3",
+      "candidate_file": "data/transcriptions/batches/sew-appendix-818-826/SEW-2013-A--Ep819-3.json",
+      "candidate_file_sha256": "d70e6c01ab5e23dc17fd29ab2db6a0bc7cbd52756b858b6eb4b2eec4336aa53f",
+      "content_digest_checked": "9ef4c4f948757dd5c3d4c5243b57eb0e10e951b53c4a97282c23e2774d34ab4d",
+      "content_sha256": "9ef4c4f948757dd5c3d4c5243b57eb0e10e951b53c4a97282c23e2774d34ab4d",
+      "digest_function": "omakase_cpheeo.transcriptions.content_digest",
+      "physical_pages": [
+        819
+      ],
+      "pinned_regions": [
+        {
+          "pdf_page": 819,
+          "page_label": "A - 48",
+          "bbox": [
+            50,
+            298,
+            510,
+            331
+          ],
+          "render_sha256": "e607f0763b2df945d0ab0819033c5d4f1bc06b810a8057a74f67527c919ce1b1"
+        }
+      ],
+      "fresh_region_sha256": "e607f0763b2df945d0ab0819033c5d4f1bc06b810a8057a74f67527c919ce1b1",
+      "fresh_region_matches_pin": true,
+      "separate_direct_visual_recheck_performed": true,
+      "source_image_view_evidence": [
+        "/tmp/sew-818-826-direct-recheck/page-819.png",
+        "/tmp/sew-818-826-direct-recheck/SEW-2013-A--Ep819-3.png"
+      ],
+      "observed_details": "Both exponents are 2: population 1981 × (1 + rg)^2 and 1,58,800 × (1.2442)^2 = 2,45,800. Match.",
+      "fields_compared": [
+        "title/context",
+        "source region",
+        "notes",
+        "applicability",
+        "latex and readable and symbols/units"
+      ],
+      "findings": [],
+      "corrections_applied": false,
+      "disposition": "matches_source_on_direct_recheck",
+      "sealed": false,
+      "observed_latex": "P_{2001}=P_{1981}(1+r_g)^2=158800(1.2442)^2=245800",
+      "symbol_definitions_compared": [],
+      "units_and_context_compared": true
+    },
+    {
+      "id": "SEW-2013-A:Ep819-4",
+      "candidate_file": "data/transcriptions/batches/sew-appendix-818-826/SEW-2013-A--Ep819-4.json",
+      "candidate_file_sha256": "1aec6dba27890053616c0651015f9d479e9e04bca7431fe0749db2124e478a91",
+      "content_digest_checked": "3a82e74bdbf0c03211106a0f26b83ea0b52d7ac4887b43d69092155c1a94b417",
+      "content_sha256": "3a82e74bdbf0c03211106a0f26b83ea0b52d7ac4887b43d69092155c1a94b417",
+      "digest_function": "omakase_cpheeo.transcriptions.content_digest",
+      "physical_pages": [
+        819
+      ],
+      "pinned_regions": [
+        {
+          "pdf_page": 819,
+          "page_label": "A - 48",
+          "bbox": [
+            50,
+            330,
+            510,
+            365
+          ],
+          "render_sha256": "06ea4f4dbcf7b219bca1bc75c596d2e637b1102ea260ff194655fc1c47e651e5"
+        }
+      ],
+      "fresh_region_sha256": "06ea4f4dbcf7b219bca1bc75c596d2e637b1102ea260ff194655fc1c47e651e5",
+      "fresh_region_matches_pin": true,
+      "separate_direct_visual_recheck_performed": true,
+      "source_image_view_evidence": [
+        "/tmp/sew-818-826-direct-recheck/page-819.png",
+        "/tmp/sew-818-826-direct-recheck/SEW-2013-A--Ep819-4.png"
+      ],
+      "observed_details": "Both exponents are 3.5: population 1981 × (1 + rg)^3.5 and 1,58,800 × (1.2442)^3.5 = 3,41,166. Match.",
+      "fields_compared": [
+        "title/context",
+        "source region",
+        "notes",
+        "applicability",
+        "latex and readable and symbols/units"
+      ],
+      "findings": [],
+      "corrections_applied": false,
+      "disposition": "matches_source_on_direct_recheck",
+      "sealed": false,
+      "observed_latex": "P_{2016}=P_{1981}(1+r_g)^{3.5}=158800(1.2442)^{3.5}=341166",
+      "symbol_definitions_compared": [],
+      "units_and_context_compared": true
+    },
+    {
+      "id": "SEW-2013-A:TA2.2-2",
+      "candidate_file": "data/transcriptions/batches/sew-appendix-818-826/SEW-2013-A--TA2.2-2.json",
+      "candidate_file_sha256": "ef7aecea88f4b6f4a3c8a4f06007d199d085c93640ac9fefd2e4a8a03d454149",
+      "content_digest_checked": "1a1834b21194b24486f17dcbaeafe0caa023a29cdc29cadc4f8a1d6541b5c126",
+      "content_sha256": "1a1834b21194b24486f17dcbaeafe0caa023a29cdc29cadc4f8a1d6541b5c126",
+      "digest_function": "omakase_cpheeo.transcriptions.content_digest",
+      "physical_pages": [
+        819
+      ],
+      "pinned_regions": [
+        {
+          "pdf_page": 819,
+          "page_label": "A - 48",
+          "bbox": [
+            50,
+            460,
+            540,
+            772
+          ],
+          "render_sha256": "87e2a4f8800ed1d0cbd0eacb19f1e2e42e68bd168cc0c0a4bda127979ec91560"
+        }
+      ],
+      "fresh_region_sha256": "87e2a4f8800ed1d0cbd0eacb19f1e2e42e68bd168cc0c0a4bda127979ec91560",
+      "fresh_region_matches_pin": true,
+      "separate_direct_visual_recheck_performed": true,
+      "source_image_view_evidence": [
+        "/tmp/sew-818-826-direct-recheck/page-819.png",
+        "/tmp/sew-818-826-direct-recheck/SEW-2013-A--TA2.2-2.png"
+      ],
+      "observed_details": "Read all four headers and all 36 body cells. Blank increase/increment fields in 1921 and blank increment in 1931 remain blank. 1951 incremental increase is - 654. Totals 1,18,615 and 30,233; average fractions 1/6 and 1/5 and results 19,769 and 6,047 match. Total/Average labels span columns 1–2.",
+      "fields_compared": [
+        "title/context",
+        "source region",
+        "notes",
+        "applicability",
+        "all headers, body cells, markdown and merge/blank notes"
+      ],
+      "findings": [],
+      "corrections_applied": false,
+      "disposition": "matches_source_on_direct_recheck",
+      "sealed": false,
+      "observed_headers": [
+        "Year",
+        "Population",
+        "Increase (X)",
+        "Incremental Increase (Y)"
+      ],
+      "observed_rows": [
+        [
+          "1921",
+          "40,185",
+          "",
+          ""
+        ],
+        [
+          "1931",
+          "44,522",
+          "4,337",
+          ""
+        ],
+        [
+          "1941",
+          "60,395",
+          "15,873",
+          "11,536"
+        ],
+        [
+          "1951",
+          "75,614",
+          "15,219",
+          "- 654"
+        ],
+        [
+          "1961",
+          "98,886",
+          "23,272",
+          "8,053"
+        ],
+        [
+          "1971",
+          "124,230",
+          "25,344",
+          "2,072"
+        ],
+        [
+          "1981",
+          "158,800",
+          "34,570",
+          "9,226"
+        ],
+        [
+          "Total",
+          "",
+          "1,18,615",
+          "30,233"
+        ],
+        [
+          "Average",
+          "",
+          "1/6 × 118,615 = 19,769",
+          "1/5 × 30,233 = 6,047"
+        ]
+      ],
+      "all_body_cells_compared": true,
+      "body_cells_compared": 36,
+      "header_cells_compared": 4,
+      "table_representation_check": "Markdown matches headers/rows; merged Total/Average labels explicitly represented by blank companion cells and notes where applicable."
+    },
+    {
+      "id": "SEW-2013-A:Ep819-5",
+      "candidate_file": "data/transcriptions/batches/sew-appendix-818-826/SEW-2013-A--Ep819-5.json",
+      "candidate_file_sha256": "b384cb1c9ace7c6ce33b5f38da789e377d327aae7fc1abf546c2457bdeff549a",
+      "content_digest_checked": "648a8e8bdb8e6f09e4a28c5e20a02c02145bd1a1d9795f24625c4af3e6625a04",
+      "content_sha256": "648a8e8bdb8e6f09e4a28c5e20a02c02145bd1a1d9795f24625c4af3e6625a04",
+      "digest_function": "omakase_cpheeo.transcriptions.content_digest",
+      "physical_pages": [
+        819
+      ],
+      "pinned_regions": [
+        {
+          "pdf_page": 819,
+          "page_label": "A - 48",
+          "bbox": [
+            275,
+            710,
+            540,
+            770
+          ],
+          "render_sha256": "81185174c92c93ee7f5f0fb3a89442c6b274544e4289767d9eb88217f7f44b7f"
+        }
+      ],
+      "fresh_region_sha256": "81185174c92c93ee7f5f0fb3a89442c6b274544e4289767d9eb88217f7f44b7f",
+      "fresh_region_matches_pin": true,
+      "separate_direct_visual_recheck_performed": true,
+      "source_image_view_evidence": [
+        "/tmp/sew-818-826-direct-recheck/page-819.png",
+        "/tmp/sew-818-826-direct-recheck/SEW-2013-A--Ep819-5.png"
+      ],
+      "observed_details": "Average cells visibly read 1/6 × 118,615 = 19,769 and 1/5 × 30,233 = 6,047; all coefficients, products, equalities and commas match.",
+      "fields_compared": [
+        "title/context",
+        "source region",
+        "notes",
+        "applicability",
+        "latex and readable and symbols/units"
+      ],
+      "findings": [],
+      "corrections_applied": false,
+      "disposition": "matches_source_on_direct_recheck",
+      "sealed": false,
+      "observed_latex": "\\frac16\\times118615=19769;\\quad\\frac15\\times30233=6047",
+      "symbol_definitions_compared": [],
+      "units_and_context_compared": true
+    },
+    {
+      "id": "SEW-2013-A:Ep820-1",
+      "candidate_file": "data/transcriptions/batches/sew-appendix-818-826/SEW-2013-A--Ep820-1.json",
+      "candidate_file_sha256": "5693476985ef43145f94f9ac972bba6c608d7972830a058dc43e5bc809968d07",
+      "content_digest_checked": "1f4fbad1410ae566f25cc50c57ca81af9a4aa98a524ccd56e4f7ac7cbc994964",
+      "content_sha256": "1f4fbad1410ae566f25cc50c57ca81af9a4aa98a524ccd56e4f7ac7cbc994964",
+      "digest_function": "omakase_cpheeo.transcriptions.content_digest",
+      "physical_pages": [
+        820
+      ],
+      "pinned_regions": [
+        {
+          "pdf_page": 820,
+          "page_label": "A - 49",
+          "bbox": [
+            55,
+            73,
+            420,
+            122
+          ],
+          "render_sha256": "da26553e9c5d57414048b2c03b1e779e1a5bf8e3eb2f1718320068222d38f157"
+        }
+      ],
+      "fresh_region_sha256": "da26553e9c5d57414048b2c03b1e779e1a5bf8e3eb2f1718320068222d38f157",
+      "fresh_region_matches_pin": true,
+      "separate_direct_visual_recheck_performed": true,
+      "source_image_view_evidence": [
+        "/tmp/sew-818-826-direct-recheck/page-820.png",
+        "/tmp/sew-818-826-direct-recheck/SEW-2013-A--Ep820-1.png"
+      ],
+      "observed_details": "P subscript n = P subscript 1 + nY + n(n+1)Y over 2. Y really appears in both terms. Plus inside parentheses and fraction denominator 2 match. No X substituted; undefined symbols not invented.",
+      "fields_compared": [
+        "title/context",
+        "source region",
+        "notes",
+        "applicability",
+        "latex and readable and symbols/units"
+      ],
+      "findings": [],
+      "corrections_applied": false,
+      "disposition": "matches_source_on_direct_recheck",
+      "sealed": false,
+      "observed_latex": "P_n=P_1+nY+\\frac{n(n+1)Y}{2}",
+      "symbol_definitions_compared": [],
+      "units_and_context_compared": true
+    },
+    {
+      "id": "SEW-2013-A:Ep820-2",
+      "candidate_file": "data/transcriptions/batches/sew-appendix-818-826/SEW-2013-A--Ep820-2.json",
+      "candidate_file_sha256": "770d2ad98dd144fa1ceebb0515207669afbae1108f95e3219a71d34e2655b78a",
+      "content_digest_checked": "318851e60a2ac43d6bf555b150ece9fd2bd55b4295cabbf7f1f738b2244580db",
+      "content_sha256": "318851e60a2ac43d6bf555b150ece9fd2bd55b4295cabbf7f1f738b2244580db",
+      "digest_function": "omakase_cpheeo.transcriptions.content_digest",
+      "physical_pages": [
+        820
+      ],
+      "pinned_regions": [
+        {
+          "pdf_page": 820,
+          "page_label": "A - 49",
+          "bbox": [
+            55,
+            129,
+            420,
+            218
+          ],
+          "render_sha256": "d7783533cf79c35ff931514725e7e04c2c3a0a5a1f4257626519fc24ecd42c57"
+        }
+      ],
+      "fresh_region_sha256": "d7783533cf79c35ff931514725e7e04c2c3a0a5a1f4257626519fc24ecd42c57",
+      "fresh_region_matches_pin": true,
+      "separate_direct_visual_recheck_performed": true,
+      "source_image_view_evidence": [
+        "/tmp/sew-818-826-direct-recheck/page-820.png",
+        "/tmp/sew-818-826-direct-recheck/SEW-2013-A--Ep820-2.png"
+      ],
+      "observed_details": "Subscripts 2001 and 1981; 2 × 19769 plus fraction (2 × 3 × 6047)/2; next line 1,58,800 + 39,538 + 18,141; result 2,16,479. Every term matches.",
+      "fields_compared": [
+        "title/context",
+        "source region",
+        "notes",
+        "applicability",
+        "latex and readable and symbols/units"
+      ],
+      "findings": [],
+      "corrections_applied": false,
+      "disposition": "matches_source_on_direct_recheck",
+      "sealed": false,
+      "observed_latex": "P_{2001}=P_{1981}+2\\times19769+\\frac{2\\times3\\times6047}{2}=158800+39538+18141=216479",
+      "symbol_definitions_compared": [],
+      "units_and_context_compared": true
+    },
+    {
+      "id": "SEW-2013-A:Ep820-3",
+      "candidate_file": "data/transcriptions/batches/sew-appendix-818-826/SEW-2013-A--Ep820-3.json",
+      "candidate_file_sha256": "3842b583dc5fbebed45b1cb421f9f91a5a166cc7346281d6519bacac0f0eff91",
+      "content_digest_checked": "02f293f8aca082fe5f600f4996d1063c7e89b23e8baec58650c0bb9f13290bd1",
+      "content_sha256": "02f293f8aca082fe5f600f4996d1063c7e89b23e8baec58650c0bb9f13290bd1",
+      "digest_function": "omakase_cpheeo.transcriptions.content_digest",
+      "physical_pages": [
+        820
+      ],
+      "pinned_regions": [
+        {
+          "pdf_page": 820,
+          "page_label": "A - 49",
+          "bbox": [
+            55,
+            220,
+            420,
+            312
+          ],
+          "render_sha256": "9f3f6c2bf5bf227c2a6dcae792addba5a1fffe895378a6f1a1eaf889058896a2"
+        }
+      ],
+      "fresh_region_sha256": "9f3f6c2bf5bf227c2a6dcae792addba5a1fffe895378a6f1a1eaf889058896a2",
+      "fresh_region_matches_pin": true,
+      "separate_direct_visual_recheck_performed": true,
+      "source_image_view_evidence": [
+        "/tmp/sew-818-826-direct-recheck/page-820.png",
+        "/tmp/sew-818-826-direct-recheck/SEW-2013-A--Ep820-3.png"
+      ],
+      "observed_details": "Subscripts 2016 and 1981; 3.5 × 19769 plus fraction (3.5 × 4.5 × 6047)/2; printed next line 1,58,800 + 69,192 + 24,188; result 2,75,612. These are the visible printed values, retained without arithmetic repair.",
+      "fields_compared": [
+        "title/context",
+        "source region",
+        "notes",
+        "applicability",
+        "latex and readable and symbols/units"
+      ],
+      "findings": [],
+      "corrections_applied": false,
+      "disposition": "matches_source_on_direct_recheck",
+      "sealed": false,
+      "observed_latex": "P_{2016}=P_{1981}+3.5\\times19769+\\frac{3.5\\times4.5\\times6047}{2}=158800+69192+24188=275612",
+      "symbol_definitions_compared": [],
+      "units_and_context_compared": true
+    },
+    {
+      "id": "SEW-2013-A:Ep820-4",
+      "candidate_file": "data/transcriptions/batches/sew-appendix-818-826/SEW-2013-A--Ep820-4.json",
+      "candidate_file_sha256": "78aa33b87cfcf0c7f6c9c51bcdb625b5a242402cb6ef6a80f507feffd0052e27",
+      "content_digest_checked": "2c7dd75322ffb0941134abe6f8acd485555c1e72d5757f39b4bf2e388df19922",
+      "content_sha256": "2c7dd75322ffb0941134abe6f8acd485555c1e72d5757f39b4bf2e388df19922",
+      "digest_function": "omakase_cpheeo.transcriptions.content_digest",
+      "physical_pages": [
+        820
+      ],
+      "pinned_regions": [
+        {
+          "pdf_page": 820,
+          "page_label": "A - 49",
+          "bbox": [
+            55,
+            355,
+            545,
+            417
+          ],
+          "render_sha256": "7309e023c78ad4c58d423f8f067dd39477868befc3266920ec7af8eb60a905db"
+        }
+      ],
+      "fresh_region_sha256": "7309e023c78ad4c58d423f8f067dd39477868befc3266920ec7af8eb60a905db",
+      "fresh_region_matches_pin": true,
+      "separate_direct_visual_recheck_performed": true,
+      "source_image_view_evidence": [
+        "/tmp/sew-818-826-direct-recheck/page-820.png",
+        "/tmp/sew-818-826-direct-recheck/SEW-2013-A--Ep820-4.png"
+      ],
+      "observed_details": "Two printed year/value pairs 2001 - 253,000 and 2016 - 362,000 match. Hyphens separate year and value. Figure A2.2-1 on this same page was also viewed; no value inferred from plotting.",
+      "fields_compared": [
+        "title/context",
+        "source region",
+        "notes",
+        "applicability",
+        "latex and readable and symbols/units"
+      ],
+      "findings": [],
+      "corrections_applied": false,
+      "disposition": "matches_source_on_direct_recheck",
+      "sealed": false,
+      "observed_latex": "P_{2001}=253000;\\quad P_{2016}=362000",
+      "symbol_definitions_compared": [],
+      "units_and_context_compared": true
+    },
+    {
+      "id": "SEW-2013-A:Ep821-1",
+      "candidate_file": "data/transcriptions/batches/sew-appendix-818-826/SEW-2013-A--Ep821-1.json",
+      "candidate_file_sha256": "63842dbc7dbe5cd49452c483840ba150981bf08b7e5f09b73a24e2a3c39208e7",
+      "content_digest_checked": "7a7c37876d81cd81dacf59e89194ec5ea47bb174d20a767549402e99d5149a65",
+      "content_sha256": "7a7c37876d81cd81dacf59e89194ec5ea47bb174d20a767549402e99d5149a65",
+      "digest_function": "omakase_cpheeo.transcriptions.content_digest",
+      "physical_pages": [
+        821
+      ],
+      "pinned_regions": [
+        {
+          "pdf_page": 821,
+          "page_label": "A - 50",
+          "bbox": [
+            50,
+            193,
+            545,
+            351
+          ],
+          "render_sha256": "7073d81f210a7163bb1989b4e27bd46b952849397d4e0e07b5dc273b0955f102"
+        }
+      ],
+      "fresh_region_sha256": "7073d81f210a7163bb1989b4e27bd46b952849397d4e0e07b5dc273b0955f102",
+      "fresh_region_matches_pin": true,
+      "separate_direct_visual_recheck_performed": true,
+      "source_image_view_evidence": [
+        "/tmp/sew-818-826-direct-recheck/page-821.png",
+        "/tmp/sew-818-826-direct-recheck/SEW-2013-A--Ep821-1.png",
+        "/tmp/sew-818-826-direct-recheck/subscript-821.png",
+        "/tmp/sew-818-826-direct-recheck/figure-821.png"
+      ],
+      "observed_details": "Imperviousness .7/.2; inlet times 8/15 minutes; minimum velocity .8 mps; minimum cover .5 metres; one-year storm, Table 3.7 and Manning chart context match. Built area subscript is b; lawns subscript visibly has the foot and angled head of numeral 1, not letter l. Candidate t_l in LaTeX and readable text requires correction to t_1.",
+      "fields_compared": [
+        "title/context",
+        "source region",
+        "notes",
+        "applicability",
+        "latex and readable and symbols/units"
+      ],
+      "findings": [
+        {
+          "type": "symbol_mistranscription",
+          "field": "latex/readable",
+          "candidate": "t_l = 15 minutes",
+          "observed": "t_1 = 15 minutes",
+          "requested_action": "Replace lawns subscript letter l by numeral 1 in LaTeX and readable content; preserve other values."
+        }
+      ],
+      "corrections_applied": false,
+      "disposition": "requires_parent_correction_and_recheck",
+      "sealed": false,
+      "observed_latex": "\\text{Imperviousness: built/paved}=0.7;\\ \\text{open/lawns}=0.2;\\ t_b=8\\text{ min};\\ t_1=15\\text{ min};\\ v_{\\min}=0.8\\text{ mps};\\ \\text{cover}_{\\min}=0.5\\text{ m}",
+      "symbol_definitions_compared": [],
+      "units_and_context_compared": true
+    },
+    {
+      "id": "SEW-2013-A:Ep822-1",
+      "candidate_file": "data/transcriptions/batches/sew-appendix-818-826/SEW-2013-A--Ep822-1.json",
+      "candidate_file_sha256": "77dae39c9b66a1f15172e92cfba850a9b2b1c64558b5034c3d099aa3bcb1e9d0",
+      "content_digest_checked": "a398ea508516bc2411439a9db48ce501b6efa56a97c286c45532a449f1444f82",
+      "content_sha256": "a398ea508516bc2411439a9db48ce501b6efa56a97c286c45532a449f1444f82",
+      "digest_function": "omakase_cpheeo.transcriptions.content_digest",
+      "physical_pages": [
+        822
+      ],
+      "pinned_regions": [
+        {
+          "pdf_page": 822,
+          "page_label": "A - 51",
+          "bbox": [
+            55,
+            100,
+            545,
+            211
+          ],
+          "render_sha256": "66e8c36ef4c07e601c3c08e444a1543206e817750528fed85b09f4117b1bac6a"
+        }
+      ],
+      "fresh_region_sha256": "66e8c36ef4c07e601c3c08e444a1543206e817750528fed85b09f4117b1bac6a",
+      "fresh_region_matches_pin": true,
+      "separate_direct_visual_recheck_performed": true,
+      "source_image_view_evidence": [
+        "/tmp/sew-818-826-direct-recheck/page-822.png",
+        "/tmp/sew-818-826-direct-recheck/SEW-2013-A--Ep822-1.png"
+      ],
+      "observed_details": "Q = 10 C i A with coefficient 10. Definitions read Q runoff m³/hr; C coefficient of runoff; i rainfall intensity mm/hr; A district area hectares. All symbols and units match.",
+      "fields_compared": [
+        "title/context",
+        "source region",
+        "notes",
+        "applicability",
+        "latex and readable and symbols/units"
+      ],
+      "findings": [],
+      "corrections_applied": false,
+      "disposition": "matches_source_on_direct_recheck",
+      "sealed": false,
+      "observed_latex": "Q=10CiA",
+      "symbol_definitions_compared": [
+        {
+          "symbol": "Q",
+          "definition": "Runoff in m³/hr"
+        },
+        {
+          "symbol": "C",
+          "definition": "Coefficient of runoff"
+        },
+        {
+          "symbol": "i",
+          "definition": "Intensity of rainfall in mm/hr"
+        },
+        {
+          "symbol": "A",
+          "definition": "Area of drainage district in hectares"
+        }
+      ],
+      "units_and_context_compared": true
+    },
+    {
+      "id": "SEW-2013-A:Tp822-1",
+      "candidate_file": "data/transcriptions/batches/sew-appendix-818-826/SEW-2013-A--Tp822-1.json",
+      "candidate_file_sha256": "6d7886b298b839801a3861020fd89af65ecd08b4ec1ea8ee1c9e4b24d870bb3f",
+      "content_digest_checked": "6adf5c375265ded1fb871784811e98babf323109d1fff0f6f394bb7d82ea34f3",
+      "content_sha256": "6adf5c375265ded1fb871784811e98babf323109d1fff0f6f394bb7d82ea34f3",
+      "digest_function": "omakase_cpheeo.transcriptions.content_digest",
+      "physical_pages": [
+        822
+      ],
+      "pinned_regions": [
+        {
+          "pdf_page": 822,
+          "page_label": "A - 51",
+          "bbox": [
+            55,
+            300,
+            525,
+            337
+          ],
+          "render_sha256": "d467b10ae1f29d5497f4092864c29e8ef56e65900cc5ef1bf506cbd31532c8c8"
+        }
+      ],
+      "fresh_region_sha256": "d467b10ae1f29d5497f4092864c29e8ef56e65900cc5ef1bf506cbd31532c8c8",
+      "fresh_region_matches_pin": true,
+      "separate_direct_visual_recheck_performed": true,
+      "source_image_view_evidence": [
+        "/tmp/sew-818-826-direct-recheck/page-822.png",
+        "/tmp/sew-818-826-direct-recheck/SEW-2013-A--Tp822-1.png"
+      ],
+      "observed_details": "Read every label and all six aligned pairs: intensity mm/hr 30,35,40,45,50,60 above duration minute 44,36,28.5,22.5,13.5,9.75. One-year storm, 26 times in 26 years is printed above. Metadata create_unit true and A3.1 parent are present in current candidate; old draft blocker no longer applies.",
+      "fields_compared": [
+        "title/context",
+        "source region",
+        "notes",
+        "applicability",
+        "all headers, body cells, markdown and merge/blank notes"
+      ],
+      "findings": [],
+      "corrections_applied": false,
+      "disposition": "matches_source_on_direct_recheck",
+      "sealed": false,
+      "observed_headers": [
+        "Intensity, i mm/hr",
+        "30",
+        "35",
+        "40",
+        "45",
+        "50",
+        "60"
+      ],
+      "observed_rows": [
+        [
+          "Duration, t minute",
+          "44",
+          "36",
+          "28.5",
+          "22.5",
+          "13.5",
+          "9.75"
+        ]
+      ],
+      "all_body_cells_compared": true,
+      "body_cells_compared": 7,
+      "header_cells_compared": 7,
+      "table_representation_check": "Markdown matches headers/rows; merged Total/Average labels explicitly represented by blank companion cells and notes where applicable."
+    },
+    {
+      "id": "SEW-2013-A:Ep822-2",
+      "candidate_file": "data/transcriptions/batches/sew-appendix-818-826/SEW-2013-A--Ep822-2.json",
+      "candidate_file_sha256": "b1012949a153a8a625f0f67cfb1e9f00a23143445ee016a5863fad9912c0f45b",
+      "content_digest_checked": "517008471a86f09cdd9b4a04a8c51b78db9021da87fc10b23da3403b55112fad",
+      "content_sha256": "517008471a86f09cdd9b4a04a8c51b78db9021da87fc10b23da3403b55112fad",
+      "digest_function": "omakase_cpheeo.transcriptions.content_digest",
+      "physical_pages": [
+        822
+      ],
+      "pinned_regions": [
+        {
+          "pdf_page": 822,
+          "page_label": "A - 51",
+          "bbox": [
+            55,
+            350,
+            545,
+            465
+          ],
+          "render_sha256": "c78f0c960e4533d0d81ac91632516774f204f5d5a9e2c906951aa311f217a4d2"
+        }
+      ],
+      "fresh_region_sha256": "c78f0c960e4533d0d81ac91632516774f204f5d5a9e2c906951aa311f217a4d2",
+      "fresh_region_matches_pin": true,
+      "separate_direct_visual_recheck_performed": true,
+      "source_image_view_evidence": [
+        "/tmp/sew-818-826-direct-recheck/page-822.png",
+        "/tmp/sew-818-826-direct-recheck/SEW-2013-A--Ep822-2.png"
+      ],
+      "observed_details": "i = a divided by t with superscript n. Definitions i rainfall intensity mm/hr, t duration minutes; a and n constants. Numerator, denominator, exponent and definitions match.",
+      "fields_compared": [
+        "title/context",
+        "source region",
+        "notes",
+        "applicability",
+        "latex and readable and symbols/units"
+      ],
+      "findings": [],
+      "corrections_applied": false,
+      "disposition": "matches_source_on_direct_recheck",
+      "sealed": false,
+      "observed_latex": "i=\\frac{a}{t^n}",
+      "symbol_definitions_compared": [
+        {
+          "symbol": "i",
+          "definition": "Intensity of rainfall in mm/hr"
+        },
+        {
+          "symbol": "t",
+          "definition": "Duration in minutes"
+        },
+        {
+          "symbol": "a, n",
+          "definition": "Constants"
+        }
+      ],
+      "units_and_context_compared": true
+    },
+    {
+      "id": "SEW-2013-A:Ep822-3",
+      "candidate_file": "data/transcriptions/batches/sew-appendix-818-826/SEW-2013-A--Ep822-3.json",
+      "candidate_file_sha256": "c30b7955270681790b069df1cfca005e771793f9ee44afad6341b0269d1ca911",
+      "content_digest_checked": "7e9dd8166de9859384612bf849ef4b6b03893430fe727c41bb82f06d0068a361",
+      "content_sha256": "7e9dd8166de9859384612bf849ef4b6b03893430fe727c41bb82f06d0068a361",
+      "digest_function": "omakase_cpheeo.transcriptions.content_digest",
+      "physical_pages": [
+        822
+      ],
+      "pinned_regions": [
+        {
+          "pdf_page": 822,
+          "page_label": "A - 51",
+          "bbox": [
+            55,
+            477,
+            545,
+            577
+          ],
+          "render_sha256": "e2413cddd15a42ce195cf11c689c8b66a745b98845739036a51d723e75816f5e"
+        }
+      ],
+      "fresh_region_sha256": "e2413cddd15a42ce195cf11c689c8b66a745b98845739036a51d723e75816f5e",
+      "fresh_region_matches_pin": true,
+      "separate_direct_visual_recheck_performed": true,
+      "source_image_view_evidence": [
+        "/tmp/sew-818-826-direct-recheck/page-822.png",
+        "/tmp/sew-818-826-direct-recheck/SEW-2013-A--Ep822-3.png"
+      ],
+      "observed_details": "Prose assigns a and n as 160 and 0.4 respectively. Inline i = (160 / t^0.4), with 0.4 as exponent, matches. One-year log-log fit context confirmed.",
+      "fields_compared": [
+        "title/context",
+        "source region",
+        "notes",
+        "applicability",
+        "latex and readable and symbols/units"
+      ],
+      "findings": [],
+      "corrections_applied": false,
+      "disposition": "matches_source_on_direct_recheck",
+      "sealed": false,
+      "observed_latex": "a=160;\\ n=0.4;\\ i=\\frac{160}{t^{0.4}}",
+      "symbol_definitions_compared": [],
+      "units_and_context_compared": true
+    },
+    {
+      "id": "SEW-2013-A:TA3.1-1",
+      "candidate_file": "data/transcriptions/batches/sew-appendix-818-826/SEW-2013-A--TA3.1-1.json",
+      "candidate_file_sha256": "29d32fff05c934b2c42df49007c2c5da89dee9a49fa9e56f7a89f8c426c9b9fc",
+      "content_digest_checked": "b8d2a22dda32b626c9f50f0eaf38995798c723465da07a6a7863d72a01f5a5fb",
+      "content_sha256": "b8d2a22dda32b626c9f50f0eaf38995798c723465da07a6a7863d72a01f5a5fb",
+      "digest_function": "omakase_cpheeo.transcriptions.content_digest",
+      "physical_pages": [
+        822
+      ],
+      "pinned_regions": [
+        {
+          "pdf_page": 822,
+          "page_label": "A - 51",
+          "bbox": [
+            55,
+            617,
+            545,
+            705
+          ],
+          "render_sha256": "2e98b7f87d270e5974c80d9b5c41089ae89310ecfc40730a096e018850f9dc20"
+        }
+      ],
+      "fresh_region_sha256": "2e98b7f87d270e5974c80d9b5c41089ae89310ecfc40730a096e018850f9dc20",
+      "fresh_region_matches_pin": true,
+      "separate_direct_visual_recheck_performed": true,
+      "source_image_view_evidence": [
+        "/tmp/sew-818-826-direct-recheck/page-822.png",
+        "/tmp/sew-818-826-direct-recheck/SEW-2013-A--TA3.1-1.png"
+      ],
+      "observed_details": "Read all 14 top-row cells and all 14 second-row cells. t_min label and i=a/t^n label; durations 5,10,15,20,25,30,35,40,45,60,80,100,120 align with 84.2,64.0,54.0,48.5,44.2,41.2,38.6,36.8,34.8,31.0,27.8,25.4,23.6. Trailing zeros retained; title one-year storm matches.",
+      "fields_compared": [
+        "title/context",
+        "source region",
+        "notes",
+        "applicability",
+        "all headers, body cells, markdown and merge/blank notes"
+      ],
+      "findings": [],
+      "corrections_applied": false,
+      "disposition": "matches_source_on_direct_recheck",
+      "sealed": false,
+      "observed_headers": [
+        "t_min",
+        "5",
+        "10",
+        "15",
+        "20",
+        "25",
+        "30",
+        "35",
+        "40",
+        "45",
+        "60",
+        "80",
+        "100",
+        "120"
+      ],
+      "observed_rows": [
+        [
+          "i = a/tⁿ",
+          "84.2",
+          "64.0",
+          "54.0",
+          "48.5",
+          "44.2",
+          "41.2",
+          "38.6",
+          "36.8",
+          "34.8",
+          "31.0",
+          "27.8",
+          "25.4",
+          "23.6"
+        ]
+      ],
+      "all_body_cells_compared": true,
+      "body_cells_compared": 14,
+      "header_cells_compared": 14,
+      "table_representation_check": "Markdown matches headers/rows; merged Total/Average labels explicitly represented by blank companion cells and notes where applicable."
+    },
+    {
+      "id": "SEW-2013-A:Ep823-1",
+      "candidate_file": "data/transcriptions/batches/sew-appendix-818-826/SEW-2013-A--Ep823-1.json",
+      "candidate_file_sha256": "1cc8c69c183c73d552a4e3a93cb3d97fc0f30f829b34aa5f5f30023e040842ed",
+      "content_digest_checked": "3888aafb65f2189e3a9cd30cd00eac0c4c5800c2ad35aae2d1dd9a3e1b53cd81",
+      "content_sha256": "3888aafb65f2189e3a9cd30cd00eac0c4c5800c2ad35aae2d1dd9a3e1b53cd81",
+      "digest_function": "omakase_cpheeo.transcriptions.content_digest",
+      "physical_pages": [
+        823
+      ],
+      "pinned_regions": [
+        {
+          "pdf_page": 823,
+          "page_label": "A - 52",
+          "bbox": [
+            50,
+            73,
+            545,
+            136
+          ],
+          "render_sha256": "9a34b92927ccd0ccd1f19958f383a5c7356f2b280a87004e2f37676af5986869"
+        }
+      ],
+      "fresh_region_sha256": "9a34b92927ccd0ccd1f19958f383a5c7356f2b280a87004e2f37676af5986869",
+      "fresh_region_matches_pin": true,
+      "separate_direct_visual_recheck_performed": true,
+      "source_image_view_evidence": [
+        "/tmp/sew-818-826-direct-recheck/page-823.png",
+        "/tmp/sew-818-826-direct-recheck/SEW-2013-A--Ep823-1.png"
+      ],
+      "observed_details": "Continuation from item v: 10 C i vs t curves for imperviousness factors; 10 C i is rate in m³/hr per hectare of tributary area. Uppercase C, lowercase i and units match; time of concentration context visible.",
+      "fields_compared": [
+        "title/context",
+        "source region",
+        "notes",
+        "applicability",
+        "latex and readable and symbols/units"
+      ],
+      "findings": [],
+      "corrections_applied": false,
+      "disposition": "matches_source_on_direct_recheck",
+      "sealed": false,
+      "observed_latex": "10Ci",
+      "symbol_definitions_compared": [],
+      "units_and_context_compared": true
+    },
+    {
+      "id": "SEW-2013-A:Ep823-2",
+      "candidate_file": "data/transcriptions/batches/sew-appendix-818-826/SEW-2013-A--Ep823-2.json",
+      "candidate_file_sha256": "1ef0dbcc58e81fa3b37a10626bcbdb162d69e7e9eedf691bc18050160d3ba2ad",
+      "content_digest_checked": "6b364d6345f743db1421a1767557a16dc0880519aa06c2f1951b6ea2d5743cfd",
+      "content_sha256": "6b364d6345f743db1421a1767557a16dc0880519aa06c2f1951b6ea2d5743cfd",
+      "digest_function": "omakase_cpheeo.transcriptions.content_digest",
+      "physical_pages": [
+        823
+      ],
+      "pinned_regions": [
+        {
+          "pdf_page": 823,
+          "page_label": "A - 52",
+          "bbox": [
+            50,
+            281,
+            545,
+            401
+          ],
+          "render_sha256": "33c9537c1cb0074cc1b6e1aa099201788b6e98baa1299bde9841c564fd15ea79"
+        }
+      ],
+      "fresh_region_sha256": "33c9537c1cb0074cc1b6e1aa099201788b6e98baa1299bde9841c564fd15ea79",
+      "fresh_region_matches_pin": true,
+      "separate_direct_visual_recheck_performed": true,
+      "source_image_view_evidence": [
+        "/tmp/sew-818-826-direct-recheck/page-823.png",
+        "/tmp/sew-818-826-direct-recheck/SEW-2013-A--Ep823-2.png",
+        "/tmp/sew-818-826-direct-recheck/subscript-823.png"
+      ],
+      "observed_details": "t_c fraction has numerator A_1 t_b + A_2 t_1 and denominator A_1 + A_2. Numeral 1 in t_1 is visible in 288-dpi detail and matches lawns notation on page 821. A_1 built up area; A_2 area of lawns. Candidate uses letter l instead of numeral 1 in numerator in LaTeX/readable text.",
+      "fields_compared": [
+        "title/context",
+        "source region",
+        "notes",
+        "applicability",
+        "latex and readable and symbols/units"
+      ],
+      "findings": [
+        {
+          "type": "symbol_mistranscription",
+          "field": "latex/readable",
+          "candidate": "A_2 t_l",
+          "observed": "A_2 t_1",
+          "requested_action": "Use t_1 in weighted numerator in both representations; retain A_1 t_b and denominator A_1+A_2."
+        }
+      ],
+      "corrections_applied": false,
+      "disposition": "requires_parent_correction_and_recheck",
+      "sealed": false,
+      "observed_latex": "t_c=\\frac{A_1t_b+A_2t_1}{A_1+A_2}",
+      "symbol_definitions_compared": [
+        {
+          "symbol": "A_1",
+          "definition": "Built up area"
+        },
+        {
+          "symbol": "A_2",
+          "definition": "Area of lawns"
+        }
+      ],
+      "units_and_context_compared": true
+    },
+    {
+      "id": "SEW-2013-A:Ep823-3",
+      "candidate_file": "data/transcriptions/batches/sew-appendix-818-826/SEW-2013-A--Ep823-3.json",
+      "candidate_file_sha256": "76327eb6660d5fde58924c8d333c97f3d3f12a70f86aa8f3f30fe9a5d29075d8",
+      "content_digest_checked": "bd4bee972df8bf929602e7fceb867065cbe08780decfff93c8d520799cfc4479",
+      "content_sha256": "bd4bee972df8bf929602e7fceb867065cbe08780decfff93c8d520799cfc4479",
+      "digest_function": "omakase_cpheeo.transcriptions.content_digest",
+      "physical_pages": [
+        823
+      ],
+      "pinned_regions": [
+        {
+          "pdf_page": 823,
+          "page_label": "A - 52",
+          "bbox": [
+            50,
+            411,
+            545,
+            442
+          ],
+          "render_sha256": "191e0d5f8f4618e4a97d961d36b8094c1eee3760858499884dce5173f064fca4"
+        }
+      ],
+      "fresh_region_sha256": "191e0d5f8f4618e4a97d961d36b8094c1eee3760858499884dce5173f064fca4",
+      "fresh_region_matches_pin": true,
+      "separate_direct_visual_recheck_performed": true,
+      "source_image_view_evidence": [
+        "/tmp/sew-818-826-direct-recheck/page-823.png",
+        "/tmp/sew-818-826-direct-recheck/SEW-2013-A--Ep823-3.png"
+      ],
+      "observed_details": "Printed prose explicitly says line 1. 70/(60 × 1.0) = 1.17 min. Fraction grouping, decimal velocity and minutes match; no line-number repair.",
+      "fields_compared": [
+        "title/context",
+        "source region",
+        "notes",
+        "applicability",
+        "latex and readable and symbols/units"
+      ],
+      "findings": [],
+      "corrections_applied": false,
+      "disposition": "matches_source_on_direct_recheck",
+      "sealed": false,
+      "observed_latex": "\\frac{70}{60\\times1.0}=1.17\\text{ min}",
+      "symbol_definitions_compared": [],
+      "units_and_context_compared": true
+    },
+    {
+      "id": "SEW-2013-A:Ep823-4",
+      "candidate_file": "data/transcriptions/batches/sew-appendix-818-826/SEW-2013-A--Ep823-4.json",
+      "candidate_file_sha256": "faaa4538f13f467944789f333af4e46ddcfb5c65c3dd0a5968d42355c1ab0fdd",
+      "content_digest_checked": "b1ad2c1bc1041b912e1822b54cd361ca919d94fa3decca55793c2beb6c098c5d",
+      "content_sha256": "b1ad2c1bc1041b912e1822b54cd361ca919d94fa3decca55793c2beb6c098c5d",
+      "digest_function": "omakase_cpheeo.transcriptions.content_digest",
+      "physical_pages": [
+        823
+      ],
+      "pinned_regions": [
+        {
+          "pdf_page": 823,
+          "page_label": "A - 52",
+          "bbox": [
+            50,
+            684,
+            545,
+            700
+          ],
+          "render_sha256": "a3004775a6d72b9d5cc8d2d30df9679aabd418afd100f405c449d5c774d39936"
+        }
+      ],
+      "fresh_region_sha256": "a3004775a6d72b9d5cc8d2d30df9679aabd418afd100f405c449d5c774d39936",
+      "fresh_region_matches_pin": true,
+      "separate_direct_visual_recheck_performed": true,
+      "source_image_view_evidence": [
+        "/tmp/sew-818-826-direct-recheck/page-823.png",
+        "/tmp/sew-818-826-direct-recheck/SEW-2013-A--Ep823-4.png"
+      ],
+      "observed_details": "Column 20 = Col.19 × Col.16. Both column numbers and multiplication sign match; no division introduced to repair unit handling.",
+      "fields_compared": [
+        "title/context",
+        "source region",
+        "notes",
+        "applicability",
+        "latex and readable and symbols/units"
+      ],
+      "findings": [],
+      "corrections_applied": false,
+      "disposition": "matches_source_on_direct_recheck",
+      "sealed": false,
+      "observed_latex": "\\mathrm{Col.20}=\\mathrm{Col.19}\\times\\mathrm{Col.16}",
+      "symbol_definitions_compared": [],
+      "units_and_context_compared": true
+    },
+    {
+      "id": "SEW-2013-A:Ep824-1",
+      "candidate_file": "data/transcriptions/batches/sew-appendix-818-826/SEW-2013-A--Ep824-1.json",
+      "candidate_file_sha256": "e71cd0e0339c5602047f54fe952b2e9a4d17f4d7ec166e5793b1ae266d37a453",
+      "content_digest_checked": "62797bef3628ec82c1b162c2a50c6a3b90b8bd1d4d6c6814ce9460f438fdf81a",
+      "content_sha256": "62797bef3628ec82c1b162c2a50c6a3b90b8bd1d4d6c6814ce9460f438fdf81a",
+      "digest_function": "omakase_cpheeo.transcriptions.content_digest",
+      "physical_pages": [
+        824
+      ],
+      "pinned_regions": [
+        {
+          "pdf_page": 824,
+          "page_label": "A - 53",
+          "bbox": [
+            144,
+            424,
+            222,
+            515
+          ],
+          "render_sha256": "93f744b0f583be3bc5b10f550831ff72b49f0d17b5a730c6c859895115d1489e"
+        }
+      ],
+      "fresh_region_sha256": "93f744b0f583be3bc5b10f550831ff72b49f0d17b5a730c6c859895115d1489e",
+      "fresh_region_matches_pin": true,
+      "separate_direct_visual_recheck_performed": true,
+      "source_image_view_evidence": [
+        "/tmp/sew-818-826-direct-recheck/page-824.png",
+        "/tmp/sew-818-826-direct-recheck/SEW-2013-A--Ep824-1.png",
+        "/tmp/sew-818-826-direct-recheck/SEW-2013-A--Ep824-1-rotated.png",
+        "/tmp/sew-818-826-direct-recheck/page-824-rotated.png"
+      ],
+      "observed_details": "Viewed original pinned crop and rotated enlargement: column 9 Time of (t_i) inlet to upper end; column 10 time of flow in drain t_f; column 11 TOTAL t_c = t_i + t_f. Formula matches. Explanatory note incorrectly describes page 823 as t_b and t_l; that page visibly has t_b and t_1. Readable wording at/to is a harmless paraphrase.",
+      "fields_compared": [
+        "title/context",
+        "source region",
+        "notes",
+        "applicability",
+        "latex and readable and symbols/units"
+      ],
+      "findings": [
+        {
+          "type": "incorrect_cross_reference_note",
+          "field": "notes[1]",
+          "candidate": "t_b and t_l in weighted expression on page 823",
+          "observed": "t_b and t_1 in weighted expression on page 823",
+          "requested_action": "Correct explanatory note to t_1; column-header formula t_c=t_i+t_f is correct."
+        }
+      ],
+      "corrections_applied": false,
+      "disposition": "requires_parent_correction_and_recheck",
+      "sealed": false,
+      "observed_latex": "t_c=t_i+t_f",
+      "symbol_definitions_compared": [],
+      "units_and_context_compared": true
+    },
+    {
+      "id": "SEW-2013-A:Ep825-1",
+      "candidate_file": "data/transcriptions/batches/sew-appendix-818-826/SEW-2013-A--Ep825-1.json",
+      "candidate_file_sha256": "a89450986eb3e1af3d63ba8fcf3012ce36a47b982169e3e91622d740ba7a113d",
+      "content_digest_checked": "ce64fe22ac8782c6ff4302622247ae437f295a5fc95d6455b4c3f8d4cb79915e",
+      "content_sha256": "ce64fe22ac8782c6ff4302622247ae437f295a5fc95d6455b4c3f8d4cb79915e",
+      "digest_function": "omakase_cpheeo.transcriptions.content_digest",
+      "physical_pages": [
+        825
+      ],
+      "pinned_regions": [
+        {
+          "pdf_page": 825,
+          "page_label": "A - 54",
+          "bbox": [
+            50,
+            129,
+            545,
+            146
+          ],
+          "render_sha256": "c1dc5c63fb3ee2c165f47f8e4780a85413f10618f8f5d5244c565513da679ce8"
+        }
+      ],
+      "fresh_region_sha256": "c1dc5c63fb3ee2c165f47f8e4780a85413f10618f8f5d5244c565513da679ce8",
+      "fresh_region_matches_pin": true,
+      "separate_direct_visual_recheck_performed": true,
+      "source_image_view_evidence": [
+        "/tmp/sew-818-826-direct-recheck/page-825.png",
+        "/tmp/sew-818-826-direct-recheck/SEW-2013-A--Ep825-1.png",
+        "/tmp/sew-818-826-direct-recheck/figure-825.png"
+      ],
+      "observed_details": "Column 23 = Col.22 - Col.20 = invert elevation at the lower end of the line. Column numbers, subtraction, meaning match. Preceding prose gives 37.400,36.700,38.000,36.000 for lines 1,3,6,9; preserve discrepancy with table.",
+      "fields_compared": [
+        "title/context",
+        "source region",
+        "notes",
+        "applicability",
+        "latex and readable and symbols/units"
+      ],
+      "findings": [],
+      "corrections_applied": false,
+      "disposition": "matches_source_on_direct_recheck",
+      "sealed": false,
+      "observed_latex": "\\mathrm{Col.23}=\\mathrm{Col.22}-\\mathrm{Col.20}",
+      "symbol_definitions_compared": [],
+      "units_and_context_compared": true
+    },
+    {
+      "id": "SEW-2013-A:Tp825-1",
+      "candidate_file": "data/transcriptions/batches/sew-appendix-818-826/SEW-2013-A--Tp825-1.json",
+      "candidate_file_sha256": "1eacf46e099e2b2c28098f78bb9e9d4c1ea71fedc82819bdbcee92fccafad446",
+      "content_digest_checked": "a34720dcb8e88dcc88e5ce3051909a102ec3bcfe333f3aa0d658d06cdbf3fd74",
+      "content_sha256": "a34720dcb8e88dcc88e5ce3051909a102ec3bcfe333f3aa0d658d06cdbf3fd74",
+      "digest_function": "omakase_cpheeo.transcriptions.content_digest",
+      "physical_pages": [
+        825
+      ],
+      "pinned_regions": [
+        {
+          "pdf_page": 825,
+          "page_label": "A - 54",
+          "bbox": [
+            206,
+            404,
+            422,
+            458
+          ],
+          "render_sha256": "2716b788fac046bd9500896e2e227f56e5b88b705ba7737862799b5190c574fe"
+        }
+      ],
+      "fresh_region_sha256": "2716b788fac046bd9500896e2e227f56e5b88b705ba7737862799b5190c574fe",
+      "fresh_region_matches_pin": true,
+      "separate_direct_visual_recheck_performed": true,
+      "source_image_view_evidence": [
+        "/tmp/sew-818-826-direct-recheck/page-825.png",
+        "/tmp/sew-818-826-direct-recheck/SEW-2013-A--Tp825-1.png",
+        "/tmp/sew-818-826-direct-recheck/figure-825.png"
+      ],
+      "observed_details": "Read every embedded grid cell in Figure A3.1-3: INTENSITY i (mm/hr) 30,35,40,45,50,60; DURATION t (minutes) 44,36,28.5,22.5,13.5,9.75. All six pairs and labels match page 822. Current create_unit true/A3.1 metadata noted; no old architecture blocker.",
+      "fields_compared": [
+        "title/context",
+        "source region",
+        "notes",
+        "applicability",
+        "all headers, body cells, markdown and merge/blank notes"
+      ],
+      "findings": [],
+      "corrections_applied": false,
+      "disposition": "matches_source_on_direct_recheck",
+      "sealed": false,
+      "observed_headers": [
+        "INTENSITY “i” (mm / hr)",
+        "30",
+        "35",
+        "40",
+        "45",
+        "50",
+        "60"
+      ],
+      "observed_rows": [
+        [
+          "DURATION “t” (minutes)",
+          "44",
+          "36",
+          "28.5",
+          "22.5",
+          "13.5",
+          "9.75"
+        ]
+      ],
+      "all_body_cells_compared": true,
+      "body_cells_compared": 7,
+      "header_cells_compared": 7,
+      "table_representation_check": "Markdown matches headers/rows; merged Total/Average labels explicitly represented by blank companion cells and notes where applicable."
+    },
+    {
+      "id": "SEW-2013-A:TA3.1-2",
+      "candidate_file": "data/transcriptions/batches/sew-appendix-818-826/SEW-2013-A--TA3.1-2.json",
+      "candidate_file_sha256": "437b2eb9da5d9ef8446405ea5ed46176f87fa480e0bea3909c431d11f2fca2be",
+      "content_digest_checked": "5b33bd307d9b67011d3f228daa0eaa58f2b3f414a03fc56c9bae2533e33e6202",
+      "content_sha256": "5b33bd307d9b67011d3f228daa0eaa58f2b3f414a03fc56c9bae2533e33e6202",
+      "digest_function": "omakase_cpheeo.transcriptions.content_digest",
+      "physical_pages": [
+        824
+      ],
+      "pinned_regions": [
+        {
+          "pdf_page": 824,
+          "page_label": "A - 53",
+          "bbox": [
+            70,
+            74,
+            525,
+            769
+          ],
+          "render_sha256": "7ee15240601420aca2ef1626878564d04c7cca4a646e6b9596dab77c3a73667d"
+        }
+      ],
+      "fresh_region_sha256": "7ee15240601420aca2ef1626878564d04c7cca4a646e6b9596dab77c3a73667d",
+      "fresh_region_matches_pin": true,
+      "separate_direct_visual_recheck_performed": true,
+      "source_image_view_evidence": [
+        "/tmp/sew-818-826-direct-recheck/page-824.png",
+        "/tmp/sew-818-826-direct-recheck/SEW-2013-A--TA3.1-2.png",
+        "/tmp/sew-818-826-direct-recheck/SEW-2013-A--TA3.1-2-rotated.png",
+        "/tmp/sew-818-826-direct-recheck/page-824-rotated.png"
+      ],
+      "observed_details": "Viewed full sideways page, original pinned region, rotated full page, and 288-dpi rotated exact region. Compared all 23 numbered column headers and all 253 body cells row by row, including 4 empty street cells, dashes, manhole punctuation/spaces, every decimal and trailing zero. All body cells match candidate. Header hierarchy Location, Tributary area increment, Time of concentration, Runoff m³/hr, Flow Q, Design and Profile is flattened acceptably; lps/mm/m/1000/mps/m units match. Row 4 col6 really is 0.36; row 7 col17 really 70.; row 9 col22 is 36.800. Row 3 upper invert 36.700 and row 11 lower 34.165 confirmed. No arithmetic normalization.",
+      "fields_compared": [
+        "title/context",
+        "source region",
+        "notes",
+        "applicability",
+        "all headers, body cells, markdown and merge/blank notes"
+      ],
+      "findings": [],
+      "corrections_applied": false,
+      "disposition": "matches_source_on_direct_recheck",
+      "sealed": false,
+      "observed_headers": [
+        "Line Number",
+        "Location of drain: Street",
+        "Manhole from",
+        "Manhole to",
+        "Tributary area (hectares) increment: 0.7 Imp factor",
+        "0.2 Imp factor",
+        "Eq 100% Imp factor",
+        "Total Area",
+        "Time of (t_i) inlet at upper end",
+        "Time of flow in drain t_f",
+        "TOTAL t_c = t_i + t_f",
+        "Runoff m³/hr per hectare (10Ci)",
+        "Runoff m³/hr Total",
+        "Flow Q lps",
+        "Design Dia mm",
+        "Slope m/1000",
+        "Capacity lps",
+        "Velocity mps",
+        "Length m",
+        "fall m",
+        "Drop in Manhole",
+        "Invert Elevation Upper end",
+        "Invert Elevation Lower end"
+      ],
+      "observed_rows": [
+        [
+          "1",
+          "South st",
+          "5",
+          "4",
+          "0.286",
+          "0.366",
+          "0.274",
+          "0.274",
+          "12.0",
+          "-",
+          "12.0",
+          "345",
+          "94.5",
+          "26.6",
+          "200",
+          "10.0",
+          "32",
+          "1.0",
+          "70",
+          "0.7",
+          "0.000",
+          "37.400",
+          "36.700"
+        ],
+        [
+          "2",
+          "",
+          "4",
+          "3",
+          "0.167",
+          "0.488",
+          "0.214",
+          "0.488",
+          "13.3",
+          "1.17",
+          "14.47",
+          "335",
+          "164.0",
+          "46.0",
+          "250",
+          "6.65",
+          "50",
+          "1.0",
+          "125",
+          "0.83",
+          "0.025",
+          "36.675",
+          "35.845"
+        ],
+        [
+          "3",
+          "North south St.2",
+          "R 32",
+          "R 3.1",
+          "0.415",
+          "0.312",
+          "0.352",
+          "0.352",
+          "11.0",
+          "-",
+          "11.0",
+          "348",
+          "123.0",
+          "35.0",
+          "250",
+          "6.65",
+          "50",
+          "1.0",
+          "70",
+          "0.47",
+          "0.000",
+          "36.700",
+          "36.230"
+        ],
+        [
+          "4",
+          "",
+          "R 31",
+          "3",
+          "0.358",
+          "0.36",
+          "0.324",
+          "0.676",
+          "11.5",
+          "1.17",
+          "12.67",
+          "340",
+          "264.0",
+          "74.0",
+          "350",
+          "4.55",
+          "98",
+          "1.0",
+          "70",
+          "0.32",
+          "0.050",
+          "36.180",
+          "35.860"
+        ],
+        [
+          "5",
+          "South St.",
+          "3",
+          "2",
+          "0.256",
+          "0.466",
+          "0.274",
+          "1.438",
+          "12.5",
+          "3.27",
+          "15.77",
+          "335",
+          "480.0",
+          "135.0",
+          "450",
+          "3.14",
+          "160",
+          "1.0",
+          "125",
+          "0.40",
+          "0.066",
+          "35.779",
+          "35.379"
+        ],
+        [
+          "6",
+          "North south St.3",
+          "R2.2",
+          "R 2.1",
+          "0.230",
+          "0.492",
+          "0.260",
+          "0.260",
+          "12.8",
+          "-",
+          "12.8",
+          "340",
+          "87.5",
+          "25.0",
+          "200",
+          "10.0",
+          "32",
+          "1.0",
+          "70",
+          "0.70",
+          "0.000",
+          "38.000",
+          "37.300"
+        ],
+        [
+          "7",
+          "",
+          "R 21",
+          "2",
+          "0.410",
+          "0.310",
+          "0.348",
+          "0.608",
+          "11.0",
+          "1.17",
+          "12.17",
+          "342",
+          "208.0",
+          "59.0",
+          "300",
+          "5.55",
+          "70.",
+          "1.0",
+          "70",
+          "0.39",
+          "0.050",
+          "37.250",
+          "36.860"
+        ],
+        [
+          "8",
+          "South St.",
+          "R 2",
+          "1",
+          "0.256",
+          "0.466",
+          "0.274",
+          "2.320",
+          "12.5",
+          "5.37",
+          "17.87",
+          "330",
+          "765.0",
+          "214.0",
+          "600",
+          "2.22",
+          "280",
+          "1.0",
+          "160",
+          "0.36",
+          "0.200",
+          "35.179",
+          "34.819"
+        ],
+        [
+          "9",
+          "North south St.4",
+          "R 12",
+          "R1.1",
+          "0.660",
+          "0.282",
+          "0.517",
+          "0.517",
+          "10.2",
+          "-",
+          "10.2",
+          "350",
+          "182.0",
+          "51.0",
+          "250",
+          "10.0",
+          "60",
+          "1.25",
+          "70",
+          "0.70",
+          "0.000",
+          "36.800",
+          "36.100"
+        ],
+        [
+          "10",
+          "",
+          "R 11",
+          "1",
+          "0.580",
+          "0.362",
+          "0.479",
+          "0.996",
+          "10.8",
+          "0.94",
+          "11.74",
+          "344",
+          "330.0",
+          "92.0",
+          "350",
+          "5.0",
+          "100",
+          "1.1",
+          "70",
+          "0.35",
+          "0.050",
+          "36.050",
+          "35.700"
+        ],
+        [
+          "11",
+          "South St.",
+          "1",
+          "Pump house",
+          "0.670",
+          "0.330",
+          "0.494",
+          "3.810",
+          "10.4",
+          "8.05",
+          "18.45",
+          "325",
+          "1240.0",
+          "345.0",
+          "700",
+          "1.67",
+          "400",
+          "1.0",
+          "25",
+          "0.42",
+          "0.234",
+          "34.585",
+          "34.165"
+        ]
+      ],
+      "all_body_cells_compared": true,
+      "body_cells_compared": 253,
+      "header_cells_compared": 23,
+      "table_representation_check": "Markdown matches headers/rows; merged Total/Average labels explicitly represented by blank companion cells and notes where applicable."
+    }
+  ],
+  "source_images_actually_viewed": [
+    {
+      "path": "/tmp/sew-818-826-direct-recheck/page-818.png",
+      "sha256": "f7d4fad1c7ae831fb8ed709b00cf793a8e1df4d4cb463eb605f96291aa732165",
+      "actually_viewed": true,
+      "viewer": "functions tools.view_image; image content returned and visually inspected",
+      "render": "open_clean annotation-cleaned PyMuPDF; exact pinned regions/full pages 144 dpi; rotated full page 216 dpi; rotated regions and focused details 288 dpi"
+    },
+    {
+      "path": "/tmp/sew-818-826-direct-recheck/page-819.png",
+      "sha256": "ec473b545c50d316b9d6431907256e752a4e8acd01c7c9c13938537f47b3f5d0",
+      "actually_viewed": true,
+      "viewer": "functions tools.view_image; image content returned and visually inspected",
+      "render": "open_clean annotation-cleaned PyMuPDF; exact pinned regions/full pages 144 dpi; rotated full page 216 dpi; rotated regions and focused details 288 dpi"
+    },
+    {
+      "path": "/tmp/sew-818-826-direct-recheck/page-820.png",
+      "sha256": "f39db5f94028d424c422bbd866e976cbf02cafabb36d63b9d41e583d24b72cc2",
+      "actually_viewed": true,
+      "viewer": "functions tools.view_image; image content returned and visually inspected",
+      "render": "open_clean annotation-cleaned PyMuPDF; exact pinned regions/full pages 144 dpi; rotated full page 216 dpi; rotated regions and focused details 288 dpi"
+    },
+    {
+      "path": "/tmp/sew-818-826-direct-recheck/page-821.png",
+      "sha256": "66439285bbe476d80976edb2a889186bdd0e00d84b433bb42e07ee185a3b044b",
+      "actually_viewed": true,
+      "viewer": "functions tools.view_image; image content returned and visually inspected",
+      "render": "open_clean annotation-cleaned PyMuPDF; exact pinned regions/full pages 144 dpi; rotated full page 216 dpi; rotated regions and focused details 288 dpi"
+    },
+    {
+      "path": "/tmp/sew-818-826-direct-recheck/page-822.png",
+      "sha256": "88f288767ca319ac80abc46a353f66871dee0464ef89406d840935e0bd06d7c7",
+      "actually_viewed": true,
+      "viewer": "functions tools.view_image; image content returned and visually inspected",
+      "render": "open_clean annotation-cleaned PyMuPDF; exact pinned regions/full pages 144 dpi; rotated full page 216 dpi; rotated regions and focused details 288 dpi"
+    },
+    {
+      "path": "/tmp/sew-818-826-direct-recheck/page-823.png",
+      "sha256": "f4de6f4bdca816e57c4550b6cd32d29587cfd240c38f42abf3804e1e65c8438d",
+      "actually_viewed": true,
+      "viewer": "functions tools.view_image; image content returned and visually inspected",
+      "render": "open_clean annotation-cleaned PyMuPDF; exact pinned regions/full pages 144 dpi; rotated full page 216 dpi; rotated regions and focused details 288 dpi"
+    },
+    {
+      "path": "/tmp/sew-818-826-direct-recheck/page-824.png",
+      "sha256": "dad86ab24ffb4f6c5777ff83ff0c1160a6eb2b908434a7d06928d6750144c858",
+      "actually_viewed": true,
+      "viewer": "functions tools.view_image; image content returned and visually inspected",
+      "render": "open_clean annotation-cleaned PyMuPDF; exact pinned regions/full pages 144 dpi; rotated full page 216 dpi; rotated regions and focused details 288 dpi"
+    },
+    {
+      "path": "/tmp/sew-818-826-direct-recheck/page-825.png",
+      "sha256": "1420ffdc5e38fe915499391716b668abdb8914f6ac5739377eebbeed9e6254d8",
+      "actually_viewed": true,
+      "viewer": "functions tools.view_image; image content returned and visually inspected",
+      "render": "open_clean annotation-cleaned PyMuPDF; exact pinned regions/full pages 144 dpi; rotated full page 216 dpi; rotated regions and focused details 288 dpi"
+    },
+    {
+      "path": "/tmp/sew-818-826-direct-recheck/page-826.png",
+      "sha256": "5a1a1dfb01cb713a679cadbc2fe6761cf54489d83f3fac9161deb23e9dac8c2c",
+      "actually_viewed": true,
+      "viewer": "functions tools.view_image; image content returned and visually inspected",
+      "render": "open_clean annotation-cleaned PyMuPDF; exact pinned regions/full pages 144 dpi; rotated full page 216 dpi; rotated regions and focused details 288 dpi"
+    },
+    {
+      "path": "/tmp/sew-818-826-direct-recheck/SEW-2013-A--TA2.2-1.png",
+      "sha256": "de0153ee0df0e1b162e9d7cbe1749d6451e8e919b2882d9519be43507d3d2809",
+      "actually_viewed": true,
+      "viewer": "functions tools.view_image; image content returned and visually inspected",
+      "render": "open_clean annotation-cleaned PyMuPDF; exact pinned regions/full pages 144 dpi; rotated full page 216 dpi; rotated regions and focused details 288 dpi"
+    },
+    {
+      "path": "/tmp/sew-818-826-direct-recheck/SEW-2013-A--Ep818-1.png",
+      "sha256": "b6c5f22e7524afa59f972b7b4ac561f86646fb2fc664b2dbf20994b1b9cf5c0c",
+      "actually_viewed": true,
+      "viewer": "functions tools.view_image; image content returned and visually inspected",
+      "render": "open_clean annotation-cleaned PyMuPDF; exact pinned regions/full pages 144 dpi; rotated full page 216 dpi; rotated regions and focused details 288 dpi"
+    },
+    {
+      "path": "/tmp/sew-818-826-direct-recheck/SEW-2013-A--Ep818-2.png",
+      "sha256": "738b4993b7b6915482d6c63f16cf40bbc121a02ab73edf6a77dae653ae346988",
+      "actually_viewed": true,
+      "viewer": "functions tools.view_image; image content returned and visually inspected",
+      "render": "open_clean annotation-cleaned PyMuPDF; exact pinned regions/full pages 144 dpi; rotated full page 216 dpi; rotated regions and focused details 288 dpi"
+    },
+    {
+      "path": "/tmp/sew-818-826-direct-recheck/SEW-2013-A--Ep818-3.png",
+      "sha256": "c8d689070659df8e7d4da37d8a6e5bbae8c08a8f6576a56e0046a04d2d1172e2",
+      "actually_viewed": true,
+      "viewer": "functions tools.view_image; image content returned and visually inspected",
+      "render": "open_clean annotation-cleaned PyMuPDF; exact pinned regions/full pages 144 dpi; rotated full page 216 dpi; rotated regions and focused details 288 dpi"
+    },
+    {
+      "path": "/tmp/sew-818-826-direct-recheck/SEW-2013-A--Ep819-1.png",
+      "sha256": "02d1eab4773d6fa33d4c5d7f4eb3b54df9784eddecbe8756d33403f0d7c7fa4b",
+      "actually_viewed": true,
+      "viewer": "functions tools.view_image; image content returned and visually inspected",
+      "render": "open_clean annotation-cleaned PyMuPDF; exact pinned regions/full pages 144 dpi; rotated full page 216 dpi; rotated regions and focused details 288 dpi"
+    },
+    {
+      "path": "/tmp/sew-818-826-direct-recheck/SEW-2013-A--Ep819-2.png",
+      "sha256": "a3bcaa7812cac827c2d3db78bca2fd76f96fd05cbc6bbd719b0a9565f4bd1204",
+      "actually_viewed": true,
+      "viewer": "functions tools.view_image; image content returned and visually inspected",
+      "render": "open_clean annotation-cleaned PyMuPDF; exact pinned regions/full pages 144 dpi; rotated full page 216 dpi; rotated regions and focused details 288 dpi"
+    },
+    {
+      "path": "/tmp/sew-818-826-direct-recheck/SEW-2013-A--Ep819-3.png",
+      "sha256": "e607f0763b2df945d0ab0819033c5d4f1bc06b810a8057a74f67527c919ce1b1",
+      "actually_viewed": true,
+      "viewer": "functions tools.view_image; image content returned and visually inspected",
+      "render": "open_clean annotation-cleaned PyMuPDF; exact pinned regions/full pages 144 dpi; rotated full page 216 dpi; rotated regions and focused details 288 dpi"
+    },
+    {
+      "path": "/tmp/sew-818-826-direct-recheck/SEW-2013-A--Ep819-4.png",
+      "sha256": "06ea4f4dbcf7b219bca1bc75c596d2e637b1102ea260ff194655fc1c47e651e5",
+      "actually_viewed": true,
+      "viewer": "functions tools.view_image; image content returned and visually inspected",
+      "render": "open_clean annotation-cleaned PyMuPDF; exact pinned regions/full pages 144 dpi; rotated full page 216 dpi; rotated regions and focused details 288 dpi"
+    },
+    {
+      "path": "/tmp/sew-818-826-direct-recheck/SEW-2013-A--TA2.2-2.png",
+      "sha256": "87e2a4f8800ed1d0cbd0eacb19f1e2e42e68bd168cc0c0a4bda127979ec91560",
+      "actually_viewed": true,
+      "viewer": "functions tools.view_image; image content returned and visually inspected",
+      "render": "open_clean annotation-cleaned PyMuPDF; exact pinned regions/full pages 144 dpi; rotated full page 216 dpi; rotated regions and focused details 288 dpi"
+    },
+    {
+      "path": "/tmp/sew-818-826-direct-recheck/SEW-2013-A--Ep819-5.png",
+      "sha256": "81185174c92c93ee7f5f0fb3a89442c6b274544e4289767d9eb88217f7f44b7f",
+      "actually_viewed": true,
+      "viewer": "functions tools.view_image; image content returned and visually inspected",
+      "render": "open_clean annotation-cleaned PyMuPDF; exact pinned regions/full pages 144 dpi; rotated full page 216 dpi; rotated regions and focused details 288 dpi"
+    },
+    {
+      "path": "/tmp/sew-818-826-direct-recheck/SEW-2013-A--Ep820-1.png",
+      "sha256": "da26553e9c5d57414048b2c03b1e779e1a5bf8e3eb2f1718320068222d38f157",
+      "actually_viewed": true,
+      "viewer": "functions tools.view_image; image content returned and visually inspected",
+      "render": "open_clean annotation-cleaned PyMuPDF; exact pinned regions/full pages 144 dpi; rotated full page 216 dpi; rotated regions and focused details 288 dpi"
+    },
+    {
+      "path": "/tmp/sew-818-826-direct-recheck/SEW-2013-A--Ep820-2.png",
+      "sha256": "d7783533cf79c35ff931514725e7e04c2c3a0a5a1f4257626519fc24ecd42c57",
+      "actually_viewed": true,
+      "viewer": "functions tools.view_image; image content returned and visually inspected",
+      "render": "open_clean annotation-cleaned PyMuPDF; exact pinned regions/full pages 144 dpi; rotated full page 216 dpi; rotated regions and focused details 288 dpi"
+    },
+    {
+      "path": "/tmp/sew-818-826-direct-recheck/SEW-2013-A--Ep820-3.png",
+      "sha256": "9f3f6c2bf5bf227c2a6dcae792addba5a1fffe895378a6f1a1eaf889058896a2",
+      "actually_viewed": true,
+      "viewer": "functions tools.view_image; image content returned and visually inspected",
+      "render": "open_clean annotation-cleaned PyMuPDF; exact pinned regions/full pages 144 dpi; rotated full page 216 dpi; rotated regions and focused details 288 dpi"
+    },
+    {
+      "path": "/tmp/sew-818-826-direct-recheck/SEW-2013-A--Ep820-4.png",
+      "sha256": "7309e023c78ad4c58d423f8f067dd39477868befc3266920ec7af8eb60a905db",
+      "actually_viewed": true,
+      "viewer": "functions tools.view_image; image content returned and visually inspected",
+      "render": "open_clean annotation-cleaned PyMuPDF; exact pinned regions/full pages 144 dpi; rotated full page 216 dpi; rotated regions and focused details 288 dpi"
+    },
+    {
+      "path": "/tmp/sew-818-826-direct-recheck/SEW-2013-A--Ep821-1.png",
+      "sha256": "7073d81f210a7163bb1989b4e27bd46b952849397d4e0e07b5dc273b0955f102",
+      "actually_viewed": true,
+      "viewer": "functions tools.view_image; image content returned and visually inspected",
+      "render": "open_clean annotation-cleaned PyMuPDF; exact pinned regions/full pages 144 dpi; rotated full page 216 dpi; rotated regions and focused details 288 dpi"
+    },
+    {
+      "path": "/tmp/sew-818-826-direct-recheck/SEW-2013-A--Ep822-1.png",
+      "sha256": "66e8c36ef4c07e601c3c08e444a1543206e817750528fed85b09f4117b1bac6a",
+      "actually_viewed": true,
+      "viewer": "functions tools.view_image; image content returned and visually inspected",
+      "render": "open_clean annotation-cleaned PyMuPDF; exact pinned regions/full pages 144 dpi; rotated full page 216 dpi; rotated regions and focused details 288 dpi"
+    },
+    {
+      "path": "/tmp/sew-818-826-direct-recheck/SEW-2013-A--Tp822-1.png",
+      "sha256": "d467b10ae1f29d5497f4092864c29e8ef56e65900cc5ef1bf506cbd31532c8c8",
+      "actually_viewed": true,
+      "viewer": "functions tools.view_image; image content returned and visually inspected",
+      "render": "open_clean annotation-cleaned PyMuPDF; exact pinned regions/full pages 144 dpi; rotated full page 216 dpi; rotated regions and focused details 288 dpi"
+    },
+    {
+      "path": "/tmp/sew-818-826-direct-recheck/SEW-2013-A--Ep822-2.png",
+      "sha256": "c78f0c960e4533d0d81ac91632516774f204f5d5a9e2c906951aa311f217a4d2",
+      "actually_viewed": true,
+      "viewer": "functions tools.view_image; image content returned and visually inspected",
+      "render": "open_clean annotation-cleaned PyMuPDF; exact pinned regions/full pages 144 dpi; rotated full page 216 dpi; rotated regions and focused details 288 dpi"
+    },
+    {
+      "path": "/tmp/sew-818-826-direct-recheck/SEW-2013-A--Ep822-3.png",
+      "sha256": "e2413cddd15a42ce195cf11c689c8b66a745b98845739036a51d723e75816f5e",
+      "actually_viewed": true,
+      "viewer": "functions tools.view_image; image content returned and visually inspected",
+      "render": "open_clean annotation-cleaned PyMuPDF; exact pinned regions/full pages 144 dpi; rotated full page 216 dpi; rotated regions and focused details 288 dpi"
+    },
+    {
+      "path": "/tmp/sew-818-826-direct-recheck/SEW-2013-A--TA3.1-1.png",
+      "sha256": "2e98b7f87d270e5974c80d9b5c41089ae89310ecfc40730a096e018850f9dc20",
+      "actually_viewed": true,
+      "viewer": "functions tools.view_image; image content returned and visually inspected",
+      "render": "open_clean annotation-cleaned PyMuPDF; exact pinned regions/full pages 144 dpi; rotated full page 216 dpi; rotated regions and focused details 288 dpi"
+    },
+    {
+      "path": "/tmp/sew-818-826-direct-recheck/SEW-2013-A--Ep823-1.png",
+      "sha256": "9a34b92927ccd0ccd1f19958f383a5c7356f2b280a87004e2f37676af5986869",
+      "actually_viewed": true,
+      "viewer": "functions tools.view_image; image content returned and visually inspected",
+      "render": "open_clean annotation-cleaned PyMuPDF; exact pinned regions/full pages 144 dpi; rotated full page 216 dpi; rotated regions and focused details 288 dpi"
+    },
+    {
+      "path": "/tmp/sew-818-826-direct-recheck/SEW-2013-A--Ep823-2.png",
+      "sha256": "33c9537c1cb0074cc1b6e1aa099201788b6e98baa1299bde9841c564fd15ea79",
+      "actually_viewed": true,
+      "viewer": "functions tools.view_image; image content returned and visually inspected",
+      "render": "open_clean annotation-cleaned PyMuPDF; exact pinned regions/full pages 144 dpi; rotated full page 216 dpi; rotated regions and focused details 288 dpi"
+    },
+    {
+      "path": "/tmp/sew-818-826-direct-recheck/SEW-2013-A--Ep823-3.png",
+      "sha256": "191e0d5f8f4618e4a97d961d36b8094c1eee3760858499884dce5173f064fca4",
+      "actually_viewed": true,
+      "viewer": "functions tools.view_image; image content returned and visually inspected",
+      "render": "open_clean annotation-cleaned PyMuPDF; exact pinned regions/full pages 144 dpi; rotated full page 216 dpi; rotated regions and focused details 288 dpi"
+    },
+    {
+      "path": "/tmp/sew-818-826-direct-recheck/SEW-2013-A--Ep823-4.png",
+      "sha256": "a3004775a6d72b9d5cc8d2d30df9679aabd418afd100f405c449d5c774d39936",
+      "actually_viewed": true,
+      "viewer": "functions tools.view_image; image content returned and visually inspected",
+      "render": "open_clean annotation-cleaned PyMuPDF; exact pinned regions/full pages 144 dpi; rotated full page 216 dpi; rotated regions and focused details 288 dpi"
+    },
+    {
+      "path": "/tmp/sew-818-826-direct-recheck/SEW-2013-A--Ep824-1.png",
+      "sha256": "11c9d5d52d57807a2440c291becf77224d1166386c6058babe134e4c779c6fe5",
+      "actually_viewed": true,
+      "viewer": "functions tools.view_image; image content returned and visually inspected",
+      "render": "open_clean annotation-cleaned PyMuPDF; exact pinned regions/full pages 144 dpi; rotated full page 216 dpi; rotated regions and focused details 288 dpi"
+    },
+    {
+      "path": "/tmp/sew-818-826-direct-recheck/SEW-2013-A--Ep825-1.png",
+      "sha256": "c1dc5c63fb3ee2c165f47f8e4780a85413f10618f8f5d5244c565513da679ce8",
+      "actually_viewed": true,
+      "viewer": "functions tools.view_image; image content returned and visually inspected",
+      "render": "open_clean annotation-cleaned PyMuPDF; exact pinned regions/full pages 144 dpi; rotated full page 216 dpi; rotated regions and focused details 288 dpi"
+    },
+    {
+      "path": "/tmp/sew-818-826-direct-recheck/SEW-2013-A--Tp825-1.png",
+      "sha256": "929627ef3653882c1e8ef39dcc71598888a51ad1c427a5b50d0a83d2a55ed4b6",
+      "actually_viewed": true,
+      "viewer": "functions tools.view_image; image content returned and visually inspected",
+      "render": "open_clean annotation-cleaned PyMuPDF; exact pinned regions/full pages 144 dpi; rotated full page 216 dpi; rotated regions and focused details 288 dpi"
+    },
+    {
+      "path": "/tmp/sew-818-826-direct-recheck/SEW-2013-A--TA3.1-2.png",
+      "sha256": "7ee15240601420aca2ef1626878564d04c7cca4a646e6b9596dab77c3a73667d",
+      "actually_viewed": true,
+      "viewer": "functions tools.view_image; image content returned and visually inspected",
+      "render": "open_clean annotation-cleaned PyMuPDF; exact pinned regions/full pages 144 dpi; rotated full page 216 dpi; rotated regions and focused details 288 dpi"
+    },
+    {
+      "path": "/tmp/sew-818-826-direct-recheck/page-824-rotated.png",
+      "sha256": "02a5ef48276ccdc51624da13480efd7effda41decdd2a70e194681a4ccd8ffd5",
+      "actually_viewed": true,
+      "viewer": "functions tools.view_image; image content returned and visually inspected",
+      "render": "open_clean annotation-cleaned PyMuPDF; exact pinned regions/full pages 144 dpi; rotated full page 216 dpi; rotated regions and focused details 288 dpi"
+    },
+    {
+      "path": "/tmp/sew-818-826-direct-recheck/SEW-2013-A--Ep824-1-rotated.png",
+      "sha256": "d2ff303146ad913cc013cabdf4fe562c7423e10320d2edcc2d3cd0f99c75b0a8",
+      "actually_viewed": true,
+      "viewer": "functions tools.view_image; image content returned and visually inspected",
+      "render": "open_clean annotation-cleaned PyMuPDF; exact pinned regions/full pages 144 dpi; rotated full page 216 dpi; rotated regions and focused details 288 dpi"
+    },
+    {
+      "path": "/tmp/sew-818-826-direct-recheck/SEW-2013-A--TA3.1-2-rotated.png",
+      "sha256": "118a633bb779c8745683ce43258e60df7b54ad96140f3c679fc3628117309c11",
+      "actually_viewed": true,
+      "viewer": "functions tools.view_image; image content returned and visually inspected",
+      "render": "open_clean annotation-cleaned PyMuPDF; exact pinned regions/full pages 144 dpi; rotated full page 216 dpi; rotated regions and focused details 288 dpi"
+    },
+    {
+      "path": "/tmp/sew-818-826-direct-recheck/subscript-821.png",
+      "sha256": "b6f04cdad98fbe9778d5df1d8196b18ba197952629be13a7ab0fcaa9e0740863",
+      "actually_viewed": true,
+      "viewer": "functions tools.view_image; image content returned and visually inspected",
+      "render": "open_clean annotation-cleaned PyMuPDF; exact pinned regions/full pages 144 dpi; rotated full page 216 dpi; rotated regions and focused details 288 dpi"
+    },
+    {
+      "path": "/tmp/sew-818-826-direct-recheck/subscript-823.png",
+      "sha256": "7c5e4de0af2f172b531ebf46687eab5dc7f00c6a022bfc423f35486ff859e814",
+      "actually_viewed": true,
+      "viewer": "functions tools.view_image; image content returned and visually inspected",
+      "render": "open_clean annotation-cleaned PyMuPDF; exact pinned regions/full pages 144 dpi; rotated full page 216 dpi; rotated regions and focused details 288 dpi"
+    },
+    {
+      "path": "/tmp/sew-818-826-direct-recheck/figure-821.png",
+      "sha256": "7183c5f968724b0cf8cff3f2616d1610132d9309725a58fc72a4a2d9af98c2e0",
+      "actually_viewed": true,
+      "viewer": "functions tools.view_image; image content returned and visually inspected",
+      "render": "open_clean annotation-cleaned PyMuPDF; exact pinned regions/full pages 144 dpi; rotated full page 216 dpi; rotated regions and focused details 288 dpi"
+    },
+    {
+      "path": "/tmp/sew-818-826-direct-recheck/figure-825.png",
+      "sha256": "e5e382f2c131050d3fb262b652e0a316bb20a2dd6b165ed4937536c6dec3cb2c",
+      "actually_viewed": true,
+      "viewer": "functions tools.view_image; image content returned and visually inspected",
+      "render": "open_clean annotation-cleaned PyMuPDF; exact pinned regions/full pages 144 dpi; rotated full page 216 dpi; rotated regions and focused details 288 dpi"
+    },
+    {
+      "path": "/tmp/sew-818-826-direct-recheck/figure-826.png",
+      "sha256": "b46aa102ed85f8e08a80d7f6f8502cda653fd5f2a2b7163f648dd8d8ee37a566",
+      "actually_viewed": true,
+      "viewer": "functions tools.view_image; image content returned and visually inspected",
+      "render": "open_clean annotation-cleaned PyMuPDF; exact pinned regions/full pages 144 dpi; rotated full page 216 dpi; rotated regions and focused details 288 dpi"
+    },
+    {
+      "path": "/tmp/sew-818-826-direct-recheck/arithmetic-818.png",
+      "sha256": "a0df568102d4623673e7922b3ac66a76bcae5c21ad6897048a9cc369eb6bd42a",
+      "actually_viewed": true,
+      "viewer": "functions tools.view_image; image content returned and visually inspected",
+      "render": "open_clean annotation-cleaned PyMuPDF; exact pinned regions/full pages 144 dpi; rotated full page 216 dpi; rotated regions and focused details 288 dpi"
+    }
+  ],
+  "figures_and_page_completeness_observations": [
+    {
+      "physical_page": 820,
+      "observed": "Figure A2.2-1 semi-log population graph: vertical thousands 10,100,1000; years 1911–2031, observed dots and dashed projection guides. No additional formula or discrete table. Following-page wording is printed although graph is on same page."
+    },
+    {
+      "physical_page": 821,
+      "observed": "Figure A3.1-1: river, north arrow, street/drain plan, circled 0–12 and R8.1–R8.5. Area 1–15 hectare labels read 1.7,2.1,1.2,1.3,1.7,2.2,2.3,2.4,5.6,4.2,5,4.8,6.3,3.7,2.9. These are plan labels; geometry was not converted to invented table cells."
+    },
+    {
+      "physical_page": 824,
+      "observed": "Complete A3.1-2 grid ends on this page: 23 numbered columns × 11 body rows. No grid continuation. Explanation spans pages 823 and 825."
+    },
+    {
+      "physical_page": 825,
+      "observed": "Figure A3.1-2 plan: MH5,4,3,2,1; MHR3.2/3.1,2.2/2.1,1.2/1.1, circled lines 1–11, pump house; contour labels 38.0,37.0,36.0,35.0,34.0. Figure A3.1-3 log-log graph has rainfall intensity mm/hr versus duration minutes, storm once a year, and the six-pair grid checked under Tp825-1. No extra formula hidden in plan/graph."
+    },
+    {
+      "physical_page": 826,
+      "observed": "Viewed all three full figure grids plus detail: A3.1-4 one-year intensity mm/hr against duration minutes (0–180); A3.1-5 runoff coefficient against duration with four unlabelled curves and caption After horner area rectangle; A3.1-6 runoff rate m³/hr·hectare versus duration with four curves labelled 100% IMPERVIOUS,50% IMPERVIOUS,30% IMPERVIOUS,100% PERVIOUS. No further discrete cell table or formula found. Continuous curves and approximate points were not digitized."
+    }
+  ],
+  "source_anomalies_to_retain": [
+    "TA2.2-1 1931 increment 15,873 (not repaired to 4,337).",
+    "Ep820-1 repeated Y in both additive growth terms.",
+    "Ep820-3 printed 24,188 intermediate and 2,75,612 final preserved without recalculation.",
+    "Page 825 line 9 invert prose 36.000 versus page 824 table 36.800.",
+    "TA3.1-2 row 7 capacity 70. including trailing dot; row 4 0.36 and all precision/blanks retained.",
+    "Page 823 flow example explicitly says line 1."
+  ],
+  "unresolved_targets": [
+    {
+      "id": "SEW-2013-A:Ep818-1",
+      "findings": [
+        {
+          "type": "region_clipping",
+          "severity": "source_evidence",
+          "field": "regions[0].bbox",
+          "observed": "Pinned bottom y=681 clips the final per-decade line. Complete equation is readable on full page and expanded detail.",
+          "requested_action": "Expand bottom to at least 683 PDF points (expanded detail bbox [55,586,540,683] was viewed), rerender and repin; recompute content_digest and recheck revised region.",
+          "content_change_required": false
+        }
+      ]
+    },
+    {
+      "id": "SEW-2013-A:Ep821-1",
+      "findings": [
+        {
+          "type": "symbol_mistranscription",
+          "field": "latex/readable",
+          "candidate": "t_l = 15 minutes",
+          "observed": "t_1 = 15 minutes",
+          "requested_action": "Replace lawns subscript letter l by numeral 1 in LaTeX and readable content; preserve other values."
+        }
+      ]
+    },
+    {
+      "id": "SEW-2013-A:Ep823-2",
+      "findings": [
+        {
+          "type": "symbol_mistranscription",
+          "field": "latex/readable",
+          "candidate": "A_2 t_l",
+          "observed": "A_2 t_1",
+          "requested_action": "Use t_1 in weighted numerator in both representations; retain A_1 t_b and denominator A_1+A_2."
+        }
+      ]
+    },
+    {
+      "id": "SEW-2013-A:Ep824-1",
+      "findings": [
+        {
+          "type": "incorrect_cross_reference_note",
+          "field": "notes[1]",
+          "candidate": "t_b and t_l in weighted expression on page 823",
+          "observed": "t_b and t_1 in weighted expression on page 823",
+          "requested_action": "Correct explanatory note to t_1; column-header formula t_c=t_i+t_f is correct."
+        }
+      ]
+    }
+  ],
+  "unreadable_targets": [],
+  "limits": [
+    "Visual fidelity review only; no engineering correctness certification.",
+    "Image paths are local scratch evidence; hashes and page/crop locators allow reproduction from the pinned PDF.",
+    "Every candidate remains pending and unsealed. Changes requested here require parent edits and a new content digest/recheck.",
+    "No candidate, record, ledger, database or live service was modified. Only the requested report is written in the worktree; fresh renders are outside it under /tmp."
+  ]
+}

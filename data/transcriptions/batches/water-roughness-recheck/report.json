@@ -1,0 +1,793 @@
+{
+  "schema_version": 1,
+  "batch_id": "water-roughness-recheck",
+  "review_date": "2026-11-08",
+  "pass_id": "water-roughness-direct-image-recheck-20261108",
+  "status": "unsealed_recheck_report",
+  "sealed": false,
+  "scope": "Exactly three current pending records WS-2024-A:T6.3, WS-2024-A:T6.4 and WS-2024-A:Ep370-1; every authored table cell, repeated merged label/value, header, caption, note, inline notation and continuation compared to actual source images.",
+  "method": {
+    "reading": "Direct visual inspection: all four pinned crops and all three full-page PNGs were opened with tools.view_image and displayed via functions.exec image(). No OCR or native PDF text extraction used as reading evidence. First-author observations and automated checks were not treated as evidence of fidelity.",
+    "renderer": "Source opened with omakase_cpheeo.extract.open_clean; all seven PNGs rendered with omakase_cpheeo.transcriptions.region_png at 144 dpi. Full-page bounding boxes were page.rect. Annotations removed only in memory.",
+    "independence_limit": "Distinct assistant visual comparison; not independent human review. No delegation.",
+    "images_actually_viewed": [
+      "/tmp/water-roughness-recheck-jo98bcc6/T6.3-region-1.png",
+      "/tmp/water-roughness-recheck-jo98bcc6/T6.3-region-2.png",
+      "/tmp/water-roughness-recheck-jo98bcc6/T6.4-region-1.png",
+      "/tmp/water-roughness-recheck-jo98bcc6/Ep370-1-region-1.png",
+      "/tmp/water-roughness-recheck-jo98bcc6/full-page-370.png",
+      "/tmp/water-roughness-recheck-jo98bcc6/full-page-372.png",
+      "/tmp/water-roughness-recheck-jo98bcc6/full-page-373.png"
+    ]
+  },
+  "source": {
+    "pdf_path": "/home/a2ajinkya/Downloads/CPHEEO/Water Supply_2023/Part-A-Manual-Engineering-Planning-Design-and-Implementation(3).pdf",
+    "sha256": "b60f2fb548357aec676b18ef31e3b37fb0e5e8a1aec8f886880b951113848b0a",
+    "matches_all_three_record_source_pins": true
+  },
+  "full_page_observations": [
+    {
+      "pdf_page": 370,
+      "printed_page": "285",
+      "actually_viewed": true,
+      "observations": "The unnumbered roughness/Reynolds paragraph sits under 6.5.1.4 Coefficient of Roughness for Different Pipe Materials. The complete paragraph is within the pinned crop. The surrounding page also contains Table 6.1 and numbered formulae (6.3)–(6.6), outside this three-record recheck. Ep370-1 is a service locator; no equation number is printed for its paragraph."
+    },
+    {
+      "pdf_page": 372,
+      "printed_page": "287",
+      "actually_viewed": true,
+      "observations": "Table 6.2 continuation/notes precede the prose introducing Table 6.3. Table 6.3 begins here and runs through Plastic (smooth)/ MDPE/ HDPE/PVC at the page bottom. The prose recommends general-design n values 0.013 for plastic and 0.015 for other pipes; these are surrounding prose, not replacements for the printed individual table coefficients."
+    },
+    {
+      "pdf_page": 373,
+      "printed_page": "288",
+      "actually_viewed": true,
+      "observations": "The first block is the repeated Table 6.3 header and two continuation rows, Asbestos Cement and Glass Fibre Reinforced. Table 6.4 follows its introduction and includes its starred note. Section 6.5.2 begins after that note; there is no further Table 6.4 continuation on this page."
+    }
+  ],
+  "per_record_findings": [
+    {
+      "id": "WS-2024-A:T6.3",
+      "content_digest": "50db0767c4b57fa143a8c3b3fb97b780bc580988838e68672cf462fdc4ae7a19",
+      "record_file_sha256": "112081e34beee90f7ae21a08cbdca0ba4735401c2aea436b9a1386ad927882fe",
+      "source_pin_matches": true,
+      "regions": [
+        {
+          "pdf_page": 372,
+          "page_label": "287",
+          "bbox": [
+            65,
+            324,
+            562,
+            801
+          ],
+          "render_sha256": "fdbe0f4b0ea3f6aca1207f4c34559a016e6134d384acb0b153588bade760829a",
+          "path": "/tmp/water-roughness-recheck-jo98bcc6/T6.3-region-1.png",
+          "actual_sha256": "fdbe0f4b0ea3f6aca1207f4c34559a016e6134d384acb0b153588bade760829a",
+          "pin_matches": true,
+          "crop_actually_viewed": true,
+          "full_page_actually_viewed": true
+        },
+        {
+          "pdf_page": 373,
+          "page_label": "288",
+          "bbox": [
+            65,
+            68,
+            562,
+            130
+          ],
+          "render_sha256": "88b2ecea9c32e9e1839104afa4a52d22eae101a2dcc97ebba427e3081bec23fa",
+          "path": "/tmp/water-roughness-recheck-jo98bcc6/T6.3-region-2.png",
+          "actual_sha256": "88b2ecea9c32e9e1839104afa4a52d22eae101a2dcc97ebba427e3081bec23fa",
+          "pin_matches": true,
+          "crop_actually_viewed": true,
+          "full_page_actually_viewed": true
+        }
+      ],
+      "state_observed": "pending",
+      "digest_function": "omakase_cpheeo.transcriptions.content_digest",
+      "result": "table_content_matches_source_images_provenance_observation_correction_required",
+      "observations": [
+        "Read caption Table 6.3: Manning’s Coefficient of Roughness and all three headers Type of lining, Condition, n. The continuation repeats those same three headers without another caption.",
+        "Compared all 90 expanded cells across 30 rows, including the two continuation rows. Row-by-row source readings are listed below; wrapped text is joined with spaces.",
+        "The first material is visibly one merged cell reading Glazed coating of enamel Timber across rows 1–5. No boundary splits enamel from Timber. Repeating that entire string for all five rows preserves the source anomaly.",
+        "Checked capital Plane Boards and the trailing comma in aged, in row 3; Non-plane hyphens in rows 4–5; Concrete, Steel trowelled capital S; Concrete, wood trowelled lower-case w; and all lettered (a)–(g) condition markers.",
+        "Merged labels are expanded correctly: rows 1–5 first material; 6–12 Masonry; 13–15 Stonework; 16–20 Earth; 21–24 Steel, BWSC, PSC; 25–26 Cast Iron and Ductile Iron. The last four materials each have a genuinely empty Condition cell, not missing ditto text.",
+        "All n strings match, including distinct trailing-zero forms 0.020 in rows 12 and 15, 0.02 in rows 16 and 23, and 0.010 in row 30. The first 0.01 is not 0.010.",
+        "Physical page 372 ends with Unlined metallic pipes 0.015 and Plastic (smooth)/ MDPE/ HDPE/PVC 0.011. Physical page 373 supplies Asbestos Cement 0.012 and Glass Fibre Reinforced 0.010, both blank conditions. No continuation row is omitted.",
+        "The authored note accurately describes merged-label expansion, the unsplit anomalous first label, four blank conditions and the two continuation materials. No table footnote appears beneath the continuation. Markdown reproduces the same headers and row strings; no correction to table content is required."
+      ],
+      "precise_corrections": [
+        {
+          "json_pointer": "/verification/transcription/observations",
+          "category": "provenance_page_scope",
+          "current_value": "Read displayed formulae 6.1–6.6 and all table cells, spanning labels and continuation notes directly from source images on physical pages 369–372.",
+          "replacement": "Direct visual reading of Table 6.3 on physical page 372 (printed 287), including all lining/condition/n cells, and its two-row continuation with repeated headers on physical page 373 (printed 288).",
+          "reason": "Current first-pass narrative claims physical pages 369–372, omitting physical page 373 where this table has source content. This recommendation corrects the cited page scope; it does not establish what images the first author actually viewed.",
+          "applied": false
+        }
+      ],
+      "merged_source_cells_expanded": [
+        {
+          "column": "Type of lining",
+          "rows_1_based": [
+            1,
+            5
+          ],
+          "value": "Glazed coating of enamel Timber"
+        },
+        {
+          "column": "Type of lining",
+          "rows_1_based": [
+            6,
+            12
+          ],
+          "value": "Masonry"
+        },
+        {
+          "column": "Type of lining",
+          "rows_1_based": [
+            13,
+            15
+          ],
+          "value": "Stonework"
+        },
+        {
+          "column": "Type of lining",
+          "rows_1_based": [
+            16,
+            20
+          ],
+          "value": "Earth"
+        },
+        {
+          "column": "Type of lining",
+          "rows_1_based": [
+            21,
+            24
+          ],
+          "value": "Steel, BWSC, PSC"
+        },
+        {
+          "column": "Type of lining",
+          "rows_1_based": [
+            25,
+            26
+          ],
+          "value": "Cast Iron and Ductile Iron"
+        }
+      ],
+      "headers_checked": [
+        "Type of lining",
+        "Condition",
+        "n"
+      ],
+      "row_by_row_visual_comparison": [
+        {
+          "row_1_based": 1,
+          "source_cells_expanded": [
+            "Glazed coating of enamel Timber",
+            "In perfect order",
+            "0.01"
+          ],
+          "all_cells_match_record": true,
+          "pdf_page": 372
+        },
+        {
+          "row_1_based": 2,
+          "source_cells_expanded": [
+            "Glazed coating of enamel Timber",
+            "(a) Plane boards carefully laid",
+            "0.014"
+          ],
+          "all_cells_match_record": true,
+          "pdf_page": 372
+        },
+        {
+          "row_1_based": 3,
+          "source_cells_expanded": [
+            "Glazed coating of enamel Timber",
+            "(b) Plane Boards inferior workmanship or aged,",
+            "0.016"
+          ],
+          "all_cells_match_record": true,
+          "pdf_page": 372
+        },
+        {
+          "row_1_based": 4,
+          "source_cells_expanded": [
+            "Glazed coating of enamel Timber",
+            "(c) Non-plane boards carefully laid",
+            "0.016"
+          ],
+          "all_cells_match_record": true,
+          "pdf_page": 372
+        },
+        {
+          "row_1_based": 5,
+          "source_cells_expanded": [
+            "Glazed coating of enamel Timber",
+            "(d) Non-plane boards inferior workmanship or aged",
+            "0.018"
+          ],
+          "all_cells_match_record": true,
+          "pdf_page": 372
+        },
+        {
+          "row_1_based": 6,
+          "source_cells_expanded": [
+            "Masonry",
+            "(a) Neat cement plaster",
+            "0.013"
+          ],
+          "all_cells_match_record": true,
+          "pdf_page": 372
+        },
+        {
+          "row_1_based": 7,
+          "source_cells_expanded": [
+            "Masonry",
+            "(b) Sand and cement plaster",
+            "0.015"
+          ],
+          "all_cells_match_record": true,
+          "pdf_page": 372
+        },
+        {
+          "row_1_based": 8,
+          "source_cells_expanded": [
+            "Masonry",
+            "(c) Concrete, Steel trowelled",
+            "0.014"
+          ],
+          "all_cells_match_record": true,
+          "pdf_page": 372
+        },
+        {
+          "row_1_based": 9,
+          "source_cells_expanded": [
+            "Masonry",
+            "(d) Concrete, wood trowelled",
+            "0.015"
+          ],
+          "all_cells_match_record": true,
+          "pdf_page": 372
+        },
+        {
+          "row_1_based": 10,
+          "source_cells_expanded": [
+            "Masonry",
+            "(e) Brick in good condition",
+            "0.015"
+          ],
+          "all_cells_match_record": true,
+          "pdf_page": 372
+        },
+        {
+          "row_1_based": 11,
+          "source_cells_expanded": [
+            "Masonry",
+            "(f) Brick in rough condition",
+            "0.017"
+          ],
+          "all_cells_match_record": true,
+          "pdf_page": 372
+        },
+        {
+          "row_1_based": 12,
+          "source_cells_expanded": [
+            "Masonry",
+            "(g) Masonry in bad condition",
+            "0.020"
+          ],
+          "all_cells_match_record": true,
+          "pdf_page": 372
+        },
+        {
+          "row_1_based": 13,
+          "source_cells_expanded": [
+            "Stonework",
+            "(a) Smooth, dressed ashlar",
+            "0.015"
+          ],
+          "all_cells_match_record": true,
+          "pdf_page": 372
+        },
+        {
+          "row_1_based": 14,
+          "source_cells_expanded": [
+            "Stonework",
+            "(b) Rubble set in cement",
+            "0.017"
+          ],
+          "all_cells_match_record": true,
+          "pdf_page": 372
+        },
+        {
+          "row_1_based": 15,
+          "source_cells_expanded": [
+            "Stonework",
+            "(c) Fine, well packed gravel",
+            "0.020"
+          ],
+          "all_cells_match_record": true,
+          "pdf_page": 372
+        },
+        {
+          "row_1_based": 16,
+          "source_cells_expanded": [
+            "Earth",
+            "(a) Regular surface in good condition",
+            "0.02"
+          ],
+          "all_cells_match_record": true,
+          "pdf_page": 372
+        },
+        {
+          "row_1_based": 17,
+          "source_cells_expanded": [
+            "Earth",
+            "(b) In ordinary condition",
+            "0.025"
+          ],
+          "all_cells_match_record": true,
+          "pdf_page": 372
+        },
+        {
+          "row_1_based": 18,
+          "source_cells_expanded": [
+            "Earth",
+            "(c) With stones and weeds",
+            "0.03"
+          ],
+          "all_cells_match_record": true,
+          "pdf_page": 372
+        },
+        {
+          "row_1_based": 19,
+          "source_cells_expanded": [
+            "Earth",
+            "(d) In poor condition",
+            "0.035"
+          ],
+          "all_cells_match_record": true,
+          "pdf_page": 372
+        },
+        {
+          "row_1_based": 20,
+          "source_cells_expanded": [
+            "Earth",
+            "(e) Partially obstructed with debris or weeds",
+            "0.05"
+          ],
+          "all_cells_match_record": true,
+          "pdf_page": 372
+        },
+        {
+          "row_1_based": 21,
+          "source_cells_expanded": [
+            "Steel, BWSC, PSC",
+            "(a) Welded",
+            "0.013"
+          ],
+          "all_cells_match_record": true,
+          "pdf_page": 372
+        },
+        {
+          "row_1_based": 22,
+          "source_cells_expanded": [
+            "Steel, BWSC, PSC",
+            "(b) Riveted",
+            "0.017"
+          ],
+          "all_cells_match_record": true,
+          "pdf_page": 372
+        },
+        {
+          "row_1_based": 23,
+          "source_cells_expanded": [
+            "Steel, BWSC, PSC",
+            "(c) Slightly tuberculated",
+            "0.02"
+          ],
+          "all_cells_match_record": true,
+          "pdf_page": 372
+        },
+        {
+          "row_1_based": 24,
+          "source_cells_expanded": [
+            "Steel, BWSC, PSC",
+            "(d) Cement Mortar lined",
+            "0.011"
+          ],
+          "all_cells_match_record": true,
+          "pdf_page": 372
+        },
+        {
+          "row_1_based": 25,
+          "source_cells_expanded": [
+            "Cast Iron and Ductile Iron",
+            "(a) Unlined",
+            "0.013"
+          ],
+          "all_cells_match_record": true,
+          "pdf_page": 372
+        },
+        {
+          "row_1_based": 26,
+          "source_cells_expanded": [
+            "Cast Iron and Ductile Iron",
+            "(b) Cement Mortar lined",
+            "0.011"
+          ],
+          "all_cells_match_record": true,
+          "pdf_page": 372
+        },
+        {
+          "row_1_based": 27,
+          "source_cells_expanded": [
+            "Unlined metallic pipes",
+            "",
+            "0.015"
+          ],
+          "all_cells_match_record": true,
+          "pdf_page": 372
+        },
+        {
+          "row_1_based": 28,
+          "source_cells_expanded": [
+            "Plastic (smooth)/ MDPE/ HDPE/PVC",
+            "",
+            "0.011"
+          ],
+          "all_cells_match_record": true,
+          "pdf_page": 372
+        },
+        {
+          "row_1_based": 29,
+          "source_cells_expanded": [
+            "Asbestos Cement",
+            "",
+            "0.012"
+          ],
+          "all_cells_match_record": true,
+          "pdf_page": 373
+        },
+        {
+          "row_1_based": 30,
+          "source_cells_expanded": [
+            "Glass Fibre Reinforced",
+            "",
+            "0.010"
+          ],
+          "all_cells_match_record": true,
+          "pdf_page": 373
+        }
+      ]
+    },
+    {
+      "id": "WS-2024-A:T6.4",
+      "content_digest": "4ab3ccad33d79f6e08a918d28a2227067dd38cba04548d8f5cebc33cea0a5bd3",
+      "record_file_sha256": "15b0d5ff73d835a76680d4e600cf192c2915204829adfa97220fb4a53f31d966",
+      "source_pin_matches": true,
+      "regions": [
+        {
+          "pdf_page": 373,
+          "page_label": "288",
+          "bbox": [
+            65,
+            156,
+            560,
+            529
+          ],
+          "render_sha256": "4116b0c3c893349642bbb2d1d52766950559b0ff083c9dd06e24083ea9832200",
+          "path": "/tmp/water-roughness-recheck-jo98bcc6/T6.4-region-1.png",
+          "actual_sha256": "4116b0c3c893349642bbb2d1d52766950559b0ff083c9dd06e24083ea9832200",
+          "pin_matches": true,
+          "crop_actually_viewed": true,
+          "full_page_actually_viewed": true
+        }
+      ],
+      "state_observed": "pending",
+      "digest_function": "omakase_cpheeo.transcriptions.content_digest",
+      "result": "table_content_matches_source_images_provenance_observation_correction_required",
+      "observations": [
+        "Read caption Table 6.4: Recommended Friction Factors* in Darcy-Weisbach Formula, including its asterisk. Headers are S. No, Pipe Material, Diameter(mm) split From/To, and Friction Factor split New/For Design Period of 30 years. Flattened authored headers preserve the hierarchy.",
+        "Compared all 78 expanded cells across 13 rows; row-by-row source readings appear below. Serial 13 has no terminal period, unlike 1. through 12. All 26 diameter endpoints match.",
+        "The New value 0.01 to 0.02 is a single vertically merged cell spanning rows 1–10, including both C.I. rows and the lined-metallic row. Design 0.01 to 0.02 spans rows 1–7 only; row 10 is its own design cell. New and Design each have their own merged cell spanning rows 12–13. Every repeated authored value follows these visible boundaries.",
+        "HDPE/MPDE is the visible row-3 spelling. PVC - U, PVC - O and PVC - C retain their printed spaced hyphens. Row 9 says non-corrosive; row 10 includes Cement Mortar or Epoxy Lined metallic pipes (Cast Iron, Ductile Iron, Steel), with only layout line breaks removed.",
+        "Design row 8 visibly reads descending 0.053 to 0.03; row 9 reads 0.034 to 0.07. G.I. New is 0.014 to 0.03 and its Design is descending 0.315 to 0.06. These are source readings; no decimal or range-order repair is warranted.",
+        "Read the entire starred note: Values of f can also be considered from the Moody’s diagram. Reference be made to IS: 2951 for calculation of head loss due to friction according to Darcy-Weisbach formula. The italic f, apostrophe, reference 2951 and formula name are represented correctly in plain text. The note is included within the pinned crop.",
+        "All three authored notes match: complete starred note, numerical merge description and source anomalies. Markdown agrees with the same cell readings. The full page shows section 6.5.2 immediately after the note; there is no omitted continuation in the reviewed page."
+      ],
+      "precise_corrections": [
+        {
+          "json_pointer": "/verification/transcription/observations",
+          "category": "provenance_page_scope",
+          "current_value": "Read displayed formulae 6.1–6.6 and all table cells, spanning labels and continuation notes directly from source images on physical pages 369–372.",
+          "replacement": "Direct visual reading of Table 6.4 on physical page 373 (printed 288), including all material/diameter/friction cells, merged New and Design values, printed anomalies and the complete starred Moody’s diagram/IS: 2951 note.",
+          "reason": "Current first-pass narrative claims physical pages 369–372, omitting physical page 373 where this table has source content. This recommendation corrects the cited page scope; it does not establish what images the first author actually viewed.",
+          "applied": false
+        }
+      ],
+      "merged_source_cells_expanded": [
+        {
+          "column": "Friction Factor / New",
+          "rows_1_based": [
+            1,
+            10
+          ],
+          "value": "0.01 to 0.02"
+        },
+        {
+          "column": "Friction Factor / For Design Period of 30 years",
+          "rows_1_based": [
+            1,
+            7
+          ],
+          "value": "0.01 to 0.02"
+        },
+        {
+          "column": "Friction Factor / New",
+          "rows_1_based": [
+            12,
+            13
+          ],
+          "value": "0.01 to 0.02"
+        },
+        {
+          "column": "Friction Factor / For Design Period of 30 years",
+          "rows_1_based": [
+            12,
+            13
+          ],
+          "value": "0.01 to 0.02"
+        }
+      ],
+      "headers_checked": [
+        "S. No",
+        "Pipe Material",
+        "Diameter(mm) / From",
+        "Diameter(mm) / To",
+        "Friction Factor / New",
+        "Friction Factor / For Design Period of 30 years"
+      ],
+      "row_by_row_visual_comparison": [
+        {
+          "row_1_based": 1,
+          "source_cells_expanded": [
+            "1.",
+            "R.C.C.",
+            "100",
+            "2000",
+            "0.01 to 0.02",
+            "0.01 to 0.02"
+          ],
+          "all_cells_match_record": true,
+          "pdf_page": 373
+        },
+        {
+          "row_1_based": 2,
+          "source_cells_expanded": [
+            "2.",
+            "A.C.",
+            "50",
+            "1000",
+            "0.01 to 0.02",
+            "0.01 to 0.02"
+          ],
+          "all_cells_match_record": true,
+          "pdf_page": 373
+        },
+        {
+          "row_1_based": 3,
+          "source_cells_expanded": [
+            "3.",
+            "HDPE/MPDE",
+            "20",
+            "1200",
+            "0.01 to 0.02",
+            "0.01 to 0.02"
+          ],
+          "all_cells_match_record": true,
+          "pdf_page": 373
+        },
+        {
+          "row_1_based": 4,
+          "source_cells_expanded": [
+            "4.",
+            "PVC - U",
+            "20",
+            "630",
+            "0.01 to 0.02",
+            "0.01 to 0.02"
+          ],
+          "all_cells_match_record": true,
+          "pdf_page": 373
+        },
+        {
+          "row_1_based": 5,
+          "source_cells_expanded": [
+            "5.",
+            "PVC - O",
+            "63",
+            "1200",
+            "0.01 to 0.02",
+            "0.01 to 0.02"
+          ],
+          "all_cells_match_record": true,
+          "pdf_page": 373
+        },
+        {
+          "row_1_based": 6,
+          "source_cells_expanded": [
+            "6.",
+            "PVC - C",
+            "15",
+            "150",
+            "0.01 to 0.02",
+            "0.01 to 0.02"
+          ],
+          "all_cells_match_record": true,
+          "pdf_page": 373
+        },
+        {
+          "row_1_based": 7,
+          "source_cells_expanded": [
+            "7.",
+            "Stoneware",
+            "100",
+            "600",
+            "0.01 to 0.02",
+            "0.01 to 0.02"
+          ],
+          "all_cells_match_record": true,
+          "pdf_page": 373
+        },
+        {
+          "row_1_based": 8,
+          "source_cells_expanded": [
+            "8.",
+            "C.I. (for corrosive waters)",
+            "100",
+            "1500",
+            "0.01 to 0.02",
+            "0.053 to 0.03"
+          ],
+          "all_cells_match_record": true,
+          "pdf_page": 373
+        },
+        {
+          "row_1_based": 9,
+          "source_cells_expanded": [
+            "9.",
+            "C.I. (for non-corrosive waters)",
+            "100",
+            "1500",
+            "0.01 to 0.02",
+            "0.034 to 0.07"
+          ],
+          "all_cells_match_record": true,
+          "pdf_page": 373
+        },
+        {
+          "row_1_based": 10,
+          "source_cells_expanded": [
+            "10.",
+            "Cement Mortar or Epoxy Lined metallic pipes (Cast Iron, Ductile Iron, Steel)",
+            "100",
+            "2000",
+            "0.01 to 0.02",
+            "0.01 to 0.02"
+          ],
+          "all_cells_match_record": true,
+          "pdf_page": 373
+        },
+        {
+          "row_1_based": 11,
+          "source_cells_expanded": [
+            "11.",
+            "G.I.",
+            "15",
+            "150",
+            "0.014 to 0.03",
+            "0.315 to 0.06"
+          ],
+          "all_cells_match_record": true,
+          "pdf_page": 373
+        },
+        {
+          "row_1_based": 12,
+          "source_cells_expanded": [
+            "12.",
+            "PSC",
+            "300",
+            "2600",
+            "0.01 to 0.02",
+            "0.01 to 0.02"
+          ],
+          "all_cells_match_record": true,
+          "pdf_page": 373
+        },
+        {
+          "row_1_based": 13,
+          "source_cells_expanded": [
+            "13",
+            "BWSC",
+            "250",
+            "1900",
+            "0.01 to 0.02",
+            "0.01 to 0.02"
+          ],
+          "all_cells_match_record": true,
+          "pdf_page": 373
+        }
+      ]
+    },
+    {
+      "id": "WS-2024-A:Ep370-1",
+      "content_digest": "bb3662015d77ab6c023e82785b414f1a6df4942e0bc257a11ba20c8e2682874a",
+      "record_file_sha256": "e5605af4452916a5416d106e9f2889499e641c9cad05091ef9e3553699e38158",
+      "source_pin_matches": true,
+      "regions": [
+        {
+          "pdf_page": 370,
+          "page_label": "285",
+          "bbox": [
+            65,
+            634,
+            560,
+            715
+          ],
+          "render_sha256": "c4ff856d12bb06c45fd5ce8f42f8e5a7e65c0c5b7720667b33c63fa23d128dc0",
+          "path": "/tmp/water-roughness-recheck-jo98bcc6/Ep370-1-region-1.png",
+          "actual_sha256": "c4ff856d12bb06c45fd5ce8f42f8e5a7e65c0c5b7720667b33c63fa23d128dc0",
+          "pin_matches": true,
+          "crop_actually_viewed": true,
+          "full_page_actually_viewed": true
+        }
+      ],
+      "state_observed": "pending",
+      "digest_function": "omakase_cpheeo.transcriptions.content_digest",
+      "result": "content_matches_source_images",
+      "observations": [
+        "Read the entire pinned paragraph and its placement under section 6.5.1.4 on the full physical page 370, printed 285. It contains inline notation, not a displayed or numbered equation.",
+        "Relative roughness is visibly (k/D), with lower-case k, upper-case D and an ordinary slash. There is no exponent on k or D.",
+        "The first Reynolds threshold is greater than 10 with superscript 7: 10^7, not 10^6. The normal Reynolds range is 4,000 to 10 with superscript 6: 4,000 to 10^6. The comma in 4,000 is printed. No inequality sign is printed; greater than is prose.",
+        "The paragraph first states roughness depends on Reynolds number (hence velocity and diameter) and relative roughness (k/D). For Reynolds number greater than 10^7 the friction factor ‘f’ (and hence the C-value) is relatively independent of diameter and velocity. For normal ranges 4,000 to 10^6 it does depend on diameter, velocity and relative roughness. The applicability field faithfully retains both regimes and the qualifier relatively.",
+        "LaTeX and readable fields preserve k/D, both powers, the threshold direction and comma grouping; the LaTeX comma grouping 4{,}000 is rendering notation. The readable field includes normal; applicability supplies Reynolds-number context. Textual summaries need not reproduce typographic quotation marks around f.",
+        "The empty symbols list does not assert an absent definition. No k or D definitions are printed in this paragraph, and none are invented. The note correctly identifies Ep370-1 as a service locator without a printed equation number. The entire paragraph ends within the crop; no mathematical continuation is cut off."
+      ],
+      "precise_corrections": [],
+      "notation_audit": {
+        "relative_roughness": "(k/D)",
+        "Reynolds_threshold": "greater than 10^7",
+        "normal_Reynolds_range": "4,000 to 10^6",
+        "number_printed": false,
+        "latex_matches": true,
+        "readable_matches": true,
+        "applicability_matches": true,
+        "notes_match": true
+      }
+    }
+  ],
+  "summary": {
+    "records_rechecked": 3,
+    "pinned_crops_actually_viewed": 4,
+    "full_pages_actually_viewed": [
+      370,
+      372,
+      373
+    ],
+    "all_source_and_crop_hashes_match": true,
+    "table_cells_compared_after_merge_expansion": 168,
+    "table_content_corrections": 0,
+    "notation_or_applicability_corrections": 0,
+    "provenance_observation_corrections_recommended": 2,
+    "ambiguous_glyphs_remaining_in_scope": [],
+    "records_modified": false,
+    "sealed": false
+  },
+  "write_scope": "Only data/transcriptions/batches/water-roughness-recheck/report.json authored in the workspace. Temporary PNGs and metadata under /tmp. No record, ledger, DB, live-service, seal, commit or delegation action performed."
+}
