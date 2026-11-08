@@ -1,0 +1,34 @@
+{
+  "verified_records": [
+    {
+      "id": "WS-2024-B:T3.2",
+      "draft_sha256": "9ccc484ef8c5dec029d4103e7c8826b3cda6b3359c4bba5c312b5ea6b01f0c46",
+      "content_sha256": "b25d4105755092cbf2d29c5bb536b1b114daaa88861cfe0978e4f8a5cf0ba9d1",
+      "corrections": []
+    },
+    {
+      "id": "WS-2024-B:T3.3",
+      "draft_sha256": "9e5ba2abf88a8b5dc65981c5f6a804b04e61043647f52cc78a0adc17d5725229",
+      "content_sha256": "980ddfee14a6da7c326c3a532045ad8fc6b6a2fad2601627568d6db57ac48b12",
+      "corrections": [
+        "Corrected continuation note: only first monthly bullet is on page 115; five continue on page 116.",
+        "Corrected bullet glyph description from square to round.",
+        "Serialized Markdown cells on one line, preserving every round bullet and word.",
+        "Joined bullet lines with single spaces in both structured cells and Markdown; every marker and word retained."
+      ]
+    }
+  ],
+  "new_reviewed_pages": [
+    95,
+    96,
+    97,
+    110,
+    111,
+    112,
+    114,
+    115,
+    116,
+    120
+  ],
+  "limitations": "Assistant visual comparison, not independent human review or a claim of perfect accuracy."
+}

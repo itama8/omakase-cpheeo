@@ -1,0 +1,90 @@
+{
+  "schema_version": 1,
+  "id": "WS-2024-B:T3.3",
+  "unit_id": "WS-2024-B:T3.3",
+  "manual_id": "WS-2024-B",
+  "kind": "table",
+  "number": "3.3",
+  "title": "Operation and Maintenance of Intake for the Abstraction of Groundwater",
+  "source_sha256": "1cfd336b3e2928b95cec3899d3e1d15807b5598d78730d6fe3eef381021844e7",
+  "state": "verified",
+  "regions": [
+    {
+      "pdf_page": 115,
+      "page_label": "48",
+      "bbox": [
+        70.7,
+        612.0,
+        532.0,
+        760.6
+      ],
+      "render_sha256": "0f4ca684b8d526e2809fcb24175e8e16bea2ecaced3c63fc621c893a0bf214c4"
+    },
+    {
+      "pdf_page": 116,
+      "page_label": "49",
+      "bbox": [
+        70.7,
+        70.5,
+        532.0,
+        633.4
+      ],
+      "render_sha256": "b22af7f76a3cb59d1ddf0a3333dc7fc5a959c4aa5bdece1d88d756145e73ab46"
+    }
+  ],
+  "headers": [
+    "Intake",
+    "Monthly/Quarterly",
+    "Yearly"
+  ],
+  "rows": [
+    [
+      "Dug well (wells in rocky formations and alluvial soils)",
+      "• Removing debris from well • Lubricating pulley as required • Cleaning the concrete apron • Replacing bucket",
+      "• Dewatering well and cleaning the bottom. • Repairing of the well wall. • Desilting/deepening the well in the monsoon period."
+    ],
+    [
+      "Hand pump (HP)",
+      "• Checking of HP and spout pipe • Checking of nuts and bolts. • Test-water quality • Cleaning inside of the pump • Checking of anchor-bolt • Cleaning rusty patches",
+      "• Checking water discharge. • Repairing handle as needed. • Repairing/replacing valves. • Removing pump and cleaning of pipe."
+    ],
+    [
+      "Tube/Borewell",
+      "• Operate pump starter and isolation valve. • Checking whether adequate water is being produced. • Checking of voltmeter and meter readings.",
+      "• Carry out inspection by removing pump and rising main from the well. • Inspecting electrical cables and checking insulation between cables. • Cleaning pump house. • Checking leaks in rising main. • Replacing corroded pipes. • Testing water quality using a field test kit. • Checking pipe threads. • Record servicing and maintenance in the logbook. • Deepening the bore to approximate level."
+    ],
+    [
+      "Infiltration gallery",
+      "• Inlets should be inspected regularly for debris that may clog the system.",
+      "• Infiltration wells are to be protected from sand mining done around them. • During floods such wells get tilted for which packing of sandbags should be put around the wells."
+    ],
+    [
+      "Radial collector wells (Ranney Wells)",
+      "• Check the yield by well yield test • Servicing of pump sets • Flushing pipeline system for removing silt, if any",
+      "• Cleaning well by pumping / air compressor / manually • Cleaning of the gravel pack • Taking measures for corrosion prevention"
+    ]
+  ],
+  "markdown": "| Intake | Monthly/Quarterly | Yearly |\n| --- | --- | --- |\n| Dug well (wells in rocky formations and alluvial soils) | • Removing debris from well • Lubricating pulley as required • Cleaning the concrete apron • Replacing bucket | • Dewatering well and cleaning the bottom. • Repairing of the well wall. • Desilting/deepening the well in the monsoon period. |\n| Hand pump (HP) | • Checking of HP and spout pipe • Checking of nuts and bolts. • Test-water quality • Cleaning inside of the pump • Checking of anchor-bolt • Cleaning rusty patches | • Checking water discharge. • Repairing handle as needed. • Repairing/replacing valves. • Removing pump and cleaning of pipe. |\n| Tube/Borewell | • Operate pump starter and isolation valve. • Checking whether adequate water is being produced. • Checking of voltmeter and meter readings. | • Carry out inspection by removing pump and rising main from the well. • Inspecting electrical cables and checking insulation between cables. • Cleaning pump house. • Checking leaks in rising main. • Replacing corroded pipes. • Testing water quality using a field test kit. • Checking pipe threads. • Record servicing and maintenance in the logbook. • Deepening the bore to approximate level. |\n| Infiltration gallery | • Inlets should be inspected regularly for debris that may clog the system. | • Infiltration wells are to be protected from sand mining done around them. • During floods such wells get tilted for which packing of sandbags should be put around the wells. |\n| Radial collector wells (Ranney Wells) | • Check the yield by well yield test • Servicing of pump sets • Flushing pipeline system for removing silt, if any | • Cleaning well by pumping / air compressor / manually • Cleaning of the gravel pack • Taking measures for corrosion prevention |",
+  "cell_spans": [],
+  "notes": [
+    "Transcriber layout note: the printed table breaks across pages 48 and 49; the column header row is repeated at the top of page 49 and is not an extra data row. The 'Hand pump (HP)' row is itself split by the page break: its first Monthly/Quarterly bullet and its first Yearly bullet stand on page 48, and the remaining bullets continue on page 49 in a row whose Intake cell is printed blank. This record merges that split row into one logical row and keeps bullet order as printed.",
+    "Printed as 'Infiltration gallery' (corrected-looking spelling), not 'Infiltration galley'; transcribed as printed.",
+    "Bullet punctuation is inconsistent in the source and was not normalised: most Monthly/Quarterly bullets and several Yearly bullets in the lower rows carry no full stop, while the Dug well and Hand pump rows mostly do. Printed capitalisation inside bullets is kept.",
+    "Printed as 'Radial collector wells (Ranney Wells)' with a capital W in 'Wells' inside the parenthesis; preserved.",
+    "Bullet glyphs are the printed round bullets; bullet boundaries are retained with their round markers; line breaks are joined with a single space in each serialized cell.",
+    "Cell and Markdown text join bullet lines with single spaces, retaining every bullet marker and word so each logical table row stays on one line."
+  ],
+  "verification": {
+    "transcription": {
+      "pass_id": "visual-2026-11-08-water-b-t02-01",
+      "method": "direct visual reading of 144 dpi page renders plus 288-600 dpi region zooms; no OCR",
+      "observations": "Read the three headings, the repeated continuation header, all logical rows and every bullet, including the blank Intake cell on the continuation row."
+    },
+    "visual_recheck": {
+      "pass_id": "parent-water-b-t02-2026-11-08",
+      "method": "Distinct parent visual comparison of full pages and 288-600 dpi table-region crops; no OCR; not independent human review.",
+      "observations": "Compared all cells and bullets across both page breaks. Confirmed printed anomalies, repeated headers and split Hand pump row. Corrected continuation note: only first monthly bullet is on page 115; five continue on page 116. Corrected bullet glyph description from square to round. Serialized Markdown cells on one line, preserving every round bullet and word. Cell strings also join bullet lines with single spaces to keep Markdown and structured cells identical.",
+      "content_sha256": "980ddfee14a6da7c326c3a532045ad8fc6b6a2fad2601627568d6db57ac48b12"
+    }
+  }
+}

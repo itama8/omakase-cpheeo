@@ -200,3 +200,14 @@ questions:
     row: ['', 'Total', '135']
     contains: ['150 LPCD', 'not part of the table']
     region_pages: [96]
+  - id: V49
+    question: Table 3.2 lake pond restoration methods nutrients
+    expect: [WS-2024-B:T3.2]
+    row: ['4.', 'Sediment dredging (quantity and quality of dredged material)', 'Reduction is phosphorous organic matter, TSS and reduction and replacement in plankton dominance in lake by less eutrophic species.']
+    contains: ['with remove of cyprinids', 'lake/s']
+    region_pages: [110, 111]
+  - id: V50
+    question: Table 3.3 groundwater intake hand pump maintenance
+    expect: [WS-2024-B:T3.3]
+    row: ['Hand pump (HP)', '• Checking of HP and spout pipe • Checking of nuts and bolts. • Test-water quality • Cleaning inside of the pump • Checking of anchor-bolt • Cleaning rusty patches', '• Checking water discharge. • Repairing handle as needed. • Repairing/replacing valves. • Removing pump and cleaning of pipe.']
+    region_pages: [115, 116]

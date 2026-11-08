@@ -1,0 +1,167 @@
+{
+  "schema_version": 1,
+  "batch": "water-b-t02",
+  "manual_id": "WS-2024-B",
+  "source_sha256": "1cfd336b3e2928b95cec3899d3e1d15807b5598d78730d6fe3eef381021844e7",
+  "source_path": "/home/a2ajinkya/Downloads/CPHEEO/Water Supply_2023/Part-B-Manual-Operation-and-Maintenance(5).pdf",
+  "scope": "First-pass visual transcription drafts only; state pending; no verification, sealing, ledger, DB or deployment writes.",
+  "render_dpi": 144,
+  "pages": [
+    {
+      "pdf_page": 95,
+      "page_label": "28",
+      "targets": [],
+      "no_targets_reason": "Body prose plus Figure 2.4 'Computerised Revenue Management System', a labelled schematic block diagram (SAJALA flow boxes, screen thumbnails, one orange caption strip inside the artwork reading 'SAJALA - Revenue Billing Collection and Management System for BWSSB', '(Source: BWSSB)'). It is a figure, not a tabular layout: no column/row structure, no equation or formula anywhere on the page.",
+      "continuations": [],
+      "unclear": [],
+      "notes": "Section 2.6.10 (Computerised Maintenance Management system) prose continues from page 94. Printed oddities inside the artwork preserved as printed: top-right box begins with literal '...Kiosks' under the heading '91 Automated'; the source line is inside the image, outside the numbered caption. Neither is a transcription target and nothing was corrected.",
+      "image_viewed": "tmp/pdfs/water-b-t02/page-95.png",
+      "image_sha256": "141bb229a414a1db7dde478d5d7b17b63731e4eacfaf9492d25a983d5801ce1f",
+      "image_viewed_this_turn": true
+    },
+    {
+      "pdf_page": 96,
+      "page_label": "29",
+      "targets": [],
+      "no_targets_reason": "Figure 2.5 'Valve Monitoring System' (labelled flow schematic: IVRS bullet list on the left, BWSSB Engineers -> Ground Level Staff -> Valve Monitoring Service (VMS) -> CMS Call Centre, Households with SMS/website arrows, an in-artwork caption 'Major elements of online water quality monitoring', '(Source: BWSSB)'), followed by body prose of 2.6.11 Planning for Exigencies, 2.7 Capacity Building and the opening of 2.7.1 Job Database. The figure is a diagram, not a table; no equation, formula, symbol list or numbered table appears.",
+      "continuations": [],
+      "unclear": [],
+      "notes": "The in-artwork caption 'Major elements of online water quality monitoring' does not match the numbered caption 'Figure 2.5: Valve Monitoring System'; both are printed that way and both were left as printed. Printed oddities preserved: 'bioterrorism' is set flush inside the emergency list with no space before it ('water supply bioterrorism'), and '2.7 Capacity Building' uses a wider gap after the number than 2.6.11/2.7.1.",
+      "image_viewed": "tmp/pdfs/water-b-t02/page-96.png",
+      "image_sha256": "f4e4c658259e5490763f79cd80ba5eb56746bdf50cfb359ce40878847c6cd2e7",
+      "image_viewed_this_turn": true
+    },
+    {
+      "pdf_page": 97,
+      "page_label": "30",
+      "targets": [],
+      "no_targets_reason": "Continuation of 2.7.1 Job Database prose, then 2.7.2 Training Requirements with a five-item bullet list, then 2.8 Ensuring Efficient O&M and 2.8.1 Specific Key Performance Indicators (KPIs) with lettered items a)-d). All body prose and lists; no ruled table, no caption, no equation, formula or symbol list.",
+      "continuations": [],
+      "unclear": [],
+      "notes": "Printed oddities preserved and not corrected: 'promotions incentives' (2.7.2, first paragraph); 'don'ts' set with a straight apostrophe in the 2.7.2 paragraph. Numbers on the page are prose references only (IS 10500 (2012), Table 2.7 of Chapter 2, 'at least 15%'), not formulas. Item d) ends mid-sentence at the page foot and continues on page 98.",
+      "image_viewed": "tmp/pdfs/water-b-t02/page-97.png",
+      "image_sha256": "d15b997176ebc7017350ae15d3ccc21b55df06dcb6893dbcbc4dcd5236159726",
+      "image_viewed_this_turn": true
+    },
+    {
+      "pdf_page": 110,
+      "page_label": "43",
+      "targets": [
+        "WS-2024-B:T3.2"
+      ],
+      "no_targets_reason": null,
+      "continuations": [
+        {
+          "id": "WS-2024-B:T3.2",
+          "direction": "starts here and continues onto pdf page 111 (printed 44)",
+          "detail": "Rows 1-3 of Table 3.2 are on this page; the table body stops at the page foot mid-table and the header row is repeated on page 111, where rows 4-6 complete it. Drafted as one record with two regions."
+        }
+      ],
+      "unclear": [],
+      "notes": "Table 3.2 'Lake and Pond Restoration Methods' begins near the page foot with its caption, a three-column header row (S. No. / Restoration Methods / Anticipated Achievements) and rows 1-3. No equation on this page. The immediate continuation page 111 was rendered and viewed because the table crosses the page boundary. Printed oddities in these rows preserved: 'phosphorous inactivation', 'with remove of cyprinids', unsubscripted 'NO3/PO4/BOD'.",
+      "draft_written": "data/transcriptions/batches/water-b-t02/drafts/WS-2024-B--T3.2.json",
+      "image_viewed": "tmp/pdfs/water-b-t02/page-110.png",
+      "image_sha256": "dbce686497bf6dbc313f295518aaee5697dd5a74cfedf7af660d24cc5791c3e6",
+      "image_viewed_this_turn": true
+    },
+    {
+      "pdf_page": 111,
+      "page_label": "44",
+      "targets": [
+        "WS-2024-B:T3.2"
+      ],
+      "no_targets_reason": null,
+      "continuations": [
+        {
+          "id": "WS-2024-B:T3.2",
+          "direction": "continued from pdf page 110 (printed 43), ends here",
+          "detail": "Repeated column header row plus rows 4-6, table foot at mid page."
+        }
+      ],
+      "unclear": [],
+      "notes": "Continuation of Table 3.2 with the header row restated and rows 4, 5, 6; the table ends here. Below it is a boxed case-study sidebar 'Restoration of Dal Lake:' containing prose (J&K partnership campaign, 60,000 m2 printed with a superscript 2, Source: J&K (LCMA)) and two photographs - a boxed prose/photo sidebar, not a tabular layout, so no target. Then 3.4.8 Pond and Lake Maintenance Equipment with a lead sentence and lettered paragraphs A. Dredgers, B. Aerators, C. Weed Harvesters, D. Aquatic Skimmers. No equation on the page. Printed oddities preserved: 'Reduction is phosphorous organic matter' in row 4, 'lake/s' in row 5, 'non-point' in row 6.",
+      "draft_written": "data/transcriptions/batches/water-b-t02/drafts/WS-2024-B--T3.2.json",
+      "image_viewed": "tmp/pdfs/water-b-t02/page-111.png",
+      "image_sha256": "f52d007a17548b7c2abfee6fcdcf18849740cc959f465894eb0538b1637abbf1",
+      "image_viewed_this_turn": true
+    },
+    {
+      "pdf_page": 112,
+      "page_label": "45",
+      "targets": [],
+      "no_targets_reason": "Continuation of the 3.4.8 lettered equipment list (E. Lake Rakes, F. De-Icers), a closing prose paragraph, a boxed sidebar headed 'Robotic inspection, cleaning, and repair of underwater assets:' holding prose and two captioned photographs (Robotic Inspection / Robotic Dam Desilting), then 3.5 Groundwater prose with a two-item bullet list. Sidebar and photographs are not a tabular layout; there is no caption, column/row structure, equation or formula.",
+      "continuations": [],
+      "unclear": [],
+      "notes": "Printed oddities preserved: 'The dredgers and aerators used described above depend on' (repeated 'used') in the paragraph under the F. De-Icers item; 'remotely- operated' printed with a hyphen and space in the sidebar; 'minimising while providing quality service' as printed. The 3.5 bullet list ends mid-list at the page foot and continues on page 113.",
+      "image_viewed": "tmp/pdfs/water-b-t02/page-112.png",
+      "image_sha256": "d4c569c95c628b4e6b905a6980e7eed9c9b8728e769465c1e280532f5d6a821c",
+      "image_viewed_this_turn": true
+    },
+    {
+      "pdf_page": 114,
+      "page_label": "47",
+      "targets": [],
+      "no_targets_reason": "Figure 3.8 'Yield draw-down curve' (a plotted line chart with axes PERCENT YIELD 0-100 and PERCENT DRAW DOWN 0-100, a curve and two thin construction lines) occupies the top third; below it are the tail of 3.5.1 Preventive Maintenance, section 3.5.2 Determining Static Water Level (SWL) with lettered methods (a) Electric sounder, (b) Wetted tape, (c) Airline in prose. The chart is a figure with axis tick labels only - no data table, no equation, no formula, and no symbol list.",
+      "continuations": [],
+      "unclear": [],
+      "notes": "The printed chart carries only axis tick labels (0,20,40,60,80,100 on each axis) and no plotted numbers, so no tabular values were invented. Section 3.5.2 method (c) closes at the page foot; the airline explanation refers forward to Figure 3.9 (on page 115). Printed oddities preserved: 'a chunk of the chalked section'; 'the wire's end' with a straight apostrophe.",
+      "image_viewed": "tmp/pdfs/water-b-t02/page-114.png",
+      "image_sha256": "0592df087191aeb76709b3b1ac460947e9c3370eb9c248c55af9b30b85f4d999",
+      "image_viewed_this_turn": true
+    },
+    {
+      "pdf_page": 115,
+      "page_label": "48",
+      "targets": [
+        "WS-2024-B:T3.3"
+      ],
+      "no_targets_reason": null,
+      "continuations": [
+        {
+          "id": "WS-2024-B:T3.3",
+          "direction": "starts here and continues onto pdf page 116 (printed 49)",
+          "detail": "Caption, header row, complete Dug well row and the first part of the Hand pump (HP) row are on this page; the Hand pump row is split by the page break and finishes on page 116 under a repeated header. Drafted as one record with two regions."
+        }
+      ],
+      "unclear": [],
+      "notes": "Top of page holds Figure 3.9 'Airline installed in a tubewell for measuring water level' (labelled section drawing: Air Hand pump, Pressure gauge, Valve, Air line, Pump casing, A - D, B, C, E, Single water level, Pumping water level, Bottom of section pipe) - a figure, not a table - then item (d) Tubewell sounding, section 3.5.3 and the opening of Table 3.3 'Operation and Maintenance of Intake for the Abstraction of Groundwater'. The immediate continuation page 116 was rendered and viewed because the table crosses the boundary. No equation on the page.",
+      "draft_written": "data/transcriptions/batches/water-b-t02/drafts/WS-2024-B--T3.3.json",
+      "image_viewed": "tmp/pdfs/water-b-t02/page-115.png",
+      "image_sha256": "dc4f9839fcf2f75c1f3734fb5265904b45ca2f1adf912496c1da34917ce0ec96",
+      "image_viewed_this_turn": true
+    },
+    {
+      "pdf_page": 116,
+      "page_label": "49",
+      "targets": [
+        "WS-2024-B:T3.3"
+      ],
+      "no_targets_reason": null,
+      "continuations": [
+        {
+          "id": "WS-2024-B:T3.3",
+          "direction": "continued from pdf page 115 (printed 48), ends here",
+          "detail": "Repeated column header row, the continuation of the split Hand pump (HP) row with a blank Intake cell, then Tube/Borewell, Infiltration gallery and Radial collector wells (Ranney Wells) rows; table foot just below mid page."
+        }
+      ],
+      "unclear": [],
+      "notes": "After the table: 3.5.4 Groundwater Collection System prose, 3.5.5 Storage Components prose with the first bullet and its continuation onto page 117. No equation on the page. Printed oddities preserved: 'Inspecting electrical cables and checking insulation between cables.', 'Record servicing and maintenance in the logbook.', 'During floods such wells get tilted for which packing of sandbags should be put around the wells.' exactly as set, with the irregular word spacing of the justified cells not reproduced as content.",
+      "draft_written": "data/transcriptions/batches/water-b-t02/drafts/WS-2024-B--T3.3.json",
+      "image_viewed": "tmp/pdfs/water-b-t02/page-116.png",
+      "image_sha256": "d8fbb85cab10ce05ecd529cc85d3e3876c3375a84686df38a3137ae39813d75e",
+      "image_viewed_this_turn": true
+    },
+    {
+      "pdf_page": 120,
+      "page_label": "53",
+      "targets": [],
+      "no_targets_reason": "Body prose only: the impression-block procedure of 3.5.8.3 Mechanical Maintenance (continuation from page 119), Figure 3.10 'Impression Block' (a labelled tool diagram: DRILL PIPE, BOX PIN, BOX COLLAR, WOODEN BLOCK, SMALL HEADED NAILS, PARAFFIN WAX OR OTHER PLASTIC METERIAL), then item b) Fishing Tools to Recover Fallen Objects. The figure is a labelled section drawing, not a table; the page states measurements in running prose only (2.0 cm, about 1.0 cm, about 5.0 to 7.0 cm) and prints no equation, formula or symbol list.",
+      "continuations": [],
+      "unclear": [],
+      "notes": "Printed error preserved: the figure's last label reads 'PARAFFIN WAX OR OTHER PLASTIC METERIAL' (METERIAL for MATERIAL); not corrected and not a text target, but recorded here. Printed oddities in prose preserved: 'An impression block is used to obtain an impression of the top of the object'; 'a sheet metal cylinder of about 5.0 to 7.0 cm is temporarily nailed around the block to hold molten wax, which is poured into it.'; also 'which is poured into it. Warm paraffin wax, soap, or other plastic material is poured into the cylinder is left to cool and solidify.' ('is poured ... is left' as printed). Section 3.5.8.4 Maintenance begins on page 121.",
+      "image_viewed": "tmp/pdfs/water-b-t02/page-120.png",
+      "image_sha256": "873eb555c2419ac1023ef21fd01991def8052216d32af7e33dbdb052de58fd94",
+      "image_viewed_this_turn": true
+    }
+  ]
+}

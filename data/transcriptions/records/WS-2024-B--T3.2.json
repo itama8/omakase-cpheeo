@@ -1,0 +1,94 @@
+{
+  "schema_version": 1,
+  "id": "WS-2024-B:T3.2",
+  "unit_id": "WS-2024-B:T3.2",
+  "manual_id": "WS-2024-B",
+  "kind": "table",
+  "number": "3.2",
+  "title": "Lake and Pond Restoration Methods",
+  "source_sha256": "1cfd336b3e2928b95cec3899d3e1d15807b5598d78730d6fe3eef381021844e7",
+  "state": "verified",
+  "regions": [
+    {
+      "pdf_page": 110,
+      "page_label": "43",
+      "bbox": [
+        70.7,
+        543.0,
+        532.0,
+        722.1
+      ],
+      "render_sha256": "01ae3695ffcb1e4e81c9c66d4205189e22198d15afb5c17ea9288d5f9c99f396"
+    },
+    {
+      "pdf_page": 111,
+      "page_label": "44",
+      "bbox": [
+        70.7,
+        70.5,
+        532.0,
+        241.2
+      ],
+      "render_sha256": "f4a7ee6a28a3ca3a46add8f3f26c0b03fb853781b0608c41f1ab2a6b0091d114"
+    }
+  ],
+  "headers": [
+    "S. No.",
+    "Restoration Methods",
+    "Anticipated Achievements"
+  ],
+  "rows": [
+    [
+      "1.",
+      "Aeration of lake water and phosphorous inactivation and biomanipulation with remove of cyprinids",
+      "Reduction in nutrients, cyanobacterial blooms, and phytoplankton."
+    ],
+    [
+      "2.",
+      "Stoppage of wastewater flow to the lake/soil dredging / harvesting of algae",
+      "Reduction in pollutant concentration (NO3/PO4/BOD and TSS)."
+    ],
+    [
+      "3.",
+      "Supplying nitrate-rich water from small tributaries to hypolimnion of the lake",
+      "Enabling hydrogen sulphide to disappear and then measuring redox potential in hypolimnion."
+    ],
+    [
+      "4.",
+      "Sediment dredging (quantity and quality of dredged material)",
+      "Reduction is phosphorous organic matter, TSS and reduction and replacement in plankton dominance in lake by less eutrophic species."
+    ],
+    [
+      "5.",
+      "Using specific Legal Framework Act to protect Lake Wetland",
+      "Using Tank Conservation and Development Act 2014 with the role function of protecting, conserving, and restoring lake/s to facilitate recharge of depleting groundwater."
+    ],
+    [
+      "6.",
+      "Improving habitat quality",
+      "By reducing point and non-point sewage impacts."
+    ]
+  ],
+  "markdown": "| S. No. | Restoration Methods | Anticipated Achievements |\n| --- | --- | --- |\n| 1. | Aeration of lake water and phosphorous inactivation and biomanipulation with remove of cyprinids | Reduction in nutrients, cyanobacterial blooms, and phytoplankton. |\n| 2. | Stoppage of wastewater flow to the lake/soil dredging / harvesting of algae | Reduction in pollutant concentration (NO3/PO4/BOD and TSS). |\n| 3. | Supplying nitrate-rich water from small tributaries to hypolimnion of the lake | Enabling hydrogen sulphide to disappear and then measuring redox potential in hypolimnion. |\n| 4. | Sediment dredging (quantity and quality of dredged material) | Reduction is phosphorous organic matter, TSS and reduction and replacement in plankton dominance in lake by less eutrophic species. |\n| 5. | Using specific Legal Framework Act to protect Lake Wetland | Using Tank Conservation and Development Act 2014 with the role function of protecting, conserving, and restoring lake/s to facilitate recharge of depleting groundwater. |\n| 6. | Improving habitat quality | By reducing point and non-point sewage impacts. |",
+  "notes": [
+    "Transcriber layout note: the table is split across a printed page break; the column header row is repeated at the top of the continuation page 44 and is not a second data row. Three rows (1-3) stand on page 43 and three (4-6) on page 44.",
+    "Printed as 'with remove of cyprinids' in row 1; not corrected.",
+    "Printed as 'Reduction is phosphorous organic matter' in row 4 (word 'is' rather than 'in' as it reads elsewhere); not corrected.",
+    "Printed as 'lake/s' in row 5; not corrected.",
+    "Printed chemical formulae in row 2 carry no subscripts; reproduced as printed."
+  ],
+  "cell_spans": [],
+  "verification": {
+    "transcription": {
+      "pass_id": "visual-2026-11-08-water-b-t02-01",
+      "method": "direct visual reading of rendered 144 dpi page images plus 288 dpi region zooms; no OCR",
+      "observations": "Read the three column headings, the repeated continuation header, all six numbered rows and every cell string from the page images."
+    },
+    "visual_recheck": {
+      "pass_id": "parent-water-b-t02-2026-11-08",
+      "method": "Distinct parent visual comparison of full pages and 288-600 dpi table-region crops; no OCR; not independent human review.",
+      "observations": "Compared all cells and bullets across both page breaks. Confirmed printed anomalies, repeated headers and split Hand pump row. ",
+      "content_sha256": "b25d4105755092cbf2d29c5bb536b1b114daaa88861cfe0978e4f8a5cf0ba9d1"
+    }
+  }
+}

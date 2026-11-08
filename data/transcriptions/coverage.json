@@ -35,16 +35,16 @@
     "WS-2024-B": {
       "physical_pages": 702,
       "review_scope_pages": 635,
-      "pages_reviewed": 17,
+      "pages_reviewed": 27,
       "pages_partially_reviewed": 0,
-      "pages_remaining_including_partial": 618,
+      "pages_remaining_including_partial": 608,
       "indexed_tables": 93,
       "baseline_image_table_units": 2,
       "discovered_table_units_verified": 0,
       "baseline_image_table_units_verified": 2,
       "baseline_image_table_units_pending": 0,
-      "native_table_units_without_visual_transcription": 89,
-      "verified_tables": 4,
+      "native_table_units_without_visual_transcription": 87,
+      "verified_tables": 6,
       "verified_equations": 0
     },
     "WS-2024-C": {

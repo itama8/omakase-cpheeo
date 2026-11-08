@@ -4,12 +4,12 @@ The full request is **not complete**. `data/transcriptions/coverage.json` is the
 
 ## Current checkpoint
 
-All four PDF hashes and all 3,213 physical pages are inventoried. There are 2,917 review-scope pages after excluding the parser's front-matter ranges. Of these, 321 pages have completed visual review and three have partial reviews; 2,596 pages remain, including partial pages. The exact total of equations and visually unreadable/native-extraction failures remains unknown until page review finishes.
+All four PDF hashes and all 3,213 physical pages are inventoried. There are 2,917 review-scope pages after excluding the parser's front-matter ranges. Of these, 331 pages have completed visual review and three have partial reviews; 2,586 pages remain, including partial pages. The exact total of equations and visually unreadable/native-extraction failures remains unknown until page review finishes.
 
-There are 279 verified records (123 tables, 156 equations) and one unclear record:
+There are 281 verified records (125 tables, 156 equations) and one unclear record:
 
 - Sewage Part A: 105 tables and 149 equations. Completed batches include the previously documented Chapter 1-4 work and selected Chapter 5 treatment, disinfection, electrical and piping material, Chapter 6 and appendix pages. Batch page reports enumerate the reviewed pages; gaps between them remain pending.
-- Water Part A/B/C: 18 tables and seven equations, including Part A Tables 1.1-1.3 (physical pages 91-92, 95-96), Part B Tables 1.1 and 1.2 (physical pages 72, 74-76) and all nine tables marked image-only in the baseline index and selected headloss mathematics. The other native tables and water formulas remain in the all-page review queue unless explicitly covered by a record.
+- Water Part A/B/C: 20 tables and seven equations, including Part A Tables 1.1-1.3 (physical pages 91-92, 95-96), Part B Tables 1.1 and 1.2 (physical pages 72, 74-76), and Part B Tables 3.2 and 3.3 (physical pages 110-111, 115-116) and all nine tables marked image-only in the baseline index and selected headloss mathematics. The other native tables and water formulas remain in the all-page review queue unless explicitly covered by a record.
 - Of 201 baseline image-only tables, 102 have verified transcriptions and 99 remain. These are baseline unit counts, not a claim that visual discovery is finished.
 - The latest parent recheck added 14 records from `sew-t05`: Tables 5.17-5.27, Equation 5.43, the critical-parameter panel of Table 5.18 and a repeated chart location key. The second comparison corrected Raibarreilly and Dakshineswar spellings and removed an inferred vertical cell merge. Printed numerical outliers, missing row 3 in Table 5.26 and undefined N in Equation 5.43 remain documented as printed.
 - `SEW-2013-A:Ep180-1` remains unclear: the printed water-cushion expression is `h1/2 d1/3` on the baseline, without clear power notation even in a 288-dpi close-up. It returns a source-region image and an explicit ambiguity note, without asserted LaTeX or verified math.
@@ -54,7 +54,7 @@ Do not regenerate the page inventory as a substitute for actual review. Regenera
 
 ## Validation limits
 
-`eval/verified-transcriptions.yaml` checks retrieved values/formulas, full numerical rows, anomalies and continuations. At this checkpoint, 48/48 queries retrieve the expected content in the top five, 40/48 at rank one, MRR 0.910. The original APD set and ranking/appendix regressions must also pass. The manhole query's expected handle alone is not proof that its source contains manhole sizes.
+`eval/verified-transcriptions.yaml` checks retrieved values/formulas, full numerical rows, anomalies and continuations. At this checkpoint, 50/50 queries retrieve the expected content in the top five, 40/50 at rank one, MRR 0.893. The original APD set and ranking/appendix regressions must also pass. The manhole query's expected handle alone is not proof that its source contains manhole sizes.
 
 The checks were authored with sources open and are optimistic regression checks, not independent retrieval accuracy measurements. The checker reports measured local warm SQLite search-plus-fetch latency, excluding network, image rendering and model time. `data/transcriptions/validation.txt` records the measured run. Source digests prevent drift; automated checks cannot establish that a human/assistant read every glyph correctly.
 
